@@ -10,7 +10,7 @@ namespace ProyectoEquipo13
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola");
+            Console.WriteLine("Prueba");
             Console.Read();
         }
     }
