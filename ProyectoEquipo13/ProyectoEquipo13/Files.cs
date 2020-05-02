@@ -8,16 +8,16 @@ namespace ProyectoEquipo13
 {
     static class Files
     {
-        private List<Movies> allMovies = new List<Movies>();
-        private List<Songs> allSongs = new List<Songs>();
-        private List<Playlists> allPlaylistsSongs = new List<Playlists>();
-        private List<Playlists> allPlaylistsMovies = new List<Playlists>();
-        private List<User> allUsers = new List<User>();
+        private static List<Movies> allMovies = new List<Movies>();
+        private static List<Songs> allSongs = new List<Songs>();
+        private static List<Playlists> allPlaylistsSongs = new List<Playlists>();
+        private static List<Playlists> allPlaylistsMovies = new List<Playlists>();
+        private static List<User> allUsers = new List<User>();
 
-        public List<Movies> AllMovies { get => allMovies; set => allMovies = value; }
-        public List<Songs> AllSongs { get => allSongs; set => allSongs = value; }
-        public List<Playlists> AllPlaylistsSongs { get => allPlaylistsSongs; set => allPlaylistsSongs = value; }
-        public List<Playlists> AllPlaylistsMovies { get => allPlaylistsMovies; set => allPlaylistsMovies = value; }
-        public List<User> AllUsers { get => allUsers; set => allUsers = value; }
+        public static List<Movies> AllMovies { get => allMovies; set => allMovies = value; }
+        public static List<Songs> AllSongs { get => allSongs; set => allSongs = value; }
+        public static List<Playlists> AllPlaylistsSongs { get => allPlaylistsSongs; set => allPlaylistsSongs = value; }
+        public static List<Playlists> AllPlaylistsMovies { get => allPlaylistsMovies; set => allPlaylistsMovies = value; }
+        public static List<User> AllUsers { get => allUsers; set => allUsers = value; }
     }
 }
