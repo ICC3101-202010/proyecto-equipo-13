@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Premium
+    class Premium : User
     {
+        private string type = "Premium";
     }
 }

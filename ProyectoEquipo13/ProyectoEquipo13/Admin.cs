@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Admin
+    class Admin : User
     {
+        private string type = "Admin";
     }
 }
