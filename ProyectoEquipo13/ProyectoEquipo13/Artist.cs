@@ -8,5 +8,6 @@ namespace ProyectoEquipo13
 {
     class Artist
     {
+    
     }
 }
