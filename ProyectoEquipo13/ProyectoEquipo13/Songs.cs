@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Songs
+    public class Songs
     {
+
+        string Title;
+        Person Composer;
+        Artist Artist;
+        Person Writer;
+        int Lenght;
+        List<string> Genre;
+        string Lyrics;
+        string Resolution;
+        string Memory;
+        int numReproductions;
+        int Rating;
+        // mp3 Music;
+        int Min;
+        Album Album;
+
+        Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, int Min, Album Album)
+        {
+
+        }
     }
 }
