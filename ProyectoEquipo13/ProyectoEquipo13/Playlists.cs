@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    public class Playlist
+    public class Playlists
     {
         private string Type;
         protected string Name;
@@ -14,7 +14,7 @@ namespace ProyectoEquipo13
         protected List<Songs> playlistsong = new List<Songs>();
         protected List<Movies> playlistmovie = new List<Movies>();
 
-        public Playlist(string name, bool privacy, string type)
+        public Playlists(string name, bool privacy, string type)
         {
             this.Name = name;
             this.Privacy = privacy;

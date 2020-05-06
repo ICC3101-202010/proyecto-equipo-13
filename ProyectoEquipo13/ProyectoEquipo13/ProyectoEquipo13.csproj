@@ -50,9 +50,10 @@
     <Compile Include="Console.cs" />
     <Compile Include="Files.cs" />
     <Compile Include="Free.cs" />
+    <Compile Include="ISubscribing.cs" />
     <Compile Include="Movies.cs" />
     <Compile Include="Person.cs" />
-    <Compile Include="Playlist.cs" />
+    <Compile Include="Playlists.cs" />
     <Compile Include="Premium.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
