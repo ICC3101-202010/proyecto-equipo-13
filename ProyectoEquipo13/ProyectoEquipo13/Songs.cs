@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
+    [Serializable]
+
     public class Songs
     {
-
+        
         string Title;
         Person Composer;
         Artist Artist;

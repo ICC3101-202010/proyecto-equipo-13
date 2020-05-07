@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
+    [Serializable]
     public class Movies
     {
         string Title;
@@ -48,6 +49,17 @@ namespace ProyectoEquipo13
         public string Video1 { get => Video; set => Video = value; }
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }
         public int Min1 { get => Min; set => Min = value; }
+
+        public void Play()
+        {
+            PlayMovie play = new PlayMovie();
+            play.axWindowsMediaPlayer(Video1);
+        }
+        public void PlayTrailer()
+        {
+            PlayMovie play = new PlayMovie();
+            play.axWindowsMediaPlayer(Trailer1);
+        }
     }
 }
  
