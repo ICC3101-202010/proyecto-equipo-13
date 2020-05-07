@@ -20,7 +20,7 @@ namespace ProyectoEquipo13
         string Memory;
         int numReproductions;
         int Rating;
-        // mp3 Music;
+        string Music;
         int Min;
         Album Album;
 
@@ -28,5 +28,20 @@ namespace ProyectoEquipo13
         {
 
         }
+
+        public string Title1 { get => Title; set => Title = value; }
+        public Person Composer1 { get => Composer; set => Composer = value; }
+        public Artist Artist1 { get => Artist; set => Artist = value; }
+        public Person Writer1 { get => Writer; set => Writer = value; }
+        public int Lenght1 { get => Lenght; set => Lenght = value; }
+        public List<string> Genre1 { get => Genre; set => Genre = value; }
+        public string Lyrics1 { get => Lyrics; set => Lyrics = value; }
+        public string Resolution1 { get => Resolution; set => Resolution = value; }
+        public string Memory1 { get => Memory; set => Memory = value; }
+        public int NumReproductions { get => numReproductions; set => numReproductions = value; }
+        public int Rating1 { get => Rating; set => Rating = value; }
+        public string Music1 { get => Music; set => Music = value; }
+        public int Min1 { get => Min; set => Min = value; }
+        internal Album Album1 { get => Album; set => Album = value; }
     }
 }
