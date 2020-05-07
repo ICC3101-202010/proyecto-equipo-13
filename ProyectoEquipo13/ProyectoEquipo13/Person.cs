@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Person
+    public class Person
     {
         protected string Name;
         protected DateTime Birthday;
@@ -19,6 +19,7 @@ namespace ProyectoEquipo13
             this.Birthday = birthday;
             this.Genre = genre;
         }
+
 
     }
 }

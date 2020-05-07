@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Artist : Person
+    public class Artist : Person
     {
         private int numReproduction;
 
