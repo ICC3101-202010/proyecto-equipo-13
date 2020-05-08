@@ -12,7 +12,7 @@ namespace ProyectoEquipo13
         Person Director;
         List<Person> Actors;
         Person Writer;
-        int Lenght;
+        int Lenght; // suma en minutos
         List<string> Categories;
         string Studio;
         string Description;
@@ -26,7 +26,7 @@ namespace ProyectoEquipo13
         List<Songs> SongsMovie;
         int Min;
 
-        Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, int Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, int Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
             Title = this.Title;
             Director = this.Director;

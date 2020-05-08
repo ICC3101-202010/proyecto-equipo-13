@@ -13,7 +13,7 @@ namespace ProyectoEquipo13
         Person Composer;
         Artist Artist;
         Person Writer;
-        int Lenght;
+        int Lenght; // suma en segundos
         List<string> Genre;
         string Lyrics;
         string Resolution;
@@ -24,7 +24,7 @@ namespace ProyectoEquipo13
         int Min;
         Album Album;
 
-        Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, string Music, int Min, Album Album)
+        public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, string Music, int Min, Album Album)
         {
             Title = this.Title;
             Composer = this.Composer;

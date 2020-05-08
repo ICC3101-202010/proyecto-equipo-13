@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Album
+    public class Album
     {
+        public Album()
+        {
+
+        }
     }
 }
