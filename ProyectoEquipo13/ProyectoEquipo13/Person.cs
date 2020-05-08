@@ -19,6 +19,10 @@ namespace ProyectoEquipo13
             this.Birthday = birthday;
             this.Genre = genre;
         }
+        public string GetName()
+        {
+            return this.Name;
+        }
 
 
     }

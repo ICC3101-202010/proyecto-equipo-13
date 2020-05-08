@@ -20,21 +20,6 @@ namespace ProyectoEquipo13
             this.Privacy = privacy;
             this.Type = type;
         }
-        public void AddSongs(Songs songs)
-        {
-            if (Type == "Song"|| Type == "song")
-            {
-                playlistsong.Add(songs);
-            }
-
-        }
-        public void AddMovies(Movies movies)
-        {
-            if (Type == "Movie" || Type == "Movie")
-            {
-                playlistmovie.Add(movies);
-            }
-        }
 
     }
 }
