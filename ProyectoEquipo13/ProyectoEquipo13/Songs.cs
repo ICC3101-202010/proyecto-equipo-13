@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    [Serializable]
-
     public class Songs
     {
         
@@ -26,9 +24,22 @@ namespace ProyectoEquipo13
         int Min;
         Album Album;
 
-        Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, int Min, Album Album)
+        Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, string Music, int Min, Album Album)
         {
-
+            Title = this.Title;
+            Composer = this.Composer;
+            Artist = this.Artist;
+            Writer = this.Writer;
+            Lenght = this.Lenght;
+            Genre = this.Genre;
+            Lyrics = this.Lyrics;
+            Resolution = this.Resolution;
+            Memory = this.Memory;
+            numReproductions = this.numReproductions;
+            Rating = this.Rating;
+            Music = this.Music;
+            Min = this.Min;
+            Album = this.Album;
         }
 
         public string Title1 { get => Title; set => Title = value; }

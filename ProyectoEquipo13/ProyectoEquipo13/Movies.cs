@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    [Serializable]
     public class Movies
     {
         string Title;
@@ -27,9 +26,25 @@ namespace ProyectoEquipo13
         List<Songs> SongsMovie;
         int Min;
 
-        Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, int Rating, List<Songs> SongsMovie, int Min)
+        Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, int Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
-
+            Title = this.Title;
+            Director = this.Director;
+            Actors = this.Actors;
+            Writer = this.Writer;
+            Lenght = this.Lenght;
+            Categories = this.Categories;
+            Studio = this.Studio;
+            Description = this.Description;
+            Year = this.Year;
+            Resolution = this.Resolution;
+            Memory = this.Memory;
+            numReproductions = this.numReproductions;
+            Rating = this.Rating;
+            Video = this.Video;
+            Trailer = this.Trailer;
+            SongsMovie = this.SongsMovie;
+            Min = this.Min;
         }
 
         public string Title1 { get => Title; set => Title = value; }

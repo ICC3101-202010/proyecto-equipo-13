@@ -12,6 +12,7 @@ namespace ProyectoEquipo13
         {
             Console.WriteLine("Prueba");
             Console.Read();
+
         }
     }
 }

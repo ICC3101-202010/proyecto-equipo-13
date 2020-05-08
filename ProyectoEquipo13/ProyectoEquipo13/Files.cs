@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
+    [Serializable]
     static class Files
     {
         private static List<Movies> allMovies = new List<Movies>();
