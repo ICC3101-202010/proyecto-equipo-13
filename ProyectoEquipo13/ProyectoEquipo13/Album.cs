@@ -8,9 +8,15 @@ namespace ProyectoEquipo13
 {
     public class Album
     {
-        public Album()
+        string Name;
+        public Album(string name)
         {
+            this.Name = name;
 
+        }
+        public string GetName()
+        {
+            return this.Name;
         }
     }
 }

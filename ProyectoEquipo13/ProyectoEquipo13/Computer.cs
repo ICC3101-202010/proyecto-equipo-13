@@ -55,6 +55,37 @@ namespace ProyectoEquipo13
                     }
                 }
             }
+            if (type == "Album" || type == "album")
+            {
+                foreach (Songs song in Files.AllSongs)
+                {
+                    if (song.Album1.GetName() == name)
+                    {
+                        show.Add(song);
+                    }
+                }
+            }
+            if (type == "Compositor" || type == "compositor")
+            {
+                foreach (Songs song in Files.AllSongs)
+                {
+                    if (song.Composer1.GetName() == name)
+                    {
+                        show.Add(song);
+                    }
+                }
+            }
+            if (type == "Escritor" || type == "escritor")
+            {
+                foreach (Songs song in Files.AllSongs)
+                {
+                    if (song.Writer1.GetName() == name)
+                    {
+                        show.Add(song);
+                    }
+                }
+            }
+
 
         }
         public void SearchTypeMovies(string type, string name)
