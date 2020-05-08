@@ -85,11 +85,93 @@ namespace ProyectoEquipo13
                     }
                 }
             }
+            if (type == "Actor" || type == "actor")
+            {
+                foreach (Songs song in Files.AllSongs)
+                {
+                    if (song.Writer1.GetName() == name)
+                    {
+                        show.Add(song);
+                    }
+                }
+            }
 
 
         }
-        public void SearchTypeMovies(string type, string name)
+        public List<Movies> SearchTypeMovies(string type, string name)
         {
+            List<Movies> show = new List<Movies>();
+
+            if (type == "Título" || type == "Titulo" || type == "título" || type == "titulo")
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    if (movies.Title1 == name)
+                    {
+                        show.Add(movies);
+                    }
+                }
+            }
+
+            if (type == "Director" || type == "director" )
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    if (movies.Director1.GetName() == name)
+                    {
+                        show.Add(movies);
+                    }
+                }
+            }
+            if (type == "Actor" || type == "actor")
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    foreach (Person actor in movies.Actors1)
+                    {
+                        if (actor.GetName() == name)
+                        {
+                            show.Add(movies);
+                        }
+                    }
+                }
+            }
+            if (type == "Escritor" || type == "escritor")
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    if (movies.Writer1.GetName() == name)
+                    {
+                        show.Add(movies);
+                    }
+                }
+            }
+            if (type == "Categoria" || type == "categoria"||type == "Categoría" || type == "categoría")
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    foreach (string categoria in movies.Categories1)
+                    {
+                        if (categoria == name)
+                        {
+                            show.Add(movies);
+                        }
+                    }
+                }
+            }
+            if (type == "Estudio" || type == "estudio")
+            {
+                foreach (Movies movies in Files.AllMovies)
+                {
+                    if (movies.Studio1 == name)
+                    {
+                        show.Add(movies);
+                    }
+                }
+            }
+
+
+            return show;
 
         }
 
