@@ -10,9 +10,9 @@ namespace ProyectoEquipo13
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Prueba");
-            Console.Read();
-            Album Album = new Album();
+            //Console.WriteLine("Prueba");
+            //Console.Read();
+            Album Album = new Album("Tarzan: An Original Walt Disney Records Soundtrack");
             string TitleS = "Son of man";
             char M = 'M';
             char F = 'F';
@@ -27,7 +27,7 @@ namespace ProyectoEquipo13
             string MemoryS = "3,78MB";
             int numReproductionsS = 0;
             int RatingS = 0;
-            string  Music = "";
+            string  Music = " C:/Users/56984/Desktop/Universidad/Progra/Proyecto/proyecto-equipo-13/Songs/Tarzan_-Son_Of_Man_Phil_Collins";
             // C:\Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto-equipo-13\Songs\Tarzan_-Son_Of_Man_Phil_Collins
             int MinS = 0;
             Songs song1 = new Songs(TitleS, Composer, Artist, Composer, LenghtS, GenreS, LyricsS, ResolutionS, MemoryS, numReproductionsS, RatingS, Music, MinS, Album);
@@ -52,15 +52,15 @@ namespace ProyectoEquipo13
             string Memory = "12,2MB";
             int numReproductions = 0;
             int Rating = 0;
-            string Trailer = "";
+            string Trailer = "C: /Users/56984/Desktop/Universidad/Progra/Proyecto/proyecto - equipo - 13/Movies/Tarzan_-Son_Of_Man_Phil_Collins";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
-            string Video = "";
+            string Video = "C: /Users/56984/Desktop/Universidad/Progra/Proyecto/proyecto - equipo - 13/Movies/Tarzan_-Son_Of_Man_Phil_Collins";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             List<Songs> SongsMovie = new List<Songs>();
             SongsMovie.Add(song1);
             int Min = 0;
             Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, Rating, Trailer, Video, SongsMovie, Min);
-
+            movie1.Play();
         }
     }
 }
