@@ -18,7 +18,7 @@ namespace ProyectoEquipo13
 
         }
 
-        public void SearchTypeSongs(string type, string name)
+        public List<Songs> SearchTypeSongs(string type, string name)
         {
             List<Songs> show = new List<Songs>();
 
@@ -95,6 +95,7 @@ namespace ProyectoEquipo13
                     }
                 }
             }
+            return show;
 
 
         }
@@ -175,8 +176,30 @@ namespace ProyectoEquipo13
 
         }
 
-        public void Rate()
+        public void Rate(string type, string name, int rate)
         {
+            foreach (Movies movies in Files.AllMovies)
+            {
+                if (type == "Pelicula"|| type == "Película"|| type == "pelicula" || type == "película")
+                {
+                        int a = movies.Rating1 += rate;
+                        int b = a / 2;
+                        movies.Rating1 = b;
+                }
+            }
+            if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
+            {
+                foreach (Songs songs in Files.AllSongs)
+                {
+                    if(name == songs.Title1)
+                    {
+                        int a = songs.Rating1 += rate;
+                        int b = a / 2;
+                        songs.Rating1 = b;
+                    }
+                }
+            }
+
 
         }
 
