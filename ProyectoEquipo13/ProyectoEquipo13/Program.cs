@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +13,18 @@ namespace ProyectoEquipo13
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Prueba");
-            //Console.Read();
-            Album Album = new Album("Tarzan: An Original Walt Disney Records Soundtrack");
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("BaseDeDatos.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            List<Movies> AllMovies = (List<Movies>)formatter.Deserialize(stream);
+            List<Songs> AllSongs = (List<Songs>)formatter.Deserialize(stream);
+            List<Playlists> AllPlaylistsSongs = (List<Playlists>)formatter.Deserialize(stream);
+            List<Playlists> AllPlaylistsMovies = (List<Playlists>)formatter.Deserialize(stream);
+            List<User> AllUsers = (List<User>)formatter.Deserialize(stream);
+            stream.Close();
+
+        //Console.WriteLine("Prueba");
+        //Console.Read();
+        Album Album = new Album("Tarzan: An Original Walt Disney Records Soundtrack");
             string TitleS = "Son of man";
             char M = 'M';
             char F = 'F';
@@ -61,6 +73,15 @@ namespace ProyectoEquipo13
             int Min = 0;
             Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, Rating, Trailer, Video, SongsMovie, Min);
             movie1.Play();
+
+
+            Stream stream2 = new FileStream("MyFile.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream2, Files.AllMovies);
+            formatter.Serialize(stream2, Files.AllSongs);
+            formatter.Serialize(stream2, Files.AllPlaylistsMovies);
+            formatter.Serialize(stream2, Files.AllPlaylistsSongs);
+            formatter.Serialize(stream2, Files.AllUsers);
+            stream.Close();
         }
     }
 }
