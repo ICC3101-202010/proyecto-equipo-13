@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WMPLib;
 
 namespace ProyectoEquipo13
 {
@@ -20,13 +21,14 @@ namespace ProyectoEquipo13
         string Resolution;
         string Memory;
         int numReproductions;
-        double Rating;
+        List <double> Rating;
+        double RatingProm;
         string Trailer;
         string Video;
         List<Songs> SongsMovie;
         int Min;
 
-        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, double Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
             Title = this.Title;
             Director = this.Director;
@@ -41,6 +43,7 @@ namespace ProyectoEquipo13
             Memory = this.Memory;
             numReproductions = this.numReproductions;
             Rating = this.Rating;
+            RatingProm = this.RatingProm;
             Video = this.Video;
             Trailer = this.Trailer;
             SongsMovie = this.SongsMovie;
@@ -59,7 +62,8 @@ namespace ProyectoEquipo13
         public string Resolution1 { get => Resolution; set => Resolution = value; }
         public string Memory1 { get => Memory; set => Memory = value; }
         public int NumReproductions { get => numReproductions; set => numReproductions = value; }
-        public double Rating1 { get => Rating; set => Rating = value; }
+        public List<double> Rating1 { get => Rating; set => Rating = value; }
+        public double RatingProm1 { get => RatingProm; set => RatingProm = value; }
         public string Trailer1 { get => Trailer; set => Trailer = value; }
         public string Video1 { get => Video; set => Video = value; }
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }

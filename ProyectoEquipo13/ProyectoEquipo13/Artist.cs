@@ -8,15 +8,16 @@ namespace ProyectoEquipo13
 {
     public class Artist : Person
     {
-        private int numReproduction;
+        private int numReproduction = 0;
 
-        public Artist(string name, DateTime birthday, char genre) : base (name, birthday, genre)
+        public int NumReproduction { get => numReproduction; set => numReproduction = value; }
+
+        public Artist(string name, DateTime birthday, char genre, string link) : base (name, birthday, genre, link)
         {
             this.Name = name;
             this.Birthday = birthday;
             this.Genre = genre;
+            this.Link = link;
         }
-
-        //Implementar acción que sume numRepdroduction a Artist... no se bien dd puede ir... tal vez una interfaz en vez de que vaya a Movies o Song o algo
     }
 }

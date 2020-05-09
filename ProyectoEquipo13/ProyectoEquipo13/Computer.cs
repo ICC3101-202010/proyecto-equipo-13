@@ -99,16 +99,7 @@ namespace ProyectoEquipo13
                     }
                 }
             }
-            if (type == "Actor" || type == "actor")
-            {
-                foreach (Songs song in Files.AllSongs)
-                {
-                    if (song.Writer1.GetName() == name)
-                    {
-                        show.Add(song);
-                    }
-                }
-            }
+
             return show;
 
 
@@ -184,37 +175,39 @@ namespace ProyectoEquipo13
                     }
                 }
             }
-
-
             return show;
-
         }
 
-        public void Rate(string type, string name, double rate)
+        public void Rate(string type, string name, List<double> rate) //FALTA IF PARA SABER QUE PELICULA
         {
-            foreach (Movies movies in Files.AllMovies)
+            if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
-                if (type == "Pelicula"|| type == "Película"|| type == "pelicula" || type == "película")
+                foreach (Movies movies in Files.AllMovies)
                 {
-                        double a = movies.Rating1 += rate;
-                        double b = a / 2;
-                        movies.Rating1 = b;
-                }
-            }
-            if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
-            {
-                foreach (Songs songs in Files.AllSongs)
-                {
-                    if(name == songs.Title1)
+                    if (name == movies.Title1)
                     {
-                        double a = songs.Rating1 += rate;
-                        double b = a / 2;
-                        songs.Rating1 = b;
+                        double sum = rate.Sum();
+                        double value = (sum / rate.Count());
+                        movies.RatingProm1 = value;
                     }
                 }
             }
-
-
+            else if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
+            {
+                foreach (Songs songs in Files.AllSongs)
+                {
+                    if (name == songs.Title1)
+                    {
+                        double sum = rate.Sum();
+                        double value = (sum / rate.Count());
+                        songs.RatingProm1 = value;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("No se encontro referencia");
+            }
         }
 
         public void CreatePlaylist(string type, string name, bool privacidad)
@@ -229,7 +222,6 @@ namespace ProyectoEquipo13
                 Playlists playlists = new Playlists(name, privacidad, type);
                 Files.AllPlaylistsSongs.Add(playlists);
             }
-
         }
 
         public List<Movies> SeeTopMovies()
@@ -262,7 +254,6 @@ namespace ProyectoEquipo13
                 top.Add(cancionesorden[i]);
             }
             return top;
-
         }
     }
 }

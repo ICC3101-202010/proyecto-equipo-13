@@ -11,7 +11,7 @@ namespace ProyectoEquipo13
         protected int UserID;
         protected string UserName;
         protected string Email;
-        protected string Password;
+        protected string Password; 
         protected bool Privacy;
 
         public User(int userID, string userName, string email, string password, bool privacy)
@@ -29,7 +29,7 @@ namespace ProyectoEquipo13
             {
                 if ((Files.AllUsers[i].Email==email ) || (Files.AllUsers[i].UserName == username))
                 {
-                    Console.WriteLine("La cuenta no se puede crear, debido a que ya existe, o el mail usado ya esta usado");
+                    Console.WriteLine("La cuenta no se puede crear, debido a que ya existe, o el mail entregado ya está en uso");
                     return false;
                 }
                 else if (Files.AllUsers[i].Email != email || Files.AllUsers[i].UserName != username)

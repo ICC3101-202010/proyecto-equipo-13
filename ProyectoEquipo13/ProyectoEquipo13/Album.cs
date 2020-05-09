@@ -8,15 +8,14 @@ namespace ProyectoEquipo13
 {
     public class Album
     {
-        string Name;
-        public Album(string name)
-        {
-            this.Name = name;
+        private string Name;
+        private DateTime Year;
+        //private jpg Image;
+        private Artist Artist;
 
-        }
-        public string GetName()
-        {
-            return this.Name;
-        }
+        public string Name1 { get => Name; set => Name = value; }
+        public DateTime Year1 { get => Year; set => Year = value; }
+
+        public Artist Artist1 { get => Artist; set => Artist = value; }
     }
 }

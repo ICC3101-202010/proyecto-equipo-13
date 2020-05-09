@@ -8,22 +8,22 @@ namespace ProyectoEquipo13
 {
     public class Person
     {
-        protected string Name;
-        protected DateTime Birthday;
-        protected char Genre; //M o F
-        //Agregar más cosas para hacer el programa interesante??? --> tipo biografía mamá papá... nose
+        private string name;
+        private DateTime birthday;
+        private char genre; //M o F
+        private string link; //Link que deriva a IMDB
 
-        public Person(string name, DateTime birthday, char genre)
+        protected string Name { get => name; set => name = value; }
+        protected DateTime Birthday { get => birthday; set => birthday = value; }
+        protected char Genre { get => genre; set => genre = value; }
+        protected string Link { get => link; set => link = value; }
+
+        public Person(string name, DateTime birthday, char genre, string link)
         {
             this.Name = name;
             this.Birthday = birthday;
             this.Genre = genre;
+            this.Link = link;
         }
-        public string GetName()
-        {
-            return this.Name;
-        }
-
-
     }
 }
