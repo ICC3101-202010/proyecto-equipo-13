@@ -8,28 +8,14 @@ namespace ProyectoEquipo13
 {
     class Computer
     {
-        public Songs PlaySong(string name)
+        public void PlaySong(string name)
         {
-            foreach(Songs songs in Files.AllSongs)
-            {
-                if(name == songs.Title1)
-                {
-                    return songs;
-                }
-            }
-            return null;
+
         }
 
-        public Movies PlayMovie(string name)
+        public void PlayMovie(string name)
         {
-            foreach (Movies movies in Files.AllMovies)
-            {
-                if (name == movies.Title1)
-                {
-                    return movies;
-                }
-            }
-            return null;
+
         }
 
         public List<Songs> SearchTypeSongs(string type, string name)
@@ -63,7 +49,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Songs song in Files.AllSongs)
                 {
-                    if (song.Artist1.GetName() == name)
+                    if (song.Artist1.Name == name)
                     {
                         show.Add(song);
                     }
@@ -73,7 +59,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Songs song in Files.AllSongs)
                 {
-                    if (song.Album1.GetName() == name)
+                    if (song.Album1.Name1 == name)
                     {
                         show.Add(song);
                     }
@@ -83,7 +69,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Songs song in Files.AllSongs)
                 {
-                    if (song.Composer1.GetName() == name)
+                    if (song.Composer1.Name == name)
                     {
                         show.Add(song);
                     }
@@ -93,7 +79,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Songs song in Files.AllSongs)
                 {
-                    if (song.Writer1.GetName() == name)
+                    if (song.Writer1.Name == name)
                     {
                         show.Add(song);
                     }
@@ -123,7 +109,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Movies movies in Files.AllMovies)
                 {
-                    if (movies.Director1.GetName() == name)
+                    if (movies.Director1.Name== name)
                     {
                         show.Add(movies);
                     }
@@ -135,7 +121,7 @@ namespace ProyectoEquipo13
                 {
                     foreach (Person actor in movies.Actors1)
                     {
-                        if (actor.GetName() == name)
+                        if (actor.Name == name)
                         {
                             show.Add(movies);
                         }
@@ -146,7 +132,7 @@ namespace ProyectoEquipo13
             {
                 foreach (Movies movies in Files.AllMovies)
                 {
-                    if (movies.Writer1.GetName() == name)
+                    if (movies.Writer1.Name == name)
                     {
                         show.Add(movies);
                     }
@@ -222,6 +208,10 @@ namespace ProyectoEquipo13
                 Playlists playlists = new Playlists(name, privacidad, type);
                 Files.AllPlaylistsSongs.Add(playlists);
             }
+        }
+        public void CreateSmartPlaylist(string type,string criterio, string name, bool privacidad)
+        {
+
         }
 
         public List<Movies> SeeTopMovies()

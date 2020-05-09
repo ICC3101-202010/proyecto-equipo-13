@@ -17,5 +17,11 @@ namespace ProyectoEquipo13
         public DateTime Year1 { get => Year; set => Year = value; }
 
         public Artist Artist1 { get => Artist; set => Artist = value; }
+        public Album(string name, DateTime year, Artist artist)
+        {
+            this.Name = name;
+            this.Year = year;
+            this.Artist = artist;
+        }
     }
 }

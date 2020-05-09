@@ -13,7 +13,7 @@ namespace ProyectoEquipo13
         private char genre; //M o F
         private string link; //Link que deriva a IMDB
 
-        protected string Name { get => name; set => name = value; }
+        public string Name { get => name; set => name = value; }
         protected DateTime Birthday { get => birthday; set => birthday = value; }
         protected char Genre { get => genre; set => genre = value; }
         protected string Link { get => link; set => link = value; }
