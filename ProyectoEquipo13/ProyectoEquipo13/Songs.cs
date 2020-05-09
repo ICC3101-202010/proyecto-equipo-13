@@ -19,12 +19,12 @@ namespace ProyectoEquipo13
         string Resolution;
         string Memory;
         int numReproductions;
-        int Rating;
+        double Rating;
         string Music;
         int Min;
         Album Album;
 
-        public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, int Rating, string Music, int Min, Album Album)
+        public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, double Rating, string Music, int Min, Album Album)
         {
             Title = this.Title;
             Composer = this.Composer;
@@ -52,7 +52,7 @@ namespace ProyectoEquipo13
         public string Resolution1 { get => Resolution; set => Resolution = value; }
         public string Memory1 { get => Memory; set => Memory = value; }
         public int NumReproductions { get => numReproductions; set => numReproductions = value; }
-        public int Rating1 { get => Rating; set => Rating = value; }
+        public double Rating1 { get => Rating; set => Rating = value; }
         public string Music1 { get => Music; set => Music = value; }
         public int Min1 { get => Min; set => Min = value; }
         internal Album Album1 { get => Album; set => Album = value; }

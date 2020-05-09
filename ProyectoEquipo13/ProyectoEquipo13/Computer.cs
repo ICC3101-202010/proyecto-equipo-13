@@ -8,14 +8,28 @@ namespace ProyectoEquipo13
 {
     class Computer
     {
-        public void PlaySong()
+        public Songs PlaySong(string name)
         {
-
+            foreach(Songs songs in Files.AllSongs)
+            {
+                if(name == songs.Title1)
+                {
+                    return songs;
+                }
+            }
+            return null;
         }
 
-        public void PlayMovie()
+        public Movies PlayMovie(string name)
         {
-
+            foreach (Movies movies in Files.AllMovies)
+            {
+                if (name == movies.Title1)
+                {
+                    return movies;
+                }
+            }
+            return null;
         }
 
         public List<Songs> SearchTypeSongs(string type, string name)
@@ -176,14 +190,14 @@ namespace ProyectoEquipo13
 
         }
 
-        public void Rate(string type, string name, int rate)
+        public void Rate(string type, string name, double rate)
         {
             foreach (Movies movies in Files.AllMovies)
             {
                 if (type == "Pelicula"|| type == "Película"|| type == "pelicula" || type == "película")
                 {
-                        int a = movies.Rating1 += rate;
-                        int b = a / 2;
+                        double a = movies.Rating1 += rate;
+                        double b = a / 2;
                         movies.Rating1 = b;
                 }
             }
@@ -193,8 +207,8 @@ namespace ProyectoEquipo13
                 {
                     if(name == songs.Title1)
                     {
-                        int a = songs.Rating1 += rate;
-                        int b = a / 2;
+                        double a = songs.Rating1 += rate;
+                        double b = a / 2;
                         songs.Rating1 = b;
                     }
                 }
@@ -203,14 +217,28 @@ namespace ProyectoEquipo13
 
         }
 
-        public void CreatePlaylist()
+        public void CreatePlaylist(string type, string name, bool privacidad)
         {
+            if(type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
+            {
+                Playlists playlists = new Playlists(name, privacidad, type);
+                Files.AllPlaylistsMovies.Add(playlists);
+            }
+            if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
+            {
+                Playlists playlists = new Playlists(name, privacidad, type);
+                Files.AllPlaylistsSongs.Add(playlists);
+            }
 
         }
 
         public void SeeTopMovies()
         {
+            List<Songs> top = new List<Songs>();
+            foreach(Songs songs in Files.AllSongs)
+            {
 
+            }
         }
         public void SeeTopSong()
         {

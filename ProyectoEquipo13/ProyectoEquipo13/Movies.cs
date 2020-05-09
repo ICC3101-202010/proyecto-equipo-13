@@ -20,13 +20,13 @@ namespace ProyectoEquipo13
         string Resolution;
         string Memory;
         int numReproductions;
-        int Rating;
+        double Rating;
         string Trailer;
         string Video;
         List<Songs> SongsMovie;
         int Min;
 
-        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, int Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, double Rating,string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
             Title = this.Title;
             Director = this.Director;
@@ -59,7 +59,7 @@ namespace ProyectoEquipo13
         public string Resolution1 { get => Resolution; set => Resolution = value; }
         public string Memory1 { get => Memory; set => Memory = value; }
         public int NumReproductions { get => numReproductions; set => numReproductions = value; }
-        public int Rating1 { get => Rating; set => Rating = value; }
+        public double Rating1 { get => Rating; set => Rating = value; }
         public string Trailer1 { get => Trailer; set => Trailer = value; }
         public string Video1 { get => Video; set => Video = value; }
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }
