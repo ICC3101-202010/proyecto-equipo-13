@@ -232,16 +232,36 @@ namespace ProyectoEquipo13
 
         }
 
-        public void SeeTopMovies()
+        public List<Movies> SeeTopMovies()
+        {
+            List<Movies> top = new List<Movies>();
+            List<Movies> peliculas = new List<Movies>();
+            foreach (Movies movies in Files.AllMovies)
+            {
+                peliculas.Add(movies);
+            }
+            var peliculasorden = peliculas.OrderByDescending(songs => songs.Rating1).ToList();
+            for (int i = 0; i < 10; i++)
+            {
+                top.Add(peliculasorden[i]);
+            }
+            return top;
+
+        }
+        public List<Songs> SeeTopSong()
         {
             List<Songs> top = new List<Songs>();
-            foreach(Songs songs in Files.AllSongs)
+            List<Songs> canciones = new List<Songs>();
+            foreach (Songs songs in Files.AllSongs)
             {
-
+                canciones.Add(songs);
             }
-        }
-        public void SeeTopSong()
-        {
+            var cancionesorden = canciones.OrderByDescending(songs => songs.Rating1).ToList();
+            for (int i = 0; i < 10; i++)
+            {
+                top.Add(cancionesorden[i]);
+            }
+            return top;
 
         }
     }
