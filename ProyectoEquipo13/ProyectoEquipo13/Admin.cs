@@ -56,6 +56,32 @@ namespace ProyectoEquipo13
                 }
             }
             Files.AllMovies.Add(movie);
+            foreach (SmartPlaylist smart in Files.AllSmartPlaylistsSongs)
+            {
+                foreach (string categoria in movie.Categories1)
+                {
+                    if (categoria == smart.NameCriterio)
+                    {
+                        smart.Playlistmovie.Add(movie);
+                    }
+                }
+                if (movie.Director1.Name == smart.NameCriterio)
+                {
+                    smart.Playlistmovie.Add(movie);
+                }
+                foreach (Person actores in movie.Actors1)
+                {
+                    if (actores.Name == smart.NameCriterio)
+                    {
+                        smart.Playlistmovie.Add(movie);
+                    }
+                }
+                if (movie.Studio1 == smart.NameCriterio)
+                {
+                    smart.Playlistmovie.Add(movie);
+                }
+
+            }
             return true;
         }
     }
