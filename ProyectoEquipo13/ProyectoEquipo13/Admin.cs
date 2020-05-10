@@ -28,11 +28,22 @@ namespace ProyectoEquipo13
                 }
             }
             Files.AllSongs.Add(song);
-            return true;
             foreach (SmartPlaylist smart in Files.AllSmartPlaylistsSongs)
             {
+                foreach (string genero in song.Genre1)
+                {
+                    if (genero == smart.NameCriterio)
+                    {
+                        smart.Playlistsong.Add(song);
+                    }
+                }
+                if (song.Artist1.Name == smart.NameCriterio)
+                {
+                    smart.Playlistsong.Add(song);
+                }
 
             }
+            return true;
         }
 
         public bool AddMovie(Movies movie)

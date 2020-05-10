@@ -211,21 +211,21 @@ namespace ProyectoEquipo13
                 Files.AllPlaylistsSongs.Add(playlists);
             }
         }
-        public void CreateSmartPlaylist(string type,string criterio, string namecriterio, string name, bool privacidad)
+        public void CreateSmartPlaylist(string type, string namecriterio, string name, bool privacidad)
         {
             if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
-                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, criterio, namecriterio);
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
                 Files.AllSmartPlaylistsMovies.Add(smart);
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
-                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, criterio, namecriterio);
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
                 Files.AllSmartPlaylistsSongs.Add(smart);
             }
 
         }
-        //SmartPlaylist conexion con Admin
+        //SmartPlaylist conexion con Admin, sin usar
         public delegate void AddSongEventHandler(object source, EventArgs args);
         public event AddSongEventHandler AddedSong;
         protected virtual void OnAddedSong()
