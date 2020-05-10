@@ -8,7 +8,7 @@ namespace ProyectoEquipo13
 {
     public class Playlists
     {
-        private string Type;
+        protected string Type;
         protected string Name;
         protected bool Privacy;
         protected List<Songs> playlistsong = new List<Songs>();

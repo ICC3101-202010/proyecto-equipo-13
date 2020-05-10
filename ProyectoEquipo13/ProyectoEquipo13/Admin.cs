@@ -29,6 +29,10 @@ namespace ProyectoEquipo13
             }
             Files.AllSongs.Add(song);
             return true;
+            foreach (SmartPlaylist smart in Files.AllSmartPlaylistsSongs)
+            {
+
+            }
         }
 
         public bool AddMovie(Movies movie)
