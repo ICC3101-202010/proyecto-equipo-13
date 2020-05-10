@@ -8,9 +8,13 @@ namespace ProyectoEquipo13
 {
     public class User
     {
-        protected string UserName;
-        protected string Email;
-        protected string Password; 
+        private string userName;
+        private string email;
+        private string password;
+
+        public string UserName { get => userName; set => userName = value; }
+        public string Email { get => email; set => email = value; }
+        public string Password { get => password; set => password = value; }
 
         public User() { }
 

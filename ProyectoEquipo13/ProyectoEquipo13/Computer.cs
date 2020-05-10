@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ProyectoEquipo13
 {
@@ -381,7 +382,7 @@ namespace ProyectoEquipo13
             string result = Files.LogIn(usr, pswd);
             if (result == null)
             {
-                // Pedimos y cambiamos la contrasena
+                // Pedimos y cambiamos el usuario
                 Console.Write("Ingrese el nuevo nombre de usuario: ");
                 string newusername = Console.ReadLine();
                 Files.ChangeUserName(usr, newusername);
@@ -414,6 +415,70 @@ namespace ProyectoEquipo13
             Thread.Sleep(1500);
             Console.WriteLine("\nEl correo fue verificado correctamente\n");
             Thread.Sleep(1500);
+        }
+
+        public void UpgradeFree ()
+        {
+            // Pedimos todos los datos necesarios
+            Console.WriteLine("Ingresa tu nombre de usuario: ");
+            string usr = Console.ReadLine();
+            Console.WriteLine("Ingresa tu contrasena: ");
+            string pswd = Console.ReadLine();
+            // Intenta realizar el login, si retorna null se logeo correctamente,
+            // sino, retorna un string de error que se le muestra al usuario
+            string result = Files.LogIn(usr, pswd);
+            if (result == null)
+            {
+                for (int i = 0; i < Files.AllUsers.Count; i++) 
+                {
+                    if (Files.AllUsers[i][0] == usr && Files.AllUsers[i][2] == pswd)
+                    {
+                        Console.WriteLine("¿Desea que su usuario sea público o privado (que otros usuarios puedan acceder a sus fututas playlists o no)?");
+                        Console.WriteLine("(a) Público \n(b) Privado");
+                        string choice = Console.ReadLine();
+                        bool choice2 = new bool();
+                        if (choice == "a") 
+                        { 
+                            choice = "Premium";
+                            choice2 = true;
+                            Files.AllUsers[i][5] = choice;
+                            for (int j = 0; j < Files.Users.Count; j++)
+                            {
+                                if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
+                                {
+                                    Premium premium = new Premium(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
+                                    Files.Users.RemoveAt(j);
+                                    Files.Users.Insert(j, premium);
+                                }
+                            }
+                            Console.WriteLine("Su cuenta se ha modificado con éxito");
+                        }
+                        else if (choice == "b") 
+                        { 
+                            choice = "Premium";
+                            choice2 = false;
+                            Files.AllUsers[i][5] = choice;
+                            for (int j = 0; j < Files.Users.Count; j++)
+                            {
+                                if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
+                                {
+                                    Premium premium = new Premium(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
+                                    Files.Users.RemoveAt(j);
+                                    Files.Users.Insert(j, premium);
+                                }
+                            }
+                            Console.WriteLine("Su cuenta se ha modificado con éxito");
+                        }
+                        else { Console.WriteLine("¡ERROR! El tipo seleccionado no existe!"); }                        
+                    }
+                }
+
+            }
+            else
+            {
+                // Mostramos el error
+                Console.WriteLine("[!] ERROR: " + result + " o simplemente no existe\n");
+            }
         }
     }
 }
