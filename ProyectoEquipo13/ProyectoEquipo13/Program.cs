@@ -102,7 +102,7 @@ namespace ProyectoEquipo13
             while (exec)
             {
                 // Pedimos al usuario una de las opciones
-                string chosen = ShowOptions(new List<string>() { "Registrarse", "Cambiar contrasena", "Cambiar nombre de usuario", "Salir" });
+                string chosen = ShowOptions(new List<string>() { "Registrarse", "Cambiar contrasena", "Cambiar nombre de usuario","Upgrade cuenta Free", "Salir" });
                 switch (chosen)
                 {
                     case "Registrarse":
@@ -118,6 +118,10 @@ namespace ProyectoEquipo13
                     case "Cambiar nombre de Usuario":
                         Console.Clear();
                         computer.ChangeUserName();
+                        break;
+                    case "Upgrade ceunta Free":
+                        Console.Clear();
+                        computer.UpgradeFree();
                         break;
                     case "Salir":
                         exec = false;
