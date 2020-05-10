@@ -7,11 +7,14 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoEquipo13
 {
+    
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             IFormatter formatter = new BinaryFormatter();
@@ -152,5 +155,14 @@ namespace ProyectoEquipo13
             }
             return options[Convert.ToInt16(Console.ReadLine())];
         }
+        // Reproductor
+
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        PlayMovie pM = new PlayMovie();
+        string t = @"Videos\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+        string r = pM.URL(t, pM);
+        
+        Application.Run(form);
     }
 }
