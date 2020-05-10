@@ -10,14 +10,12 @@ namespace ProyectoEquipo13
     {
         private string Type;
 
-        public Admin(int userID, string userName, string email, string password, bool privacy) : base(userID, userName, email, password, privacy)
+        public Admin(string userName, string email, string password, bool privacy) : base(userName, email, password)
         {
             this.Type = "Admin";
-            this.UserID = userID;
             this.UserName = userName;
             this.Email = email;
             this.Password = password;
-            this.Privacy = privacy;
         }
 
         public bool AddSong(Songs song)

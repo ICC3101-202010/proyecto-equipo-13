@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    interface ISubscribing
+    public class ChangePasswordEventArgs : EventArgs
     {
-        void Subscribing(User user, int userid, string username, string email, string password, bool privacy);
+        public string Email { get; set; }
+        public string Username { get; set; }
     }
 }

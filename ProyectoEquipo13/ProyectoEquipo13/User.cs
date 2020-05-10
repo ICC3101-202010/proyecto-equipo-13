@@ -8,58 +8,44 @@ namespace ProyectoEquipo13
 {
     public class User
     {
-        protected int UserID;
         protected string UserName;
         protected string Email;
         protected string Password; 
-        protected bool Privacy;
 
-        public User(int userID, string userName, string email, string password, bool privacy)
+        public User() { }
+
+        public User(string userName, string email, string password)
         {
-            this.UserID = userID;
             this.UserName = userName;
             this.Email = email;
             this.Password = password;
-            this.Privacy = privacy;
         }
 
-        public bool CreateAccount(string type, int userid, string username, string email, string password, bool privacy)   
+        //1.- Definir el delegate
+        public delegate void VerifiedEmailEventHandler(object source, EventArgs args);
+        //2.- Definir el evento basado en el delegate anterior
+        public event VerifiedEmailEventHandler EmailVerified;
+        //3.- Disparar el evento
+        protected virtual void OnEmailVerified()
         {
-            for (int i = 0; i < Files.AllUsers.Count ; i++)
+            EmailVerified(this, new EventArgs());
+        }
+
+        public void OnEmailSent(object source, EventArgs args)
+        {
+
+            Console.Write("¿Quiere revisar su correo? (si)(no)\n");
+            while (true)
             {
-                if ((Files.AllUsers[i].Email==email ) || (Files.AllUsers[i].UserName == username))
+                string option = Console.ReadLine();
+                if (option == "si")
                 {
-                    Console.WriteLine("La cuenta no se puede crear, debido a que ya existe, o el mail entregado ya está en uso");
-                    return false;
+                    EmailVerified(source, args);
+                    break;
                 }
-                else if (Files.AllUsers[i].Email != email || Files.AllUsers[i].UserName != username)
-                {
-                    if (type == "Admin") 
-                    { 
-                    Admin admin = new Admin(userid, username, email, password, privacy);
-                    Files.AllUsers.Add(admin);
-                    }
-                    else if (type == "Premium")
-                    {
-                        Premium premium = new Premium(userid, username, email, password, privacy);
-                        Files.AllUsers.Add(premium);
-                    }
-                    else if (type == "Free")
-                    {
-                        Free free = new Free(userid, username, email, password, privacy);
-                        Files.AllUsers.Add(free);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Tipo seleccionado no existe");
-                        return false;
-                    }
-                    Console.WriteLine("La cuenta ha sido creada correctamente");
-                    return true;
-                }
+                else if (option == "no") { break; }
+                else { Console.WriteLine("La opción que selecciono no es válida seleccione (si) o (no)"); }
             }
-            Console.WriteLine("La opción que seleccionó no es válida");
-            return false;
         }
     }
 }

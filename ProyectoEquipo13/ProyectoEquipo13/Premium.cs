@@ -6,25 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Premium : User, ISubscribing
+    class Premium : User
     {
         private string Type;
+        private bool Privacy;
         private List<Playlists> MyPlaylist;
         private List<User> Follows;
 
-        public Premium(int userID, string userName, string email, string password, bool privacy) : base(userID, userName, email, password, privacy)
+        public Premium(string userName, string email, string password, bool privacy) : base(userName, email, password)
         {
             this.Type = "Premium";
-            this.UserID = userID;
             this.UserName = userName;
             this.Email = email;
             this.Password = password;
             this.Privacy = privacy;
-        }
-
-        public void Subscribing(User user,int userid, string username, string email, string password, bool privacy) 
-        {
-            user.CreateAccount("Premium",userid, username, email, password, privacy);
         }
 
         //Playlist determinada favoritos
