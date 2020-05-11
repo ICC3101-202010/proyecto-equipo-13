@@ -88,7 +88,7 @@ namespace ProyectoEquipo13
                 Console.ReadLine();
                 player.Stop();
             }
-            else
+            else if (this.Type==".mp3")
             {
                 WindowsMediaPlayer player = new WindowsMediaPlayer();
                 player.URL = D;

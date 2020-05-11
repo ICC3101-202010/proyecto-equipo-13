@@ -22,13 +22,13 @@ namespace ProyectoEquipo13
             Console.WriteLine("Seleccione que desea hacer");
             Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña \n(d) Cambiar nombre de usuario \n(e) Cambia tu cuenta de Free a Premium");
             string option = Console.ReadLine();
-            computer.Registered += mailSender.OnRegistered;
-            computer.PasswordChanged += mailSender.OnPasswordChanged;
-            computer.UserNameChanged += mailSender.OnUserNameChanged;
-            mailSender.EmailSent += user.OnEmailSent;
-            user.EmailVerified += computer.OnEmailVerified;
             if (option == "a")
             {
+                computer.Registered += mailSender.OnRegistered;
+                computer.PasswordChanged += mailSender.OnPasswordChanged;
+                computer.UserNameChanged += mailSender.OnUserNameChanged;
+                mailSender.EmailSent += user.OnEmailSent;
+                user.EmailVerified += computer.OnEmailVerified;
                 Console.WriteLine("Seleccione su Usuario:");
                 string usrname = Console.ReadLine();
                 Console.WriteLine("seleccione su Contraseña");
@@ -56,7 +56,6 @@ namespace ProyectoEquipo13
                 bool option2 = computer.Register();
                 //Suponiendo que el mail si debería haber llegado
                 if (option2 == true) { user.OnEmailSent(new object(), new EventArgs()); }
-                Console1.Account(computer, user, mailSender);
             }
             else if (option == "c")
             {
@@ -76,7 +75,6 @@ namespace ProyectoEquipo13
             else
             {
                 Console.WriteLine("La opción que seleccionó no es válida");
-                Console1.Account(computer, user, mailSender);
             }
             Thread.Sleep(2000);
             Console.Clear();
