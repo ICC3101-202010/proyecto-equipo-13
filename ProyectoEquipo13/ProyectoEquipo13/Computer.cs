@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace ProyectoEquipo13
 {
-    class Computer
+    public class Computer
     {
         public void PlaySong(string name)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class MailSender
+    public class MailSender
     {
         public void OnRegistered(object source, RegisterEventArgs e)
         {

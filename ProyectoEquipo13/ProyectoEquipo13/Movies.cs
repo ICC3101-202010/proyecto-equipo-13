@@ -81,6 +81,10 @@ namespace ProyectoEquipo13
             PlayMovie play = new PlayMovie();
             play.axWindowsMediaPlayer(Trailer1);
         }
+        public void MovieInformation()
+        {
+            
+        }
     }
 }
  

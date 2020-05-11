@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class ChangeUserNameEventArgs
+    public class ChangeUserNameEventArgs
     {
         public string Email { get; set; }
         public string Username { get; set; }

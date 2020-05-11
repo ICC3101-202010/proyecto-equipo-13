@@ -82,57 +82,9 @@ namespace ProyectoEquipo13
             //Creación Usuario + Cambio de Contraseña + Cambio nombre Usuario
 
             // Creamos todos los objetos necesarios
-            Computer computer = new Computer();
-            MailSender mailSender = new MailSender();
-            User user = new User();
-
-            //Suscribir los que escuchan los eventos
-            // Notar que para poder realizar las suscripciones es necesario tener instancias de las clases, y que los parametros
-            // del evento y del metodo que se le suscribe deben ser igual (object y eventargs)
-            //1- Suscribir OnRegistrado de mailSender para que escuche el evento Registrado enviado por computer
-            computer.Registered += mailSender.OnRegistered;
-            //2- Suscribir OnCambiadaContrasena de mailSender para que escuche el evento CambiadaContrasena enviado por computer
-            computer.PasswordChanged += mailSender.OnPasswordChanged;
-            //3- Suscribir OnCambiadoNombreUsuario de mailSender para que escuche el evento CambiadoNombreUsuario enviado por computer
-            computer.UserNameChanged += mailSender.OnUserNameChanged;
-            //4- Suscribir OnEmailSent de User al evento EmailSent de MailSender
-            mailSender.EmailSent += user.OnEmailSent;
-            //5- Suscribir OnEmailVerified de Server al evento EmailVerified de User
-            user.EmailVerified += computer.OnEmailVerified;
-
-            // Controla la ejecucion mientras el usuario no quiera salir
-            bool exec = true;
-            while (exec)
-            {
-                // Pedimos al usuario una de las opciones
-                string chosen = ShowOptions(new List<string>() { "Registrarse", "Cambiar contrasena", "Cambiar nombre de usuario","Upgrade cuenta Free", "Salir" });
-                switch (chosen)
-                {
-                    case "Registrarse":
-                        Console.Clear();
-                        bool option = computer.Register();
-                        //Suponiendo que el mail si debería haber llegado
-                        if (option == true) { user.OnEmailSent(new object(), new EventArgs()); }
-                        break;
-                    case "Cambiar contrasena":
-                        Console.Clear();
-                        computer.ChangePassword();
-                        break;
-                    case "Cambiar nombre de Usuario":
-                        Console.Clear();
-                        computer.ChangeUserName();
-                        break;
-                    case "Upgrade ceunta Free":
-                        Console.Clear();
-                        computer.UpgradeFree();
-                        break;
-                    case "Salir":
-                        exec = false;
-                        break;
-                }
-                Thread.Sleep(2000);
-                Console.Clear();
-            }
+            //Computer computer = new Computer();
+            //MailSender mailSender = new MailSender();
+            //User user = new User();
 
             //Stream stream2 = new FileStream("MyFile.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             //formatter.Serialize(stream2, Files.AllMovies);
@@ -150,21 +102,6 @@ namespace ProyectoEquipo13
             string r = pM.URL(t, pM);
 
             Application.Run(pM);
-        }
-
-        // Metodo para mostrar las opciones posibles
-        private static string ShowOptions(List<string> options)
-        {
-            int i = 0;
-            Console.WriteLine("\n\nSelecciona una opcion:");
-            foreach (string option in options)
-            {
-                Console.WriteLine(Convert.ToString(i) + ". " + option);
-                i += 1;
-            }
-            return options[Convert.ToInt16(Console.ReadLine())];
-
-            
         }
     }
 }
