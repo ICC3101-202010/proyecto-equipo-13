@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WMPLib;
+
 
 namespace ProyectoEquipo13
 {
@@ -46,7 +48,7 @@ namespace ProyectoEquipo13
                 }
                 else
                 {
-                    Console1.Account(computer, user, mailSender);
+                    Console.WriteLine("\nNo es posible iniciar sesión, la cuenta no existe o se equivoco al escribir usuario y/o contraseña\n");
                 }
             }
             else if (option == "b")
@@ -60,19 +62,16 @@ namespace ProyectoEquipo13
             {
                 Console.Clear();
                 computer.ChangePassword();
-                Console1.Account(computer, user, mailSender);
             }
             else if (option == "d")
             {
                 Console.Clear();
                 computer.ChangeUserName();
-                Console1.Account(computer, user, mailSender);
             }
             else if (option == "e")
             {
                 Console.Clear();
                 computer.UpgradeFree();
-                Console1.Account(computer, user, mailSender);
             }
             else
             {

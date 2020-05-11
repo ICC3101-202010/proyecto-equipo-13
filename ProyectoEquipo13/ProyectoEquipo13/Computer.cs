@@ -100,6 +100,7 @@ namespace ProyectoEquipo13
 
 
         }
+
         public List<Movies> SearchTypeMovies(string type, string name)
         {
             List<Movies> show = new List<Movies>();
@@ -222,6 +223,7 @@ namespace ProyectoEquipo13
             }
             return null;
         }
+
         public SmartPlaylist CreateSmartPlaylist(string type, string criterio, string namecriterio, string name, bool privacidad)
         {
             if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
@@ -237,6 +239,7 @@ namespace ProyectoEquipo13
             return null;
 
         }
+       
         //SmartPlaylist conexion con Admin, sin usar
         public delegate void AddSongEventHandler(object source, EventArgs args);
         public event AddSongEventHandler AddedSong;
@@ -264,6 +267,7 @@ namespace ProyectoEquipo13
             return top;
 
         }
+
         public List<Songs> SeeTopSong()
         {
             List<Songs> top = new List<Songs>();
@@ -319,9 +323,9 @@ namespace ProyectoEquipo13
         public delegate void ChangeUserNameEventHandler(object source, ChangeUserNameEventArgs args);
         // Paso 2: Creamos el evento que se engatilla cuando se cambia el nombre de Usuario
         public event ChangeUserNameEventHandler UserNameChanged;
-        // Paso 3: Publicamos el evento. Notar que cuando se quiere engatillar el evento, se llama OnPasswordChanged(). 
+        // Paso 3: Publicamos el evento. Notar que cuando se quiere engatillar el evento, se llama OnUserNameChanged(). 
         // Por definicion, debe ser protected virtual. Los parametros que recibe son los necesarios para crear una instancia
-        // de la clase ChangePasswordEventArgs
+        // de la clase ChangeUserNameEventArgs
         protected virtual void OnUserNameChanged(string username2, string email)
         {
             if (UserNameChanged != null)
@@ -341,7 +345,7 @@ namespace ProyectoEquipo13
             Console.Write("Contraseña: ");
             string psswd = Console.ReadLine();
             Console.Write("Seleccione que tipo de usuario quiere ser:");
-            Console.WriteLine("(a) Premium \n(b) Free");
+            Console.WriteLine("\n(a) Premium \n(b) Free");
             string type = Console.ReadLine();
             // Genera el link de verificacion para el usuario
             if (type == "a") 
@@ -354,7 +358,7 @@ namespace ProyectoEquipo13
                 else { Console.WriteLine("¡ERROR! El tipo seleccionado no existe!"); return false; }
             }
             else if (type == "b") { type = "Free"; }
-            else if (type != "b" && type != "a") { Console.WriteLine("¡ERROR! El tipo de usuario seleccionado no existe!"); return false; }
+            else { Console.WriteLine("¡ERROR! El tipo de usuario seleccionado no existe!"); return false; }
             string verificationLink = GenerateLink(usr);
             // Intenta agregar el usuario a la bdd. Si retorna null, se registro correctamente,
             // sino, retorna un string de error, que es el que se muestra al usuario
@@ -513,6 +517,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("[!] ERROR: " + result + " o simplemente no existe\n");
             }
         }
+
         public void AddQueue(Songs songs)
         {
             List<Songs> cola = new List<Songs>();

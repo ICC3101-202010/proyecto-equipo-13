@@ -7,6 +7,7 @@ using WMPLib;
 
 namespace ProyectoEquipo13
 {
+    [Serializable]
     public class Movies
     {
         string Title;

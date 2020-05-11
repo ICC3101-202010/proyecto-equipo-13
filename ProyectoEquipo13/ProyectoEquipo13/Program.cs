@@ -17,13 +17,13 @@ namespace ProyectoEquipo13
         [STAThread]
         static void Main(string[] args)
         {
-            //IFormatter formatter = new BinaryFormatter();
+            IFormatter formatter = new BinaryFormatter();
             //Stream stream = new FileStream("BaseDeDatos.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
-            //List<Movies> AllMovies = (List<Movies>)formatter.Deserialize(stream);
-            //List<Songs> AllSongs = (List<Songs>)formatter.Deserialize(stream);
-            //List<Playlists> AllPlaylistsSongs = (List<Playlists>)formatter.Deserialize(stream);
-            //List<Playlists> AllPlaylistsMovies = (List<Playlists>)formatter.Deserialize(stream);
-            //List<User> AllUsers = (List<User>)formatter.Deserialize(stream);
+            //Files.AllMovies = (List<Movies>)formatter.Deserialize(stream);               
+            //Files.AllSongs = (List<Songs>)formatter.Deserialize(stream);
+            //Files.AllPlaylistsSongs = (List<Playlists>)formatter.Deserialize(stream);
+            //Files.AllPlaylistsMovies = (List<Playlists>)formatter.Deserialize(stream);
+            //Files.Users = (List<User>)formatter.Deserialize(stream);
             //stream.Close();
 
             Computer computer = new Computer();
@@ -38,7 +38,10 @@ namespace ProyectoEquipo13
                 string desition = Console.ReadLine();
                 if (desition == "a")
                 {
-                    User userlogin = Console1.Account(computer, emptyuser, mailSender);
+                    while (true)
+                    {
+                        User userlogin = Console1.Account(computer, emptyuser, mailSender);
+                    }
                     while (true)
                     {
                         Console.Clear();
@@ -91,13 +94,13 @@ namespace ProyectoEquipo13
             }
             
 
-            //Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
-            //formatter.Serialize(stream2, Files.AllMovies);
-            //formatter.Serialize(stream2, Files.AllSongs);
-            //formatter.Serialize(stream2, Files.AllPlaylistsMovies);
-            //formatter.Serialize(stream2, Files.AllPlaylistsSongs);
-            //formatter.Serialize(stream2, Files.AllUsers);
-            //stream2.Close();
+            Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream2, Files.AllMovies);
+            formatter.Serialize(stream2, Files.AllSongs);
+            formatter.Serialize(stream2, Files.AllPlaylistsMovies);
+            formatter.Serialize(stream2, Files.AllPlaylistsSongs);
+            formatter.Serialize(stream2, Files.Users);
+            stream2.Close();
             // Reproductor
 
             //Application.EnableVisualStyles();
