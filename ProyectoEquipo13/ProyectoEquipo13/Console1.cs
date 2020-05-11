@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Console1
-    {
+    public class Console1
+    { 
+        Console.ReadLine()
     }
 }

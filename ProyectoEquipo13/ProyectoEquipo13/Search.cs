@@ -72,12 +72,22 @@ namespace ProyectoEquipo13
                 }
                 else
                 {
-                    Console.WriteLine("No se encontraron cacniones con los criterios utilizados en su búsqueda");
+                    Console.WriteLine("No se encontraron canciones con los criterios utilizados en su búsqueda");
                 }
             }
             else if (option == "c")
             {
-
+                Console.WriteLine("\nSeleccione la película de donde quiere sacar la lista de canciones:");
+                string movietitle = Console.ReadLine();
+                List<Songs> songs = QueryMovieSong(movietitle);
+                if (songs.Count() !=0 )
+                {
+                    SeeNamesSongs(songs);
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró la película o la película buscada no tiene canciones involucradas");
+                }
             }
             else
             {

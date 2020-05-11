@@ -51,7 +51,7 @@
     <Compile Include="ChangePasswordEventArgs.cs" />
     <Compile Include="ChangeUserNameEventArgs.cs" />
     <Compile Include="Computer.cs" />
-    <Compile Include="Console.cs" />
+    <Compile Include="Console1.cs" />
     <Compile Include="Files.cs" />
     <Compile Include="Free.cs" />
     <Compile Include="MailSender.cs" />
