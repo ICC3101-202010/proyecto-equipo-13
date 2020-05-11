@@ -481,7 +481,7 @@ namespace ProyectoEquipo13
                             {
                                 if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
                                 {
-                                    Premium premium = new Premium(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
+                                    User premium = new User(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
                                     Files.Users.RemoveAt(j);
                                     Files.Users.Insert(j, premium);
                                 }
@@ -497,7 +497,7 @@ namespace ProyectoEquipo13
                             {
                                 if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
                                 {
-                                    Premium premium = new Premium(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
+                                    User premium = new User(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
                                     Files.Users.RemoveAt(j);
                                     Files.Users.Insert(j, premium);
                                 }

@@ -43,7 +43,7 @@ namespace ProyectoEquipo13
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             PlayMovie pM = new PlayMovie();
-            string t = @"Movies\Tarzan_-Son_Of_Man_Phil_Collins";
+            string t = @"Songs\Tarzan_-Son_Of_Man_Phil_Collins.mp3";
             pM.Generico();
             pM.URL(t);
             Application.Run(pM);
