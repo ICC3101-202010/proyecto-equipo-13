@@ -21,11 +21,11 @@ namespace ProyectoEquipo13
 
         }
 
-        public void Searcher()
+        public void Searcher(User user)
         {
             Console.Clear();
             Console.WriteLine("El buscador trabaja bastante específico (Casa es diferente que casa), por lo que lo que sabe preocupese de escribirlo de manera correcta.\nAdemás si es que hay algúna información que no sabe, simplemente seleccione ENTER (si pone algo que no sabe el buscador usara ese cirterio y probablemetne no encuentre coincidencias");
-            Search.Searching();
+            Search.Searching(this, user);
         }
 
         public List<Songs> SearchTypeSongs(string type, string name)
@@ -282,6 +282,7 @@ namespace ProyectoEquipo13
             return top;
         }
 
+        
         //Parte Usuario
 
         // Paso 1: Creamos el delegate para el evento del registro

@@ -61,16 +61,34 @@ namespace ProyectoEquipo13
         public void Generico()
         {
             string filePath = SearchForFile(@"C:\", x => Path.GetFileName(x) == "git.txt");
-            string j = filePath.TrimEnd('/');
-            j = j.TrimEnd('t');
-            j = j.TrimEnd('x');
-            j = j.TrimEnd('t');
-            j = j.TrimEnd('.');
-            j = j.TrimEnd('t');
-            j = j.TrimEnd('i');
-            j = j.TrimEnd('g');
-            j = j.TrimEnd('/');
-            generic = j;
+            if (filePath != null)
+            {
+                string j = filePath.TrimEnd('/');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('x');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('.');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('i');
+                j = j.TrimEnd('g');
+                j = j.TrimEnd('/');
+                generic = j;
+            }
+            else if (filePath == null)
+            {
+                string filePath2 = SearchForFile(@"D:\", x => Path.GetFileName(x) == "git.txt");
+                string j = filePath2.TrimEnd('/');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('x');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('.');
+                j = j.TrimEnd('t');
+                j = j.TrimEnd('i');
+                j = j.TrimEnd('g');
+                j = j.TrimEnd('/');
+                generic = j;
+            }
+            
         }
         public void URL(string t)
         {

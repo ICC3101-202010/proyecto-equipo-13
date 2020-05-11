@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ namespace ProyectoEquipo13
 {
     static class Search
     {
-        public static void Searching()
+        public static void Searching(Computer computer, User user)
         {
             Console.WriteLine("\nSeleccione que desea buscar:");
             Console.WriteLine("\n(a) Películas\n(b) Canciones \n(c) Lista de Canciones de una Película");
@@ -39,7 +40,7 @@ namespace ProyectoEquipo13
                 List<Movies> movies7 = QueryNumRep(movies6, numrep);
                 if (movies7.Count != 0)
                 {
-                    SeeNamesMovies(movies7);
+                    //SeeNamesMovies(movies7, user, computer);
                 }
                 else
                 {
@@ -68,7 +69,7 @@ namespace ProyectoEquipo13
                 List<Songs> songs6 = QueryAlbumS(songs5,album);
                 if (songs6.Count != 0)
                 {
-                    SeeNamesSongs(songs6);
+                    //SeeNamesSongs(songs6, user, computer);
                 }
                 else
                 {
@@ -82,7 +83,7 @@ namespace ProyectoEquipo13
                 List<Songs> songs = QueryMovieSong(movietitle);
                 if (songs.Count() !=0 )
                 {
-                    SeeNamesSongs(songs);
+                    //SeeNamesSongs(songs, user, computer);
                 }
                 else
                 {
@@ -494,23 +495,103 @@ namespace ProyectoEquipo13
             }
         }
 
-        static void SeeNamesMovies(List<Movies> movies)
+        static void SeeNamesMovies(List<Movies> movies, Premium userlogin, Computer computer)
         {
             Console.WriteLine("\nLas películas encontradas son:\n");
             for (int i = 0; i < movies.Count; i++)
             {
-                Console.WriteLine(movies[i].Title1);
+                Console.WriteLine("-"+movies[i].Title1);
                 //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
+            }
+            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");
+            Console.WriteLine("(si)\n(no)");
+            string option = Console.ReadLine();
+            if (option == "si")
+            {
+                Console1.SeeMoviesSearch(computer, userlogin, movies);
+            }
+            else if (option == "no")
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("La opción seleccionada no es válida");
             }
         }
 
-        static void SeeNamesSongs(List<Songs> songs)
+        static void SeeNamesMovies(List<Movies> movies, Free userlogin, Computer computer)
+        {
+            Console.WriteLine("\nLas películas encontradas son:\n");
+            for (int i = 0; i < movies.Count; i++)
+            {
+                Console.WriteLine("-" + movies[i].Title1);
+                //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
+            }
+            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");
+            Console.WriteLine("(si)\n(no)");
+            string option = Console.ReadLine();
+            if (option == "si")
+            {
+                Console1.SeeMoviesSearch(computer, userlogin, movies);
+            }
+            else if (option == "no")
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("La opción seleccionada no es válida");
+            }
+        }
+
+        static void SeeNamesSongs(List<Songs> songs, Premium userlogin, Computer computer)
         {
             Console.WriteLine("\nLas canciones encontradas son:\n");
             for (int i = 0; i < songs.Count; i++)
             {
                 Console.WriteLine(songs[i].Title1);
                 //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
+            }
+            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");
+            Console.WriteLine("(si)\n(no)");
+            string option = Console.ReadLine();
+            if (option == "si")
+            {
+                Console1.SeeSongsSearch(computer, userlogin, songs);
+            }
+            else if (option == "no")
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("La opción seleccionada no es válida");
+            }
+        }
+
+        static void SeeNamesSongs(List<Songs> songs, Free userlogin, Computer computer)
+        {
+            Console.WriteLine("\nLas canciones encontradas son:\n");
+            for (int i = 0; i < songs.Count; i++)
+            {
+                Console.WriteLine(songs[i].Title1);
+                //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
+            }
+            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");
+            Console.WriteLine("(si)\n(no)");
+            string option = Console.ReadLine();
+            if (option == "si")
+            {
+                Console1.SeeSongsSearch(computer, userlogin, songs);
+            }
+            else if (option == "no")
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("La opción seleccionada no es válida");
             }
         }
     }
