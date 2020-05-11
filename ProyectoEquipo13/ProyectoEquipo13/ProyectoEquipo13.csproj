@@ -48,7 +48,6 @@
     <Compile Include="Album.cs" />
     <Compile Include="Artist.cs" />
     <Compile Include="ChangePasswordEventArgs.cs" />
-    <Compile Include="ChangeUserNameEventArgs.cs" />
     <Compile Include="Computer.cs" />
     <Compile Include="Console1.cs" />
     <Compile Include="Files.cs" />

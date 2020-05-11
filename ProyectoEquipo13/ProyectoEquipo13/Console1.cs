@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -18,17 +19,12 @@ namespace ProyectoEquipo13
         }
 
         public static User Account(Computer computer, User user, MailSender mailSender)
-        {
+        {   
             Console.WriteLine("Seleccione que desea hacer");
-            Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña \n(d) Cambiar nombre de usuario \n(e) Cambia tu cuenta de Free a Premium");
+            Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña\n(d) Cambia tu cuenta de Free a Premium");
             string option = Console.ReadLine();
             if (option == "a")
             {
-                computer.Registered += mailSender.OnRegistered;
-                computer.PasswordChanged += mailSender.OnPasswordChanged;
-                computer.UserNameChanged += mailSender.OnUserNameChanged;
-                mailSender.EmailSent += user.OnEmailSent;
-                user.EmailVerified += computer.OnEmailVerified;
                 Console.WriteLine("Seleccione su Usuario:");
                 string usrname = Console.ReadLine();
                 Console.WriteLine("seleccione su Contraseña");
@@ -49,6 +45,9 @@ namespace ProyectoEquipo13
                 else
                 {
                     Console.WriteLine("\nNo es posible iniciar sesión, la cuenta no existe o se equivoco al escribir usuario y/o contraseña\n");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                    Account(computer, user, mailSender);
                 }
             }
             else if (option == "b")
@@ -56,25 +55,26 @@ namespace ProyectoEquipo13
                 bool option2 = computer.Register();
                 //Suponiendo que el mail si debería haber llegado
                 if (option2 == true) { user.OnEmailSent(new object(), new EventArgs()); }
+                Console.Clear();
+                Account(computer, user, mailSender);
             }
             else if (option == "c")
             {
                 Console.Clear();
                 computer.ChangePassword();
+                Account(computer, user, mailSender);
             }
             else if (option == "d")
             {
                 Console.Clear();
-                computer.ChangeUserName();
-            }
-            else if (option == "e")
-            {
-                Console.Clear();
                 computer.UpgradeFree();
+                Console.Clear();
+                Account(computer, user, mailSender);
             }
             else
             {
                 Console.WriteLine("La opción que seleccionó no es válida");
+                Account(computer, user, mailSender);
             }
             Thread.Sleep(2000);
             Console.Clear();

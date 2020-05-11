@@ -23,13 +23,6 @@ namespace ProyectoEquipo13
             Thread.Sleep(2000);
         }
 
-        public void OnUserNameChanged(object source, ChangeUserNameEventArgs e)
-        {
-            Thread.Sleep(2000);
-            Console.WriteLine($"\nCorreo enviado a {e.Email}:  \n Te notificamos que el nombre de usuario de tu cuenta Netfy ha sido cambiada a {e.Username}. \n");
-            Thread.Sleep(2000);
-        }
-
         //1.- Definir el delegate
         public delegate void SentEmailEventHandler(object source, EventArgs args);
         //2.- Definir el evento basado en el delegate anterior

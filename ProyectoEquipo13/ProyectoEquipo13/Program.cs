@@ -37,16 +37,18 @@ namespace ProyectoEquipo13
                 string desition = Console.ReadLine();
                 if (desition == "a")
                 {
-                    User userlogin = null;
-                    while (userlogin == null)
-                    {
-                        userlogin = Console1.Account(computer, emptyuser, mailSender);
-                    }
+                    computer.Registered += mailSender.OnRegistered;
+                    computer.PasswordChanged += mailSender.OnPasswordChanged;
+                    mailSender.EmailSent += emptyuser.OnEmailSent;
+                    emptyuser.EmailVerified += computer.OnEmailVerified;
+
+                    User userlogin = Console1.Account(computer, emptyuser, mailSender);
+                    
                     while (true)
                     {
                         Console.Clear();
                         Console1.SecondMessage(computer);
-                        Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d)Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
+                        Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
                         string option = Console.ReadLine();
                         if (option == "a")
                         {
@@ -92,6 +94,8 @@ namespace ProyectoEquipo13
                     Console.WriteLine("\nLa opción que seleccionó no es válida, por favor seleccione una que si lo sea\n");
                 }
             }
+            //Console.WriteLine("Prueba");
+            //Console.Read();
             Artist Artist = new Artist("Phil Collins", new DateTime(1951, 1, 30, 5, 5, 5), 'M', "");
             Album Album = new Album("Tarzan: An Original Walt Disney Records Soundtrack",DateTime.Now, Artist);
             string Type = ".mp3";
@@ -110,18 +114,19 @@ namespace ProyectoEquipo13
             double RatingS = 0;
             List<double> rating = new List<double>();
             rating.Add(RatingS);
-            string Music = @"\Tarzan_-Son_Of_Man_Phil_Collins1";
+            string Music = @"\Tarzan_-Son_Of_Man_Phil_Collins";
+            // C:\Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto-equipo-13\Songs\Tarzan_-Son_Of_Man_Phil_Collins
             int MinS = 0;
             Songs song1 = new Songs(TitleS, Composer, Artist, Composer, LenghtS, GenreS, LyricsS, ResolutionS, MemoryS, numReproductionsS,rating, RatingS, Music,Type, MinS, Album);
 
             string Title = "Tarzan";
             Person Director = new Person("Kevin Lima", new DateTime(1962,6,12,5,5,5), M,"");
             List<Person> Actors = new List<Person>();
-            Person Actor1 = new Person("Frank Welker",new DateTime(1946,3,12,5,5,5), M, "");
-            Person Actor2 = new Person("Danielle Keaton", new DateTime(1986,7,30,5,5,5), F,"");
-            Actors.Add(Actor1);
-            Actors.Add(Actor2);
-            Person Writer = new Person("Tab Murphy", new DateTime(1966,2,25,5,5,5), F,"");
+            // Person Actor1 = new Person("Frank Welker",new DateTime(1946,3,12,5,5,5), M);
+            // Person Actor2 = new Person("Danielle Keaton", new DateTime(1986,7,30,5,5,5), F);
+            //Actors.Add(Actor1);
+            // Actors.Add(Actor2);
+            // Person Writer = new Person("Tab Murphy", new DateTime(1966,2,25,5,5,5), F);
             int Lenght = 88;
             List<string> Categories = new List<string>();
             Categories.Add("Animación musical");
@@ -129,18 +134,19 @@ namespace ProyectoEquipo13
             Categories.Add("Comedia");
             string Studio = "Walt Disney Pictures";
             string Description = "descripcion";
-            string Year = "1999";
+            DateTime Year = new DateTime(1999, 6, 18, 5, 5, 5);
             string Resolution = "617kbps";
             string Memory = "12,2MB";
             int numReproductions = 0;
-            double Rating = 0;
-            List<double> raitngm = new List<double>();
+            int Rating = 0;
             string Trailer = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+            //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             string Video = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+            //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             List<Songs> SongsMovie = new List<Songs>();
-            SongsMovie.Add(song1);
+            //SongsMovie.Add(song1);
             int Min = 0;
-            Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, raitngm , Rating, Trailer, Video, SongsMovie, Min);
+            //Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, Rating, Trailer, Video, SongsMovie, Min);
             //movie1.Play();
 
              //song1.Play();

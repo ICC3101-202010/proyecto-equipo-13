@@ -319,21 +319,6 @@ namespace ProyectoEquipo13
             }
         }
 
-        // Paso 1: Creamos el delegate para el evento del cambio nombre de usuario
-        public delegate void ChangeUserNameEventHandler(object source, ChangeUserNameEventArgs args);
-        // Paso 2: Creamos el evento que se engatilla cuando se cambia el nombre de Usuario
-        public event ChangeUserNameEventHandler UserNameChanged;
-        // Paso 3: Publicamos el evento. Notar que cuando se quiere engatillar el evento, se llama OnUserNameChanged(). 
-        // Por definicion, debe ser protected virtual. Los parametros que recibe son los necesarios para crear una instancia
-        // de la clase ChangeUserNameEventArgs
-        protected virtual void OnUserNameChanged(string username2, string email)
-        {
-            if (UserNameChanged != null)
-            {
-                UserNameChanged(this, new ChangeUserNameEventArgs() { Username = username2, Email = email});
-            }
-        }
-
         // Realiza el registro 
         public bool Register()
         {
@@ -398,34 +383,6 @@ namespace ProyectoEquipo13
                 // Obtenemos los datos del usuario que se logueo y disparamos el evento con los datos necesarios
                 List<string> data = Files.GetData(usr);
                 OnPasswordChanged(data[0], data[1]);
-            }
-            else
-            {
-                // Mostramos el error
-                Console.WriteLine("[!] ERROR: " + result + "\n");
-            }
-        }
-
-        // Realiza el cambio de de nombre de usuario
-        public void ChangeUserName()
-        {
-            // Pedimos todos los datos necesarios
-            Console.WriteLine("Ingresa tu nombre de usuario: ");
-            string usr = Console.ReadLine();
-            Console.WriteLine("Ingresa tu contraseña: ");
-            string pswd = Console.ReadLine();
-            // Intenta realizar el login, si retorna null se logeo correctamente,
-            // sino, retorna un string de error que se le muestra al usuario
-            string result = Files.LogIn(usr, pswd);
-            if (result == null)
-            {
-                // Pedimos y cambiamos el usuario
-                Console.Write("Ingrese el nuevo nombre de usuario: ");
-                string newusername = Console.ReadLine();
-                Files.ChangeUserName(usr, newusername);
-                // Obtenemos los datos del usuario que se logueo y disparamos el evento con los datos necesarios
-                List<string> data = Files.GetData(usr);
-                OnUserNameChanged(newusername, data[1]);
             }
             else
             {

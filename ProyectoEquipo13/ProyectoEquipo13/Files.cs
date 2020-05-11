@@ -39,18 +39,6 @@ namespace ProyectoEquipo13
             }
         }
 
-        // Metodo para cambiar nombre de Usuario
-        public static void ChangeUserName(string usr, string newusername)
-        {
-            foreach (List<string> user in AllUsers.Values)
-            {
-                if (user[0] == usr)
-                {
-                    user[0] = newusername;
-                }
-            }
-        }
-
         // Metodo para agregar un nuevo usuario, verificando ademas que no exista
         public static string AddUser(List<string> data)
         {
