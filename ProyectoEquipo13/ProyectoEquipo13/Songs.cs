@@ -59,5 +59,16 @@ namespace ProyectoEquipo13
         public string Music1 { get => Music; set => Music = value; }
         public int Min1 { get => Min; set => Min = value; }
         public Album Album1 { get => Album; set => Album = value; }
+
+        public void SongsInformation()
+        {
+            Console.WriteLine("Título: " + this.Title1 + "\nArtista: " + this.Artist1 + "\nAlbum: " + this.Album1 + "\nRating: " + this.RatingProm1);
+            Console.WriteLine("Género/os: ");
+            foreach(string genero in this.Genre1)
+            {
+                Console.WriteLine(genero);
+            }
+        }
     }
+
 }

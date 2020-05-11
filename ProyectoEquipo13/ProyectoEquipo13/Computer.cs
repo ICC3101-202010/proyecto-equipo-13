@@ -206,31 +206,37 @@ namespace ProyectoEquipo13
             }
         }
 
-        public void CreatePlaylist(string type, string name, bool privacidad)
+        public Playlists CreatePlaylist(string type, string name, bool privacidad)
         {
             if(type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
                 Files.AllPlaylistsMovies.Add(playlists);
+                return playlists;
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
                 Files.AllPlaylistsSongs.Add(playlists);
+                return playlists;
             }
+            return null;
         }
-        public void CreateSmartPlaylist(string type, string namecriterio, string name, bool privacidad)
+        public SmartPlaylist CreateSmartPlaylist(string type, string namecriterio, string name, bool privacidad)
         {
             if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
                 SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
                 Files.AllSmartPlaylistsMovies.Add(smart);
+                return smart;
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
                 SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
                 Files.AllSmartPlaylistsSongs.Add(smart);
+                return smart;
             }
+            return null;
 
         }
         //SmartPlaylist conexion con Admin, sin usar
