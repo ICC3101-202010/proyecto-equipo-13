@@ -13,6 +13,9 @@ namespace ProyectoEquipo13
 {
     public partial class PlayMovie : Form
     {
+        private string generic;
+        public string Generic { get => generic; set => generic = value; }
+
         public PlayMovie()
         {
             InitializeComponent();
@@ -61,7 +64,7 @@ namespace ProyectoEquipo13
                 return null;
             }
         }
-        public string URL(string t, PlayMovie form)
+        public void Generico()
         {
             string filePath = SearchForFile(@"C:\", x => Path.GetFileName(x) == "git.txt");
             string j = filePath.TrimEnd('/');
@@ -73,7 +76,11 @@ namespace ProyectoEquipo13
             j = j.TrimEnd('i');
             j = j.TrimEnd('g');
             j = j.TrimEnd('/');
-            string r = form.Combine(j, t);
+            generic = j;
+        }
+        public string URL(string t, PlayMovie form)
+        {
+            string r = form.Combine(form.generic, t);
             return r;
         }
     }

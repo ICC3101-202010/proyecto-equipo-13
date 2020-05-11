@@ -146,7 +146,7 @@ namespace ProyectoEquipo13
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             PlayMovie pM = new PlayMovie();
-            string t = @"Movies\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+            string t = @"Songs\Tarzan_-Son_Of_Man_Phil_Collins.mp3";
             string r = pM.URL(t, pM);
 
             Application.Run(pM);
