@@ -222,18 +222,16 @@ namespace ProyectoEquipo13
             }
             return null;
         }
-        public SmartPlaylist CreateSmartPlaylist(string type, string namecriterio, string name, bool privacidad)
+        public SmartPlaylist CreateSmartPlaylist(string type, string criterio, string namecriterio, string name, bool privacidad)
         {
             if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
-                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
-                Files.AllSmartPlaylistsMovies.Add(smart);
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, criterio, namecriterio);
                 return smart;
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
-                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
-                Files.AllSmartPlaylistsSongs.Add(smart);
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, criterio, namecriterio);
                 return smart;
             }
             return null;
