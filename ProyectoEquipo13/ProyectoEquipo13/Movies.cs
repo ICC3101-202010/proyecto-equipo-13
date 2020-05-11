@@ -74,12 +74,12 @@ namespace ProyectoEquipo13
         public void Play()
         {
             PlayMovie play = new PlayMovie();
-            play.axWindowsMediaPlayer(Video1);
+            //play.axWindowsMediaPlayer(Video1);
         }
         public void PlayTrailer()
         {
             PlayMovie play = new PlayMovie();
-            play.axWindowsMediaPlayer(Trailer1);
+            //play.axWindowsMediaPlayer(Trailer1);
         }
         public void MovieInformation()
         {

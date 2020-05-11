@@ -13,8 +13,9 @@ namespace ProyectoEquipo13
 {
     public partial class PlayMovie : Form
     {
-        private string generic;
-        public string Generic { get => generic; set => generic = value; }
+        public string generic;
+
+        public string ruta;
 
         public PlayMovie()
         {
@@ -24,15 +25,8 @@ namespace ProyectoEquipo13
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
         }
-        public void axWindowsMediaPlayer(string url)
-        {
-            axWindowsMediaPlayer1.URL = url;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-        }
         public string Combine(string uri1, string uri2)
         {
-            uri1 = uri1.TrimEnd('/');
-            uri2 = uri2.TrimStart('/');
             uri2 = uri2.TrimStart('/');
             return string.Format("{0}{1}", uri1, uri2);
         }
@@ -78,10 +72,31 @@ namespace ProyectoEquipo13
             j = j.TrimEnd('/');
             generic = j;
         }
-        public string URL(string t, PlayMovie form)
+        public void URL(string t)
         {
-            string r = form.Combine(form.generic, t);
-            return r;
+            string r = this.Combine(this.generic, t);
+            this.ruta = r;
+        }
+
+        private void Upload_Click(object sender, EventArgs e)
+        {
+            this.textBox1.Text = this.ruta;
+        }
+
+        private void Play_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = textBox1.Text;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void Pause_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
+        }
+
+        private void Stop_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
         }
     }
 }
