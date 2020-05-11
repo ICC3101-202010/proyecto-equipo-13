@@ -30,7 +30,7 @@ namespace ProyectoEquipo13
             User emptyuser = new User();
 
             Console1.InitialMessage();
-            while (true)
+            while (false)
             {
                 Console.WriteLine("\n¿Qué desea realizar?");
                 Console.WriteLine("(a) Iniciar/Crear Sesión, modificar cuenta\n(b) Salir del programa");
@@ -47,6 +47,7 @@ namespace ProyectoEquipo13
                     while (true)
                     {
                         Console.Clear();
+                        Console.WriteLine(userlogin.Type);
                         Console1.SecondMessage(computer);
                         Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
                         string option = Console.ReadLine();

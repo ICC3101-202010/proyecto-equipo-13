@@ -423,7 +423,7 @@ namespace ProyectoEquipo13
             string result = Files.LogIn(usr, pswd);
             if (result == null)
             {
-                for (int i = 0; i < Files.AllUsers.Count; i++) 
+                for (int i = 1; i+1 < Files.AllUsers.Count; i++) 
                 {
                     if (Files.AllUsers[i][0] == usr && Files.AllUsers[i][2] == pswd)
                     {
@@ -446,6 +446,7 @@ namespace ProyectoEquipo13
                                 }
                             }
                             Console.WriteLine("Su cuenta se ha modificado con éxito");
+                            Thread.Sleep(2000);
                         }
                         else if (choice == "b") 
                         { 
