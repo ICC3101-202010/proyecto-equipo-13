@@ -18,7 +18,7 @@ namespace ProyectoEquipo13
         public static User Account(Computer computer, User user, MailSender mailSender)
         {
             Console.WriteLine("Seleccione que desea hacer");
-            Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña \n(d) Cambiar nombre de usuario \n (e) Cambia tu cuenta de Free a Premium");
+            Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña \n(d) Cambiar nombre de usuario \n(e) Cambia tu cuenta de Free a Premium");
             string option = Console.ReadLine();
             computer.Registered += mailSender.OnRegistered;
             computer.PasswordChanged += mailSender.OnPasswordChanged;
@@ -628,10 +628,5 @@ namespace ProyectoEquipo13
             else { Console.WriteLine("La opción que seleccionó no es válida"); }
         }
 
-        public static void CloseSesion(Computer computer, User emptyuser, MailSender mailSender)
-        {
-            //Volver al Log In 
-            Account(computer, emptyuser, mailSender);
-        }
     }   
 }
