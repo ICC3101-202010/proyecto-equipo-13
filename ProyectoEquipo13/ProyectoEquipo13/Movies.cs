@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WMPLib;
+using System.Media;
+using System.IO;
 
 namespace ProyectoEquipo13
 {
@@ -24,8 +26,8 @@ namespace ProyectoEquipo13
         int numReproductions;
         List <double> Rating;
         double RatingProm;
-        string Trailer;
-        string Video;
+        string Trailer; //nombre archivo
+        string Video; //nombre archivo
         List<Songs> SongsMovie;
         int Min;
 
@@ -74,13 +76,23 @@ namespace ProyectoEquipo13
 
         public void Play()
         {
-            PlayMovie play = new PlayMovie();
-            //play.axWindowsMediaPlayer(Video1);
+            var carpeta = Directory.GetCurrentDirectory();
+            string D = carpeta + this.Video;
+            WindowsMediaPlayer player = new WindowsMediaPlayer();
+            player.URL = D;
+            player.controls.play();
+            Console.ReadLine();
+            player.controls.stop();
         }
         public void PlayTrailer()
         {
-            PlayMovie play = new PlayMovie();
-            //play.axWindowsMediaPlayer(Trailer1);
+            var carpeta = Directory.GetCurrentDirectory();
+            string D = carpeta + this.Trailer;
+            WindowsMediaPlayer player = new WindowsMediaPlayer();
+            player.URL = D;
+            player.controls.play();
+            Console.ReadLine();
+            player.controls.stop();
         }
         public void MovieInformation()
         {

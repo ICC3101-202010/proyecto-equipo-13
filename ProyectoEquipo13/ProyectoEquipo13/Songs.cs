@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
+using WMPLib;
+using System.IO;
 
 namespace ProyectoEquipo13
 {
@@ -22,11 +25,12 @@ namespace ProyectoEquipo13
         int numReproductions;
         List<double> Rating;
         double RatingProm;
-        string Music;
+        string Music; //nombre archivo
+        string Type; // tipo archivo ej. ".wav",".mp3"
         int Min;
         Album Album;
 
-        public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Music, int Min, Album Album)
+        public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Music, string Type, int Min, Album Album)
         {
             Title = this.Title;
             Composer = this.Composer;
@@ -41,6 +45,7 @@ namespace ProyectoEquipo13
             Rating = this.Rating;
             RatingProm = this.RatingProm;
             Music = this.Music;
+            Type = this.Type;
             Min = this.Min;
             Album = this.Album;
         }
@@ -58,6 +63,7 @@ namespace ProyectoEquipo13
         public List<double> Rating1 { get => Rating; set => Rating = value; }
         public double RatingProm1 { get => RatingProm; set => RatingProm = value; }
         public string Music1 { get => Music; set => Music = value; }
+        public string Type1 { get => Type; set => Type = value; }
         public int Min1 { get => Min; set => Min = value; }
         public Album Album1 { get => Album; set => Album = value; }
 
@@ -68,6 +74,27 @@ namespace ProyectoEquipo13
             foreach(string genero in this.Genre1)
             {
                 Console.WriteLine(genero);
+            }
+        }
+        public void Play()
+        {
+            var carpeta = Directory.GetCurrentDirectory();
+            string D = carpeta + this.Music;
+            if (this.Type == ".wav")
+            {
+                SoundPlayer player = new SoundPlayer();
+                player.SoundLocation = D;
+                player.Play();
+                Console.ReadLine();
+                player.Stop();
+            }
+            else
+            {
+                WindowsMediaPlayer player = new WindowsMediaPlayer();
+                player.URL = D;
+                player.controls.play();
+                Console.ReadLine();
+                player.controls.stop();
             }
         }
     }
