@@ -8,11 +8,14 @@ namespace ProyectoEquipo13
 {
     public class Playlists
     {
-        private string Type;
+        protected string Type;
         protected string Name;
         protected bool Privacy;
         protected List<Songs> playlistsong = new List<Songs>();
         protected List<Movies> playlistmovie = new List<Movies>();
+
+        public List<Songs> Playlistsong { get => playlistsong; set => playlistsong = value; }
+        public List<Movies> Playlistmovie { get => playlistmovie; set => playlistmovie = value; }
 
         public Playlists(string name, bool privacy, string type)
         {
@@ -20,6 +23,7 @@ namespace ProyectoEquipo13
             this.Privacy = privacy;
             this.Type = type;
         }
+
 
     }
 }

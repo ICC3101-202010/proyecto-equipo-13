@@ -219,9 +219,29 @@ namespace ProyectoEquipo13
                 Files.AllPlaylistsSongs.Add(playlists);
             }
         }
-        public void CreateSmartPlaylist(string type,string criterio, string name, bool privacidad)
+        public void CreateSmartPlaylist(string type, string namecriterio, string name, bool privacidad)
         {
+            if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
+            {
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
+                Files.AllSmartPlaylistsMovies.Add(smart);
+            }
+            if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
+            {
+                SmartPlaylist smart = new SmartPlaylist(name, privacidad, type, namecriterio);
+                Files.AllSmartPlaylistsSongs.Add(smart);
+            }
 
+        }
+        //SmartPlaylist conexion con Admin, sin usar
+        public delegate void AddSongEventHandler(object source, EventArgs args);
+        public event AddSongEventHandler AddedSong;
+        protected virtual void OnAddedSong()
+        {
+            if (AddedSong != null)
+            {
+                AddedSong(this,EventArgs.Empty);
+            }
         }
 
         public List<Movies> SeeTopMovies()
@@ -488,5 +508,11 @@ namespace ProyectoEquipo13
                 Console.WriteLine("[!] ERROR: " + result + " o simplemente no existe\n");
             }
         }
+        public void AddQueue(Songs songs)
+        {
+            List<Songs> cola = new List<Songs>();
+            cola.Add(songs);
+        }
+        
     }
 }

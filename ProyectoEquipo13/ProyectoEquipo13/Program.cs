@@ -141,6 +141,15 @@ namespace ProyectoEquipo13
             formatter.Serialize(stream2, Files.AllPlaylistsSongs);
             formatter.Serialize(stream2, Files.AllUsers);
             stream.Close();
+            // Reproductor
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            PlayMovie pM = new PlayMovie();
+            string t = @"Movies\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+            string r = pM.URL(t, pM);
+
+            Application.Run(pM);
         }
 
         // Metodo para mostrar las opciones posibles
@@ -154,15 +163,8 @@ namespace ProyectoEquipo13
                 i += 1;
             }
             return options[Convert.ToInt16(Console.ReadLine())];
-        }
-        // Reproductor
 
-        Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-        PlayMovie pM = new PlayMovie();
-        string t = @"Videos\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
-        string r = pM.URL(t, pM);
-        
-        Application.Run(form);
+            
+        }
     }
 }
