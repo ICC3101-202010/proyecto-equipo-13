@@ -10,7 +10,7 @@ namespace ProyectoEquipo13
     public class User
     {
         //Todos
-        private string type;
+        private string type= "nada";
         private string userName;
         private string email;
         private string password;

@@ -32,7 +32,7 @@ namespace ProyectoEquipo13
             User emptyuser = new User();
 
             Console1.InitialMessage();
-            while (false)
+            while (true)
             {
                 Console.WriteLine("\n¿Qué desea realizar?");
                 Console.WriteLine("(a) Iniciar/Crear Sesión, modificar cuenta\n(b) Salir del programa");
@@ -49,6 +49,8 @@ namespace ProyectoEquipo13
                     while (true)
                     {
                         Console.Clear();
+                        Console.WriteLine(Files.Users.Count);
+                        Console.WriteLine(Files.AllUsers.Values.Count);
                         Console.WriteLine(userlogin.Type);
                         Console1.SecondMessage(computer);
                         Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
@@ -113,11 +115,12 @@ namespace ProyectoEquipo13
             string LyricsS = "letra";
             string ResolutionS = "192kbps";
             string MemoryS = "3,78MB";
+
             int numReproductionsS = 0;
             double RatingS = 0;
             List<double> rating = new List<double>();
             rating.Add(RatingS);
-            string Music = @"\Tarzan_-Son_Of_Man_Phil_Collins";
+            string Music = @"\Bibio - Lovers Carvings (Remix) ft. Olu & Blue Scholars.mp3";
             // C:\Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto-equipo-13\Songs\Tarzan_-Son_Of_Man_Phil_Collins
             int MinS = 0;
             Songs song1 = new Songs(TitleS, Composer, Artist, Composer, LenghtS, GenreS, LyricsS, ResolutionS, MemoryS, numReproductionsS,rating, RatingS, Music,Type, MinS, Album);
@@ -144,7 +147,7 @@ namespace ProyectoEquipo13
             double Rating = 0;
             string Trailer = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
-            string Video = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
+            string Video = @"\Video Ejemplo Uso AMPL Media Res.mov";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             List<Songs> SongsMovie = new List<Songs>();
             SongsMovie.Add(song1);

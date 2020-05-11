@@ -240,51 +240,7 @@ namespace ProyectoEquipo13
 
         }
        
-        //SmartPlaylist conexion con Admin, sin usar
-        public delegate void AddSongEventHandler(object source, EventArgs args);
-        public event AddSongEventHandler AddedSong;
-        protected virtual void OnAddedSong()
-        {
-            if (AddedSong != null)
-            {
-                AddedSong(this,EventArgs.Empty);
-            }
-        }
-
-        public List<Movies> SeeTopMovies()
-        {
-            List<Movies> top = new List<Movies>();
-            List<Movies> peliculas = new List<Movies>();
-            foreach (Movies movies in Files.AllMovies)
-            {
-                peliculas.Add(movies);
-            }
-            var peliculasorden = peliculas.OrderByDescending(songs => songs.Rating1).ToList();
-            for (int i = 0; i < 10; i++)
-            {
-                top.Add(peliculasorden[i]);
-            }
-            return top;
-
-        }
-
-        public List<Songs> SeeTopSong()
-        {
-            List<Songs> top = new List<Songs>();
-            List<Songs> canciones = new List<Songs>();
-            foreach (Songs songs in Files.AllSongs)
-            {
-                canciones.Add(songs);
-            }
-            var cancionesorden = canciones.OrderByDescending(songs => songs.Rating1).ToList();
-            for (int i = 0; i < 10; i++)
-            {
-                top.Add(cancionesorden[i]);
-            }
-            return top;
-        }
-
-        
+       
         //Parte Usuario
 
         // Paso 1: Creamos el delegate para el evento del registro
@@ -421,53 +377,47 @@ namespace ProyectoEquipo13
             // Intenta realizar el login, si retorna null se logeo correctamente,
             // sino, retorna un string de error que se le muestra al usuario
             string result = Files.LogIn(usr, pswd);
+            int valor = 0;
             if (result == null)
             {
-                for (int i = 1; i+1 < Files.AllUsers.Count; i++) 
+                foreach (List<string> user in Files.AllUsers.Values)
                 {
-                    if (Files.AllUsers[i][0] == usr && Files.AllUsers[i][2] == pswd)
+                    if (user[0] == usr && user[2]==pswd)
                     {
-                        Console.WriteLine("¿Desea que su usuario sea público o privado (que otros usuarios puedan acceder a sus fututas playlists o no)?");
-                        Console.WriteLine("(a) Público \n(b) Privado");
-                        string choice = Console.ReadLine();
-                        bool choice2 = new bool();
-                        if (choice == "a") 
-                        { 
-                            choice = "Premium";
-                            choice2 = true;
-                            Files.AllUsers[i][5] = choice;
-                            for (int j = 0; j < Files.Users.Count; j++)
-                            {
-                                if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
-                                {
-                                    User premium = new User(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
-                                    Files.Users.RemoveAt(j);
-                                    Files.Users.Insert(j, premium);
-                                }
-                            }
-                            Console.WriteLine("Su cuenta se ha modificado con éxito");
-                            Thread.Sleep(2000);
-                        }
-                        else if (choice == "b") 
-                        { 
-                            choice = "Premium";
-                            choice2 = false;
-                            Files.AllUsers[i][5] = choice;
-                            for (int j = 0; j < Files.Users.Count; j++)
-                            {
-                                if (Files.Users[j].UserName == usr && Files.Users[j].Password == pswd)
-                                {
-                                    User premium = new User(Files.Users[j].UserName, Files.Users[j].Email, Files.Users[j].Password, choice2);
-                                    Files.Users.RemoveAt(j);
-                                    Files.Users.Insert(j, premium);
-                                }
-                            }
-                            Console.WriteLine("Su cuenta se ha modificado con éxito");
-                        }
-                        else { Console.WriteLine("¡ERROR! El tipo seleccionado no existe!"); }                        
+                        user[5] = "Premium";
+
                     }
                 }
-
+                foreach (User user in Files.Users)
+                {
+                    if (user.UserName == usr && user.Password == pswd)
+                    {
+                        user.Type = "Premium";
+                        Console.WriteLine("Quiere que su cuenta Premium sea:");
+                        Console.WriteLine("(a) Pública\n(b) Privada");
+                        while (true)
+                        {
+                            string privacy = Console.ReadLine();
+                            if (privacy == "a")
+                            {
+                                user.Privacy1 = true;
+                                break;
+                            }
+                            else if (privacy == "b")
+                            {
+                                user.Privacy1 = false;
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nSeleccione una opción válida ((a) (b))");
+                            }
+                        }
+                    }
+                }
+                Thread.Sleep(1200);
+                Console.WriteLine("\nSe modifico correctamente\n");
+                Thread.Sleep(2000);
             }
             else
             {

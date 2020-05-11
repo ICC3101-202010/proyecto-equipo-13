@@ -55,6 +55,7 @@ namespace ProyectoEquipo13
                 bool option2 = computer.Register();
                 //Suponiendo que el mail si debería haber llegado
                 if (option2 == true) { user.OnEmailSent(new object(), new EventArgs()); }
+                Thread.Sleep(2000);
                 Console.Clear();
                 Account(computer, user, mailSender);
             }
