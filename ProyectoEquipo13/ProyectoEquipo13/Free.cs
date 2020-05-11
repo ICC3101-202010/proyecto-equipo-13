@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
-    class Free : User
+    public class Free : User
     {
         private string Type;
 

@@ -8,6 +8,7 @@ namespace ProyectoEquipo13
 {
     public class User
     {
+        private string type = null;
         private string userName;
         private string email;
         private string password;
@@ -15,6 +16,7 @@ namespace ProyectoEquipo13
         public string UserName { get => userName; set => userName = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
+        public string Type { get => type; set => type = value; }
 
         public User() { }
 
