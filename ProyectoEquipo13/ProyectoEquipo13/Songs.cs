@@ -58,6 +58,6 @@ namespace ProyectoEquipo13
         public double RatingProm1 { get => RatingProm; set => RatingProm = value; }
         public string Music1 { get => Music; set => Music = value; }
         public int Min1 { get => Min; set => Min = value; }
-        internal Album Album1 { get => Album; set => Album = value; }
+        public Album Album1 { get => Album; set => Album = value; }
     }
 }

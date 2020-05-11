@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,6 +19,13 @@ namespace ProyectoEquipo13
         public void PlayMovie(string name)
         {
 
+        }
+
+        public void Searcher()
+        {
+            Console.Clear();
+            Console.WriteLine("El buscador trabaja bastante específico (Casa es diferente que casa), por lo que lo que sabe preocupese de escribirlo de manera correcta.\nAdemás si es que hay algúna información que no sabe, simplemente seleccione ENTER (si pone algo que no sabe el buscador usara ese cirterio y probablemetne no encuentre coincidencias");
+            Search.Searching();
         }
 
         public List<Songs> SearchTypeSongs(string type, string name)

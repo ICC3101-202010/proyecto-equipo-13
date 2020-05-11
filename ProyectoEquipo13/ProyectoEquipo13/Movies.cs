@@ -17,7 +17,7 @@ namespace ProyectoEquipo13
         List<string> Categories;
         string Studio;
         string Description;
-        DateTime Year;
+        string Year;
         string Resolution;
         string Memory;
         int numReproductions;
@@ -28,7 +28,7 @@ namespace ProyectoEquipo13
         List<Songs> SongsMovie;
         int Min;
 
-        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, DateTime Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
             Title = this.Title;
             Director = this.Director;
@@ -58,7 +58,7 @@ namespace ProyectoEquipo13
         public List<string> Categories1 { get => Categories; set => Categories = value; }
         public string Studio1 { get => Studio; set => Studio = value; }
         public string Description1 { get => Description; set => Description = value; }
-        public DateTime Year1 { get => Year; set => Year = value; }
+        public string Year1 { get => Year; set => Year = value; }
         public string Resolution1 { get => Resolution; set => Resolution = value; }
         public string Memory1 { get => Memory; set => Memory = value; }
         public int NumReproductions { get => numReproductions; set => numReproductions = value; }
@@ -68,6 +68,8 @@ namespace ProyectoEquipo13
         public string Video1 { get => Video; set => Video = value; }
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }
         public int Min1 { get => Min; set => Min = value; }
+
+
 
         public void Play()
         {
