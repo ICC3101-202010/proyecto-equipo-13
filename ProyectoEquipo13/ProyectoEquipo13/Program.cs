@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
+using System.Media;
 
 namespace ProyectoEquipo13
 {
@@ -122,11 +124,11 @@ namespace ProyectoEquipo13
             string Title = "Tarzan";
             Person Director = new Person("Kevin Lima", new DateTime(1962,6,12,5,5,5), M,"");
             List<Person> Actors = new List<Person>();
-            // Person Actor1 = new Person("Frank Welker",new DateTime(1946,3,12,5,5,5), M);
-            // Person Actor2 = new Person("Danielle Keaton", new DateTime(1986,7,30,5,5,5), F);
-            //Actors.Add(Actor1);
-            // Actors.Add(Actor2);
-            // Person Writer = new Person("Tab Murphy", new DateTime(1966,2,25,5,5,5), F);
+            Person Actor1 = new Person("Frank Welker",new DateTime(1946,3,12,5,5,5), M,"");
+            Person Actor2 = new Person("Danielle Keaton", new DateTime(1986,7,30,5,5,5), F,"");
+            Actors.Add(Actor1);
+            Actors.Add(Actor2);
+            Person Writer = new Person("Tab Murphy", new DateTime(1966,2,25,5,5,5), F,"");
             int Lenght = 88;
             List<string> Categories = new List<string>();
             Categories.Add("Animación musical");
@@ -134,22 +136,23 @@ namespace ProyectoEquipo13
             Categories.Add("Comedia");
             string Studio = "Walt Disney Pictures";
             string Description = "descripcion";
-            DateTime Year = new DateTime(1999, 6, 18, 5, 5, 5);
+            string Year ="1999";
             string Resolution = "617kbps";
             string Memory = "12,2MB";
             int numReproductions = 0;
-            int Rating = 0;
+            double Rating = 0;
             string Trailer = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             string Video = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
             //C: \Users\56984\Desktop\Universidad\Progra\Proyecto\proyecto - equipo - 13\Movies\Tarzan_-Son_Of_Man_Phil_Collins
             List<Songs> SongsMovie = new List<Songs>();
-            //SongsMovie.Add(song1);
+            SongsMovie.Add(song1);
             int Min = 0;
-            //Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, Rating, Trailer, Video, SongsMovie, Min);
-            //movie1.Play();
-
-             //song1.Play();
+            Movies movie1 = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, rating, Rating, Trailer, Video, SongsMovie, Min);
+            WindowsMediaPlayer player = new WindowsMediaPlayer();
+            song1.Play(player);
+            movie1.Play(player);
+            Console.Read();
 
             Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             formatter.Serialize(stream2, Files.AllMovies);

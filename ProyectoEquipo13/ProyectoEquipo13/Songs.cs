@@ -32,22 +32,22 @@ namespace ProyectoEquipo13
 
         public Songs(string Title, Person Composer, Artist Artist, Person Writer, int Lenght, List<string> Genre, string Lyrics, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Music, string Type, int Min, Album Album)
         {
-            Title = this.Title;
-            Composer = this.Composer;
-            Artist = this.Artist;
-            Writer = this.Writer;
-            Lenght = this.Lenght;
-            Genre = this.Genre;
-            Lyrics = this.Lyrics;
-            Resolution = this.Resolution;
-            Memory = this.Memory;
-            numReproductions = this.numReproductions;
-            Rating = this.Rating;
-            RatingProm = this.RatingProm;
-            Music = this.Music;
-            Type = this.Type;
-            Min = this.Min;
-            Album = this.Album;
+            this.Title = Title;
+            this.Composer = Composer;
+            this.Artist = Artist;
+            this.Writer = Writer;
+            this.Lenght = Lenght;
+            this.Genre = Genre;
+            this.Lyrics = Lyrics;
+            this.Resolution = Resolution;
+            this.Memory = Memory;
+            this.numReproductions = numReproductions;
+            this.Rating = Rating;
+            this.RatingProm = RatingProm;
+            this.Music = Music;
+            this.Type = Type;
+            this.Min = Min;
+            this.Album = Album;
         }
 
         public string Title1 { get => Title; set => Title = value; }
@@ -76,26 +76,15 @@ namespace ProyectoEquipo13
                 Console.WriteLine(genero);
             }
         }
-        public void Play()
+        public void Play(WindowsMediaPlayer player)
         {
             var carpeta = Directory.GetCurrentDirectory();
-            string D = carpeta + this.Music;
-            if (this.Type == ".wav")
-            {
-                SoundPlayer player = new SoundPlayer();
-                player.SoundLocation = D;
-                player.Play();
-                Console.ReadLine();
-                player.Stop();
-            }
-            else if (this.Type==".mp3")
-            {
-                WindowsMediaPlayer player = new WindowsMediaPlayer();
-                player.URL = D;
-                player.controls.play();
-                Console.ReadLine();
-                player.controls.stop();
-            }
+            var D = carpeta + this.Music1;
+            player.URL = D;
+            player.controls.play();
+            Console.WriteLine("Reproduciendo");
+            Console.ReadLine();
+            player.controls.stop();
         }
     }
 

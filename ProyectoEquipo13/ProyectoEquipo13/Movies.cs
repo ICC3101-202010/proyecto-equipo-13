@@ -33,24 +33,24 @@ namespace ProyectoEquipo13
 
         public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min)
         {
-            Title = this.Title;
-            Director = this.Director;
-            Actors = this.Actors;
-            Writer = this.Writer;
-            Lenght = this.Lenght;
-            Categories = this.Categories;
-            Studio = this.Studio;
-            Description = this.Description;
-            Year = this.Year;
-            Resolution = this.Resolution;
-            Memory = this.Memory;
-            numReproductions = this.numReproductions;
-            Rating = this.Rating;
-            RatingProm = this.RatingProm;
-            Video = this.Video;
-            Trailer = this.Trailer;
-            SongsMovie = this.SongsMovie;
-            Min = this.Min;
+            this.Title = Title;
+            this.Director = Director;
+            this.Actors = Actors;
+            this.Writer = Writer;
+            this.Lenght = Lenght;
+            this.Categories = Categories;
+            this.Studio = Studio;
+            this.Description = Description;
+            this.Year = Year;
+            this.Resolution = Resolution;
+            this.Memory = Memory;
+            this.numReproductions = numReproductions;
+            this.Rating = Rating;
+            this.RatingProm = RatingProm;
+            this.Video = Video;
+            this.Trailer = Trailer;
+            this.SongsMovie = SongsMovie;
+            this.Min = Min;
         }
 
         public string Title1 { get => Title; set => Title = value; }
@@ -74,23 +74,23 @@ namespace ProyectoEquipo13
 
 
 
-        public void Play()
+        public void Play(WindowsMediaPlayer player)
         {
             var carpeta = Directory.GetCurrentDirectory();
             string D = carpeta + this.Video;
-            WindowsMediaPlayer player = new WindowsMediaPlayer();
             player.URL = D;
             player.controls.play();
+            Console.WriteLine("Reproduciendo");
             Console.ReadLine();
             player.controls.stop();
         }
-        public void PlayTrailer()
+        public void PlayTrailer(WindowsMediaPlayer player)
         {
             var carpeta = Directory.GetCurrentDirectory();
             string D = carpeta + this.Trailer;
-            WindowsMediaPlayer player = new WindowsMediaPlayer();
             player.URL = D;
             player.controls.play();
+            Console.WriteLine("Reproduciendo");
             Console.ReadLine();
             player.controls.stop();
         }
