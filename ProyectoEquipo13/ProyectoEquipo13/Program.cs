@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
 using System.Media;
+using System.Security.Cryptography;
 
 namespace ProyectoEquipo13
 {
@@ -328,45 +329,28 @@ namespace ProyectoEquipo13
                 //try que Desterializa; catch mostrar mensaje; finally cierra archivo
                 try
                 {
-                    List < Movies > des = new List<Movies>();
-                    des = (List<Movies>)formatter.Deserialize(stream1);
-                    foreach (Movies movie in Files.AllMovies)
+                    List <Movies> des = (List<Movies>)formatter.Deserialize(stream1);
+                    if (des.Count != 0)
                     {
-                        foreach (Movies i in des)
-                        {
-                            if (i.Title1 == movie.Title1)
-                            {
-                                int position = Files.AllMovies.IndexOf(movie);
-                                Files.AllMovies.RemoveAt(position);
-                                Files.AllMovies.Insert(position, i);
-                            }
-                        }
+                        Files.AllMovies = des;
                     }
+                    
                 }
                 catch
                 {
-                    Console.WriteLine("No carga");
+                    Console.WriteLine();
                 }
                 try
                 {
-                    List<Songs> des2 = new List<Songs>();
-                    des2 = (List<Songs>)formatter.Deserialize(stream1);
-                    foreach (Songs song in Files.AllSongs)
+                    List<Songs> des2= (List<Songs>)formatter.Deserialize(stream2);
+                    if (des2.Count != 0)
                     {
-                        foreach (Songs j in des2)
-                        {
-                            if (j.Title1 == song.Title1)
-                            {
-                                int position2 = Files.AllSongs.IndexOf(song);
-                                Files.AllSongs.RemoveAt(position2);
-                                Files.AllSongs.Insert(position2, j);
-                            }
-                        }
+                        Files.AllSongs = (List<Songs>)formatter.Deserialize(stream2);
                     }
                 }
                 catch
                 {
-                    Console.WriteLine("No carga");
+                    Console.WriteLine();
                 }
                 try
                 {
@@ -374,7 +358,7 @@ namespace ProyectoEquipo13
                 }
                 catch
                 {
-                    Console.WriteLine("No carga");
+                    Console.WriteLine();
                 }
                 try
                 {
@@ -382,7 +366,7 @@ namespace ProyectoEquipo13
                 }
                 catch
                 {
-                    Console.WriteLine("No carga");
+                    Console.WriteLine();
                 }
                 try
                 {
@@ -396,7 +380,7 @@ namespace ProyectoEquipo13
                 }
                 catch
                 {
-                    Console.WriteLine("No carga");
+                    Console.WriteLine();
                 }
                 finally
                 {

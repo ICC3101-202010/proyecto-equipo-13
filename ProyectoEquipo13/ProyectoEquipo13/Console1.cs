@@ -166,7 +166,7 @@ namespace ProyectoEquipo13
             if (user.Type == "Premium")
             {
                 Console.WriteLine("\nDe que tipo desea que sea su Playlist:");
-                Console.WriteLine("(a) normal \n(b) inteligente(agrega canciones automáticamente según un criterio");
+                Console.WriteLine("(a) normal \n(b) inteligente(agrega canciones automáticamente según un criterio)");
                 string res = Console.ReadLine();
                 if (res == "a")
                 {
@@ -181,12 +181,13 @@ namespace ProyectoEquipo13
                     {
                         user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, true));
                         Console.WriteLine("Playlist creada con éxito");
-
+                        Thread.Sleep(1200);
                     }
                     else if (privacidad == "b")
                     {
                         user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, false));
                         Console.WriteLine("Playlist creada con éxito");
+                        Thread.Sleep(1200);
                     }
                     else
                     {
@@ -211,6 +212,7 @@ namespace ProyectoEquipo13
                         if (privacidad == "a")
                         {
                             var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                            Thread.Sleep(1200);
                             Console.WriteLine("\nPlaylist creada con éxito");
                             if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
                             {
@@ -282,6 +284,7 @@ namespace ProyectoEquipo13
                         {
                             var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
                             Console.WriteLine("\nPlaylist creada con éxito");
+                            Thread.Sleep(1200);
                             if (criterio == "Director" || criterio == "director")
                             {
                                 foreach (Movies movies in Files.AllMovies)

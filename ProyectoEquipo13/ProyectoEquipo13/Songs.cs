@@ -83,7 +83,8 @@ namespace ProyectoEquipo13
             player.URL = D;
             this.NumReproductions += 1;
             player.controls.play();
-            Console.WriteLine("Reproduciendo, presione enter si desea parar la reproducción");
+            Console.WriteLine("Reproduciendo" + this.Title1);
+            Console.WriteLine("Presione enter si desea parar la reproducción");
             Console.ReadLine();
             player.controls.stop();
         }
