@@ -18,10 +18,8 @@ namespace ProyectoEquipo13
     {
         static void Main(string[] args)
         {
-            string workingDirectory = Environment.CurrentDirectory;
-
+            /*
             IFormatter formatter = new BinaryFormatter();
-            IFormatter formatter2 = new BinaryFormatter();
 
             string urlAllMovies = Directory.GetCurrentDirectory() + "\\AllMovies.bin";
             string urlAllSongs = Directory.GetCurrentDirectory() + "\\AllSongs.bin";
@@ -92,6 +90,8 @@ namespace ProyectoEquipo13
                     stream5.Close();
                 }
             }
+            */
+
             User Admin = new User("Premium", "Admin", "email", "", false);
             Files.Users.Add(Admin);
             foreach (User i in Files.Users)
@@ -523,7 +523,7 @@ namespace ProyectoEquipo13
                     Console.WriteLine("\nLa opción que seleccionó no es válida, por favor seleccione una que si lo sea\n");
                 }
             }
-
+            /*
             Stream stream6 = new FileStream("AllMovies.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             Stream stream7 = new FileStream("AllSongs.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             Stream stream8 = new FileStream("AllPlaylistsSongs.bin", FileMode.Create, FileAccess.Write, FileShare.None);
@@ -539,6 +539,7 @@ namespace ProyectoEquipo13
             stream8.Close();
             stream9.Close();
             stream10.Close();
+            */
         }
     }
 }

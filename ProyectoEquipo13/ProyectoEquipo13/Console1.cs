@@ -22,7 +22,7 @@ namespace ProyectoEquipo13
 
         public static void SecondMessage(Computer computer)
         {
-            Console.WriteLine("¡Bienvenido al Menú!... Selecione la opción que desee:\n");
+            Console.WriteLine("\n¡Bienvenido al Menú!... Seleccione la opción que desee:\n");
         }
 
         public static void SeeMovies(Computer computer, User userlogin)
@@ -216,20 +216,20 @@ namespace ProyectoEquipo13
                             {
                                 foreach (Songs songs in Files.AllSongs)
                                 {
-                                    foreach(string genero in songs.Genre1)
+                                    foreach (string genero in songs.Genre1)
                                     {
-                                        if(genero == namecriterio)
+                                        if (genero == namecriterio)
                                         {
                                             a.Playlistsong.Add(songs);
                                         }
                                     }
                                 }
                             }
-                            else if (criterio == "Artista"|| criterio == "artista")
+                            else if (criterio == "Artista" || criterio == "artista")
                             {
                                 foreach (Songs songs in Files.AllSongs)
                                 {
-                                    if(songs.Artist1.Name == namecriterio)
+                                    if (songs.Artist1.Name == namecriterio)
                                     {
                                         a.Playlistsong.Add(songs);
                                     }
@@ -306,7 +306,7 @@ namespace ProyectoEquipo13
                             {
                                 foreach (Movies movies in Files.AllMovies)
                                 {
-                                    foreach(string cate in movies.Categories1)
+                                    foreach (string cate in movies.Categories1)
                                     {
                                         if (cate == namecriterio)
                                         {
@@ -332,7 +332,7 @@ namespace ProyectoEquipo13
                             Files.AllSmartPlaylistsMovies.Add(a);
                             Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
                         }
-                        else if (privacidad=="b")
+                        else if (privacidad == "b")
                         {
                             var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
                             Console.WriteLine("\nPlaylist creada con éxito");
@@ -409,103 +409,124 @@ namespace ProyectoEquipo13
         {
             if (user.Type == "Premium")
             {
-                //Cambiar nombre, sacar elementos, agregar elementos, etc etc
-                Dictionary<int, Playlists> dic = new Dictionary<int, Playlists>();
-                Console.WriteLine("\nSeleccione la Playlist que desee:\n");
-                int counter = 1;
-                foreach (Playlists playlists in user.MyPlaylist1)
+                if (user.MyPlaylist1.Count() > 0)
                 {
-                    Console.WriteLine('(' + counter + ')' + playlists.Name);
-                    dic.Add(counter, playlists);
-                    counter += 1;
-                }
-                int option = Convert.ToInt32(Console.ReadLine());
-                Playlists play = dic[option];
-                Console.WriteLine("\n¿Que desea hacer con la Playlist?");
-                Console.WriteLine("(a) Cambiar nombre\n(b) Sacar elemento\n(c) Agregar elementos\n");
-                string option2 = Console.ReadLine();
-                if (option2 == "a")
-                {
-                    Console.WriteLine("Elija el nuevo nombre: ");
-                    string name = Console.ReadLine();
-                    play.Name = name;
-                    Console.WriteLine("\nNombre cambiado con éxito");
-                }
-                else if (option2 == "b")
-                {
-                    if (play.Type == "Pelicula" || play.Type == "Película" || play.Type == "pelicula" || play.Type == "película")
+                    //Cambiar nombre, sacar elementos, agregar elementos, etc etc
+                    Dictionary<int, Playlists> dic = new Dictionary<int, Playlists>();
+                    Console.WriteLine("\nSeleccione la Playlist que desee:\n");
+                    int counter = 1;
+                    foreach (Playlists playlists in user.MyPlaylist1)
                     {
-                        Dictionary<int, Movies> dic2 = new Dictionary<int, Movies>();
-                        int counter2 = 1;
-                        foreach (Movies movies in play.Playlistmovie)
+                        Console.WriteLine('(' + counter + ')' + playlists.Name);
+                        dic.Add(counter, playlists);
+                        counter += 1;
+                    }
+                    int option = Convert.ToInt32(Console.ReadLine());
+                    Playlists play = dic[option];
+                    Console.WriteLine("\n¿Que desea hacer con la Playlist?");
+                    Console.WriteLine("(a) Cambiar nombre\n(b) Sacar elemento\n(c) Agregar elementos\n");
+                    string option2 = Console.ReadLine();
+                    if (option2 == "a")
+                    {
+                        Console.WriteLine("Elija el nuevo nombre: ");
+                        string name = Console.ReadLine();
+                        play.Name = name;
+                        Console.WriteLine("\nNombre cambiado con éxito");
+                    }
+                    else if (option2 == "b")
+                    {
+                        if (play.Playlistmovie.Count() > 0)
                         {
-                            Console.WriteLine("La playlist contiene las siguientes películas: \n");
-                            Console.WriteLine('(' + counter2 + ')' + movies.Title1);
-                            dic2.Add(counter2, movies);
-                            counter2 += 1;
+                            if (play.Type == "Pelicula" || play.Type == "Película" || play.Type == "pelicula" || play.Type == "película")
+                            {
+                                Dictionary<int, Movies> dic2 = new Dictionary<int, Movies>();
+                                int counter2 = 1;
+                                Console.WriteLine("La playlist contiene las siguientes películas: \n");
+                                foreach (Movies movies in play.Playlistmovie)
+                                {
+                                    Console.WriteLine('(' + counter2 + ')' + movies.Title1);
+                                    dic2.Add(counter2, movies);
+                                    counter2 += 1;
+
+                                }
+                                Console.WriteLine("Seleccione cual desea eliminar");
+                                int choise = Convert.ToInt32(Console.ReadLine());
+                                play.Playlistmovie.RemoveAt(choise - 1);
+
+                            }
 
                         }
-                        Console.WriteLine("Seleccione cual desea eliminar");
-                        int choise = Convert.ToInt32(Console.ReadLine());
-                        play.Playlistmovie.RemoveAt(choise - 1);
-
-                    }
-                    else if (play.Type == "Cancion" || play.Type == "Canción" || play.Type == "canción" || play.Type == "cancion")
-                    {
-                        Dictionary<int, Songs> dic2 = new Dictionary<int, Songs>();
-                        int counter2 = 1;
-                        foreach (Songs songs in play.Playlistsong)
+                        if (play.Playlistsong.Count() > 0)
                         {
-                            Console.WriteLine("La playlist contiene las siguientes canciones: \n");
-                            Console.WriteLine('(' + counter2 + ')' + songs.Title1);
-                            dic2.Add(counter2, songs);
-                            counter2 += 1;
+                            if (play.Type == "Cancion" || play.Type == "Canción" || play.Type == "canción" || play.Type == "cancion")
+                            {
+                                Dictionary<int, Songs> dic2 = new Dictionary<int, Songs>();
+                                int counter2 = 1;
+                                Console.WriteLine("La playlist contiene las siguientes canciones: \n");
+                                foreach (Songs songs in play.Playlistsong)
+                                {
+                                    Console.WriteLine('(' + counter2 + ')' + songs.Title1);
+                                    dic2.Add(counter2, songs);
+                                    counter2 += 1;
 
+                                }
+                                Console.WriteLine("Seleccione cual desea eliminar");
+                                int choise = Convert.ToInt32(Console.ReadLine());
+                                play.Playlistsong.RemoveAt(choise - 1);
+                            }
                         }
-                        Console.WriteLine("Seleccione cual desea eliminar");
-                        int choise = Convert.ToInt32(Console.ReadLine());
-                        play.Playlistsong.RemoveAt(choise - 1);
-                    }
-                }
-                else if (option2 == "c")
-                {
-                    if (play.Type == "Pelicula" || play.Type == "Película" || play.Type == "pelicula" || play.Type == "película")
-                    {
-                        Dictionary<int, Movies> dic2 = new Dictionary<int, Movies>();
-                        int counter2 = 1;
-                        foreach (Movies movies in Files.AllMovies)
+                        else
                         {
+                            Console.WriteLine("Lista vacía");
+                            Thread.Sleep(2000);
+                        }
+
+                    }
+                    else if (option2 == "c")
+                    {
+                        if (play.Type == "Pelicula" || play.Type == "Película" || play.Type == "pelicula" || play.Type == "película")
+                        {
+                            Dictionary<int, Movies> dic2 = new Dictionary<int, Movies>();
+                            int counter2 = 1;
                             Console.WriteLine("¿Qué película desea agregar? \n");
-                            Console.WriteLine('(' + counter2 + ')' + movies.Title1);
-                            dic2.Add(counter2, movies);
-                            counter2 += 1;
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                Console.WriteLine('(' + counter2 + ')' + movies.Title1);
+                                dic2.Add(counter2, movies);
+                                counter2 += 1;
 
+                            }
+                            int choise = Convert.ToInt32(Console.ReadLine());
+                            Movies movies1 = dic2[choise];
+                            play.Playlistmovie.Add(movies1);
                         }
-                        int choise = Convert.ToInt32(Console.ReadLine());
-                        Movies movies1 = dic2[choise];
-                        play.Playlistmovie.Add(movies1);
-                    }
-                    else if (play.Type == "Cancion" || play.Type == "Canción" || play.Type == "canción" || play.Type == "cancion")
-                    {
-                        Dictionary<int, Songs> dic2 = new Dictionary<int, Songs>();
-                        int counter2 = 1;
-                        foreach (Songs songs in Files.AllSongs)
+                        else if (play.Type == "Cancion" || play.Type == "Canción" || play.Type == "canción" || play.Type == "cancion")
                         {
+                            Dictionary<int, Songs> dic2 = new Dictionary<int, Songs>();
+                            int counter2 = 1;
                             Console.WriteLine("¿Qué canción desea agregar? \n");
-                            Console.WriteLine('(' + counter2 + ')' + songs.Title1);
-                            dic2.Add(counter2, songs);
-                            counter2 += 1;
+                            foreach (Songs songs in Files.AllSongs)
+                            {
+                                Console.WriteLine('(' + counter2 + ')' + songs.Title1);
+                                dic2.Add(counter2, songs);
+                                counter2 += 1;
 
+                            }
+                            int choice = Convert.ToInt32(Console.ReadLine());
+                            Songs songs1 = dic2[choice];
+                            play.Playlistsong.Add(songs1);
                         }
-                        int choice = Convert.ToInt32(Console.ReadLine());
-                        Songs songs1 = dic2[choice];
-                        play.Playlistsong.Add(songs1);
-                    }
 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Comando ingresado no válido");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Comando ingresado no válido");
+                    Console.WriteLine("No existe Playlist para modificar");
+                    Thread.Sleep(2000);
                 }
             }
             else if (user.Type == "Free")
@@ -528,67 +549,89 @@ namespace ProyectoEquipo13
                     dic.Add(counter, playlists);
                     counter += 1;
                 }
-                Console.WriteLine();
-                int choice = Convert.ToInt32(Console.ReadLine());
-                user.MyPlaylist1[choice - 1].VerPlaylist();
-                Console.WriteLine("\nQue desea realizar:");
-                Console.WriteLine("(a) Poner una Canción/Película en específico\n(b) Reproducir Canción/Película Aleatoria");
-                string option = Console.ReadLine();
-                if (option == "a")
+                if (user.MyPlaylist1.Count() > 0)
                 {
-                    if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
+                    Console.WriteLine();
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    user.MyPlaylist1[choice - 1].VerPlaylist();
+                    Console.WriteLine("\nQue desea realizar:");
+                    Console.WriteLine("(a) Poner una Canción/Película en específico\n(b) Reproducir Canción/Película Aleatoria");
+                    string option = Console.ReadLine();
+                    if (option == "a")
                     {
-                        Dictionary<int, Movies> dic3 = new Dictionary<int, Movies>();
-                        Console.WriteLine("\nSeleccione la Película que desee ver:\n");
-                        int counter2 = 1;
-                        for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistmovie.Count; i++)
+                        if (user.MyPlaylist1[choice].Playlistmovie.Count() > 0)
                         {
-                            Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistmovie[i].Title1);
-                            dic3.Add(counter2, user.MyPlaylist1[choice - 1].Playlistmovie[i]);
-                            counter2 += 1;
+                            if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
+                            {
+                                Dictionary<int, Movies> dic3 = new Dictionary<int, Movies>();
+                                Console.WriteLine("\nSeleccione la Película que desee ver:\n");
+                                int counter2 = 1;
+                                for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistmovie.Count; i++)
+                                {
+                                    Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistmovie[i].Title1);
+                                    dic3.Add(counter2, user.MyPlaylist1[choice - 1].Playlistmovie[i]);
+                                    counter2 += 1;
+                                }
+                                int movieselection = Convert.ToInt32(Console.ReadLine());
+                                //Falta método reproducir
+                                user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].Play();
+                            }
                         }
-                        int movieselection = Convert.ToInt32(Console.ReadLine());
-                        //Falta método reproducir
-                        user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].Play();
-                    }
-                    else if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
-                    {
-                        Dictionary<int, Songs> dic4 = new Dictionary<int, Songs>();
-                        Console.WriteLine("\nSeleccione la Canción que desee ver:\n");
-                        int counter2 = 1;
-                        for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistsong.Count; i++)
+                        if (user.MyPlaylist1[choice].Playlistsong.Count() > 0)
                         {
-                            Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistsong[i].Title1);
-                            dic4.Add(counter2, user.MyPlaylist1[choice - 1].Playlistsong[i]);
-                            counter2 += 1;
+                            if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
+                            {
+                                Dictionary<int, Songs> dic4 = new Dictionary<int, Songs>();
+                                Console.WriteLine("\nSeleccione la Canción que desee ver:\n");
+                                int counter2 = 1;
+                                for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistsong.Count; i++)
+                                {
+                                    Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistsong[i].Title1);
+                                    dic4.Add(counter2, user.MyPlaylist1[choice - 1].Playlistsong[i]);
+                                    counter2 += 1;
+                                }
+                                int songselection = Convert.ToInt32(Console.ReadLine());
+                                //Falta método reproducir
+                                user.MyPlaylist1[choice - 1].Playlistsong[songselection - 1].Play();
+                            }
                         }
-                        int songselection = Convert.ToInt32(Console.ReadLine());
-                        //Falta método reproducir
-                        user.MyPlaylist1[choice - 1].Playlistsong[songselection - 1].Play();
+
                     }
-                }
-                else if (option == "b")
-                {
-                    if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
+                    else if (option == "b")
                     {
-                        Random rdn = new Random();
-                        int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistmovie.Count);
-                        //Falta método reproducir
-                        user.MyPlaylist1[choice - 1].Playlistmovie[num].Play();
+                        if (user.MyPlaylist1[choice].Playlistmovie.Count() > 0)
+                        {
+                            if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
+                            {
+                                Random rdn = new Random();
+                                int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistmovie.Count);
+                                //Falta método reproducir
+                                user.MyPlaylist1[choice - 1].Playlistmovie[num].Play();
+                            }
+                        }
+                        if (user.MyPlaylist1[choice].Playlistsong.Count() > 0)
+                        {
+                            if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
+                            {
+                                Random rdn = new Random();
+                                int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistsong.Count);
+                                //Falta método reproducir
+                                user.MyPlaylist1[choice - 1].Playlistsong[num].Play();
+                            }
+                        }
+
                     }
-                    else if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
+                    else
                     {
-                        Random rdn = new Random();
-                        int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistsong.Count);
-                        //Falta método reproducir
-                        user.MyPlaylist1[choice - 1].Playlistsong[num].Play();
+                        Console.WriteLine("La opción seleccionada no es válida");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("La opción seleccionada no es válida");
+                    Console.WriteLine("Aún no posee Playlists");
                 }
             }
+
             else if (user.Type == "Free")
             {
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
