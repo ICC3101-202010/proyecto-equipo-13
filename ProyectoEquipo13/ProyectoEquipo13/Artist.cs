@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoEquipo13
 {
+    [Serializable]
     public class Artist : Person
     {
         private int numReproduction = 0;

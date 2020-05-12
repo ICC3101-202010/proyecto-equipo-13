@@ -18,7 +18,27 @@ namespace ProyectoEquipo13
     {
         static void Main(string[] args)
         {
+            string workingDirectory = Environment.CurrentDirectory;
+
             IFormatter formatter = new BinaryFormatter();
+            IFormatter formatter2 = new BinaryFormatter();
+
+            string urlAllMovies = Directory.GetCurrentDirectory() + "\\AllMovies.bin";
+            string urlAllSongs = Directory.GetCurrentDirectory() + "\\AllSongs.bin";
+            string urlAllPlaylistsSongs = Directory.GetCurrentDirectory() + "\\AllPlaylistsSongs.bin";
+            string urlAllPlaylistsMovies = Directory.GetCurrentDirectory() + "\\AllPlaylistsMovies.bin";
+            string urlUsers = Directory.GetCurrentDirectory() + "\\Users.bin";
+
+            if (File.Exists(urlAllMovies) && File.Exists(urlAllSongs) && File.Exists(urlAllPlaylistsSongs) && File.Exists(urlAllPlaylistsMovies) && File.Exists(urlUsers))
+            {
+                Stream stream1 = new FileStream("AllMovies.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+                Stream stream2 = new FileStream("AllSongs.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+                Stream stream3 = new FileStream("AllPlaylistsSongs.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+                Stream stream4 = new FileStream("AllPlaylistsMovies.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+                Stream stream5 = new FileStream("Users.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            }
+
+
             //Stream stream = new FileStream("BaseDeDatos.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
             //Files.AllMovies = (List<Movies>)formatter.Deserialize(stream);               
             //Files.AllSongs = (List<Songs>)formatter.Deserialize(stream);
@@ -217,13 +237,13 @@ namespace ProyectoEquipo13
             movie1.Play(player);
             Console.Read();
 
-            Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
-            formatter.Serialize(stream2, Files.AllMovies);
-            formatter.Serialize(stream2, Files.AllSongs);
-            formatter.Serialize(stream2, Files.AllPlaylistsMovies);
-            formatter.Serialize(stream2, Files.AllPlaylistsSongs);
-            formatter.Serialize(stream2, Files.Users);
-            stream2.Close();
+            //Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            //formatter.Serialize(stream2, Files.AllMovies);
+            //formatter.Serialize(stream2, Files.AllSongs);
+            //formatter.Serialize(stream2, Files.AllPlaylistsMovies);
+            //formatter.Serialize(stream2, Files.AllPlaylistsSongs);
+            //formatter.Serialize(stream2, Files.Users);
+            //stream2.Close();
         }
     }
 }
