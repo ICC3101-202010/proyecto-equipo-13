@@ -114,7 +114,7 @@ namespace ProyectoEquipo13
                 int MinS = 0;
 
                 //SONG 1
-                Artist phill_collins = new Artist("Phil Collins", new DateTime(1951, 1, 30, 5, 5, 5), M, "");
+                Artist phill_collins = new Artist("Phil Collins", new DateTime(1951, 1, 30, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Phil_Collins");
                 Album Tarzan_album = new Album("Tarzan: An Original Walt Disney Records Soundtrack", DateTime.Now, phill_collins);
                 List<string> Genre_Son_of_man = new List<string>();
                 Genre_Son_of_man.Add("Pop Rock");
@@ -125,8 +125,8 @@ namespace ProyectoEquipo13
 
 
                 //SONG 2
-                Artist celine_dion = new Artist("Celine Dion", new DateTime(1968, 3, 30, 5, 5, 5), F, "");
-                Person james_horner = new Person("James Horner", new DateTime(1953, 8, 14, 5, 5, 5), M, "");
+                Artist celine_dion = new Artist("Celine Dion", new DateTime(1968, 3, 30, 5, 5, 5), F, "https://es.wikipedia.org/wiki/C%C3%A9line_Dion");
+                Person james_horner = new Person("James Horner", new DateTime(1953, 8, 14, 5, 5, 5), M, "https://es.wikipedia.org/wiki/James_Horner");
                 Album Titanic_album = new Album("Titanic: Music From The Motion Picture ", DateTime.Now, celine_dion);
                 List<string> Genre_My_heart_will_go_on = new List<string>();
                 Genre_My_heart_will_go_on.Add("Pop");
@@ -154,7 +154,7 @@ namespace ProyectoEquipo13
                 Files.AllSongs.Add(This_must_be_love);
 
                 //SONG 5
-                Artist randy_newman = new Artist("Randy Newman", new DateTime(1943, 11, 28, 5, 5, 5), M, "");
+                Artist randy_newman = new Artist("Randy Newman", new DateTime(1943, 11, 28, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Randy_Newman");
                 Album Toy_Story_album = new Album("Toy Story", new DateTime(1996, 4, 12, 5, 5, 5), randy_newman);
                 List<string> Genre_Youve_got_a_friend_in_me = new List<string>();
                 string Music_Youve_got_a_friend_in_me = @"\";
@@ -162,7 +162,7 @@ namespace ProyectoEquipo13
                 Files.AllSongs.Add(Youve_got_a_friend_in_me);
 
                 //SONG 6
-                Artist sia = new Artist("Sia", new DateTime(1943, 11, 28, 5, 5, 5), F, "");
+                Artist sia = new Artist("Sia", new DateTime(1943, 11, 28, 5, 5, 5), F, "https://es.wikipedia.org/wiki/Sia");
                 Album Forms_album = new Album("1000 Forms of fear", new DateTime(2014, 3, 14, 5, 5, 5), sia);
                 List<string> Genre_Chandelier = new List<string>();
                 Genre_Chandelier.Add("Pop");
@@ -178,8 +178,8 @@ namespace ProyectoEquipo13
                 Files.AllSongs.Add(Elastic_heart);
 
                 //SONG 8
-                Artist diplo = new Artist("Diplo", new DateTime(1978, 11, 10, 5, 5, 5), M, "");
-                Artist justin_bieber = new Artist("Justin Bieber", new DateTime(1994, 3, 1, 5, 5, 5), M, "");
+                Artist diplo = new Artist("Diplo", new DateTime(1978, 11, 10, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Diplo");
+                Artist justin_bieber = new Artist("Justin Bieber", new DateTime(1994, 3, 1, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Justin_Bieber");
                 Album My_world_album = new Album("My World 2.0", new DateTime(2010, 5, 5, 5, 5, 5), justin_bieber);
                 List<string> Genre_Where_are_u_now = new List<string>();
                 Genre_Where_are_u_now.Add("Pop");
@@ -188,8 +188,8 @@ namespace ProyectoEquipo13
                 Files.AllSongs.Add(Where_are_u_now);
 
                 //SONG 9
-                Artist maroon_5 = new Artist("Maroon 5", new DateTime(1997, 1, 1, 5, 5, 5), M, "");
-                Artist adam_levine = new Artist("Adam Levine", new DateTime(1979, 3, 18, 5, 5, 5), M, "");
+                Artist maroon_5 = new Artist("Maroon 5", new DateTime(1997, 1, 1, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Maroon_5");
+                Artist adam_levine = new Artist("Adam Levine", new DateTime(1979, 3, 18, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Adam_Levine");
                 Album V_album = new Album("V", new DateTime(2014, 9, 2, 5, 5, 5), maroon_5);
                 List<string> Genre_Sugar = new List<string>();
                 Genre_Sugar.Add("Pop Rock");
@@ -217,13 +217,13 @@ namespace ProyectoEquipo13
                 int Min = 0;
 
                 //MOVIE 1
-                Person kevin_lima = new Person("Kevin Lima", new DateTime(1962, 6, 12, 5, 5, 5), M, "");
+                Person kevin_lima = new Person("Kevin Lima", new DateTime(1962, 6, 12, 5, 5, 5), M, "https://www.imdb.com/name/nm0510674/?ref_=fn_al_nm_1");
                 List<Person> Actors_Tarzan = new List<Person>();
-                Person frank_welker = new Person("Frank Welker", new DateTime(1946, 3, 12, 5, 5, 5), M, "");
-                Person danielle_keaton = new Person("Danielle Keaton", new DateTime(1986, 7, 30, 5, 5, 5), F, "");
+                Person frank_welker = new Person("Frank Welker", new DateTime(1946, 3, 12, 5, 5, 5), M, "https://www.imdb.com/name/nm0919798/?ref_=fn_al_nm_1");
+                Person danielle_keaton = new Person("Danielle Keaton", new DateTime(1986, 7, 30, 5, 5, 5), F, "https://www.imdb.com/name/nm0918210/?ref_=fn_al_nm_1");
                 Actors_Tarzan.Add(frank_welker);
                 Actors_Tarzan.Add(danielle_keaton);
-                Person tab_murphay = new Person("Tab Murphy", new DateTime(1966, 2, 25, 5, 5, 5), F, "");
+                Person tab_murphay = new Person("Tab Murphy", new DateTime(1966, 2, 25, 5, 5, 5), F, "https://www.imdb.com/name/nm0614742/?ref_=nv_sr_srsg_0");
                 List<string> Categories_Tarzan = new List<string>();
                 Categories_Tarzan.Add("Animación musical");
                 Categories_Tarzan.Add("Aventura");
@@ -236,11 +236,11 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Tarzan);
 
                 //MOVIE 2
-                Person tom_hanks = new Person("Tom Hanks", new DateTime(1956, 7, 9, 5, 5, 5), M, "");
-                Person josh_cooley = new Person("Josh Cooley", new DateTime(1950, 11, 23, 5, 5, 5), M, "");
-                Person tim_allen = new Person("Tim Allen", new DateTime(1955, 9, 26, 5, 5, 5), M, "");
-                Person annie_potts = new Person("Annie Potts", new DateTime(1976, 10, 3, 5, 5, 5), F, "");
-                Person john_lasseter = new Person("John Lasseter", new DateTime(1957, 1, 12, 5, 5, 5), M, "");
+                Person tom_hanks = new Person("Tom Hanks", new DateTime(1956, 7, 9, 5, 5, 5), M, "https://www.imdb.com/name/nm0000158/?ref_=fn_al_nm_1");
+                Person josh_cooley = new Person("Josh Cooley", new DateTime(1950, 11, 23, 5, 5, 5), M, "https://www.imdb.com/name/nm2155757/?ref_=nv_sr_srsg_0");
+                Person tim_allen = new Person("Tim Allen", new DateTime(1955, 9, 26, 5, 5, 5), M, "https://www.imdb.com/name/nm0000741/?ref_=fn_al_nm_1");
+                Person annie_potts = new Person("Annie Potts", new DateTime(1976, 10, 3, 5, 5, 5), F, "https://www.imdb.com/name/nm0001633/?ref_=fn_al_nm_1");
+                Person john_lasseter = new Person("John Lasseter", new DateTime(1957, 1, 12, 5, 5, 5), M, "https://www.imdb.com/name/nm0005124/?ref_=fn_al_nm_1");
                 List<Person> Actors_Toy_story_4 = new List<Person>();
                 Actors_Toy_story_4.Add(tom_hanks);
                 Actors_Toy_story_4.Add(tim_allen);
@@ -257,8 +257,8 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Toy_story_4);
 
                 //MOVIE 3 
-                Person lee_unkrich = new Person("Lee Unkrich", new DateTime(1967, 8, 8, 5, 5, 5), M, "");
-                Person darla_anderson = new Person("Darla Anderson", new DateTime(1970, 8, 22, 5, 5, 5), F, "");
+                Person lee_unkrich = new Person("Lee Unkrich", new DateTime(1967, 8, 8, 5, 5, 5), M, "https://www.imdb.com/name/nm0881279/?ref_=nv_sr_srsg_0");
+                Person darla_anderson = new Person("Darla Anderson", new DateTime(1970, 8, 22, 5, 5, 5), F, "https://www.imdb.com/name/nm0026565/?ref_=fn_al_nm_1");
                 List<Person> Actors_Toy_story_3 = new List<Person>();
                 Actors_Toy_story_3.Add(tom_hanks);
                 Actors_Toy_story_3.Add(tim_allen);
@@ -274,9 +274,9 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Toy_story_3);
 
                 //MOVIE 4
-                Person james_cameron = new Person("James Cameron", new DateTime(1954, 8, 16, 5, 5, 5), M, "");
-                Person leonardo_dicaprio = new Person("Leonardo DiCaprio", new DateTime(1974, 11, 11, 5, 5, 5), M, "");
-                Person kate_winslet = new Person("Kate Winslet", new DateTime(1975, 10, 5, 5, 5, 5), F, "");
+                Person james_cameron = new Person("James Cameron", new DateTime(1954, 8, 16, 5, 5, 5), M, "https://www.imdb.com/name/nm0000116/?ref_=fn_al_nm_1");
+                Person leonardo_dicaprio = new Person("Leonardo DiCaprio", new DateTime(1974, 11, 11, 5, 5, 5), M, "https://www.imdb.com/name/nm0000138/?ref_=fn_al_nm_1");
+                Person kate_winslet = new Person("Kate Winslet", new DateTime(1975, 10, 5, 5, 5, 5), F, "https://www.imdb.com/name/nm0000701/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_Titanic = new List<Person>();
                 Actors_Titanic.Add(leonardo_dicaprio);
                 Actors_Titanic.Add(kate_winslet);
@@ -292,7 +292,7 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Titanic);
 
                 //MOVIE 5
-                Person andrew_stanton = new Person("Andrew Stanton", new DateTime(1965, 12, 3, 5, 5, 5), M, "");
+                Person andrew_stanton = new Person("Andrew Stanton", new DateTime(1965, 12, 3, 5, 5, 5), M, "https://www.imdb.com/name/nm0004056/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_Toy_story_2 = new List<Person>();
                 Actors_Toy_story_2.Add(tom_hanks);
                 Actors_Toy_story_2.Add(tim_allen);
@@ -323,10 +323,10 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Toy_story);
 
                 //MOVIE 7
-                Person martin_scorsese = new Person("Martin Scorsese", new DateTime(1942, 11, 17, 5, 5, 5), M, "");
-                Person terence_winter = new Person("Terence Winter", new DateTime(1960, 10, 2, 5, 5, 5), M, "");
-                Person margot_robbie = new Person("Margot Robie", new DateTime(1990, 7, 2, 5, 5, 5), F, "");
-                Person matthew_mcconaughey = new Person("Matthew McConaughey", new DateTime(1969, 11, 4, 5, 5, 5), M, "");
+                Person martin_scorsese = new Person("Martin Scorsese", new DateTime(1942, 11, 17, 5, 5, 5), M, "https://www.imdb.com/name/nm0000217/?ref_=nv_sr_srsg_0");
+                Person terence_winter = new Person("Terence Winter", new DateTime(1960, 10, 2, 5, 5, 5), M, "https://www.imdb.com/name/nm1010540/?ref_=nv_sr_srsg_0");
+                Person margot_robbie = new Person("Margot Robie", new DateTime(1990, 7, 2, 5, 5, 5), F, "https://www.imdb.com/name/nm3053338/?ref_=fn_al_nm_1");
+                Person matthew_mcconaughey = new Person("Matthew McConaughey", new DateTime(1969, 11, 4, 5, 5, 5), M, "https://www.imdb.com/name/nm0000190/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_The_wolf_of_wall_street = new List<Person>();
                 Actors_The_wolf_of_wall_street.Add(leonardo_dicaprio);
                 Actors_The_wolf_of_wall_street.Add(margot_robbie);
@@ -341,8 +341,8 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(The_wolf_of_wall_street);
 
                 //MOVIE 8
-                Person christopher_nolan = new Person("Christopher Nolan", new DateTime(1970, 7, 30, 5, 5, 5), M, "");
-                Person anne_hathaway = new Person("Anne Hathaway", new DateTime(1982, 11, 12, 5, 5, 5), F, "");
+                Person christopher_nolan = new Person("Christopher Nolan", new DateTime(1970, 7, 30, 5, 5, 5), M, "https://www.imdb.com/name/nm0634240/?ref_=nv_sr_srsg_0");
+                Person anne_hathaway = new Person("Anne Hathaway", new DateTime(1982, 11, 12, 5, 5, 5), F, "https://www.imdb.com/name/nm0004266/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_Interestellar = new List<Person>();
                 Actors_Interestellar.Add(anne_hathaway);
                 Actors_Interestellar.Add(matthew_mcconaughey);
@@ -355,8 +355,8 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(Interestellar);
 
                 //MOVIE 9
-                Person steven_rogers = new Person("Steven Rogers", new DateTime(1953, 4, 3, 5, 5, 5), M, "");
-                Person allison_janney = new Person("Allison Janney", new DateTime(1959, 11, 19, 5, 5, 5), F, "");
+                Person steven_rogers = new Person("Steven Rogers", new DateTime(1953, 4, 3, 5, 5, 5), M, "https://www.imdb.com/name/nm0737216/?ref_=fn_al_nm_1");
+                Person allison_janney = new Person("Allison Janney", new DateTime(1959, 11, 19, 5, 5, 5), F, "https://www.imdb.com/name/nm0005049/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_I_tonya = new List<Person>();
                 Actors_I_tonya.Add(margot_robbie);
                 Actors_I_tonya.Add(allison_janney);
@@ -370,10 +370,10 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(I_tonya);
 
                 //MOVIE 10
-                Person robert_deniro = new Person("Robert De Niro", new DateTime(1943, 8, 17, 5, 5, 5), M, "");
-                Person al_pacino = new Person("Al Pacino", new DateTime(1940, 4, 25, 5, 5, 5), M, "");
-                Person joe_pesci = new Person("Joe Pesci", new DateTime(1943, 2, 9, 5, 5, 5), M, "");
-                Person steven_zaillian = new Person("Steven Zaillian", new DateTime(1953, 1, 30, 5, 5, 5), M, "");
+                Person robert_deniro = new Person("Robert De Niro", new DateTime(1943, 8, 17, 5, 5, 5), M, "https://www.imdb.com/name/nm0000134/?ref_=nv_sr_srsg_0");
+                Person al_pacino = new Person("Al Pacino", new DateTime(1940, 4, 25, 5, 5, 5), M, "https://www.imdb.com/name/nm0000199/?ref_=nv_sr_srsg_0");
+                Person joe_pesci = new Person("Joe Pesci", new DateTime(1943, 2, 9, 5, 5, 5), M, "https://www.imdb.com/name/nm0000582/?ref_=fn_al_nm_1");
+                Person steven_zaillian = new Person("Steven Zaillian", new DateTime(1953, 1, 30, 5, 5, 5), M, "https://www.imdb.com/name/nm0001873/?ref_=nv_sr_srsg_0");
                 List<Person> Actors_The_irishman = new List<Person>();
                 Actors_The_irishman.Add(robert_deniro);
                 Actors_The_irishman.Add(al_pacino);
