@@ -583,8 +583,8 @@ namespace ProyectoEquipo13
             Stream stream10 = new FileStream("Users.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             formatter.Serialize(stream6, Files.AllMovies);
             formatter.Serialize(stream7, Files.AllSongs);
-            formatter.Serialize(stream8, Files.AllPlaylistsMovies);
-            formatter.Serialize(stream9, Files.AllPlaylistsSongs);
+            formatter.Serialize(stream8, Files.AllPlaylistsSongs);
+            formatter.Serialize(stream9, Files.AllPlaylistsMovies);
             formatter.Serialize(stream10, Files.Users);
             stream6.Close();
             stream7.Close();

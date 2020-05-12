@@ -287,6 +287,7 @@ namespace ProyectoEquipo13
                                 }
                                 user.MyPlaylist1.Add(a);                  
                                 Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
+                                Thread.Sleep(2000);
                             }
                         }
                         else if (type == "Película")
@@ -684,7 +685,7 @@ namespace ProyectoEquipo13
                 Dictionary<int, Playlists> dic = new Dictionary<int, Playlists>();
                 Console.WriteLine("\nSeleccione la Playlist que desee ver:\n");
                 int counter = 1;
-                Console.WriteLine("\nPlaylists de Películas: ");
+                Console.WriteLine("Playlists de Películas: ");
                 foreach (Playlists playlists in Files.AllPlaylistsMovies)
                 {
                     Console.WriteLine("(" + counter + ")" + playlists.Name);
@@ -692,14 +693,183 @@ namespace ProyectoEquipo13
                     counter += 1;
                 }
                 Console.WriteLine("\nPlaylists de Canciones: ");
-                int counter2 = counter + 1;
-                foreach (Playlists playlists in Files.AllPlaylistsMovies)
+                int counter2 = counter;
+                foreach (Playlists playlists in Files.AllPlaylistsSongs)
                 {
-                    Console.WriteLine("(" + counter + ")" + playlists.Name);
+                    Console.WriteLine("(" + counter2 + ")" + playlists.Name);
                     dic.Add(counter2, playlists);
                     counter2 += 1;
                 }
-                Thread.Sleep(5000);
+                int opt = Convert.ToInt32(Console.ReadLine());
+                if (dic[opt].Type=="Películas" || dic[opt].Type == "Peliculas" || dic[opt].Type == "películas" || dic[opt].Type == "peliculas" || dic[opt].Type == "Película" || dic[opt].Type == "Pelicula" || dic[opt].Type == "película" || dic[opt].Type == "pelicula")
+                {
+                    int pos = opt - 1;
+                    Console.WriteLine("\n¿Que desea hacer?");
+                    Console.WriteLine("(a) Agregarla a Mis Playlists \n(b) Ver/Seleccione Películas de la Playlist");
+                    string des = Console.ReadLine();
+                    if (des == "a")
+                    {
+                        user.MyPlaylist1.Add(Files.AllPlaylistsMovies[pos]);
+                        Console.WriteLine("\nSu Playlist se ha agregado correctamente");
+                    }
+                    else if (des == "b")
+                    {
+                        Dictionary<int, Movies> dic2 = new Dictionary<int, Movies>();
+                        Console.WriteLine("\nSeleccione la película que desee:\n");
+                        int counter3 = 1;
+                        foreach (Movies movie in Files.AllPlaylistsMovies[pos].Playlistmovie)
+                        {
+                            Console.WriteLine("(" + counter3 + ")" + movie.Title1);
+                            dic2.Add(counter3, movie);
+                            counter3 += 1;
+                        }
+                        int option = Convert.ToInt32(Console.ReadLine());
+                        Movies movie2 = dic2[option];
+                        movie2.MovieInformation();
+                        Console.WriteLine("\n¿Que desea hacer con la película?");
+                        Console.WriteLine("(a) Reproducir\n(b) Valorar Película\n(c) Agregar a una Playlist\n(d) Nada (Solo quería ver la información de la Película)");
+                        string option2 = Console.ReadLine();
+                        if (option2 == "a")
+                        {
+                            movie2.Play();
+                        }
+                        else if (option2 == "b")
+                        {
+                            Console.WriteLine("Seleccione la valoración que desea para la película (double)");
+                            double val = Convert.ToDouble(Console.ReadLine());
+                            movie2.Rating1.Add(val);
+                            computer.Rate("Pelicula", movie2.Title1, movie2.Rating1);
+                            Thread.Sleep(1000);
+                        }
+                        else if (option2 == "c")
+                        {
+                            if (user.Type == "Premium")
+                            {
+                                if (user.MyPlaylist1.Count() > 0)
+                                {
+                                    Dictionary<int, Playlists> dic3 = new Dictionary<int, Playlists>();
+                                    Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
+                                    int counter4 = 1;
+                                    foreach (Playlists playlist in user.MyPlaylist1)
+                                    {
+                                        Console.WriteLine("(" + counter4 + ")" + playlist.Name);
+                                        dic3.Add(counter4, playlist);
+                                        counter4 += 1;
+                                    }
+                                    int choice = Convert.ToInt32(Console.ReadLine());
+                                    if (choice != 0)
+                                    {
+                                        Playlists playlist2 = dic3[choice];
+                                        playlist2.Playlistmovie.Add(movie2);
+                                        user.MyPlaylist1.RemoveAt(choice - 1);
+                                        user.MyPlaylist1.Insert(choice - 1, playlist2);
+                                    }
+                                }
+                            }
+                            else if (user.Type == "Free")
+                            {
+                                Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
+                                Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
+                            }
+                        }
+                        else if (option2 == "d")
+                        {
+                            Console.WriteLine();
+                        }
+                        else { Console.WriteLine("La opción que seleccionó no es válida"); }
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nLa opción seleccionada no es válida\n");
+                    }
+                }
+                else if(dic[opt].Type == "Canciones" || dic[opt].Type == "canciones" || dic[opt].Type == "Canción" || dic[opt].Type == "canción" || dic[opt].Type == "Cancion" || dic[opt].Type == "cancion")
+                {
+                    int pos = opt -counter - 1;
+                    Console.WriteLine("\n¿Que desea hacer?");
+                    Console.WriteLine("(a) Agregarla a Mis Playlists \n(b) Reproducir Playlist \n(c) Ver Canciones/Seleccionar de la Playlist");
+                    string des = Console.ReadLine();
+                    if (des == "a")
+                    {
+                        user.MyPlaylist1.Add(Files.AllPlaylistsSongs[pos]);
+                        Console.WriteLine("\nSu Playlist se ha agregado correctamente");
+                    }
+                    else if (des == "b")
+                    {
+                        computer.AutomaticRep(Files.AllPlaylistsSongs[pos].Playlistsong);
+                    }
+                    else if (des == "c")
+                    {
+                        Dictionary<int, Songs> dic5 = new Dictionary<int, Songs>();
+                        Console.WriteLine("\nSeleccione la canción que desee:\n");
+                        int count = 1;
+                        foreach (Songs song in Files.AllPlaylistsSongs[pos].Playlistsong)
+                        {
+                            Console.WriteLine("(" + count + ")" + song.Title1);
+                            dic5.Add(count, song);
+                            count += 1;
+                        }
+                        int option = Convert.ToInt32(Console.ReadLine());
+                        Songs songs2 = dic5[option];
+                        songs2.SongsInformation();
+                        Console.WriteLine("\n¿Que desea hacer con la canción?");
+                        Console.WriteLine("(a) Reproducir\n(b) Valorar Canción\n(c) Agregar a una Playlist\n(d) Nada (Solo quería ver la información de la Canción)");
+                        string option2 = Console.ReadLine();
+                        if (option2 == "a")
+                        {
+                            songs2.Play();
+                        }
+                        else if (option2 == "b")
+                        {
+                            Console.WriteLine("Seleccione la valoración que desea para la canción (double)");
+                            double val = Convert.ToDouble(Console.ReadLine());
+                            songs2.Rating1.Add(val);
+                            computer.Rate("Cancion", songs2.Title1, songs2.Rating1);
+                            Thread.Sleep(1000);
+                        }
+                        else if (option2 == "c")
+                        {
+                            if (user.Type == "Premium")
+                            {
+                                if (user.MyPlaylist1.Count() > 0)
+                                {
+                                    Dictionary<int, Playlists> dic6 = new Dictionary<int, Playlists>();
+                                    Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
+                                    int counter6 = 1;
+                                    foreach (Playlists playlist in user.MyPlaylist1)
+                                    {
+                                        Console.WriteLine("(" + counter6 + ")" + playlist.Name);
+                                        dic6.Add(counter6, playlist);
+                                        counter6 += 1;
+                                    }
+                                    int choice = Convert.ToInt32(Console.ReadLine());
+                                    if (choice != 0)
+                                    {
+                                        Playlists playlist2 = dic6[choice];
+                                        playlist2.Playlistsong.Add(songs2);
+                                        user.MyPlaylist1.RemoveAt(choice - 1);
+                                        user.MyPlaylist1.Insert(choice - 1, playlist2);
+                                    }
+                                }
+                            }
+                            else if (user.Type == "Free")
+                            {
+                                Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
+                                Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
+                            }
+                        }
+                        else if (option2 == "d")
+                        {
+                            Console.WriteLine();
+                        }
+                        else { Console.WriteLine("La opción que seleccionó no es válida"); }
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nLa opción seleccionada no es válida\n");
+                    }
+                }
+                Thread.Sleep(2000);
             }
             else if (user.Type == "Free")
             {
@@ -849,6 +1019,6 @@ namespace ProyectoEquipo13
             }
             else { Console.WriteLine("La opción que seleccionó no es válida"); }
         }
-
+        
     }   
 }
