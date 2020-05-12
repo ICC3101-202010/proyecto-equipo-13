@@ -81,6 +81,7 @@ namespace ProyectoEquipo13
             var carpeta = Directory.GetCurrentDirectory();
             var D = carpeta + this.Music1;
             player.URL = D;
+            this.NumReproductions += 1;
             player.controls.play();
             Console.WriteLine("Reproduciendo, presione enter si desea parar la reproducción");
             Console.ReadLine();

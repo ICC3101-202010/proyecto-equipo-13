@@ -417,7 +417,7 @@ namespace ProyectoEquipo13
                     int counter = 1;
                     foreach (Playlists playlists in user.MyPlaylist1)
                     {
-                        Console.WriteLine('(' + counter + ')' + playlists.Name);
+                        Console.WriteLine("(" + counter + ")" + playlists.Name);
                         dic.Add(counter, playlists);
                         counter += 1;
                     }
@@ -559,7 +559,7 @@ namespace ProyectoEquipo13
                     string option = Console.ReadLine();
                     if (option == "a")
                     {
-                        if (user.MyPlaylist1[choice].Playlistmovie.Count() > 0)
+                        if (user.MyPlaylist1[choice-1].Playlistmovie.Count() > 0)
                         {
                             if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
                             {
@@ -577,7 +577,7 @@ namespace ProyectoEquipo13
                                 user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].Play();
                             }
                         }
-                        if (user.MyPlaylist1[choice].Playlistsong.Count() > 0)
+                        if (user.MyPlaylist1[choice-1].Playlistsong.Count() > 0)
                         {
                             if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
                             {
@@ -599,7 +599,7 @@ namespace ProyectoEquipo13
                     }
                     else if (option == "b")
                     {
-                        if (user.MyPlaylist1[choice].Playlistmovie.Count() > 0)
+                        if (user.MyPlaylist1[choice-1].Playlistmovie.Count() > 0)
                         {
                             if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "peliculas")
                             {
@@ -609,7 +609,7 @@ namespace ProyectoEquipo13
                                 user.MyPlaylist1[choice - 1].Playlistmovie[num].Play();
                             }
                         }
-                        if (user.MyPlaylist1[choice].Playlistsong.Count() > 0)
+                        if (user.MyPlaylist1[choice-1].Playlistsong.Count() > 0)
                         {
                             if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
                             {
@@ -629,6 +629,7 @@ namespace ProyectoEquipo13
                 else
                 {
                     Console.WriteLine("Aún no posee Playlists");
+                    Thread.Sleep(1000);
                 }
             }
 

@@ -106,11 +106,11 @@ namespace ProyectoEquipo13
                 }
             }
 
-            if (type == "Director" || type == "director" )
+            if (type == "Director" || type == "director")
             {
                 foreach (Movies movies in Files.AllMovies)
                 {
-                    if (movies.Director1.Name== name)
+                    if (movies.Director1.Name == name)
                     {
                         show.Add(movies);
                     }
@@ -139,7 +139,7 @@ namespace ProyectoEquipo13
                     }
                 }
             }
-            if (type == "Categoria" || type == "categoria"||type == "Categoría" || type == "categoría")
+            if (type == "Categoria" || type == "categoria" || type == "Categoría" || type == "categoría")
             {
                 foreach (Movies movies in Files.AllMovies)
                 {
@@ -199,16 +199,23 @@ namespace ProyectoEquipo13
 
         public Playlists CreatePlaylist(string type, string name, bool privacidad)
         {
-            if(type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
+            if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
-                Files.AllPlaylistsMovies.Add(playlists);
+                if (privacidad == true)
+                {
+                    Files.AllPlaylistsMovies.Add(playlists);
+                }
+                
                 return playlists;
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
-                Files.AllPlaylistsSongs.Add(playlists);
+                if (privacidad == true)
+                {
+                    Files.AllPlaylistsSongs.Add(playlists);
+                }
                 return playlists;
             }
             return null;
@@ -229,7 +236,7 @@ namespace ProyectoEquipo13
             return null;
 
         }
-       
+
        
         //Parte Usuario
 

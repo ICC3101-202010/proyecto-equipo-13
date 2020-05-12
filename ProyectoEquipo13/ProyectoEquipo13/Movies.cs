@@ -89,6 +89,7 @@ namespace ProyectoEquipo13
         {
             var carpeta = Directory.GetCurrentDirectory();
             string D = carpeta + this.Video;
+            this.NumReproductions += 1;
             System.Diagnostics.Process.Start(D);
         }
 
