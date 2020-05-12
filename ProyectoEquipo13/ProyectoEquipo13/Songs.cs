@@ -12,7 +12,7 @@ namespace ProyectoEquipo13
     [Serializable]
     public class Songs
     {
-        
+        public static WindowsMediaPlayer player = new WindowsMediaPlayer();
         string Title;
         Person Composer;
         Artist Artist;
@@ -71,21 +71,28 @@ namespace ProyectoEquipo13
         {
             Console.WriteLine("Título: " + this.Title1 + "\nArtista: " + this.Artist1 + "\nAlbum: " + this.Album1 + "\nRating: " + this.RatingProm1);
             Console.WriteLine("Género/os: ");
-            foreach(string genero in this.Genre1)
+            foreach (string genero in this.Genre1)
             {
                 Console.WriteLine(genero);
             }
         }
-        public void Play(WindowsMediaPlayer player)
+        public void Play()
         {
             var carpeta = Directory.GetCurrentDirectory();
             var D = carpeta + this.Music1;
             player.URL = D;
             player.controls.play();
-            Console.WriteLine("Reproduciendo");
+            Console.WriteLine("Reproduciendo, presione enter si desea parar la reproducción");
             Console.ReadLine();
             player.controls.stop();
         }
-    }
 
+        public void Play2()
+        {
+            var carpeta = Directory.GetCurrentDirectory();
+            var D = carpeta + this.Music1;
+            System.Diagnostics.Process.Start(D);
+        }
+
+    }
 }

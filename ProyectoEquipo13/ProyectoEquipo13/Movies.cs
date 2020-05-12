@@ -74,7 +74,7 @@ namespace ProyectoEquipo13
 
 
 
-        public void Play(WindowsMediaPlayer player)
+        public void Play2(WindowsMediaPlayer player)
         {
             var carpeta = Directory.GetCurrentDirectory();
             string D = carpeta + this.Video;
@@ -84,7 +84,22 @@ namespace ProyectoEquipo13
             Console.ReadLine();
             player.controls.stop();
         }
-        public void PlayTrailer(WindowsMediaPlayer player)
+
+        public void Play()
+        {
+            var carpeta = Directory.GetCurrentDirectory();
+            string D = carpeta + this.Video;
+            System.Diagnostics.Process.Start(D);
+        }
+
+        public void PlayTrailer()
+        {
+            var carpeta = Directory.GetCurrentDirectory();
+            string D = carpeta + this.Trailer;
+            System.Diagnostics.Process.Start(D);
+        }
+
+        public void PlayTrailer2(WindowsMediaPlayer player)
         {
             var carpeta = Directory.GetCurrentDirectory();
             string D = carpeta + this.Trailer;

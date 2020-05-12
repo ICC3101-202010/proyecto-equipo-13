@@ -13,6 +13,8 @@ namespace ProyectoEquipo13
 {
     public static class Console1
     {
+        public static WindowsMediaPlayer wp = new WindowsMediaPlayer();
+
         public static void InitialMessage()
         {
             Console.WriteLine("¡Bienvenido a Netfy! \n¡La nueva plataforma donde podrás tener tu música y películas en un solo lugar!");
@@ -42,7 +44,7 @@ namespace ProyectoEquipo13
             string option2 = Console.ReadLine();
             if (option2 == "a")
             {
-                //Nada Todavía
+                movie2.Play();
             }
             else if (option2 == "b")
             {
@@ -110,7 +112,7 @@ namespace ProyectoEquipo13
             string option2 = Console.ReadLine();
             if (option2 == "a")
             {
-                //Nada Todavía
+                songs2.Play();
             }
             else if (option2 == "b")
             {
@@ -547,7 +549,7 @@ namespace ProyectoEquipo13
                         }
                         int movieselection = Convert.ToInt32(Console.ReadLine());
                         //Falta método reproducir
-                        //user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].PLAY();
+                        user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].Play();
                     }
                     else if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
                     {
@@ -562,7 +564,7 @@ namespace ProyectoEquipo13
                         }
                         int songselection = Convert.ToInt32(Console.ReadLine());
                         //Falta método reproducir
-                        //user.MyPlaylist1[choice - 1].Playlistsong[songselection - 1].PLAY();
+                        user.MyPlaylist1[choice - 1].Playlistsong[songselection - 1].Play();
                     }
                 }
                 else if (option == "b")
@@ -572,14 +574,14 @@ namespace ProyectoEquipo13
                         Random rdn = new Random();
                         int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistmovie.Count);
                         //Falta método reproducir
-                        //user.MyPlaylist1[choice - 1].Playlistmovie[num].PLAY();
+                        user.MyPlaylist1[choice - 1].Playlistmovie[num].Play();
                     }
                     else if (user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "cancion")
                     {
                         Random rdn = new Random();
                         int num = rdn.Next(user.MyPlaylist1[choice - 1].Playlistsong.Count);
                         //Falta método reproducir
-                        //user.MyPlaylist1[choice - 1].Playlistsong[num].PLAY();
+                        user.MyPlaylist1[choice - 1].Playlistsong[num].Play();
                     }
                 }
                 else
@@ -618,7 +620,7 @@ namespace ProyectoEquipo13
             string option2 = Console.ReadLine();
             if (option2 == "a")
             {
-                //Nada Todavía
+                movie2.Play();
             }
             else if (option2 == "b")
             {
@@ -686,7 +688,7 @@ namespace ProyectoEquipo13
             string option2 = Console.ReadLine();
             if (option2 == "a")
             {
-                //Nada Todavía
+                songs2.Play();
             }
             else if (option2 == "b")
             {

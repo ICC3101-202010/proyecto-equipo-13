@@ -503,7 +503,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("-"+movies[i].Title1);
                 //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
             }
-            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");
+            Console.WriteLine("Quiere Seleccionar algúna (Podra ver la infromación de esta, además podrá escoger si quiere reproducirla o agregarla a una Playlist)");
             Console.WriteLine("(si)\n(no)");
             string option = Console.ReadLine();
             if (option == "si")

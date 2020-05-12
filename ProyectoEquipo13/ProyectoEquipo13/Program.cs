@@ -50,7 +50,7 @@ namespace ProyectoEquipo13
             Computer computer = new Computer();
             MailSender mailSender = new MailSender();
             User emptyuser = new User();
-            {
+            //{
                 char M = 'M';
                 char F = 'F';
 
@@ -73,7 +73,7 @@ namespace ProyectoEquipo13
                 List<string> Genre_Son_of_man = new List<string>();
                 Genre_Son_of_man.Add("Pop Rock");
                 Genre_Son_of_man.Add("Soft Rock");
-                string Music_Son_of_man = @"\Tarzan_-Son_Of_Man_Phil_Collins";
+                string Music_Son_of_man = @"\caca.mp3";//@"\Tarzan_-Son_Of_Man_Phil_Collins";
                 Songs Son_of_man = new Songs("Son of man", phill_collins, phill_collins, phill_collins, LenghtS, Genre_Son_of_man, LyricsS, ResolutionS, MemoryS, numReproductionsS, Rating, RatingProm, Music_Son_of_man, Type, MinS, Tarzan_album);
                 Files.AllSongs.Add(Son_of_man);
 
@@ -340,10 +340,10 @@ namespace ProyectoEquipo13
                 List<Songs> Songs_The_irishman = new List<Songs>();
                 Movies The_irishman = new Movies("The Irishman", martin_scorsese, Actors_The_irishman, steven_zaillian, Lenght, Categories_The_irishman, "TriBeCa", Description, "2019", Resolution, Memory, numReproductions, Rating, RatingProm, Trailer_The_irishman, Video_The_irishman, Songs_The_irishman, Min);
                 Files.AllMovies.Add(The_irishman);
-            }
+            //}
 
             Console1.InitialMessage();
-            while (true)
+            while (false)
             {
                 Console.WriteLine("\n¿Qué desea realizar?");
                 Console.WriteLine("(a) Iniciar/Crear Sesión, modificar cuenta\n(b) Salir del programa");
@@ -470,9 +470,9 @@ namespace ProyectoEquipo13
                 }
             }
 
-            WindowsMediaPlayer player = new WindowsMediaPlayer();
-            Son_of_man.Play(player);
-            Tarzan.Play(player);
+            //WindowsMediaPlayer player = new WindowsMediaPlayer();
+            Son_of_man.Play();
+            Tarzan.Play();
             Console.Read();
 
             //Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
