@@ -421,6 +421,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
                 Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
             }
+            Thread.Sleep(2000);
         }
 
         public static void ModifiedPlaylist(Computer computer, User user)
@@ -557,6 +558,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
                 Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
             }
+            Thread.Sleep(2000);
         }
 
         public static void SeePlaylist(Computer computer, User user)
@@ -676,6 +678,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
                 Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
             }
+            Thread.Sleep(2000);
         }
 
         public static void SeeProgramPlaylists(Computer computer, User user)
@@ -785,7 +788,7 @@ namespace ProyectoEquipo13
                 }
                 else if(dic[opt].Type == "Canciones" || dic[opt].Type == "canciones" || dic[opt].Type == "Canción" || dic[opt].Type == "canción" || dic[opt].Type == "Cancion" || dic[opt].Type == "cancion")
                 {
-                    int pos = opt -counter - 1;
+                    int pos = opt -counter;
                     Console.WriteLine("\n¿Que desea hacer?");
                     Console.WriteLine("(a) Agregarla a Mis Playlists \n(b) Reproducir Playlist \n(c) Ver Canciones/Seleccionar de la Playlist");
                     string des = Console.ReadLine();
@@ -877,6 +880,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
                 Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
             }
+            Thread.Sleep(2000);
         }
 
         public static void Search(Computer computer, User userlogin)
