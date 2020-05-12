@@ -288,30 +288,26 @@ namespace ProyectoEquipo13
             List<Songs> songs2 = new List<Songs>();
             if (person != "")
             {
-                var songArtist = from song in songs
-                                where (song.Artist1.Name == person || song.Artist1.Name.Contains(person))
-                                orderby song ascending
-                                select song;
-                var songComposer = from song in songs
-                                 where (song.Composer1.Name == person || song.Composer1.Name.Contains(person))
-                                 orderby song ascending
-                                 select song;
-                var songWriter = from song in songs
-                                   where (song.Writer1.Name == person || song.Writer1.Name.Contains(person))
-                                   orderby song ascending
-                                   select song;
-
-                foreach (var i in songArtist)
+                foreach (Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if(song.Artist1.Name == person || song.Artist1.Name.Contains(person))
+                    {
+                        songs2.Add(song);
+                    }
                 }
-                foreach (var i in songComposer)
+                foreach (Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if(song.Composer1.Name == person || song.Composer1.Name.Contains(person))
+                    {
+                        songs2.Add(song);
+                    }
                 }
-                foreach (var i in songWriter)
+                foreach(Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if (song.Writer1.Name == person || song.Writer1.Name.Contains(person))
+                    {
+                        songs2.Add(song);
+                    }
                 }
                 return songs2;
             }
@@ -325,37 +321,19 @@ namespace ProyectoEquipo13
         static List<Songs> QueryGenreS(List<Songs> songs, string genre)
         {
             List<Songs> songs2 = new List<Songs>();
-            List<Songs> songs3 = new List<Songs>();
             if (genre != "")
             {
                 foreach (Songs song in songs)
                 {
                     foreach (string j in song.Genre1)
                     {
-                        var songGenre = from song3 in songs
-                                      where (j == genre || j.Contains(genre))
-                                      orderby song3 ascending
-                                      select song3;
-
-                        foreach (Songs y in songGenre)
+                        if (j == genre || j.Contains(genre))
                         {
-                            songs2.Add(y);
+                            songs2.Add(song);
                         }
                     }
-
                 }
-                foreach (Songs t in songs2)
-                {
-                    if (songs3.Contains(t))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        songs3.Add(t);
-                    }
-                }
-                return songs3;
+                return songs2;
             }
             else
             {
@@ -367,15 +345,14 @@ namespace ProyectoEquipo13
         static List<Songs> QueryNumRepS(List<Songs> songs, int numrep)
         {
             List<Songs> songs2 = new List<Songs>();
-            if (numrep != null)
+            if (numrep != 0)
             {
-                var songnumRep = from song in songs
-                                  where (song.NumReproductions >= numrep)
-                                  orderby song ascending
-                                  select song;
-                foreach (Songs i in songnumRep)
+                foreach (Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if ((song.NumReproductions >= numrep))
+                    {
+                        songs2.Add(song);
+                    }
                 }
                 return songs2;
             }
@@ -388,15 +365,14 @@ namespace ProyectoEquipo13
         static List<Songs> QueryRatingS(List<Songs> songs, double rating)
         {
             List<Songs> songs2 = new List<Songs>();
-            if (rating != null)
+            if (rating != 0)
             {
-                var songRating = from song in songs
-                                 where (song.RatingProm1 >= rating)
-                                 orderby song ascending
-                                 select song;
-                foreach (Songs i in songRating)
+                foreach (Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if (song.RatingProm1 >= rating)
+                    {
+                        songs2.Add(song);
+                    }
                 }
                 return songs2;
             }
@@ -411,13 +387,12 @@ namespace ProyectoEquipo13
             List<Songs> songs2 = new List<Songs>();
             if (album != "")
             {
-                var songAlbum = from song in songs
-                                 where (song.Album1.Name1==album || song.Album1.Name1.Contains(album))
-                                 orderby song ascending
-                                 select song;
-                foreach (Songs i in songAlbum)
+                foreach (Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if (song.Album1.Name1 == album || song.Album1.Name1.Contains(album))
+                    {
+                        songs2.Add(song);
+                    }
                 }
                 return songs2;
             }
@@ -433,12 +408,12 @@ namespace ProyectoEquipo13
             List<Songs> songs2 = new List<Songs>();
             if (movieTitle != "")
             {
-                var songinMovie = from movie in Files.AllMovies
-                                 where (movie.Title1==movieTitle)
-                                 select movie;
-                foreach (Movies i in songinMovie)
+                foreach (Movies movie in Files.AllMovies)
                 {
-                    songs2 = i.SongsMovie1;
+                    if (movie.Title1 == movieTitle)
+                    {
+                        songs2 = movie.SongsMovie1;
+                    }
                 }
                 return songs2;
             }
