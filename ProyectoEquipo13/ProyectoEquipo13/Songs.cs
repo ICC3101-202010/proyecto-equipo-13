@@ -69,7 +69,7 @@ namespace ProyectoEquipo13
 
         public void SongsInformation()
         {
-            Console.WriteLine("Título: " + this.Title1 + "\nArtista: " + this.Artist1 + "\nAlbum: " + this.Album1 + "\nRating: " + this.RatingProm1);
+            Console.WriteLine("Título: " + this.Title1 + "\nArtista: " + this.Artist1.Name + "\nAlbum: " + this.Album1.Name1 + "\nRating: " + this.RatingProm1);
             Console.WriteLine("Género/os: ");
             foreach (string genero in this.Genre1)
             {
