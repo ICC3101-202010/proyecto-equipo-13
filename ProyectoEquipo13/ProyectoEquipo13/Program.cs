@@ -36,16 +36,62 @@ namespace ProyectoEquipo13
                 Stream stream3 = new FileStream("AllPlaylistsSongs.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
                 Stream stream4 = new FileStream("AllPlaylistsMovies.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
                 Stream stream5 = new FileStream("Users.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+                //try que Desterializa; catch mostrar mensaje; finally cierra archivo
+                try
+                {
+                    Files.AllMovies = (List<Movies>)formatter.Deserialize(stream1);
+                }
+                catch
+                {
+                    Console.WriteLine("No carga");
+                }
+                try
+                {
+                    Files.AllSongs = (List<Songs>)formatter.Deserialize(stream2);
+                }
+                catch
+                {
+                    Console.WriteLine("No carga");
+                }
+                try
+                {
+                    Files.AllPlaylistsSongs = (List<Playlists>)formatter.Deserialize(stream1);
+                }
+                catch
+                {
+                    Console.WriteLine("No carga");
+                }
+                try
+                {
+                    Files.AllPlaylistsMovies = (List<Playlists>)formatter.Deserialize(stream1);
+                }
+                catch
+                {
+                    Console.WriteLine("No carga");
+                }
+                try
+                {
+                    Files.Users = (List<User>)formatter.Deserialize(stream1);
+                    foreach (User i in Files.Users)
+                    {
+                        List<string> data = new List<string>()
+                        { i.UserName, i.Email, i.Password,"", Convert.ToString(DateTime.Now), i.Type};
+                        Files.AllUsers.Add(Files.AllUsers.Count + 1, data);
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("No carga");
+                }
+                finally
+                {
+                    stream1.Close();
+                    stream2.Close();
+                    stream3.Close();
+                    stream4.Close();
+                    stream5.Close();
+                }
             }
-
-
-            //Stream stream = new FileStream("BaseDeDatos.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
-            //Files.AllMovies = (List<Movies>)formatter.Deserialize(stream);               
-            //Files.AllSongs = (List<Songs>)formatter.Deserialize(stream);
-            //Files.AllPlaylistsSongs = (List<Playlists>)formatter.Deserialize(stream);
-            //Files.AllPlaylistsMovies = (List<Playlists>)formatter.Deserialize(stream);
-            //Files.Users = (List<User>)formatter.Deserialize(stream);
-            //stream.Close();
 
             Computer computer = new Computer();
             MailSender mailSender = new MailSender();
@@ -73,7 +119,7 @@ namespace ProyectoEquipo13
                 List<string> Genre_Son_of_man = new List<string>();
                 Genre_Son_of_man.Add("Pop Rock");
                 Genre_Son_of_man.Add("Soft Rock");
-                string Music_Son_of_man = @"\caca.mp3";//@"\Tarzan_-Son_Of_Man_Phil_Collins";
+                string Music_Son_of_man = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp3";
                 Songs Son_of_man = new Songs("Son of man", phill_collins, phill_collins, phill_collins, LenghtS, Genre_Son_of_man, LyricsS, ResolutionS, MemoryS, numReproductionsS, Rating, RatingProm, Music_Son_of_man, Type, MinS, Tarzan_album);
                 Files.AllSongs.Add(Son_of_man);
 
@@ -471,8 +517,8 @@ namespace ProyectoEquipo13
             }
 
             //WindowsMediaPlayer player = new WindowsMediaPlayer();
-            Son_of_man.Play();
             Tarzan.Play();
+            Son_of_man.Play();
             Console.Read();
 
             //Stream stream2 = new FileStream("BaseDeDatos.bin", FileMode.Create, FileAccess.Write, FileShare.None);
