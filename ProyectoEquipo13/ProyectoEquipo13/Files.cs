@@ -13,8 +13,6 @@ namespace ProyectoEquipo13
         private static List<Songs> allSongs = new List<Songs>();
         private static List<Playlists> allPlaylistsSongs = new List<Playlists>();
         private static List<Playlists> allPlaylistsMovies = new List<Playlists>();
-        private static List<SmartPlaylist> allSmartPlaylistsSongs = new List<SmartPlaylist>();
-        private static List<SmartPlaylist> allSmartPlaylistsMovies = new List<SmartPlaylist>();
         private static Dictionary<int, List<string>> allUsers = new Dictionary<int, List<string>>();
         private static List<User> users = new List<User>();
 
@@ -22,8 +20,6 @@ namespace ProyectoEquipo13
         public static List<Songs> AllSongs { get => allSongs; set => allSongs = value; }
         public static List<Playlists> AllPlaylistsSongs { get => allPlaylistsSongs; set => allPlaylistsSongs = value; }
         public static List<Playlists> AllPlaylistsMovies { get => allPlaylistsMovies; set => allPlaylistsMovies = value; }
-        public static List<SmartPlaylist> AllSmartPlaylistsSongs { get => allSmartPlaylistsSongs; set => allSmartPlaylistsSongs = value; }
-        public static List<SmartPlaylist> AllSmartPlaylistsMovies { get => allSmartPlaylistsMovies; set => allSmartPlaylistsMovies = value; }
         public static Dictionary<int, List<string>> AllUsers { get => allUsers; set => allUsers = value; }
         public static List<User> Users { get => users; set => users = value; }
 

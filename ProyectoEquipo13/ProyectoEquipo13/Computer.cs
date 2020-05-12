@@ -14,7 +14,7 @@ namespace ProyectoEquipo13
         public void Searcher(User user)
         {
             Console.Clear();
-            Console.WriteLine("El buscador trabaja bastante específico (Casa es diferente que casa), por lo que lo que sabe preocupese de escribirlo de manera correcta.\nAdemás si es que hay algúna información que no sabe, simplemente seleccione ENTER (si pone algo que no sabe el buscador usara ese cirterio y probablemetne no encuentre coincidencias");
+            Console.WriteLine("El buscador trabaja bastante específico (Casa es diferente que casa), por lo que lo que sabe preocupese de escribirlo de manera correcta.\nAdemás si es que hay algúna información que no sabe, simplemente seleccione ENTER (si pone algo que no sabe el buscador usara ese criterio y probablemente no encuentre coincidencias");
             Search.Searching(this, user);
         }
 
@@ -202,20 +202,13 @@ namespace ProyectoEquipo13
             if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
-                if (privacidad == true)
-                {
-                    Files.AllPlaylistsMovies.Add(playlists);
-                }
-                
+
                 return playlists;
             }
             if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
             {
                 Playlists playlists = new Playlists(name, privacidad, type);
-                if (privacidad == true)
-                {
-                    Files.AllPlaylistsSongs.Add(playlists);
-                }
+
                 return playlists;
             }
             return null;
@@ -235,6 +228,15 @@ namespace ProyectoEquipo13
             }
             return null;
 
+        }
+
+        public void AutomaticRep(List<Songs> songs)
+        {
+            foreach(Songs song in songs)
+            {
+                song.Play();
+                Console.WriteLine();
+            }
         }
 
        
@@ -374,7 +376,6 @@ namespace ProyectoEquipo13
             // Intenta realizar el login, si retorna null se logeo correctamente,
             // sino, retorna un string de error que se le muestra al usuario
             string result = Files.LogIn(usr, pswd);
-            int valor = 0;
             if (result == null)
             {
                 foreach (List<string> user in Files.AllUsers.Values)

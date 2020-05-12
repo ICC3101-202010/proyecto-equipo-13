@@ -69,7 +69,7 @@ namespace ProyectoEquipo13
                 List<Songs> songs6 = QueryAlbumS(songs5,album);
                 if (songs6.Count != 0)
                 {
-                    //SeeNamesSongs(songs6, user, computer);
+                    SeeNamesSongs(songs6, user, computer);
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace ProyectoEquipo13
                 List<Songs> songs = QueryMovieSong(movietitle);
                 if (songs.Count() !=0 )
                 {
-                    //SeeNamesSongs(songs, user, computer);
+                    SeeNamesSongs(songs, user, computer);
                 }
                 else
                 {
@@ -453,7 +453,7 @@ namespace ProyectoEquipo13
             Console.WriteLine("\nLas canciones encontradas son:\n");
             for (int i = 0; i < songs.Count; i++)
             {
-                Console.WriteLine(songs[i].Title1);
+                Console.WriteLine("-"+songs[i].Title1);
                 //Falta opción para que pueda reproducirla si quiere o agregarla a una playlis
             }
             Console.WriteLine("Quiere Seleccionar algúna (Podra ver la información de esta, además podrá escoger si queire reproducirla o agregarla a una Playlist)");

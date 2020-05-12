@@ -72,19 +72,6 @@ namespace ProyectoEquipo13
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }
         public int Min1 { get => Min; set => Min = value; }
 
-
-
-        public void Play2(WindowsMediaPlayer player)
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            string D = carpeta + this.Video;
-            player.URL = D;
-            player.controls.play();
-            Console.WriteLine("Reproduciendo");
-            Console.ReadLine();
-            player.controls.stop();
-        }
-
         public void Play()
         {
             var carpeta = Directory.GetCurrentDirectory();
@@ -100,16 +87,6 @@ namespace ProyectoEquipo13
             System.Diagnostics.Process.Start(D);
         }
 
-        public void PlayTrailer2(WindowsMediaPlayer player)
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            string D = carpeta + this.Trailer;
-            player.URL = D;
-            player.controls.play();
-            Console.WriteLine("Reproduciendo");
-            Console.ReadLine();
-            player.controls.stop();
-        }
         public void MovieInformation()
         {
             Console.WriteLine("Nombre Película: " + this.Title1 + "\nDirector: " + this.Director1.Name + "\nDuración: " + this.Lenght + "\nRating: " + this.RatingProm1 + "\nAño: " + this.Year1);

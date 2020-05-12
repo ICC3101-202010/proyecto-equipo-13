@@ -11,18 +11,20 @@ namespace ProyectoEquipo13
     {
         private string Name;
         private DateTime Year;
-        //private jpg Image;
+        private string Image;
         private Artist Artist;
 
         public string Name1 { get => Name; set => Name = value; }
         public DateTime Year1 { get => Year; set => Year = value; }
-
+        public string Image1 { get => Image; set => Image = value; }
         public Artist Artist1 { get => Artist; set => Artist = value; }
-        public Album(string name, DateTime year, Artist artist)
+
+        public Album(string name, DateTime year, Artist artist, string image)
         {
             this.Name = name;
             this.Year = year;
             this.Artist = artist;
+            this.Image = image;
         }
     }
 }

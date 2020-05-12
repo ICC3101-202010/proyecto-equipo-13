@@ -38,7 +38,7 @@ namespace ProyectoEquipo13
 
             //SONG 1
             Artist phill_collins = new Artist("Phil Collins", new DateTime(1951, 1, 30, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Phil_Collins");
-            Album Tarzan_album = new Album("Tarzan: An Original Walt Disney Records Soundtrack", DateTime.Now, phill_collins);
+            Album Tarzan_album = new Album("Tarzan: An Original Walt Disney Records Soundtrack", DateTime.Now, phill_collins, @"\Tarzan.jpg");
             List<string> Genre_Son_of_man = new List<string>();
             Genre_Son_of_man.Add("Pop Rock");
             Genre_Son_of_man.Add("Soft Rock");
@@ -50,7 +50,7 @@ namespace ProyectoEquipo13
             //SONG 2
             Artist celine_dion = new Artist("Celine Dion", new DateTime(1968, 3, 30, 5, 5, 5), F, "https://es.wikipedia.org/wiki/C%C3%A9line_Dion");
             Person james_horner = new Person("James Horner", new DateTime(1953, 8, 14, 5, 5, 5), M, "https://es.wikipedia.org/wiki/James_Horner");
-            Album Titanic_album = new Album("Titanic: Music From The Motion Picture ", DateTime.Now, celine_dion);
+            Album Titanic_album = new Album("Titanic: Music From The Motion Picture ", DateTime.Now, celine_dion, @"\Titanic.jpg");
             List<string> Genre_My_heart_will_go_on = new List<string>();
             Genre_My_heart_will_go_on.Add("Pop");
             Genre_My_heart_will_go_on.Add("Balada");
@@ -59,7 +59,7 @@ namespace ProyectoEquipo13
             Files.AllSongs.Add(My_heart_will_go_on);
 
             //SONG 3
-            Album Face_value_album = new Album("Face Vlue", new DateTime(1981, 1, 5, 5, 5, 5), phill_collins);
+            Album Face_value_album = new Album("Face Value", new DateTime(1981, 1, 5, 5, 5, 5), phill_collins, @"\Face Value.jpg");
             List<string> Genre_In_the_air_tonight = new List<string>();
             Genre_In_the_air_tonight.Add("Soft Rock");
             Genre_In_the_air_tonight.Add("Power Ballad");
@@ -78,7 +78,7 @@ namespace ProyectoEquipo13
 
             //SONG 5
             Artist randy_newman = new Artist("Randy Newman", new DateTime(1943, 11, 28, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Randy_Newman");
-            Album Toy_Story_album = new Album("Toy Story", new DateTime(1996, 4, 12, 5, 5, 5), randy_newman);
+            Album Toy_Story_album = new Album("Toy Story", new DateTime(1996, 4, 12, 5, 5, 5), randy_newman, @"\Toy Story.jpg");
             List<string> Genre_Youve_got_a_friend_in_me = new List<string>();
             string Music_Youve_got_a_friend_in_me = @"\Randy Newman - Youve Got a Friend in Me (From Toy Story 4Audio Only).mp3";
             Songs Youve_got_a_friend_in_me = new Songs("You've got a friend in me", randy_newman, randy_newman, randy_newman, LenghtS, Genre_Youve_got_a_friend_in_me, LyricsS, ResolutionS, MemoryS, numReproductionsS, Rating, RatingProm, Music_Youve_got_a_friend_in_me, Type, MinS, Toy_Story_album);
@@ -86,7 +86,7 @@ namespace ProyectoEquipo13
 
             //SONG 6
             Artist sia = new Artist("Sia", new DateTime(1943, 11, 28, 5, 5, 5), F, "https://es.wikipedia.org/wiki/Sia");
-            Album Forms_album = new Album("1000 Forms of fear", new DateTime(2014, 3, 14, 5, 5, 5), sia);
+            Album Forms_album = new Album("1000 Forms of fear", new DateTime(2014, 3, 14, 5, 5, 5), sia, @"\Forms of Fear.jpg");
             List<string> Genre_Chandelier = new List<string>();
             Genre_Chandelier.Add("Pop");
             string Music_Chandelier = @"\Sia - Chandelier (Official Video).mp3";
@@ -103,7 +103,7 @@ namespace ProyectoEquipo13
             //SONG 8
             Artist diplo = new Artist("Diplo", new DateTime(1978, 11, 10, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Diplo");
             Artist justin_bieber = new Artist("Justin Bieber", new DateTime(1994, 3, 1, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Justin_Bieber");
-            Album My_world_album = new Album("My World 2.0", new DateTime(2010, 5, 5, 5, 5, 5), justin_bieber);
+            Album My_world_album = new Album("My World 2.0", new DateTime(2010, 5, 5, 5, 5, 5), justin_bieber, @"\My World.jpg");
             List<string> Genre_Where_are_u_now = new List<string>();
             Genre_Where_are_u_now.Add("Pop");
             string Music_Where_are_u_now = @"\Skrillex and Diplo - Where Are Ü Now with Justin Bieber (Official Video).mp3";
@@ -113,7 +113,7 @@ namespace ProyectoEquipo13
             //SONG 9
             Artist maroon_5 = new Artist("Maroon 5", new DateTime(1997, 1, 1, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Maroon_5");
             Artist adam_levine = new Artist("Adam Levine", new DateTime(1979, 3, 18, 5, 5, 5), M, "https://es.wikipedia.org/wiki/Adam_Levine");
-            Album V_album = new Album("V", new DateTime(2014, 9, 2, 5, 5, 5), maroon_5);
+            Album V_album = new Album("V", new DateTime(2014, 9, 2, 5, 5, 5), maroon_5, @"\V.jpg");
             List<string> Genre_Sugar = new List<string>();
             Genre_Sugar.Add("Pop Rock");
             string Music_Sugar = @"\Maroon 5 - Sugar (lyrics).mp3";
@@ -248,7 +248,7 @@ namespace ProyectoEquipo13
             //MOVIE 7
             Person martin_scorsese = new Person("Martin Scorsese", new DateTime(1942, 11, 17, 5, 5, 5), M, "https://www.imdb.com/name/nm0000217/?ref_=nv_sr_srsg_0");
             Person terence_winter = new Person("Terence Winter", new DateTime(1960, 10, 2, 5, 5, 5), M, "https://www.imdb.com/name/nm1010540/?ref_=nv_sr_srsg_0");
-            Person margot_robbie = new Person("Margot Robie", new DateTime(1990, 7, 2, 5, 5, 5), F, "https://www.imdb.com/name/nm3053338/?ref_=fn_al_nm_1");
+            Person margot_robbie = new Person("Margot Robbie", new DateTime(1990, 7, 2, 5, 5, 5), F, "https://www.imdb.com/name/nm3053338/?ref_=fn_al_nm_1");
             Person matthew_mcconaughey = new Person("Matthew McConaughey", new DateTime(1969, 11, 4, 5, 5, 5), M, "https://www.imdb.com/name/nm0000190/?ref_=nv_sr_srsg_0");
             List<Person> Actors_The_wolf_of_wall_street = new List<Person>();
             Actors_The_wolf_of_wall_street.Add(leonardo_dicaprio);
@@ -525,7 +525,7 @@ namespace ProyectoEquipo13
                         }
                         Console.Clear();
                         Console1.SecondMessage(computer);
-                        Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
+                        Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) Ver Todas las Playlist (públicas) del programa\n(g) BUSCADOR\n(h) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
                         string option = Console.ReadLine();
                         if (option == "a")
                         {
@@ -549,9 +549,13 @@ namespace ProyectoEquipo13
                         }
                         else if (option == "f")
                         {
-                            Console1.Search(computer, userlogin);
+                            Console1.SeeProgramPlaylists(computer, userlogin);
                         }
                         else if (option == "g")
+                        {
+                            Console1.Search(computer, userlogin);
+                        }
+                        else if (option == "h")
                         {
                             break;
                         }

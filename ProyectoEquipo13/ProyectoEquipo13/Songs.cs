@@ -76,6 +76,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine(genero);
             }
         }
+
         public void Play()
         {
             var carpeta = Directory.GetCurrentDirectory();
@@ -83,18 +84,10 @@ namespace ProyectoEquipo13
             player.URL = D;
             this.NumReproductions += 1;
             player.controls.play();
-            Console.WriteLine("Reproduciendo" + this.Title1);
+            Console.WriteLine("Reproduciendo " + this.Title1);
             Console.WriteLine("Presione enter si desea parar la reproducción");
             Console.ReadLine();
             player.controls.stop();
         }
-
-        public void Play2()
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            var D = carpeta + this.Music1;
-            System.Diagnostics.Process.Start(D);
-        }
-
     }
 }

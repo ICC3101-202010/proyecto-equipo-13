@@ -13,8 +13,6 @@ namespace ProyectoEquipo13
 {
     public static class Console1
     {
-        public static WindowsMediaPlayer wp = new WindowsMediaPlayer();
-
         public static void InitialMessage()
         {
             Console.WriteLine("¡Bienvenido a Netfy! \n¡La nueva plataforma donde podrás tener tu música y películas en un solo lugar!");
@@ -58,22 +56,25 @@ namespace ProyectoEquipo13
             {
                 if (userlogin.Type == "Premium")
                 {
-                    Dictionary<int, Playlists> dic2 = new Dictionary<int, Playlists>();
-                    Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
-                    int counter2 = 1;
-                    foreach (Playlists playlist in userlogin.MyPlaylist1)
+                    if(userlogin.MyPlaylist1.Count() > 0)
                     {
-                        Console.WriteLine("("+counter2+")"+playlist.Name);
-                        dic2.Add(counter2, playlist);
-                        counter += 1;
-                    }
-                    int choice = Convert.ToInt32(Console.ReadLine());
-                    if (choice != 0)
-                    {
-                        Playlists playlist2 = dic2[choice];
-                        playlist2.Playlistmovie.Add(movie2);
-                        userlogin.MyPlaylist1.RemoveAt(choice - 1);
-                        userlogin.MyPlaylist1.Insert(choice - 1, playlist2);
+                        Dictionary<int, Playlists> dic2 = new Dictionary<int, Playlists>();
+                        Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
+                        int counter2 = 1;
+                        foreach (Playlists playlist in userlogin.MyPlaylist1)
+                        {
+                            Console.WriteLine("(" + counter2 + ")" + playlist.Name);
+                            dic2.Add(counter2, playlist);
+                            counter += 1;
+                        }
+                        int choice = Convert.ToInt32(Console.ReadLine());
+                        if (choice != 0)
+                        {
+                            Playlists playlist2 = dic2[choice];
+                            playlist2.Playlistmovie.Add(movie2);
+                            userlogin.MyPlaylist1.RemoveAt(choice - 1);
+                            userlogin.MyPlaylist1.Insert(choice - 1, playlist2);
+                        }
                     }
                 }
                 else if (userlogin.Type == "Free")
@@ -126,22 +127,25 @@ namespace ProyectoEquipo13
             {
                 if (userlogin.Type == "Premium")
                 {
-                    Dictionary<int, Playlists> dic2 = new Dictionary<int, Playlists>();
-                    Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
-                    int counter2 = 1;
-                    foreach (Playlists playlist in userlogin.MyPlaylist1)
+                   if(userlogin.MyPlaylist1.Count() > 0)
                     {
-                        Console.WriteLine("("+counter2 + ")" + playlist.Name);
-                        dic2.Add(counter2, playlist);
-                        counter2 += 1;
-                    }
-                    int choice = Convert.ToInt32(Console.ReadLine());
-                    if (choice != 0)
-                    {
-                        Playlists playlist2 = dic2[choice];
-                        playlist2.Playlistsong.Add(songs2);
-                        userlogin.MyPlaylist1.RemoveAt(choice - 1);
-                        userlogin.MyPlaylist1.Insert(choice - 1, playlist2);
+                        Dictionary<int, Playlists> dic2 = new Dictionary<int, Playlists>();
+                        Console.WriteLine("\nSeleccione la Playlist que desee (si no desea agregarla a ningúna seleccione 0):\n");
+                        int counter2 = 1;
+                        foreach (Playlists playlist in userlogin.MyPlaylist1)
+                        {
+                            Console.WriteLine("(" + counter2 + ")" + playlist.Name);
+                            dic2.Add(counter2, playlist);
+                            counter2 += 1;
+                        }
+                        int choice = Convert.ToInt32(Console.ReadLine());
+                        if (choice != 0)
+                        {
+                            Playlists playlist2 = dic2[choice];
+                            playlist2.Playlistsong.Add(songs2);
+                            userlogin.MyPlaylist1.RemoveAt(choice - 1);
+                            userlogin.MyPlaylist1.Insert(choice - 1, playlist2);
+                        }
                     }
                 }
                 else if (userlogin.Type == "Free")
@@ -166,230 +170,240 @@ namespace ProyectoEquipo13
             if (user.Type == "Premium")
             {
                 Console.WriteLine("\nDe que tipo desea que sea su Playlist:");
-                Console.WriteLine("(a) normal \n(b) inteligente(agrega canciones automáticamente según un criterio)");
+                Console.WriteLine("(a) Normal \n(b) Inteligente (agrega canciones automáticamente según un criterio)");
                 string res = Console.ReadLine();
                 if (res == "a")
                 {
-                    Console.WriteLine("¿De que tipo sera la Plylist? Película/Canción");
+                    Console.WriteLine("¿De que tipo sera la Playlist?");
+                    Console.WriteLine("(a)Película\n(b)Canción");
                     string type = Console.ReadLine();
-                    Console.WriteLine("Eliga un nombre");
-                    string name = Console.ReadLine();
-                    Console.WriteLine("¿Desea hacer la Playlist (a) Privada o (b) Pública?");
-                    string privacidad = Console.ReadLine();
+                    if (type == "a") { type = "Película"; }
+                    else if (type == "b") { type = "Canción"; }
+                    if (type == "Película" || type=="Canción")
+                    {
+                        Console.WriteLine("Eliga un nombre");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("¿Desea hacer la Playlist (a) Pública o (b) Privada?");
+                        string privacidad = Console.ReadLine();
 
-                    if (privacidad == "a")
-                    {
-                        user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, true));
-                        Console.WriteLine("Playlist creada con éxito");
-                        Thread.Sleep(1200);
+                        if (privacidad == "a")
+                        {
+                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, true));
+                            Console.WriteLine("Playlist creada con éxito");
+                            if (type == "Película") { Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(type, name, true)); }
+                            else if (type == "Canción") { Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(type, name, true)); }
+                            Thread.Sleep(1200);
+                        }
+                        else if (privacidad == "b")
+                        {
+                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, false));
+                            Console.WriteLine("Playlist creada con éxito");
+                            Thread.Sleep(1200);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Comando ingresado no válido");
+                        }
                     }
-                    else if (privacidad == "b")
-                    {
-                        user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, false));
-                        Console.WriteLine("Playlist creada con éxito");
-                        Thread.Sleep(1200);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Comando ingresado no válido");
-                    }
-
                 }
                 else if (res == "b")
                 {
-                    Console.WriteLine("¿De que tipo sera la Playlist? Película/Canción");
+                    Console.WriteLine("¿De que tipo sera la Playlist?");
+                    Console.WriteLine("(a)Película\n(b)Canción");
                     string type = Console.ReadLine();
-                    Console.WriteLine("Eliga un nombre");
-                    string name = Console.ReadLine();
-                    Console.WriteLine("¿Desea hacer la Playlist (a) Privada o (b) Pública?");
-                    string privacidad = Console.ReadLine();
-                    if (type == "Cancion" || type == "Canción" || type == "canción" || type == "cancion")
+                    if (type == "a") { type = "Película"; }
+                    else if (type == "b") { type = "Canción"; }
+                    if (type == "Película" || type == "Canción")
                     {
-                        Console.WriteLine("Elija el criterio de la SmartPlaylist(Género,Artista)");
-                        string criterio = Console.ReadLine();
-                        Console.WriteLine("Elija el nombre del criterio de la SmartPlaylist(ej: Género(rock,Pop),Artista(Michael Jakson,Elvis Presley))");
-                        string namecriterio = Console.ReadLine();
-                        if (privacidad == "a")
+                        Console.WriteLine("Eliga un nombre");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("¿Desea hacer la Playlist (a) Pública o (b) Privada?");
+                        string privacidad = Console.ReadLine();
+                        if (type == "Canción")
                         {
-                            var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
-                            Thread.Sleep(1200);
-                            Console.WriteLine("\nPlaylist creada con éxito");
-                            if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
+                            Console.WriteLine("Elija el criterio de la SmartPlaylist(Género,Artista)");
+                            string criterio = Console.ReadLine();
+                            Console.WriteLine("Elija el nombre del criterio de la SmartPlaylist(ej: Género(rock,Pop),Artista(Michael Jakson,Elvis Presley))");
+                            string namecriterio = Console.ReadLine();
+                            if (privacidad == "a")
                             {
-                                foreach (Songs songs in Files.AllSongs)
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                Thread.Sleep(1200);
+                                Console.WriteLine("\nPlaylist creada con éxito");
+                                if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
                                 {
-                                    foreach (string genero in songs.Genre1)
+                                    foreach (Songs songs in Files.AllSongs)
                                     {
-                                        if (genero == namecriterio)
+                                        foreach (string genero in songs.Genre1)
+                                        {
+                                            if (genero == namecriterio)
+                                            {
+                                                a.Playlistsong.Add(songs);
+                                            }
+                                        }
+                                    }
+                                }
+                                else if (criterio == "Artista" || criterio == "artista")
+                                {
+                                    foreach (Songs songs in Files.AllSongs)
+                                    {
+                                        if (songs.Artist1.Name == namecriterio)
                                         {
                                             a.Playlistsong.Add(songs);
                                         }
                                     }
                                 }
+                                user.MyPlaylist1.Add(a);
+                                Files.AllPlaylistsSongs.Add(a);
+                                Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
+                                Thread.Sleep(2000);
                             }
-                            else if (criterio == "Artista" || criterio == "artista")
+                            else if (privacidad == "b")
                             {
-                                foreach (Songs songs in Files.AllSongs)
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                Console.WriteLine("\nPlaylist creada con éxito");
+                                if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
                                 {
-                                    if (songs.Artist1.Name == namecriterio)
+                                    foreach (Songs songs in Files.AllSongs)
                                     {
-                                        a.Playlistsong.Add(songs);
+                                        foreach (string genero in songs.Genre1)
+                                        {
+                                            if (genero == namecriterio)
+                                            {
+                                                a.Playlistsong.Add(songs);
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                            user.MyPlaylist1.Add(a);
-                            Files.AllSmartPlaylistsSongs.Add(a);
-                            Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
-                        }
-                        else if (privacidad == "b")
-                        {
-                            var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
-                            Console.WriteLine("\nPlaylist creada con éxito");
-                            if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
-                            {
-                                foreach (Songs songs in Files.AllSongs)
+                                else if (criterio == "Artista" || criterio == "artista")
                                 {
-                                    foreach (string genero in songs.Genre1)
+                                    foreach (Songs songs in Files.AllSongs)
                                     {
-                                        if (genero == namecriterio)
+                                        if (songs.Artist1.Name == namecriterio)
                                         {
                                             a.Playlistsong.Add(songs);
                                         }
                                     }
                                 }
+                                user.MyPlaylist1.Add(a);                  
+                                Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
                             }
-                            else if (criterio == "Artista" || criterio == "artista")
-                            {
-                                foreach (Songs songs in Files.AllSongs)
-                                {
-                                    if (songs.Artist1.Name == namecriterio)
-                                    {
-                                        a.Playlistsong.Add(songs);
-                                    }
-                                }
-                            }
-                            user.MyPlaylist1.Add(a);
-                            Files.AllSmartPlaylistsSongs.Add(a);
-                            Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
                         }
-
-                    }
-                    else if (type == "Pelicula" || type == "Película" || type == "pelicula" || type == "película")
-                    {
-                        Console.WriteLine("Elija el criterio de la SmartPlaylist(Director,Categoria,Actor,Estudio)");
-                        string criterio = Console.ReadLine();
-                        Console.WriteLine("Elija el nombre del criterio de la SmartPlaylist(ej: Estudio(Pixar,Universal Studio), Director(Guillermo Del Toro,Steven Spielberg)");
-                        string namecriterio = Console.ReadLine();
-                        if (privacidad == "a")
+                        else if (type == "Película")
                         {
-                            var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
-                            Console.WriteLine("\nPlaylist creada con éxito");
-                            Thread.Sleep(1200);
-                            if (criterio == "Director" || criterio == "director")
+                            Console.WriteLine("Elija el criterio de la SmartPlaylist(Director,Categoria,Actor,Estudio)");
+                            string criterio = Console.ReadLine();
+                            Console.WriteLine("Elija el nombre del criterio de la SmartPlaylist(ej: Estudio(Pixar,Universal Studio), Director(Guillermo Del Toro,Steven Spielberg)");
+                            string namecriterio = Console.ReadLine();
+                            if (privacidad == "a")
                             {
-                                foreach (Movies movies in Files.AllMovies)
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                Console.WriteLine("\nPlaylist creada con éxito");
+                                Thread.Sleep(1200);
+                                if (criterio == "Director" || criterio == "director")
                                 {
-                                    if (movies.Director1.Name == namecriterio)
+                                    foreach (Movies movies in Files.AllMovies)
                                     {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                            else if (criterio == "Estudio" || criterio == "estudio")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    if (movies.Studio1 == namecriterio)
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                            else if (criterio == "Categoria" || criterio == "categoria" || criterio == "Categoría" || criterio == "categoría")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    foreach (string cate in movies.Categories1)
-                                    {
-                                        if (cate == namecriterio)
+                                        if (movies.Director1.Name == namecriterio)
                                         {
                                             a.Playlistmovie.Add(movies);
                                         }
                                     }
                                 }
-                            }
-                            else if (criterio == "Actor" || criterio == "actor")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
+                                else if (criterio == "Estudio" || criterio == "estudio")
                                 {
-                                    foreach (Person actor in movies.Actors1)
+                                    foreach (Movies movies in Files.AllMovies)
                                     {
-                                        if (actor.Name == namecriterio)
+                                        if (movies.Studio1 == namecriterio)
                                         {
                                             a.Playlistmovie.Add(movies);
                                         }
                                     }
                                 }
+                                else if (criterio == "Categoria" || criterio == "categoria" || criterio == "Categoría" || criterio == "categoría")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        foreach (string cate in movies.Categories1)
+                                        {
+                                            if (cate == namecriterio)
+                                            {
+                                                a.Playlistmovie.Add(movies);
+                                            }
+                                        }
+                                    }
+                                }
+                                else if (criterio == "Actor" || criterio == "actor")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        foreach (Person actor in movies.Actors1)
+                                        {
+                                            if (actor.Name == namecriterio)
+                                            {
+                                                a.Playlistmovie.Add(movies);
+                                            }
+                                        }
+                                    }
+                                }
+                                user.MyPlaylist1.Add(a);
+                                Files.AllPlaylistsMovies.Add(a);
+                                Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
                             }
-                            user.MyPlaylist1.Add(a);
-                            Files.AllSmartPlaylistsMovies.Add(a);
-                            Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
+                            else if (privacidad == "b")
+                            {
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                Console.WriteLine("\nPlaylist creada con éxito");
+                                if (criterio == "Director" || criterio == "director")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        if (movies.Director1.Name == namecriterio)
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                                else if (criterio == "Estudio" || criterio == "estudio")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        if (movies.Studio1 == namecriterio)
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                                else if (criterio == "Categoria" || criterio == "categoria" || criterio == "Categoría" || criterio == "categoría")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        foreach (string cate in movies.Categories1)
+                                        {
+                                            if (cate == namecriterio)
+                                            {
+                                                a.Playlistmovie.Add(movies);
+                                            }
+                                        }
+                                    }
+                                }
+                                else if (criterio == "Actor" || criterio == "actor")
+                                {
+                                    foreach (Movies movies in Files.AllMovies)
+                                    {
+                                        foreach (Person actor in movies.Actors1)
+                                        {
+                                            if (actor.Name == namecriterio)
+                                            {
+                                                a.Playlistmovie.Add(movies);
+                                            }
+                                        }
+                                    }
+                                }
+                                user.MyPlaylist1.Add(a);
+                                Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
+                            }
                         }
-                        else if (privacidad == "b")
-                        {
-                            var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
-                            Console.WriteLine("\nPlaylist creada con éxito");
-                            if (criterio == "Director" || criterio == "director")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    if (movies.Director1.Name == namecriterio)
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                            else if (criterio == "Estudio" || criterio == "estudio")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    if (movies.Studio1 == namecriterio)
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                            else if (criterio == "Categoria" || criterio == "categoria" || criterio == "Categoría" || criterio == "categoría")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    foreach (string cate in movies.Categories1)
-                                    {
-                                        if (cate == namecriterio)
-                                        {
-                                            a.Playlistmovie.Add(movies);
-                                        }
-                                    }
-                                }
-                            }
-                            else if (criterio == "Actor" || criterio == "actor")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    foreach (Person actor in movies.Actors1)
-                                    {
-                                        if (actor.Name == namecriterio)
-                                        {
-                                            a.Playlistmovie.Add(movies);
-                                        }
-                                    }
-                                }
-                            }
-                            user.MyPlaylist1.Add(a);
-                            Files.AllSmartPlaylistsMovies.Add(a);
-                            Console.WriteLine("Si quiere Agregarle Elementos vaya a la opción Modificar Playlist");
-                        }
-
                     }
                     else
                     {
@@ -457,6 +471,11 @@ namespace ProyectoEquipo13
                                 play.Playlistmovie.RemoveAt(choise - 1);
 
                             }
+                            else
+                            {
+                                Console.WriteLine("Lista vacía");
+                                Thread.Sleep(2000);
+                            }
 
                         }
                         if (play.Playlistsong.Count() > 0)
@@ -477,11 +496,11 @@ namespace ProyectoEquipo13
                                 int choise = Convert.ToInt32(Console.ReadLine());
                                 play.Playlistsong.RemoveAt(choise - 1);
                             }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Lista vacía");
-                            Thread.Sleep(2000);
+                            else
+                            {
+                                Console.WriteLine("Lista vacía");
+                                Thread.Sleep(2000);
+                            }
                         }
 
                     }
@@ -558,7 +577,7 @@ namespace ProyectoEquipo13
                     int choice = Convert.ToInt32(Console.ReadLine());
                     user.MyPlaylist1[choice - 1].VerPlaylist();
                     Console.WriteLine("\nQue desea realizar:");
-                    Console.WriteLine("(a) Poner una Canción/Película en específico\n(b) Reproducir Canción/Película Aleatoria");
+                    Console.WriteLine("(a) Poner una Canción/Película en específico\n(b) Reproducir Canción/Película Aleatoria\n(c) Reproducir Todo (Tendrán que sonar todas las canciones para volver al menú inicial, puede ir saltando canciones apretando Enter)");
                     string option = Console.ReadLine();
                     if (option == "a")
                     {
@@ -576,7 +595,6 @@ namespace ProyectoEquipo13
                                     counter2 += 1;
                                 }
                                 int movieselection = Convert.ToInt32(Console.ReadLine());
-                                //Falta método reproducir
                                 user.MyPlaylist1[choice - 1].Playlistmovie[movieselection - 1].Play();
                             }
                         }
@@ -624,6 +642,21 @@ namespace ProyectoEquipo13
                         }
 
                     }
+                    else if (option == "c")
+                    {
+                        if (user.MyPlaylist1[choice - 1].Type == "Canciones" || user.MyPlaylist1[choice - 1].Type == "Cancion" || user.MyPlaylist1[choice - 1].Type == "Canción" || user.MyPlaylist1[choice - 1].Type == "canciones" || user.MyPlaylist1[choice - 1].Type == "cancion" || user.MyPlaylist1[choice - 1].Type == "canción")
+                        {
+                            computer.AutomaticRep(user.MyPlaylist1[choice - 1].Playlistsong);
+                        }
+                        else if (user.MyPlaylist1[choice - 1].Type == "Película" || user.MyPlaylist1[choice - 1].Type == "película" || user.MyPlaylist1[choice - 1].Type == "Películas" || user.MyPlaylist1[choice - 1].Type == "películas" || user.MyPlaylist1[choice - 1].Type == "Pelicula" || user.MyPlaylist1[choice - 1].Type == "pelicula" || user.MyPlaylist1[choice - 1].Type == "Peliculas" || user.MyPlaylist1[choice - 1].Type == "peliculas")
+                        {
+                            Console.WriteLine("\nEsta opción no es válida para Películas\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nOpción no válida\n");
+                        }
+                    }
                     else
                     {
                         Console.WriteLine("La opción seleccionada no es válida");
@@ -638,6 +671,39 @@ namespace ProyectoEquipo13
 
             else if (user.Type == "Free")
             {
+                Console.WriteLine();
+                Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
+                Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
+            }
+        }
+
+        public static void SeeProgramPlaylists(Computer computer, User user)
+        {
+            if (user.Type == "Premium")
+            {
+                Dictionary<int, Playlists> dic = new Dictionary<int, Playlists>();
+                Console.WriteLine("\nSeleccione la Playlist que desee ver:\n");
+                int counter = 1;
+                Console.WriteLine("\nPlaylists de Películas: ");
+                foreach (Playlists playlists in Files.AllPlaylistsMovies)
+                {
+                    Console.WriteLine("(" + counter + ")" + playlists.Name);
+                    dic.Add(counter, playlists);
+                    counter += 1;
+                }
+                Console.WriteLine("\nPlaylists de Canciones: ");
+                int counter2 = counter + 1;
+                foreach (Playlists playlists in Files.AllPlaylistsMovies)
+                {
+                    Console.WriteLine("(" + counter + ")" + playlists.Name);
+                    dic.Add(counter2, playlists);
+                    counter2 += 1;
+                }
+                Thread.Sleep(5000);
+            }
+            else if (user.Type == "Free")
+            {
+                Console.WriteLine();
                 Console.WriteLine("Su usuario no es Premium, por lo que no puede tener Playlists");
                 Console.WriteLine("Si desea poder acceder a este menú en inicio seleccione la opción 'Cambia tu cuenta de Free a Premium'");
             }
