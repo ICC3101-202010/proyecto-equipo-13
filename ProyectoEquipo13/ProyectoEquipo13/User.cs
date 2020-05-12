@@ -10,7 +10,7 @@ namespace ProyectoEquipo13
     public class User
     {
         //Todos
-        private string type= "nada";
+        private string type;
         private string userName;
         private string email;
         private string password;
@@ -104,21 +104,21 @@ namespace ProyectoEquipo13
 
         public User(string type, string userName, string email, string password) //Constructor para Free y Admin
         {
-            this.type = type;
+            this.Type = type;
             this.userName = userName;
             this.email = email;
             this.password = password;
         }
 
-        public User(string userName, string email, string password, bool privacy) //Constructor para Premium
+        public User(string type, string userName, string email, string password, bool privacy) //Constructor para Premium
         {
-            this.type = "Premium";
+            this.Type = type;
             this.userName = userName;
             this.email = email;
             this.password = password;
             this.Privacy = privacy;
         }
-        //Recordad que Premium tiene más cosas
+        //Recordar que Premium tiene más cosas
 
 
         //1.- Definir el delegate

@@ -19,7 +19,7 @@ namespace ProyectoEquipo13
         }
 
         public static User Account(Computer computer, User user, MailSender mailSender)
-        {   
+        {
             Console.WriteLine("Seleccione que desea hacer");
             Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña\n(d) Cambia tu cuenta de Free a Premium");
             string option = Console.ReadLine();
@@ -34,11 +34,13 @@ namespace ProyectoEquipo13
                 {
                     foreach (User i in Files.Users)
                     {
+                        Console.WriteLine("Aqui1");
                         if (i.UserName == usrname && i.Password == password)
                         {
+                            Console.WriteLine("Aqui2");
                             Thread.Sleep(2000);
-                            Console.Clear();                           
-                            return i;
+                            //Console.Clear();                           
+                            return i;                            
                         }
                     }
                 }
@@ -77,6 +79,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("La opción que seleccionó no es válida");
                 Account(computer, user, mailSender);
             }
+            Console.WriteLine("Aqui3");
             Thread.Sleep(2000);
             Console.Clear();
             return null;

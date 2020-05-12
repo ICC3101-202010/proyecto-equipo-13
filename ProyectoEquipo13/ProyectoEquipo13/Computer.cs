@@ -294,7 +294,7 @@ namespace ProyectoEquipo13
                 Console.WriteLine("¿Desea que su usuario sea público o privado (que otros usuarios puedan acceder a sus fututas playlists o no)?");
                 Console.WriteLine("(a) Público \n(b) Privado");
                 string choice = Console.ReadLine();
-                if (choice == "a") { type="PremimumT";}
+                if (choice == "a") { type="PremiumT";}
                 else if (choice == "b") { type = "PremiumF"; }
                 else { Console.WriteLine("¡ERROR! El tipo seleccionado no existe!"); return false; }
             }

@@ -57,8 +57,8 @@ namespace ProyectoEquipo13
             if (description == null)
             { 
                 AllUsers.Add(AllUsers.Count + 1, data);
-                if (data[5] == "PremiumT") { User premium = new User(data[0], data[1], data[2], true); Users.Add(premium); }
-                else if(data[5] == "PremiumF") { User premium = new User(data[0], data[1], data[2], false); Users.Add(premium); }
+                if (data[5] == "PremiumT") { User premium = new User("Premium",data[0], data[1], data[2], true); Users.Add(premium); }
+                else if (data[5] == "PremiumF") { User premium = new User("Premium",data[0], data[1], data[2], false); Users.Add(premium); }
                 else if (data[5] == "Free") { User free = new User("Free",data[0], data[1], data[2]); Users.Add(free); }
             }
             return description;

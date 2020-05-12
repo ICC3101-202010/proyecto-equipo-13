@@ -51,6 +51,7 @@ namespace ProyectoEquipo13
                         Console.Clear();
                         Console.WriteLine(Files.Users.Count);
                         Console.WriteLine(Files.AllUsers.Values.Count);
+                        foreach (User user in Files.Users) { Console.WriteLine(user.Type); }
                         Console.WriteLine(userlogin.Type);
                         Console1.SecondMessage(computer);
                         Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
