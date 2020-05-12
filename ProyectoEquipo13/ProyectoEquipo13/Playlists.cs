@@ -36,14 +36,14 @@ namespace ProyectoEquipo13
             {
                 foreach (Movies movie in this.Playlistmovie)
                 {
-                    Console.WriteLine("-"+movie);
+                    Console.WriteLine("-"+movie.Title1);
                 }
             }
             else if (this.type=="Canción" || this.type=="Canciones" ||this.type=="canción" ||this.type=="canciones" ||this.type=="Cancion" || this.type == "cancion")
             {
                 foreach (Songs song in this.Playlistsong)
                 {
-                    Console.WriteLine("-"+song);
+                    Console.WriteLine("-"+song.Title1);
                 }
             }
         }

@@ -111,7 +111,7 @@ namespace ProyectoEquipo13
         }
         public void MovieInformation()
         {
-            Console.WriteLine("Nombre Película: " + this.Studio1 + "\nDirector: " + this.Director1 + "\nDuración: " + this.Lenght + "\nRating: " + this.RatingProm1 + "\nAño: " + this.Year1);
+            Console.WriteLine("Nombre Película: " + this.Title1 + "\nDirector: " + this.Director1 + "\nDuración: " + this.Lenght + "\nRating: " + this.RatingProm1 + "\nAño: " + this.Year1);
             Console.WriteLine("Categorias: ");
             foreach (string cat in this.Categories1)
             {
