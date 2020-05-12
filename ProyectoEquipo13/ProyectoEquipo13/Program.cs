@@ -396,6 +396,41 @@ namespace ProyectoEquipo13
                 Files.AllMovies.Add(The_irishman);
             //}
 
+            /*
+            //En el caso que quisieramos implementar Admin(no es el caso)
+            while (true)
+            {
+                Console.WriteLine("¿Quién eres? (Admin solo agrega Películas/Canciones)");
+                Console.WriteLine("(a) Admin \n(b) Usuario");
+                string option = Console.ReadLine();
+                if (option == "a")
+                {
+                    Console.WriteLine("Agregar:");
+                    Console.WriteLine("(a)Película \n(b)Canción");
+                    string t = Console.ReadLine();
+                    if (t == "a")
+                    {
+                        User.AddMovie();
+                    }
+                    else if (t == "b")
+                    {
+                        User.AddSong();
+                    }
+                }
+                else if (option == "b")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nLa opción que seleccionó no es válida\n");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+
+                }
+            }
+            */
+
             Console1.InitialMessage();
             while (true)
             {
@@ -477,6 +512,7 @@ namespace ProyectoEquipo13
                                 userlogin = user;
                             }
                         }
+                        Console.Clear();
                         Console1.SecondMessage(computer);
                         Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
                         string option = Console.ReadLine();
@@ -511,7 +547,8 @@ namespace ProyectoEquipo13
                         else
                         {
                             Console.WriteLine("\nLa opción que seleccionó no es válida, por favor seleccione una que si lo sea\n");
-                        }                        
+                        }
+                        Thread.Sleep(1000);
                     }
                 }
                 else if (desition == "b")

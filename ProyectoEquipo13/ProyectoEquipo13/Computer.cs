@@ -11,16 +11,6 @@ namespace ProyectoEquipo13
 {
     public class Computer
     {
-        public void PlaySong(string name)
-        {
-
-        }
-
-        public void PlayMovie(string name)
-        {
-
-        }
-
         public void Searcher(User user)
         {
             Console.Clear();

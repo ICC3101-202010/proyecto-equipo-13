@@ -32,7 +32,7 @@ namespace ProyectoEquipo13
             int counter = 1;
             foreach (Movies movie in Files.AllMovies)
             {
-                Console.WriteLine('(' + counter + ')' + movie.Title1);
+                Console.WriteLine("("+counter+")"+movie.Title1);
                 dic.Add(counter, movie);
                 counter += 1;
             }
@@ -63,7 +63,7 @@ namespace ProyectoEquipo13
                     int counter2 = 1;
                     foreach (Playlists playlist in userlogin.MyPlaylist1)
                     {
-                        Console.WriteLine('(' + counter2 + ')' + playlist.Name);
+                        Console.WriteLine("("+counter2+")"+playlist.Name);
                         dic2.Add(counter2, playlist);
                         counter += 1;
                     }
@@ -100,7 +100,7 @@ namespace ProyectoEquipo13
             int count = 1;
             foreach (Songs songs in Files.AllSongs)
             {
-                Console.WriteLine('(' + count + ')' + songs.Title1);
+                Console.WriteLine("("+count + ")" + songs.Title1);
                 dic.Add(count, songs);
                 count += 1;
             }
@@ -131,7 +131,7 @@ namespace ProyectoEquipo13
                     int counter2 = 1;
                     foreach (Playlists playlist in userlogin.MyPlaylist1)
                     {
-                        Console.WriteLine('(' + counter2 + ')' + playlist.Name);
+                        Console.WriteLine("("+counter2 + ")" + playlist.Name);
                         dic2.Add(counter2, playlist);
                         counter2 += 1;
                     }
@@ -444,7 +444,7 @@ namespace ProyectoEquipo13
                                 Console.WriteLine("La playlist contiene las siguientes películas: \n");
                                 foreach (Movies movies in play.Playlistmovie)
                                 {
-                                    Console.WriteLine('(' + counter2 + ')' + movies.Title1);
+                                    Console.WriteLine("(" + counter2 + ")" + movies.Title1);
                                     dic2.Add(counter2, movies);
                                     counter2 += 1;
 
@@ -465,7 +465,7 @@ namespace ProyectoEquipo13
                                 Console.WriteLine("La playlist contiene las siguientes canciones: \n");
                                 foreach (Songs songs in play.Playlistsong)
                                 {
-                                    Console.WriteLine('(' + counter2 + ')' + songs.Title1);
+                                    Console.WriteLine("(" + counter2 + ")" + songs.Title1);
                                     dic2.Add(counter2, songs);
                                     counter2 += 1;
 
@@ -491,7 +491,7 @@ namespace ProyectoEquipo13
                             Console.WriteLine("¿Qué película desea agregar? \n");
                             foreach (Movies movies in Files.AllMovies)
                             {
-                                Console.WriteLine('(' + counter2 + ')' + movies.Title1);
+                                Console.WriteLine("(" + counter2 + ")" + movies.Title1);
                                 dic2.Add(counter2, movies);
                                 counter2 += 1;
 
@@ -507,7 +507,7 @@ namespace ProyectoEquipo13
                             Console.WriteLine("¿Qué canción desea agregar? \n");
                             foreach (Songs songs in Files.AllSongs)
                             {
-                                Console.WriteLine('(' + counter2 + ')' + songs.Title1);
+                                Console.WriteLine("(" + counter2 + ")" + songs.Title1);
                                 dic2.Add(counter2, songs);
                                 counter2 += 1;
 
@@ -545,7 +545,7 @@ namespace ProyectoEquipo13
                 int counter = 1;
                 foreach (Playlists playlists in user.MyPlaylist1)
                 {
-                    Console.WriteLine('(' + counter + ')' + playlists.Name);
+                    Console.WriteLine("(" + counter + ")" + playlists.Name);
                     dic.Add(counter, playlists);
                     counter += 1;
                 }
@@ -568,7 +568,7 @@ namespace ProyectoEquipo13
                                 int counter2 = 1;
                                 for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistmovie.Count; i++)
                                 {
-                                    Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistmovie[i].Title1);
+                                    Console.WriteLine("(" + counter2 + ")" + user.MyPlaylist1[choice - 1].Playlistmovie[i].Title1);
                                     dic3.Add(counter2, user.MyPlaylist1[choice - 1].Playlistmovie[i]);
                                     counter2 += 1;
                                 }
@@ -586,7 +586,7 @@ namespace ProyectoEquipo13
                                 int counter2 = 1;
                                 for (int i = 0; i < user.MyPlaylist1[choice - 1].Playlistsong.Count; i++)
                                 {
-                                    Console.WriteLine('(' + counter2 + ')' + user.MyPlaylist1[choice - 1].Playlistsong[i].Title1);
+                                    Console.WriteLine("(" + counter2 + ")" + user.MyPlaylist1[choice - 1].Playlistsong[i].Title1);
                                     dic4.Add(counter2, user.MyPlaylist1[choice - 1].Playlistsong[i]);
                                     counter2 += 1;
                                 }
@@ -651,7 +651,7 @@ namespace ProyectoEquipo13
             int counter = 1;
             foreach (Movies movie in MOVIES)
             {
-                Console.WriteLine('(' + counter + ')' + movie.Title1);
+                Console.WriteLine("(" + counter + ")" + movie.Title1);
                 dic.Add(counter, movie);
                 counter += 1;
             }
@@ -682,7 +682,7 @@ namespace ProyectoEquipo13
                     int counter2 = 1;
                     foreach (Playlists playlist in userlogin.MyPlaylist1)
                     {
-                        Console.WriteLine('(' + counter2 + ')' + playlist.Name);
+                        Console.WriteLine("(" + counter2 + ")" + playlist.Name);
                         dic2.Add(counter2, playlist);
                         counter += 1;
                     }
@@ -719,7 +719,7 @@ namespace ProyectoEquipo13
             int counter = 1;
             foreach (Songs songs in SONGS)
             {
-                Console.WriteLine('(' + counter + ')' + songs.Title1);
+                Console.WriteLine("(" + counter + ")" + songs.Title1);
                 dic.Add(counter, songs);
                 counter += 1;
             }
@@ -750,7 +750,7 @@ namespace ProyectoEquipo13
                     int counter2 = 1;
                     foreach (Playlists playlist in userlogin.MyPlaylist1)
                     {
-                        Console.WriteLine('(' + counter2 + ')' + playlist.Name);
+                        Console.WriteLine("(" + counter2 + ")" + playlist.Name);
                         dic2.Add(counter2, playlist);
                         counter += 1;
                     }
