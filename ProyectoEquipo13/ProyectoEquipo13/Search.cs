@@ -121,53 +121,33 @@ namespace ProyectoEquipo13
         static List<Movies> QueryPerson(List<Movies> movies, string person)
         {
             List<Movies> movies2 = new List<Movies>();
-            List<Movies> movies3 = new List<Movies>();
             if (person != "")
             {
-                var movieDirector = from movie1 in movies
-                                    where (movie1.Director1.Name == person || movie1.Director1.Name.Contains(person))
-                                    orderby movie1 ascending
-                                    select movie1;
-                var movieWriter = from movie2 in movies
-                                  where (movie2.Writer1.Name == person || movie2.Writer1.Name.Contains(person))
-                                  orderby movie2 ascending
-                                  select movie2;
+                foreach(Movies movie in movies)
+                {
+                    if (movie.Director1.Name == person || movie.Director1.Name.Contains(person))
+                    {
+                        movies2.Add(movie);
+                    }
+                }
+                foreach (Movies movie in movies)
+                {
+                    if (movie.Writer1.Name == person || movie.Writer1.Name.Contains(person))
+                    {
+                        movies2.Add(movie);
+                    }
+                }
                 foreach (Movies movie in movies)
                 {
                     foreach(Person j in movie.Actors1)
                     {
-                        var movieActors = from movie3 in movies
-                                          where (j.Name == person || j.Name.Contains(person))
-                                          orderby movie3 ascending
-                                          select movie3;
-
-                        foreach (Movies y in movieActors)
+                        if ((j.Name == person || j.Name.Contains(person)))
                         {
-                            movies2.Add(y);
+                            movies2.Add(movie);
                         }
                     }
                 }
-                foreach (Movies z in movieDirector)
-                {
-                    movies2.Add(z);
-                }
-                foreach (Movies g in movieWriter)
-                {
-                    movies2.Add(g);
-                }
-
-                foreach (Movies t in movies2)
-                {
-                    if (movies3.Contains(t))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        movies3.Add(t);
-                    }
-                }
-                return movies3;
+                return movies2;
             }
             else
             {
@@ -179,37 +159,19 @@ namespace ProyectoEquipo13
         static List<Movies> QueryCategories(List<Movies> movies, string categorie)
         {
             List<Movies> movies2 = new List<Movies>();
-            List<Movies> movies3 = new List<Movies>();
             if ( categorie!= "")
             {
                 foreach (Movies movie in movies)
                 {
                     foreach (string j in movie.Categories1)
                     {
-                        var movieCategories = from movie3 in movies
-                                          where (j == categorie || j.Contains(categorie))
-                                          orderby movie3 ascending
-                                          select movie3;
-
-                        foreach (Movies y in movieCategories)
+                        if (j == categorie || j.Contains(categorie))
                         {
-                            movies2.Add(y);
+                            movies2.Add(movie);
                         }
                     }
-
                 }
-                foreach (Movies t in movies2)
-                {
-                    if (movies3.Contains(t))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        movies3.Add(t);
-                    }
-                }
-                return movies3;
+                return movies2;
             }
             else
             {
@@ -222,13 +184,12 @@ namespace ProyectoEquipo13
             List<Movies> movies2 = new List<Movies>();
             if (studio != "")
             {
-                var movieStudio = from movie in movies
-                                  where (movie.Studio1 == studio || movie.Studio1.Contains(studio))
-                                  orderby movie ascending
-                                  select movie;
-                foreach (Movies i in movieStudio)
+                foreach(Movies movie in movies)
                 {
-                    movies2.Add(i);
+                    if (movie.Studio1 == studio || movie.Studio1.Contains(studio))
+                    {
+                        movies2.Add(movie);
+                    }
                 }
                 return movies2;
             }
@@ -243,13 +204,12 @@ namespace ProyectoEquipo13
             List<Movies> movies2 = new List<Movies>();
             if (year != "")
             {
-                var movieYear = from movie in movies
-                                where (movie.Year1 == year)
-                                orderby movie ascending
-                                select movie;
-                foreach (Movies i in movieYear)
+                foreach(Movies movie in movies)
                 {
-                    movies2.Add(i);
+                    if (movie.Year1 == year)
+                    {
+                        movies2.Add(movie);
+                    }
                 }
                 return movies2;
             }
@@ -263,15 +223,14 @@ namespace ProyectoEquipo13
         static List<Movies> QueryRating(List<Movies> movies, double rating)
         {
             List<Movies> movies2 = new List<Movies>();
-            if (rating != null)
+            if (rating != 0)
             {
-                var movieRating = from movie in movies
-                                where (movie.RatingProm1>= rating)
-                                orderby movie ascending
-                                select movie;
-                foreach (Movies i in movieRating)
+                foreach (Movies movie in movies)
                 {
-                    movies2.Add(i);
+                    if (movie.RatingProm1 >= rating)
+                    {
+                        movies2.Add(movie);
+                    }
                 }
                 return movies2;
             }
@@ -285,15 +244,14 @@ namespace ProyectoEquipo13
         static List<Movies> QueryNumRep(List<Movies> movies, int numrep)
         {
             List<Movies> movies2 = new List<Movies>();
-            if (numrep != null)
+            if (numrep != 0)
             {
-                var movieRating = from movie in movies
-                                  where (movie.NumReproductions >= numrep)
-                                  orderby movie ascending
-                                  select movie;
-                foreach (Movies i in movieRating)
+                foreach (Movies movie in movies)
                 {
-                    movies2.Add(i);
+                    if (movie.NumReproductions >= numrep)
+                    {
+                        movies2.Add(movie);
+                    }
                 }
                 return movies2;
             }
@@ -310,14 +268,12 @@ namespace ProyectoEquipo13
             List<Songs> songs2 = new List<Songs>();
             if (Title != "")
             {
-                var songTitle = from song in songs
-                                 where (song.Title1 == Title || song.Title1.Contains(Title))
-                                 orderby song ascending
-                                 select song;
-
-                foreach (var i in songTitle)
+                foreach(Songs song in songs)
                 {
-                    songs2.Add(i);
+                    if (song.Title1 == Title || song.Title1.Contains(Title))
+                    {
+                        songs2.Add(song);
+                    }
                 }
                 return songs2;
             }
@@ -325,7 +281,6 @@ namespace ProyectoEquipo13
             {
                 return songs;
             }
-
         }
 
         static List<Songs> QueryPersonsS(List<Songs> songs, string person)
