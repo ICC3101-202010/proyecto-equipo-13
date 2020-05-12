@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ProyectoEquipo13
 {
     [Serializable]
-    static class Files
+    public static class Files
     {
         private static List<Movies> allMovies = new List<Movies>();
         private static List<Songs> allSongs = new List<Songs>();
@@ -26,6 +26,11 @@ namespace ProyectoEquipo13
         public static List<SmartPlaylist> AllSmartPlaylistsMovies { get => allSmartPlaylistsMovies; set => allSmartPlaylistsMovies = value; }
         public static Dictionary<int, List<string>> AllUsers { get => allUsers; set => allUsers = value; }
         public static List<User> Users { get => users; set => users = value; }
+
+        public static List<User> Get_Lista_Usuarios()
+        {
+            return users;
+        }
 
         // Metodo para cambiar la contrasena de usr por newpsswds
         public static void ChangePassword(string usr, string newpsswd)

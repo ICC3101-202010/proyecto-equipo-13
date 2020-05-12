@@ -43,16 +43,75 @@ namespace ProyectoEquipo13
                     computer.PasswordChanged += mailSender.OnPasswordChanged;
                     mailSender.EmailSent += emptyuser.OnEmailSent;
                     emptyuser.EmailVerified += computer.OnEmailVerified;
-
-                    User userlogin = Console1.Account(computer, emptyuser, mailSender);
+                    int nmro = 1;
+                    List<string> userlogin2 = new List<string>();
+                    while (nmro!=0)
+                    {
+                        Console.WriteLine("Seleccione que desea hacer");
+                        Console.WriteLine("(a) Iniciar Sesión \n(b) Crear Cuenta \n(c) Cambiar contraseña\n(d) Cambia tu cuenta de Free a Premium");
+                        string option = Console.ReadLine();
+                        if (option == "a")
+                        {
+                            Console.WriteLine("Seleccione su Usuario:");
+                            string usrname = Console.ReadLine();
+                            Console.WriteLine("seleccione su Contraseña");
+                            string password = Console.ReadLine();
+                            string login = Files.LogIn(usrname, password);
+                            if (login == null)
+                            {
+                                foreach (User i in Files.Users)
+                                {
+                                    if (i.UserName == usrname && i.Password == password)
+                                    {
+                                        userlogin2.Add(i.UserName);
+                                        userlogin2.Add(i.Password);
+                                        nmro = 0;
+                                    }
+                                }
+                                Console.Clear();
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nNo es posible iniciar sesión, la cuenta no existe o se equivoco al escribir usuario y/o contraseña\n");
+                                Thread.Sleep(2000);
+                                Console.Clear();
+                            }
+                        }
+                        else if (option == "b")
+                        {
+                            bool option2 = computer.Register();
+                            //Suponiendo que el mail si debería haber llegado
+                            if (option2 == true) { emptyuser.OnEmailSent(new object(), new EventArgs()); }
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                        }
+                        else if (option == "c")
+                        {
+                            Console.Clear();
+                            computer.ChangePassword();
+                        }
+                        else if (option == "d")
+                        {
+                            Console.Clear();
+                            computer.UpgradeFree();
+                            Console.Clear();
+                        }
+                        else
+                        {
+                            Console.WriteLine("La opción que seleccionó no es válida");
+                        }
+                    }
                     
                     while (true)
                     {
-                        Console.Clear();
-                        Console.WriteLine(Files.Users.Count);
-                        Console.WriteLine(Files.AllUsers.Values.Count);
-                        foreach (User user in Files.Users) { Console.WriteLine(user.Type); }
-                        Console.WriteLine(userlogin.Type);
+                        User userlogin = new User();
+                        foreach (User user in Files.Users)
+                        {
+                            if (user.UserName==userlogin2[0] && user.Password == userlogin2[1])
+                            {
+                                userlogin = user;
+                            }
+                        }
                         Console1.SecondMessage(computer);
                         Console.WriteLine("(a) Ver todas las películas\n(b) Ver todas las canciones \n(c) Crear Playlist\n(d) Modificar Playlist (Cambiar nombre, Agregar/Quitar elementos)\n(e) Ver Mis Playlists\n(f) BUSCADOR\n(g) Cerrar Sesión (para volvera a inicio/creación de sesión o salir del programa)");
                         string option = Console.ReadLine();
@@ -87,8 +146,7 @@ namespace ProyectoEquipo13
                         else
                         {
                             Console.WriteLine("\nLa opción que seleccionó no es válida, por favor seleccione una que si lo sea\n");
-                        }
-                        
+                        }                        
                     }
                 }
                 else if (desition == "b")
