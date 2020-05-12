@@ -92,6 +92,14 @@ namespace ProyectoEquipo13
                     stream5.Close();
                 }
             }
+            User Admin = new User("Premium", "Admin", "email", "", false);
+            Files.Users.Add(Admin);
+            foreach (User i in Files.Users)
+            {
+                List<string> data = new List<string>()
+                        { i.UserName, i.Email, i.Password,"", Convert.ToString(DateTime.Now), i.Type};
+                Files.AllUsers.Add(Files.AllUsers.Count + 1, data);
+            }
 
             Computer computer = new Computer();
             MailSender mailSender = new MailSender();

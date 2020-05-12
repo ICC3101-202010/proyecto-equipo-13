@@ -102,14 +102,12 @@ namespace ProyectoEquipo13
             List<Movies> movies2 = new List<Movies>();
             if (Title != "")
             {
-                var movieTitle   = from movie in movies
-                                 where (movie.Title1 == Title || movie.Title1.Contains(Title))
-                                 orderby movie ascending
-                                 select movie;
-                
-                foreach (var i in movieTitle) 
+                foreach(Movies movie in movies)
                 {
-                    movies2.Add(i);
+                    if (movie.Title1==Title || movie.Title1.Contains(Title))
+                    {
+                        movies2.Add(movie);
+                    }
                 }
                 return movies2;
             }

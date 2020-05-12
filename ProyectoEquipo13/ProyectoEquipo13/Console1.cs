@@ -97,18 +97,18 @@ namespace ProyectoEquipo13
         {
             Dictionary<int, Songs> dic = new Dictionary<int, Songs>();
             Console.WriteLine("\nSeleccione la canción que desee:\n");
-            int counter = 1;
+            int count = 1;
             foreach (Songs songs in Files.AllSongs)
             {
-                Console.WriteLine('(' + counter + ')' + songs.Title1);
-                dic.Add(counter, songs);
-                counter += 1;
+                Console.WriteLine('(' + count + ')' + songs.Title1);
+                dic.Add(count, songs);
+                count += 1;
             }
             int option = Convert.ToInt32(Console.ReadLine());
             Songs songs2 = dic[option];
             songs2.SongsInformation();
             Console.WriteLine("\n¿Que desea hacer con la canción?");
-            Console.WriteLine("(a) Reproducir\n(b) Valorar Cnción\n(c) Agregar a una Playlist\n(d) Seleccionar otra canción\n(e) Nada (Solo quería ver la información de la Canción)");
+            Console.WriteLine("(a) Reproducir\n(b) Valorar Canción\n(c) Agregar a una Playlist\n(d) Seleccionar otra canción\n(e) Nada (Solo quería ver la información de la Canción)");
             string option2 = Console.ReadLine();
             if (option2 == "a")
             {
@@ -133,7 +133,7 @@ namespace ProyectoEquipo13
                     {
                         Console.WriteLine('(' + counter2 + ')' + playlist.Name);
                         dic2.Add(counter2, playlist);
-                        counter += 1;
+                        counter2 += 1;
                     }
                     int choice = Convert.ToInt32(Console.ReadLine());
                     if (choice != 0)

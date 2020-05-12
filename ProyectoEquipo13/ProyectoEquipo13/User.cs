@@ -17,7 +17,7 @@ namespace ProyectoEquipo13
 
         //Premium
         private bool Privacy;
-        private List<Playlists> MyPlaylist;
+        private List<Playlists> MyPlaylist =new List<Playlists>();
         private List<User> Follows;
 
         //Free
