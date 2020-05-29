@@ -68,10 +68,76 @@
             this.ModificarPlaylistButton = new System.Windows.Forms.Button();
             this.CrearPlaylistButton = new System.Windows.Forms.Button();
             this.VerTodasLasCancionesButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.CerrarSesiónButton = new System.Windows.Forms.Button();
             this.ModificarCuentaButton = new System.Windows.Forms.Button();
+            this.UserActivitiesPanel = new System.Windows.Forms.Panel();
+            this.BuscadorPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.Edad2BuscadorPanelTextBox = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.Edad1BuscadorPanelTextBox = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel57 = new System.Windows.Forms.TableLayoutPanel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.Año2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.Año1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel54 = new System.Windows.Forms.TableLayoutPanel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.NumRep1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.NumRep2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel53 = new System.Windows.Forms.TableLayoutPanel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.CatGen1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.CatGen2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel50 = new System.Windows.Forms.TableLayoutPanel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.CancionesBuscadorUserCheckBox = new System.Windows.Forms.CheckBox();
+            this.PelículasBuscadorUserCheckBox = new System.Windows.Forms.CheckBox();
+            this.PersonasCheckBoxBuscadorPanel = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Titulo1BuscadorTextBox = new System.Windows.Forms.TextBox();
+            this.Titulo2BuscadorTextBox = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Persona1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Persona2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel55 = new System.Windows.Forms.TableLayoutPanel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.Rating1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.Rating2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel56 = new System.Windows.Forms.TableLayoutPanel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.Album1BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.Album2BuscadorPanel = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel58 = new System.Windows.Forms.TableLayoutPanel();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel59 = new System.Windows.Forms.TableLayoutPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel60 = new System.Windows.Forms.TableLayoutPanel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.FemeninoSexoBuscadorPanel = new System.Windows.Forms.CheckBox();
+            this.MasculinoSexoBuscadorPanel = new System.Windows.Forms.CheckBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.VerTodasLasPeliculasPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel48 = new System.Windows.Forms.TableLayoutPanel();
             this.CreateAccountView = new System.Windows.Forms.Panel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -98,20 +164,6 @@
             this.ModificarCuentaPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.ModifCuentPanel = new System.Windows.Forms.Panel();
-            this.ChangeUserPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
-            this.NuevoNombreUsuarioTextBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.AceptarCambioNombreUsuarioButton = new System.Windows.Forms.Button();
-            this.ModCorrPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.YaEsPremiumPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
             this.ChangeFreePanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
@@ -126,26 +178,40 @@
             this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
             this.CheckOldPassword = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
             this.InputNewPassword = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
-            this.InputOldPassword = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
+            this.InputOldPassword = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
             this.AceptarNuevaContraseñaButton = new System.Windows.Forms.Button();
+            this.ChangeUserPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
+            this.NuevoNombreUsuarioTextBox = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
+            this.AceptarCambioNombreUsuarioButton = new System.Windows.Forms.Button();
+            this.ModCorrPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.YaEsPremiumPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.BackToUserMenuButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
-            this.CambiarUsuarioButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.CambioTipoCuentaButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
             this.CambiarContraseñaButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
+            this.CambiarUsuarioButton = new System.Windows.Forms.Button();
             this.WelcomeMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -163,8 +229,24 @@
             this.tableLayoutPanel19.SuspendLayout();
             this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel22.SuspendLayout();
+            this.UserActivitiesPanel.SuspendLayout();
+            this.BuscadorPanel.SuspendLayout();
+            this.tableLayoutPanel49.SuspendLayout();
+            this.tableLayoutPanel61.SuspendLayout();
+            this.tableLayoutPanel57.SuspendLayout();
+            this.tableLayoutPanel54.SuspendLayout();
+            this.tableLayoutPanel53.SuspendLayout();
+            this.tableLayoutPanel50.SuspendLayout();
+            this.tableLayoutPanel51.SuspendLayout();
+            this.tableLayoutPanel52.SuspendLayout();
+            this.tableLayoutPanel55.SuspendLayout();
+            this.tableLayoutPanel56.SuspendLayout();
+            this.tableLayoutPanel58.SuspendLayout();
+            this.tableLayoutPanel59.SuspendLayout();
+            this.tableLayoutPanel60.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.VerTodasLasPeliculasPanel.SuspendLayout();
             this.CreateAccountView.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
@@ -177,15 +259,6 @@
             this.ModificarCuentaPanel.SuspendLayout();
             this.tableLayoutPanel24.SuspendLayout();
             this.ModifCuentPanel.SuspendLayout();
-            this.ChangeUserPanel.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
-            this.tableLayoutPanel30.SuspendLayout();
-            this.tableLayoutPanel32.SuspendLayout();
-            this.tableLayoutPanel31.SuspendLayout();
-            this.ModCorrPanel.SuspendLayout();
-            this.tableLayoutPanel28.SuspendLayout();
-            this.YaEsPremiumPanel.SuspendLayout();
-            this.tableLayoutPanel42.SuspendLayout();
             this.ChangeFreePanel.SuspendLayout();
             this.tableLayoutPanel38.SuspendLayout();
             this.tableLayoutPanel39.SuspendLayout();
@@ -195,16 +268,25 @@
             this.tableLayoutPanel33.SuspendLayout();
             this.tableLayoutPanel37.SuspendLayout();
             this.tableLayoutPanel35.SuspendLayout();
+            this.tableLayoutPanel47.SuspendLayout();
             this.tableLayoutPanel34.SuspendLayout();
+            this.tableLayoutPanel46.SuspendLayout();
             this.tableLayoutPanel36.SuspendLayout();
+            this.ChangeUserPanel.SuspendLayout();
+            this.tableLayoutPanel29.SuspendLayout();
+            this.tableLayoutPanel30.SuspendLayout();
+            this.tableLayoutPanel32.SuspendLayout();
+            this.tableLayoutPanel31.SuspendLayout();
+            this.ModCorrPanel.SuspendLayout();
+            this.tableLayoutPanel28.SuspendLayout();
+            this.YaEsPremiumPanel.SuspendLayout();
+            this.tableLayoutPanel42.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
             this.tableLayoutPanel26.SuspendLayout();
             this.tableLayoutPanel27.SuspendLayout();
-            this.tableLayoutPanel43.SuspendLayout();
-            this.tableLayoutPanel44.SuspendLayout();
             this.tableLayoutPanel45.SuspendLayout();
-            this.tableLayoutPanel46.SuspendLayout();
-            this.tableLayoutPanel47.SuspendLayout();
+            this.tableLayoutPanel44.SuspendLayout();
+            this.tableLayoutPanel43.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomeMenu
@@ -584,9 +666,9 @@
             this.UserPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UserPanel.Controls.Add(this.tableLayoutPanel19);
             this.UserPanel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserPanel.Location = new System.Drawing.Point(884, 44);
+            this.UserPanel.Location = new System.Drawing.Point(939, 37);
             this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(320, 140);
+            this.UserPanel.Size = new System.Drawing.Size(211, 241);
             this.UserPanel.TabIndex = 6;
             this.UserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UserPanel_Paint);
             // 
@@ -598,15 +680,15 @@
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel19.Controls.Add(this.tableLayoutPanel20, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.tableLayoutPanel21, 0, 1);
-            this.tableLayoutPanel19.Controls.Add(this.pictureBox1, 1, 1);
             this.tableLayoutPanel19.Controls.Add(this.tableLayoutPanel22, 1, 0);
+            this.tableLayoutPanel19.Controls.Add(this.UserActivitiesPanel, 1, 1);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 2;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.5F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.5F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(320, 140);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(211, 241);
             this.tableLayoutPanel19.TabIndex = 18;
             // 
             // tableLayoutPanel20
@@ -621,7 +703,7 @@
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(72, 5);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(45, 13);
             this.tableLayoutPanel20.TabIndex = 0;
             // 
             // textBox5
@@ -633,7 +715,7 @@
             this.textBox5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox5.Location = new System.Drawing.Point(3, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(15, 27);
+            this.textBox5.Size = new System.Drawing.Size(7, 27);
             this.textBox5.TabIndex = 4;
             this.textBox5.Text = "Usuario:";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -645,10 +727,10 @@
             this.ReadUserName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ReadUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReadUserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ReadUserName.Location = new System.Drawing.Point(24, 3);
+            this.ReadUserName.Location = new System.Drawing.Point(16, 3);
             this.ReadUserName.Name = "ReadUserName";
             this.ReadUserName.ReadOnly = true;
-            this.ReadUserName.Size = new System.Drawing.Size(45, 27);
+            this.ReadUserName.Size = new System.Drawing.Size(26, 27);
             this.ReadUserName.TabIndex = 5;
             // 
             // tableLayoutPanel21
@@ -664,7 +746,7 @@
             this.tableLayoutPanel21.Controls.Add(this.CrearPlaylistButton, 0, 4);
             this.tableLayoutPanel21.Controls.Add(this.VerTodasLasCancionesButton, 0, 3);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(5, 18);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(5, 26);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 11;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
@@ -678,7 +760,7 @@
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.09091F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(72, 117);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(45, 210);
             this.tableLayoutPanel21.TabIndex = 1;
             // 
             // label10
@@ -690,7 +772,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 10);
+            this.label10.Size = new System.Drawing.Size(39, 19);
             this.label10.TabIndex = 9;
             this.label10.Text = "Menu";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -701,9 +783,9 @@
             this.VerTodasLasPeliculasButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerTodasLasPeliculasButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerTodasLasPeliculasButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerTodasLasPeliculasButton.Location = new System.Drawing.Point(3, 23);
+            this.VerTodasLasPeliculasButton.Location = new System.Drawing.Point(3, 41);
             this.VerTodasLasPeliculasButton.Name = "VerTodasLasPeliculasButton";
-            this.VerTodasLasPeliculasButton.Size = new System.Drawing.Size(66, 4);
+            this.VerTodasLasPeliculasButton.Size = new System.Drawing.Size(39, 13);
             this.VerTodasLasPeliculasButton.TabIndex = 10;
             this.VerTodasLasPeliculasButton.Text = "Ver todas las Películas";
             this.VerTodasLasPeliculasButton.UseVisualStyleBackColor = false;
@@ -714,9 +796,9 @@
             this.Buscador.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Buscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Buscador.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Buscador.Location = new System.Drawing.Point(3, 83);
+            this.Buscador.Location = new System.Drawing.Point(3, 155);
             this.Buscador.Name = "Buscador";
-            this.Buscador.Size = new System.Drawing.Size(66, 4);
+            this.Buscador.Size = new System.Drawing.Size(39, 13);
             this.Buscador.TabIndex = 11;
             this.Buscador.Text = "Buscador";
             this.Buscador.UseVisualStyleBackColor = false;
@@ -727,9 +809,9 @@
             this.VerPlaylistsDelProgramaButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerPlaylistsDelProgramaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerPlaylistsDelProgramaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerPlaylistsDelProgramaButton.Location = new System.Drawing.Point(3, 73);
+            this.VerPlaylistsDelProgramaButton.Location = new System.Drawing.Point(3, 136);
             this.VerPlaylistsDelProgramaButton.Name = "VerPlaylistsDelProgramaButton";
-            this.VerPlaylistsDelProgramaButton.Size = new System.Drawing.Size(66, 4);
+            this.VerPlaylistsDelProgramaButton.Size = new System.Drawing.Size(39, 13);
             this.VerPlaylistsDelProgramaButton.TabIndex = 12;
             this.VerPlaylistsDelProgramaButton.Text = "Ver Playlists del Programa";
             this.VerPlaylistsDelProgramaButton.UseVisualStyleBackColor = false;
@@ -740,9 +822,9 @@
             this.VerMIsPlaylistsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerMIsPlaylistsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerMIsPlaylistsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerMIsPlaylistsButton.Location = new System.Drawing.Point(3, 63);
+            this.VerMIsPlaylistsButton.Location = new System.Drawing.Point(3, 117);
             this.VerMIsPlaylistsButton.Name = "VerMIsPlaylistsButton";
-            this.VerMIsPlaylistsButton.Size = new System.Drawing.Size(66, 4);
+            this.VerMIsPlaylistsButton.Size = new System.Drawing.Size(39, 13);
             this.VerMIsPlaylistsButton.TabIndex = 13;
             this.VerMIsPlaylistsButton.Text = "Ver mis Playlists";
             this.VerMIsPlaylistsButton.UseVisualStyleBackColor = false;
@@ -753,9 +835,9 @@
             this.ModificarPlaylistButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModificarPlaylistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarPlaylistButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ModificarPlaylistButton.Location = new System.Drawing.Point(3, 53);
+            this.ModificarPlaylistButton.Location = new System.Drawing.Point(3, 98);
             this.ModificarPlaylistButton.Name = "ModificarPlaylistButton";
-            this.ModificarPlaylistButton.Size = new System.Drawing.Size(66, 4);
+            this.ModificarPlaylistButton.Size = new System.Drawing.Size(39, 13);
             this.ModificarPlaylistButton.TabIndex = 14;
             this.ModificarPlaylistButton.Text = "Modificar Playlist";
             this.ModificarPlaylistButton.UseVisualStyleBackColor = false;
@@ -766,9 +848,9 @@
             this.CrearPlaylistButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CrearPlaylistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrearPlaylistButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CrearPlaylistButton.Location = new System.Drawing.Point(3, 43);
+            this.CrearPlaylistButton.Location = new System.Drawing.Point(3, 79);
             this.CrearPlaylistButton.Name = "CrearPlaylistButton";
-            this.CrearPlaylistButton.Size = new System.Drawing.Size(66, 4);
+            this.CrearPlaylistButton.Size = new System.Drawing.Size(39, 13);
             this.CrearPlaylistButton.TabIndex = 15;
             this.CrearPlaylistButton.Text = "Crear Playlist";
             this.CrearPlaylistButton.UseVisualStyleBackColor = false;
@@ -779,23 +861,12 @@
             this.VerTodasLasCancionesButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerTodasLasCancionesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerTodasLasCancionesButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerTodasLasCancionesButton.Location = new System.Drawing.Point(3, 33);
+            this.VerTodasLasCancionesButton.Location = new System.Drawing.Point(3, 60);
             this.VerTodasLasCancionesButton.Name = "VerTodasLasCancionesButton";
-            this.VerTodasLasCancionesButton.Size = new System.Drawing.Size(66, 4);
+            this.VerTodasLasCancionesButton.Size = new System.Drawing.Size(39, 13);
             this.VerTodasLasCancionesButton.TabIndex = 16;
             this.VerTodasLasCancionesButton.Text = "Ver todas las Canciones";
             this.VerTodasLasCancionesButton.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(85, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel22
             // 
@@ -806,11 +877,11 @@
             this.tableLayoutPanel22.Controls.Add(this.CerrarSesiónButton, 2, 0);
             this.tableLayoutPanel22.Controls.Add(this.ModificarCuentaButton, 1, 0);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(85, 5);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(58, 5);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(230, 5);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(148, 13);
             this.tableLayoutPanel22.TabIndex = 18;
             // 
             // CerrarSesiónButton
@@ -819,9 +890,9 @@
             this.CerrarSesiónButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CerrarSesiónButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CerrarSesiónButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CerrarSesiónButton.Location = new System.Drawing.Point(192, 3);
+            this.CerrarSesiónButton.Location = new System.Drawing.Point(124, 3);
             this.CerrarSesiónButton.Name = "CerrarSesiónButton";
-            this.CerrarSesiónButton.Size = new System.Drawing.Size(35, 1);
+            this.CerrarSesiónButton.Size = new System.Drawing.Size(21, 7);
             this.CerrarSesiónButton.TabIndex = 8;
             this.CerrarSesiónButton.Text = "Cerrar Sesión";
             this.CerrarSesiónButton.UseVisualStyleBackColor = false;
@@ -833,13 +904,885 @@
             this.ModificarCuentaButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModificarCuentaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarCuentaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ModificarCuentaButton.Location = new System.Drawing.Point(152, 3);
+            this.ModificarCuentaButton.Location = new System.Drawing.Point(99, 3);
             this.ModificarCuentaButton.Name = "ModificarCuentaButton";
-            this.ModificarCuentaButton.Size = new System.Drawing.Size(34, 1);
+            this.ModificarCuentaButton.Size = new System.Drawing.Size(19, 7);
             this.ModificarCuentaButton.TabIndex = 7;
             this.ModificarCuentaButton.Text = "Modificar Cuenta";
             this.ModificarCuentaButton.UseVisualStyleBackColor = false;
             this.ModificarCuentaButton.Click += new System.EventHandler(this.ModificarCuentaButton_Click);
+            // 
+            // UserActivitiesPanel
+            // 
+            this.UserActivitiesPanel.Controls.Add(this.BuscadorPanel);
+            this.UserActivitiesPanel.Controls.Add(this.pictureBox1);
+            this.UserActivitiesPanel.Controls.Add(this.VerTodasLasPeliculasPanel);
+            this.UserActivitiesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserActivitiesPanel.Location = new System.Drawing.Point(58, 26);
+            this.UserActivitiesPanel.Name = "UserActivitiesPanel";
+            this.UserActivitiesPanel.Size = new System.Drawing.Size(148, 210);
+            this.UserActivitiesPanel.TabIndex = 19;
+            // 
+            // BuscadorPanel
+            // 
+            this.BuscadorPanel.Controls.Add(this.tableLayoutPanel49);
+            this.BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BuscadorPanel.Location = new System.Drawing.Point(0, 0);
+            this.BuscadorPanel.Name = "BuscadorPanel";
+            this.BuscadorPanel.Size = new System.Drawing.Size(148, 210);
+            this.BuscadorPanel.TabIndex = 0;
+            // 
+            // tableLayoutPanel49
+            // 
+            this.tableLayoutPanel49.ColumnCount = 1;
+            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel61, 0, 11);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel57, 0, 9);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel54, 0, 6);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel53, 0, 5);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel50, 0, 2);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel51, 0, 3);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel52, 0, 4);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel55, 0, 7);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel56, 0, 8);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel58, 0, 13);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel59, 0, 0);
+            this.tableLayoutPanel49.Controls.Add(this.label36, 0, 1);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel60, 0, 10);
+            this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel49.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
+            this.tableLayoutPanel49.RowCount = 15;
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.672897F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.476635F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.869159F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.345795F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.869159F));
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(148, 210);
+            this.tableLayoutPanel49.TabIndex = 33;
+            // 
+            // tableLayoutPanel61
+            // 
+            this.tableLayoutPanel61.ColumnCount = 5;
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.8503F));
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.45509F));
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.289421F));
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.25549F));
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0499F));
+            this.tableLayoutPanel61.Controls.Add(this.label44, 4, 0);
+            this.tableLayoutPanel61.Controls.Add(this.Edad2BuscadorPanelTextBox, 3, 0);
+            this.tableLayoutPanel61.Controls.Add(this.label40, 2, 0);
+            this.tableLayoutPanel61.Controls.Add(this.Edad1BuscadorPanelTextBox, 1, 0);
+            this.tableLayoutPanel61.Controls.Add(this.label39, 0, 0);
+            this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel61.Location = new System.Drawing.Point(3, 162);
+            this.tableLayoutPanel61.Name = "tableLayoutPanel61";
+            this.tableLayoutPanel61.RowCount = 1;
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel61.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel61.TabIndex = 12;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(107, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(32, 9);
+            this.label44.TabIndex = 30;
+            this.label44.Text = "Solo para Personas";
+            // 
+            // Edad2BuscadorPanelTextBox
+            // 
+            this.Edad2BuscadorPanelTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Edad2BuscadorPanelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edad2BuscadorPanelTextBox.Location = new System.Drawing.Point(76, 3);
+            this.Edad2BuscadorPanelTextBox.Name = "Edad2BuscadorPanelTextBox";
+            this.Edad2BuscadorPanelTextBox.Size = new System.Drawing.Size(25, 34);
+            this.Edad2BuscadorPanelTextBox.TabIndex = 33;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(69, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(1, 9);
+            this.label40.TabIndex = 32;
+            this.label40.Text = "o";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Edad1BuscadorPanelTextBox
+            // 
+            this.Edad1BuscadorPanelTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Edad1BuscadorPanelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Edad1BuscadorPanelTextBox.Location = new System.Drawing.Point(38, 3);
+            this.Edad1BuscadorPanelTextBox.Name = "Edad1BuscadorPanelTextBox";
+            this.Edad1BuscadorPanelTextBox.Size = new System.Drawing.Size(25, 34);
+            this.Edad1BuscadorPanelTextBox.TabIndex = 30;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(3, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(29, 9);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "Edad:";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // tableLayoutPanel57
+            // 
+            this.tableLayoutPanel57.ColumnCount = 5;
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel57.Controls.Add(this.label43, 4, 0);
+            this.tableLayoutPanel57.Controls.Add(this.label33, 0, 0);
+            this.tableLayoutPanel57.Controls.Add(this.Año2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel57.Controls.Add(this.Año1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel57.Controls.Add(this.label32, 2, 0);
+            this.tableLayoutPanel57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel57.Location = new System.Drawing.Point(3, 132);
+            this.tableLayoutPanel57.Name = "tableLayoutPanel57";
+            this.tableLayoutPanel57.RowCount = 1;
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel57.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel57.TabIndex = 7;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(107, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(32, 9);
+            this.label43.TabIndex = 30;
+            this.label43.Text = "Solo para Películas";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(3, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(29, 9);
+            this.label33.TabIndex = 28;
+            this.label33.Text = "Año:";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Año2BuscadorPanel
+            // 
+            this.Año2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Año2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Año2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.Año2BuscadorPanel.Name = "Año2BuscadorPanel";
+            this.Año2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Año2BuscadorPanel.TabIndex = 31;
+            // 
+            // Año1BuscadorPanel
+            // 
+            this.Año1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Año1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Año1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.Año1BuscadorPanel.Name = "Año1BuscadorPanel";
+            this.Año1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Año1BuscadorPanel.TabIndex = 29;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(69, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(1, 9);
+            this.label32.TabIndex = 30;
+            this.label32.Text = "o";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tableLayoutPanel54
+            // 
+            this.tableLayoutPanel54.ColumnCount = 5;
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel54.Controls.Add(this.label27, 0, 0);
+            this.tableLayoutPanel54.Controls.Add(this.NumRep1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel54.Controls.Add(this.label26, 2, 0);
+            this.tableLayoutPanel54.Controls.Add(this.NumRep2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel54.Controls.Add(this.label34, 4, 0);
+            this.tableLayoutPanel54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel54.Location = new System.Drawing.Point(3, 87);
+            this.tableLayoutPanel54.Name = "tableLayoutPanel54";
+            this.tableLayoutPanel54.RowCount = 1;
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel54.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel54.TabIndex = 5;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(3, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(29, 9);
+            this.label27.TabIndex = 16;
+            this.label27.Text = "Número de Reproducciones:";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // NumRep1BuscadorPanel
+            // 
+            this.NumRep1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumRep1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumRep1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.NumRep1BuscadorPanel.Name = "NumRep1BuscadorPanel";
+            this.NumRep1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.NumRep1BuscadorPanel.TabIndex = 17;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(69, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(1, 9);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "o";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NumRep2BuscadorPanel
+            // 
+            this.NumRep2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumRep2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumRep2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.NumRep2BuscadorPanel.Name = "NumRep2BuscadorPanel";
+            this.NumRep2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.NumRep2BuscadorPanel.TabIndex = 19;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(107, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(32, 9);
+            this.label34.TabIndex = 20;
+            this.label34.Text = "Se buscaran valores mayores o iguales";
+            // 
+            // tableLayoutPanel53
+            // 
+            this.tableLayoutPanel53.ColumnCount = 5;
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel53.Controls.Add(this.label25, 0, 0);
+            this.tableLayoutPanel53.Controls.Add(this.CatGen1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel53.Controls.Add(this.label24, 2, 0);
+            this.tableLayoutPanel53.Controls.Add(this.CatGen2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel53.Location = new System.Drawing.Point(3, 72);
+            this.tableLayoutPanel53.Name = "tableLayoutPanel53";
+            this.tableLayoutPanel53.RowCount = 1;
+            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel53.TabIndex = 5;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(3, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(29, 9);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Categoría/Género:";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // CatGen1BuscadorPanel
+            // 
+            this.CatGen1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CatGen1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatGen1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.CatGen1BuscadorPanel.Name = "CatGen1BuscadorPanel";
+            this.CatGen1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.CatGen1BuscadorPanel.TabIndex = 13;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(69, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(1, 9);
+            this.label24.TabIndex = 14;
+            this.label24.Text = "o";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // CatGen2BuscadorPanel
+            // 
+            this.CatGen2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CatGen2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatGen2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.CatGen2BuscadorPanel.Name = "CatGen2BuscadorPanel";
+            this.CatGen2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.CatGen2BuscadorPanel.TabIndex = 15;
+            // 
+            // tableLayoutPanel50
+            // 
+            this.tableLayoutPanel50.ColumnCount = 6;
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel50.Controls.Add(this.label19, 1, 0);
+            this.tableLayoutPanel50.Controls.Add(this.CancionesBuscadorUserCheckBox, 3, 0);
+            this.tableLayoutPanel50.Controls.Add(this.PelículasBuscadorUserCheckBox, 2, 0);
+            this.tableLayoutPanel50.Controls.Add(this.PersonasCheckBoxBuscadorPanel, 4, 0);
+            this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel50.Location = new System.Drawing.Point(3, 27);
+            this.tableLayoutPanel50.Name = "tableLayoutPanel50";
+            this.tableLayoutPanel50.RowCount = 1;
+            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel50.TabIndex = 2;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(20, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(33, 9);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "¿Qué desea buscar?";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CancionesBuscadorUserCheckBox
+            // 
+            this.CancionesBuscadorUserCheckBox.AutoSize = true;
+            this.CancionesBuscadorUserCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CancionesBuscadorUserCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancionesBuscadorUserCheckBox.Location = new System.Drawing.Point(81, 3);
+            this.CancionesBuscadorUserCheckBox.Name = "CancionesBuscadorUserCheckBox";
+            this.CancionesBuscadorUserCheckBox.Size = new System.Drawing.Size(16, 3);
+            this.CancionesBuscadorUserCheckBox.TabIndex = 4;
+            this.CancionesBuscadorUserCheckBox.Text = "Canciones";
+            this.CancionesBuscadorUserCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // PelículasBuscadorUserCheckBox
+            // 
+            this.PelículasBuscadorUserCheckBox.AutoSize = true;
+            this.PelículasBuscadorUserCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PelículasBuscadorUserCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PelículasBuscadorUserCheckBox.Location = new System.Drawing.Point(59, 3);
+            this.PelículasBuscadorUserCheckBox.Name = "PelículasBuscadorUserCheckBox";
+            this.PelículasBuscadorUserCheckBox.Size = new System.Drawing.Size(16, 3);
+            this.PelículasBuscadorUserCheckBox.TabIndex = 10;
+            this.PelículasBuscadorUserCheckBox.Text = "Películas";
+            this.PelículasBuscadorUserCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // PersonasCheckBoxBuscadorPanel
+            // 
+            this.PersonasCheckBoxBuscadorPanel.AutoSize = true;
+            this.PersonasCheckBoxBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PersonasCheckBoxBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonasCheckBoxBuscadorPanel.Location = new System.Drawing.Point(103, 3);
+            this.PersonasCheckBoxBuscadorPanel.Name = "PersonasCheckBoxBuscadorPanel";
+            this.PersonasCheckBoxBuscadorPanel.Size = new System.Drawing.Size(16, 3);
+            this.PersonasCheckBoxBuscadorPanel.TabIndex = 11;
+            this.PersonasCheckBoxBuscadorPanel.Text = "Personas";
+            this.PersonasCheckBoxBuscadorPanel.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel51
+            // 
+            this.tableLayoutPanel51.ColumnCount = 5;
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel51.Controls.Add(this.label20, 0, 0);
+            this.tableLayoutPanel51.Controls.Add(this.Titulo1BuscadorTextBox, 1, 0);
+            this.tableLayoutPanel51.Controls.Add(this.Titulo2BuscadorTextBox, 3, 0);
+            this.tableLayoutPanel51.Controls.Add(this.label21, 2, 0);
+            this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel51.Location = new System.Drawing.Point(3, 42);
+            this.tableLayoutPanel51.Name = "tableLayoutPanel51";
+            this.tableLayoutPanel51.RowCount = 1;
+            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel51.TabIndex = 3;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(3, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(29, 9);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Título/Nombre:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Titulo1BuscadorTextBox
+            // 
+            this.Titulo1BuscadorTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Titulo1BuscadorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo1BuscadorTextBox.Location = new System.Drawing.Point(38, 3);
+            this.Titulo1BuscadorTextBox.Name = "Titulo1BuscadorTextBox";
+            this.Titulo1BuscadorTextBox.Size = new System.Drawing.Size(25, 34);
+            this.Titulo1BuscadorTextBox.TabIndex = 5;
+            // 
+            // Titulo2BuscadorTextBox
+            // 
+            this.Titulo2BuscadorTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Titulo2BuscadorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo2BuscadorTextBox.Location = new System.Drawing.Point(76, 3);
+            this.Titulo2BuscadorTextBox.Name = "Titulo2BuscadorTextBox";
+            this.Titulo2BuscadorTextBox.Size = new System.Drawing.Size(25, 34);
+            this.Titulo2BuscadorTextBox.TabIndex = 7;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(69, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(1, 9);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "o";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tableLayoutPanel52
+            // 
+            this.tableLayoutPanel52.ColumnCount = 5;
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel52.Controls.Add(this.label23, 0, 0);
+            this.tableLayoutPanel52.Controls.Add(this.Persona1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel52.Controls.Add(this.label22, 2, 0);
+            this.tableLayoutPanel52.Controls.Add(this.Persona2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(3, 57);
+            this.tableLayoutPanel52.Name = "tableLayoutPanel52";
+            this.tableLayoutPanel52.RowCount = 1;
+            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel52.TabIndex = 4;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(3, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 9);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "Artistas/Actores:";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Persona1BuscadorPanel
+            // 
+            this.Persona1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Persona1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Persona1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.Persona1BuscadorPanel.Name = "Persona1BuscadorPanel";
+            this.Persona1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Persona1BuscadorPanel.TabIndex = 9;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(69, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(1, 9);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "o";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Persona2BuscadorPanel
+            // 
+            this.Persona2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Persona2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Persona2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.Persona2BuscadorPanel.Name = "Persona2BuscadorPanel";
+            this.Persona2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Persona2BuscadorPanel.TabIndex = 11;
+            // 
+            // tableLayoutPanel55
+            // 
+            this.tableLayoutPanel55.ColumnCount = 5;
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel55.Controls.Add(this.label29, 0, 0);
+            this.tableLayoutPanel55.Controls.Add(this.Rating1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel55.Controls.Add(this.label28, 2, 0);
+            this.tableLayoutPanel55.Controls.Add(this.Rating2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel55.Controls.Add(this.label35, 4, 0);
+            this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel55.Location = new System.Drawing.Point(3, 102);
+            this.tableLayoutPanel55.Name = "tableLayoutPanel55";
+            this.tableLayoutPanel55.RowCount = 1;
+            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel55.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel55.TabIndex = 5;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(3, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(29, 9);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Rating:";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Rating1BuscadorPanel
+            // 
+            this.Rating1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Rating1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rating1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.Rating1BuscadorPanel.Name = "Rating1BuscadorPanel";
+            this.Rating1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Rating1BuscadorPanel.TabIndex = 21;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(69, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(1, 9);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "o";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Rating2BuscadorPanel
+            // 
+            this.Rating2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Rating2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rating2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.Rating2BuscadorPanel.Name = "Rating2BuscadorPanel";
+            this.Rating2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Rating2BuscadorPanel.TabIndex = 23;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(107, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(32, 9);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "Se buscaran valores mayores o iguales";
+            // 
+            // tableLayoutPanel56
+            // 
+            this.tableLayoutPanel56.ColumnCount = 5;
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel56.Controls.Add(this.label31, 0, 0);
+            this.tableLayoutPanel56.Controls.Add(this.Album1BuscadorPanel, 1, 0);
+            this.tableLayoutPanel56.Controls.Add(this.Album2BuscadorPanel, 3, 0);
+            this.tableLayoutPanel56.Controls.Add(this.label30, 2, 0);
+            this.tableLayoutPanel56.Controls.Add(this.label41, 4, 0);
+            this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel56.Location = new System.Drawing.Point(3, 117);
+            this.tableLayoutPanel56.Name = "tableLayoutPanel56";
+            this.tableLayoutPanel56.RowCount = 1;
+            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel56.TabIndex = 6;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(3, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(29, 9);
+            this.label31.TabIndex = 24;
+            this.label31.Text = "Álbum:";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Album1BuscadorPanel
+            // 
+            this.Album1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Album1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Album1BuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.Album1BuscadorPanel.Name = "Album1BuscadorPanel";
+            this.Album1BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Album1BuscadorPanel.TabIndex = 25;
+            // 
+            // Album2BuscadorPanel
+            // 
+            this.Album2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Album2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Album2BuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.Album2BuscadorPanel.Name = "Album2BuscadorPanel";
+            this.Album2BuscadorPanel.Size = new System.Drawing.Size(25, 34);
+            this.Album2BuscadorPanel.TabIndex = 27;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(69, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(1, 9);
+            this.label30.TabIndex = 26;
+            this.label30.Text = "o";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(107, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(32, 9);
+            this.label41.TabIndex = 28;
+            this.label41.Text = "Solo para Canciones";
+            // 
+            // tableLayoutPanel58
+            // 
+            this.tableLayoutPanel58.ColumnCount = 3;
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
+            this.tableLayoutPanel58.Controls.Add(this.SearchButton, 1, 0);
+            this.tableLayoutPanel58.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel58.Location = new System.Drawing.Point(3, 180);
+            this.tableLayoutPanel58.Name = "tableLayoutPanel58";
+            this.tableLayoutPanel58.RowCount = 1;
+            this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel58.Size = new System.Drawing.Size(142, 13);
+            this.tableLayoutPanel58.TabIndex = 8;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.SearchButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(61, 3);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(19, 7);
+            this.SearchButton.TabIndex = 32;
+            this.SearchButton.Text = "Buscar";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel59
+            // 
+            this.tableLayoutPanel59.ColumnCount = 3;
+            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel59.Controls.Add(this.label18, 1, 0);
+            this.tableLayoutPanel59.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel59.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel59.Name = "tableLayoutPanel59";
+            this.tableLayoutPanel59.RowCount = 1;
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel59.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel59.TabIndex = 9;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(50, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 9);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Buscador";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label36.Location = new System.Drawing.Point(3, 15);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(142, 9);
+            this.label36.TabIndex = 10;
+            this.label36.Text = "Puede dejar casillas vacías";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tableLayoutPanel60
+            // 
+            this.tableLayoutPanel60.ColumnCount = 5;
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.8503F));
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.45509F));
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.189621F));
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.35529F));
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0499F));
+            this.tableLayoutPanel60.Controls.Add(this.label42, 4, 0);
+            this.tableLayoutPanel60.Controls.Add(this.FemeninoSexoBuscadorPanel, 3, 0);
+            this.tableLayoutPanel60.Controls.Add(this.MasculinoSexoBuscadorPanel, 1, 0);
+            this.tableLayoutPanel60.Controls.Add(this.label37, 0, 0);
+            this.tableLayoutPanel60.Controls.Add(this.label38, 2, 0);
+            this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel60.Location = new System.Drawing.Point(3, 147);
+            this.tableLayoutPanel60.Name = "tableLayoutPanel60";
+            this.tableLayoutPanel60.RowCount = 1;
+            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel60.Size = new System.Drawing.Size(142, 9);
+            this.tableLayoutPanel60.TabIndex = 11;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(107, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(32, 9);
+            this.label42.TabIndex = 29;
+            this.label42.Text = "Solo para Personas";
+            // 
+            // FemeninoSexoBuscadorPanel
+            // 
+            this.FemeninoSexoBuscadorPanel.AutoSize = true;
+            this.FemeninoSexoBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FemeninoSexoBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FemeninoSexoBuscadorPanel.Location = new System.Drawing.Point(76, 3);
+            this.FemeninoSexoBuscadorPanel.Name = "FemeninoSexoBuscadorPanel";
+            this.FemeninoSexoBuscadorPanel.Size = new System.Drawing.Size(25, 3);
+            this.FemeninoSexoBuscadorPanel.TabIndex = 32;
+            this.FemeninoSexoBuscadorPanel.Text = "Femenino";
+            this.FemeninoSexoBuscadorPanel.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.FemeninoSexoBuscadorPanel.UseVisualStyleBackColor = true;
+            this.FemeninoSexoBuscadorPanel.CheckedChanged += new System.EventHandler(this.FemeninoSexoBuscadorPanel_CheckedChanged);
+            // 
+            // MasculinoSexoBuscadorPanel
+            // 
+            this.MasculinoSexoBuscadorPanel.AutoSize = true;
+            this.MasculinoSexoBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MasculinoSexoBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MasculinoSexoBuscadorPanel.Location = new System.Drawing.Point(38, 3);
+            this.MasculinoSexoBuscadorPanel.Name = "MasculinoSexoBuscadorPanel";
+            this.MasculinoSexoBuscadorPanel.Size = new System.Drawing.Size(25, 3);
+            this.MasculinoSexoBuscadorPanel.TabIndex = 12;
+            this.MasculinoSexoBuscadorPanel.Text = "Masculino";
+            this.MasculinoSexoBuscadorPanel.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.MasculinoSexoBuscadorPanel.UseVisualStyleBackColor = true;
+            this.MasculinoSexoBuscadorPanel.CheckedChanged += new System.EventHandler(this.MasculinoSexoBuscadorPanel_CheckedChanged);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label37.Location = new System.Drawing.Point(3, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(29, 9);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Sexo:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(69, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(1, 9);
+            this.label38.TabIndex = 31;
+            this.label38.Text = "o";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 210);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // VerTodasLasPeliculasPanel
+            // 
+            this.VerTodasLasPeliculasPanel.Controls.Add(this.tableLayoutPanel48);
+            this.VerTodasLasPeliculasPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VerTodasLasPeliculasPanel.Location = new System.Drawing.Point(0, 0);
+            this.VerTodasLasPeliculasPanel.Name = "VerTodasLasPeliculasPanel";
+            this.VerTodasLasPeliculasPanel.Size = new System.Drawing.Size(148, 210);
+            this.VerTodasLasPeliculasPanel.TabIndex = 19;
+            // 
+            // tableLayoutPanel48
+            // 
+            this.tableLayoutPanel48.ColumnCount = 2;
+            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel48.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel48.Name = "tableLayoutPanel48";
+            this.tableLayoutPanel48.RowCount = 1;
+            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.Size = new System.Drawing.Size(148, 210);
+            this.tableLayoutPanel48.TabIndex = 0;
             // 
             // CreateAccountView
             // 
@@ -1182,16 +2125,345 @@
             // ModifCuentPanel
             // 
             this.ModifCuentPanel.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ModifCuentPanel.Controls.Add(this.ChangeFreePanel);
             this.ModifCuentPanel.Controls.Add(this.ChangePasswordPanel);
             this.ModifCuentPanel.Controls.Add(this.ChangeUserPanel);
             this.ModifCuentPanel.Controls.Add(this.ModCorrPanel);
             this.ModifCuentPanel.Controls.Add(this.YaEsPremiumPanel);
-            this.ModifCuentPanel.Controls.Add(this.ChangeFreePanel);
             this.ModifCuentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModifCuentPanel.Location = new System.Drawing.Point(74, 19);
             this.ModifCuentPanel.Name = "ModifCuentPanel";
             this.ModifCuentPanel.Size = new System.Drawing.Size(196, 125);
             this.ModifCuentPanel.TabIndex = 8;
+            // 
+            // ChangeFreePanel
+            // 
+            this.ChangeFreePanel.Controls.Add(this.tableLayoutPanel38);
+            this.ChangeFreePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChangeFreePanel.Location = new System.Drawing.Point(0, 0);
+            this.ChangeFreePanel.Name = "ChangeFreePanel";
+            this.ChangeFreePanel.Size = new System.Drawing.Size(196, 125);
+            this.ChangeFreePanel.TabIndex = 14;
+            this.ChangeFreePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ChangeFreePanel_Paint);
+            // 
+            // tableLayoutPanel38
+            // 
+            this.tableLayoutPanel38.ColumnCount = 1;
+            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel39, 0, 0);
+            this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel40, 0, 1);
+            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel38.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
+            this.tableLayoutPanel38.RowCount = 2;
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(196, 125);
+            this.tableLayoutPanel38.TabIndex = 4;
+            // 
+            // tableLayoutPanel39
+            // 
+            this.tableLayoutPanel39.ColumnCount = 2;
+            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel39.Controls.Add(this.label15, 0, 1);
+            this.tableLayoutPanel39.Controls.Add(this.tableLayoutPanel41, 1, 1);
+            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel39.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
+            this.tableLayoutPanel39.RowCount = 2;
+            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(190, 56);
+            this.tableLayoutPanel39.TabIndex = 0;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label15.Location = new System.Drawing.Point(3, 28);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 28);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Privacidad:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tableLayoutPanel41
+            // 
+            this.tableLayoutPanel41.ColumnCount = 2;
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.91278F));
+            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.08722F));
+            this.tableLayoutPanel41.Controls.Add(this.PrivacidadFreeNuevaComboBox, 0, 1);
+            this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel41.Location = new System.Drawing.Point(98, 31);
+            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
+            this.tableLayoutPanel41.RowCount = 3;
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(89, 22);
+            this.tableLayoutPanel41.TabIndex = 2;
+            // 
+            // PrivacidadFreeNuevaComboBox
+            // 
+            this.PrivacidadFreeNuevaComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PrivacidadFreeNuevaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PrivacidadFreeNuevaComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrivacidadFreeNuevaComboBox.FormattingEnabled = true;
+            this.PrivacidadFreeNuevaComboBox.Items.AddRange(new object[] {
+            "Público",
+            "Privado"});
+            this.PrivacidadFreeNuevaComboBox.Location = new System.Drawing.Point(3, 10);
+            this.PrivacidadFreeNuevaComboBox.Name = "PrivacidadFreeNuevaComboBox";
+            this.PrivacidadFreeNuevaComboBox.Size = new System.Drawing.Size(39, 50);
+            this.PrivacidadFreeNuevaComboBox.TabIndex = 0;
+            // 
+            // tableLayoutPanel40
+            // 
+            this.tableLayoutPanel40.ColumnCount = 3;
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
+            this.tableLayoutPanel40.Controls.Add(this.CheckPrivacyInformation, 1, 0);
+            this.tableLayoutPanel40.Controls.Add(this.AceptarCambioCuentaButton, 1, 1);
+            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel40.Location = new System.Drawing.Point(3, 65);
+            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
+            this.tableLayoutPanel40.RowCount = 2;
+            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.012876F));
+            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.98712F));
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(190, 57);
+            this.tableLayoutPanel40.TabIndex = 1;
+            // 
+            // CheckPrivacyInformation
+            // 
+            this.CheckPrivacyInformation.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CheckPrivacyInformation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CheckPrivacyInformation.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CheckPrivacyInformation.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.CheckPrivacyInformation.Location = new System.Drawing.Point(80, 3);
+            this.CheckPrivacyInformation.Name = "CheckPrivacyInformation";
+            this.CheckPrivacyInformation.ReadOnly = true;
+            this.CheckPrivacyInformation.Size = new System.Drawing.Size(28, 15);
+            this.CheckPrivacyInformation.TabIndex = 3;
+            this.CheckPrivacyInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // AceptarCambioCuentaButton
+            // 
+            this.AceptarCambioCuentaButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AceptarCambioCuentaButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AceptarCambioCuentaButton.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.AceptarCambioCuentaButton.Location = new System.Drawing.Point(80, 8);
+            this.AceptarCambioCuentaButton.Name = "AceptarCambioCuentaButton";
+            this.AceptarCambioCuentaButton.Size = new System.Drawing.Size(28, 46);
+            this.AceptarCambioCuentaButton.TabIndex = 2;
+            this.AceptarCambioCuentaButton.Text = "Aceptar";
+            this.AceptarCambioCuentaButton.UseVisualStyleBackColor = false;
+            this.AceptarCambioCuentaButton.Click += new System.EventHandler(this.AceptarCambioCuentaButton_Click);
+            // 
+            // ChangePasswordPanel
+            // 
+            this.ChangePasswordPanel.Controls.Add(this.tableLayoutPanel33);
+            this.ChangePasswordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChangePasswordPanel.Location = new System.Drawing.Point(0, 0);
+            this.ChangePasswordPanel.Name = "ChangePasswordPanel";
+            this.ChangePasswordPanel.Size = new System.Drawing.Size(196, 125);
+            this.ChangePasswordPanel.TabIndex = 8;
+            // 
+            // tableLayoutPanel33
+            // 
+            this.tableLayoutPanel33.ColumnCount = 1;
+            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel37, 0, 3);
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel35, 0, 2);
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel34, 0, 1);
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel36, 0, 4);
+            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel33.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
+            this.tableLayoutPanel33.RowCount = 7;
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.433962F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.433962F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.94969F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.41719F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.04403F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(196, 125);
+            this.tableLayoutPanel33.TabIndex = 14;
+            // 
+            // tableLayoutPanel37
+            // 
+            this.tableLayoutPanel37.ColumnCount = 3;
+            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel37.Controls.Add(this.CheckOldPassword, 1, 2);
+            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel37.Location = new System.Drawing.Point(3, 42);
+            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
+            this.tableLayoutPanel37.RowCount = 3;
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.51613F));
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.58823F));
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.68627F));
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(190, 8);
+            this.tableLayoutPanel37.TabIndex = 3;
+            // 
+            // CheckOldPassword
+            // 
+            this.CheckOldPassword.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CheckOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CheckOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CheckOldPassword.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.CheckOldPassword.Location = new System.Drawing.Point(66, 9);
+            this.CheckOldPassword.Name = "CheckOldPassword";
+            this.CheckOldPassword.ReadOnly = true;
+            this.CheckOldPassword.Size = new System.Drawing.Size(57, 15);
+            this.CheckOldPassword.TabIndex = 13;
+            this.CheckOldPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tableLayoutPanel35
+            // 
+            this.tableLayoutPanel35.ColumnCount = 2;
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel35.Controls.Add(this.tableLayoutPanel47, 1, 0);
+            this.tableLayoutPanel35.Controls.Add(this.label13, 0, 0);
+            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel35.Location = new System.Drawing.Point(3, 31);
+            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
+            this.tableLayoutPanel35.RowCount = 1;
+            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(190, 5);
+            this.tableLayoutPanel35.TabIndex = 1;
+            // 
+            // tableLayoutPanel47
+            // 
+            this.tableLayoutPanel47.ColumnCount = 2;
+            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.Controls.Add(this.InputNewPassword, 0, 0);
+            this.tableLayoutPanel47.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel47.Location = new System.Drawing.Point(98, 3);
+            this.tableLayoutPanel47.Name = "tableLayoutPanel47";
+            this.tableLayoutPanel47.RowCount = 1;
+            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(89, 1);
+            this.tableLayoutPanel47.TabIndex = 13;
+            // 
+            // InputNewPassword
+            // 
+            this.InputNewPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InputNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputNewPassword.Location = new System.Drawing.Point(3, 3);
+            this.InputNewPassword.Name = "InputNewPassword";
+            this.InputNewPassword.PasswordChar = '*';
+            this.InputNewPassword.Size = new System.Drawing.Size(38, 41);
+            this.InputNewPassword.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label13.Location = new System.Drawing.Point(3, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 5);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Ingrese la nueva Contraseña:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // tableLayoutPanel34
+            // 
+            this.tableLayoutPanel34.ColumnCount = 2;
+            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel34.Controls.Add(this.label14, 0, 0);
+            this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel46, 1, 0);
+            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 20);
+            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
+            this.tableLayoutPanel34.RowCount = 1;
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(190, 5);
+            this.tableLayoutPanel34.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 5);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Ingrese Contraseña Actual:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // tableLayoutPanel46
+            // 
+            this.tableLayoutPanel46.ColumnCount = 2;
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.Controls.Add(this.InputOldPassword, 0, 0);
+            this.tableLayoutPanel46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel46.Location = new System.Drawing.Point(98, 3);
+            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
+            this.tableLayoutPanel46.RowCount = 1;
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(89, 1);
+            this.tableLayoutPanel46.TabIndex = 12;
+            // 
+            // InputOldPassword
+            // 
+            this.InputOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InputOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputOldPassword.Location = new System.Drawing.Point(3, 3);
+            this.InputOldPassword.Name = "InputOldPassword";
+            this.InputOldPassword.PasswordChar = '*';
+            this.InputOldPassword.Size = new System.Drawing.Size(38, 41);
+            this.InputOldPassword.TabIndex = 12;
+            // 
+            // tableLayoutPanel36
+            // 
+            this.tableLayoutPanel36.ColumnCount = 3;
+            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.42515F));
+            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.9481F));
+            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.52695F));
+            this.tableLayoutPanel36.Controls.Add(this.AceptarNuevaContraseñaButton, 1, 0);
+            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 56);
+            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
+            this.tableLayoutPanel36.RowCount = 1;
+            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel36.Size = new System.Drawing.Size(190, 10);
+            this.tableLayoutPanel36.TabIndex = 2;
+            // 
+            // AceptarNuevaContraseñaButton
+            // 
+            this.AceptarNuevaContraseñaButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AceptarNuevaContraseñaButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AceptarNuevaContraseñaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AceptarNuevaContraseñaButton.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.AceptarNuevaContraseñaButton.Location = new System.Drawing.Point(74, 3);
+            this.AceptarNuevaContraseñaButton.Name = "AceptarNuevaContraseñaButton";
+            this.AceptarNuevaContraseñaButton.Size = new System.Drawing.Size(43, 4);
+            this.AceptarNuevaContraseñaButton.TabIndex = 10;
+            this.AceptarNuevaContraseñaButton.Text = "Aceptar";
+            this.AceptarNuevaContraseñaButton.UseVisualStyleBackColor = false;
+            this.AceptarNuevaContraseñaButton.Click += new System.EventHandler(this.AceptarNuevaContraseñaButton_Click);
             // 
             // ChangeUserPanel
             // 
@@ -1383,306 +2655,6 @@
             this.label16.Text = "Usted ya es un Usuario Premium";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ChangeFreePanel
-            // 
-            this.ChangeFreePanel.Controls.Add(this.tableLayoutPanel38);
-            this.ChangeFreePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChangeFreePanel.Location = new System.Drawing.Point(0, 0);
-            this.ChangeFreePanel.Name = "ChangeFreePanel";
-            this.ChangeFreePanel.Size = new System.Drawing.Size(196, 125);
-            this.ChangeFreePanel.TabIndex = 14;
-            this.ChangeFreePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ChangeFreePanel_Paint);
-            // 
-            // tableLayoutPanel38
-            // 
-            this.tableLayoutPanel38.ColumnCount = 1;
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel39, 0, 0);
-            this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel40, 0, 1);
-            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
-            this.tableLayoutPanel38.RowCount = 2;
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(196, 125);
-            this.tableLayoutPanel38.TabIndex = 4;
-            // 
-            // tableLayoutPanel39
-            // 
-            this.tableLayoutPanel39.ColumnCount = 2;
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Controls.Add(this.label15, 0, 1);
-            this.tableLayoutPanel39.Controls.Add(this.tableLayoutPanel41, 1, 1);
-            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
-            this.tableLayoutPanel39.RowCount = 2;
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(190, 56);
-            this.tableLayoutPanel39.TabIndex = 0;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label15.Location = new System.Drawing.Point(3, 28);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 28);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Privacidad:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // tableLayoutPanel41
-            // 
-            this.tableLayoutPanel41.ColumnCount = 1;
-            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel41.Controls.Add(this.PrivacidadFreeNuevaComboBox, 0, 1);
-            this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(98, 31);
-            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
-            this.tableLayoutPanel41.RowCount = 3;
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(89, 22);
-            this.tableLayoutPanel41.TabIndex = 2;
-            // 
-            // PrivacidadFreeNuevaComboBox
-            // 
-            this.PrivacidadFreeNuevaComboBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PrivacidadFreeNuevaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PrivacidadFreeNuevaComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrivacidadFreeNuevaComboBox.FormattingEnabled = true;
-            this.PrivacidadFreeNuevaComboBox.Items.AddRange(new object[] {
-            "Público",
-            "Privado"});
-            this.PrivacidadFreeNuevaComboBox.Location = new System.Drawing.Point(3, 10);
-            this.PrivacidadFreeNuevaComboBox.Name = "PrivacidadFreeNuevaComboBox";
-            this.PrivacidadFreeNuevaComboBox.Size = new System.Drawing.Size(83, 50);
-            this.PrivacidadFreeNuevaComboBox.TabIndex = 0;
-            // 
-            // tableLayoutPanel40
-            // 
-            this.tableLayoutPanel40.ColumnCount = 3;
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
-            this.tableLayoutPanel40.Controls.Add(this.CheckPrivacyInformation, 1, 0);
-            this.tableLayoutPanel40.Controls.Add(this.AceptarCambioCuentaButton, 1, 1);
-            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(3, 65);
-            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
-            this.tableLayoutPanel40.RowCount = 2;
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.012876F));
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.98712F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(190, 57);
-            this.tableLayoutPanel40.TabIndex = 1;
-            // 
-            // CheckPrivacyInformation
-            // 
-            this.CheckPrivacyInformation.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CheckPrivacyInformation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CheckPrivacyInformation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CheckPrivacyInformation.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.CheckPrivacyInformation.Location = new System.Drawing.Point(80, 3);
-            this.CheckPrivacyInformation.Name = "CheckPrivacyInformation";
-            this.CheckPrivacyInformation.ReadOnly = true;
-            this.CheckPrivacyInformation.Size = new System.Drawing.Size(28, 15);
-            this.CheckPrivacyInformation.TabIndex = 3;
-            this.CheckPrivacyInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // AceptarCambioCuentaButton
-            // 
-            this.AceptarCambioCuentaButton.BackColor = System.Drawing.SystemColors.WindowText;
-            this.AceptarCambioCuentaButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AceptarCambioCuentaButton.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.AceptarCambioCuentaButton.Location = new System.Drawing.Point(80, 8);
-            this.AceptarCambioCuentaButton.Name = "AceptarCambioCuentaButton";
-            this.AceptarCambioCuentaButton.Size = new System.Drawing.Size(28, 46);
-            this.AceptarCambioCuentaButton.TabIndex = 2;
-            this.AceptarCambioCuentaButton.Text = "Aceptar";
-            this.AceptarCambioCuentaButton.UseVisualStyleBackColor = false;
-            this.AceptarCambioCuentaButton.Click += new System.EventHandler(this.AceptarCambioCuentaButton_Click);
-            // 
-            // ChangePasswordPanel
-            // 
-            this.ChangePasswordPanel.Controls.Add(this.tableLayoutPanel33);
-            this.ChangePasswordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChangePasswordPanel.Location = new System.Drawing.Point(0, 0);
-            this.ChangePasswordPanel.Name = "ChangePasswordPanel";
-            this.ChangePasswordPanel.Size = new System.Drawing.Size(196, 125);
-            this.ChangePasswordPanel.TabIndex = 8;
-            // 
-            // tableLayoutPanel33
-            // 
-            this.tableLayoutPanel33.ColumnCount = 1;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel37, 0, 3);
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel35, 0, 2);
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel34, 0, 1);
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel36, 0, 4);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 7;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.433962F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.433962F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.94969F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.41719F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.04403F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(196, 125);
-            this.tableLayoutPanel33.TabIndex = 14;
-            // 
-            // tableLayoutPanel37
-            // 
-            this.tableLayoutPanel37.ColumnCount = 3;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel37.Controls.Add(this.CheckOldPassword, 1, 2);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(3, 42);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 3;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.51613F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.58823F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.68627F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(190, 8);
-            this.tableLayoutPanel37.TabIndex = 3;
-            // 
-            // CheckOldPassword
-            // 
-            this.CheckOldPassword.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CheckOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CheckOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CheckOldPassword.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.CheckOldPassword.Location = new System.Drawing.Point(66, 9);
-            this.CheckOldPassword.Name = "CheckOldPassword";
-            this.CheckOldPassword.ReadOnly = true;
-            this.CheckOldPassword.Size = new System.Drawing.Size(57, 15);
-            this.CheckOldPassword.TabIndex = 13;
-            this.CheckOldPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel35
-            // 
-            this.tableLayoutPanel35.ColumnCount = 2;
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.Controls.Add(this.tableLayoutPanel47, 1, 0);
-            this.tableLayoutPanel35.Controls.Add(this.label13, 0, 0);
-            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(3, 31);
-            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
-            this.tableLayoutPanel35.RowCount = 1;
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(190, 5);
-            this.tableLayoutPanel35.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.Location = new System.Drawing.Point(3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 5);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Ingrese la nueva Contraseña:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // InputNewPassword
-            // 
-            this.InputNewPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InputNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputNewPassword.Location = new System.Drawing.Point(3, 3);
-            this.InputNewPassword.Name = "InputNewPassword";
-            this.InputNewPassword.PasswordChar = '*';
-            this.InputNewPassword.Size = new System.Drawing.Size(38, 41);
-            this.InputNewPassword.TabIndex = 9;
-            // 
-            // tableLayoutPanel34
-            // 
-            this.tableLayoutPanel34.ColumnCount = 2;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel34.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel46, 1, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 20);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(190, 5);
-            this.tableLayoutPanel34.TabIndex = 0;
-            // 
-            // InputOldPassword
-            // 
-            this.InputOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InputOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputOldPassword.Location = new System.Drawing.Point(3, 3);
-            this.InputOldPassword.Name = "InputOldPassword";
-            this.InputOldPassword.PasswordChar = '*';
-            this.InputOldPassword.Size = new System.Drawing.Size(38, 41);
-            this.InputOldPassword.TabIndex = 12;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label14.Location = new System.Drawing.Point(3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 5);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "Ingrese Contraseña Actual:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // tableLayoutPanel36
-            // 
-            this.tableLayoutPanel36.ColumnCount = 3;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.42515F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.9481F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.52695F));
-            this.tableLayoutPanel36.Controls.Add(this.AceptarNuevaContraseñaButton, 1, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 56);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 1;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(190, 10);
-            this.tableLayoutPanel36.TabIndex = 2;
-            // 
-            // AceptarNuevaContraseñaButton
-            // 
-            this.AceptarNuevaContraseñaButton.BackColor = System.Drawing.SystemColors.WindowText;
-            this.AceptarNuevaContraseñaButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AceptarNuevaContraseñaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarNuevaContraseñaButton.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.AceptarNuevaContraseñaButton.Location = new System.Drawing.Point(74, 3);
-            this.AceptarNuevaContraseñaButton.Name = "AceptarNuevaContraseñaButton";
-            this.AceptarNuevaContraseñaButton.Size = new System.Drawing.Size(43, 4);
-            this.AceptarNuevaContraseñaButton.TabIndex = 10;
-            this.AceptarNuevaContraseñaButton.Text = "Aceptar";
-            this.AceptarNuevaContraseñaButton.UseVisualStyleBackColor = false;
-            this.AceptarNuevaContraseñaButton.Click += new System.EventHandler(this.AceptarNuevaContraseñaButton_Click);
-            // 
             // tableLayoutPanel25
             // 
             this.tableLayoutPanel25.ColumnCount = 2;
@@ -1758,19 +2730,20 @@
             this.tableLayoutPanel27.Size = new System.Drawing.Size(61, 125);
             this.tableLayoutPanel27.TabIndex = 2;
             // 
-            // CambiarUsuarioButton
+            // tableLayoutPanel45
             // 
-            this.CambiarUsuarioButton.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CambiarUsuarioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CambiarUsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CambiarUsuarioButton.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.CambiarUsuarioButton.Location = new System.Drawing.Point(3, 3);
-            this.CambiarUsuarioButton.Name = "CambiarUsuarioButton";
-            this.CambiarUsuarioButton.Size = new System.Drawing.Size(49, 9);
-            this.CambiarUsuarioButton.TabIndex = 3;
-            this.CambiarUsuarioButton.Text = "Cambiar Nombre de Usuario";
-            this.CambiarUsuarioButton.UseVisualStyleBackColor = false;
-            this.CambiarUsuarioButton.Click += new System.EventHandler(this.CambiarUsuarioButton_Click);
+            this.tableLayoutPanel45.ColumnCount = 1;
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel45.Controls.Add(this.CambioTipoCuentaButton, 0, 0);
+            this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel45.Location = new System.Drawing.Point(3, 89);
+            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
+            this.tableLayoutPanel45.RowCount = 2;
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(55, 33);
+            this.tableLayoutPanel45.TabIndex = 7;
             // 
             // CambioTipoCuentaButton
             // 
@@ -1785,6 +2758,21 @@
             this.CambioTipoCuentaButton.Text = "Cambiarte de Free a Premium";
             this.CambioTipoCuentaButton.UseVisualStyleBackColor = false;
             this.CambioTipoCuentaButton.Click += new System.EventHandler(this.CambioTipoCuentaButton_Click);
+            // 
+            // tableLayoutPanel44
+            // 
+            this.tableLayoutPanel44.ColumnCount = 1;
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel44.Controls.Add(this.CambiarContraseñaButton, 0, 0);
+            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel44.Location = new System.Drawing.Point(3, 52);
+            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
+            this.tableLayoutPanel44.RowCount = 2;
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(55, 31);
+            this.tableLayoutPanel44.TabIndex = 7;
             // 
             // CambiarContraseñaButton
             // 
@@ -1815,69 +2803,25 @@
             this.tableLayoutPanel43.Size = new System.Drawing.Size(55, 31);
             this.tableLayoutPanel43.TabIndex = 7;
             // 
-            // tableLayoutPanel44
+            // CambiarUsuarioButton
             // 
-            this.tableLayoutPanel44.ColumnCount = 1;
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel44.Controls.Add(this.CambiarContraseñaButton, 0, 0);
-            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel44.Location = new System.Drawing.Point(3, 52);
-            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
-            this.tableLayoutPanel44.RowCount = 2;
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(55, 31);
-            this.tableLayoutPanel44.TabIndex = 7;
-            // 
-            // tableLayoutPanel45
-            // 
-            this.tableLayoutPanel45.ColumnCount = 1;
-            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel45.Controls.Add(this.CambioTipoCuentaButton, 0, 0);
-            this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel45.Location = new System.Drawing.Point(3, 89);
-            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
-            this.tableLayoutPanel45.RowCount = 2;
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(55, 33);
-            this.tableLayoutPanel45.TabIndex = 7;
-            // 
-            // tableLayoutPanel46
-            // 
-            this.tableLayoutPanel46.ColumnCount = 2;
-            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel46.Controls.Add(this.InputOldPassword, 0, 0);
-            this.tableLayoutPanel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel46.Location = new System.Drawing.Point(98, 3);
-            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
-            this.tableLayoutPanel46.RowCount = 1;
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(89, 1);
-            this.tableLayoutPanel46.TabIndex = 12;
-            // 
-            // tableLayoutPanel47
-            // 
-            this.tableLayoutPanel47.ColumnCount = 2;
-            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel47.Controls.Add(this.InputNewPassword, 0, 0);
-            this.tableLayoutPanel47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel47.Location = new System.Drawing.Point(98, 3);
-            this.tableLayoutPanel47.Name = "tableLayoutPanel47";
-            this.tableLayoutPanel47.RowCount = 1;
-            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(89, 1);
-            this.tableLayoutPanel47.TabIndex = 13;
+            this.CambiarUsuarioButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CambiarUsuarioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CambiarUsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CambiarUsuarioButton.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.CambiarUsuarioButton.Location = new System.Drawing.Point(3, 3);
+            this.CambiarUsuarioButton.Name = "CambiarUsuarioButton";
+            this.CambiarUsuarioButton.Size = new System.Drawing.Size(49, 9);
+            this.CambiarUsuarioButton.TabIndex = 3;
+            this.CambiarUsuarioButton.Text = "Cambiar Nombre de Usuario";
+            this.CambiarUsuarioButton.UseVisualStyleBackColor = false;
+            this.CambiarUsuarioButton.Click += new System.EventHandler(this.CambiarUsuarioButton_Click);
             // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1358, 533);
+            this.ClientSize = new System.Drawing.Size(1351, 592);
             this.Controls.Add(this.ModificarCuentaPanel);
             this.Controls.Add(this.LoginView);
             this.Controls.Add(this.CreateAccountView);
@@ -1913,8 +2857,36 @@
             this.tableLayoutPanel20.PerformLayout();
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel22.ResumeLayout(false);
+            this.UserActivitiesPanel.ResumeLayout(false);
+            this.BuscadorPanel.ResumeLayout(false);
+            this.tableLayoutPanel49.ResumeLayout(false);
+            this.tableLayoutPanel49.PerformLayout();
+            this.tableLayoutPanel61.ResumeLayout(false);
+            this.tableLayoutPanel61.PerformLayout();
+            this.tableLayoutPanel57.ResumeLayout(false);
+            this.tableLayoutPanel57.PerformLayout();
+            this.tableLayoutPanel54.ResumeLayout(false);
+            this.tableLayoutPanel54.PerformLayout();
+            this.tableLayoutPanel53.ResumeLayout(false);
+            this.tableLayoutPanel53.PerformLayout();
+            this.tableLayoutPanel50.ResumeLayout(false);
+            this.tableLayoutPanel50.PerformLayout();
+            this.tableLayoutPanel51.ResumeLayout(false);
+            this.tableLayoutPanel51.PerformLayout();
+            this.tableLayoutPanel52.ResumeLayout(false);
+            this.tableLayoutPanel52.PerformLayout();
+            this.tableLayoutPanel55.ResumeLayout(false);
+            this.tableLayoutPanel55.PerformLayout();
+            this.tableLayoutPanel56.ResumeLayout(false);
+            this.tableLayoutPanel56.PerformLayout();
+            this.tableLayoutPanel58.ResumeLayout(false);
+            this.tableLayoutPanel59.ResumeLayout(false);
+            this.tableLayoutPanel59.PerformLayout();
+            this.tableLayoutPanel60.ResumeLayout(false);
+            this.tableLayoutPanel60.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.VerTodasLasPeliculasPanel.ResumeLayout(false);
             this.CreateAccountView.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
@@ -1935,19 +2907,6 @@
             this.ModificarCuentaPanel.ResumeLayout(false);
             this.tableLayoutPanel24.ResumeLayout(false);
             this.ModifCuentPanel.ResumeLayout(false);
-            this.ChangeUserPanel.ResumeLayout(false);
-            this.tableLayoutPanel29.ResumeLayout(false);
-            this.tableLayoutPanel30.ResumeLayout(false);
-            this.tableLayoutPanel30.PerformLayout();
-            this.tableLayoutPanel32.ResumeLayout(false);
-            this.tableLayoutPanel32.PerformLayout();
-            this.tableLayoutPanel31.ResumeLayout(false);
-            this.ModCorrPanel.ResumeLayout(false);
-            this.tableLayoutPanel28.ResumeLayout(false);
-            this.tableLayoutPanel28.PerformLayout();
-            this.YaEsPremiumPanel.ResumeLayout(false);
-            this.tableLayoutPanel42.ResumeLayout(false);
-            this.tableLayoutPanel42.PerformLayout();
             this.ChangeFreePanel.ResumeLayout(false);
             this.tableLayoutPanel38.ResumeLayout(false);
             this.tableLayoutPanel39.ResumeLayout(false);
@@ -1961,20 +2920,33 @@
             this.tableLayoutPanel37.PerformLayout();
             this.tableLayoutPanel35.ResumeLayout(false);
             this.tableLayoutPanel35.PerformLayout();
+            this.tableLayoutPanel47.ResumeLayout(false);
+            this.tableLayoutPanel47.PerformLayout();
             this.tableLayoutPanel34.ResumeLayout(false);
             this.tableLayoutPanel34.PerformLayout();
+            this.tableLayoutPanel46.ResumeLayout(false);
+            this.tableLayoutPanel46.PerformLayout();
             this.tableLayoutPanel36.ResumeLayout(false);
+            this.ChangeUserPanel.ResumeLayout(false);
+            this.tableLayoutPanel29.ResumeLayout(false);
+            this.tableLayoutPanel30.ResumeLayout(false);
+            this.tableLayoutPanel30.PerformLayout();
+            this.tableLayoutPanel32.ResumeLayout(false);
+            this.tableLayoutPanel32.PerformLayout();
+            this.tableLayoutPanel31.ResumeLayout(false);
+            this.ModCorrPanel.ResumeLayout(false);
+            this.tableLayoutPanel28.ResumeLayout(false);
+            this.tableLayoutPanel28.PerformLayout();
+            this.YaEsPremiumPanel.ResumeLayout(false);
+            this.tableLayoutPanel42.ResumeLayout(false);
+            this.tableLayoutPanel42.PerformLayout();
             this.tableLayoutPanel25.ResumeLayout(false);
             this.tableLayoutPanel26.ResumeLayout(false);
             this.tableLayoutPanel26.PerformLayout();
             this.tableLayoutPanel27.ResumeLayout(false);
-            this.tableLayoutPanel43.ResumeLayout(false);
-            this.tableLayoutPanel44.ResumeLayout(false);
             this.tableLayoutPanel45.ResumeLayout(false);
-            this.tableLayoutPanel46.ResumeLayout(false);
-            this.tableLayoutPanel46.PerformLayout();
-            this.tableLayoutPanel47.ResumeLayout(false);
-            this.tableLayoutPanel47.PerformLayout();
+            this.tableLayoutPanel44.ResumeLayout(false);
+            this.tableLayoutPanel43.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2018,7 +2990,6 @@
         private System.Windows.Forms.Button ModificarCuentaButton;
         private System.Windows.Forms.TextBox ReadUserName;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel ModificarCuentaPanel;
         private System.Windows.Forms.Panel ChangeUserPanel;
         private System.Windows.Forms.TextBox NuevoNombreUsuarioTextBox;
@@ -2098,6 +3069,73 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel43;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel47;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel46;
+        private System.Windows.Forms.Panel UserActivitiesPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel BuscadorPanel;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel VerTodasLasPeliculasPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel48;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel49;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel57;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox Año2BuscadorPanel;
+        private System.Windows.Forms.TextBox Año1BuscadorPanel;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel54;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox NumRep1BuscadorPanel;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox NumRep2BuscadorPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel53;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox CatGen1BuscadorPanel;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox CatGen2BuscadorPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel50;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel51;
+        private System.Windows.Forms.TextBox Titulo1BuscadorTextBox;
+        private System.Windows.Forms.TextBox Titulo2BuscadorTextBox;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel52;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox Persona1BuscadorPanel;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox Persona2BuscadorPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel55;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox Rating1BuscadorPanel;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox Rating2BuscadorPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel56;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox Album1BuscadorPanel;
+        private System.Windows.Forms.TextBox Album2BuscadorPanel;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel58;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel59;
+        private System.Windows.Forms.CheckBox CancionesBuscadorUserCheckBox;
+        private System.Windows.Forms.CheckBox PelículasBuscadorUserCheckBox;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.CheckBox PersonasCheckBoxBuscadorPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
+        private System.Windows.Forms.TextBox Edad2BuscadorPanelTextBox;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox Edad1BuscadorPanelTextBox;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel60;
+        private System.Windows.Forms.CheckBox FemeninoSexoBuscadorPanel;
+        private System.Windows.Forms.CheckBox MasculinoSexoBuscadorPanel;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
     }
 }
 

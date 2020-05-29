@@ -14,6 +14,7 @@ namespace Proyecto_equipo_13_entrega_3
         private string userName;
         private string email;
         private string password;
+        private bool lOGIN;
 
         //Premium
         private bool Privacy;
@@ -32,6 +33,7 @@ namespace Proyecto_equipo_13_entrega_3
         public bool Privacy1 { get => Privacy; set => Privacy = value; }
         public List<Playlists> MyPlaylist1 { get => MyPlaylist; set => MyPlaylist = value; }
         public List<User> Follows1 { get => Follows; set => Follows = value; }
+        public bool LOGIN { get => lOGIN; set => lOGIN = value; }
 
         public User() { } //Constructor para implementar Crear Cuenta, etc...
 

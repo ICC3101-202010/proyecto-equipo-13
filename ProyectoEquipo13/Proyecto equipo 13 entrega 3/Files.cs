@@ -15,6 +15,7 @@ namespace Proyecto_equipo_13_entrega_3
         private static List<Playlists> allPlaylistsMovies = new List<Playlists>();
         private static Dictionary<int, List<string>> allUsers = new Dictionary<int, List<string>>();
         private static List<User> users = new List<User>();
+        private static List<Person> allPersons = new List<Person>();
 
         public static List<Movies> AllMovies { get => allMovies; set => allMovies = value; }
         public static List<Songs> AllSongs { get => allSongs; set => allSongs = value; }
@@ -22,6 +23,7 @@ namespace Proyecto_equipo_13_entrega_3
         public static List<Playlists> AllPlaylistsMovies { get => allPlaylistsMovies; set => allPlaylistsMovies = value; }
         public static Dictionary<int, List<string>> AllUsers { get => allUsers; set => allUsers = value; }
         public static List<User> Users { get => users; set => users = value; }
+        public static List<Person> AllPersons { get => allPersons; set => allPersons = value; }
 
         public static List<User> Get_Lista_Usuarios()
         {

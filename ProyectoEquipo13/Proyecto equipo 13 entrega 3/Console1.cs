@@ -885,7 +885,7 @@ namespace Proyecto_equipo_13_entrega_3
 
         public static void Search(Computer computer, User userlogin)
         {
-            computer.Searcher(userlogin);
+            //computer.Searcher(userlogin);
         }
 
         public static void SeeMoviesSearch(Computer computer, User userlogin, List<Movies> MOVIES)

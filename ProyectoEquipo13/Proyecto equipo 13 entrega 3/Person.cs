@@ -15,8 +15,8 @@ namespace Proyecto_equipo_13_entrega_3
         private string link; //Link que deriva a IMDB
 
         public string Name { get => name; set => name = value; }
-        protected DateTime Birthday { get => birthday; set => birthday = value; }
-        protected char Genre { get => genre; set => genre = value; }
+        public DateTime Birthday { get => birthday; set => birthday = value; }
+        public char Genre { get => genre; set => genre = value; }
         protected string Link { get => link; set => link = value; }
 
         public Person(string name, DateTime birthday, char genre, string link)

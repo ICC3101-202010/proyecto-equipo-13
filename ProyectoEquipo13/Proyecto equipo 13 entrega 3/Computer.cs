@@ -12,13 +12,6 @@ namespace Proyecto_equipo_13_entrega_3
 {
     public class Computer
     {
-        public void Searcher(User user)
-        {
-            Console.Clear();
-            Console.WriteLine("El buscador trabaja bastante específico (Casa es diferente que casa), por lo que lo que sabe preocupese de escribirlo de manera correcta.\nAdemás si es que hay algúna información que no sabe, simplemente seleccione ENTER (si pone algo que no sabe el buscador usara ese criterio y probablemente no encuentre coincidencias");
-            Search.Searching(this, user);
-        }
-
         public List<Songs> SearchTypeSongs(string type, string name)
         {
             List<Songs> show = new List<Songs>();

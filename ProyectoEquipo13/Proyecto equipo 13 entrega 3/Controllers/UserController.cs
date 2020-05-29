@@ -14,7 +14,6 @@ namespace Proyecto_equipo_13_entrega_3.Controllers
         
         public UserController(Form view)
         {
-            initialize();
             this.view = view as AppForm;
             this.view.LoginButtonClicked += OnLoginButtonClicked;
             this.view.CreateAccountClicked += OnCreateAccountClicked;
@@ -56,11 +55,6 @@ namespace Proyecto_equipo_13_entrega_3.Controllers
             user = Files.Users.Where(t =>
                t.UserName.ToUpper().Contains(e.UsernameText.ToUpper())).FirstOrDefault();
             view.setNameUser(user.UserName);
-        }
-
-        public void initialize()
-        {
-            //Serialización
         }
     }
 }
