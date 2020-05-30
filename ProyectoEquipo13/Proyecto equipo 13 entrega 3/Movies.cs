@@ -30,8 +30,9 @@ namespace Proyecto_equipo_13_entrega_3
         string Video; //nombre archivo
         List<Songs> SongsMovie;
         int Min;
+        string movieDirection;
 
-        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min, string movieDirection)
         {
             this.Title = Title;
             this.Director = Director;
@@ -51,6 +52,7 @@ namespace Proyecto_equipo_13_entrega_3
             this.Trailer = Trailer;
             this.SongsMovie = SongsMovie;
             this.Min = Min;
+            this.movieDirection = movieDirection;
         }
 
         public string Title1 { get => Title; set => Title = value; }
@@ -71,6 +73,7 @@ namespace Proyecto_equipo_13_entrega_3
         public string Video1 { get => Video; set => Video = value; }
         public List<Songs> SongsMovie1 { get => SongsMovie; set => SongsMovie = value; }
         public int Min1 { get => Min; set => Min = value; }
+        public string MovieDirection { get => movieDirection; set => movieDirection = value; }
 
         public void Play()
         {

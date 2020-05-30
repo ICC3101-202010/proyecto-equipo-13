@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proyecto_equipo_13_avance_keko.Properties
+namespace Proyecto_equipo_13_entrega_3.Properties
 {
 
 
