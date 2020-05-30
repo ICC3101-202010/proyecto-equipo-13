@@ -32,7 +32,7 @@ namespace Proyecto_equipo_13_entrega_3
         int Min;
         string movieDirection;
 
-        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min, string movieDirection)
+        public Movies(string Title, Person Director, List<Person> Actors, Person Writer, int Lenght, List<string> Categories, string Studio, string Description, string Year, string Resolution, string Memory, int numReproductions, List<double> Rating, double RatingProm, string Trailer, string Video, List<Songs> SongsMovie, int Min, string movieDirection2)
         {
             this.Title = Title;
             this.Director = Director;
@@ -52,7 +52,7 @@ namespace Proyecto_equipo_13_entrega_3
             this.Trailer = Trailer;
             this.SongsMovie = SongsMovie;
             this.Min = Min;
-            this.movieDirection = movieDirection;
+            this.movieDirection = movieDirection2;
         }
 
         public string Title1 { get => Title; set => Title = value; }

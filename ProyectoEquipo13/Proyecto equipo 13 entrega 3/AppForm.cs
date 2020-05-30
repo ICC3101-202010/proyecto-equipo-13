@@ -163,8 +163,7 @@ namespace Proyecto_equipo_13_entrega_3
             string Video_Tarzan = @"\Tarzan_-Son_Of_Man_Phil_Collins.mp4";
             List<Songs> Songs_Tarzan = new List<Songs>();
             Songs_Tarzan.Add(Son_of_man);
-            string a = @"\Tarzanmovie.jpg";
-            Movies Tarzan = new Movies("Tarzan", kevin_lima, Actors_Tarzan, tab_murphay, Lenght, Categories_Tarzan, "Walt Disney Pictures", Description, "1999", Resolution, Memory, numReproductions, Rating, RatingProm, Trailer_Tarzan, Video_Tarzan, Songs_Tarzan, Min,a);
+            Movies Tarzan = new Movies("Tarzan", kevin_lima, Actors_Tarzan, tab_murphay, Lenght, Categories_Tarzan, "Walt Disney Pictures", Description, "1999", Resolution, Memory, numReproductions, Rating, RatingProm, Trailer_Tarzan, Video_Tarzan, Songs_Tarzan, Min, @"\Tarzanmovie.jpg");
             Files.AllMovies.Add(Tarzan);
 
             //MOVIE 2
