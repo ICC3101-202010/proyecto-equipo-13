@@ -823,7 +823,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
         }
 
-        DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+        DataGridViewComboBoxColumn combo = new DataGridViewComboBoxColumn();
 
         private void FillDataGridViewSongS(List<Songs> songs)
         {
@@ -834,18 +834,16 @@ namespace Proyecto_equipo_13_entrega_3
             dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
             DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
             nombre.HeaderText = "Información";
-            buttons.Text = "Ver más";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.Text = "Seleccionar";
             buttons.UseColumnTextForButtonValue = true;
             buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             buttons.FlatStyle = FlatStyle.Standard;
             buttons.CellTemplate.Style.BackColor = Color.Black;
             buttons.CellTemplate.Style.ForeColor = Color.White;
-            
 
 
-
-
-                DataGriedSongS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DataGriedSongS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataGriedSongS.RowTemplate.Height = 200;
             DataGriedSongS.AllowUserToAddRows = false;
 
@@ -882,6 +880,15 @@ namespace Proyecto_equipo_13_entrega_3
             dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
             DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
             nombre.HeaderText = "Información";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+
 
             DataGriedMovieS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataGriedMovieS.RowTemplate.Height = 200;
@@ -889,7 +896,8 @@ namespace Proyecto_equipo_13_entrega_3
 
             DataGriedMovieS.Columns.Add(dgvImagen);
             DataGriedMovieS.Columns.Add(nombre);
-            
+            DataGriedMovieS.Columns.Add(buttons);
+
 
             DataGriedMovieS.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             DataGriedMovieS.Columns[0].Width = 200;
@@ -903,6 +911,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             ShowMoviesPanel.Controls.Add(DataGriedMovieS);
         }
+
 
         private void VerTodasLasPeliculasButton_Click(object sender, EventArgs e)
         {
@@ -939,11 +948,28 @@ namespace Proyecto_equipo_13_entrega_3
         private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+            string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosT = datosTO.Replace("Título: ", string.Empty);
+            string datos = datosT.Replace("Director: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+            }
         }
 
         private void DataGriedSongS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            string datosTO = DataGriedSongS.Rows[DataGriedSongS.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosT = datosTO.Replace("Título: ", string.Empty);
+            string datos = datosT.Replace("Cantante: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                MessageBox.Show("Reproduciendo: " + lines[0] + "de " + lines[1]);
+            }
         }
 
         private void OpcionesS_SelectedIndexChanged(object sender, EventArgs e)
