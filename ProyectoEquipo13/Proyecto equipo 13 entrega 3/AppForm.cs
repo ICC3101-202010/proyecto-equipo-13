@@ -1027,6 +1027,7 @@ namespace Proyecto_equipo_13_entrega_3
         private void buttonReproducir_Click(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.URL = this.ruta;
+            label45.Text = axWindowsMediaPlayer1.URL;
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
 
@@ -1045,6 +1046,16 @@ namespace Proyecto_equipo_13_entrega_3
             SacarRuta(Titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
+        }
+
+        private void axWindowsMediaPlayer1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel62_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         public void ChooseFolder()
