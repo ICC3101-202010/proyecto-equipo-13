@@ -968,7 +968,7 @@ namespace Proyecto_equipo_13_entrega_3
             string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
             if (e.ColumnIndex == 2)
             {
-                MessageBox.Show("Reproduciendo: " + lines[0] + "de " + lines[1]);
+                MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
             }
         }
 
