@@ -23,6 +23,9 @@ namespace Proyecto_equipo_13_entrega_3
         public event CreateAccountEventHandler CreateAccountClicked;
         public string ruta, dest, name;
 
+
+        
+
         //Organizacion
         List<Panel> stackPanels = new List<Panel>();
         Dictionary<string, Panel> panels = new Dictionary<string, Panel>();
@@ -343,6 +346,7 @@ namespace Proyecto_equipo_13_entrega_3
                 ShowLastPanel();
             }
         }
+
 
         private void IniciarSerializacion()
         {
@@ -819,6 +823,8 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
         }
 
+        DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+
         private void FillDataGridViewSongS(List<Songs> songs)
         {
             DataGriedSongS.Rows.Clear();
@@ -828,13 +834,24 @@ namespace Proyecto_equipo_13_entrega_3
             dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
             DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
             nombre.HeaderText = "Información";
+            buttons.Text = "Ver más";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+            
 
-            DataGriedSongS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
+
+                DataGriedSongS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataGriedSongS.RowTemplate.Height = 200;
             DataGriedSongS.AllowUserToAddRows = false;
 
             DataGriedSongS.Columns.Add(dgvImagen);
             DataGriedSongS.Columns.Add(nombre);
+            DataGriedSongS.Columns.Add(buttons);
 
             DataGriedSongS.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             DataGriedSongS.Columns[0].Width = 200;
@@ -872,6 +889,7 @@ namespace Proyecto_equipo_13_entrega_3
 
             DataGriedMovieS.Columns.Add(dgvImagen);
             DataGriedMovieS.Columns.Add(nombre);
+            
 
             DataGriedMovieS.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             DataGriedMovieS.Columns[0].Width = 200;
@@ -917,6 +935,28 @@ namespace Proyecto_equipo_13_entrega_3
                 }
             }
         }
+
+        private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DataGriedSongS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void OpcionesS_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string select = OpcionesS.Text;
+
+            if (select == "Reproducir")
+            {
+                //Reproducir
+                MessageBox.Show("Reproduciendo");
+            }
+        }
+
         public void ChooseFolder()
         { 
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
