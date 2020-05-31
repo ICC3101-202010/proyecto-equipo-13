@@ -82,7 +82,6 @@
     <Compile Include="Playlists.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Resources\resources.designer.cs" />
     <Compile Include="Search.cs" />
     <Compile Include="SmartPlaylist.cs" />
     <Compile Include="Songs.cs" />
@@ -100,7 +99,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Resources\resources.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

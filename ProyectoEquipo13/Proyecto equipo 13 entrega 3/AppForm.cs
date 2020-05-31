@@ -823,8 +823,6 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
         }
 
-        DataGridViewComboBoxColumn combo = new DataGridViewComboBoxColumn();
-
         private void FillDataGridViewSongS(List<Songs> songs)
         {
             DataGriedSongS.Rows.Clear();
@@ -920,10 +918,40 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridViewMovieS(Files.AllMovies);
         }
 
+        private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosT = datosTO.Replace("Título: ", string.Empty);
+            string datos = datosT.Replace("Director: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+                ShowMovie.BringToFront();
+            }
+        }
+
+        private void DataGriedSongS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string datosTO = DataGriedSongS.Rows[DataGriedSongS.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosT = datosTO.Replace("Título: ", string.Empty);
+            string datos = datosT.Replace("Cantante: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
+                ShowSong.BringToFront();
+            }
+        }
+
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
         }
+
         public void SacarRuta(string s)
         {
             string carpeta = Directory.GetCurrentDirectory();
@@ -942,44 +970,6 @@ namespace Proyecto_equipo_13_entrega_3
                     this.ruta = carpeta + j.Music1;
                     this.name = j.Title1;
                 }
-            }
-        }
-
-        private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Director: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
-            {
-                MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
-            }
-        }
-
-        private void DataGriedSongS_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string datosTO = DataGriedSongS.Rows[DataGriedSongS.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Cantante: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
-            {
-                MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
-            }
-        }
-
-        private void OpcionesS_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string select = OpcionesS.Text;
-
-            if (select == "Reproducir")
-            {
-                //Reproducir
-                MessageBox.Show("Reproduciendo");
             }
         }
 
