@@ -920,7 +920,6 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
             string datosT = datosTO.Replace("Título: ", string.Empty);
             string datos = datosT.Replace("Director: ", string.Empty);
@@ -928,7 +927,31 @@ namespace Proyecto_equipo_13_entrega_3
             string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
             if (e.ColumnIndex == 2)
             {
-                MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+                //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+                InfoMovieTextBox.Text = null;
+                foreach (Movies movie in Files.AllMovies)
+                {
+                    if (movie.Title1==lines[0] && movie.Director1.Name == lines[1])
+                    {
+                        InfoMovieTextBox.Text = "Título: " + movie.Title1 + "\r\nDirector: " + movie.Director1.Name + "\r\nReparto: ";
+                        foreach(Person person in movie.Actors1)
+                        {
+                            InfoMovieTextBox.Text += person.Name + ", ";
+                        }
+                        InfoMovieTextBox.Text = InfoMovieTextBox.Text.Substring(0, InfoMovieTextBox.Text.Length - 2);
+                        InfoMovieTextBox.Text += "\r\nEscritor: " + movie.Writer1.Name + "\r\nDuración: " + movie.Lenght1.ToString() + " min. \r\nRating: " + movie.RatingProm1.ToString()+ "\r\nNúmero de Reproducciones: "+movie.NumReproductions.ToString()+"\r\nCategorías: ";
+                        foreach (string cat in movie.Categories1)
+                        {
+                            InfoMovieTextBox.Text += cat + ", ";
+                        }
+                        InfoMovieTextBox.Text = InfoMovieTextBox.Text.Substring(0, InfoMovieTextBox.Text.Length - 2);
+                        InfoMovieTextBox.Text += "\r\nEstudio: " + movie.Studio1 + "\r\nAño: " + movie.Year1;
+                        var carpeta = Directory.GetCurrentDirectory();
+                        var H = carpeta + movie.MovieDirection;
+                        ShowImagenShowMovie.BackgroundImageLayout = ImageLayout.Stretch;
+                        ShowImagenShowMovie.BackgroundImage = Image.FromFile(H);
+                    }             
+                }
                 ShowMovie.BringToFront();
             }
         }
@@ -942,7 +965,25 @@ namespace Proyecto_equipo_13_entrega_3
             string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
             if (e.ColumnIndex == 2)
             {
-                MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
+                //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
+                InfoSongsTextBox.Text = null;
+                foreach (Songs song in Files.AllSongs)
+                {
+                    if (song.Title1 == lines[0] && song.Artist1.Name == lines[1])
+                    {
+                        InfoSongsTextBox.Text = "Título: " + song.Title1 + "\r\nArtista: " + song.Artist1.Name + "\r\nÁlbum: " +song.Album1.Name1+ "\r\nGéneros: ";
+                        foreach (string gen in song.Genre1)
+                        {
+                            InfoSongsTextBox.Text += gen + ", ";
+                        }
+                        InfoSongsTextBox.Text = InfoSongsTextBox.Text.Substring(0, InfoSongsTextBox.Text.Length - 2);
+                        InfoSongsTextBox.Text += "\r\nCompositor: " + song.Composer1.Name + "\r\nEscritor: " + song.Writer1.Name + "\r\nDuración: " +song.Lenght1.ToString()+"\r\nRating: "+song.RatingProm1.ToString()+"\r\nNúmero de Reproducciones: "+song.NumReproductions.ToString();
+                        var carpeta = Directory.GetCurrentDirectory();
+                        var H = carpeta + song.Album1.Image1;
+                        ShowImageShowSong.BackgroundImageLayout = ImageLayout.Stretch;
+                        ShowImageShowSong.BackgroundImage = Image.FromFile(H);
+                    }
+                }
                 ShowSong.BringToFront();
             }
         }

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
             this.WelcomeMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -64,6 +64,31 @@
             this.UserPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.UserActivitiesPanel = new System.Windows.Forms.Panel();
+            this.ShowMovie = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel67 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel68 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel69 = new System.Windows.Forms.TableLayoutPanel();
+            this.ReproducirShowMovie = new System.Windows.Forms.Button();
+            this.CalificarShowMovie = new System.Windows.Forms.Button();
+            this.AddPlaylistShowMovie = new System.Windows.Forms.Button();
+            this.MeGustaShowMovie = new System.Windows.Forms.Button();
+            this.tableLayoutPanel70 = new System.Windows.Forms.TableLayoutPanel();
+            this.ShowImagenShowMovie = new System.Windows.Forms.Button();
+            this.CambiarImagenShowMovie = new System.Windows.Forms.Button();
+            this.InfoMovieTextBox = new System.Windows.Forms.TextBox();
+            this.ShowSong = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel66 = new System.Windows.Forms.TableLayoutPanel();
+            this.ReproducirButtonShowsSong = new System.Windows.Forms.Button();
+            this.CalificarButtonShowSong = new System.Windows.Forms.Button();
+            this.AddPlaylistShowSong = new System.Windows.Forms.Button();
+            this.MeGustaButtonShowSong = new System.Windows.Forms.Button();
+            this.DescargarButtonShowSong = new System.Windows.Forms.Button();
+            this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
+            this.ShowImageShowSong = new System.Windows.Forms.Button();
+            this.CambiarImagenShowSong = new System.Windows.Forms.Button();
+            this.InfoSongsTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ShowMoviesPanel = new System.Windows.Forms.Panel();
             this.DataGriedMovieS = new System.Windows.Forms.DataGridView();
@@ -144,6 +169,7 @@
             this.ModificarPlaylistButton = new System.Windows.Forms.Button();
             this.CrearPlaylistButton = new System.Windows.Forms.Button();
             this.VerTodasLasCancionesButton = new System.Windows.Forms.Button();
+            this.FollowsButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.CerrarSesiónButton = new System.Windows.Forms.Button();
             this.ModificarCuentaButton = new System.Windows.Forms.Button();
@@ -230,32 +256,6 @@
             this.buttonReproducir = new System.Windows.Forms.Button();
             this.buttonCerrar = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.FollowsButton = new System.Windows.Forms.Button();
-            this.ShowSong = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
-            this.CambiarImagenShowSong = new System.Windows.Forms.Button();
-            this.InfoSongsTextBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel66 = new System.Windows.Forms.TableLayoutPanel();
-            this.ReproducirButtonShowsSong = new System.Windows.Forms.Button();
-            this.CalificarButtonShowSong = new System.Windows.Forms.Button();
-            this.AddPlaylistShowSong = new System.Windows.Forms.Button();
-            this.MeGustaButtonShowSong = new System.Windows.Forms.Button();
-            this.DescargarButtonShowSong = new System.Windows.Forms.Button();
-            this.ShowImageShowSong = new System.Windows.Forms.Button();
-            this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
-            this.ShowMovie = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel67 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel68 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel69 = new System.Windows.Forms.TableLayoutPanel();
-            this.ReproducirShowMovie = new System.Windows.Forms.Button();
-            this.CalificarShowMovie = new System.Windows.Forms.Button();
-            this.AddPlaylistShowMovie = new System.Windows.Forms.Button();
-            this.MeGustaShowMovie = new System.Windows.Forms.Button();
-            this.tableLayoutPanel70 = new System.Windows.Forms.TableLayoutPanel();
-            this.ShowImagenShowMovie = new System.Windows.Forms.Button();
-            this.CambiarImagenShowMovie = new System.Windows.Forms.Button();
-            this.InfoMovieTextBox = new System.Windows.Forms.TextBox();
             this.WelcomeMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -272,6 +272,16 @@
             this.UserPanel.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.UserActivitiesPanel.SuspendLayout();
+            this.ShowMovie.SuspendLayout();
+            this.tableLayoutPanel67.SuspendLayout();
+            this.tableLayoutPanel68.SuspendLayout();
+            this.tableLayoutPanel69.SuspendLayout();
+            this.tableLayoutPanel70.SuspendLayout();
+            this.ShowSong.SuspendLayout();
+            this.tableLayoutPanel63.SuspendLayout();
+            this.tableLayoutPanel64.SuspendLayout();
+            this.tableLayoutPanel66.SuspendLayout();
+            this.tableLayoutPanel65.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ShowMoviesPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGriedMovieS)).BeginInit();
@@ -339,16 +349,6 @@
             this.tableLayoutPanel48.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.tableLayoutPanel62.SuspendLayout();
-            this.ShowSong.SuspendLayout();
-            this.tableLayoutPanel63.SuspendLayout();
-            this.tableLayoutPanel64.SuspendLayout();
-            this.tableLayoutPanel66.SuspendLayout();
-            this.tableLayoutPanel65.SuspendLayout();
-            this.ShowMovie.SuspendLayout();
-            this.tableLayoutPanel67.SuspendLayout();
-            this.tableLayoutPanel68.SuspendLayout();
-            this.tableLayoutPanel69.SuspendLayout();
-            this.tableLayoutPanel70.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomeMenu
@@ -795,6 +795,330 @@
             this.UserActivitiesPanel.Size = new System.Drawing.Size(982, 431);
             this.UserActivitiesPanel.TabIndex = 19;
             // 
+            // ShowMovie
+            // 
+            this.ShowMovie.Controls.Add(this.tableLayoutPanel67);
+            this.ShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ShowMovie.Location = new System.Drawing.Point(0, 0);
+            this.ShowMovie.Name = "ShowMovie";
+            this.ShowMovie.Size = new System.Drawing.Size(982, 431);
+            this.ShowMovie.TabIndex = 20;
+            // 
+            // tableLayoutPanel67
+            // 
+            this.tableLayoutPanel67.ColumnCount = 1;
+            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel67.Controls.Add(this.tableLayoutPanel68, 0, 0);
+            this.tableLayoutPanel67.Controls.Add(this.InfoMovieTextBox, 0, 1);
+            this.tableLayoutPanel67.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel67.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel67.Name = "tableLayoutPanel67";
+            this.tableLayoutPanel67.RowCount = 2;
+            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
+            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
+            this.tableLayoutPanel67.Size = new System.Drawing.Size(982, 431);
+            this.tableLayoutPanel67.TabIndex = 0;
+            // 
+            // tableLayoutPanel68
+            // 
+            this.tableLayoutPanel68.ColumnCount = 2;
+            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.30738F));
+            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.69262F));
+            this.tableLayoutPanel68.Controls.Add(this.tableLayoutPanel69, 1, 0);
+            this.tableLayoutPanel68.Controls.Add(this.tableLayoutPanel70, 0, 0);
+            this.tableLayoutPanel68.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel68.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel68.Name = "tableLayoutPanel68";
+            this.tableLayoutPanel68.RowCount = 1;
+            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tableLayoutPanel68.Size = new System.Drawing.Size(976, 169);
+            this.tableLayoutPanel68.TabIndex = 0;
+            // 
+            // tableLayoutPanel69
+            // 
+            this.tableLayoutPanel69.ColumnCount = 2;
+            this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.03867F));
+            this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.96133F));
+            this.tableLayoutPanel69.Controls.Add(this.ReproducirShowMovie, 0, 0);
+            this.tableLayoutPanel69.Controls.Add(this.CalificarShowMovie, 0, 1);
+            this.tableLayoutPanel69.Controls.Add(this.AddPlaylistShowMovie, 0, 2);
+            this.tableLayoutPanel69.Controls.Add(this.MeGustaShowMovie, 0, 3);
+            this.tableLayoutPanel69.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel69.Location = new System.Drawing.Point(250, 3);
+            this.tableLayoutPanel69.Name = "tableLayoutPanel69";
+            this.tableLayoutPanel69.RowCount = 5;
+            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel69.Size = new System.Drawing.Size(723, 163);
+            this.tableLayoutPanel69.TabIndex = 1;
+            // 
+            // ReproducirShowMovie
+            // 
+            this.ReproducirShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ReproducirShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReproducirShowMovie.Location = new System.Drawing.Point(3, 3);
+            this.ReproducirShowMovie.Name = "ReproducirShowMovie";
+            this.ReproducirShowMovie.Size = new System.Drawing.Size(196, 26);
+            this.ReproducirShowMovie.TabIndex = 0;
+            this.ReproducirShowMovie.Text = "Reproducir";
+            this.ReproducirShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // CalificarShowMovie
+            // 
+            this.CalificarShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CalificarShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CalificarShowMovie.Location = new System.Drawing.Point(3, 35);
+            this.CalificarShowMovie.Name = "CalificarShowMovie";
+            this.CalificarShowMovie.Size = new System.Drawing.Size(196, 26);
+            this.CalificarShowMovie.TabIndex = 1;
+            this.CalificarShowMovie.Text = "Calificar";
+            this.CalificarShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // AddPlaylistShowMovie
+            // 
+            this.AddPlaylistShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddPlaylistShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddPlaylistShowMovie.Location = new System.Drawing.Point(3, 67);
+            this.AddPlaylistShowMovie.Name = "AddPlaylistShowMovie";
+            this.AddPlaylistShowMovie.Size = new System.Drawing.Size(196, 26);
+            this.AddPlaylistShowMovie.TabIndex = 2;
+            this.AddPlaylistShowMovie.Text = "Agregar a una Playlist";
+            this.AddPlaylistShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // MeGustaShowMovie
+            // 
+            this.MeGustaShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.MeGustaShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MeGustaShowMovie.Location = new System.Drawing.Point(3, 99);
+            this.MeGustaShowMovie.Name = "MeGustaShowMovie";
+            this.MeGustaShowMovie.Size = new System.Drawing.Size(196, 26);
+            this.MeGustaShowMovie.TabIndex = 3;
+            this.MeGustaShowMovie.Text = "Me Gusta";
+            this.MeGustaShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel70
+            // 
+            this.tableLayoutPanel70.ColumnCount = 1;
+            this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel70.Controls.Add(this.ShowImagenShowMovie, 0, 0);
+            this.tableLayoutPanel70.Controls.Add(this.CambiarImagenShowMovie, 0, 1);
+            this.tableLayoutPanel70.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel70.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel70.Name = "tableLayoutPanel70";
+            this.tableLayoutPanel70.RowCount = 2;
+            this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel70.Size = new System.Drawing.Size(241, 163);
+            this.tableLayoutPanel70.TabIndex = 2;
+            // 
+            // ShowImagenShowMovie
+            // 
+            this.ShowImagenShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ShowImagenShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ShowImagenShowMovie.Location = new System.Drawing.Point(3, 3);
+            this.ShowImagenShowMovie.Name = "ShowImagenShowMovie";
+            this.ShowImagenShowMovie.Size = new System.Drawing.Size(235, 124);
+            this.ShowImagenShowMovie.TabIndex = 1;
+            this.ShowImagenShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // CambiarImagenShowMovie
+            // 
+            this.CambiarImagenShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CambiarImagenShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CambiarImagenShowMovie.Location = new System.Drawing.Point(3, 133);
+            this.CambiarImagenShowMovie.Name = "CambiarImagenShowMovie";
+            this.CambiarImagenShowMovie.Size = new System.Drawing.Size(235, 27);
+            this.CambiarImagenShowMovie.TabIndex = 0;
+            this.CambiarImagenShowMovie.Text = "Cambiar Imagen";
+            this.CambiarImagenShowMovie.UseVisualStyleBackColor = false;
+            // 
+            // InfoMovieTextBox
+            // 
+            this.InfoMovieTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.InfoMovieTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InfoMovieTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoMovieTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.InfoMovieTextBox.Location = new System.Drawing.Point(3, 178);
+            this.InfoMovieTextBox.Multiline = true;
+            this.InfoMovieTextBox.Name = "InfoMovieTextBox";
+            this.InfoMovieTextBox.ReadOnly = true;
+            this.InfoMovieTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.InfoMovieTextBox.Size = new System.Drawing.Size(976, 250);
+            this.InfoMovieTextBox.TabIndex = 1;
+            // 
+            // ShowSong
+            // 
+            this.ShowSong.Controls.Add(this.tableLayoutPanel63);
+            this.ShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ShowSong.Location = new System.Drawing.Point(0, 0);
+            this.ShowSong.Name = "ShowSong";
+            this.ShowSong.Size = new System.Drawing.Size(982, 431);
+            this.ShowSong.TabIndex = 0;
+            // 
+            // tableLayoutPanel63
+            // 
+            this.tableLayoutPanel63.ColumnCount = 1;
+            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel63.Controls.Add(this.tableLayoutPanel64, 0, 0);
+            this.tableLayoutPanel63.Controls.Add(this.InfoSongsTextBox, 0, 1);
+            this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel63.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel63.Name = "tableLayoutPanel63";
+            this.tableLayoutPanel63.RowCount = 2;
+            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
+            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
+            this.tableLayoutPanel63.Size = new System.Drawing.Size(982, 431);
+            this.tableLayoutPanel63.TabIndex = 0;
+            // 
+            // tableLayoutPanel64
+            // 
+            this.tableLayoutPanel64.ColumnCount = 2;
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.30738F));
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.69262F));
+            this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel66, 1, 0);
+            this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel65, 0, 0);
+            this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel64.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel64.Name = "tableLayoutPanel64";
+            this.tableLayoutPanel64.RowCount = 1;
+            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tableLayoutPanel64.Size = new System.Drawing.Size(976, 169);
+            this.tableLayoutPanel64.TabIndex = 0;
+            // 
+            // tableLayoutPanel66
+            // 
+            this.tableLayoutPanel66.ColumnCount = 2;
+            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.03867F));
+            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.96133F));
+            this.tableLayoutPanel66.Controls.Add(this.ReproducirButtonShowsSong, 0, 0);
+            this.tableLayoutPanel66.Controls.Add(this.CalificarButtonShowSong, 0, 1);
+            this.tableLayoutPanel66.Controls.Add(this.AddPlaylistShowSong, 0, 2);
+            this.tableLayoutPanel66.Controls.Add(this.MeGustaButtonShowSong, 0, 3);
+            this.tableLayoutPanel66.Controls.Add(this.DescargarButtonShowSong, 0, 4);
+            this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel66.Location = new System.Drawing.Point(250, 3);
+            this.tableLayoutPanel66.Name = "tableLayoutPanel66";
+            this.tableLayoutPanel66.RowCount = 5;
+            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel66.Size = new System.Drawing.Size(723, 163);
+            this.tableLayoutPanel66.TabIndex = 1;
+            // 
+            // ReproducirButtonShowsSong
+            // 
+            this.ReproducirButtonShowsSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ReproducirButtonShowsSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReproducirButtonShowsSong.Location = new System.Drawing.Point(3, 3);
+            this.ReproducirButtonShowsSong.Name = "ReproducirButtonShowsSong";
+            this.ReproducirButtonShowsSong.Size = new System.Drawing.Size(196, 26);
+            this.ReproducirButtonShowsSong.TabIndex = 0;
+            this.ReproducirButtonShowsSong.Text = "Reproducir";
+            this.ReproducirButtonShowsSong.UseVisualStyleBackColor = false;
+            // 
+            // CalificarButtonShowSong
+            // 
+            this.CalificarButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CalificarButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CalificarButtonShowSong.Location = new System.Drawing.Point(3, 35);
+            this.CalificarButtonShowSong.Name = "CalificarButtonShowSong";
+            this.CalificarButtonShowSong.Size = new System.Drawing.Size(196, 26);
+            this.CalificarButtonShowSong.TabIndex = 1;
+            this.CalificarButtonShowSong.Text = "Calificar";
+            this.CalificarButtonShowSong.UseVisualStyleBackColor = false;
+            // 
+            // AddPlaylistShowSong
+            // 
+            this.AddPlaylistShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddPlaylistShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddPlaylistShowSong.Location = new System.Drawing.Point(3, 67);
+            this.AddPlaylistShowSong.Name = "AddPlaylistShowSong";
+            this.AddPlaylistShowSong.Size = new System.Drawing.Size(196, 26);
+            this.AddPlaylistShowSong.TabIndex = 2;
+            this.AddPlaylistShowSong.Text = "Agregar a una Playlist";
+            this.AddPlaylistShowSong.UseVisualStyleBackColor = false;
+            // 
+            // MeGustaButtonShowSong
+            // 
+            this.MeGustaButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.MeGustaButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MeGustaButtonShowSong.Location = new System.Drawing.Point(3, 99);
+            this.MeGustaButtonShowSong.Name = "MeGustaButtonShowSong";
+            this.MeGustaButtonShowSong.Size = new System.Drawing.Size(196, 26);
+            this.MeGustaButtonShowSong.TabIndex = 3;
+            this.MeGustaButtonShowSong.Text = "Me Gusta";
+            this.MeGustaButtonShowSong.UseVisualStyleBackColor = false;
+            // 
+            // DescargarButtonShowSong
+            // 
+            this.DescargarButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.DescargarButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DescargarButtonShowSong.Location = new System.Drawing.Point(3, 131);
+            this.DescargarButtonShowSong.Name = "DescargarButtonShowSong";
+            this.DescargarButtonShowSong.Size = new System.Drawing.Size(196, 29);
+            this.DescargarButtonShowSong.TabIndex = 4;
+            this.DescargarButtonShowSong.Text = "Descargar";
+            this.DescargarButtonShowSong.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel65
+            // 
+            this.tableLayoutPanel65.ColumnCount = 1;
+            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel65.Controls.Add(this.ShowImageShowSong, 0, 0);
+            this.tableLayoutPanel65.Controls.Add(this.CambiarImagenShowSong, 0, 1);
+            this.tableLayoutPanel65.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel65.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel65.Name = "tableLayoutPanel65";
+            this.tableLayoutPanel65.RowCount = 2;
+            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel65.Size = new System.Drawing.Size(241, 163);
+            this.tableLayoutPanel65.TabIndex = 2;
+            // 
+            // ShowImageShowSong
+            // 
+            this.ShowImageShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ShowImageShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ShowImageShowSong.Location = new System.Drawing.Point(3, 3);
+            this.ShowImageShowSong.Name = "ShowImageShowSong";
+            this.ShowImageShowSong.Size = new System.Drawing.Size(235, 124);
+            this.ShowImageShowSong.TabIndex = 1;
+            this.ShowImageShowSong.UseVisualStyleBackColor = false;
+            // 
+            // CambiarImagenShowSong
+            // 
+            this.CambiarImagenShowSong.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CambiarImagenShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CambiarImagenShowSong.Location = new System.Drawing.Point(3, 133);
+            this.CambiarImagenShowSong.Name = "CambiarImagenShowSong";
+            this.CambiarImagenShowSong.Size = new System.Drawing.Size(235, 27);
+            this.CambiarImagenShowSong.TabIndex = 0;
+            this.CambiarImagenShowSong.Text = "Cambiar Imagen";
+            this.CambiarImagenShowSong.UseVisualStyleBackColor = false;
+            // 
+            // InfoSongsTextBox
+            // 
+            this.InfoSongsTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.InfoSongsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InfoSongsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoSongsTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.InfoSongsTextBox.Location = new System.Drawing.Point(3, 178);
+            this.InfoSongsTextBox.Multiline = true;
+            this.InfoSongsTextBox.Name = "InfoSongsTextBox";
+            this.InfoSongsTextBox.ReadOnly = true;
+            this.InfoSongsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.InfoSongsTextBox.Size = new System.Drawing.Size(976, 250);
+            this.InfoSongsTextBox.TabIndex = 1;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -825,14 +1149,14 @@
             this.DataGriedMovieS.AllowUserToResizeColumns = false;
             this.DataGriedMovieS.AllowUserToResizeRows = false;
             this.DataGriedMovieS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle71.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle71.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle71;
             this.DataGriedMovieS.ColumnHeadersHeight = 18;
             this.DataGriedMovieS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGriedMovieS.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -845,22 +1169,22 @@
             this.DataGriedMovieS.Name = "DataGriedMovieS";
             this.DataGriedMovieS.ReadOnly = true;
             this.DataGriedMovieS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle72;
             this.DataGriedMovieS.RowHeadersWidth = 51;
             this.DataGriedMovieS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle73.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle73.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle73.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle73;
             this.DataGriedMovieS.RowTemplate.Height = 24;
             this.DataGriedMovieS.Size = new System.Drawing.Size(982, 431);
             this.DataGriedMovieS.TabIndex = 0;
@@ -884,24 +1208,24 @@
             this.DataGriedSongS.AllowUserToResizeColumns = false;
             this.DataGriedSongS.AllowUserToResizeRows = false;
             this.DataGriedSongS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle74.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle74.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle74;
             this.DataGriedSongS.ColumnHeadersHeight = 18;
             this.DataGriedSongS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle75.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle75.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle75.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle75;
             this.DataGriedSongS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGriedSongS.EnableHeadersVisualStyles = false;
             this.DataGriedSongS.GridColor = System.Drawing.SystemColors.WindowText;
@@ -912,21 +1236,21 @@
             this.DataGriedSongS.ReadOnly = true;
             this.DataGriedSongS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DataGriedSongS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle76.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle76.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle76;
             this.DataGriedSongS.RowHeadersWidth = 51;
             this.DataGriedSongS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle77.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle77.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle77;
             this.DataGriedSongS.RowTemplate.Height = 24;
             this.DataGriedSongS.Size = new System.Drawing.Size(982, 431);
             this.DataGriedSongS.TabIndex = 0;
@@ -1001,7 +1325,7 @@
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
             this.tableLayoutPanel61.RowCount = 1;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel61.Size = new System.Drawing.Size(976, 28);
             this.tableLayoutPanel61.TabIndex = 12;
             // 
@@ -1079,7 +1403,7 @@
             this.tableLayoutPanel57.Name = "tableLayoutPanel57";
             this.tableLayoutPanel57.RowCount = 1;
             this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel57.Size = new System.Drawing.Size(976, 28);
             this.tableLayoutPanel57.TabIndex = 7;
             // 
@@ -1157,7 +1481,7 @@
             this.tableLayoutPanel54.Name = "tableLayoutPanel54";
             this.tableLayoutPanel54.RowCount = 1;
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel54.Size = new System.Drawing.Size(976, 28);
             this.tableLayoutPanel54.TabIndex = 5;
             // 
@@ -1680,7 +2004,7 @@
             this.tableLayoutPanel59.Name = "tableLayoutPanel59";
             this.tableLayoutPanel59.RowCount = 1;
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel59.Size = new System.Drawing.Size(976, 28);
             this.tableLayoutPanel59.TabIndex = 9;
             // 
@@ -1726,7 +2050,7 @@
             this.tableLayoutPanel60.Name = "tableLayoutPanel60";
             this.tableLayoutPanel60.RowCount = 1;
             this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel60.Size = new System.Drawing.Size(976, 28);
             this.tableLayoutPanel60.TabIndex = 11;
             // 
@@ -1987,6 +2311,20 @@
             this.VerTodasLasCancionesButton.UseVisualStyleBackColor = false;
             this.VerTodasLasCancionesButton.Click += new System.EventHandler(this.VerTodasLasCancionesButton_Click);
             // 
+            // FollowsButton
+            // 
+            this.FollowsButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FollowsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FollowsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FollowsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FollowsButton.Location = new System.Drawing.Point(3, 358);
+            this.FollowsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FollowsButton.Name = "FollowsButton";
+            this.FollowsButton.Size = new System.Drawing.Size(317, 39);
+            this.FollowsButton.TabIndex = 17;
+            this.FollowsButton.Text = "Followers";
+            this.FollowsButton.UseVisualStyleBackColor = false;
+            // 
             // tableLayoutPanel22
             // 
             this.tableLayoutPanel22.ColumnCount = 3;
@@ -2001,7 +2339,7 @@
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel22.Size = new System.Drawing.Size(982, 36);
             this.tableLayoutPanel22.TabIndex = 18;
             // 
@@ -3235,342 +3573,6 @@
             this.buttonCerrar.Text = "Cerrar";
             this.buttonCerrar.UseVisualStyleBackColor = true;
             // 
-            // FollowsButton
-            // 
-            this.FollowsButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FollowsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FollowsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FollowsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.FollowsButton.Location = new System.Drawing.Point(3, 358);
-            this.FollowsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FollowsButton.Name = "FollowsButton";
-            this.FollowsButton.Size = new System.Drawing.Size(317, 39);
-            this.FollowsButton.TabIndex = 17;
-            this.FollowsButton.Text = "Followers";
-            this.FollowsButton.UseVisualStyleBackColor = false;
-            // 
-            // ShowSong
-            // 
-            this.ShowSong.Controls.Add(this.tableLayoutPanel63);
-            this.ShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ShowSong.Location = new System.Drawing.Point(0, 0);
-            this.ShowSong.Name = "ShowSong";
-            this.ShowSong.Size = new System.Drawing.Size(982, 431);
-            this.ShowSong.TabIndex = 0;
-            // 
-            // tableLayoutPanel63
-            // 
-            this.tableLayoutPanel63.ColumnCount = 1;
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel63.Controls.Add(this.tableLayoutPanel64, 0, 0);
-            this.tableLayoutPanel63.Controls.Add(this.InfoSongsTextBox, 0, 1);
-            this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel63.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel63.Name = "tableLayoutPanel63";
-            this.tableLayoutPanel63.RowCount = 2;
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(982, 431);
-            this.tableLayoutPanel63.TabIndex = 0;
-            // 
-            // tableLayoutPanel64
-            // 
-            this.tableLayoutPanel64.ColumnCount = 2;
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.30738F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.69262F));
-            this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel66, 1, 0);
-            this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel65, 0, 0);
-            this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel64.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel64.Name = "tableLayoutPanel64";
-            this.tableLayoutPanel64.RowCount = 1;
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(976, 169);
-            this.tableLayoutPanel64.TabIndex = 0;
-            // 
-            // CambiarImagenShowSong
-            // 
-            this.CambiarImagenShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CambiarImagenShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CambiarImagenShowSong.Location = new System.Drawing.Point(3, 133);
-            this.CambiarImagenShowSong.Name = "CambiarImagenShowSong";
-            this.CambiarImagenShowSong.Size = new System.Drawing.Size(234, 27);
-            this.CambiarImagenShowSong.TabIndex = 0;
-            this.CambiarImagenShowSong.Text = "Cambiar Imagen";
-            this.CambiarImagenShowSong.UseVisualStyleBackColor = false;
-            // 
-            // InfoSongsTextBox
-            // 
-            this.InfoSongsTextBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.InfoSongsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InfoSongsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoSongsTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.InfoSongsTextBox.Location = new System.Drawing.Point(3, 178);
-            this.InfoSongsTextBox.Multiline = true;
-            this.InfoSongsTextBox.Name = "InfoSongsTextBox";
-            this.InfoSongsTextBox.ReadOnly = true;
-            this.InfoSongsTextBox.Size = new System.Drawing.Size(976, 250);
-            this.InfoSongsTextBox.TabIndex = 1;
-            // 
-            // tableLayoutPanel66
-            // 
-            this.tableLayoutPanel66.ColumnCount = 2;
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.03867F));
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.96133F));
-            this.tableLayoutPanel66.Controls.Add(this.ReproducirButtonShowsSong, 0, 0);
-            this.tableLayoutPanel66.Controls.Add(this.CalificarButtonShowSong, 0, 1);
-            this.tableLayoutPanel66.Controls.Add(this.AddPlaylistShowSong, 0, 2);
-            this.tableLayoutPanel66.Controls.Add(this.MeGustaButtonShowSong, 0, 3);
-            this.tableLayoutPanel66.Controls.Add(this.DescargarButtonShowSong, 0, 4);
-            this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(249, 3);
-            this.tableLayoutPanel66.Name = "tableLayoutPanel66";
-            this.tableLayoutPanel66.RowCount = 5;
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(724, 163);
-            this.tableLayoutPanel66.TabIndex = 1;
-            // 
-            // ReproducirButtonShowsSong
-            // 
-            this.ReproducirButtonShowsSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ReproducirButtonShowsSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReproducirButtonShowsSong.Location = new System.Drawing.Point(3, 3);
-            this.ReproducirButtonShowsSong.Name = "ReproducirButtonShowsSong";
-            this.ReproducirButtonShowsSong.Size = new System.Drawing.Size(196, 26);
-            this.ReproducirButtonShowsSong.TabIndex = 0;
-            this.ReproducirButtonShowsSong.Text = "Reproducir";
-            this.ReproducirButtonShowsSong.UseVisualStyleBackColor = false;
-            // 
-            // CalificarButtonShowSong
-            // 
-            this.CalificarButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CalificarButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalificarButtonShowSong.Location = new System.Drawing.Point(3, 35);
-            this.CalificarButtonShowSong.Name = "CalificarButtonShowSong";
-            this.CalificarButtonShowSong.Size = new System.Drawing.Size(196, 26);
-            this.CalificarButtonShowSong.TabIndex = 1;
-            this.CalificarButtonShowSong.Text = "Calificar";
-            this.CalificarButtonShowSong.UseVisualStyleBackColor = false;
-            // 
-            // AddPlaylistShowSong
-            // 
-            this.AddPlaylistShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.AddPlaylistShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPlaylistShowSong.Location = new System.Drawing.Point(3, 67);
-            this.AddPlaylistShowSong.Name = "AddPlaylistShowSong";
-            this.AddPlaylistShowSong.Size = new System.Drawing.Size(196, 26);
-            this.AddPlaylistShowSong.TabIndex = 2;
-            this.AddPlaylistShowSong.Text = "Agregar a una Playlist";
-            this.AddPlaylistShowSong.UseVisualStyleBackColor = false;
-            // 
-            // MeGustaButtonShowSong
-            // 
-            this.MeGustaButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.MeGustaButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MeGustaButtonShowSong.Location = new System.Drawing.Point(3, 99);
-            this.MeGustaButtonShowSong.Name = "MeGustaButtonShowSong";
-            this.MeGustaButtonShowSong.Size = new System.Drawing.Size(196, 26);
-            this.MeGustaButtonShowSong.TabIndex = 3;
-            this.MeGustaButtonShowSong.Text = "Me Gusta";
-            this.MeGustaButtonShowSong.UseVisualStyleBackColor = false;
-            // 
-            // DescargarButtonShowSong
-            // 
-            this.DescargarButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.DescargarButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DescargarButtonShowSong.Location = new System.Drawing.Point(3, 131);
-            this.DescargarButtonShowSong.Name = "DescargarButtonShowSong";
-            this.DescargarButtonShowSong.Size = new System.Drawing.Size(196, 29);
-            this.DescargarButtonShowSong.TabIndex = 4;
-            this.DescargarButtonShowSong.Text = "Descargar";
-            this.DescargarButtonShowSong.UseVisualStyleBackColor = false;
-            // 
-            // ShowImageShowSong
-            // 
-            this.ShowImageShowSong.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ShowImageShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ShowImageShowSong.Location = new System.Drawing.Point(3, 3);
-            this.ShowImageShowSong.Name = "ShowImageShowSong";
-            this.ShowImageShowSong.Size = new System.Drawing.Size(234, 124);
-            this.ShowImageShowSong.TabIndex = 1;
-            this.ShowImageShowSong.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel65
-            // 
-            this.tableLayoutPanel65.ColumnCount = 1;
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel65.Controls.Add(this.ShowImageShowSong, 0, 0);
-            this.tableLayoutPanel65.Controls.Add(this.CambiarImagenShowSong, 0, 1);
-            this.tableLayoutPanel65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel65.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel65.Name = "tableLayoutPanel65";
-            this.tableLayoutPanel65.RowCount = 2;
-            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(240, 163);
-            this.tableLayoutPanel65.TabIndex = 2;
-            // 
-            // ShowMovie
-            // 
-            this.ShowMovie.Controls.Add(this.tableLayoutPanel67);
-            this.ShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ShowMovie.Location = new System.Drawing.Point(0, 0);
-            this.ShowMovie.Name = "ShowMovie";
-            this.ShowMovie.Size = new System.Drawing.Size(982, 431);
-            this.ShowMovie.TabIndex = 20;
-            // 
-            // tableLayoutPanel67
-            // 
-            this.tableLayoutPanel67.ColumnCount = 1;
-            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel67.Controls.Add(this.tableLayoutPanel68, 0, 0);
-            this.tableLayoutPanel67.Controls.Add(this.InfoMovieTextBox, 0, 1);
-            this.tableLayoutPanel67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel67.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel67.Name = "tableLayoutPanel67";
-            this.tableLayoutPanel67.RowCount = 2;
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(982, 431);
-            this.tableLayoutPanel67.TabIndex = 0;
-            // 
-            // tableLayoutPanel68
-            // 
-            this.tableLayoutPanel68.ColumnCount = 2;
-            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.30738F));
-            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.69262F));
-            this.tableLayoutPanel68.Controls.Add(this.tableLayoutPanel69, 1, 0);
-            this.tableLayoutPanel68.Controls.Add(this.tableLayoutPanel70, 0, 0);
-            this.tableLayoutPanel68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel68.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel68.Name = "tableLayoutPanel68";
-            this.tableLayoutPanel68.RowCount = 1;
-            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(976, 169);
-            this.tableLayoutPanel68.TabIndex = 0;
-            // 
-            // tableLayoutPanel69
-            // 
-            this.tableLayoutPanel69.ColumnCount = 2;
-            this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.03867F));
-            this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.96133F));
-            this.tableLayoutPanel69.Controls.Add(this.ReproducirShowMovie, 0, 0);
-            this.tableLayoutPanel69.Controls.Add(this.CalificarShowMovie, 0, 1);
-            this.tableLayoutPanel69.Controls.Add(this.AddPlaylistShowMovie, 0, 2);
-            this.tableLayoutPanel69.Controls.Add(this.MeGustaShowMovie, 0, 3);
-            this.tableLayoutPanel69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel69.Location = new System.Drawing.Point(249, 3);
-            this.tableLayoutPanel69.Name = "tableLayoutPanel69";
-            this.tableLayoutPanel69.RowCount = 5;
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.Size = new System.Drawing.Size(724, 163);
-            this.tableLayoutPanel69.TabIndex = 1;
-            // 
-            // ReproducirShowMovie
-            // 
-            this.ReproducirShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ReproducirShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReproducirShowMovie.Location = new System.Drawing.Point(3, 3);
-            this.ReproducirShowMovie.Name = "ReproducirShowMovie";
-            this.ReproducirShowMovie.Size = new System.Drawing.Size(196, 26);
-            this.ReproducirShowMovie.TabIndex = 0;
-            this.ReproducirShowMovie.Text = "Reproducir";
-            this.ReproducirShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // CalificarShowMovie
-            // 
-            this.CalificarShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CalificarShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalificarShowMovie.Location = new System.Drawing.Point(3, 35);
-            this.CalificarShowMovie.Name = "CalificarShowMovie";
-            this.CalificarShowMovie.Size = new System.Drawing.Size(196, 26);
-            this.CalificarShowMovie.TabIndex = 1;
-            this.CalificarShowMovie.Text = "Calificar";
-            this.CalificarShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // AddPlaylistShowMovie
-            // 
-            this.AddPlaylistShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.AddPlaylistShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPlaylistShowMovie.Location = new System.Drawing.Point(3, 67);
-            this.AddPlaylistShowMovie.Name = "AddPlaylistShowMovie";
-            this.AddPlaylistShowMovie.Size = new System.Drawing.Size(196, 26);
-            this.AddPlaylistShowMovie.TabIndex = 2;
-            this.AddPlaylistShowMovie.Text = "Agregar a una Playlist";
-            this.AddPlaylistShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // MeGustaShowMovie
-            // 
-            this.MeGustaShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.MeGustaShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MeGustaShowMovie.Location = new System.Drawing.Point(3, 99);
-            this.MeGustaShowMovie.Name = "MeGustaShowMovie";
-            this.MeGustaShowMovie.Size = new System.Drawing.Size(196, 26);
-            this.MeGustaShowMovie.TabIndex = 3;
-            this.MeGustaShowMovie.Text = "Me Gusta";
-            this.MeGustaShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel70
-            // 
-            this.tableLayoutPanel70.ColumnCount = 1;
-            this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel70.Controls.Add(this.ShowImagenShowMovie, 0, 0);
-            this.tableLayoutPanel70.Controls.Add(this.CambiarImagenShowMovie, 0, 1);
-            this.tableLayoutPanel70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel70.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel70.Name = "tableLayoutPanel70";
-            this.tableLayoutPanel70.RowCount = 2;
-            this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel70.Size = new System.Drawing.Size(240, 163);
-            this.tableLayoutPanel70.TabIndex = 2;
-            // 
-            // ShowImagenShowMovie
-            // 
-            this.ShowImagenShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ShowImagenShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ShowImagenShowMovie.Location = new System.Drawing.Point(3, 3);
-            this.ShowImagenShowMovie.Name = "ShowImagenShowMovie";
-            this.ShowImagenShowMovie.Size = new System.Drawing.Size(234, 124);
-            this.ShowImagenShowMovie.TabIndex = 1;
-            this.ShowImagenShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // CambiarImagenShowMovie
-            // 
-            this.CambiarImagenShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CambiarImagenShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CambiarImagenShowMovie.Location = new System.Drawing.Point(3, 133);
-            this.CambiarImagenShowMovie.Name = "CambiarImagenShowMovie";
-            this.CambiarImagenShowMovie.Size = new System.Drawing.Size(234, 27);
-            this.CambiarImagenShowMovie.TabIndex = 0;
-            this.CambiarImagenShowMovie.Text = "Cambiar Imagen";
-            this.CambiarImagenShowMovie.UseVisualStyleBackColor = false;
-            // 
-            // InfoMovieTextBox
-            // 
-            this.InfoMovieTextBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.InfoMovieTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InfoMovieTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoMovieTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.InfoMovieTextBox.Location = new System.Drawing.Point(3, 178);
-            this.InfoMovieTextBox.Multiline = true;
-            this.InfoMovieTextBox.Name = "InfoMovieTextBox";
-            this.InfoMovieTextBox.ReadOnly = true;
-            this.InfoMovieTextBox.Size = new System.Drawing.Size(976, 250);
-            this.InfoMovieTextBox.TabIndex = 1;
-            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3610,6 +3612,18 @@
             this.UserPanel.ResumeLayout(false);
             this.tableLayoutPanel19.ResumeLayout(false);
             this.UserActivitiesPanel.ResumeLayout(false);
+            this.ShowMovie.ResumeLayout(false);
+            this.tableLayoutPanel67.ResumeLayout(false);
+            this.tableLayoutPanel67.PerformLayout();
+            this.tableLayoutPanel68.ResumeLayout(false);
+            this.tableLayoutPanel69.ResumeLayout(false);
+            this.tableLayoutPanel70.ResumeLayout(false);
+            this.ShowSong.ResumeLayout(false);
+            this.tableLayoutPanel63.ResumeLayout(false);
+            this.tableLayoutPanel63.PerformLayout();
+            this.tableLayoutPanel64.ResumeLayout(false);
+            this.tableLayoutPanel66.ResumeLayout(false);
+            this.tableLayoutPanel65.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ShowMoviesPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGriedMovieS)).EndInit();
@@ -3711,18 +3725,6 @@
             this.tableLayoutPanel48.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.tableLayoutPanel62.ResumeLayout(false);
-            this.ShowSong.ResumeLayout(false);
-            this.tableLayoutPanel63.ResumeLayout(false);
-            this.tableLayoutPanel63.PerformLayout();
-            this.tableLayoutPanel64.ResumeLayout(false);
-            this.tableLayoutPanel66.ResumeLayout(false);
-            this.tableLayoutPanel65.ResumeLayout(false);
-            this.ShowMovie.ResumeLayout(false);
-            this.tableLayoutPanel67.ResumeLayout(false);
-            this.tableLayoutPanel67.PerformLayout();
-            this.tableLayoutPanel68.ResumeLayout(false);
-            this.tableLayoutPanel69.ResumeLayout(false);
-            this.tableLayoutPanel70.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
