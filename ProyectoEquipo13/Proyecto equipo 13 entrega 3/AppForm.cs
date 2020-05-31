@@ -1014,6 +1014,39 @@ namespace Proyecto_equipo_13_entrega_3
             }
         }
 
+        private void ReproducirShowMovie_Click(object sender, EventArgs e)
+        {
+            string titulo = null;
+            titulo = InfoMovieTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            SacarRuta(Titulo);
+            stackPanels.Add(panels["ReproductionPanel"]);
+            ShowLastPanel();
+        }
+
+        private void buttonReproducir_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = this.ruta;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+            stackPanels.Add(panels["UserPanel"]);
+            ShowLastPanel();
+        }
+
+        private void ReproducirButtonShowsSong_Click(object sender, EventArgs e)
+        {
+            string titulo = null;
+            titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            SacarRuta(Titulo);
+            stackPanels.Add(panels["ReproductionPanel"]);
+            ShowLastPanel();
+        }
+
         public void ChooseFolder()
         { 
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
