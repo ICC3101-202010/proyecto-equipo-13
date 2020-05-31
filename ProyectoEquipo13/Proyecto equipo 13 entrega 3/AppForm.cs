@@ -21,6 +21,7 @@ namespace Proyecto_equipo_13_entrega_3
         public event EventHandler<LoginEventArgs> UserChecked;
         public delegate bool CreateAccountEventHandler(object source, RegisterEventArgs args);
         public event CreateAccountEventHandler CreateAccountClicked;
+        public string ruta, dest, name;
 
         //Organizacion
         List<Panel> stackPanels = new List<Panel>();
@@ -326,6 +327,7 @@ namespace Proyecto_equipo_13_entrega_3
             panels.Add("UserPanel", UserPanel);
             panels.Add("CreateAccountPanel", CreateAccountView);
             panels.Add("ModificarCuentaPanel", ModificarCuentaPanel);
+            panels.Add("ReproductionPanel", ReproductionPanel);
             foreach (User user in Files.Users)
             {
                 if (user.LOGIN == true)
@@ -520,6 +522,14 @@ namespace Proyecto_equipo_13_entrega_3
                 InputUsuarioLoginView.ResetText();
                 InputContraseñaLoginView.ResetText();
                 setNameUser(username);
+                foreach (User user in Files.Users)
+                {
+                    if (user.UserName == username)
+                    {
+                        user.LOGIN = true;
+                        Serializacion();
+                    }
+                }
                 stackPanels.Add(panels["UserPanel"]);
                 ShowLastPanel();
             }
@@ -809,7 +819,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
         }
 
-        public void FillDataGridViewSongS(List<Songs> songs)
+        private void FillDataGridViewSongS(List<Songs> songs)
         {
             DataGriedSongS.Rows.Clear();
             DataGriedSongS.Columns.Clear();
@@ -846,7 +856,7 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridViewSongS(Files.AllSongs);
         }
 
-        public void FillDataGridViewMovieS(List<Movies> movies)
+        private void FillDataGridViewMovieS(List<Movies> movies)
         {
             DataGriedMovieS.Rows.Clear();
             DataGriedMovieS.Columns.Clear();
@@ -882,5 +892,51 @@ namespace Proyecto_equipo_13_entrega_3
             ShowMoviesPanel.BringToFront();
             FillDataGridViewMovieS(Files.AllMovies);
         }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
+        public void SacarRuta(string s)
+        {
+            string carpeta = Directory.GetCurrentDirectory();
+            foreach (Movies j in Files.AllMovies)
+            {
+                if (s == j.Title1)
+                {
+                    this.ruta = carpeta + j.Video1;
+                    this.name = j.Title1;
+                }
+            }
+            foreach (Songs j in Files.AllSongs)
+            {
+                if (s == j.Title1)
+                {
+                    this.ruta = carpeta + j.Music1;
+                    this.name = j.Title1;
+                }
+            }
+        }
+        public void ChooseFolder()
+        { 
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.dest = folderBrowserDialog1.SelectedPath;
+                try
+                {
+                    Copy();
+                }
+                catch(Exception EX) 
+                { 
+                }
+            }
+        }
+        public void Copy()
+        {
+            string destFileName = (this.name) + " (Spotflix)" + ".mp3";
+            var destFile = System.IO.Path.Combine(dest, destFileName);
+            System.IO.File.Copy(ruta, destFile, true);
+        }
+        
     }
 }
