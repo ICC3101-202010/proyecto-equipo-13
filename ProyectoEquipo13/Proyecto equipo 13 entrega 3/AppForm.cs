@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
@@ -1027,7 +1028,6 @@ namespace Proyecto_equipo_13_entrega_3
         private void buttonReproducir_Click(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.URL = this.ruta;
-            label45.Text = axWindowsMediaPlayer1.URL;
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
 
