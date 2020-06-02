@@ -12,7 +12,7 @@ namespace Proyecto_equipo_13_entrega_3
         private string criterio;
         private string namecriterio;
         public string NameCriterio { get => namecriterio; set => namecriterio = value; }
-        public SmartPlaylist(string name, bool privacy, string type, string criterio, string namecriterio) : base(name, privacy, type)
+        public SmartPlaylist(string name, string type, string criterio, string namecriterio) : base(name, type)
         {
             this.namecriterio = namecriterio;
             this.criterio = criterio;

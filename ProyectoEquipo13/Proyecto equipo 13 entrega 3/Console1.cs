@@ -188,15 +188,15 @@ namespace Proyecto_equipo_13_entrega_3
 
                         if (privacidad == "a")
                         {
-                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, true));
+                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name));
                             Console.WriteLine("Playlist creada con éxito");
-                            if (type == "Película") { Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(type, name, true)); }
-                            else if (type == "Canción") { Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(type, name, true)); }
+                            if (type == "Película") { Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(type, name)); }
+                            else if (type == "Canción") { Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(type, name)); }
                             Thread.Sleep(1200);
                         }
                         else if (privacidad == "b")
                         {
-                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name, false));
+                            user.MyPlaylist1.Add(computer.CreatePlaylist(type, name));
                             Console.WriteLine("Playlist creada con éxito");
                             Thread.Sleep(1200);
                         }
@@ -227,7 +227,7 @@ namespace Proyecto_equipo_13_entrega_3
                             string namecriterio = Console.ReadLine();
                             if (privacidad == "a")
                             {
-                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name);
                                 Thread.Sleep(1200);
                                 Console.WriteLine("\nPlaylist creada con éxito");
                                 if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
@@ -260,7 +260,7 @@ namespace Proyecto_equipo_13_entrega_3
                             }
                             else if (privacidad == "b")
                             {
-                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name);
                                 Console.WriteLine("\nPlaylist creada con éxito");
                                 if (criterio == "Genero" || criterio == "Género" || criterio == "genero" || criterio == "género")
                                 {
@@ -298,7 +298,7 @@ namespace Proyecto_equipo_13_entrega_3
                             string namecriterio = Console.ReadLine();
                             if (privacidad == "a")
                             {
-                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name);
                                 Console.WriteLine("\nPlaylist creada con éxito");
                                 Thread.Sleep(1200);
                                 if (criterio == "Director" || criterio == "director")
@@ -353,7 +353,7 @@ namespace Proyecto_equipo_13_entrega_3
                             }
                             else if (privacidad == "b")
                             {
-                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name, true);
+                                var a = computer.CreateSmartPlaylist(type, criterio, namecriterio, name);
                                 Console.WriteLine("\nPlaylist creada con éxito");
                                 if (criterio == "Director" || criterio == "director")
                                 {

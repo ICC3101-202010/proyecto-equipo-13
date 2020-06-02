@@ -11,7 +11,6 @@ namespace Proyecto_equipo_13_entrega_3
     {
         private string type;
         private string name;
-        private bool privacy;
         protected List<Songs> playlistsong = new List<Songs>();
         protected List<Movies> playlistmovie = new List<Movies>();
 
@@ -19,12 +18,10 @@ namespace Proyecto_equipo_13_entrega_3
         public List<Movies> Playlistmovie { get => playlistmovie; set => playlistmovie = value; }
         public string Type { get => type; set => type = value; }
         public string Name { get => name; set => name = value; }
-        public bool Privacy { get => privacy; set => privacy = value; }
 
-        public Playlists(string name, bool privacy, string type)
+        public Playlists(string name, string type)
         {
             this.Name = name;
-            this.Privacy = privacy;
             this.Type = type;
         }
 

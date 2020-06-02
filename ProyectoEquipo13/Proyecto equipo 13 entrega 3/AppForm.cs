@@ -1057,6 +1057,303 @@ namespace Proyecto_equipo_13_entrega_3
         {
 
         }
+        private User GetUser()
+        {
+            string nombre = ReadUserName.Text;
+            foreach (User user in Files.Users)
+            {
+                if (user.UserName == nombre)
+                {
+                    return user;
+                }
+            }
+            return null;
+
+        }
+
+        private void CrearPlaylistButton_Click(object sender, EventArgs e)
+        {
+            Computer computer = new Computer();
+            User user = GetUser();
+            if (user.Type == "Premium")
+            {
+                CrearPlaylist.Visible = true;
+                CrearPlaylist.BringToFront();
+                string tipo = TipoPlaylist.Text;
+                if(tipo == "SmartPlaylist")
+                {
+                    label46.Visible = true;
+                    TipoPlaylist2.Visible = true;
+                    string tipo2 = TipoPlaylist2.Text;
+                    if (tipo2 == "Canción")
+                    {
+                        string name = NombrePlaylist.Text;
+                        Criterio.Items.Add("Género");
+                        Criterio.Items.Add("Artista");
+
+                    }
+                    else if (tipo2 == "Película")
+                    {
+                        Criterio.Items.Add("Director");
+                        Criterio.Items.Add("Estudio");
+                        Criterio.Items.Add("Actor");
+                        Criterio.Items.Add("Categoría");
+
+                    }
+                }
+            }
+            else if (user.Type == "Free")
+            {
+                MessageBox.Show("Opción válida solo para usuarios Premium");
+            }
+        }
+
+        private void AceptarPlaylist_Click(object sender, EventArgs e)
+        {
+            Computer computer = new Computer();
+            User user = GetUser();
+            string nombre = NombrePlaylist.Text;
+            string tipo = TipoPlaylist.Text;
+            string tipo2 = TipoPlaylist2.Text;
+            string criterio = Criterio.Text;
+            string namecriterio = NombreCriterio.Text;
+            if (tipo == "Normal")
+            {
+                if (user.Privacy1 == true)
+                {
+                    user.MyPlaylist1.Add(computer.CreatePlaylist(nombre, tipo2));
+                    if (tipo2 == "Canción")
+                    {
+                        Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(nombre, tipo2));
+                    }
+                    else if (tipo2 == "Película")
+                    {
+                        Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(nombre, tipo2));
+                    }
+                }
+                else if (user.Privacy1 == false)
+                {
+                    user.MyPlaylist1.Add(computer.CreatePlaylist(nombre, tipo2));
+                }
+            }
+            else if (tipo == "SmartPlaylist")
+            {
+                var a = computer.CreateSmartPlaylist(tipo2, criterio, namecriterio, nombre);
+                if (user.Privacy1 == true)
+                {
+                    if (tipo2 == "Canción")
+                    {
+                        if (criterio == "Género")
+                        {
+                            foreach (Songs songs in Files.AllSongs)
+                            {
+                                foreach (string genero in songs.Genre1)
+                                {
+                                    if (genero == namecriterio)
+                                    {
+                                        a.Playlistsong.Add(songs);
+                                    }
+                                }
+                            }
+                        }
+                        else if (criterio == "Artista")
+                        {
+                            foreach (Songs songs in Files.AllSongs)
+                            {
+                                if (songs.Artist1.Name == namecriterio)
+                                {
+                                    a.Playlistsong.Add(songs);
+                                }
+                            }
+                        }
+                        Files.AllPlaylistsSongs.Add(a);
+                    }
+                    else if (tipo2 == "Película")
+                    {
+                        if (criterio == "Director")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                if (movies.Director1.Name == namecriterio)
+                                {
+                                    a.Playlistmovie.Add(movies);
+                                }
+                            }
+                        }
+                        else if (criterio == "Estudio")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                if (movies.Studio1 == namecriterio)
+                                {
+                                    a.Playlistmovie.Add(movies);
+                                }
+                            }
+                        }
+                        else if (criterio == "Categoría")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                foreach (string cate in movies.Categories1)
+                                {
+                                    if (cate == namecriterio)
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                        }
+                        else if (criterio == "Actor")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                foreach (Person actor in movies.Actors1)
+                                {
+                                    if (actor.Name == namecriterio)
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                        }
+                        Files.AllPlaylistsMovies.Add(a);
+                    }
+                    user.MyPlaylist1.Add(a);
+                }
+                else if (user.Privacy1 == false)
+                {
+                    if (tipo2 == "Canción")
+                    {
+                        if (criterio == "Género")
+                        {
+                            foreach (Songs songs in Files.AllSongs)
+                            {
+                                foreach (string genero in songs.Genre1)
+                                {
+                                    if (genero == namecriterio)
+                                    {
+                                        a.Playlistsong.Add(songs);
+                                    }
+                                }
+                            }
+                        }
+                        else if (criterio == "Artista")
+                        {
+                            foreach (Songs songs in Files.AllSongs)
+                            {
+                                if (songs.Artist1.Name == namecriterio)
+                                {
+                                    a.Playlistsong.Add(songs);
+                                }
+                            }
+                        }
+                        else if (tipo2 == "Película")
+                        {
+                            if (criterio == "Director")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Director1.Name == namecriterio)
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Estudio")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Studio1 == namecriterio)
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Categoría")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (string cate in movies.Categories1)
+                                    {
+                                        if (cate == namecriterio)
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (criterio == "Actor")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (Person actor in movies.Actors1)
+                                    {
+                                        if (actor.Name == namecriterio)
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            MessageBox.Show("Playlist creada con éxito");
+            CrearPlaylist.Visible = false;
+
+        }
+
+        private void NombrePlaylist_TextChanged(object sender, EventArgs e)
+        {
+            label48.Visible = true;
+            Criterio.Visible = true;
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void TipoPlaylist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TipoPlaylist2.Visible = true;
+            label46.Visible = true;
+        }
+
+        private void TipoPlaylist2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label47.Visible = true;
+            NombrePlaylist.Visible = true;
+            string tipo2 = TipoPlaylist2.Text;
+            Criterio.Items.Clear();
+            if (tipo2 == "Canción")
+            {
+                Criterio.Items.Add("Género");
+                Criterio.Items.Add("Artista");
+
+            }
+            else if (tipo2 == "Película")
+            {
+                Criterio.Items.Add("Director");
+                Criterio.Items.Add("Estudio");
+                Criterio.Items.Add("Actor");
+                Criterio.Items.Add("Categoría");
+
+            }
+        }
+
+        private void Criterio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label49.Visible = true;
+            NombreCriterio.Visible = true;
+        }
+
+        private void NombreCriterio_TextChanged(object sender, EventArgs e)
+        {
+            AceptarPlaylist.Visible = true;
+        }
 
         public void ChooseFolder()
         { 
