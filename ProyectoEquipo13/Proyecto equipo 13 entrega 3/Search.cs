@@ -30,13 +30,21 @@ namespace Proyecto_equipo_13_entrega_3
             List<Songs> songs6 = QueryAlbumS(songs5, album1, album2);
             return songs6;
         }
-        public static List<Person> SearchingPerson(string titulo1, string titulo2, string artist1, string artist2, bool masc, bool fem, int edad1, int edad2)
+        public static (List<Person>, List<User> ) SearchingPerson(string titulo1, string titulo2, string artist1, string artist2, bool masc, bool fem, int edad1, int edad2)
         {
             List<Person> persons1 = QueryName(Files.AllPersons, titulo1, titulo2);
             List<Person> persons2 = QueryName(persons1, artist1, artist2);
             List<Person> persons3 = QuerySexo(persons2, masc, fem);
             List<Person> persons4 = QueryEdad(persons3, edad1, edad2);
-            return persons4;
+            List<User> users = new List<User>();
+            foreach (User user in Files.Users)
+            {
+                if (titulo1==user.UserName || titulo2==user.UserName ||artist1==user.UserName || artist2 == user.UserName)
+                {
+                    users.Add(user);
+                }
+            }
+            return (persons4,users);
         }
 
         //Query Movies

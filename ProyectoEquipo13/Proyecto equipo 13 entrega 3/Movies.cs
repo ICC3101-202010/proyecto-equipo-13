@@ -53,6 +53,12 @@ namespace Proyecto_equipo_13_entrega_3
             this.SongsMovie = SongsMovie;
             this.Min = Min;
             this.movieDirection = movieDirection2;
+            Files.AllPersons.Add(Director);
+            foreach (Person p in Actors)
+            {
+                Files.AllPersons.Add(p);
+            }
+            Files.AllPersons.Add(Writer);
         }
 
         public string Title1 { get => Title; set => Title = value; }

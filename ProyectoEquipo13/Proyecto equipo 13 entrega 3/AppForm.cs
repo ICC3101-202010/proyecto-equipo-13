@@ -221,7 +221,7 @@ namespace Proyecto_equipo_13_entrega_3
             Categories_Titanic.Add("Romance");
             Categories_Titanic.Add("Catastrofe");
             Categories_Titanic.Add("Drama");
-            string Video_Titanic = @"\Titanic 3D Re-Release Official Trailer 1 - Leonardo DiCaprio, Kate Winslet Movie (2012) HD.mp4";
+            string Video_Titanic = @"\Titanic 3D Re-Release Official Trailer 1.mp4";
             string Trailer_Titanic = @"\";
             List<Songs> Songs_Titanic = new List<Songs>();
             Songs_Titanic.Add(My_heart_will_go_on);
@@ -430,7 +430,11 @@ namespace Proyecto_equipo_13_entrega_3
                 }
                 try
                 {
-                    Files.AllPersons = (List<Person>)formatter.Deserialize(stream6);
+                    List<Person> des = (List<Person>)formatter.Deserialize(stream6);
+                    if (des.Count != 0)
+                    {
+                        Files.AllPersons = des;
+                    }
                 }
                 catch
                 {
@@ -1023,10 +1027,6 @@ namespace Proyecto_equipo_13_entrega_3
             SacarRuta(Titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
-        }
-
-        private void buttonReproducir_Click(object sender, EventArgs e)
-        {
             axWindowsMediaPlayer1.URL = this.ruta;
             axWindowsMediaPlayer1.Ctlcontrols.play();
         }
@@ -1046,6 +1046,8 @@ namespace Proyecto_equipo_13_entrega_3
             SacarRuta(Titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
+            axWindowsMediaPlayer1.URL = this.ruta;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
         }
 
         private void axWindowsMediaPlayer1_Enter_1(object sender, EventArgs e)
@@ -1306,8 +1308,15 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void NombrePlaylist_TextChanged(object sender, EventArgs e)
         {
-            label48.Visible = true;
-            Criterio.Visible = true;
+            if (TipoPlaylist.Text == "SmartPlaylist")
+            {
+                label48.Visible = true;
+                Criterio.Visible = true;
+            }
+            else
+            {
+                AceptarPlaylist.Visible = true;
+            }
         }
 
         private void label48_Click(object sender, EventArgs e)
@@ -1346,8 +1355,15 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void Criterio_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label49.Visible = true;
-            NombreCriterio.Visible = true;
+            if (TipoPlaylist.Text == "SmartPlaylist")
+            {
+                label49.Visible = true;
+                NombreCriterio.Visible = true;
+            }
+            else
+            {
+                AceptarPlaylist.Visible = true;
+            }
         }
 
         private void NombreCriterio_TextChanged(object sender, EventArgs e)

@@ -48,6 +48,9 @@ namespace Proyecto_equipo_13_entrega_3
             this.Type = Type;
             this.Min = Min;
             this.Album = Album;
+            Files.AllPersons.Add(Composer);
+            Files.AllPersons.Add(Artist);
+            Files.AllPersons.Add(Writer);
         }
 
         public string Title1 { get => Title; set => Title = value; }
