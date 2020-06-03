@@ -18,7 +18,8 @@ namespace Proyecto_equipo_13_entrega_3
             List<Movies> movies4 = QueryNumRep(movies3, numrep1, numrep2);
             List<Movies> movies5 = QueryRating(movies4, rating1, rating2);
             List<Movies> movies6 = QueryYear(movies5, año1, año2);
-            return movies6;
+            List<Movies> Final = ((from s in movies6 select s).Distinct()).ToList();
+            return Final;
         }
         public static List<Songs> SearchingSongs(string titulo1, string titulo2, string artist1, string artist2, string cat1, string cat2, int numrep1, int numrep2, double rating1, double rating2, string album1, string album2)
         {
@@ -28,7 +29,8 @@ namespace Proyecto_equipo_13_entrega_3
             List<Songs> songs4 = QueryNumRepS(songs3, numrep1, numrep2);
             List<Songs> songs5 = QueryRatingS(songs4, rating1, rating2);
             List<Songs> songs6 = QueryAlbumS(songs5, album1, album2);
-            return songs6;
+            List<Songs> Final = ((from s in songs6 select s).Distinct()).ToList();
+            return Final;
         }
         public static (List<Person>, List<User> ) SearchingPerson(string titulo1, string titulo2, string artist1, string artist2, bool masc, bool fem, int edad1, int edad2)
         {
@@ -44,7 +46,8 @@ namespace Proyecto_equipo_13_entrega_3
                     users.Add(user);
                 }
             }
-            return (persons4,users);
+            List<Person> Final = ((from s in persons4 select s).Distinct()).ToList();
+            return (Final,users);
         }
 
         //Query Movies
