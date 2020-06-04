@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
             this.WelcomeMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -82,31 +85,13 @@
             this.UserActivitiesPanel = new System.Windows.Forms.Panel();
             this.ShowPersonPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel82 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGriedPanelPersona = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel83 = new System.Windows.Forms.TableLayoutPanel();
             this.PersonInformation = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel84 = new System.Windows.Forms.TableLayoutPanel();
             this.label54 = new System.Windows.Forms.Label();
             this.linklabelPerson = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.FollowersPanel = new System.Windows.Forms.Panel();
-            this.dataGridFollowers = new System.Windows.Forms.DataGridView();
-            this.VerMisPlaylits = new System.Windows.Forms.Panel();
-            this.Aceptarcambiodenombre = new System.Windows.Forms.Button();
-            this.label50 = new System.Windows.Forms.Label();
-            this.NuevoNombrePlaylist = new System.Windows.Forms.TextBox();
-            this.AgregarElemntoPlaylist = new System.Windows.Forms.Button();
-            this.EliminardePlaylist = new System.Windows.Forms.Button();
-            this.CambiarNombrePlaylist = new System.Windows.Forms.Button();
-            this.dataGridVerPlaylist = new System.Windows.Forms.DataGridView();
-            this.ResultsBuscador = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridBuscadorMovies = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridBuscadorSongs = new System.Windows.Forms.DataGridView();
             this.BuscadorPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
@@ -170,6 +155,28 @@
             this.MasculinoSexoBuscadorPanel = new System.Windows.Forms.CheckBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.ResultsBuscador = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridBuscadorMovies = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridBuscadorSongs = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGriedBuscadorFollowers = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.FollowersPanel = new System.Windows.Forms.Panel();
+            this.dataGridFollowers = new System.Windows.Forms.DataGridView();
+            this.VerMisPlaylits = new System.Windows.Forms.Panel();
+            this.Aceptarcambiodenombre = new System.Windows.Forms.Button();
+            this.label50 = new System.Windows.Forms.Label();
+            this.NuevoNombrePlaylist = new System.Windows.Forms.TextBox();
+            this.AgregarElemntoPlaylist = new System.Windows.Forms.Button();
+            this.EliminardePlaylist = new System.Windows.Forms.Button();
+            this.CambiarNombrePlaylist = new System.Windows.Forms.Button();
+            this.dataGridVerPlaylist = new System.Windows.Forms.DataGridView();
             this.CrearPlaylist = new System.Windows.Forms.Panel();
             this.tableLayoutPanel73 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel78 = new System.Windows.Forms.TableLayoutPanel();
@@ -325,8 +332,6 @@
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
             this.CambiarUsuarioButton = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGriedBuscadorFollowers = new System.Windows.Forms.DataGridView();
             this.WelcomeMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -345,19 +350,10 @@
             this.UserActivitiesPanel.SuspendLayout();
             this.ShowPersonPanel.SuspendLayout();
             this.tableLayoutPanel82.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGriedPanelPersona)).BeginInit();
             this.tableLayoutPanel83.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.FollowersPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFollowers)).BeginInit();
-            this.VerMisPlaylits.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVerPlaylist)).BeginInit();
-            this.ResultsBuscador.SuspendLayout();
-            this.tableLayoutPanel62.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorMovies)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorSongs)).BeginInit();
             this.BuscadorPanel.SuspendLayout();
             this.tableLayoutPanel49.SuspendLayout();
             this.tableLayoutPanel61.SuspendLayout();
@@ -372,6 +368,19 @@
             this.tableLayoutPanel58.SuspendLayout();
             this.tableLayoutPanel59.SuspendLayout();
             this.tableLayoutPanel60.SuspendLayout();
+            this.ResultsBuscador.SuspendLayout();
+            this.tableLayoutPanel62.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorMovies)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorSongs)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGriedBuscadorFollowers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.FollowersPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFollowers)).BeginInit();
+            this.VerMisPlaylits.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVerPlaylist)).BeginInit();
             this.CrearPlaylist.SuspendLayout();
             this.tableLayoutPanel73.SuspendLayout();
             this.tableLayoutPanel78.SuspendLayout();
@@ -447,8 +456,6 @@
             this.tableLayoutPanel45.SuspendLayout();
             this.tableLayoutPanel44.SuspendLayout();
             this.tableLayoutPanel43.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGriedBuscadorFollowers)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeMenu
@@ -882,9 +889,9 @@
             // 
             // UserActivitiesPanel
             // 
+            this.UserActivitiesPanel.Controls.Add(this.ShowPersonPanel);
             this.UserActivitiesPanel.Controls.Add(this.BuscadorPanel);
             this.UserActivitiesPanel.Controls.Add(this.ResultsBuscador);
-            this.UserActivitiesPanel.Controls.Add(this.ShowPersonPanel);
             this.UserActivitiesPanel.Controls.Add(this.pictureBox1);
             this.UserActivitiesPanel.Controls.Add(this.FollowersPanel);
             this.UserActivitiesPanel.Controls.Add(this.VerMisPlaylits);
@@ -913,16 +920,75 @@
             // 
             this.tableLayoutPanel82.ColumnCount = 1;
             this.tableLayoutPanel82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel82.Controls.Add(this.tableLayoutPanel83, 0, 0);
+            this.tableLayoutPanel82.Controls.Add(this.panel4, 0, 1);
             this.tableLayoutPanel82.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel82.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel82.Name = "tableLayoutPanel82";
             this.tableLayoutPanel82.RowCount = 2;
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel82.Size = new System.Drawing.Size(982, 495);
             this.tableLayoutPanel82.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.dataGriedPanelPersona);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 176);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(976, 316);
+            this.panel4.TabIndex = 21;
+            // 
+            // dataGriedPanelPersona
+            // 
+            this.dataGriedPanelPersona.AllowDrop = true;
+            this.dataGriedPanelPersona.AllowUserToAddRows = false;
+            this.dataGriedPanelPersona.AllowUserToDeleteRows = false;
+            this.dataGriedPanelPersona.AllowUserToResizeColumns = false;
+            this.dataGriedPanelPersona.AllowUserToResizeRows = false;
+            this.dataGriedPanelPersona.BackgroundColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedPanelPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGriedPanelPersona.ColumnHeadersHeight = 18;
+            this.dataGriedPanelPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGriedPanelPersona.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGriedPanelPersona.EnableHeadersVisualStyles = false;
+            this.dataGriedPanelPersona.GridColor = System.Drawing.SystemColors.WindowText;
+            this.dataGriedPanelPersona.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGriedPanelPersona.Location = new System.Drawing.Point(0, 0);
+            this.dataGriedPanelPersona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGriedPanelPersona.MultiSelect = false;
+            this.dataGriedPanelPersona.Name = "dataGriedPanelPersona";
+            this.dataGriedPanelPersona.ReadOnly = true;
+            this.dataGriedPanelPersona.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedPanelPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGriedPanelPersona.RowHeadersWidth = 51;
+            this.dataGriedPanelPersona.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGriedPanelPersona.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGriedPanelPersona.RowTemplate.Height = 24;
+            this.dataGriedPanelPersona.Size = new System.Drawing.Size(976, 316);
+            this.dataGriedPanelPersona.TabIndex = 2;
+            this.dataGriedPanelPersona.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGriedPanelPersona_CellContentClick);
             // 
             // tableLayoutPanel83
             // 
@@ -936,6 +1002,7 @@
             this.tableLayoutPanel83.RowCount = 2;
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel83.Size = new System.Drawing.Size(976, 167);
             this.tableLayoutPanel83.TabIndex = 1;
             // 
@@ -990,393 +1057,6 @@
             this.linklabelPerson.TabIndex = 3;
             this.linklabelPerson.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linklabelPerson.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklabelPerson_LinkClicked);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(982, 495);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
-            // FollowersPanel
-            // 
-            this.FollowersPanel.Controls.Add(this.dataGridFollowers);
-            this.FollowersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FollowersPanel.Location = new System.Drawing.Point(0, 0);
-            this.FollowersPanel.Name = "FollowersPanel";
-            this.FollowersPanel.Size = new System.Drawing.Size(982, 495);
-            this.FollowersPanel.TabIndex = 28;
-            // 
-            // dataGridFollowers
-            // 
-            this.dataGridFollowers.AllowDrop = true;
-            this.dataGridFollowers.AllowUserToAddRows = false;
-            this.dataGridFollowers.AllowUserToDeleteRows = false;
-            this.dataGridFollowers.AllowUserToResizeColumns = false;
-            this.dataGridFollowers.AllowUserToResizeRows = false;
-            this.dataGridFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
-            this.dataGridFollowers.ColumnHeadersHeight = 18;
-            this.dataGridFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridFollowers.EnableHeadersVisualStyles = false;
-            this.dataGridFollowers.GridColor = System.Drawing.SystemColors.WindowText;
-            this.dataGridFollowers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridFollowers.Location = new System.Drawing.Point(0, 0);
-            this.dataGridFollowers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridFollowers.MultiSelect = false;
-            this.dataGridFollowers.Name = "dataGridFollowers";
-            this.dataGridFollowers.ReadOnly = true;
-            this.dataGridFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
-            this.dataGridFollowers.RowHeadersWidth = 51;
-            this.dataGridFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridFollowers.RowsDefaultCellStyle = dataGridViewCellStyle26;
-            this.dataGridFollowers.RowTemplate.Height = 24;
-            this.dataGridFollowers.Size = new System.Drawing.Size(982, 495);
-            this.dataGridFollowers.TabIndex = 1;
-            this.dataGridFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridFollowers_CellContentClick);
-            // 
-            // VerMisPlaylits
-            // 
-            this.VerMisPlaylits.Controls.Add(this.Aceptarcambiodenombre);
-            this.VerMisPlaylits.Controls.Add(this.label50);
-            this.VerMisPlaylits.Controls.Add(this.NuevoNombrePlaylist);
-            this.VerMisPlaylits.Controls.Add(this.AgregarElemntoPlaylist);
-            this.VerMisPlaylits.Controls.Add(this.EliminardePlaylist);
-            this.VerMisPlaylits.Controls.Add(this.CambiarNombrePlaylist);
-            this.VerMisPlaylits.Controls.Add(this.dataGridVerPlaylist);
-            this.VerMisPlaylits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VerMisPlaylits.Location = new System.Drawing.Point(0, 0);
-            this.VerMisPlaylits.Margin = new System.Windows.Forms.Padding(4);
-            this.VerMisPlaylits.Name = "VerMisPlaylits";
-            this.VerMisPlaylits.Size = new System.Drawing.Size(982, 495);
-            this.VerMisPlaylits.TabIndex = 21;
-            this.VerMisPlaylits.Visible = false;
-            // 
-            // Aceptarcambiodenombre
-            // 
-            this.Aceptarcambiodenombre.BackColor = System.Drawing.SystemColors.WindowText;
-            this.Aceptarcambiodenombre.Location = new System.Drawing.Point(501, 176);
-            this.Aceptarcambiodenombre.Margin = new System.Windows.Forms.Padding(4);
-            this.Aceptarcambiodenombre.Name = "Aceptarcambiodenombre";
-            this.Aceptarcambiodenombre.Size = new System.Drawing.Size(144, 28);
-            this.Aceptarcambiodenombre.TabIndex = 27;
-            this.Aceptarcambiodenombre.Text = "Aceptar";
-            this.Aceptarcambiodenombre.UseVisualStyleBackColor = false;
-            this.Aceptarcambiodenombre.Visible = false;
-            this.Aceptarcambiodenombre.Click += new System.EventHandler(this.Aceptarcambiodenombre_Click);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(501, 46);
-            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(144, 17);
-            this.label50.TabIndex = 26;
-            this.label50.Text = "Elija el nuevo nombre";
-            this.label50.Visible = false;
-            // 
-            // NuevoNombrePlaylist
-            // 
-            this.NuevoNombrePlaylist.Location = new System.Drawing.Point(440, 101);
-            this.NuevoNombrePlaylist.Margin = new System.Windows.Forms.Padding(4);
-            this.NuevoNombrePlaylist.Name = "NuevoNombrePlaylist";
-            this.NuevoNombrePlaylist.Size = new System.Drawing.Size(264, 22);
-            this.NuevoNombrePlaylist.TabIndex = 25;
-            this.NuevoNombrePlaylist.Visible = false;
-            // 
-            // AgregarElemntoPlaylist
-            // 
-            this.AgregarElemntoPlaylist.BackColor = System.Drawing.SystemColors.MenuText;
-            this.AgregarElemntoPlaylist.Location = new System.Drawing.Point(47, 274);
-            this.AgregarElemntoPlaylist.Margin = new System.Windows.Forms.Padding(4);
-            this.AgregarElemntoPlaylist.Name = "AgregarElemntoPlaylist";
-            this.AgregarElemntoPlaylist.Size = new System.Drawing.Size(144, 28);
-            this.AgregarElemntoPlaylist.TabIndex = 24;
-            this.AgregarElemntoPlaylist.Text = "Agregar elemento";
-            this.AgregarElemntoPlaylist.UseVisualStyleBackColor = false;
-            this.AgregarElemntoPlaylist.Visible = false;
-            // 
-            // EliminardePlaylist
-            // 
-            this.EliminardePlaylist.BackColor = System.Drawing.SystemColors.WindowText;
-            this.EliminardePlaylist.Location = new System.Drawing.Point(47, 178);
-            this.EliminardePlaylist.Margin = new System.Windows.Forms.Padding(4);
-            this.EliminardePlaylist.Name = "EliminardePlaylist";
-            this.EliminardePlaylist.Size = new System.Drawing.Size(144, 28);
-            this.EliminardePlaylist.TabIndex = 23;
-            this.EliminardePlaylist.Text = "Eliminar elemento";
-            this.EliminardePlaylist.UseVisualStyleBackColor = false;
-            this.EliminardePlaylist.Visible = false;
-            // 
-            // CambiarNombrePlaylist
-            // 
-            this.CambiarNombrePlaylist.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CambiarNombrePlaylist.Location = new System.Drawing.Point(47, 74);
-            this.CambiarNombrePlaylist.Margin = new System.Windows.Forms.Padding(4);
-            this.CambiarNombrePlaylist.Name = "CambiarNombrePlaylist";
-            this.CambiarNombrePlaylist.Size = new System.Drawing.Size(144, 28);
-            this.CambiarNombrePlaylist.TabIndex = 22;
-            this.CambiarNombrePlaylist.Text = "Cambiar nombre";
-            this.CambiarNombrePlaylist.UseVisualStyleBackColor = false;
-            this.CambiarNombrePlaylist.Visible = false;
-            this.CambiarNombrePlaylist.Click += new System.EventHandler(this.CambiarNombrePlaylist_Click);
-            // 
-            // dataGridVerPlaylist
-            // 
-            this.dataGridVerPlaylist.BackgroundColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVerPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
-            this.dataGridVerPlaylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVerPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridVerPlaylist.Location = new System.Drawing.Point(0, 0);
-            this.dataGridVerPlaylist.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridVerPlaylist.MultiSelect = false;
-            this.dataGridVerPlaylist.Name = "dataGridVerPlaylist";
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVerPlaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
-            this.dataGridVerPlaylist.RowHeadersWidth = 51;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridVerPlaylist.RowsDefaultCellStyle = dataGridViewCellStyle29;
-            this.dataGridVerPlaylist.Size = new System.Drawing.Size(982, 495);
-            this.dataGridVerPlaylist.TabIndex = 21;
-            this.dataGridVerPlaylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVerPlaylist_CellContentClick);
-            // 
-            // ResultsBuscador
-            // 
-            this.ResultsBuscador.Controls.Add(this.tableLayoutPanel62);
-            this.ResultsBuscador.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ResultsBuscador.Location = new System.Drawing.Point(0, 0);
-            this.ResultsBuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ResultsBuscador.Name = "ResultsBuscador";
-            this.ResultsBuscador.Size = new System.Drawing.Size(982, 495);
-            this.ResultsBuscador.TabIndex = 1;
-            // 
-            // tableLayoutPanel62
-            // 
-            this.tableLayoutPanel62.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel62.ColumnCount = 3;
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel62.Controls.Add(this.label53, 2, 0);
-            this.tableLayoutPanel62.Controls.Add(this.label52, 1, 0);
-            this.tableLayoutPanel62.Controls.Add(this.label51, 0, 0);
-            this.tableLayoutPanel62.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel62.Controls.Add(this.panel2, 1, 1);
-            this.tableLayoutPanel62.Controls.Add(this.panel3, 2, 1);
-            this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel62.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel62.Name = "tableLayoutPanel62";
-            this.tableLayoutPanel62.RowCount = 2;
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(982, 495);
-            this.tableLayoutPanel62.TabIndex = 0;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(657, 1);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(321, 29);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "Personas/Usuarios";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(330, 1);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(320, 29);
-            this.label52.TabIndex = 5;
-            this.label52.Text = "Canciones";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(4, 1);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(319, 29);
-            this.label51.TabIndex = 4;
-            this.label51.Text = "Películas";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dataGridBuscadorMovies);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 33);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 459);
-            this.panel1.TabIndex = 7;
-            // 
-            // dataGridBuscadorMovies
-            // 
-            this.dataGridBuscadorMovies.AllowDrop = true;
-            this.dataGridBuscadorMovies.AllowUserToAddRows = false;
-            this.dataGridBuscadorMovies.AllowUserToDeleteRows = false;
-            this.dataGridBuscadorMovies.AllowUserToResizeColumns = false;
-            this.dataGridBuscadorMovies.AllowUserToResizeRows = false;
-            this.dataGridBuscadorMovies.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorMovies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
-            this.dataGridBuscadorMovies.ColumnHeadersHeight = 18;
-            this.dataGridBuscadorMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridBuscadorMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridBuscadorMovies.EnableHeadersVisualStyles = false;
-            this.dataGridBuscadorMovies.GridColor = System.Drawing.SystemColors.WindowText;
-            this.dataGridBuscadorMovies.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridBuscadorMovies.Location = new System.Drawing.Point(0, 0);
-            this.dataGridBuscadorMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridBuscadorMovies.MultiSelect = false;
-            this.dataGridBuscadorMovies.Name = "dataGridBuscadorMovies";
-            this.dataGridBuscadorMovies.ReadOnly = true;
-            this.dataGridBuscadorMovies.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorMovies.RowHeadersDefaultCellStyle = dataGridViewCellStyle31;
-            this.dataGridBuscadorMovies.RowHeadersWidth = 51;
-            this.dataGridBuscadorMovies.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridBuscadorMovies.RowsDefaultCellStyle = dataGridViewCellStyle32;
-            this.dataGridBuscadorMovies.RowTemplate.Height = 24;
-            this.dataGridBuscadorMovies.Size = new System.Drawing.Size(319, 459);
-            this.dataGridBuscadorMovies.TabIndex = 2;
-            this.dataGridBuscadorMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorMovies_CellContentClick);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridBuscadorSongs);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(330, 33);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 459);
-            this.panel2.TabIndex = 8;
-            // 
-            // dataGridBuscadorSongs
-            // 
-            this.dataGridBuscadorSongs.AllowDrop = true;
-            this.dataGridBuscadorSongs.AllowUserToAddRows = false;
-            this.dataGridBuscadorSongs.AllowUserToDeleteRows = false;
-            this.dataGridBuscadorSongs.AllowUserToResizeColumns = false;
-            this.dataGridBuscadorSongs.AllowUserToResizeRows = false;
-            this.dataGridBuscadorSongs.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle33;
-            this.dataGridBuscadorSongs.ColumnHeadersHeight = 18;
-            this.dataGridBuscadorSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridBuscadorSongs.DefaultCellStyle = dataGridViewCellStyle34;
-            this.dataGridBuscadorSongs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridBuscadorSongs.EnableHeadersVisualStyles = false;
-            this.dataGridBuscadorSongs.GridColor = System.Drawing.SystemColors.WindowText;
-            this.dataGridBuscadorSongs.Location = new System.Drawing.Point(0, 0);
-            this.dataGridBuscadorSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridBuscadorSongs.MultiSelect = false;
-            this.dataGridBuscadorSongs.Name = "dataGridBuscadorSongs";
-            this.dataGridBuscadorSongs.ReadOnly = true;
-            this.dataGridBuscadorSongs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridBuscadorSongs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorSongs.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
-            this.dataGridBuscadorSongs.RowHeadersWidth = 51;
-            this.dataGridBuscadorSongs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridBuscadorSongs.RowsDefaultCellStyle = dataGridViewCellStyle36;
-            this.dataGridBuscadorSongs.RowTemplate.Height = 24;
-            this.dataGridBuscadorSongs.Size = new System.Drawing.Size(320, 459);
-            this.dataGridBuscadorSongs.TabIndex = 1;
-            this.dataGridBuscadorSongs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorSongs_CellContentClick);
             // 
             // BuscadorPanel
             // 
@@ -2243,6 +1923,451 @@
             this.label38.Text = "o";
             this.label38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // ResultsBuscador
+            // 
+            this.ResultsBuscador.Controls.Add(this.tableLayoutPanel62);
+            this.ResultsBuscador.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ResultsBuscador.Location = new System.Drawing.Point(0, 0);
+            this.ResultsBuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ResultsBuscador.Name = "ResultsBuscador";
+            this.ResultsBuscador.Size = new System.Drawing.Size(982, 495);
+            this.ResultsBuscador.TabIndex = 1;
+            // 
+            // tableLayoutPanel62
+            // 
+            this.tableLayoutPanel62.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel62.ColumnCount = 3;
+            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
+            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel62.Controls.Add(this.label53, 2, 0);
+            this.tableLayoutPanel62.Controls.Add(this.label52, 1, 0);
+            this.tableLayoutPanel62.Controls.Add(this.label51, 0, 0);
+            this.tableLayoutPanel62.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel62.Controls.Add(this.panel2, 1, 1);
+            this.tableLayoutPanel62.Controls.Add(this.panel3, 2, 1);
+            this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel62.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel62.Name = "tableLayoutPanel62";
+            this.tableLayoutPanel62.RowCount = 2;
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutPanel62.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel62.TabIndex = 0;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(657, 1);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(321, 29);
+            this.label53.TabIndex = 6;
+            this.label53.Text = "Personas/Usuarios";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(330, 1);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(320, 29);
+            this.label52.TabIndex = 5;
+            this.label52.Text = "Canciones";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(4, 1);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(319, 29);
+            this.label51.TabIndex = 4;
+            this.label51.Text = "Películas";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridBuscadorMovies);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(4, 33);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(319, 459);
+            this.panel1.TabIndex = 7;
+            // 
+            // dataGridBuscadorMovies
+            // 
+            this.dataGridBuscadorMovies.AllowDrop = true;
+            this.dataGridBuscadorMovies.AllowUserToAddRows = false;
+            this.dataGridBuscadorMovies.AllowUserToDeleteRows = false;
+            this.dataGridBuscadorMovies.AllowUserToResizeColumns = false;
+            this.dataGridBuscadorMovies.AllowUserToResizeRows = false;
+            this.dataGridBuscadorMovies.BackgroundColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorMovies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridBuscadorMovies.ColumnHeadersHeight = 18;
+            this.dataGridBuscadorMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridBuscadorMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridBuscadorMovies.EnableHeadersVisualStyles = false;
+            this.dataGridBuscadorMovies.GridColor = System.Drawing.SystemColors.WindowText;
+            this.dataGridBuscadorMovies.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridBuscadorMovies.Location = new System.Drawing.Point(0, 0);
+            this.dataGridBuscadorMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridBuscadorMovies.MultiSelect = false;
+            this.dataGridBuscadorMovies.Name = "dataGridBuscadorMovies";
+            this.dataGridBuscadorMovies.ReadOnly = true;
+            this.dataGridBuscadorMovies.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorMovies.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridBuscadorMovies.RowHeadersWidth = 51;
+            this.dataGridBuscadorMovies.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridBuscadorMovies.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridBuscadorMovies.RowTemplate.Height = 24;
+            this.dataGridBuscadorMovies.Size = new System.Drawing.Size(319, 459);
+            this.dataGridBuscadorMovies.TabIndex = 2;
+            this.dataGridBuscadorMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorMovies_CellContentClick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridBuscadorSongs);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(330, 33);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(320, 459);
+            this.panel2.TabIndex = 8;
+            // 
+            // dataGridBuscadorSongs
+            // 
+            this.dataGridBuscadorSongs.AllowDrop = true;
+            this.dataGridBuscadorSongs.AllowUserToAddRows = false;
+            this.dataGridBuscadorSongs.AllowUserToDeleteRows = false;
+            this.dataGridBuscadorSongs.AllowUserToResizeColumns = false;
+            this.dataGridBuscadorSongs.AllowUserToResizeRows = false;
+            this.dataGridBuscadorSongs.BackgroundColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridBuscadorSongs.ColumnHeadersHeight = 18;
+            this.dataGridBuscadorSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridBuscadorSongs.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridBuscadorSongs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridBuscadorSongs.EnableHeadersVisualStyles = false;
+            this.dataGridBuscadorSongs.GridColor = System.Drawing.SystemColors.WindowText;
+            this.dataGridBuscadorSongs.Location = new System.Drawing.Point(0, 0);
+            this.dataGridBuscadorSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridBuscadorSongs.MultiSelect = false;
+            this.dataGridBuscadorSongs.Name = "dataGridBuscadorSongs";
+            this.dataGridBuscadorSongs.ReadOnly = true;
+            this.dataGridBuscadorSongs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridBuscadorSongs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorSongs.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridBuscadorSongs.RowHeadersWidth = 51;
+            this.dataGridBuscadorSongs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridBuscadorSongs.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridBuscadorSongs.RowTemplate.Height = 24;
+            this.dataGridBuscadorSongs.Size = new System.Drawing.Size(320, 459);
+            this.dataGridBuscadorSongs.TabIndex = 1;
+            this.dataGridBuscadorSongs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorSongs_CellContentClick);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGriedBuscadorFollowers);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(657, 34);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(321, 457);
+            this.panel3.TabIndex = 9;
+            // 
+            // dataGriedBuscadorFollowers
+            // 
+            this.dataGriedBuscadorFollowers.AllowDrop = true;
+            this.dataGriedBuscadorFollowers.AllowUserToAddRows = false;
+            this.dataGriedBuscadorFollowers.AllowUserToDeleteRows = false;
+            this.dataGriedBuscadorFollowers.AllowUserToResizeColumns = false;
+            this.dataGriedBuscadorFollowers.AllowUserToResizeRows = false;
+            this.dataGriedBuscadorFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedBuscadorFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGriedBuscadorFollowers.ColumnHeadersHeight = 18;
+            this.dataGriedBuscadorFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGriedBuscadorFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGriedBuscadorFollowers.EnableHeadersVisualStyles = false;
+            this.dataGriedBuscadorFollowers.GridColor = System.Drawing.SystemColors.WindowText;
+            this.dataGriedBuscadorFollowers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGriedBuscadorFollowers.Location = new System.Drawing.Point(0, 0);
+            this.dataGriedBuscadorFollowers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGriedBuscadorFollowers.MultiSelect = false;
+            this.dataGriedBuscadorFollowers.Name = "dataGriedBuscadorFollowers";
+            this.dataGriedBuscadorFollowers.ReadOnly = true;
+            this.dataGriedBuscadorFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedBuscadorFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGriedBuscadorFollowers.RowHeadersWidth = 51;
+            this.dataGriedBuscadorFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGriedBuscadorFollowers.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGriedBuscadorFollowers.RowTemplate.Height = 24;
+            this.dataGriedBuscadorFollowers.Size = new System.Drawing.Size(321, 457);
+            this.dataGriedBuscadorFollowers.TabIndex = 2;
+            this.dataGriedBuscadorFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGriedBuscadorFollowers_CellContentClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(982, 495);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // FollowersPanel
+            // 
+            this.FollowersPanel.Controls.Add(this.dataGridFollowers);
+            this.FollowersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FollowersPanel.Location = new System.Drawing.Point(0, 0);
+            this.FollowersPanel.Name = "FollowersPanel";
+            this.FollowersPanel.Size = new System.Drawing.Size(982, 495);
+            this.FollowersPanel.TabIndex = 28;
+            // 
+            // dataGridFollowers
+            // 
+            this.dataGridFollowers.AllowDrop = true;
+            this.dataGridFollowers.AllowUserToAddRows = false;
+            this.dataGridFollowers.AllowUserToDeleteRows = false;
+            this.dataGridFollowers.AllowUserToResizeColumns = false;
+            this.dataGridFollowers.AllowUserToResizeRows = false;
+            this.dataGridFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridFollowers.ColumnHeadersHeight = 18;
+            this.dataGridFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridFollowers.EnableHeadersVisualStyles = false;
+            this.dataGridFollowers.GridColor = System.Drawing.SystemColors.WindowText;
+            this.dataGridFollowers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridFollowers.Location = new System.Drawing.Point(0, 0);
+            this.dataGridFollowers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridFollowers.MultiSelect = false;
+            this.dataGridFollowers.Name = "dataGridFollowers";
+            this.dataGridFollowers.ReadOnly = true;
+            this.dataGridFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridFollowers.RowHeadersWidth = 51;
+            this.dataGridFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridFollowers.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridFollowers.RowTemplate.Height = 24;
+            this.dataGridFollowers.Size = new System.Drawing.Size(982, 495);
+            this.dataGridFollowers.TabIndex = 1;
+            this.dataGridFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridFollowers_CellContentClick);
+            // 
+            // VerMisPlaylits
+            // 
+            this.VerMisPlaylits.Controls.Add(this.Aceptarcambiodenombre);
+            this.VerMisPlaylits.Controls.Add(this.label50);
+            this.VerMisPlaylits.Controls.Add(this.NuevoNombrePlaylist);
+            this.VerMisPlaylits.Controls.Add(this.AgregarElemntoPlaylist);
+            this.VerMisPlaylits.Controls.Add(this.EliminardePlaylist);
+            this.VerMisPlaylits.Controls.Add(this.CambiarNombrePlaylist);
+            this.VerMisPlaylits.Controls.Add(this.dataGridVerPlaylist);
+            this.VerMisPlaylits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VerMisPlaylits.Location = new System.Drawing.Point(0, 0);
+            this.VerMisPlaylits.Margin = new System.Windows.Forms.Padding(4);
+            this.VerMisPlaylits.Name = "VerMisPlaylits";
+            this.VerMisPlaylits.Size = new System.Drawing.Size(982, 495);
+            this.VerMisPlaylits.TabIndex = 21;
+            this.VerMisPlaylits.Visible = false;
+            // 
+            // Aceptarcambiodenombre
+            // 
+            this.Aceptarcambiodenombre.BackColor = System.Drawing.SystemColors.WindowText;
+            this.Aceptarcambiodenombre.Location = new System.Drawing.Point(501, 176);
+            this.Aceptarcambiodenombre.Margin = new System.Windows.Forms.Padding(4);
+            this.Aceptarcambiodenombre.Name = "Aceptarcambiodenombre";
+            this.Aceptarcambiodenombre.Size = new System.Drawing.Size(144, 28);
+            this.Aceptarcambiodenombre.TabIndex = 27;
+            this.Aceptarcambiodenombre.Text = "Aceptar";
+            this.Aceptarcambiodenombre.UseVisualStyleBackColor = false;
+            this.Aceptarcambiodenombre.Visible = false;
+            this.Aceptarcambiodenombre.Click += new System.EventHandler(this.Aceptarcambiodenombre_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(501, 46);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(144, 17);
+            this.label50.TabIndex = 26;
+            this.label50.Text = "Elija el nuevo nombre";
+            this.label50.Visible = false;
+            // 
+            // NuevoNombrePlaylist
+            // 
+            this.NuevoNombrePlaylist.Location = new System.Drawing.Point(440, 101);
+            this.NuevoNombrePlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.NuevoNombrePlaylist.Name = "NuevoNombrePlaylist";
+            this.NuevoNombrePlaylist.Size = new System.Drawing.Size(264, 22);
+            this.NuevoNombrePlaylist.TabIndex = 25;
+            this.NuevoNombrePlaylist.Visible = false;
+            // 
+            // AgregarElemntoPlaylist
+            // 
+            this.AgregarElemntoPlaylist.BackColor = System.Drawing.SystemColors.MenuText;
+            this.AgregarElemntoPlaylist.Location = new System.Drawing.Point(47, 274);
+            this.AgregarElemntoPlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.AgregarElemntoPlaylist.Name = "AgregarElemntoPlaylist";
+            this.AgregarElemntoPlaylist.Size = new System.Drawing.Size(144, 28);
+            this.AgregarElemntoPlaylist.TabIndex = 24;
+            this.AgregarElemntoPlaylist.Text = "Agregar elemento";
+            this.AgregarElemntoPlaylist.UseVisualStyleBackColor = false;
+            this.AgregarElemntoPlaylist.Visible = false;
+            // 
+            // EliminardePlaylist
+            // 
+            this.EliminardePlaylist.BackColor = System.Drawing.SystemColors.WindowText;
+            this.EliminardePlaylist.Location = new System.Drawing.Point(47, 178);
+            this.EliminardePlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.EliminardePlaylist.Name = "EliminardePlaylist";
+            this.EliminardePlaylist.Size = new System.Drawing.Size(144, 28);
+            this.EliminardePlaylist.TabIndex = 23;
+            this.EliminardePlaylist.Text = "Eliminar elemento";
+            this.EliminardePlaylist.UseVisualStyleBackColor = false;
+            this.EliminardePlaylist.Visible = false;
+            // 
+            // CambiarNombrePlaylist
+            // 
+            this.CambiarNombrePlaylist.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CambiarNombrePlaylist.Location = new System.Drawing.Point(47, 74);
+            this.CambiarNombrePlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.CambiarNombrePlaylist.Name = "CambiarNombrePlaylist";
+            this.CambiarNombrePlaylist.Size = new System.Drawing.Size(144, 28);
+            this.CambiarNombrePlaylist.TabIndex = 22;
+            this.CambiarNombrePlaylist.Text = "Cambiar nombre";
+            this.CambiarNombrePlaylist.UseVisualStyleBackColor = false;
+            this.CambiarNombrePlaylist.Visible = false;
+            this.CambiarNombrePlaylist.Click += new System.EventHandler(this.CambiarNombrePlaylist_Click);
+            // 
+            // dataGridVerPlaylist
+            // 
+            this.dataGridVerPlaylist.BackgroundColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVerPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridVerPlaylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVerPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridVerPlaylist.Location = new System.Drawing.Point(0, 0);
+            this.dataGridVerPlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridVerPlaylist.MultiSelect = false;
+            this.dataGridVerPlaylist.Name = "dataGridVerPlaylist";
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVerPlaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridVerPlaylist.RowHeadersWidth = 51;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridVerPlaylist.RowsDefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridVerPlaylist.Size = new System.Drawing.Size(982, 495);
+            this.dataGridVerPlaylist.TabIndex = 21;
+            this.dataGridVerPlaylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVerPlaylist_CellContentClick);
+            // 
             // CrearPlaylist
             // 
             this.CrearPlaylist.Controls.Add(this.tableLayoutPanel73);
@@ -3003,14 +3128,14 @@
             this.DataGriedMovieS.AllowUserToResizeColumns = false;
             this.DataGriedMovieS.AllowUserToResizeRows = false;
             this.DataGriedMovieS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.DataGriedMovieS.ColumnHeadersHeight = 18;
             this.DataGriedMovieS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGriedMovieS.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3023,22 +3148,22 @@
             this.DataGriedMovieS.Name = "DataGriedMovieS";
             this.DataGriedMovieS.ReadOnly = true;
             this.DataGriedMovieS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.DataGriedMovieS.RowHeadersWidth = 51;
             this.DataGriedMovieS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.DataGriedMovieS.RowTemplate.Height = 24;
             this.DataGriedMovieS.Size = new System.Drawing.Size(982, 495);
             this.DataGriedMovieS.TabIndex = 0;
@@ -3062,24 +3187,24 @@
             this.DataGriedSongS.AllowUserToResizeColumns = false;
             this.DataGriedSongS.AllowUserToResizeRows = false;
             this.DataGriedSongS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.DataGriedSongS.ColumnHeadersHeight = 18;
             this.DataGriedSongS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle24;
             this.DataGriedSongS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGriedSongS.EnableHeadersVisualStyles = false;
             this.DataGriedSongS.GridColor = System.Drawing.SystemColors.WindowText;
@@ -3090,21 +3215,21 @@
             this.DataGriedSongS.ReadOnly = true;
             this.DataGriedSongS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DataGriedSongS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.DataGriedSongS.RowHeadersWidth = 51;
             this.DataGriedSongS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.DataGriedSongS.RowTemplate.Height = 24;
             this.DataGriedSongS.Size = new System.Drawing.Size(982, 495);
             this.DataGriedSongS.TabIndex = 0;
@@ -4619,64 +4744,6 @@
             this.CambiarUsuarioButton.UseVisualStyleBackColor = false;
             this.CambiarUsuarioButton.Click += new System.EventHandler(this.CambiarUsuarioButton_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGriedBuscadorFollowers);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(657, 34);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(321, 457);
-            this.panel3.TabIndex = 9;
-            // 
-            // dataGriedBuscadorFollowers
-            // 
-            this.dataGriedBuscadorFollowers.AllowDrop = true;
-            this.dataGriedBuscadorFollowers.AllowUserToAddRows = false;
-            this.dataGriedBuscadorFollowers.AllowUserToDeleteRows = false;
-            this.dataGriedBuscadorFollowers.AllowUserToResizeColumns = false;
-            this.dataGriedBuscadorFollowers.AllowUserToResizeRows = false;
-            this.dataGriedBuscadorFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedBuscadorFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
-            this.dataGriedBuscadorFollowers.ColumnHeadersHeight = 18;
-            this.dataGriedBuscadorFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGriedBuscadorFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGriedBuscadorFollowers.EnableHeadersVisualStyles = false;
-            this.dataGriedBuscadorFollowers.GridColor = System.Drawing.SystemColors.WindowText;
-            this.dataGriedBuscadorFollowers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGriedBuscadorFollowers.Location = new System.Drawing.Point(0, 0);
-            this.dataGriedBuscadorFollowers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGriedBuscadorFollowers.MultiSelect = false;
-            this.dataGriedBuscadorFollowers.Name = "dataGriedBuscadorFollowers";
-            this.dataGriedBuscadorFollowers.ReadOnly = true;
-            this.dataGriedBuscadorFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedBuscadorFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
-            this.dataGriedBuscadorFollowers.RowHeadersWidth = 51;
-            this.dataGriedBuscadorFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGriedBuscadorFollowers.RowsDefaultCellStyle = dataGridViewCellStyle46;
-            this.dataGriedBuscadorFollowers.RowTemplate.Height = 24;
-            this.dataGriedBuscadorFollowers.Size = new System.Drawing.Size(321, 457);
-            this.dataGriedBuscadorFollowers.TabIndex = 2;
-            this.dataGriedBuscadorFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGriedBuscadorFollowers_CellContentClick);
-            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4718,23 +4785,12 @@
             this.UserActivitiesPanel.ResumeLayout(false);
             this.ShowPersonPanel.ResumeLayout(false);
             this.tableLayoutPanel82.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGriedPanelPersona)).EndInit();
             this.tableLayoutPanel83.ResumeLayout(false);
             this.tableLayoutPanel83.PerformLayout();
             this.tableLayoutPanel84.ResumeLayout(false);
             this.tableLayoutPanel84.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.FollowersPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFollowers)).EndInit();
-            this.VerMisPlaylits.ResumeLayout(false);
-            this.VerMisPlaylits.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVerPlaylist)).EndInit();
-            this.ResultsBuscador.ResumeLayout(false);
-            this.tableLayoutPanel62.ResumeLayout(false);
-            this.tableLayoutPanel62.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorMovies)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorSongs)).EndInit();
             this.BuscadorPanel.ResumeLayout(false);
             this.tableLayoutPanel49.ResumeLayout(false);
             this.tableLayoutPanel49.PerformLayout();
@@ -4761,6 +4817,21 @@
             this.tableLayoutPanel59.PerformLayout();
             this.tableLayoutPanel60.ResumeLayout(false);
             this.tableLayoutPanel60.PerformLayout();
+            this.ResultsBuscador.ResumeLayout(false);
+            this.tableLayoutPanel62.ResumeLayout(false);
+            this.tableLayoutPanel62.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorMovies)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBuscadorSongs)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGriedBuscadorFollowers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FollowersPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFollowers)).EndInit();
+            this.VerMisPlaylits.ResumeLayout(false);
+            this.VerMisPlaylits.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVerPlaylist)).EndInit();
             this.CrearPlaylist.ResumeLayout(false);
             this.tableLayoutPanel73.ResumeLayout(false);
             this.tableLayoutPanel73.PerformLayout();
@@ -4866,8 +4937,6 @@
             this.tableLayoutPanel45.ResumeLayout(false);
             this.tableLayoutPanel44.ResumeLayout(false);
             this.tableLayoutPanel43.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGriedBuscadorFollowers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5149,6 +5218,8 @@
         private System.Windows.Forms.LinkLabel linklabelPerson;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGriedBuscadorFollowers;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dataGriedPanelPersona;
     }
 }
 

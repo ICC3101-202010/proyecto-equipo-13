@@ -1805,6 +1805,8 @@ namespace Proyecto_equipo_13_entrega_3
                             linklabelPerson.Text = p.Link;
                         }
                     }
+                    FilldataGriedPanelPersona(lines[0]);
+                    dataGriedPanelPersona.BringToFront();
                     ShowPersonPanel.BringToFront();
                 }
             }
@@ -1819,7 +1821,7 @@ namespace Proyecto_equipo_13_entrega_3
             string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
             if (e.ColumnIndex == 2)
             {
-                //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: " + lines2[0]);
+                //MessageBox.Show(lines[0]);
                 if (lines2[0] == "Usuario")
                 {
 
@@ -1838,6 +1840,8 @@ namespace Proyecto_equipo_13_entrega_3
                             linklabelPerson.Text = p.Link;
                         }
                     }
+                    dataGriedPanelPersona.BringToFront();
+                    FilldataGriedPanelPersona(lines[0]);
                     ShowPersonPanel.BringToFront();
                 }
             }
@@ -1887,6 +1891,121 @@ namespace Proyecto_equipo_13_entrega_3
                 }
             }
             panel3.Controls.Add(dataGriedBuscadorFollowers);
+        }
+
+        private void FilldataGriedPanelPersona(string name)
+        {
+            dataGriedPanelPersona.Rows.Clear();
+            dataGriedPanelPersona.Columns.Clear();
+            List<Songs> songs = new List<Songs>(); 
+            List<Movies> movies = new List<Movies>();
+            foreach (Movies m in Files.AllMovies)
+            {
+                foreach (Person p in m.Actors1)
+                {
+                    if (p.Name == name)
+                    {
+                        movies.Add(m);
+                    }
+                }
+                if (name== m.Writer1.Name)
+                {
+                    movies.Add(m);
+                }
+                if (name== m.Director1.Name)
+                {
+                    movies.Add(m);
+                }
+            }
+            List<Movies> Final = ((from s in movies select s).Distinct()).ToList();
+            movies = Final;
+            foreach (Songs s in Files.AllSongs)
+            {
+                if (name== s.Composer1.Name)
+                {
+                    songs.Add(s);
+                }
+                if (name== s.Artist1.Name)
+                {
+                    songs.Add(s);
+                }
+                if (name== s.Writer1.Name)
+                {
+                    songs.Add(s);
+                }
+            }
+            List<Songs> Final2 = ((from s in songs select s).Distinct()).ToList();
+            songs = Final2;
+            DataGridViewImageColumn dgvImagen = new DataGridViewImageColumn();
+            dgvImagen.HeaderText = "Película/Canción";
+            dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Información";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+
+            dataGriedPanelPersona.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGriedPanelPersona.RowTemplate.Height = 100;
+            dataGriedPanelPersona.AllowUserToAddRows = false;
+
+            dataGriedPanelPersona.Columns.Add(dgvImagen);
+            dataGriedPanelPersona.Columns.Add(nombre);
+            dataGriedPanelPersona.Columns.Add(buttons);
+
+
+            dataGriedPanelPersona.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGriedPanelPersona.Columns[0].Width = 100;
+            dataGriedPanelPersona.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            foreach (Movies movie in movies)
+            {
+                var carpeta = Directory.GetCurrentDirectory();
+                var H = carpeta + movie.MovieDirection;
+                dataGriedPanelPersona.Rows.Add(new object[] { System.Drawing.Image.FromFile(H), "Título: " + movie.Title1 + "\r\nDirector: " + movie.Director1.Name + "\r\nDuración: " + movie.Lenght1.ToString() + " min. \r\nRating: " + movie.RatingProm1.ToString() });
+            }
+            foreach (Songs song in songs)
+            {
+                var carpeta = Directory.GetCurrentDirectory();
+                var D = carpeta + song.Album1.Image1;
+                dataGriedPanelPersona.Rows.Add(new object[] { System.Drawing.Image.FromFile(D), "Título: " + song.Title1 + "\r\nCantante: " + song.Artist1.Name + "\r\nDuración: " + song.Lenght1.ToString() + " min. \r\nRating: " + song.RatingProm1.ToString() });
+            }
+            panel4.Controls.Add(dataGriedPanelPersona);
+        }
+
+        private void dataGriedPanelPersona_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string datosTO = dataGriedPanelPersona.Rows[dataGriedPanelPersona.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosT = datosTO.Replace("Título: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datosT.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                //MessageBox.Show("Seleccionaste: "+ lines[0]);
+                foreach (Movies m in Files.AllMovies)
+                {
+                    if (m.Title1 == lines[0])
+                    {
+                        InfoMovieTextBox.Text = null;
+                        RellenarInfoMovies(lines[0]);
+                        ShowMovie.BringToFront();
+                    }
+                }
+                foreach (Songs s in Files.AllSongs)
+                {
+                    if (s.Title1 == lines[0])
+                    {
+                        InfoSongsTextBox.Text = null;
+                        RellenarInfoSongs(lines[0]);
+                        ShowSong.BringToFront();
+                    }
+                }
+            }
         }
 
         public void Copy()
