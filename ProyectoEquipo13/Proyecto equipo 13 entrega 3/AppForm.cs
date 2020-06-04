@@ -351,7 +351,7 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void IniciarSerializacion()
         {
-            User Admin = new User("Premium", "Admin", "email", "", true);
+            User Admin = new User("Premium", "Admin", "email", "Admin", true);
             Files.Users.Add(Admin);
             foreach (User i in Files.Users)
             {
@@ -556,7 +556,14 @@ namespace Proyecto_equipo_13_entrega_3
         {
             string username = InputUsuarioLoginView.Text;
             string pass = InputContraseñaLoginView.Text;
-            OnLoginButtonClicked(username, pass);
+            if (username =="Admin" && pass == "Admin")
+            {
+
+            }
+            else
+            {
+                OnLoginButtonClicked(username, pass);
+            }
         }
 
         private void OnLoginButtonClicked(string username, string pass)
