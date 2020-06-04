@@ -19,8 +19,8 @@ namespace Proyecto_equipo_13_entrega_3
         //Premium
         private bool Privacy;
         private List<Playlists> MyPlaylist =new List<Playlists>();
-        Playlists MeGustaSongs = new Playlists("Me gusta", "Canción");
-        Playlists MeGustaMovies = new Playlists("Me gusta","Película");
+        private Playlists MeGustaSongs = new Playlists("Me gusta", "Canción");
+        private Playlists MeGustaMovies = new Playlists("Me gusta","Película");
         
         private List<User> Follows = new List<User>();
         private List<Person> Follows2 = new List<Person>();
@@ -39,6 +39,8 @@ namespace Proyecto_equipo_13_entrega_3
         public List<User> FollowsU { get => Follows; set => Follows = value; }
         public List<Person> FollowsP { get => Follows2; set => Follows2 = value; }
         public bool LOGIN { get => lOGIN; set => lOGIN = value; }
+        public Playlists MeGustaSongs1 { get => MeGustaSongs; set => MeGustaSongs = value; }
+        public Playlists MeGustaMovies1 { get => MeGustaMovies; set => MeGustaMovies = value; }
 
         public User() { } //Constructor para implementar Crear Cuenta, etc...
 
@@ -48,8 +50,8 @@ namespace Proyecto_equipo_13_entrega_3
             this.userName = userName;
             this.email = email;
             this.password = password;
-            MyPlaylist.Add(MeGustaSongs);
-            MyPlaylist.Add(MeGustaMovies);
+            MyPlaylist.Add(MeGustaSongs1);
+            MyPlaylist.Add(MeGustaMovies1);
         }
 
         public User(string type, string userName, string email, string password, bool privacy) //Constructor para Premium

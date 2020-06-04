@@ -1038,6 +1038,14 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoMovieTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Title1 == Titulo) 
+                {
+                    movie.NumReproductions += 1;
+                }
+            }
+            RellenarInfoMovies(Titulo);
             SacarRuta(Titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
@@ -1057,6 +1065,14 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoSongsTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Songs song in Files.AllSongs)
+            {
+                if (song.Title1 == Titulo)
+                {
+                    song.NumReproductions += 1;
+                }
+            }
+            RellenarInfoSongs(Titulo);
             SacarRuta(Titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
@@ -1983,6 +1999,153 @@ namespace Proyecto_equipo_13_entrega_3
                 dataGriedPanelPersona.Rows.Add(new object[] { System.Drawing.Image.FromFile(D), "Título: " + song.Title1 + "\r\nCantante: " + song.Artist1.Name + "\r\nDuración: " + song.Lenght1.ToString() + " min. \r\nRating: " + song.RatingProm1.ToString() });
             }
             panel4.Controls.Add(dataGriedPanelPersona);
+        }
+
+        private void DescargarButtonShowSong_Click(object sender, EventArgs e)
+        {
+            string titulo = null;
+            titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            SacarRuta(Titulo);
+            ChooseFolder();
+        }
+
+        private void CambiarImagenShowSong_Click(object sender, EventArgs e)
+        {
+            Songs s = null;
+            string salida =null;
+            string titulo = null;
+            titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Songs song in Files.AllSongs)
+            {
+                if (song.Title1 == Titulo)
+                {
+                    s = song;
+                }
+            }
+            if (openFileDialogCambiarImagen.ShowDialog() == DialogResult.OK)
+            {
+                salida = openFileDialogCambiarImagen.FileName;
+            }
+            string carpeta = Directory.GetCurrentDirectory();
+            string destFileName = s.Album1.Name1 + ".jpg";
+            string antiguo = s.Album1.Image1;
+            var destFile = System.IO.Path.Combine(carpeta, destFileName);
+            var Borrar = System.IO.Path.Combine(carpeta, antiguo);
+            System.IO.File.Delete(Borrar);
+            s.Album1.Image1 = @"\" + destFileName;
+            System.IO.File.Copy(salida, destFile, true);
+            RellenarInfoSongs(Titulo);
+        }
+
+        private void CalificarButtonShowSong_Click(object sender, EventArgs e)
+        {
+            string titulo = null;
+            titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            double cal = Convert.ToDouble(calificacionsong.Value);
+            foreach(Songs song in Files.AllSongs)
+            {
+                if (song.Title1 == Titulo)
+                {
+                    song.Rating1.Add(cal);
+                    song.RatingProm1 = song.Rating1.Average();
+                    MessageBox.Show("Se ha calificado correctamente la canción");
+                }
+            }
+            RellenarInfoSongs(Titulo);
+            calificacionsong.Value = 0;
+        }
+
+        private void MeGustaButtonShowSong_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            string titulo = null;
+            titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach(Songs song in Files.AllSongs)
+            {
+                if (song.Title1 == Titulo)
+                {
+                    user.MeGustaSongs1.Playlistsong.Add(song);
+                    MessageBox.Show("La canción se ha agregado correctamente a sus me gusta");
+                }
+            }
+        }
+
+        private void CalificarShowMovie_Click(object sender, EventArgs e)
+        {
+            double cal = Convert.ToDouble(CalificationMovie.Value);
+            string titulo = null;
+            titulo = InfoMovieTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Title1 == Titulo)
+                {
+                    movie.Rating1.Add(cal);
+                    movie.RatingProm1 = movie.Rating1.Average();
+                    MessageBox.Show("Su película se ha calificado correctamente");
+                    CalificationMovie.Value = 0;
+                }
+            }
+            RellenarInfoMovies(Titulo);
+        }
+
+        private void MeGustaShowMovie_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            string titulo = null;
+            titulo = InfoMovieTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Title1 == Titulo)
+                {
+                    user.MeGustaMovies1.Playlistmovie.Add(movie);
+                    MessageBox.Show("La película se ha agregado correctamente a sus me gusta");
+                }
+            }
+        }
+
+        private void AddPlaylistShowSong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddPlaylistShowMovie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CambiarImagenShowMovie_Click(object sender, EventArgs e)
+        {
+            Movies s = null;
+            string salida = null;
+            string titulo = null;
+            titulo = InfoMovieTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Title1 == Titulo)
+                {
+                    s = movie;
+                }
+            }
+            if (openFileDialogCambiarImagen.ShowDialog() == DialogResult.OK)
+            {
+                salida = openFileDialogCambiarImagen.FileName;
+            }
+            string carpeta = Directory.GetCurrentDirectory();
+            string destFileName = s.Title1 + ".jpg";
+            string antiguo = s.MovieDirection;
+            var destFile = System.IO.Path.Combine(carpeta, destFileName);
+            var Borrar = System.IO.Path.Combine(carpeta, antiguo);
+            System.IO.File.Delete(Borrar);
+            s.MovieDirection = @"\" + destFileName;
+            System.IO.File.Copy(salida, destFile, true);
+            RellenarInfoMovies(Titulo);
         }
 
         private void dataGriedPanelPersona_CellContentClick(object sender, DataGridViewCellEventArgs e)
