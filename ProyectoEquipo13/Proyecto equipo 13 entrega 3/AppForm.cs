@@ -1126,19 +1126,21 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 if (user.Privacy1 == true)
                 {
-                    user.MyPlaylist1.Add(computer.CreatePlaylist(nombre, tipo2));
+                    user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2, nombre));
                     if (tipo2 == "Canción")
                     {
-                        Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(nombre, tipo2));
+                        Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(tipo2, nombre));
+                        
                     }
                     else if (tipo2 == "Película")
                     {
-                        Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(nombre, tipo2));
+                        Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(tipo2, nombre));
+                       
                     }
                 }
                 else if (user.Privacy1 == false)
                 {
-                    user.MyPlaylist1.Add(computer.CreatePlaylist(nombre, tipo2));
+                    user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2,nombre));
                 }
             }
             else if (tipo == "SmartPlaylist")
@@ -1252,56 +1254,57 @@ namespace Proyecto_equipo_13_entrega_3
                                 }
                             }
                         }
-                        else if (tipo2 == "Película")
+                    }
+                    else if (tipo2 == "Película")
+                    {
+                        if (criterio == "Director")
                         {
-                            if (criterio == "Director")
+                            foreach (Movies movies in Files.AllMovies)
                             {
-                                foreach (Movies movies in Files.AllMovies)
+                                if (movies.Director1.Name == namecriterio)
                                 {
-                                    if (movies.Director1.Name == namecriterio)
+                                    a.Playlistmovie.Add(movies);
+                                }
+                            }
+                        }
+                        else if (criterio == "Estudio")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                if (movies.Studio1 == namecriterio)
+                                {
+                                    a.Playlistmovie.Add(movies);
+                                }
+                            }
+                        }
+                        else if (criterio == "Categoría")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
+                            {
+                                foreach (string cate in movies.Categories1)
+                                {
+                                    if (cate == namecriterio)
                                     {
                                         a.Playlistmovie.Add(movies);
                                     }
                                 }
                             }
-                            else if (criterio == "Estudio")
+                        }
+                        else if (criterio == "Actor")
+                        {
+                            foreach (Movies movies in Files.AllMovies)
                             {
-                                foreach (Movies movies in Files.AllMovies)
+                                foreach (Person actor in movies.Actors1)
                                 {
-                                    if (movies.Studio1 == namecriterio)
+                                    if (actor.Name == namecriterio)
                                     {
                                         a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                            else if (criterio == "Categoría")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    foreach (string cate in movies.Categories1)
-                                    {
-                                        if (cate == namecriterio)
-                                        {
-                                            a.Playlistmovie.Add(movies);
-                                        }
-                                    }
-                                }
-                            }
-                            else if (criterio == "Actor")
-                            {
-                                foreach (Movies movies in Files.AllMovies)
-                                {
-                                    foreach (Person actor in movies.Actors1)
-                                    {
-                                        if (actor.Name == namecriterio)
-                                        {
-                                            a.Playlistmovie.Add(movies);
-                                        }
                                     }
                                 }
                             }
                         }
                     }
+                    user.MyPlaylist1.Add(a);
                 }
             }
             MessageBox.Show("Playlist creada con éxito");
@@ -1583,6 +1586,118 @@ namespace Proyecto_equipo_13_entrega_3
         {
             BuscadorPanel.Visible = true;
             BuscadorPanel.BringToFront();
+        }
+
+        private void FillDataGridMisPlaylist()
+        {
+            User user = GetUser();
+            dataGridVerPlaylist.Rows.Clear();
+            dataGridVerPlaylist.Columns.Clear();
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Nombre Playlist";
+            DataGridViewTextBoxColumn tipo = new DataGridViewTextBoxColumn();
+            tipo.HeaderText = "Tipo";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Ver";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+            DataGridViewButtonColumn buttons2 = new DataGridViewButtonColumn();
+            buttons2.HeaderText = @"";
+            buttons2.Text = "Modificar";
+            buttons2.UseColumnTextForButtonValue = true;
+            buttons2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            buttons2.FlatStyle = FlatStyle.Standard;
+            buttons2.CellTemplate.Style.BackColor = Color.Black;
+            buttons2.CellTemplate.Style.ForeColor = Color.White;
+
+
+            dataGridVerPlaylist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridVerPlaylist.RowTemplate.Height = 100;
+            dataGridVerPlaylist.AllowUserToAddRows = false;
+
+            dataGridVerPlaylist.Columns.Add(nombre);
+            dataGridVerPlaylist.Columns.Add(tipo);
+            dataGridVerPlaylist.Columns.Add(buttons);
+            dataGridVerPlaylist.Columns.Add(buttons2);
+
+            dataGridVerPlaylist.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            for(int i = 0; i<user.MyPlaylist1.Count();i++)
+            { 
+                dataGridVerPlaylist.Rows.Add(user.MyPlaylist1[i].Name, user.MyPlaylist1[i].Type);
+            }
+            VerMisPlaylits.Controls.Add(dataGridVerPlaylist);
+        }
+
+        private void VerMIsPlaylistsButton_Click(object sender, EventArgs e)
+        {
+            VerMisPlaylits.Visible = true;
+            VerMisPlaylits.BringToFront();
+            FillDataGridMisPlaylist();
+            dataGridVerPlaylist.Visible = true;
+            dataGridVerPlaylist.BringToFront();
+        }
+
+        private void dataGridVerPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            User user = GetUser();
+            string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
+            string type = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+            if(dataGridVerPlaylist.CurrentCell.ColumnIndex == 2)
+            {
+                for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                {
+                    if (name == user.MyPlaylist1[i].Name && type == "Canción")
+                    {
+                        ShowSongsPanel.Visible = true;
+                        ShowSongsPanel.BringToFront();
+                        FillDataGridViewSongS(user.MyPlaylist1[i].Playlistsong);
+                    }
+                    if (name == user.MyPlaylist1[i].Name && type == "Película")
+                    {
+                        ShowMoviesPanel.Visible = true;
+                        ShowMoviesPanel.BringToFront();
+                        FillDataGridViewMovieS(user.MyPlaylist1[i].Playlistmovie);
+                    }
+                }
+            }
+            else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 3)
+            {
+                dataGridVerPlaylist.Visible = false;
+                CambiarNombrePlaylist.Visible = true;
+                EliminardePlaylist.Visible = true;
+                AgregarElemntoPlaylist.Visible = true;
+            }
+            
+            dataGridVerPlaylist.Visible = false;
+
+        }
+
+        private void CambiarNombrePlaylist_Click(object sender, EventArgs e)
+        {
+            string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
+            label50.Visible = true;
+            NuevoNombrePlaylist.Visible = true;
+            Aceptarcambiodenombre.Visible = true;
+        }
+
+        private void Aceptarcambiodenombre_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
+            string nuevo = NuevoNombrePlaylist.Text; 
+            foreach(Playlists playlists in user.MyPlaylist1)
+            {
+                if(playlists.Name == name)
+                {
+                    playlists.Name = nuevo;
+                    MessageBox.Show("Nombre cambiado con éxito");
+                }
+            }
+            VerMisPlaylits.Visible = false;
         }
 
         public void ChooseFolder()
