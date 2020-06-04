@@ -138,5 +138,14 @@
   <ItemGroup>
     <None Include="bin\Debug\flecha.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\next True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\play_pause.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

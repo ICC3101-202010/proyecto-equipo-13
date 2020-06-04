@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -11,6 +12,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -392,7 +394,6 @@ namespace Proyecto_equipo_13_entrega_3
                     List<Songs> des2 = (List<Songs>)formatter.Deserialize(stream2);
                     if (des2.Count != 0)
                     {
-                        Files.AllSongs.Clear();
                         Files.AllSongs = des2;
                     }
                 }
@@ -431,7 +432,8 @@ namespace Proyecto_equipo_13_entrega_3
                     List<Person> des = (List<Person>)formatter.Deserialize(stream6);
                     if (des.Count != 0)
                     {
-                        Files.AllPersons = des;
+                        List<Person> Final = ((from s in des select s).Distinct()).ToList();
+                        Files.AllPersons = Final;
                     }
                 }
                 catch
@@ -451,6 +453,9 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void Serializacion()
         {
+            List<Person> Final = ((from s in Files.AllPersons select s).Distinct()).ToList();
+            Files.AllPersons = Final;
+
             IFormatter formatter = new BinaryFormatter();
 
             Stream stream7 = new FileStream("AllMovies.bin", FileMode.Create, FileAccess.Write, FileShare.None);
@@ -1433,7 +1438,6 @@ namespace Proyecto_equipo_13_entrega_3
             buttons.CellTemplate.Style.BackColor = Color.Black;
             buttons.CellTemplate.Style.ForeColor = Color.White;
 
-
             dataGridBuscadorMovies.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridBuscadorMovies.RowTemplate.Height = 100;
             dataGridBuscadorMovies.AllowUserToAddRows = false;
@@ -1573,9 +1577,9 @@ namespace Proyecto_equipo_13_entrega_3
             if (PersonasCheckBoxBuscadorPanel.Checked)
             {
                 (List<Person> personas, List<User> usuarios) = Search.SearchingPerson(titulo1,titulo2,persona1,persona2,masc,fem,Edad1,Edad2);
-                BuscadorPanel.Visible = false;
-                ResultsBuscador.Visible = true;
-                //falta implementar panel Usuario, personas
+                FilldataGriedBuscadorFollowers(personas, usuarios);
+                dataGriedBuscadorFollowers.Visible = true;
+                dataGriedBuscadorFollowers.BringToFront();
             }
             BuscadorPanel.Visible = false;
             ResultsBuscador.Visible = true;
@@ -1715,12 +1719,181 @@ namespace Proyecto_equipo_13_entrega_3
             }
         }
 
+        private void FilldataGriedFollowers(List<Person> persons, List<User> users)
+        {
+            dataGridFollowers.Rows.Clear();
+            dataGridFollowers.Columns.Clear();
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Nombre";
+            DataGridViewTextBoxColumn tipo = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Tipo";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+
+
+            dataGridFollowers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridFollowers.RowTemplate.Height = 100;
+            dataGridFollowers.AllowUserToAddRows = false;
+
+            dataGridFollowers.Columns.Add(nombre);
+            dataGridFollowers.Columns.Add(tipo);
+            dataGridFollowers.Columns.Add(buttons);
+
+            if (persons != null)
+            {
+                foreach (Person p in persons)
+                {
+                    dataGridFollowers.Rows.Add(new object[] { p.Name, "Persona" });
+                }
+            }
+            if (users != null)
+            {
+                foreach (User u in users)
+                {
+                    if (u.UserName != "Admin" && u.Privacy1 == true)
+                    {
+                        dataGridFollowers.Rows.Add(new object[] { u.UserName, "Usuario" });
+                    }
+                }
+            }
+            FollowersPanel.Controls.Add(dataGridFollowers);
+        }
+
+        private void FollowsButton_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            FilldataGriedFollowers(user.FollowsP, user.FollowsU);
+            FollowersPanel.BringToFront();
+        }
+
+        private void linklabelPerson_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        { 
+            Process.Start(linklabelPerson.Text);
+        }
+
+        private void dataGridFollowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string datosTO = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[0].Value.ToString();
+            string datosTO2 = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[1].Value.ToString();
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datosTO.Split(stringSeparators, StringSplitOptions.None);
+            string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: "+lines2[0]);
+                if (lines2[0] == "Usuario")
+                {
+
+                }
+                else if (lines2[0] == "Persona")
+                {
+                    PersonInformation.Text = null;
+                    foreach (Person p in Files.AllPersons)
+                    {
+                        if (p.Name == lines[0])
+                        {
+                            PersonInformation.Text += "Nombre: " + p.Name + "\r\nFecha Nacimiento: "+ p.Birthday.ToString("dd / MM / yyyy");
+                            if (p.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
+                            else if (p.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
+                            if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + p.NumReproduction.ToString(); }
+                            linklabelPerson.Text = p.Link;
+                        }
+                    }
+                    ShowPersonPanel.BringToFront();
+                }
+            }
+        }
+
+        private void dataGriedBuscadorFollowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string datosTO = dataGriedBuscadorFollowers.Rows[dataGriedBuscadorFollowers.CurrentRow.Index].Cells[0].Value.ToString();
+            string datosTO2 = dataGriedBuscadorFollowers.Rows[dataGriedBuscadorFollowers.CurrentRow.Index].Cells[1].Value.ToString();
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datosTO.Split(stringSeparators, StringSplitOptions.None);
+            string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: " + lines2[0]);
+                if (lines2[0] == "Usuario")
+                {
+
+                }
+                else if (lines2[0] == "Persona")
+                {
+                    PersonInformation.Text = null;
+                    foreach (Person p in Files.AllPersons)
+                    {
+                        if (p.Name == lines[0])
+                        {
+                            PersonInformation.Text += "Nombre: " + p.Name + "\r\nFecha Nacimiento: " + p.Birthday.ToString("dd / MM / yyyy");
+                            if (p.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
+                            else if (p.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
+                            if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + p.NumReproduction.ToString(); }
+                            linklabelPerson.Text = p.Link;
+                        }
+                    }
+                    ShowPersonPanel.BringToFront();
+                }
+            }
+        }
+
+        private void FilldataGriedBuscadorFollowers(List<Person> persons, List<User> users)
+        {
+            dataGriedBuscadorFollowers.Rows.Clear();
+            dataGriedBuscadorFollowers.Columns.Clear();
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Nombre";
+            DataGridViewTextBoxColumn tipo = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Tipo";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+
+
+            dataGriedBuscadorFollowers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGriedBuscadorFollowers.RowTemplate.Height = 100;
+            dataGriedBuscadorFollowers.AllowUserToAddRows = false;
+
+            dataGriedBuscadorFollowers.Columns.Add(nombre);
+            dataGriedBuscadorFollowers.Columns.Add(tipo);
+            dataGriedBuscadorFollowers.Columns.Add(buttons);
+
+            if (persons != null)
+            {
+                foreach (Person p in persons)
+                {
+                    dataGriedBuscadorFollowers.Rows.Add(new object[] { p.Name, "Persona" });
+                }
+            }
+            if (users != null)
+            {
+                foreach (User u in users)
+                {
+                    if (u.UserName != "Admin" && u.Privacy1 == true)
+                    {
+                        dataGriedBuscadorFollowers.Rows.Add(new object[] { u.UserName, "Usuario" });
+                    }
+                }
+            }
+            panel3.Controls.Add(dataGriedBuscadorFollowers);
+        }
+
         public void Copy()
         {
             string destFileName = (this.name) + " (Spotflix)" + ".mp3";
             var destFile = System.IO.Path.Combine(dest, destFileName);
             System.IO.File.Copy(ruta, destFile, true);
         }
-        
     }
 }

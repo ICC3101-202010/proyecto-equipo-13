@@ -46,6 +46,10 @@ namespace Proyecto_equipo_13_entrega_3
                     users.Add(user);
                 }
             }
+            if (users.Count == 0 && (titulo1 == "" || titulo2 == ""))
+            {
+                users = Files.Users;
+            }
             List<Person> Final = ((from s in persons4 select s).Distinct()).ToList();
             return (Final,users);
         }
@@ -573,7 +577,7 @@ namespace Proyecto_equipo_13_entrega_3
                     persons2.Add(person);
                 }
             }
-            if (persons2.Count == 0 && nameA=="" && nameB=="")
+            if (persons2.Count == 0 && (nameA=="" || nameB==""))
             {
                 return persons;
             }
@@ -597,7 +601,7 @@ namespace Proyecto_equipo_13_entrega_3
                     persons2.Add(person);
                 }
             }
-            if (persons2.Count == 0 && masc==false && fem ==false)
+            if (persons2.Count == 0)
             {
                 return persons;
             }
