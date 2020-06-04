@@ -1409,7 +1409,7 @@ namespace Proyecto_equipo_13_entrega_3
                 var D = carpeta + song.Album1.Image1;
                 dataGridBuscadorSongs.Rows.Add(new object[] { System.Drawing.Image.FromFile(D), "Título: " + song.Title1 + "\r\nCantante: " + song.Artist1.Name + "\r\nDuración: " + song.Lenght1.ToString() + " min. \r\nRating: " + song.RatingProm1.ToString() });
             }
-            ResultsBuscador.Controls.Add(dataGridBuscadorSongs);
+            panel2.Controls.Add(dataGridBuscadorSongs);
         }
 
         private void FillDataGridBuscadorMovieS(List<Movies> movies)
@@ -1450,7 +1450,7 @@ namespace Proyecto_equipo_13_entrega_3
                 var H = carpeta + movie.MovieDirection;
                 dataGridBuscadorMovies.Rows.Add(new object[] { System.Drawing.Image.FromFile(H), "Título: " + movie.Title1 + "\r\nDirector: " + movie.Director1.Name + "\r\nDuración: " + movie.Lenght1.ToString() + " min. \r\nRating: " + movie.RatingProm1.ToString() });
             }
-            ResultsBuscador.Controls.Add(dataGridBuscadorMovies);
+            panel1.Controls.Add(dataGridBuscadorMovies);
         }
 
         private void dataGridBuscadorMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -1463,9 +1463,9 @@ namespace Proyecto_equipo_13_entrega_3
             if (e.ColumnIndex == 2)
             {
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
-                InfoSongsTextBox.Text = null;
+                InfoMovieTextBox.Text = null;
                 RellenarInfoMovies(lines[0]);
-                ShowSong.BringToFront();
+                ShowMovie.BringToFront();
             }
         }
 
@@ -1479,9 +1479,9 @@ namespace Proyecto_equipo_13_entrega_3
             if (e.ColumnIndex == 2)
             {
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
-                InfoMovieTextBox.Text = null;
+                InfoSongsTextBox.Text = null;
                 RellenarInfoSongs(lines[0]);
-                ShowMovie.BringToFront();
+                ShowSong.BringToFront();
             }
         }
 
@@ -1557,12 +1557,15 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 List<Movies> movies = Search.SearchingMovies(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,año1,año2);
                 FillDataGridBuscadorMovieS(movies);
-                label50.Text = movies.Count().ToString();
+                dataGridBuscadorMovies.Visible = true;
+                dataGridBuscadorMovies.BringToFront();
             }
             if (CancionesBuscadorUserCheckBox.Checked)
             {
                 List<Songs> songs = Search.SearchingSongs(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,album1,album2);
                 FillDataGridBuscadorSongS(songs);
+                dataGridBuscadorSongs.Visible = true;
+                dataGridBuscadorSongs.BringToFront();
             }
             if (PersonasCheckBoxBuscadorPanel.Checked)
             {

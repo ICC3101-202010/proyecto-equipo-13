@@ -74,7 +74,7 @@ namespace Proyecto_equipo_13_entrega_3
                     }
                 }
             }
-            if (movies2.Count == 0)
+            if (movies2.Count == 0 && (TitleA == "" || TitleB == ""))
             {
                 return movies;
             }
@@ -335,7 +335,7 @@ namespace Proyecto_equipo_13_entrega_3
                     }
                 }
             }
-            if (songs2.Count == 0)
+            if (songs2.Count == 0 && (TitleA=="" || TitleB==""))
             {
                 return songs;
             }
@@ -516,7 +516,7 @@ namespace Proyecto_equipo_13_entrega_3
             {
             }
             if (songs2.Count == 0)
-            {
+            { 
                 return songs;
             }
             else
@@ -573,7 +573,7 @@ namespace Proyecto_equipo_13_entrega_3
                     persons2.Add(person);
                 }
             }
-            if (persons2.Count == 0)
+            if (persons2.Count == 0 && nameA=="" && nameB=="")
             {
                 return persons;
             }
@@ -597,7 +597,7 @@ namespace Proyecto_equipo_13_entrega_3
                     persons2.Add(person);
                 }
             }
-            if (persons2.Count == 0)
+            if (persons2.Count == 0 && masc==false && fem ==false)
             {
                 return persons;
             }
