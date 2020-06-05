@@ -1,5 +1,6 @@
 ﻿using Proyecto_equipo_13_entrega_3.CustomsEvenArgs;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -2013,10 +2014,9 @@ namespace Proyecto_equipo_13_entrega_3
         private void CambiarImagenShowSong_Click(object sender, EventArgs e)
         {
             Songs s = null;
-            string salida =null;
-            string titulo = null;
-            titulo = InfoSongsTextBox.Lines[0];
+            string titulo = InfoSongsTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
+            string salida = "";
             foreach (Songs song in Files.AllSongs)
             {
                 if (song.Title1 == Titulo)
@@ -2029,14 +2029,25 @@ namespace Proyecto_equipo_13_entrega_3
                 salida = openFileDialogCambiarImagen.FileName;
             }
             string carpeta = Directory.GetCurrentDirectory();
-            string destFileName = s.Album1.Name1 + ".jpg";
-            string antiguo = s.Album1.Image1;
-            var destFile = System.IO.Path.Combine(carpeta, destFileName);
-            var Borrar = System.IO.Path.Combine(carpeta, antiguo);
-            System.IO.File.Delete(Borrar);
-            s.Album1.Image1 = @"\" + destFileName;
-            System.IO.File.Copy(salida, destFile, true);
-            RellenarInfoSongs(Titulo);
+            string filePath = carpeta + s.Album1.Image1;
+            string newName = @"\" + DateTime.Now.ToString();
+            newName = newName.Replace("-", "");
+            newName = newName.Replace(" ", "");
+            newName = newName.Replace(":", "");
+            try
+            {
+                File.Copy(salida, carpeta + newName, true);
+                s.Album1.Image1 = newName;
+                RellenarInfoMovies(Titulo);
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo cambiar la imagen");
+            }
+            finally
+            {
+                RellenarInfoSongs(Titulo);
+            }
         }
 
         private void CalificarButtonShowSong_Click(object sender, EventArgs e)
@@ -2121,16 +2132,15 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void CambiarImagenShowMovie_Click(object sender, EventArgs e)
         {
-            Movies s = null;
-            string salida = null;
-            string titulo = null;
-            titulo = InfoMovieTextBox.Lines[0];
+            Movies m = null;
+            string titulo = InfoMovieTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
+            string salida = "";
             foreach (Movies movie in Files.AllMovies)
             {
                 if (movie.Title1 == Titulo)
                 {
-                    s = movie;
+                    m = movie;
                 }
             }
             if (openFileDialogCambiarImagen.ShowDialog() == DialogResult.OK)
@@ -2138,14 +2148,25 @@ namespace Proyecto_equipo_13_entrega_3
                 salida = openFileDialogCambiarImagen.FileName;
             }
             string carpeta = Directory.GetCurrentDirectory();
-            string destFileName = s.Title1 + ".jpg";
-            string antiguo = s.MovieDirection;
-            var destFile = System.IO.Path.Combine(carpeta, destFileName);
-            var Borrar = System.IO.Path.Combine(carpeta, antiguo);
-            System.IO.File.Delete(Borrar);
-            s.MovieDirection = @"\" + destFileName;
-            System.IO.File.Copy(salida, destFile, true);
+            string filePath = carpeta + m.MovieDirection;
+            string newName = @"\"+DateTime.Now.ToString();
+            newName = newName.Replace("-", "");
+            newName = newName.Replace(" ", "");
+            newName = newName.Replace(":", "");
+            try
+            {
+                File.Copy(salida, carpeta + newName, true);
+                m.MovieDirection = newName;
             RellenarInfoMovies(Titulo);
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo cambiar la imagen");
+            }
+            finally
+            {
+                RellenarInfoMovies(Titulo);
+            }
         }
 
         private void dataGriedPanelPersona_CellContentClick(object sender, DataGridViewCellEventArgs e)
