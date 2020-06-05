@@ -350,7 +350,6 @@ namespace Proyecto_equipo_13_entrega_3
             }
         }
 
-
         private void IniciarSerializacion()
         {
             User Admin = new User("Premium", "Admin", "email", "Admin", true);
@@ -561,6 +560,8 @@ namespace Proyecto_equipo_13_entrega_3
             if (username =="Admin" && pass == "Admin")
             {
                 stackPanels.Add(panels["AdminPanel"]);
+                AddSongPanel.SendToBack();
+                AddMoviePanel.SendToBack();
                 ShowLastPanel();
             }
             else
@@ -2403,6 +2404,7 @@ namespace Proyecto_equipo_13_entrega_3
             Files.AllMovies.Add(pelicula);
             MessageBox.Show("Se ha agregado correctamente");
         }
+
         public void AgregarImagenCancion()
         {
             string carpeta = Directory.GetCurrentDirectory();
@@ -2415,6 +2417,7 @@ namespace Proyecto_equipo_13_entrega_3
                 imagen = @"\" + destFileName;
             }
         }
+
         public void AgregarImagenPelicula()
         {
             string carpeta = Directory.GetCurrentDirectory();
