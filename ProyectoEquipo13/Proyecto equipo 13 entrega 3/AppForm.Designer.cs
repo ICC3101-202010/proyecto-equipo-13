@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle148 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle149 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle150 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle151 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle152 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle153 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle154 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle155 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle156 = new System.Windows.Forms.DataGridViewCellStyle();
             this.WelcomeMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -333,6 +333,124 @@
             this.CambiarUsuarioButton = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialogCambiarImagen = new System.Windows.Forms.OpenFileDialog();
+            this.AdminPanel = new System.Windows.Forms.Panel();
+            this.AddMoviePanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelAgregarPeliculas = new System.Windows.Forms.TableLayoutPanel();
+            this.labelPelicula = new System.Windows.Forms.Label();
+            this.labelTituloP = new System.Windows.Forms.Label();
+            this.labelEstudio = new System.Windows.Forms.Label();
+            this.labelLargoP = new System.Windows.Forms.Label();
+            this.labelAnoP = new System.Windows.Forms.Label();
+            this.labelResolucionP = new System.Windows.Forms.Label();
+            this.labelMemoriaP = new System.Windows.Forms.Label();
+            this.labelDirector = new System.Windows.Forms.Label();
+            this.labelNameD = new System.Windows.Forms.Label();
+            this.labelSexoD = new System.Windows.Forms.Label();
+            this.labelDateD = new System.Windows.Forms.Label();
+            this.labelLinkD = new System.Windows.Forms.Label();
+            this.labelEscritor = new System.Windows.Forms.Label();
+            this.labelNameE = new System.Windows.Forms.Label();
+            this.labelSexoEP = new System.Windows.Forms.Label();
+            this.labelDateEP = new System.Windows.Forms.Label();
+            this.labelLinkEP = new System.Windows.Forms.Label();
+            this.labelActor1 = new System.Windows.Forms.Label();
+            this.labelNameActor1 = new System.Windows.Forms.Label();
+            this.labelSexoActor1 = new System.Windows.Forms.Label();
+            this.labelDateActor1 = new System.Windows.Forms.Label();
+            this.labelLinkActor1 = new System.Windows.Forms.Label();
+            this.labelActor2 = new System.Windows.Forms.Label();
+            this.labelNameActor2 = new System.Windows.Forms.Label();
+            this.labelSexoActor2 = new System.Windows.Forms.Label();
+            this.labelDateActor2 = new System.Windows.Forms.Label();
+            this.labelLinkActor2 = new System.Windows.Forms.Label();
+            this.labelCategoria1 = new System.Windows.Forms.Label();
+            this.labelCategoria2 = new System.Windows.Forms.Label();
+            this.buttonAgregarPelicula = new System.Windows.Forms.Button();
+            this.buttonVolverAgregarPelicula = new System.Windows.Forms.Button();
+            this.comboBoxSexoD = new System.Windows.Forms.ComboBox();
+            this.comboBoxSexoEP = new System.Windows.Forms.ComboBox();
+            this.comboBoxSexoActor1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSexoActor2 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownAnoP = new System.Windows.Forms.NumericUpDown();
+            this.textBoxTituloP = new System.Windows.Forms.TextBox();
+            this.textBoxEstudio = new System.Windows.Forms.TextBox();
+            this.textBoxLargoP = new System.Windows.Forms.TextBox();
+            this.textBoxResolucionP = new System.Windows.Forms.TextBox();
+            this.textBoxMemoriaP = new System.Windows.Forms.TextBox();
+            this.textBoxCategoria1 = new System.Windows.Forms.TextBox();
+            this.textBoxCategoria2 = new System.Windows.Forms.TextBox();
+            this.textBoxNameD = new System.Windows.Forms.TextBox();
+            this.textBoxLinkD = new System.Windows.Forms.TextBox();
+            this.textBoxEscritoP = new System.Windows.Forms.TextBox();
+            this.textBoxLinkEscritorP = new System.Windows.Forms.TextBox();
+            this.textBoxNameActor1 = new System.Windows.Forms.TextBox();
+            this.textBoxLinkActor1 = new System.Windows.Forms.TextBox();
+            this.textBoxNameActor2 = new System.Windows.Forms.TextBox();
+            this.textBoxLinkActor2 = new System.Windows.Forms.TextBox();
+            this.dateTimePickerD = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEP = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerActor1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerActor2 = new System.Windows.Forms.DateTimePicker();
+            this.labelImagenP = new System.Windows.Forms.Label();
+            this.buttonImagenP = new System.Windows.Forms.Button();
+            this.tableLayoutPanel85 = new System.Windows.Forms.TableLayoutPanel();
+            this.GoAddMoviePanel = new System.Windows.Forms.Button();
+            this.GoAddSongPanel = new System.Windows.Forms.Button();
+            this.AddSongPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelAgregarCanciones = new System.Windows.Forms.TableLayoutPanel();
+            this.CANCION = new System.Windows.Forms.Label();
+            this.Titulo = new System.Windows.Forms.Label();
+            this.Largo = new System.Windows.Forms.Label();
+            this.Memoria = new System.Windows.Forms.Label();
+            this.Resolucion = new System.Windows.Forms.Label();
+            this.Artista = new System.Windows.Forms.Label();
+            this.Nombre = new System.Windows.Forms.Label();
+            this.SexoA = new System.Windows.Forms.Label();
+            this.DateA = new System.Windows.Forms.Label();
+            this.LinkA = new System.Windows.Forms.Label();
+            this.Compositor = new System.Windows.Forms.Label();
+            this.NombreC = new System.Windows.Forms.Label();
+            this.SexoC = new System.Windows.Forms.Label();
+            this.DateC = new System.Windows.Forms.Label();
+            this.LinkC = new System.Windows.Forms.Label();
+            this.Escritor = new System.Windows.Forms.Label();
+            this.NombreE = new System.Windows.Forms.Label();
+            this.SexoE = new System.Windows.Forms.Label();
+            this.DateE = new System.Windows.Forms.Label();
+            this.LinkE = new System.Windows.Forms.Label();
+            this.Album = new System.Windows.Forms.Label();
+            this.TituloA = new System.Windows.Forms.Label();
+            this.Ano = new System.Windows.Forms.Label();
+            this.ImagenC = new System.Windows.Forms.Label();
+            this.Genero1 = new System.Windows.Forms.Label();
+            this.Genero2 = new System.Windows.Forms.Label();
+            this.comboBoxSexoA = new System.Windows.Forms.ComboBox();
+            this.comboBoxSexoC = new System.Windows.Forms.ComboBox();
+            this.comboBoxSexoE = new System.Windows.Forms.ComboBox();
+            this.textBoxTitulo = new System.Windows.Forms.TextBox();
+            this.textBoxLargo = new System.Windows.Forms.TextBox();
+            this.textBoxMemoriaC = new System.Windows.Forms.TextBox();
+            this.textBoxResolucionC = new System.Windows.Forms.TextBox();
+            this.textBoxNameA = new System.Windows.Forms.TextBox();
+            this.textBoxLinkA = new System.Windows.Forms.TextBox();
+            this.textBoxNameC = new System.Windows.Forms.TextBox();
+            this.textBoxLinkC = new System.Windows.Forms.TextBox();
+            this.textBoxNameE = new System.Windows.Forms.TextBox();
+            this.textBoxLinkE = new System.Windows.Forms.TextBox();
+            this.textBoxTituloA = new System.Windows.Forms.TextBox();
+            this.textBoxGenero1 = new System.Windows.Forms.TextBox();
+            this.textBoxGenero2 = new System.Windows.Forms.TextBox();
+            this.numericUpDownAnoAlbum = new System.Windows.Forms.NumericUpDown();
+            this.buttonAgregarCancion = new System.Windows.Forms.Button();
+            this.buttonVolverAgregarCanciones = new System.Windows.Forms.Button();
+            this.dateTimePickerA = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerC = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEC = new System.Windows.Forms.DateTimePicker();
+            this.buttonImagenC = new System.Windows.Forms.Button();
+            this.openFileDialogImagenAlbum = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogImagenPelicula = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogCancion = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogPelicula = new System.Windows.Forms.OpenFileDialog();
             this.WelcomeMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -457,6 +575,14 @@
             this.tableLayoutPanel45.SuspendLayout();
             this.tableLayoutPanel44.SuspendLayout();
             this.tableLayoutPanel43.SuspendLayout();
+            this.AdminPanel.SuspendLayout();
+            this.AddMoviePanel.SuspendLayout();
+            this.tableLayoutPanelAgregarPeliculas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoP)).BeginInit();
+            this.tableLayoutPanel85.SuspendLayout();
+            this.AddSongPanel.SuspendLayout();
+            this.tableLayoutPanelAgregarCanciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoAlbum)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeMenu
@@ -858,12 +984,11 @@
             // 
             this.UserPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UserPanel.Controls.Add(this.tableLayoutPanel19);
-            this.UserPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserPanel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UserPanel.Location = new System.Drawing.Point(0, 0);
+            this.UserPanel.Location = new System.Drawing.Point(943, 35);
             this.UserPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(1323, 551);
+            this.UserPanel.Size = new System.Drawing.Size(225, 221);
             this.UserPanel.TabIndex = 6;
             this.UserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UserPanel_Paint);
             // 
@@ -885,7 +1010,7 @@
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.5F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.5F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(1323, 551);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(225, 221);
             this.tableLayoutPanel19.TabIndex = 18;
             // 
             // UserActivitiesPanel
@@ -902,10 +1027,10 @@
             this.UserActivitiesPanel.Controls.Add(this.CrearPlaylist);
             this.UserActivitiesPanel.Controls.Add(this.ShowSongsPanel);
             this.UserActivitiesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserActivitiesPanel.Location = new System.Drawing.Point(336, 52);
+            this.UserActivitiesPanel.Location = new System.Drawing.Point(61, 24);
             this.UserActivitiesPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserActivitiesPanel.Name = "UserActivitiesPanel";
-            this.UserActivitiesPanel.Size = new System.Drawing.Size(982, 495);
+            this.UserActivitiesPanel.Size = new System.Drawing.Size(159, 193);
             this.UserActivitiesPanel.TabIndex = 19;
             // 
             // ShowSong
@@ -915,7 +1040,7 @@
             this.ShowSong.Location = new System.Drawing.Point(0, 0);
             this.ShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowSong.Name = "ShowSong";
-            this.ShowSong.Size = new System.Drawing.Size(982, 495);
+            this.ShowSong.Size = new System.Drawing.Size(159, 193);
             this.ShowSong.TabIndex = 0;
             // 
             // tableLayoutPanel63
@@ -931,7 +1056,7 @@
             this.tableLayoutPanel63.RowCount = 2;
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel63.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel63.TabIndex = 0;
             // 
             // tableLayoutPanel64
@@ -947,8 +1072,8 @@
             this.tableLayoutPanel64.Name = "tableLayoutPanel64";
             this.tableLayoutPanel64.RowCount = 1;
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 196F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(976, 196);
+            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel64.Size = new System.Drawing.Size(153, 74);
             this.tableLayoutPanel64.TabIndex = 0;
             // 
             // tableLayoutPanel66
@@ -962,7 +1087,7 @@
             this.tableLayoutPanel66.Controls.Add(this.DescargarButtonShowSong, 0, 4);
             this.tableLayoutPanel66.Controls.Add(this.tableLayoutPanel72, 0, 1);
             this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(250, 2);
+            this.tableLayoutPanel66.Location = new System.Drawing.Point(41, 2);
             this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel66.Name = "tableLayoutPanel66";
             this.tableLayoutPanel66.RowCount = 5;
@@ -971,7 +1096,7 @@
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.6319F));
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.6319F));
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.79141F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(723, 192);
+            this.tableLayoutPanel66.Size = new System.Drawing.Size(109, 70);
             this.tableLayoutPanel66.TabIndex = 1;
             // 
             // ReproducirButtonShowsSong
@@ -981,7 +1106,7 @@
             this.ReproducirButtonShowsSong.Location = new System.Drawing.Point(3, 2);
             this.ReproducirButtonShowsSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReproducirButtonShowsSong.Name = "ReproducirButtonShowsSong";
-            this.ReproducirButtonShowsSong.Size = new System.Drawing.Size(196, 32);
+            this.ReproducirButtonShowsSong.Size = new System.Drawing.Size(24, 9);
             this.ReproducirButtonShowsSong.TabIndex = 0;
             this.ReproducirButtonShowsSong.Text = "Reproducir";
             this.ReproducirButtonShowsSong.UseVisualStyleBackColor = false;
@@ -991,10 +1116,10 @@
             // 
             this.AddPlaylistShowSong.BackColor = System.Drawing.SystemColors.WindowText;
             this.AddPlaylistShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPlaylistShowSong.Location = new System.Drawing.Point(3, 82);
+            this.AddPlaylistShowSong.Location = new System.Drawing.Point(3, 31);
             this.AddPlaylistShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddPlaylistShowSong.Name = "AddPlaylistShowSong";
-            this.AddPlaylistShowSong.Size = new System.Drawing.Size(196, 34);
+            this.AddPlaylistShowSong.Size = new System.Drawing.Size(24, 9);
             this.AddPlaylistShowSong.TabIndex = 2;
             this.AddPlaylistShowSong.Text = "Agregar a una Playlist";
             this.AddPlaylistShowSong.UseVisualStyleBackColor = false;
@@ -1004,10 +1129,10 @@
             // 
             this.MeGustaButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
             this.MeGustaButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MeGustaButtonShowSong.Location = new System.Drawing.Point(3, 120);
+            this.MeGustaButtonShowSong.Location = new System.Drawing.Point(3, 44);
             this.MeGustaButtonShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MeGustaButtonShowSong.Name = "MeGustaButtonShowSong";
-            this.MeGustaButtonShowSong.Size = new System.Drawing.Size(196, 34);
+            this.MeGustaButtonShowSong.Size = new System.Drawing.Size(24, 9);
             this.MeGustaButtonShowSong.TabIndex = 3;
             this.MeGustaButtonShowSong.Text = "Me Gusta";
             this.MeGustaButtonShowSong.UseVisualStyleBackColor = false;
@@ -1017,10 +1142,10 @@
             // 
             this.DescargarButtonShowSong.BackColor = System.Drawing.SystemColors.WindowText;
             this.DescargarButtonShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DescargarButtonShowSong.Location = new System.Drawing.Point(3, 158);
+            this.DescargarButtonShowSong.Location = new System.Drawing.Point(3, 57);
             this.DescargarButtonShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DescargarButtonShowSong.Name = "DescargarButtonShowSong";
-            this.DescargarButtonShowSong.Size = new System.Drawing.Size(196, 32);
+            this.DescargarButtonShowSong.Size = new System.Drawing.Size(24, 11);
             this.DescargarButtonShowSong.TabIndex = 4;
             this.DescargarButtonShowSong.Text = "Descargar";
             this.DescargarButtonShowSong.UseVisualStyleBackColor = false;
@@ -1034,12 +1159,12 @@
             this.tableLayoutPanel72.Controls.Add(this.CalificarButtonShowSong, 0, 0);
             this.tableLayoutPanel72.Controls.Add(this.calificacionsong, 1, 0);
             this.tableLayoutPanel72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel72.Location = new System.Drawing.Point(3, 38);
+            this.tableLayoutPanel72.Location = new System.Drawing.Point(3, 15);
             this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel72.Name = "tableLayoutPanel72";
             this.tableLayoutPanel72.RowCount = 1;
             this.tableLayoutPanel72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel72.Size = new System.Drawing.Size(196, 40);
+            this.tableLayoutPanel72.Size = new System.Drawing.Size(24, 12);
             this.tableLayoutPanel72.TabIndex = 6;
             // 
             // CalificarButtonShowSong
@@ -1049,7 +1174,7 @@
             this.CalificarButtonShowSong.Location = new System.Drawing.Point(3, 2);
             this.CalificarButtonShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CalificarButtonShowSong.Name = "CalificarButtonShowSong";
-            this.CalificarButtonShowSong.Size = new System.Drawing.Size(128, 36);
+            this.CalificarButtonShowSong.Size = new System.Drawing.Size(10, 8);
             this.CalificarButtonShowSong.TabIndex = 1;
             this.CalificarButtonShowSong.Text = "Calificar";
             this.CalificarButtonShowSong.UseVisualStyleBackColor = false;
@@ -1069,7 +1194,7 @@
             0,
             0,
             65536});
-            this.calificacionsong.Location = new System.Drawing.Point(134, 0);
+            this.calificacionsong.Location = new System.Drawing.Point(16, 0);
             this.calificacionsong.Margin = new System.Windows.Forms.Padding(0);
             this.calificacionsong.Maximum = new decimal(new int[] {
             5,
@@ -1078,7 +1203,7 @@
             0});
             this.calificacionsong.Name = "calificacionsong";
             this.calificacionsong.ReadOnly = true;
-            this.calificacionsong.Size = new System.Drawing.Size(62, 30);
+            this.calificacionsong.Size = new System.Drawing.Size(8, 30);
             this.calificacionsong.TabIndex = 5;
             this.calificacionsong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1096,7 +1221,7 @@
             this.tableLayoutPanel65.RowCount = 2;
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(241, 192);
+            this.tableLayoutPanel65.Size = new System.Drawing.Size(32, 70);
             this.tableLayoutPanel65.TabIndex = 2;
             // 
             // ShowImageShowSong
@@ -1106,7 +1231,7 @@
             this.ShowImageShowSong.Location = new System.Drawing.Point(3, 2);
             this.ShowImageShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowImageShowSong.Name = "ShowImageShowSong";
-            this.ShowImageShowSong.Size = new System.Drawing.Size(235, 149);
+            this.ShowImageShowSong.Size = new System.Drawing.Size(26, 52);
             this.ShowImageShowSong.TabIndex = 1;
             this.ShowImageShowSong.UseVisualStyleBackColor = false;
             // 
@@ -1114,10 +1239,10 @@
             // 
             this.CambiarImagenShowSong.BackColor = System.Drawing.SystemColors.WindowText;
             this.CambiarImagenShowSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CambiarImagenShowSong.Location = new System.Drawing.Point(3, 155);
+            this.CambiarImagenShowSong.Location = new System.Drawing.Point(3, 58);
             this.CambiarImagenShowSong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CambiarImagenShowSong.Name = "CambiarImagenShowSong";
-            this.CambiarImagenShowSong.Size = new System.Drawing.Size(235, 35);
+            this.CambiarImagenShowSong.Size = new System.Drawing.Size(26, 10);
             this.CambiarImagenShowSong.TabIndex = 0;
             this.CambiarImagenShowSong.Text = "Cambiar Imagen";
             this.CambiarImagenShowSong.UseVisualStyleBackColor = false;
@@ -1129,13 +1254,13 @@
             this.InfoSongsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoSongsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoSongsTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.InfoSongsTextBox.Location = new System.Drawing.Point(3, 202);
+            this.InfoSongsTextBox.Location = new System.Drawing.Point(3, 80);
             this.InfoSongsTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.InfoSongsTextBox.Multiline = true;
             this.InfoSongsTextBox.Name = "InfoSongsTextBox";
             this.InfoSongsTextBox.ReadOnly = true;
             this.InfoSongsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoSongsTextBox.Size = new System.Drawing.Size(976, 291);
+            this.InfoSongsTextBox.Size = new System.Drawing.Size(153, 111);
             this.InfoSongsTextBox.TabIndex = 1;
             // 
             // ShowMoviesPanel
@@ -1145,7 +1270,7 @@
             this.ShowMoviesPanel.Location = new System.Drawing.Point(0, 0);
             this.ShowMoviesPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowMoviesPanel.Name = "ShowMoviesPanel";
-            this.ShowMoviesPanel.Size = new System.Drawing.Size(982, 495);
+            this.ShowMoviesPanel.Size = new System.Drawing.Size(159, 193);
             this.ShowMoviesPanel.TabIndex = 19;
             // 
             // DataGriedMovieS
@@ -1156,14 +1281,14 @@
             this.DataGriedMovieS.AllowUserToResizeColumns = false;
             this.DataGriedMovieS.AllowUserToResizeRows = false;
             this.DataGriedMovieS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle131.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle131.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle131;
             this.DataGriedMovieS.ColumnHeadersHeight = 18;
             this.DataGriedMovieS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGriedMovieS.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1176,24 +1301,24 @@
             this.DataGriedMovieS.Name = "DataGriedMovieS";
             this.DataGriedMovieS.ReadOnly = true;
             this.DataGriedMovieS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle132.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle132.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle132.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedMovieS.RowHeadersDefaultCellStyle = dataGridViewCellStyle132;
             this.DataGriedMovieS.RowHeadersWidth = 51;
             this.DataGriedMovieS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle133.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle133.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle133.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle133.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle133.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedMovieS.RowsDefaultCellStyle = dataGridViewCellStyle133;
             this.DataGriedMovieS.RowTemplate.Height = 24;
-            this.DataGriedMovieS.Size = new System.Drawing.Size(982, 495);
+            this.DataGriedMovieS.Size = new System.Drawing.Size(159, 193);
             this.DataGriedMovieS.TabIndex = 0;
             this.DataGriedMovieS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGriedMovieS_CellContentClick);
             // 
@@ -1204,7 +1329,7 @@
             this.ShowMovie.Location = new System.Drawing.Point(0, 0);
             this.ShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowMovie.Name = "ShowMovie";
-            this.ShowMovie.Size = new System.Drawing.Size(982, 495);
+            this.ShowMovie.Size = new System.Drawing.Size(159, 193);
             this.ShowMovie.TabIndex = 20;
             // 
             // tableLayoutPanel67
@@ -1220,7 +1345,7 @@
             this.tableLayoutPanel67.RowCount = 2;
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.60325F));
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.39675F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel67.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel67.TabIndex = 0;
             // 
             // tableLayoutPanel68
@@ -1236,8 +1361,8 @@
             this.tableLayoutPanel68.Name = "tableLayoutPanel68";
             this.tableLayoutPanel68.RowCount = 1;
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 196F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(976, 196);
+            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel68.Size = new System.Drawing.Size(153, 74);
             this.tableLayoutPanel68.TabIndex = 0;
             // 
             // tableLayoutPanel69
@@ -1250,7 +1375,7 @@
             this.tableLayoutPanel69.Controls.Add(this.MeGustaShowMovie, 0, 3);
             this.tableLayoutPanel69.Controls.Add(this.tableLayoutPanel71, 0, 1);
             this.tableLayoutPanel69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel69.Location = new System.Drawing.Point(250, 2);
+            this.tableLayoutPanel69.Location = new System.Drawing.Point(41, 2);
             this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel69.Name = "tableLayoutPanel69";
             this.tableLayoutPanel69.RowCount = 5;
@@ -1259,7 +1384,7 @@
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.2454F));
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.0184F));
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.6319F));
-            this.tableLayoutPanel69.Size = new System.Drawing.Size(723, 192);
+            this.tableLayoutPanel69.Size = new System.Drawing.Size(109, 70);
             this.tableLayoutPanel69.TabIndex = 1;
             // 
             // ReproducirShowMovie
@@ -1269,7 +1394,7 @@
             this.ReproducirShowMovie.Location = new System.Drawing.Point(3, 2);
             this.ReproducirShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReproducirShowMovie.Name = "ReproducirShowMovie";
-            this.ReproducirShowMovie.Size = new System.Drawing.Size(210, 33);
+            this.ReproducirShowMovie.Size = new System.Drawing.Size(26, 9);
             this.ReproducirShowMovie.TabIndex = 0;
             this.ReproducirShowMovie.Text = "Reproducir";
             this.ReproducirShowMovie.UseVisualStyleBackColor = false;
@@ -1279,10 +1404,10 @@
             // 
             this.AddPlaylistShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
             this.AddPlaylistShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPlaylistShowMovie.Location = new System.Drawing.Point(3, 81);
+            this.AddPlaylistShowMovie.Location = new System.Drawing.Point(3, 30);
             this.AddPlaylistShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddPlaylistShowMovie.Name = "AddPlaylistShowMovie";
-            this.AddPlaylistShowMovie.Size = new System.Drawing.Size(210, 34);
+            this.AddPlaylistShowMovie.Size = new System.Drawing.Size(26, 9);
             this.AddPlaylistShowMovie.TabIndex = 2;
             this.AddPlaylistShowMovie.Text = "Agregar a una Playlist";
             this.AddPlaylistShowMovie.UseVisualStyleBackColor = false;
@@ -1292,10 +1417,10 @@
             // 
             this.MeGustaShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
             this.MeGustaShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MeGustaShowMovie.Location = new System.Drawing.Point(3, 119);
+            this.MeGustaShowMovie.Location = new System.Drawing.Point(3, 43);
             this.MeGustaShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MeGustaShowMovie.Name = "MeGustaShowMovie";
-            this.MeGustaShowMovie.Size = new System.Drawing.Size(210, 31);
+            this.MeGustaShowMovie.Size = new System.Drawing.Size(26, 9);
             this.MeGustaShowMovie.TabIndex = 3;
             this.MeGustaShowMovie.Text = "Me Gusta";
             this.MeGustaShowMovie.UseVisualStyleBackColor = false;
@@ -1309,12 +1434,12 @@
             this.tableLayoutPanel71.Controls.Add(this.CalificationMovie, 1, 0);
             this.tableLayoutPanel71.Controls.Add(this.CalificarShowMovie, 0, 0);
             this.tableLayoutPanel71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel71.Location = new System.Drawing.Point(3, 39);
+            this.tableLayoutPanel71.Location = new System.Drawing.Point(3, 15);
             this.tableLayoutPanel71.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel71.Name = "tableLayoutPanel71";
             this.tableLayoutPanel71.RowCount = 1;
             this.tableLayoutPanel71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel71.Size = new System.Drawing.Size(210, 38);
+            this.tableLayoutPanel71.Size = new System.Drawing.Size(26, 11);
             this.tableLayoutPanel71.TabIndex = 5;
             // 
             // CalificationMovie
@@ -1331,7 +1456,7 @@
             0,
             0,
             65536});
-            this.CalificationMovie.Location = new System.Drawing.Point(150, 0);
+            this.CalificationMovie.Location = new System.Drawing.Point(18, 0);
             this.CalificationMovie.Margin = new System.Windows.Forms.Padding(0);
             this.CalificationMovie.Maximum = new decimal(new int[] {
             5,
@@ -1340,7 +1465,7 @@
             0});
             this.CalificationMovie.Name = "CalificationMovie";
             this.CalificationMovie.ReadOnly = true;
-            this.CalificationMovie.Size = new System.Drawing.Size(60, 30);
+            this.CalificationMovie.Size = new System.Drawing.Size(8, 30);
             this.CalificationMovie.TabIndex = 4;
             this.CalificationMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1351,7 +1476,7 @@
             this.CalificarShowMovie.Location = new System.Drawing.Point(3, 2);
             this.CalificarShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CalificarShowMovie.Name = "CalificarShowMovie";
-            this.CalificarShowMovie.Size = new System.Drawing.Size(144, 34);
+            this.CalificarShowMovie.Size = new System.Drawing.Size(12, 7);
             this.CalificarShowMovie.TabIndex = 1;
             this.CalificarShowMovie.Text = "Calificar";
             this.CalificarShowMovie.UseVisualStyleBackColor = false;
@@ -1371,7 +1496,7 @@
             this.tableLayoutPanel70.RowCount = 2;
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel70.Size = new System.Drawing.Size(241, 192);
+            this.tableLayoutPanel70.Size = new System.Drawing.Size(32, 70);
             this.tableLayoutPanel70.TabIndex = 2;
             // 
             // ShowImagenShowMovie
@@ -1381,7 +1506,7 @@
             this.ShowImagenShowMovie.Location = new System.Drawing.Point(3, 2);
             this.ShowImagenShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowImagenShowMovie.Name = "ShowImagenShowMovie";
-            this.ShowImagenShowMovie.Size = new System.Drawing.Size(235, 149);
+            this.ShowImagenShowMovie.Size = new System.Drawing.Size(26, 52);
             this.ShowImagenShowMovie.TabIndex = 1;
             this.ShowImagenShowMovie.UseVisualStyleBackColor = false;
             // 
@@ -1389,10 +1514,10 @@
             // 
             this.CambiarImagenShowMovie.BackColor = System.Drawing.SystemColors.WindowText;
             this.CambiarImagenShowMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CambiarImagenShowMovie.Location = new System.Drawing.Point(3, 155);
+            this.CambiarImagenShowMovie.Location = new System.Drawing.Point(3, 58);
             this.CambiarImagenShowMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CambiarImagenShowMovie.Name = "CambiarImagenShowMovie";
-            this.CambiarImagenShowMovie.Size = new System.Drawing.Size(235, 35);
+            this.CambiarImagenShowMovie.Size = new System.Drawing.Size(26, 10);
             this.CambiarImagenShowMovie.TabIndex = 0;
             this.CambiarImagenShowMovie.Text = "Cambiar Imagen";
             this.CambiarImagenShowMovie.UseVisualStyleBackColor = false;
@@ -1404,13 +1529,13 @@
             this.InfoMovieTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InfoMovieTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoMovieTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.InfoMovieTextBox.Location = new System.Drawing.Point(3, 202);
+            this.InfoMovieTextBox.Location = new System.Drawing.Point(3, 80);
             this.InfoMovieTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.InfoMovieTextBox.Multiline = true;
             this.InfoMovieTextBox.Name = "InfoMovieTextBox";
             this.InfoMovieTextBox.ReadOnly = true;
             this.InfoMovieTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.InfoMovieTextBox.Size = new System.Drawing.Size(976, 291);
+            this.InfoMovieTextBox.Size = new System.Drawing.Size(153, 111);
             this.InfoMovieTextBox.TabIndex = 1;
             // 
             // ShowPersonPanel
@@ -1419,7 +1544,7 @@
             this.ShowPersonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ShowPersonPanel.Location = new System.Drawing.Point(0, 0);
             this.ShowPersonPanel.Name = "ShowPersonPanel";
-            this.ShowPersonPanel.Size = new System.Drawing.Size(982, 495);
+            this.ShowPersonPanel.Size = new System.Drawing.Size(159, 193);
             this.ShowPersonPanel.TabIndex = 2;
             // 
             // tableLayoutPanel82
@@ -1435,7 +1560,7 @@
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel82.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel82.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel82.TabIndex = 0;
             // 
             // tableLayoutPanel83
@@ -1451,7 +1576,7 @@
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel83.Size = new System.Drawing.Size(976, 167);
+            this.tableLayoutPanel83.Size = new System.Drawing.Size(153, 61);
             this.tableLayoutPanel83.TabIndex = 1;
             // 
             // PersonInformation
@@ -1464,7 +1589,7 @@
             this.PersonInformation.Multiline = true;
             this.PersonInformation.Name = "PersonInformation";
             this.PersonInformation.ReadOnly = true;
-            this.PersonInformation.Size = new System.Drawing.Size(970, 127);
+            this.PersonInformation.Size = new System.Drawing.Size(147, 42);
             this.PersonInformation.TabIndex = 0;
             // 
             // tableLayoutPanel84
@@ -1475,11 +1600,11 @@
             this.tableLayoutPanel84.Controls.Add(this.label54, 0, 0);
             this.tableLayoutPanel84.Controls.Add(this.linklabelPerson, 1, 0);
             this.tableLayoutPanel84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel84.Location = new System.Drawing.Point(3, 136);
+            this.tableLayoutPanel84.Location = new System.Drawing.Point(3, 51);
             this.tableLayoutPanel84.Name = "tableLayoutPanel84";
             this.tableLayoutPanel84.RowCount = 1;
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel84.Size = new System.Drawing.Size(970, 28);
+            this.tableLayoutPanel84.Size = new System.Drawing.Size(147, 7);
             this.tableLayoutPanel84.TabIndex = 1;
             // 
             // label54
@@ -1489,7 +1614,7 @@
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(3, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(233, 28);
+            this.label54.Size = new System.Drawing.Size(30, 7);
             this.label54.TabIndex = 2;
             this.label54.Text = "Más Información:";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1499,9 +1624,9 @@
             this.linklabelPerson.AutoSize = true;
             this.linklabelPerson.Dock = System.Windows.Forms.DockStyle.Fill;
             this.linklabelPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklabelPerson.Location = new System.Drawing.Point(242, 0);
+            this.linklabelPerson.Location = new System.Drawing.Point(39, 0);
             this.linklabelPerson.Name = "linklabelPerson";
-            this.linklabelPerson.Size = new System.Drawing.Size(725, 28);
+            this.linklabelPerson.Size = new System.Drawing.Size(105, 7);
             this.linklabelPerson.TabIndex = 3;
             this.linklabelPerson.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linklabelPerson.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklabelPerson_LinkClicked);
@@ -1510,9 +1635,9 @@
             // 
             this.panel4.Controls.Add(this.dataGriedPanelPersona);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 176);
+            this.panel4.Location = new System.Drawing.Point(3, 70);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(976, 316);
+            this.panel4.Size = new System.Drawing.Size(153, 120);
             this.panel4.TabIndex = 21;
             // 
             // dataGriedPanelPersona
@@ -1523,14 +1648,14 @@
             this.dataGriedPanelPersona.AllowUserToResizeColumns = false;
             this.dataGriedPanelPersona.AllowUserToResizeRows = false;
             this.dataGriedPanelPersona.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedPanelPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle134.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle134.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle134.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle134.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle134.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedPanelPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle134;
             this.dataGriedPanelPersona.ColumnHeadersHeight = 18;
             this.dataGriedPanelPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGriedPanelPersona.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1543,24 +1668,24 @@
             this.dataGriedPanelPersona.Name = "dataGriedPanelPersona";
             this.dataGriedPanelPersona.ReadOnly = true;
             this.dataGriedPanelPersona.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedPanelPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle135.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle135.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedPanelPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle135;
             this.dataGriedPanelPersona.RowHeadersWidth = 51;
             this.dataGriedPanelPersona.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGriedPanelPersona.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle136.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle136.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle136.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle136.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle136.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGriedPanelPersona.RowsDefaultCellStyle = dataGridViewCellStyle136;
             this.dataGriedPanelPersona.RowTemplate.Height = 24;
-            this.dataGriedPanelPersona.Size = new System.Drawing.Size(976, 316);
+            this.dataGriedPanelPersona.Size = new System.Drawing.Size(153, 120);
             this.dataGriedPanelPersona.TabIndex = 2;
             this.dataGriedPanelPersona.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGriedPanelPersona_CellContentClick);
             // 
@@ -1571,7 +1696,7 @@
             this.BuscadorPanel.Location = new System.Drawing.Point(0, 0);
             this.BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BuscadorPanel.Name = "BuscadorPanel";
-            this.BuscadorPanel.Size = new System.Drawing.Size(982, 495);
+            this.BuscadorPanel.Size = new System.Drawing.Size(159, 193);
             this.BuscadorPanel.TabIndex = 0;
             // 
             // tableLayoutPanel49
@@ -1611,7 +1736,7 @@
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.869159F));
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.345795F));
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.869159F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel49.TabIndex = 33;
             // 
             // tableLayoutPanel61
@@ -1628,13 +1753,13 @@
             this.tableLayoutPanel61.Controls.Add(this.Edad1BuscadorPanelTextBox, 1, 0);
             this.tableLayoutPanel61.Controls.Add(this.label39, 0, 0);
             this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel61.Location = new System.Drawing.Point(3, 395);
+            this.tableLayoutPanel61.Location = new System.Drawing.Point(3, 151);
             this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
             this.tableLayoutPanel61.RowCount = 1;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel61.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel61.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel61.TabIndex = 12;
             // 
             // label44
@@ -1642,9 +1767,9 @@
             this.label44.AutoSize = true;
             this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(732, 0);
+            this.label44.Location = new System.Drawing.Point(117, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(241, 33);
+            this.label44.Size = new System.Drawing.Size(33, 10);
             this.label44.TabIndex = 30;
             this.label44.Text = "Solo para Personas";
             // 
@@ -1652,10 +1777,10 @@
             // 
             this.Edad2BuscadorPanelTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Edad2BuscadorPanelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edad2BuscadorPanelTextBox.Location = new System.Drawing.Point(515, 2);
+            this.Edad2BuscadorPanelTextBox.Location = new System.Drawing.Point(83, 2);
             this.Edad2BuscadorPanelTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Edad2BuscadorPanelTextBox.Name = "Edad2BuscadorPanelTextBox";
-            this.Edad2BuscadorPanelTextBox.Size = new System.Drawing.Size(211, 34);
+            this.Edad2BuscadorPanelTextBox.Size = new System.Drawing.Size(28, 34);
             this.Edad2BuscadorPanelTextBox.TabIndex = 33;
             // 
             // label40
@@ -1663,9 +1788,9 @@
             this.label40.AutoSize = true;
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(464, 0);
+            this.label40.Location = new System.Drawing.Point(75, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(45, 33);
+            this.label40.Size = new System.Drawing.Size(2, 10);
             this.label40.TabIndex = 32;
             this.label40.Text = "o";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1674,10 +1799,10 @@
             // 
             this.Edad1BuscadorPanelTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Edad1BuscadorPanelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edad1BuscadorPanelTextBox.Location = new System.Drawing.Point(245, 2);
+            this.Edad1BuscadorPanelTextBox.Location = new System.Drawing.Point(41, 2);
             this.Edad1BuscadorPanelTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Edad1BuscadorPanelTextBox.Name = "Edad1BuscadorPanelTextBox";
-            this.Edad1BuscadorPanelTextBox.Size = new System.Drawing.Size(213, 34);
+            this.Edad1BuscadorPanelTextBox.Size = new System.Drawing.Size(28, 34);
             this.Edad1BuscadorPanelTextBox.TabIndex = 30;
             // 
             // label39
@@ -1687,7 +1812,7 @@
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(3, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(236, 33);
+            this.label39.Size = new System.Drawing.Size(32, 10);
             this.label39.TabIndex = 0;
             this.label39.Text = "Edad:";
             this.label39.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1706,13 +1831,13 @@
             this.tableLayoutPanel57.Controls.Add(this.Año1BuscadorPanel, 1, 0);
             this.tableLayoutPanel57.Controls.Add(this.label32, 2, 0);
             this.tableLayoutPanel57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel57.Location = new System.Drawing.Point(3, 321);
+            this.tableLayoutPanel57.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel57.Name = "tableLayoutPanel57";
             this.tableLayoutPanel57.RowCount = 1;
             this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel57.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel57.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel57.TabIndex = 7;
             // 
             // label43
@@ -1720,9 +1845,9 @@
             this.label43.AutoSize = true;
             this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(733, 0);
+            this.label43.Location = new System.Drawing.Point(116, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(240, 33);
+            this.label43.Size = new System.Drawing.Size(34, 10);
             this.label43.TabIndex = 30;
             this.label43.Text = "Solo para Películas";
             // 
@@ -1733,7 +1858,7 @@
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(3, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(238, 33);
+            this.label33.Size = new System.Drawing.Size(32, 10);
             this.label33.TabIndex = 28;
             this.label33.Text = "Año:";
             this.label33.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1742,20 +1867,20 @@
             // 
             this.Año2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Año2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Año2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.Año2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.Año2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Año2BuscadorPanel.Name = "Año2BuscadorPanel";
-            this.Año2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Año2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Año2BuscadorPanel.TabIndex = 31;
             // 
             // Año1BuscadorPanel
             // 
             this.Año1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Año1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Año1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.Año1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.Año1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Año1BuscadorPanel.Name = "Año1BuscadorPanel";
-            this.Año1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Año1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Año1BuscadorPanel.TabIndex = 29;
             // 
             // label32
@@ -1763,9 +1888,9 @@
             this.label32.AutoSize = true;
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(466, 0);
+            this.label32.Location = new System.Drawing.Point(75, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(42, 33);
+            this.label32.Size = new System.Drawing.Size(1, 10);
             this.label32.TabIndex = 30;
             this.label32.Text = "o";
             this.label32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1784,13 +1909,13 @@
             this.tableLayoutPanel54.Controls.Add(this.NumRep2BuscadorPanel, 3, 0);
             this.tableLayoutPanel54.Controls.Add(this.label34, 4, 0);
             this.tableLayoutPanel54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel54.Location = new System.Drawing.Point(3, 210);
+            this.tableLayoutPanel54.Location = new System.Drawing.Point(3, 81);
             this.tableLayoutPanel54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel54.Name = "tableLayoutPanel54";
             this.tableLayoutPanel54.RowCount = 1;
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel54.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel54.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel54.TabIndex = 5;
             // 
             // label27
@@ -1800,7 +1925,7 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(3, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(238, 33);
+            this.label27.Size = new System.Drawing.Size(32, 10);
             this.label27.TabIndex = 16;
             this.label27.Text = "Número de Reproducciones:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1809,10 +1934,10 @@
             // 
             this.NumRep1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumRep1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumRep1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.NumRep1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.NumRep1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NumRep1BuscadorPanel.Name = "NumRep1BuscadorPanel";
-            this.NumRep1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.NumRep1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.NumRep1BuscadorPanel.TabIndex = 17;
             // 
             // label26
@@ -1820,9 +1945,9 @@
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(466, 0);
+            this.label26.Location = new System.Drawing.Point(75, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 33);
+            this.label26.Size = new System.Drawing.Size(1, 10);
             this.label26.TabIndex = 18;
             this.label26.Text = "o";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1831,10 +1956,10 @@
             // 
             this.NumRep2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NumRep2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumRep2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.NumRep2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.NumRep2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NumRep2BuscadorPanel.Name = "NumRep2BuscadorPanel";
-            this.NumRep2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.NumRep2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.NumRep2BuscadorPanel.TabIndex = 19;
             // 
             // label34
@@ -1842,9 +1967,9 @@
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(733, 0);
+            this.label34.Location = new System.Drawing.Point(116, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(240, 33);
+            this.label34.Size = new System.Drawing.Size(34, 10);
             this.label34.TabIndex = 20;
             this.label34.Text = "Se buscaran valores mayores o iguales";
             // 
@@ -1861,12 +1986,12 @@
             this.tableLayoutPanel53.Controls.Add(this.label24, 2, 0);
             this.tableLayoutPanel53.Controls.Add(this.CatGen2BuscadorPanel, 3, 0);
             this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel53.Location = new System.Drawing.Point(3, 173);
+            this.tableLayoutPanel53.Location = new System.Drawing.Point(3, 67);
             this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel53.Name = "tableLayoutPanel53";
             this.tableLayoutPanel53.RowCount = 1;
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel53.TabIndex = 5;
             // 
             // label25
@@ -1876,7 +2001,7 @@
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(238, 33);
+            this.label25.Size = new System.Drawing.Size(32, 10);
             this.label25.TabIndex = 12;
             this.label25.Text = "Categoría/Género:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1885,10 +2010,10 @@
             // 
             this.CatGen1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CatGen1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CatGen1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.CatGen1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.CatGen1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CatGen1BuscadorPanel.Name = "CatGen1BuscadorPanel";
-            this.CatGen1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.CatGen1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.CatGen1BuscadorPanel.TabIndex = 13;
             // 
             // label24
@@ -1896,9 +2021,9 @@
             this.label24.AutoSize = true;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(466, 0);
+            this.label24.Location = new System.Drawing.Point(75, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 33);
+            this.label24.Size = new System.Drawing.Size(1, 10);
             this.label24.TabIndex = 14;
             this.label24.Text = "o";
             this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1907,10 +2032,10 @@
             // 
             this.CatGen2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CatGen2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CatGen2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.CatGen2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.CatGen2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CatGen2BuscadorPanel.Name = "CatGen2BuscadorPanel";
-            this.CatGen2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.CatGen2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.CatGen2BuscadorPanel.TabIndex = 15;
             // 
             // tableLayoutPanel50
@@ -1927,12 +2052,12 @@
             this.tableLayoutPanel50.Controls.Add(this.PelículasBuscadorUserCheckBox, 2, 0);
             this.tableLayoutPanel50.Controls.Add(this.PersonasCheckBoxBuscadorPanel, 4, 0);
             this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel50.Location = new System.Drawing.Point(3, 62);
+            this.tableLayoutPanel50.Location = new System.Drawing.Point(3, 25);
             this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel50.Name = "tableLayoutPanel50";
             this.tableLayoutPanel50.RowCount = 1;
             this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel50.TabIndex = 2;
             // 
             // label19
@@ -1940,9 +2065,9 @@
             this.label19.AutoSize = true;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(120, 0);
+            this.label19.Location = new System.Drawing.Point(21, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(267, 33);
+            this.label19.Size = new System.Drawing.Size(36, 10);
             this.label19.TabIndex = 1;
             this.label19.Text = "¿Qué desea buscar?";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1952,10 +2077,10 @@
             this.CancionesBuscadorUserCheckBox.AutoSize = true;
             this.CancionesBuscadorUserCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CancionesBuscadorUserCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancionesBuscadorUserCheckBox.Location = new System.Drawing.Point(549, 2);
+            this.CancionesBuscadorUserCheckBox.Location = new System.Drawing.Point(87, 2);
             this.CancionesBuscadorUserCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancionesBuscadorUserCheckBox.Name = "CancionesBuscadorUserCheckBox";
-            this.CancionesBuscadorUserCheckBox.Size = new System.Drawing.Size(150, 29);
+            this.CancionesBuscadorUserCheckBox.Size = new System.Drawing.Size(18, 6);
             this.CancionesBuscadorUserCheckBox.TabIndex = 4;
             this.CancionesBuscadorUserCheckBox.Text = "Canciones";
             this.CancionesBuscadorUserCheckBox.UseVisualStyleBackColor = true;
@@ -1965,10 +2090,10 @@
             this.PelículasBuscadorUserCheckBox.AutoSize = true;
             this.PelículasBuscadorUserCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PelículasBuscadorUserCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PelículasBuscadorUserCheckBox.Location = new System.Drawing.Point(393, 2);
+            this.PelículasBuscadorUserCheckBox.Location = new System.Drawing.Point(63, 2);
             this.PelículasBuscadorUserCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PelículasBuscadorUserCheckBox.Name = "PelículasBuscadorUserCheckBox";
-            this.PelículasBuscadorUserCheckBox.Size = new System.Drawing.Size(150, 29);
+            this.PelículasBuscadorUserCheckBox.Size = new System.Drawing.Size(18, 6);
             this.PelículasBuscadorUserCheckBox.TabIndex = 10;
             this.PelículasBuscadorUserCheckBox.Text = "Películas";
             this.PelículasBuscadorUserCheckBox.UseVisualStyleBackColor = true;
@@ -1978,10 +2103,10 @@
             this.PersonasCheckBoxBuscadorPanel.AutoSize = true;
             this.PersonasCheckBoxBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonasCheckBoxBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PersonasCheckBoxBuscadorPanel.Location = new System.Drawing.Point(705, 2);
+            this.PersonasCheckBoxBuscadorPanel.Location = new System.Drawing.Point(111, 2);
             this.PersonasCheckBoxBuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PersonasCheckBoxBuscadorPanel.Name = "PersonasCheckBoxBuscadorPanel";
-            this.PersonasCheckBoxBuscadorPanel.Size = new System.Drawing.Size(150, 29);
+            this.PersonasCheckBoxBuscadorPanel.Size = new System.Drawing.Size(18, 6);
             this.PersonasCheckBoxBuscadorPanel.TabIndex = 11;
             this.PersonasCheckBoxBuscadorPanel.Text = "Personas";
             this.PersonasCheckBoxBuscadorPanel.UseVisualStyleBackColor = true;
@@ -1999,12 +2124,12 @@
             this.tableLayoutPanel51.Controls.Add(this.Titulo2BuscadorTextBox, 3, 0);
             this.tableLayoutPanel51.Controls.Add(this.label21, 2, 0);
             this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel51.Location = new System.Drawing.Point(3, 99);
+            this.tableLayoutPanel51.Location = new System.Drawing.Point(3, 39);
             this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel51.Name = "tableLayoutPanel51";
             this.tableLayoutPanel51.RowCount = 1;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel51.TabIndex = 3;
             // 
             // label20
@@ -2014,7 +2139,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(3, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(238, 33);
+            this.label20.Size = new System.Drawing.Size(32, 10);
             this.label20.TabIndex = 4;
             this.label20.Text = "Título/Nombre:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2023,20 +2148,20 @@
             // 
             this.Titulo1BuscadorTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Titulo1BuscadorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo1BuscadorTextBox.Location = new System.Drawing.Point(247, 2);
+            this.Titulo1BuscadorTextBox.Location = new System.Drawing.Point(41, 2);
             this.Titulo1BuscadorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Titulo1BuscadorTextBox.Name = "Titulo1BuscadorTextBox";
-            this.Titulo1BuscadorTextBox.Size = new System.Drawing.Size(213, 34);
+            this.Titulo1BuscadorTextBox.Size = new System.Drawing.Size(28, 34);
             this.Titulo1BuscadorTextBox.TabIndex = 5;
             // 
             // Titulo2BuscadorTextBox
             // 
             this.Titulo2BuscadorTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Titulo2BuscadorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo2BuscadorTextBox.Location = new System.Drawing.Point(514, 2);
+            this.Titulo2BuscadorTextBox.Location = new System.Drawing.Point(82, 2);
             this.Titulo2BuscadorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Titulo2BuscadorTextBox.Name = "Titulo2BuscadorTextBox";
-            this.Titulo2BuscadorTextBox.Size = new System.Drawing.Size(213, 34);
+            this.Titulo2BuscadorTextBox.Size = new System.Drawing.Size(28, 34);
             this.Titulo2BuscadorTextBox.TabIndex = 7;
             // 
             // label21
@@ -2044,9 +2169,9 @@
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(466, 0);
+            this.label21.Location = new System.Drawing.Point(75, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 33);
+            this.label21.Size = new System.Drawing.Size(1, 10);
             this.label21.TabIndex = 6;
             this.label21.Text = "o";
             this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2064,12 +2189,12 @@
             this.tableLayoutPanel52.Controls.Add(this.label22, 2, 0);
             this.tableLayoutPanel52.Controls.Add(this.Persona2BuscadorPanel, 3, 0);
             this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(3, 136);
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(3, 53);
             this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel52.Name = "tableLayoutPanel52";
             this.tableLayoutPanel52.RowCount = 1;
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel52.TabIndex = 4;
             // 
             // label23
@@ -2079,7 +2204,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(238, 33);
+            this.label23.Size = new System.Drawing.Size(32, 10);
             this.label23.TabIndex = 8;
             this.label23.Text = "Artistas/Actores:";
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2088,10 +2213,10 @@
             // 
             this.Persona1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Persona1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Persona1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.Persona1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.Persona1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Persona1BuscadorPanel.Name = "Persona1BuscadorPanel";
-            this.Persona1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Persona1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Persona1BuscadorPanel.TabIndex = 9;
             // 
             // label22
@@ -2099,9 +2224,9 @@
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(466, 0);
+            this.label22.Location = new System.Drawing.Point(75, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 33);
+            this.label22.Size = new System.Drawing.Size(1, 10);
             this.label22.TabIndex = 10;
             this.label22.Text = "o";
             this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2110,10 +2235,10 @@
             // 
             this.Persona2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Persona2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Persona2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.Persona2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.Persona2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Persona2BuscadorPanel.Name = "Persona2BuscadorPanel";
-            this.Persona2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Persona2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Persona2BuscadorPanel.TabIndex = 11;
             // 
             // tableLayoutPanel55
@@ -2130,12 +2255,12 @@
             this.tableLayoutPanel55.Controls.Add(this.Rating2BuscadorPanel, 3, 0);
             this.tableLayoutPanel55.Controls.Add(this.label35, 4, 0);
             this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel55.Location = new System.Drawing.Point(3, 247);
+            this.tableLayoutPanel55.Location = new System.Drawing.Point(3, 95);
             this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel55.Name = "tableLayoutPanel55";
             this.tableLayoutPanel55.RowCount = 1;
             this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel55.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel55.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel55.TabIndex = 5;
             // 
             // label29
@@ -2145,7 +2270,7 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(3, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(238, 33);
+            this.label29.Size = new System.Drawing.Size(32, 10);
             this.label29.TabIndex = 20;
             this.label29.Text = "Rating:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2154,10 +2279,10 @@
             // 
             this.Rating1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Rating1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rating1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.Rating1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.Rating1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rating1BuscadorPanel.Name = "Rating1BuscadorPanel";
-            this.Rating1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Rating1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Rating1BuscadorPanel.TabIndex = 21;
             // 
             // label28
@@ -2165,9 +2290,9 @@
             this.label28.AutoSize = true;
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(466, 0);
+            this.label28.Location = new System.Drawing.Point(75, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 33);
+            this.label28.Size = new System.Drawing.Size(1, 10);
             this.label28.TabIndex = 22;
             this.label28.Text = "o";
             this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2176,10 +2301,10 @@
             // 
             this.Rating2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Rating2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rating2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.Rating2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.Rating2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rating2BuscadorPanel.Name = "Rating2BuscadorPanel";
-            this.Rating2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Rating2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Rating2BuscadorPanel.TabIndex = 23;
             // 
             // label35
@@ -2187,9 +2312,9 @@
             this.label35.AutoSize = true;
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(733, 0);
+            this.label35.Location = new System.Drawing.Point(116, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(240, 33);
+            this.label35.Size = new System.Drawing.Size(34, 10);
             this.label35.TabIndex = 24;
             this.label35.Text = "Se buscaran valores mayores o iguales";
             // 
@@ -2207,12 +2332,12 @@
             this.tableLayoutPanel56.Controls.Add(this.label30, 2, 0);
             this.tableLayoutPanel56.Controls.Add(this.label41, 4, 0);
             this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel56.Location = new System.Drawing.Point(3, 284);
+            this.tableLayoutPanel56.Location = new System.Drawing.Point(3, 109);
             this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel56.Name = "tableLayoutPanel56";
             this.tableLayoutPanel56.RowCount = 1;
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel56.TabIndex = 6;
             // 
             // label31
@@ -2222,7 +2347,7 @@
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(3, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(238, 33);
+            this.label31.Size = new System.Drawing.Size(32, 10);
             this.label31.TabIndex = 24;
             this.label31.Text = "Álbum:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2231,20 +2356,20 @@
             // 
             this.Album1BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Album1BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Album1BuscadorPanel.Location = new System.Drawing.Point(247, 2);
+            this.Album1BuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.Album1BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Album1BuscadorPanel.Name = "Album1BuscadorPanel";
-            this.Album1BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Album1BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Album1BuscadorPanel.TabIndex = 25;
             // 
             // Album2BuscadorPanel
             // 
             this.Album2BuscadorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Album2BuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Album2BuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.Album2BuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.Album2BuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Album2BuscadorPanel.Name = "Album2BuscadorPanel";
-            this.Album2BuscadorPanel.Size = new System.Drawing.Size(213, 34);
+            this.Album2BuscadorPanel.Size = new System.Drawing.Size(28, 34);
             this.Album2BuscadorPanel.TabIndex = 27;
             // 
             // label30
@@ -2252,9 +2377,9 @@
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(466, 0);
+            this.label30.Location = new System.Drawing.Point(75, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(42, 33);
+            this.label30.Size = new System.Drawing.Size(1, 10);
             this.label30.TabIndex = 26;
             this.label30.Text = "o";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2264,9 +2389,9 @@
             this.label41.AutoSize = true;
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(733, 0);
+            this.label41.Location = new System.Drawing.Point(116, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(240, 33);
+            this.label41.Size = new System.Drawing.Size(34, 10);
             this.label41.TabIndex = 28;
             this.label41.Text = "Solo para Canciones";
             // 
@@ -2278,12 +2403,12 @@
             this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41F));
             this.tableLayoutPanel58.Controls.Add(this.SearchButton, 1, 0);
             this.tableLayoutPanel58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel58.Location = new System.Drawing.Point(3, 441);
+            this.tableLayoutPanel58.Location = new System.Drawing.Point(3, 168);
             this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel58.Name = "tableLayoutPanel58";
             this.tableLayoutPanel58.RowCount = 1;
             this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel58.Size = new System.Drawing.Size(976, 42);
+            this.tableLayoutPanel58.Size = new System.Drawing.Size(153, 14);
             this.tableLayoutPanel58.TabIndex = 8;
             // 
             // SearchButton
@@ -2291,10 +2416,10 @@
             this.SearchButton.BackColor = System.Drawing.SystemColors.WindowText;
             this.SearchButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchButton.Location = new System.Drawing.Point(403, 2);
+            this.SearchButton.Location = new System.Drawing.Point(65, 2);
             this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(169, 38);
+            this.SearchButton.Size = new System.Drawing.Size(21, 10);
             this.SearchButton.TabIndex = 32;
             this.SearchButton.Text = "Buscar";
             this.SearchButton.UseVisualStyleBackColor = false;
@@ -2313,8 +2438,8 @@
             this.tableLayoutPanel59.Name = "tableLayoutPanel59";
             this.tableLayoutPanel59.RowCount = 1;
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel59.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel59.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel59.TabIndex = 9;
             // 
             // label18
@@ -2322,9 +2447,9 @@
             this.label18.AutoSize = true;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(328, 0);
+            this.label18.Location = new System.Drawing.Point(54, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(319, 33);
+            this.label18.Size = new System.Drawing.Size(45, 10);
             this.label18.TabIndex = 0;
             this.label18.Text = "Buscador";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2333,9 +2458,9 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(3, 37);
+            this.label36.Location = new System.Drawing.Point(3, 14);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(976, 23);
+            this.label36.Size = new System.Drawing.Size(153, 9);
             this.label36.TabIndex = 10;
             this.label36.Text = "Puede dejar casillas vacías";
             this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2354,13 +2479,13 @@
             this.tableLayoutPanel60.Controls.Add(this.label37, 0, 0);
             this.tableLayoutPanel60.Controls.Add(this.label38, 2, 0);
             this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel60.Location = new System.Drawing.Point(3, 358);
+            this.tableLayoutPanel60.Location = new System.Drawing.Point(3, 137);
             this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel60.Name = "tableLayoutPanel60";
             this.tableLayoutPanel60.RowCount = 1;
             this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel60.Size = new System.Drawing.Size(976, 33);
+            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel60.Size = new System.Drawing.Size(153, 10);
             this.tableLayoutPanel60.TabIndex = 11;
             // 
             // label42
@@ -2368,9 +2493,9 @@
             this.label42.AutoSize = true;
             this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(732, 0);
+            this.label42.Location = new System.Drawing.Point(116, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(241, 33);
+            this.label42.Size = new System.Drawing.Size(34, 10);
             this.label42.TabIndex = 29;
             this.label42.Text = "Solo para Personas";
             // 
@@ -2379,10 +2504,10 @@
             this.FemeninoSexoBuscadorPanel.AutoSize = true;
             this.FemeninoSexoBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.FemeninoSexoBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FemeninoSexoBuscadorPanel.Location = new System.Drawing.Point(514, 2);
+            this.FemeninoSexoBuscadorPanel.Location = new System.Drawing.Point(82, 2);
             this.FemeninoSexoBuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FemeninoSexoBuscadorPanel.Name = "FemeninoSexoBuscadorPanel";
-            this.FemeninoSexoBuscadorPanel.Size = new System.Drawing.Size(212, 29);
+            this.FemeninoSexoBuscadorPanel.Size = new System.Drawing.Size(28, 6);
             this.FemeninoSexoBuscadorPanel.TabIndex = 32;
             this.FemeninoSexoBuscadorPanel.Text = "Femenino";
             this.FemeninoSexoBuscadorPanel.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -2394,10 +2519,10 @@
             this.MasculinoSexoBuscadorPanel.AutoSize = true;
             this.MasculinoSexoBuscadorPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.MasculinoSexoBuscadorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MasculinoSexoBuscadorPanel.Location = new System.Drawing.Point(245, 2);
+            this.MasculinoSexoBuscadorPanel.Location = new System.Drawing.Point(41, 2);
             this.MasculinoSexoBuscadorPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MasculinoSexoBuscadorPanel.Name = "MasculinoSexoBuscadorPanel";
-            this.MasculinoSexoBuscadorPanel.Size = new System.Drawing.Size(213, 29);
+            this.MasculinoSexoBuscadorPanel.Size = new System.Drawing.Size(28, 6);
             this.MasculinoSexoBuscadorPanel.TabIndex = 12;
             this.MasculinoSexoBuscadorPanel.Text = "Masculino";
             this.MasculinoSexoBuscadorPanel.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -2412,7 +2537,7 @@
             this.label37.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.label37.Location = new System.Drawing.Point(3, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(236, 33);
+            this.label37.Size = new System.Drawing.Size(32, 10);
             this.label37.TabIndex = 0;
             this.label37.Text = "Sexo:";
             this.label37.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2422,9 +2547,9 @@
             this.label38.AutoSize = true;
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(464, 0);
+            this.label38.Location = new System.Drawing.Point(75, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(44, 33);
+            this.label38.Size = new System.Drawing.Size(1, 10);
             this.label38.TabIndex = 31;
             this.label38.Text = "o";
             this.label38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2436,7 +2561,7 @@
             this.ResultsBuscador.Location = new System.Drawing.Point(0, 0);
             this.ResultsBuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ResultsBuscador.Name = "ResultsBuscador";
-            this.ResultsBuscador.Size = new System.Drawing.Size(982, 495);
+            this.ResultsBuscador.Size = new System.Drawing.Size(159, 193);
             this.ResultsBuscador.TabIndex = 1;
             // 
             // tableLayoutPanel62
@@ -2459,7 +2584,7 @@
             this.tableLayoutPanel62.RowCount = 2;
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel62.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel62.TabIndex = 0;
             // 
             // label53
@@ -2467,9 +2592,9 @@
             this.label53.AutoSize = true;
             this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(657, 1);
+            this.label53.Location = new System.Drawing.Point(108, 1);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(321, 29);
+            this.label53.Size = new System.Drawing.Size(47, 11);
             this.label53.TabIndex = 6;
             this.label53.Text = "Personas/Usuarios";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2479,9 +2604,9 @@
             this.label52.AutoSize = true;
             this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(330, 1);
+            this.label52.Location = new System.Drawing.Point(56, 1);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(320, 29);
+            this.label52.Size = new System.Drawing.Size(45, 11);
             this.label52.TabIndex = 5;
             this.label52.Text = "Canciones";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2493,7 +2618,7 @@
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.Location = new System.Drawing.Point(4, 1);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(319, 29);
+            this.label51.Size = new System.Drawing.Size(45, 11);
             this.label51.TabIndex = 4;
             this.label51.Text = "Películas";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2502,10 +2627,10 @@
             // 
             this.panel1.Controls.Add(this.dataGridBuscadorMovies);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 33);
+            this.panel1.Location = new System.Drawing.Point(4, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 459);
+            this.panel1.Size = new System.Drawing.Size(45, 175);
             this.panel1.TabIndex = 7;
             // 
             // dataGridBuscadorMovies
@@ -2516,14 +2641,14 @@
             this.dataGridBuscadorMovies.AllowUserToResizeColumns = false;
             this.dataGridBuscadorMovies.AllowUserToResizeRows = false;
             this.dataGridBuscadorMovies.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorMovies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle137.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle137.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle137.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle137.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle137.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorMovies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle137;
             this.dataGridBuscadorMovies.ColumnHeadersHeight = 18;
             this.dataGridBuscadorMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridBuscadorMovies.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2536,24 +2661,24 @@
             this.dataGridBuscadorMovies.Name = "dataGridBuscadorMovies";
             this.dataGridBuscadorMovies.ReadOnly = true;
             this.dataGridBuscadorMovies.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorMovies.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle138.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle138.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle138.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle138.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle138.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorMovies.RowHeadersDefaultCellStyle = dataGridViewCellStyle138;
             this.dataGridBuscadorMovies.RowHeadersWidth = 51;
             this.dataGridBuscadorMovies.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridBuscadorMovies.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle139.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle139.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle139.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle139.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridBuscadorMovies.RowsDefaultCellStyle = dataGridViewCellStyle139;
             this.dataGridBuscadorMovies.RowTemplate.Height = 24;
-            this.dataGridBuscadorMovies.Size = new System.Drawing.Size(319, 459);
+            this.dataGridBuscadorMovies.Size = new System.Drawing.Size(45, 175);
             this.dataGridBuscadorMovies.TabIndex = 2;
             this.dataGridBuscadorMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorMovies_CellContentClick);
             // 
@@ -2561,10 +2686,10 @@
             // 
             this.panel2.Controls.Add(this.dataGridBuscadorSongs);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(330, 33);
+            this.panel2.Location = new System.Drawing.Point(56, 15);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 459);
+            this.panel2.Size = new System.Drawing.Size(45, 175);
             this.panel2.TabIndex = 8;
             // 
             // dataGridBuscadorSongs
@@ -2575,24 +2700,24 @@
             this.dataGridBuscadorSongs.AllowUserToResizeColumns = false;
             this.dataGridBuscadorSongs.AllowUserToResizeRows = false;
             this.dataGridBuscadorSongs.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle140.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle140.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle140.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle140.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle140.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle140.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle140;
             this.dataGridBuscadorSongs.ColumnHeadersHeight = 18;
             this.dataGridBuscadorSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridBuscadorSongs.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle141.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle141.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle141.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle141.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle141.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle141.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridBuscadorSongs.DefaultCellStyle = dataGridViewCellStyle141;
             this.dataGridBuscadorSongs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridBuscadorSongs.EnableHeadersVisualStyles = false;
             this.dataGridBuscadorSongs.GridColor = System.Drawing.SystemColors.WindowText;
@@ -2603,23 +2728,23 @@
             this.dataGridBuscadorSongs.ReadOnly = true;
             this.dataGridBuscadorSongs.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridBuscadorSongs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridBuscadorSongs.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle142.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle142.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle142.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle142.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle142.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle142.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle142.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridBuscadorSongs.RowHeadersDefaultCellStyle = dataGridViewCellStyle142;
             this.dataGridBuscadorSongs.RowHeadersWidth = 51;
             this.dataGridBuscadorSongs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridBuscadorSongs.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle143.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle143.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle143.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle143.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridBuscadorSongs.RowsDefaultCellStyle = dataGridViewCellStyle143;
             this.dataGridBuscadorSongs.RowTemplate.Height = 24;
-            this.dataGridBuscadorSongs.Size = new System.Drawing.Size(320, 459);
+            this.dataGridBuscadorSongs.Size = new System.Drawing.Size(45, 175);
             this.dataGridBuscadorSongs.TabIndex = 1;
             this.dataGridBuscadorSongs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBuscadorSongs_CellContentClick);
             // 
@@ -2627,9 +2752,9 @@
             // 
             this.panel3.Controls.Add(this.dataGriedBuscadorFollowers);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(657, 34);
+            this.panel3.Location = new System.Drawing.Point(108, 16);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(321, 457);
+            this.panel3.Size = new System.Drawing.Size(47, 173);
             this.panel3.TabIndex = 9;
             // 
             // dataGriedBuscadorFollowers
@@ -2640,14 +2765,14 @@
             this.dataGriedBuscadorFollowers.AllowUserToResizeColumns = false;
             this.dataGriedBuscadorFollowers.AllowUserToResizeRows = false;
             this.dataGriedBuscadorFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedBuscadorFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle144.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle144.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle144.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle144.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle144.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle144.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedBuscadorFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle144;
             this.dataGriedBuscadorFollowers.ColumnHeadersHeight = 18;
             this.dataGriedBuscadorFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGriedBuscadorFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2660,24 +2785,24 @@
             this.dataGriedBuscadorFollowers.Name = "dataGriedBuscadorFollowers";
             this.dataGriedBuscadorFollowers.ReadOnly = true;
             this.dataGriedBuscadorFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGriedBuscadorFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle145.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle145.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle145.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle145.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle145.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle145.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGriedBuscadorFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle145;
             this.dataGriedBuscadorFollowers.RowHeadersWidth = 51;
             this.dataGriedBuscadorFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGriedBuscadorFollowers.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle146.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle146.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle146.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle146.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle146.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGriedBuscadorFollowers.RowsDefaultCellStyle = dataGridViewCellStyle146;
             this.dataGriedBuscadorFollowers.RowTemplate.Height = 24;
-            this.dataGriedBuscadorFollowers.Size = new System.Drawing.Size(321, 457);
+            this.dataGriedBuscadorFollowers.Size = new System.Drawing.Size(47, 173);
             this.dataGriedBuscadorFollowers.TabIndex = 2;
             this.dataGriedBuscadorFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGriedBuscadorFollowers_CellContentClick);
             // 
@@ -2688,7 +2813,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(982, 495);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -2699,7 +2824,7 @@
             this.FollowersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FollowersPanel.Location = new System.Drawing.Point(0, 0);
             this.FollowersPanel.Name = "FollowersPanel";
-            this.FollowersPanel.Size = new System.Drawing.Size(982, 495);
+            this.FollowersPanel.Size = new System.Drawing.Size(159, 193);
             this.FollowersPanel.TabIndex = 28;
             // 
             // dataGridFollowers
@@ -2710,14 +2835,14 @@
             this.dataGridFollowers.AllowUserToResizeColumns = false;
             this.dataGridFollowers.AllowUserToResizeRows = false;
             this.dataGridFollowers.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle147.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle147.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle147.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle147.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle147.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle147.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFollowers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle147;
             this.dataGridFollowers.ColumnHeadersHeight = 18;
             this.dataGridFollowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridFollowers.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2730,24 +2855,24 @@
             this.dataGridFollowers.Name = "dataGridFollowers";
             this.dataGridFollowers.ReadOnly = true;
             this.dataGridFollowers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle148.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle148.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle148.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle148.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle148.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle148.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle148.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFollowers.RowHeadersDefaultCellStyle = dataGridViewCellStyle148;
             this.dataGridFollowers.RowHeadersWidth = 51;
             this.dataGridFollowers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridFollowers.RowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle149.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle149.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle149.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle149.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle149.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridFollowers.RowsDefaultCellStyle = dataGridViewCellStyle149;
             this.dataGridFollowers.RowTemplate.Height = 24;
-            this.dataGridFollowers.Size = new System.Drawing.Size(982, 495);
+            this.dataGridFollowers.Size = new System.Drawing.Size(159, 193);
             this.dataGridFollowers.TabIndex = 1;
             this.dataGridFollowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridFollowers_CellContentClick);
             // 
@@ -2764,7 +2889,7 @@
             this.VerMisPlaylits.Location = new System.Drawing.Point(0, 0);
             this.VerMisPlaylits.Margin = new System.Windows.Forms.Padding(4);
             this.VerMisPlaylits.Name = "VerMisPlaylits";
-            this.VerMisPlaylits.Size = new System.Drawing.Size(982, 495);
+            this.VerMisPlaylits.Size = new System.Drawing.Size(159, 193);
             this.VerMisPlaylits.TabIndex = 21;
             this.VerMisPlaylits.Visible = false;
             // 
@@ -2841,36 +2966,36 @@
             // dataGridVerPlaylist
             // 
             this.dataGridVerPlaylist.BackgroundColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVerPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle150.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle150.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle150.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle150.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle150.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle150.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle150.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVerPlaylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle150;
             this.dataGridVerPlaylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVerPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridVerPlaylist.Location = new System.Drawing.Point(0, 0);
             this.dataGridVerPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridVerPlaylist.MultiSelect = false;
             this.dataGridVerPlaylist.Name = "dataGridVerPlaylist";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVerPlaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle151.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle151.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle151.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle151.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle151.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle151.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVerPlaylist.RowHeadersDefaultCellStyle = dataGridViewCellStyle151;
             this.dataGridVerPlaylist.RowHeadersWidth = 51;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridVerPlaylist.RowsDefaultCellStyle = dataGridViewCellStyle22;
-            this.dataGridVerPlaylist.Size = new System.Drawing.Size(982, 495);
+            dataGridViewCellStyle152.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle152.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle152.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle152.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle152.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridVerPlaylist.RowsDefaultCellStyle = dataGridViewCellStyle152;
+            this.dataGridVerPlaylist.Size = new System.Drawing.Size(159, 193);
             this.dataGridVerPlaylist.TabIndex = 21;
             this.dataGridVerPlaylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVerPlaylist_CellContentClick);
             // 
@@ -2881,7 +3006,7 @@
             this.CrearPlaylist.Location = new System.Drawing.Point(0, 0);
             this.CrearPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.CrearPlaylist.Name = "CrearPlaylist";
-            this.CrearPlaylist.Size = new System.Drawing.Size(982, 495);
+            this.CrearPlaylist.Size = new System.Drawing.Size(159, 193);
             this.CrearPlaylist.TabIndex = 21;
             this.CrearPlaylist.Visible = false;
             // 
@@ -2920,7 +3045,7 @@
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.405406F));
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.60291F));
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.068607F));
-            this.tableLayoutPanel73.Size = new System.Drawing.Size(982, 495);
+            this.tableLayoutPanel73.Size = new System.Drawing.Size(159, 193);
             this.tableLayoutPanel73.TabIndex = 12;
             // 
             // tableLayoutPanel78
@@ -2931,23 +3056,23 @@
             this.tableLayoutPanel78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel78.Controls.Add(this.NombreCriterio, 1, 0);
             this.tableLayoutPanel78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel78.Location = new System.Drawing.Point(101, 344);
+            this.tableLayoutPanel78.Location = new System.Drawing.Point(18, 128);
             this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel78.Name = "tableLayoutPanel78";
             this.tableLayoutPanel78.RowCount = 1;
             this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel78.Size = new System.Drawing.Size(779, 34);
+            this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel78.Size = new System.Drawing.Size(121, 10);
             this.tableLayoutPanel78.TabIndex = 4;
             // 
             // NombreCriterio
             // 
             this.NombreCriterio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NombreCriterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombreCriterio.Location = new System.Drawing.Point(263, 4);
+            this.NombreCriterio.Location = new System.Drawing.Point(44, 4);
             this.NombreCriterio.Margin = new System.Windows.Forms.Padding(4);
             this.NombreCriterio.Name = "NombreCriterio";
-            this.NombreCriterio.Size = new System.Drawing.Size(251, 34);
+            this.NombreCriterio.Size = new System.Drawing.Size(32, 34);
             this.NombreCriterio.TabIndex = 10;
             this.NombreCriterio.Visible = false;
             this.NombreCriterio.TextChanged += new System.EventHandler(this.NombreCriterio_TextChanged);
@@ -2957,10 +3082,10 @@
             this.label49.AutoSize = true;
             this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(102, 304);
+            this.label49.Location = new System.Drawing.Point(19, 112);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(777, 38);
+            this.label49.Size = new System.Drawing.Size(119, 14);
             this.label49.TabIndex = 9;
             this.label49.Text = "Elija el nombre del criterio de la SmartPlaylist";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2974,13 +3099,13 @@
             this.tableLayoutPanel77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel77.Controls.Add(this.Criterio, 1, 0);
             this.tableLayoutPanel77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel77.Location = new System.Drawing.Point(101, 268);
+            this.tableLayoutPanel77.Location = new System.Drawing.Point(18, 100);
             this.tableLayoutPanel77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel77.Name = "tableLayoutPanel77";
             this.tableLayoutPanel77.RowCount = 1;
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel77.Size = new System.Drawing.Size(779, 34);
+            this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel77.Size = new System.Drawing.Size(121, 10);
             this.tableLayoutPanel77.TabIndex = 3;
             // 
             // Criterio
@@ -2989,10 +3114,10 @@
             this.Criterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Criterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Criterio.FormattingEnabled = true;
-            this.Criterio.Location = new System.Drawing.Point(263, 4);
+            this.Criterio.Location = new System.Drawing.Point(44, 4);
             this.Criterio.Margin = new System.Windows.Forms.Padding(4);
             this.Criterio.Name = "Criterio";
-            this.Criterio.Size = new System.Drawing.Size(251, 37);
+            this.Criterio.Size = new System.Drawing.Size(32, 37);
             this.Criterio.TabIndex = 11;
             this.Criterio.Visible = false;
             this.Criterio.SelectedIndexChanged += new System.EventHandler(this.Criterio_SelectedIndexChanged);
@@ -3005,23 +3130,23 @@
             this.tableLayoutPanel76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel76.Controls.Add(this.NombrePlaylist, 1, 0);
             this.tableLayoutPanel76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel76.Location = new System.Drawing.Point(101, 192);
+            this.tableLayoutPanel76.Location = new System.Drawing.Point(18, 72);
             this.tableLayoutPanel76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel76.Name = "tableLayoutPanel76";
             this.tableLayoutPanel76.RowCount = 1;
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel76.Size = new System.Drawing.Size(779, 34);
+            this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel76.Size = new System.Drawing.Size(121, 10);
             this.tableLayoutPanel76.TabIndex = 2;
             // 
             // NombrePlaylist
             // 
             this.NombrePlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NombrePlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombrePlaylist.Location = new System.Drawing.Point(263, 4);
+            this.NombrePlaylist.Location = new System.Drawing.Point(44, 4);
             this.NombrePlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.NombrePlaylist.Name = "NombrePlaylist";
-            this.NombrePlaylist.Size = new System.Drawing.Size(251, 34);
+            this.NombrePlaylist.Size = new System.Drawing.Size(32, 34);
             this.NombrePlaylist.TabIndex = 5;
             this.NombrePlaylist.Visible = false;
             this.NombrePlaylist.TextChanged += new System.EventHandler(this.NombrePlaylist_TextChanged);
@@ -3031,10 +3156,10 @@
             this.label48.AutoSize = true;
             this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(102, 228);
+            this.label48.Location = new System.Drawing.Point(19, 84);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(777, 38);
+            this.label48.Size = new System.Drawing.Size(119, 14);
             this.label48.TabIndex = 7;
             this.label48.Text = "Elija el criterio para la SmartPlaylist";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3049,13 +3174,13 @@
             this.tableLayoutPanel75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel75.Controls.Add(this.TipoPlaylist2, 1, 0);
             this.tableLayoutPanel75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel75.Location = new System.Drawing.Point(101, 116);
+            this.tableLayoutPanel75.Location = new System.Drawing.Point(18, 44);
             this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel75.Name = "tableLayoutPanel75";
             this.tableLayoutPanel75.RowCount = 1;
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel75.Size = new System.Drawing.Size(779, 34);
+            this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel75.Size = new System.Drawing.Size(121, 10);
             this.tableLayoutPanel75.TabIndex = 1;
             // 
             // TipoPlaylist2
@@ -3067,10 +3192,10 @@
             this.TipoPlaylist2.Items.AddRange(new object[] {
             "Película",
             "Canción"});
-            this.TipoPlaylist2.Location = new System.Drawing.Point(263, 4);
+            this.TipoPlaylist2.Location = new System.Drawing.Point(44, 4);
             this.TipoPlaylist2.Margin = new System.Windows.Forms.Padding(4);
             this.TipoPlaylist2.Name = "TipoPlaylist2";
-            this.TipoPlaylist2.Size = new System.Drawing.Size(251, 37);
+            this.TipoPlaylist2.Size = new System.Drawing.Size(32, 37);
             this.TipoPlaylist2.TabIndex = 3;
             this.TipoPlaylist2.Visible = false;
             this.TipoPlaylist2.SelectedIndexChanged += new System.EventHandler(this.TipoPlaylist2_SelectedIndexChanged);
@@ -3083,13 +3208,13 @@
             this.tableLayoutPanel74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel74.Controls.Add(this.TipoPlaylist, 1, 0);
             this.tableLayoutPanel74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel74.Location = new System.Drawing.Point(101, 40);
+            this.tableLayoutPanel74.Location = new System.Drawing.Point(18, 16);
             this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel74.Name = "tableLayoutPanel74";
             this.tableLayoutPanel74.RowCount = 1;
             this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel74.Size = new System.Drawing.Size(779, 34);
+            this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel74.Size = new System.Drawing.Size(121, 10);
             this.tableLayoutPanel74.TabIndex = 0;
             // 
             // TipoPlaylist
@@ -3101,10 +3226,10 @@
             this.TipoPlaylist.Items.AddRange(new object[] {
             "Normal",
             "SmartPlaylist"});
-            this.TipoPlaylist.Location = new System.Drawing.Point(263, 4);
+            this.TipoPlaylist.Location = new System.Drawing.Point(44, 4);
             this.TipoPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.TipoPlaylist.Name = "TipoPlaylist";
-            this.TipoPlaylist.Size = new System.Drawing.Size(251, 37);
+            this.TipoPlaylist.Size = new System.Drawing.Size(32, 37);
             this.TipoPlaylist.TabIndex = 1;
             this.TipoPlaylist.SelectedIndexChanged += new System.EventHandler(this.TipoPlaylist_SelectedIndexChanged);
             // 
@@ -3113,10 +3238,10 @@
             this.label45.AutoSize = true;
             this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(102, 0);
+            this.label45.Location = new System.Drawing.Point(19, 0);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(777, 38);
+            this.label45.Size = new System.Drawing.Size(119, 14);
             this.label45.TabIndex = 0;
             this.label45.Text = "Elija el tipo de su Playlits";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3126,10 +3251,10 @@
             this.label47.AutoSize = true;
             this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(102, 152);
+            this.label47.Location = new System.Drawing.Point(19, 56);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(777, 38);
+            this.label47.Size = new System.Drawing.Size(119, 14);
             this.label47.TabIndex = 4;
             this.label47.Text = "Elija un nombre para la Playlist";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3140,10 +3265,10 @@
             this.label46.AutoSize = true;
             this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(102, 76);
+            this.label46.Location = new System.Drawing.Point(19, 28);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(777, 38);
+            this.label46.Size = new System.Drawing.Size(119, 14);
             this.label46.TabIndex = 2;
             this.label46.Text = "Elija el tipo de datos de la Playlist";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3157,22 +3282,22 @@
             this.tableLayoutPanel79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38F));
             this.tableLayoutPanel79.Controls.Add(this.AceptarPlaylist, 1, 0);
             this.tableLayoutPanel79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel79.Location = new System.Drawing.Point(101, 408);
+            this.tableLayoutPanel79.Location = new System.Drawing.Point(18, 152);
             this.tableLayoutPanel79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel79.Name = "tableLayoutPanel79";
             this.tableLayoutPanel79.RowCount = 1;
             this.tableLayoutPanel79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel79.Size = new System.Drawing.Size(779, 48);
+            this.tableLayoutPanel79.Size = new System.Drawing.Size(121, 16);
             this.tableLayoutPanel79.TabIndex = 10;
             // 
             // AceptarPlaylist
             // 
             this.AceptarPlaylist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AceptarPlaylist.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.AceptarPlaylist.Location = new System.Drawing.Point(300, 4);
+            this.AceptarPlaylist.Location = new System.Drawing.Point(49, 4);
             this.AceptarPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.AceptarPlaylist.Name = "AceptarPlaylist";
-            this.AceptarPlaylist.Size = new System.Drawing.Size(178, 40);
+            this.AceptarPlaylist.Size = new System.Drawing.Size(21, 8);
             this.AceptarPlaylist.TabIndex = 6;
             this.AceptarPlaylist.Text = "Aceptar";
             this.AceptarPlaylist.UseVisualStyleBackColor = true;
@@ -3186,7 +3311,7 @@
             this.ShowSongsPanel.Location = new System.Drawing.Point(0, 0);
             this.ShowSongsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShowSongsPanel.Name = "ShowSongsPanel";
-            this.ShowSongsPanel.Size = new System.Drawing.Size(982, 495);
+            this.ShowSongsPanel.Size = new System.Drawing.Size(159, 193);
             this.ShowSongsPanel.TabIndex = 0;
             // 
             // DataGriedSongS
@@ -3197,24 +3322,24 @@
             this.DataGriedSongS.AllowUserToResizeColumns = false;
             this.DataGriedSongS.AllowUserToResizeRows = false;
             this.DataGriedSongS.BackgroundColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.MenuText;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle153.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle153.BackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle153.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle153.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle153.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle153.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle153.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle153;
             this.DataGriedSongS.ColumnHeadersHeight = 18;
             this.DataGriedSongS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle154.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle154.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle154.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle154.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle154.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle154.SelectionForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle154.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGriedSongS.DefaultCellStyle = dataGridViewCellStyle154;
             this.DataGriedSongS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGriedSongS.EnableHeadersVisualStyles = false;
             this.DataGriedSongS.GridColor = System.Drawing.SystemColors.WindowText;
@@ -3225,23 +3350,23 @@
             this.DataGriedSongS.ReadOnly = true;
             this.DataGriedSongS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DataGriedSongS.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle155.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle155.BackColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle155.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle155.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle155.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle155.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle155.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGriedSongS.RowHeadersDefaultCellStyle = dataGridViewCellStyle155;
             this.DataGriedSongS.RowHeadersWidth = 51;
             this.DataGriedSongS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle156.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle156.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle156.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle156.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGriedSongS.RowsDefaultCellStyle = dataGridViewCellStyle156;
             this.DataGriedSongS.RowTemplate.Height = 24;
-            this.DataGriedSongS.Size = new System.Drawing.Size(982, 495);
+            this.DataGriedSongS.Size = new System.Drawing.Size(159, 193);
             this.DataGriedSongS.TabIndex = 0;
             this.DataGriedSongS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGriedSongS_CellContentClick);
             // 
@@ -3258,7 +3383,7 @@
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(323, 42);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(48, 14);
             this.tableLayoutPanel20.TabIndex = 0;
             // 
             // textBox5
@@ -3272,7 +3397,7 @@
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(90, 27);
+            this.textBox5.Size = new System.Drawing.Size(8, 27);
             this.textBox5.TabIndex = 4;
             this.textBox5.Text = "Usuario:";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -3284,11 +3409,11 @@
             this.ReadUserName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ReadUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReadUserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ReadUserName.Location = new System.Drawing.Point(99, 2);
+            this.ReadUserName.Location = new System.Drawing.Point(17, 2);
             this.ReadUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReadUserName.Name = "ReadUserName";
             this.ReadUserName.ReadOnly = true;
-            this.ReadUserName.Size = new System.Drawing.Size(221, 27);
+            this.ReadUserName.Size = new System.Drawing.Size(28, 27);
             this.ReadUserName.TabIndex = 5;
             // 
             // tableLayoutPanel21
@@ -3306,7 +3431,7 @@
             this.tableLayoutPanel21.Controls.Add(this.FollowsButton, 0, 9);
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel80, 0, 10);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(5, 52);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(5, 24);
             this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 11;
@@ -3321,7 +3446,7 @@
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(323, 495);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(48, 193);
             this.tableLayoutPanel21.TabIndex = 1;
             // 
             // label10
@@ -3333,7 +3458,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(317, 29);
+            this.label10.Size = new System.Drawing.Size(42, 11);
             this.label10.TabIndex = 9;
             this.label10.Text = "Menu";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3344,10 +3469,10 @@
             this.VerTodasLasPeliculasButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerTodasLasPeliculasButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerTodasLasPeliculasButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerTodasLasPeliculasButton.Location = new System.Drawing.Point(3, 35);
+            this.VerTodasLasPeliculasButton.Location = new System.Drawing.Point(3, 14);
             this.VerTodasLasPeliculasButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerTodasLasPeliculasButton.Name = "VerTodasLasPeliculasButton";
-            this.VerTodasLasPeliculasButton.Size = new System.Drawing.Size(317, 45);
+            this.VerTodasLasPeliculasButton.Size = new System.Drawing.Size(42, 15);
             this.VerTodasLasPeliculasButton.TabIndex = 10;
             this.VerTodasLasPeliculasButton.Text = "Ver todas las Películas";
             this.VerTodasLasPeliculasButton.UseVisualStyleBackColor = false;
@@ -3359,10 +3484,10 @@
             this.Buscador.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Buscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Buscador.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Buscador.Location = new System.Drawing.Point(3, 329);
+            this.Buscador.Location = new System.Drawing.Point(3, 128);
             this.Buscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Buscador.Name = "Buscador";
-            this.Buscador.Size = new System.Drawing.Size(317, 45);
+            this.Buscador.Size = new System.Drawing.Size(42, 15);
             this.Buscador.TabIndex = 11;
             this.Buscador.Text = "Buscador";
             this.Buscador.UseVisualStyleBackColor = false;
@@ -3374,10 +3499,10 @@
             this.VerPlaylistsDelProgramaButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerPlaylistsDelProgramaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerPlaylistsDelProgramaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerPlaylistsDelProgramaButton.Location = new System.Drawing.Point(3, 280);
+            this.VerPlaylistsDelProgramaButton.Location = new System.Drawing.Point(3, 109);
             this.VerPlaylistsDelProgramaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerPlaylistsDelProgramaButton.Name = "VerPlaylistsDelProgramaButton";
-            this.VerPlaylistsDelProgramaButton.Size = new System.Drawing.Size(317, 45);
+            this.VerPlaylistsDelProgramaButton.Size = new System.Drawing.Size(42, 15);
             this.VerPlaylistsDelProgramaButton.TabIndex = 12;
             this.VerPlaylistsDelProgramaButton.Text = "Ver Playlists del Programa";
             this.VerPlaylistsDelProgramaButton.UseVisualStyleBackColor = false;
@@ -3388,10 +3513,10 @@
             this.VerMIsPlaylistsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerMIsPlaylistsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerMIsPlaylistsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerMIsPlaylistsButton.Location = new System.Drawing.Point(3, 231);
+            this.VerMIsPlaylistsButton.Location = new System.Drawing.Point(3, 90);
             this.VerMIsPlaylistsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerMIsPlaylistsButton.Name = "VerMIsPlaylistsButton";
-            this.VerMIsPlaylistsButton.Size = new System.Drawing.Size(317, 45);
+            this.VerMIsPlaylistsButton.Size = new System.Drawing.Size(42, 15);
             this.VerMIsPlaylistsButton.TabIndex = 13;
             this.VerMIsPlaylistsButton.Text = "Ver mis Playlists";
             this.VerMIsPlaylistsButton.UseVisualStyleBackColor = false;
@@ -3403,10 +3528,10 @@
             this.ModificarPlaylistButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModificarPlaylistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarPlaylistButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ModificarPlaylistButton.Location = new System.Drawing.Point(3, 182);
+            this.ModificarPlaylistButton.Location = new System.Drawing.Point(3, 71);
             this.ModificarPlaylistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ModificarPlaylistButton.Name = "ModificarPlaylistButton";
-            this.ModificarPlaylistButton.Size = new System.Drawing.Size(317, 45);
+            this.ModificarPlaylistButton.Size = new System.Drawing.Size(42, 15);
             this.ModificarPlaylistButton.TabIndex = 14;
             this.ModificarPlaylistButton.Text = "Modificar Playlist";
             this.ModificarPlaylistButton.UseVisualStyleBackColor = false;
@@ -3417,10 +3542,10 @@
             this.CrearPlaylistButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CrearPlaylistButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrearPlaylistButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CrearPlaylistButton.Location = new System.Drawing.Point(3, 133);
+            this.CrearPlaylistButton.Location = new System.Drawing.Point(3, 52);
             this.CrearPlaylistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CrearPlaylistButton.Name = "CrearPlaylistButton";
-            this.CrearPlaylistButton.Size = new System.Drawing.Size(317, 45);
+            this.CrearPlaylistButton.Size = new System.Drawing.Size(42, 15);
             this.CrearPlaylistButton.TabIndex = 15;
             this.CrearPlaylistButton.Text = "Crear Playlist";
             this.CrearPlaylistButton.UseVisualStyleBackColor = false;
@@ -3432,10 +3557,10 @@
             this.VerTodasLasCancionesButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VerTodasLasCancionesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerTodasLasCancionesButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.VerTodasLasCancionesButton.Location = new System.Drawing.Point(3, 84);
+            this.VerTodasLasCancionesButton.Location = new System.Drawing.Point(3, 33);
             this.VerTodasLasCancionesButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerTodasLasCancionesButton.Name = "VerTodasLasCancionesButton";
-            this.VerTodasLasCancionesButton.Size = new System.Drawing.Size(317, 45);
+            this.VerTodasLasCancionesButton.Size = new System.Drawing.Size(42, 15);
             this.VerTodasLasCancionesButton.TabIndex = 16;
             this.VerTodasLasCancionesButton.Text = "Ver todas las Canciones";
             this.VerTodasLasCancionesButton.UseVisualStyleBackColor = false;
@@ -3447,10 +3572,10 @@
             this.FollowsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FollowsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FollowsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.FollowsButton.Location = new System.Drawing.Point(3, 378);
+            this.FollowsButton.Location = new System.Drawing.Point(3, 147);
             this.FollowsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FollowsButton.Name = "FollowsButton";
-            this.FollowsButton.Size = new System.Drawing.Size(317, 45);
+            this.FollowsButton.Size = new System.Drawing.Size(42, 15);
             this.FollowsButton.TabIndex = 17;
             this.FollowsButton.Text = "Followers";
             this.FollowsButton.UseVisualStyleBackColor = false;
@@ -3463,12 +3588,12 @@
             this.tableLayoutPanel80.Controls.Add(this.tableLayoutPanel81, 0, 1);
             this.tableLayoutPanel80.Controls.Add(this.NameSong, 0, 0);
             this.tableLayoutPanel80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel80.Location = new System.Drawing.Point(3, 428);
+            this.tableLayoutPanel80.Location = new System.Drawing.Point(3, 167);
             this.tableLayoutPanel80.Name = "tableLayoutPanel80";
             this.tableLayoutPanel80.RowCount = 2;
             this.tableLayoutPanel80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel80.Size = new System.Drawing.Size(317, 64);
+            this.tableLayoutPanel80.Size = new System.Drawing.Size(42, 23);
             this.tableLayoutPanel80.TabIndex = 18;
             // 
             // tableLayoutPanel81
@@ -3481,12 +3606,12 @@
             this.tableLayoutPanel81.Controls.Add(this.playpausebutton, 1, 0);
             this.tableLayoutPanel81.Controls.Add(this.backbutton, 0, 0);
             this.tableLayoutPanel81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel81.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel81.Location = new System.Drawing.Point(3, 7);
             this.tableLayoutPanel81.Name = "tableLayoutPanel81";
             this.tableLayoutPanel81.RowCount = 1;
             this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel81.Size = new System.Drawing.Size(311, 46);
+            this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel81.Size = new System.Drawing.Size(36, 13);
             this.tableLayoutPanel81.TabIndex = 0;
             // 
             // nextbutton
@@ -3494,9 +3619,9 @@
             this.nextbutton.BackColor = System.Drawing.SystemColors.MenuBar;
             this.nextbutton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nextbutton.Image = ((System.Drawing.Image)(resources.GetObject("nextbutton.Image")));
-            this.nextbutton.Location = new System.Drawing.Point(209, 3);
+            this.nextbutton.Location = new System.Drawing.Point(27, 3);
             this.nextbutton.Name = "nextbutton";
-            this.nextbutton.Size = new System.Drawing.Size(99, 40);
+            this.nextbutton.Size = new System.Drawing.Size(6, 7);
             this.nextbutton.TabIndex = 2;
             this.nextbutton.UseVisualStyleBackColor = false;
             // 
@@ -3505,9 +3630,9 @@
             this.playpausebutton.BackColor = System.Drawing.SystemColors.MenuBar;
             this.playpausebutton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playpausebutton.Image = ((System.Drawing.Image)(resources.GetObject("playpausebutton.Image")));
-            this.playpausebutton.Location = new System.Drawing.Point(106, 3);
+            this.playpausebutton.Location = new System.Drawing.Point(15, 3);
             this.playpausebutton.Name = "playpausebutton";
-            this.playpausebutton.Size = new System.Drawing.Size(97, 40);
+            this.playpausebutton.Size = new System.Drawing.Size(6, 7);
             this.playpausebutton.TabIndex = 1;
             this.playpausebutton.UseVisualStyleBackColor = false;
             // 
@@ -3518,7 +3643,7 @@
             this.backbutton.Image = ((System.Drawing.Image)(resources.GetObject("backbutton.Image")));
             this.backbutton.Location = new System.Drawing.Point(3, 3);
             this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(97, 40);
+            this.backbutton.Size = new System.Drawing.Size(6, 7);
             this.backbutton.TabIndex = 0;
             this.backbutton.UseVisualStyleBackColor = false;
             // 
@@ -3528,7 +3653,7 @@
             this.NameSong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NameSong.Location = new System.Drawing.Point(3, 0);
             this.NameSong.Name = "NameSong";
-            this.NameSong.Size = new System.Drawing.Size(311, 12);
+            this.NameSong.Size = new System.Drawing.Size(36, 4);
             this.NameSong.TabIndex = 1;
             this.NameSong.Text = "label54";
             this.NameSong.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3542,13 +3667,13 @@
             this.tableLayoutPanel22.Controls.Add(this.CerrarSesiónButton, 2, 0);
             this.tableLayoutPanel22.Controls.Add(this.ModificarCuentaButton, 1, 0);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(336, 4);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(61, 4);
             this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(982, 42);
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(159, 14);
             this.tableLayoutPanel22.TabIndex = 18;
             // 
             // CerrarSesiónButton
@@ -3557,10 +3682,10 @@
             this.CerrarSesiónButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CerrarSesiónButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CerrarSesiónButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CerrarSesiónButton.Location = new System.Drawing.Point(812, 2);
+            this.CerrarSesiónButton.Location = new System.Drawing.Point(133, 2);
             this.CerrarSesiónButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CerrarSesiónButton.Name = "CerrarSesiónButton";
-            this.CerrarSesiónButton.Size = new System.Drawing.Size(167, 38);
+            this.CerrarSesiónButton.Size = new System.Drawing.Size(23, 10);
             this.CerrarSesiónButton.TabIndex = 8;
             this.CerrarSesiónButton.Text = "Cerrar Sesión";
             this.CerrarSesiónButton.UseVisualStyleBackColor = false;
@@ -3572,10 +3697,10 @@
             this.ModificarCuentaButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModificarCuentaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarCuentaButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ModificarCuentaButton.Location = new System.Drawing.Point(641, 2);
+            this.ModificarCuentaButton.Location = new System.Drawing.Point(106, 2);
             this.ModificarCuentaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ModificarCuentaButton.Name = "ModificarCuentaButton";
-            this.ModificarCuentaButton.Size = new System.Drawing.Size(165, 38);
+            this.ModificarCuentaButton.Size = new System.Drawing.Size(21, 10);
             this.ModificarCuentaButton.TabIndex = 7;
             this.ModificarCuentaButton.Text = "Modificar Cuenta";
             this.ModificarCuentaButton.UseVisualStyleBackColor = false;
@@ -4758,11 +4883,1491 @@
             // 
             this.openFileDialogCambiarImagen.FileName = "openFileDialog1";
             // 
+            // AdminPanel
+            // 
+            this.AdminPanel.Controls.Add(this.AddMoviePanel);
+            this.AdminPanel.Controls.Add(this.AddSongPanel);
+            this.AdminPanel.Controls.Add(this.tableLayoutPanel85);
+            this.AdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdminPanel.Location = new System.Drawing.Point(0, 0);
+            this.AdminPanel.Name = "AdminPanel";
+            this.AdminPanel.Size = new System.Drawing.Size(1323, 551);
+            this.AdminPanel.TabIndex = 21;
+            // 
+            // AddMoviePanel
+            // 
+            this.AddMoviePanel.Controls.Add(this.tableLayoutPanelAgregarPeliculas);
+            this.AddMoviePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddMoviePanel.Location = new System.Drawing.Point(0, 0);
+            this.AddMoviePanel.Name = "AddMoviePanel";
+            this.AddMoviePanel.Size = new System.Drawing.Size(1323, 551);
+            this.AddMoviePanel.TabIndex = 1;
+            // 
+            // tableLayoutPanelAgregarPeliculas
+            // 
+            this.tableLayoutPanelAgregarPeliculas.ColumnCount = 2;
+            this.tableLayoutPanelAgregarPeliculas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.31536F));
+            this.tableLayoutPanelAgregarPeliculas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.68464F));
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelPelicula, 0, 0);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelTituloP, 1, 1);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelEstudio, 1, 3);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelLargoP, 1, 4);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelAnoP, 1, 5);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelResolucionP, 1, 6);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelMemoriaP, 1, 7);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelDirector, 0, 10);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelNameD, 1, 11);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelSexoD, 1, 12);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelDateD, 1, 13);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelLinkD, 1, 14);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelEscritor, 0, 15);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelNameE, 1, 16);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelSexoEP, 1, 17);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelDateEP, 1, 18);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelLinkEP, 1, 19);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelActor1, 0, 20);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelNameActor1, 1, 21);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelSexoActor1, 1, 22);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelDateActor1, 1, 23);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelLinkActor1, 1, 24);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelActor2, 0, 25);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelNameActor2, 1, 26);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelSexoActor2, 1, 27);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelDateActor2, 1, 28);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelLinkActor2, 1, 29);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelCategoria1, 1, 8);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelCategoria2, 1, 9);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.buttonAgregarPelicula, 0, 30);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.buttonVolverAgregarPelicula, 1, 30);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.comboBoxSexoD, 0, 12);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.comboBoxSexoEP, 0, 17);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.comboBoxSexoActor1, 0, 22);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.comboBoxSexoActor2, 0, 27);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.numericUpDownAnoP, 0, 5);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxTituloP, 0, 1);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxEstudio, 0, 3);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxLargoP, 0, 4);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxResolucionP, 0, 6);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxMemoriaP, 0, 7);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxCategoria1, 0, 8);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxCategoria2, 0, 9);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxNameD, 0, 11);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxLinkD, 0, 14);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxEscritoP, 0, 16);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxLinkEscritorP, 0, 19);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxNameActor1, 0, 21);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxLinkActor1, 0, 24);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxNameActor2, 0, 26);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.textBoxLinkActor2, 0, 29);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.dateTimePickerD, 0, 13);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.dateTimePickerEP, 0, 18);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.dateTimePickerActor1, 0, 23);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.dateTimePickerActor2, 0, 28);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.labelImagenP, 1, 2);
+            this.tableLayoutPanelAgregarPeliculas.Controls.Add(this.buttonImagenP, 0, 2);
+            this.tableLayoutPanelAgregarPeliculas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelAgregarPeliculas.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelAgregarPeliculas.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanelAgregarPeliculas.Name = "tableLayoutPanelAgregarPeliculas";
+            this.tableLayoutPanelAgregarPeliculas.RowCount = 31;
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703704F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.703702F));
+            this.tableLayoutPanelAgregarPeliculas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarPeliculas.Size = new System.Drawing.Size(1323, 551);
+            this.tableLayoutPanelAgregarPeliculas.TabIndex = 1;
+            // 
+            // labelPelicula
+            // 
+            this.labelPelicula.AutoSize = true;
+            this.labelPelicula.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelPelicula.Location = new System.Drawing.Point(4, 0);
+            this.labelPelicula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPelicula.Name = "labelPelicula";
+            this.labelPelicula.Size = new System.Drawing.Size(961, 16);
+            this.labelPelicula.TabIndex = 0;
+            this.labelPelicula.Text = "PELÍCULA";
+            this.labelPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTituloP
+            // 
+            this.labelTituloP.AutoSize = true;
+            this.labelTituloP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTituloP.Location = new System.Drawing.Point(973, 16);
+            this.labelTituloP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTituloP.Name = "labelTituloP";
+            this.labelTituloP.Size = new System.Drawing.Size(346, 16);
+            this.labelTituloP.TabIndex = 1;
+            this.labelTituloP.Text = "Título";
+            this.labelTituloP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelEstudio
+            // 
+            this.labelEstudio.AutoSize = true;
+            this.labelEstudio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelEstudio.Location = new System.Drawing.Point(973, 57);
+            this.labelEstudio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEstudio.Name = "labelEstudio";
+            this.labelEstudio.Size = new System.Drawing.Size(346, 16);
+            this.labelEstudio.TabIndex = 2;
+            this.labelEstudio.Text = "Estudio";
+            this.labelEstudio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelLargoP
+            // 
+            this.labelLargoP.AutoSize = true;
+            this.labelLargoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelLargoP.Location = new System.Drawing.Point(973, 73);
+            this.labelLargoP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLargoP.Name = "labelLargoP";
+            this.labelLargoP.Size = new System.Drawing.Size(346, 16);
+            this.labelLargoP.TabIndex = 3;
+            this.labelLargoP.Text = "Largo";
+            this.labelLargoP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelAnoP
+            // 
+            this.labelAnoP.AutoSize = true;
+            this.labelAnoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelAnoP.Location = new System.Drawing.Point(973, 89);
+            this.labelAnoP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAnoP.Name = "labelAnoP";
+            this.labelAnoP.Size = new System.Drawing.Size(346, 16);
+            this.labelAnoP.TabIndex = 4;
+            this.labelAnoP.Text = "Año";
+            this.labelAnoP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelResolucionP
+            // 
+            this.labelResolucionP.AutoSize = true;
+            this.labelResolucionP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelResolucionP.Location = new System.Drawing.Point(973, 105);
+            this.labelResolucionP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelResolucionP.Name = "labelResolucionP";
+            this.labelResolucionP.Size = new System.Drawing.Size(346, 16);
+            this.labelResolucionP.TabIndex = 5;
+            this.labelResolucionP.Text = "Resolución";
+            this.labelResolucionP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelMemoriaP
+            // 
+            this.labelMemoriaP.AutoSize = true;
+            this.labelMemoriaP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelMemoriaP.Location = new System.Drawing.Point(973, 121);
+            this.labelMemoriaP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelMemoriaP.Name = "labelMemoriaP";
+            this.labelMemoriaP.Size = new System.Drawing.Size(346, 16);
+            this.labelMemoriaP.TabIndex = 6;
+            this.labelMemoriaP.Text = "Memoria";
+            this.labelMemoriaP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDirector
+            // 
+            this.labelDirector.AutoSize = true;
+            this.labelDirector.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDirector.Location = new System.Drawing.Point(4, 187);
+            this.labelDirector.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDirector.Name = "labelDirector";
+            this.labelDirector.Size = new System.Drawing.Size(961, 16);
+            this.labelDirector.TabIndex = 7;
+            this.labelDirector.Text = "DIRECTOR";
+            this.labelDirector.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelNameD
+            // 
+            this.labelNameD.AutoSize = true;
+            this.labelNameD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNameD.Location = new System.Drawing.Point(973, 203);
+            this.labelNameD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameD.Name = "labelNameD";
+            this.labelNameD.Size = new System.Drawing.Size(346, 16);
+            this.labelNameD.TabIndex = 8;
+            this.labelNameD.Text = "Nombre";
+            this.labelNameD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelSexoD
+            // 
+            this.labelSexoD.AutoSize = true;
+            this.labelSexoD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSexoD.Location = new System.Drawing.Point(973, 219);
+            this.labelSexoD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSexoD.Name = "labelSexoD";
+            this.labelSexoD.Size = new System.Drawing.Size(346, 16);
+            this.labelSexoD.TabIndex = 9;
+            this.labelSexoD.Text = "Sexo";
+            this.labelSexoD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDateD
+            // 
+            this.labelDateD.AutoSize = true;
+            this.labelDateD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDateD.Location = new System.Drawing.Point(973, 235);
+            this.labelDateD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateD.Name = "labelDateD";
+            this.labelDateD.Size = new System.Drawing.Size(346, 16);
+            this.labelDateD.TabIndex = 10;
+            this.labelDateD.Text = "Nacimiento";
+            this.labelDateD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelLinkD
+            // 
+            this.labelLinkD.AutoSize = true;
+            this.labelLinkD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelLinkD.Location = new System.Drawing.Point(973, 251);
+            this.labelLinkD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLinkD.Name = "labelLinkD";
+            this.labelLinkD.Size = new System.Drawing.Size(346, 16);
+            this.labelLinkD.TabIndex = 11;
+            this.labelLinkD.Text = "Link";
+            this.labelLinkD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelEscritor
+            // 
+            this.labelEscritor.AutoSize = true;
+            this.labelEscritor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelEscritor.Location = new System.Drawing.Point(4, 267);
+            this.labelEscritor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEscritor.Name = "labelEscritor";
+            this.labelEscritor.Size = new System.Drawing.Size(961, 16);
+            this.labelEscritor.TabIndex = 12;
+            this.labelEscritor.Text = "ESCRITOR";
+            this.labelEscritor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelNameE
+            // 
+            this.labelNameE.AutoSize = true;
+            this.labelNameE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNameE.Location = new System.Drawing.Point(973, 283);
+            this.labelNameE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameE.Name = "labelNameE";
+            this.labelNameE.Size = new System.Drawing.Size(346, 16);
+            this.labelNameE.TabIndex = 13;
+            this.labelNameE.Text = "Nombre";
+            this.labelNameE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelSexoEP
+            // 
+            this.labelSexoEP.AutoSize = true;
+            this.labelSexoEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSexoEP.Location = new System.Drawing.Point(973, 299);
+            this.labelSexoEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSexoEP.Name = "labelSexoEP";
+            this.labelSexoEP.Size = new System.Drawing.Size(346, 16);
+            this.labelSexoEP.TabIndex = 14;
+            this.labelSexoEP.Text = "Sexo";
+            this.labelSexoEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDateEP
+            // 
+            this.labelDateEP.AutoSize = true;
+            this.labelDateEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDateEP.Location = new System.Drawing.Point(973, 315);
+            this.labelDateEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateEP.Name = "labelDateEP";
+            this.labelDateEP.Size = new System.Drawing.Size(346, 16);
+            this.labelDateEP.TabIndex = 15;
+            this.labelDateEP.Text = "Nacimiento";
+            this.labelDateEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelLinkEP
+            // 
+            this.labelLinkEP.AutoSize = true;
+            this.labelLinkEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelLinkEP.Location = new System.Drawing.Point(973, 331);
+            this.labelLinkEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLinkEP.Name = "labelLinkEP";
+            this.labelLinkEP.Size = new System.Drawing.Size(346, 16);
+            this.labelLinkEP.TabIndex = 16;
+            this.labelLinkEP.Text = "Link";
+            this.labelLinkEP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelActor1
+            // 
+            this.labelActor1.AutoSize = true;
+            this.labelActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelActor1.Location = new System.Drawing.Point(4, 347);
+            this.labelActor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelActor1.Name = "labelActor1";
+            this.labelActor1.Size = new System.Drawing.Size(961, 16);
+            this.labelActor1.TabIndex = 17;
+            this.labelActor1.Text = "ACTOR/ACTRIZ 1";
+            this.labelActor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelNameActor1
+            // 
+            this.labelNameActor1.AutoSize = true;
+            this.labelNameActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNameActor1.Location = new System.Drawing.Point(973, 363);
+            this.labelNameActor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameActor1.Name = "labelNameActor1";
+            this.labelNameActor1.Size = new System.Drawing.Size(346, 16);
+            this.labelNameActor1.TabIndex = 18;
+            this.labelNameActor1.Text = "Nombre";
+            this.labelNameActor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelSexoActor1
+            // 
+            this.labelSexoActor1.AutoSize = true;
+            this.labelSexoActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSexoActor1.Location = new System.Drawing.Point(973, 379);
+            this.labelSexoActor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSexoActor1.Name = "labelSexoActor1";
+            this.labelSexoActor1.Size = new System.Drawing.Size(346, 16);
+            this.labelSexoActor1.TabIndex = 19;
+            this.labelSexoActor1.Text = "Sexo";
+            this.labelSexoActor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDateActor1
+            // 
+            this.labelDateActor1.AutoSize = true;
+            this.labelDateActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDateActor1.Location = new System.Drawing.Point(973, 395);
+            this.labelDateActor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateActor1.Name = "labelDateActor1";
+            this.labelDateActor1.Size = new System.Drawing.Size(346, 16);
+            this.labelDateActor1.TabIndex = 20;
+            this.labelDateActor1.Text = "Nacimiento";
+            this.labelDateActor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelLinkActor1
+            // 
+            this.labelLinkActor1.AutoSize = true;
+            this.labelLinkActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelLinkActor1.Location = new System.Drawing.Point(973, 411);
+            this.labelLinkActor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLinkActor1.Name = "labelLinkActor1";
+            this.labelLinkActor1.Size = new System.Drawing.Size(346, 16);
+            this.labelLinkActor1.TabIndex = 21;
+            this.labelLinkActor1.Text = "Link";
+            this.labelLinkActor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelActor2
+            // 
+            this.labelActor2.AutoSize = true;
+            this.labelActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelActor2.Location = new System.Drawing.Point(4, 427);
+            this.labelActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelActor2.Name = "labelActor2";
+            this.labelActor2.Size = new System.Drawing.Size(961, 16);
+            this.labelActor2.TabIndex = 22;
+            this.labelActor2.Text = "ACTOR/ACTRIZ 2";
+            this.labelActor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelNameActor2
+            // 
+            this.labelNameActor2.AutoSize = true;
+            this.labelNameActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNameActor2.Location = new System.Drawing.Point(973, 443);
+            this.labelNameActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameActor2.Name = "labelNameActor2";
+            this.labelNameActor2.Size = new System.Drawing.Size(346, 16);
+            this.labelNameActor2.TabIndex = 23;
+            this.labelNameActor2.Text = "Nombre";
+            this.labelNameActor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelSexoActor2
+            // 
+            this.labelSexoActor2.AutoSize = true;
+            this.labelSexoActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSexoActor2.Location = new System.Drawing.Point(973, 459);
+            this.labelSexoActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSexoActor2.Name = "labelSexoActor2";
+            this.labelSexoActor2.Size = new System.Drawing.Size(346, 16);
+            this.labelSexoActor2.TabIndex = 24;
+            this.labelSexoActor2.Text = "Sexo";
+            this.labelSexoActor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDateActor2
+            // 
+            this.labelDateActor2.AutoSize = true;
+            this.labelDateActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelDateActor2.Location = new System.Drawing.Point(973, 475);
+            this.labelDateActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateActor2.Name = "labelDateActor2";
+            this.labelDateActor2.Size = new System.Drawing.Size(346, 16);
+            this.labelDateActor2.TabIndex = 25;
+            this.labelDateActor2.Text = "Nacimiento";
+            this.labelDateActor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelLinkActor2
+            // 
+            this.labelLinkActor2.AutoSize = true;
+            this.labelLinkActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelLinkActor2.Location = new System.Drawing.Point(973, 491);
+            this.labelLinkActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLinkActor2.Name = "labelLinkActor2";
+            this.labelLinkActor2.Size = new System.Drawing.Size(346, 16);
+            this.labelLinkActor2.TabIndex = 26;
+            this.labelLinkActor2.Text = "Link";
+            this.labelLinkActor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelCategoria1
+            // 
+            this.labelCategoria1.AutoSize = true;
+            this.labelCategoria1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCategoria1.Location = new System.Drawing.Point(973, 137);
+            this.labelCategoria1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCategoria1.Name = "labelCategoria1";
+            this.labelCategoria1.Size = new System.Drawing.Size(346, 25);
+            this.labelCategoria1.TabIndex = 27;
+            this.labelCategoria1.Text = "Categoría 1";
+            this.labelCategoria1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelCategoria2
+            // 
+            this.labelCategoria2.AutoSize = true;
+            this.labelCategoria2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCategoria2.Location = new System.Drawing.Point(973, 162);
+            this.labelCategoria2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCategoria2.Name = "labelCategoria2";
+            this.labelCategoria2.Size = new System.Drawing.Size(346, 25);
+            this.labelCategoria2.TabIndex = 28;
+            this.labelCategoria2.Text = "Categoría 2";
+            this.labelCategoria2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // buttonAgregarPelicula
+            // 
+            this.buttonAgregarPelicula.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAgregarPelicula.Location = new System.Drawing.Point(4, 511);
+            this.buttonAgregarPelicula.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAgregarPelicula.Name = "buttonAgregarPelicula";
+            this.buttonAgregarPelicula.Size = new System.Drawing.Size(961, 36);
+            this.buttonAgregarPelicula.TabIndex = 29;
+            this.buttonAgregarPelicula.Text = "Agregar";
+            this.buttonAgregarPelicula.UseVisualStyleBackColor = true;
+            this.buttonAgregarPelicula.Click += new System.EventHandler(this.buttonAgregarPelicula_Click);
+            // 
+            // buttonVolverAgregarPelicula
+            // 
+            this.buttonVolverAgregarPelicula.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonVolverAgregarPelicula.Location = new System.Drawing.Point(973, 511);
+            this.buttonVolverAgregarPelicula.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonVolverAgregarPelicula.Name = "buttonVolverAgregarPelicula";
+            this.buttonVolverAgregarPelicula.Size = new System.Drawing.Size(346, 36);
+            this.buttonVolverAgregarPelicula.TabIndex = 30;
+            this.buttonVolverAgregarPelicula.Text = "Volver";
+            this.buttonVolverAgregarPelicula.UseVisualStyleBackColor = true;
+            this.buttonVolverAgregarPelicula.Click += new System.EventHandler(this.buttonVolverAgregarPelicula_Click);
+            // 
+            // comboBoxSexoD
+            // 
+            this.comboBoxSexoD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoD.FormattingEnabled = true;
+            this.comboBoxSexoD.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoD.Location = new System.Drawing.Point(4, 223);
+            this.comboBoxSexoD.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoD.Name = "comboBoxSexoD";
+            this.comboBoxSexoD.Size = new System.Drawing.Size(961, 24);
+            this.comboBoxSexoD.TabIndex = 31;
+            // 
+            // comboBoxSexoEP
+            // 
+            this.comboBoxSexoEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoEP.FormattingEnabled = true;
+            this.comboBoxSexoEP.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoEP.Location = new System.Drawing.Point(4, 303);
+            this.comboBoxSexoEP.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoEP.Name = "comboBoxSexoEP";
+            this.comboBoxSexoEP.Size = new System.Drawing.Size(961, 24);
+            this.comboBoxSexoEP.TabIndex = 32;
+            // 
+            // comboBoxSexoActor1
+            // 
+            this.comboBoxSexoActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoActor1.FormattingEnabled = true;
+            this.comboBoxSexoActor1.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoActor1.Location = new System.Drawing.Point(4, 383);
+            this.comboBoxSexoActor1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoActor1.Name = "comboBoxSexoActor1";
+            this.comboBoxSexoActor1.Size = new System.Drawing.Size(961, 24);
+            this.comboBoxSexoActor1.TabIndex = 33;
+            // 
+            // comboBoxSexoActor2
+            // 
+            this.comboBoxSexoActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoActor2.FormattingEnabled = true;
+            this.comboBoxSexoActor2.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoActor2.Location = new System.Drawing.Point(4, 463);
+            this.comboBoxSexoActor2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoActor2.Name = "comboBoxSexoActor2";
+            this.comboBoxSexoActor2.Size = new System.Drawing.Size(961, 24);
+            this.comboBoxSexoActor2.TabIndex = 34;
+            // 
+            // numericUpDownAnoP
+            // 
+            this.numericUpDownAnoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numericUpDownAnoP.Location = new System.Drawing.Point(4, 93);
+            this.numericUpDownAnoP.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownAnoP.Maximum = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.numericUpDownAnoP.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            this.numericUpDownAnoP.Name = "numericUpDownAnoP";
+            this.numericUpDownAnoP.Size = new System.Drawing.Size(961, 22);
+            this.numericUpDownAnoP.TabIndex = 35;
+            this.numericUpDownAnoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownAnoP.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
+            // textBoxTituloP
+            // 
+            this.textBoxTituloP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTituloP.Location = new System.Drawing.Point(4, 20);
+            this.textBoxTituloP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTituloP.Name = "textBoxTituloP";
+            this.textBoxTituloP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxTituloP.TabIndex = 36;
+            // 
+            // textBoxEstudio
+            // 
+            this.textBoxEstudio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxEstudio.Location = new System.Drawing.Point(4, 61);
+            this.textBoxEstudio.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEstudio.Name = "textBoxEstudio";
+            this.textBoxEstudio.Size = new System.Drawing.Size(961, 22);
+            this.textBoxEstudio.TabIndex = 37;
+            // 
+            // textBoxLargoP
+            // 
+            this.textBoxLargoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLargoP.Location = new System.Drawing.Point(4, 77);
+            this.textBoxLargoP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLargoP.Name = "textBoxLargoP";
+            this.textBoxLargoP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxLargoP.TabIndex = 38;
+            // 
+            // textBoxResolucionP
+            // 
+            this.textBoxResolucionP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxResolucionP.Location = new System.Drawing.Point(4, 109);
+            this.textBoxResolucionP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxResolucionP.Name = "textBoxResolucionP";
+            this.textBoxResolucionP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxResolucionP.TabIndex = 39;
+            // 
+            // textBoxMemoriaP
+            // 
+            this.textBoxMemoriaP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemoriaP.Location = new System.Drawing.Point(4, 125);
+            this.textBoxMemoriaP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMemoriaP.Name = "textBoxMemoriaP";
+            this.textBoxMemoriaP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxMemoriaP.TabIndex = 40;
+            // 
+            // textBoxCategoria1
+            // 
+            this.textBoxCategoria1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCategoria1.Location = new System.Drawing.Point(4, 141);
+            this.textBoxCategoria1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCategoria1.Name = "textBoxCategoria1";
+            this.textBoxCategoria1.Size = new System.Drawing.Size(961, 22);
+            this.textBoxCategoria1.TabIndex = 41;
+            // 
+            // textBoxCategoria2
+            // 
+            this.textBoxCategoria2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxCategoria2.Location = new System.Drawing.Point(4, 166);
+            this.textBoxCategoria2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCategoria2.Name = "textBoxCategoria2";
+            this.textBoxCategoria2.Size = new System.Drawing.Size(961, 22);
+            this.textBoxCategoria2.TabIndex = 42;
+            // 
+            // textBoxNameD
+            // 
+            this.textBoxNameD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameD.Location = new System.Drawing.Point(4, 207);
+            this.textBoxNameD.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameD.Name = "textBoxNameD";
+            this.textBoxNameD.Size = new System.Drawing.Size(961, 22);
+            this.textBoxNameD.TabIndex = 43;
+            // 
+            // textBoxLinkD
+            // 
+            this.textBoxLinkD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkD.Location = new System.Drawing.Point(4, 255);
+            this.textBoxLinkD.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkD.Name = "textBoxLinkD";
+            this.textBoxLinkD.Size = new System.Drawing.Size(961, 22);
+            this.textBoxLinkD.TabIndex = 44;
+            // 
+            // textBoxEscritoP
+            // 
+            this.textBoxEscritoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxEscritoP.Location = new System.Drawing.Point(4, 287);
+            this.textBoxEscritoP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEscritoP.Name = "textBoxEscritoP";
+            this.textBoxEscritoP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxEscritoP.TabIndex = 45;
+            // 
+            // textBoxLinkEscritorP
+            // 
+            this.textBoxLinkEscritorP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkEscritorP.Location = new System.Drawing.Point(4, 335);
+            this.textBoxLinkEscritorP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkEscritorP.Name = "textBoxLinkEscritorP";
+            this.textBoxLinkEscritorP.Size = new System.Drawing.Size(961, 22);
+            this.textBoxLinkEscritorP.TabIndex = 46;
+            // 
+            // textBoxNameActor1
+            // 
+            this.textBoxNameActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameActor1.Location = new System.Drawing.Point(4, 367);
+            this.textBoxNameActor1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameActor1.Name = "textBoxNameActor1";
+            this.textBoxNameActor1.Size = new System.Drawing.Size(961, 22);
+            this.textBoxNameActor1.TabIndex = 47;
+            // 
+            // textBoxLinkActor1
+            // 
+            this.textBoxLinkActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkActor1.Location = new System.Drawing.Point(4, 415);
+            this.textBoxLinkActor1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkActor1.Name = "textBoxLinkActor1";
+            this.textBoxLinkActor1.Size = new System.Drawing.Size(961, 22);
+            this.textBoxLinkActor1.TabIndex = 48;
+            // 
+            // textBoxNameActor2
+            // 
+            this.textBoxNameActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameActor2.Location = new System.Drawing.Point(4, 447);
+            this.textBoxNameActor2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameActor2.Name = "textBoxNameActor2";
+            this.textBoxNameActor2.Size = new System.Drawing.Size(961, 22);
+            this.textBoxNameActor2.TabIndex = 49;
+            // 
+            // textBoxLinkActor2
+            // 
+            this.textBoxLinkActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkActor2.Location = new System.Drawing.Point(4, 495);
+            this.textBoxLinkActor2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkActor2.Name = "textBoxLinkActor2";
+            this.textBoxLinkActor2.Size = new System.Drawing.Size(961, 22);
+            this.textBoxLinkActor2.TabIndex = 50;
+            // 
+            // dateTimePickerD
+            // 
+            this.dateTimePickerD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerD.Location = new System.Drawing.Point(4, 239);
+            this.dateTimePickerD.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerD.Name = "dateTimePickerD";
+            this.dateTimePickerD.Size = new System.Drawing.Size(961, 22);
+            this.dateTimePickerD.TabIndex = 51;
+            // 
+            // dateTimePickerEP
+            // 
+            this.dateTimePickerEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerEP.Location = new System.Drawing.Point(4, 319);
+            this.dateTimePickerEP.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerEP.Name = "dateTimePickerEP";
+            this.dateTimePickerEP.Size = new System.Drawing.Size(961, 22);
+            this.dateTimePickerEP.TabIndex = 52;
+            // 
+            // dateTimePickerActor1
+            // 
+            this.dateTimePickerActor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerActor1.Location = new System.Drawing.Point(4, 399);
+            this.dateTimePickerActor1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerActor1.Name = "dateTimePickerActor1";
+            this.dateTimePickerActor1.Size = new System.Drawing.Size(961, 22);
+            this.dateTimePickerActor1.TabIndex = 53;
+            // 
+            // dateTimePickerActor2
+            // 
+            this.dateTimePickerActor2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerActor2.Location = new System.Drawing.Point(4, 479);
+            this.dateTimePickerActor2.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerActor2.Name = "dateTimePickerActor2";
+            this.dateTimePickerActor2.Size = new System.Drawing.Size(961, 22);
+            this.dateTimePickerActor2.TabIndex = 54;
+            // 
+            // labelImagenP
+            // 
+            this.labelImagenP.AutoSize = true;
+            this.labelImagenP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelImagenP.Location = new System.Drawing.Point(973, 32);
+            this.labelImagenP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelImagenP.Name = "labelImagenP";
+            this.labelImagenP.Size = new System.Drawing.Size(346, 25);
+            this.labelImagenP.TabIndex = 55;
+            this.labelImagenP.Text = "Imagen";
+            this.labelImagenP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // buttonImagenP
+            // 
+            this.buttonImagenP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonImagenP.Location = new System.Drawing.Point(4, 36);
+            this.buttonImagenP.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonImagenP.Name = "buttonImagenP";
+            this.buttonImagenP.Size = new System.Drawing.Size(961, 17);
+            this.buttonImagenP.TabIndex = 56;
+            this.buttonImagenP.Text = "Seleccionar";
+            this.buttonImagenP.UseVisualStyleBackColor = true;
+            this.buttonImagenP.Click += new System.EventHandler(this.buttonImagenP_Click);
+            // 
+            // tableLayoutPanel85
+            // 
+            this.tableLayoutPanel85.ColumnCount = 5;
+            this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.Controls.Add(this.GoAddMoviePanel, 3, 2);
+            this.tableLayoutPanel85.Controls.Add(this.GoAddSongPanel, 1, 2);
+            this.tableLayoutPanel85.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel85.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel85.Name = "tableLayoutPanel85";
+            this.tableLayoutPanel85.RowCount = 5;
+            this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel85.Size = new System.Drawing.Size(1323, 551);
+            this.tableLayoutPanel85.TabIndex = 0;
+            // 
+            // GoAddMoviePanel
+            // 
+            this.GoAddMoviePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GoAddMoviePanel.Location = new System.Drawing.Point(795, 223);
+            this.GoAddMoviePanel.Name = "GoAddMoviePanel";
+            this.GoAddMoviePanel.Size = new System.Drawing.Size(258, 104);
+            this.GoAddMoviePanel.TabIndex = 1;
+            this.GoAddMoviePanel.Text = "Agregar Película";
+            this.GoAddMoviePanel.UseVisualStyleBackColor = true;
+            this.GoAddMoviePanel.Click += new System.EventHandler(this.GoAddMoviePanel_Click);
+            // 
+            // GoAddSongPanel
+            // 
+            this.GoAddSongPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GoAddSongPanel.Location = new System.Drawing.Point(267, 223);
+            this.GoAddSongPanel.Name = "GoAddSongPanel";
+            this.GoAddSongPanel.Size = new System.Drawing.Size(258, 104);
+            this.GoAddSongPanel.TabIndex = 0;
+            this.GoAddSongPanel.Text = "Agregar Canción";
+            this.GoAddSongPanel.UseVisualStyleBackColor = true;
+            this.GoAddSongPanel.Click += new System.EventHandler(this.GoAddSongPanel_Click);
+            // 
+            // AddSongPanel
+            // 
+            this.AddSongPanel.Controls.Add(this.tableLayoutPanelAgregarCanciones);
+            this.AddSongPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddSongPanel.Location = new System.Drawing.Point(0, 0);
+            this.AddSongPanel.Name = "AddSongPanel";
+            this.AddSongPanel.Size = new System.Drawing.Size(1323, 551);
+            this.AddSongPanel.TabIndex = 0;
+            // 
+            // tableLayoutPanelAgregarCanciones
+            // 
+            this.tableLayoutPanelAgregarCanciones.ColumnCount = 2;
+            this.tableLayoutPanelAgregarCanciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.03268F));
+            this.tableLayoutPanelAgregarCanciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.96732F));
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.CANCION, 0, 0);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Titulo, 1, 1);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Largo, 1, 2);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Memoria, 1, 3);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Resolucion, 1, 4);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Artista, 0, 5);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Nombre, 1, 6);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.SexoA, 1, 7);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.DateA, 1, 8);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.LinkA, 1, 9);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Compositor, 0, 10);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.NombreC, 1, 11);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.SexoC, 1, 12);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.DateC, 1, 13);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.LinkC, 1, 14);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Escritor, 0, 15);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.NombreE, 1, 16);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.SexoE, 1, 17);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.DateE, 1, 18);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.LinkE, 1, 19);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Album, 0, 20);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.TituloA, 1, 21);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Ano, 1, 22);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.ImagenC, 1, 23);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Genero1, 1, 24);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.Genero2, 1, 25);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.comboBoxSexoA, 0, 7);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.comboBoxSexoC, 0, 12);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.comboBoxSexoE, 0, 17);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxTitulo, 0, 1);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxLargo, 0, 2);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxMemoriaC, 0, 3);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxResolucionC, 0, 4);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxNameA, 0, 6);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxLinkA, 0, 9);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxNameC, 0, 11);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxLinkC, 0, 14);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxNameE, 0, 16);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxLinkE, 0, 19);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxTituloA, 0, 21);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxGenero1, 0, 24);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.textBoxGenero2, 0, 25);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.numericUpDownAnoAlbum, 0, 22);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.buttonAgregarCancion, 0, 26);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.buttonVolverAgregarCanciones, 1, 26);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.dateTimePickerA, 0, 8);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.dateTimePickerC, 0, 13);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.dateTimePickerEC, 0, 18);
+            this.tableLayoutPanelAgregarCanciones.Controls.Add(this.buttonImagenC, 0, 23);
+            this.tableLayoutPanelAgregarCanciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelAgregarCanciones.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelAgregarCanciones.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanelAgregarCanciones.Name = "tableLayoutPanelAgregarCanciones";
+            this.tableLayoutPanelAgregarCanciones.RowCount = 27;
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166667F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarCanciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanelAgregarCanciones.Size = new System.Drawing.Size(1323, 551);
+            this.tableLayoutPanelAgregarCanciones.TabIndex = 1;
+            // 
+            // CANCION
+            // 
+            this.CANCION.AutoSize = true;
+            this.CANCION.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CANCION.Location = new System.Drawing.Point(4, 0);
+            this.CANCION.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CANCION.Name = "CANCION";
+            this.CANCION.Size = new System.Drawing.Size(852, 19);
+            this.CANCION.TabIndex = 0;
+            this.CANCION.Text = "CANCIÓN";
+            this.CANCION.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Titulo
+            // 
+            this.Titulo.AutoSize = true;
+            this.Titulo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Titulo.Location = new System.Drawing.Point(864, 19);
+            this.Titulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Size = new System.Drawing.Size(455, 19);
+            this.Titulo.TabIndex = 1;
+            this.Titulo.Text = "Título";
+            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Largo
+            // 
+            this.Largo.AutoSize = true;
+            this.Largo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Largo.Location = new System.Drawing.Point(864, 38);
+            this.Largo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Largo.Name = "Largo";
+            this.Largo.Size = new System.Drawing.Size(455, 19);
+            this.Largo.TabIndex = 2;
+            this.Largo.Text = "Largo";
+            this.Largo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Memoria
+            // 
+            this.Memoria.AutoSize = true;
+            this.Memoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Memoria.Location = new System.Drawing.Point(864, 57);
+            this.Memoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Memoria.Name = "Memoria";
+            this.Memoria.Size = new System.Drawing.Size(455, 19);
+            this.Memoria.TabIndex = 3;
+            this.Memoria.Text = "Memoria";
+            this.Memoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Resolucion
+            // 
+            this.Resolucion.AutoSize = true;
+            this.Resolucion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Resolucion.Location = new System.Drawing.Point(864, 76);
+            this.Resolucion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Resolucion.Name = "Resolucion";
+            this.Resolucion.Size = new System.Drawing.Size(455, 19);
+            this.Resolucion.TabIndex = 4;
+            this.Resolucion.Text = "Resolución";
+            this.Resolucion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Artista
+            // 
+            this.Artista.AutoSize = true;
+            this.Artista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Artista.Location = new System.Drawing.Point(4, 95);
+            this.Artista.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Artista.Name = "Artista";
+            this.Artista.Size = new System.Drawing.Size(852, 19);
+            this.Artista.TabIndex = 5;
+            this.Artista.Text = "ARTISTA";
+            this.Artista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Nombre
+            // 
+            this.Nombre.AutoSize = true;
+            this.Nombre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Nombre.Location = new System.Drawing.Point(864, 114);
+            this.Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(455, 19);
+            this.Nombre.TabIndex = 6;
+            this.Nombre.Text = "Nombre";
+            this.Nombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // SexoA
+            // 
+            this.SexoA.AutoSize = true;
+            this.SexoA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SexoA.Location = new System.Drawing.Point(864, 133);
+            this.SexoA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SexoA.Name = "SexoA";
+            this.SexoA.Size = new System.Drawing.Size(455, 19);
+            this.SexoA.TabIndex = 7;
+            this.SexoA.Text = "Sexo";
+            this.SexoA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // DateA
+            // 
+            this.DateA.AutoSize = true;
+            this.DateA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DateA.Location = new System.Drawing.Point(864, 152);
+            this.DateA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DateA.Name = "DateA";
+            this.DateA.Size = new System.Drawing.Size(455, 19);
+            this.DateA.TabIndex = 8;
+            this.DateA.Text = "Nacimiento";
+            this.DateA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LinkA
+            // 
+            this.LinkA.AutoSize = true;
+            this.LinkA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LinkA.Location = new System.Drawing.Point(864, 171);
+            this.LinkA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LinkA.Name = "LinkA";
+            this.LinkA.Size = new System.Drawing.Size(455, 19);
+            this.LinkA.TabIndex = 9;
+            this.LinkA.Text = "Link";
+            this.LinkA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Compositor
+            // 
+            this.Compositor.AutoSize = true;
+            this.Compositor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Compositor.Location = new System.Drawing.Point(4, 190);
+            this.Compositor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Compositor.Name = "Compositor";
+            this.Compositor.Size = new System.Drawing.Size(852, 19);
+            this.Compositor.TabIndex = 10;
+            this.Compositor.Text = "COMPOSITOR";
+            this.Compositor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // NombreC
+            // 
+            this.NombreC.AutoSize = true;
+            this.NombreC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NombreC.Location = new System.Drawing.Point(864, 209);
+            this.NombreC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NombreC.Name = "NombreC";
+            this.NombreC.Size = new System.Drawing.Size(455, 19);
+            this.NombreC.TabIndex = 11;
+            this.NombreC.Text = "Nombre";
+            this.NombreC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // SexoC
+            // 
+            this.SexoC.AutoSize = true;
+            this.SexoC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SexoC.Location = new System.Drawing.Point(864, 228);
+            this.SexoC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SexoC.Name = "SexoC";
+            this.SexoC.Size = new System.Drawing.Size(455, 19);
+            this.SexoC.TabIndex = 12;
+            this.SexoC.Text = "Sexo";
+            this.SexoC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // DateC
+            // 
+            this.DateC.AutoSize = true;
+            this.DateC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DateC.Location = new System.Drawing.Point(864, 247);
+            this.DateC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DateC.Name = "DateC";
+            this.DateC.Size = new System.Drawing.Size(455, 19);
+            this.DateC.TabIndex = 13;
+            this.DateC.Text = "Nacimiento";
+            this.DateC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LinkC
+            // 
+            this.LinkC.AutoSize = true;
+            this.LinkC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LinkC.Location = new System.Drawing.Point(864, 266);
+            this.LinkC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LinkC.Name = "LinkC";
+            this.LinkC.Size = new System.Drawing.Size(455, 19);
+            this.LinkC.TabIndex = 14;
+            this.LinkC.Text = "Link";
+            this.LinkC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Escritor
+            // 
+            this.Escritor.AutoSize = true;
+            this.Escritor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Escritor.Location = new System.Drawing.Point(4, 285);
+            this.Escritor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Escritor.Name = "Escritor";
+            this.Escritor.Size = new System.Drawing.Size(852, 19);
+            this.Escritor.TabIndex = 15;
+            this.Escritor.Text = "ESCRITOR";
+            this.Escritor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // NombreE
+            // 
+            this.NombreE.AutoSize = true;
+            this.NombreE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NombreE.Location = new System.Drawing.Point(864, 304);
+            this.NombreE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NombreE.Name = "NombreE";
+            this.NombreE.Size = new System.Drawing.Size(455, 19);
+            this.NombreE.TabIndex = 16;
+            this.NombreE.Text = "Nombre";
+            this.NombreE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // SexoE
+            // 
+            this.SexoE.AutoSize = true;
+            this.SexoE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SexoE.Location = new System.Drawing.Point(864, 323);
+            this.SexoE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SexoE.Name = "SexoE";
+            this.SexoE.Size = new System.Drawing.Size(455, 19);
+            this.SexoE.TabIndex = 17;
+            this.SexoE.Text = "Sexo";
+            this.SexoE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // DateE
+            // 
+            this.DateE.AutoSize = true;
+            this.DateE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DateE.Location = new System.Drawing.Point(864, 342);
+            this.DateE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DateE.Name = "DateE";
+            this.DateE.Size = new System.Drawing.Size(455, 19);
+            this.DateE.TabIndex = 18;
+            this.DateE.Text = "Nacimiento";
+            this.DateE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LinkE
+            // 
+            this.LinkE.AutoSize = true;
+            this.LinkE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LinkE.Location = new System.Drawing.Point(864, 361);
+            this.LinkE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LinkE.Name = "LinkE";
+            this.LinkE.Size = new System.Drawing.Size(455, 19);
+            this.LinkE.TabIndex = 19;
+            this.LinkE.Text = "Link";
+            this.LinkE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Album
+            // 
+            this.Album.AutoSize = true;
+            this.Album.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Album.Location = new System.Drawing.Point(4, 380);
+            this.Album.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Album.Name = "Album";
+            this.Album.Size = new System.Drawing.Size(852, 19);
+            this.Album.TabIndex = 20;
+            this.Album.Text = "ÁLBUM";
+            this.Album.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TituloA
+            // 
+            this.TituloA.AutoSize = true;
+            this.TituloA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TituloA.Location = new System.Drawing.Point(864, 399);
+            this.TituloA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TituloA.Name = "TituloA";
+            this.TituloA.Size = new System.Drawing.Size(455, 19);
+            this.TituloA.TabIndex = 21;
+            this.TituloA.Text = "Título";
+            this.TituloA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Ano
+            // 
+            this.Ano.AutoSize = true;
+            this.Ano.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Ano.Location = new System.Drawing.Point(864, 418);
+            this.Ano.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Ano.Name = "Ano";
+            this.Ano.Size = new System.Drawing.Size(455, 19);
+            this.Ano.TabIndex = 22;
+            this.Ano.Text = "Año";
+            this.Ano.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ImagenC
+            // 
+            this.ImagenC.AutoSize = true;
+            this.ImagenC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImagenC.Location = new System.Drawing.Point(864, 437);
+            this.ImagenC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ImagenC.Name = "ImagenC";
+            this.ImagenC.Size = new System.Drawing.Size(455, 19);
+            this.ImagenC.TabIndex = 23;
+            this.ImagenC.Text = "Imagen";
+            this.ImagenC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Genero1
+            // 
+            this.Genero1.AutoSize = true;
+            this.Genero1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Genero1.Location = new System.Drawing.Point(864, 456);
+            this.Genero1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Genero1.Name = "Genero1";
+            this.Genero1.Size = new System.Drawing.Size(455, 25);
+            this.Genero1.TabIndex = 24;
+            this.Genero1.Text = "Género 1";
+            this.Genero1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Genero2
+            // 
+            this.Genero2.AutoSize = true;
+            this.Genero2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Genero2.Location = new System.Drawing.Point(864, 481);
+            this.Genero2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Genero2.Name = "Genero2";
+            this.Genero2.Size = new System.Drawing.Size(455, 25);
+            this.Genero2.TabIndex = 25;
+            this.Genero2.Text = "Género 2";
+            this.Genero2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBoxSexoA
+            // 
+            this.comboBoxSexoA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoA.FormattingEnabled = true;
+            this.comboBoxSexoA.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoA.Location = new System.Drawing.Point(4, 137);
+            this.comboBoxSexoA.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoA.Name = "comboBoxSexoA";
+            this.comboBoxSexoA.Size = new System.Drawing.Size(852, 24);
+            this.comboBoxSexoA.TabIndex = 26;
+            // 
+            // comboBoxSexoC
+            // 
+            this.comboBoxSexoC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoC.FormattingEnabled = true;
+            this.comboBoxSexoC.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoC.Location = new System.Drawing.Point(4, 232);
+            this.comboBoxSexoC.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoC.Name = "comboBoxSexoC";
+            this.comboBoxSexoC.Size = new System.Drawing.Size(852, 24);
+            this.comboBoxSexoC.TabIndex = 27;
+            // 
+            // comboBoxSexoE
+            // 
+            this.comboBoxSexoE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSexoE.FormattingEnabled = true;
+            this.comboBoxSexoE.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
+            this.comboBoxSexoE.Location = new System.Drawing.Point(4, 327);
+            this.comboBoxSexoE.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSexoE.Name = "comboBoxSexoE";
+            this.comboBoxSexoE.Size = new System.Drawing.Size(852, 24);
+            this.comboBoxSexoE.TabIndex = 28;
+            // 
+            // textBoxTitulo
+            // 
+            this.textBoxTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTitulo.Location = new System.Drawing.Point(4, 23);
+            this.textBoxTitulo.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTitulo.Name = "textBoxTitulo";
+            this.textBoxTitulo.Size = new System.Drawing.Size(852, 22);
+            this.textBoxTitulo.TabIndex = 29;
+            // 
+            // textBoxLargo
+            // 
+            this.textBoxLargo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLargo.Location = new System.Drawing.Point(4, 42);
+            this.textBoxLargo.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLargo.Name = "textBoxLargo";
+            this.textBoxLargo.Size = new System.Drawing.Size(852, 22);
+            this.textBoxLargo.TabIndex = 30;
+            // 
+            // textBoxMemoriaC
+            // 
+            this.textBoxMemoriaC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemoriaC.Location = new System.Drawing.Point(4, 61);
+            this.textBoxMemoriaC.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMemoriaC.Name = "textBoxMemoriaC";
+            this.textBoxMemoriaC.Size = new System.Drawing.Size(852, 22);
+            this.textBoxMemoriaC.TabIndex = 31;
+            // 
+            // textBoxResolucionC
+            // 
+            this.textBoxResolucionC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxResolucionC.Location = new System.Drawing.Point(4, 80);
+            this.textBoxResolucionC.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxResolucionC.Name = "textBoxResolucionC";
+            this.textBoxResolucionC.Size = new System.Drawing.Size(852, 22);
+            this.textBoxResolucionC.TabIndex = 32;
+            // 
+            // textBoxNameA
+            // 
+            this.textBoxNameA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameA.Location = new System.Drawing.Point(4, 118);
+            this.textBoxNameA.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameA.Name = "textBoxNameA";
+            this.textBoxNameA.Size = new System.Drawing.Size(852, 22);
+            this.textBoxNameA.TabIndex = 33;
+            // 
+            // textBoxLinkA
+            // 
+            this.textBoxLinkA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkA.Location = new System.Drawing.Point(4, 175);
+            this.textBoxLinkA.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkA.Name = "textBoxLinkA";
+            this.textBoxLinkA.Size = new System.Drawing.Size(852, 22);
+            this.textBoxLinkA.TabIndex = 34;
+            // 
+            // textBoxNameC
+            // 
+            this.textBoxNameC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameC.Location = new System.Drawing.Point(4, 213);
+            this.textBoxNameC.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameC.Name = "textBoxNameC";
+            this.textBoxNameC.Size = new System.Drawing.Size(852, 22);
+            this.textBoxNameC.TabIndex = 35;
+            // 
+            // textBoxLinkC
+            // 
+            this.textBoxLinkC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkC.Location = new System.Drawing.Point(4, 270);
+            this.textBoxLinkC.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkC.Name = "textBoxLinkC";
+            this.textBoxLinkC.Size = new System.Drawing.Size(852, 22);
+            this.textBoxLinkC.TabIndex = 36;
+            // 
+            // textBoxNameE
+            // 
+            this.textBoxNameE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxNameE.Location = new System.Drawing.Point(4, 308);
+            this.textBoxNameE.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNameE.Name = "textBoxNameE";
+            this.textBoxNameE.Size = new System.Drawing.Size(852, 22);
+            this.textBoxNameE.TabIndex = 37;
+            // 
+            // textBoxLinkE
+            // 
+            this.textBoxLinkE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxLinkE.Location = new System.Drawing.Point(4, 365);
+            this.textBoxLinkE.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLinkE.Name = "textBoxLinkE";
+            this.textBoxLinkE.Size = new System.Drawing.Size(852, 22);
+            this.textBoxLinkE.TabIndex = 38;
+            // 
+            // textBoxTituloA
+            // 
+            this.textBoxTituloA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTituloA.Location = new System.Drawing.Point(4, 403);
+            this.textBoxTituloA.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTituloA.Name = "textBoxTituloA";
+            this.textBoxTituloA.Size = new System.Drawing.Size(852, 22);
+            this.textBoxTituloA.TabIndex = 39;
+            // 
+            // textBoxGenero1
+            // 
+            this.textBoxGenero1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGenero1.Location = new System.Drawing.Point(4, 460);
+            this.textBoxGenero1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGenero1.Name = "textBoxGenero1";
+            this.textBoxGenero1.Size = new System.Drawing.Size(852, 22);
+            this.textBoxGenero1.TabIndex = 40;
+            // 
+            // textBoxGenero2
+            // 
+            this.textBoxGenero2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGenero2.Location = new System.Drawing.Point(4, 485);
+            this.textBoxGenero2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGenero2.Name = "textBoxGenero2";
+            this.textBoxGenero2.Size = new System.Drawing.Size(852, 22);
+            this.textBoxGenero2.TabIndex = 41;
+            // 
+            // numericUpDownAnoAlbum
+            // 
+            this.numericUpDownAnoAlbum.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numericUpDownAnoAlbum.Location = new System.Drawing.Point(4, 422);
+            this.numericUpDownAnoAlbum.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownAnoAlbum.Maximum = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.numericUpDownAnoAlbum.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            this.numericUpDownAnoAlbum.Name = "numericUpDownAnoAlbum";
+            this.numericUpDownAnoAlbum.Size = new System.Drawing.Size(852, 22);
+            this.numericUpDownAnoAlbum.TabIndex = 42;
+            this.numericUpDownAnoAlbum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownAnoAlbum.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
+            // buttonAgregarCancion
+            // 
+            this.buttonAgregarCancion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAgregarCancion.Location = new System.Drawing.Point(4, 510);
+            this.buttonAgregarCancion.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAgregarCancion.Name = "buttonAgregarCancion";
+            this.buttonAgregarCancion.Size = new System.Drawing.Size(852, 37);
+            this.buttonAgregarCancion.TabIndex = 43;
+            this.buttonAgregarCancion.Text = "Agregar";
+            this.buttonAgregarCancion.UseVisualStyleBackColor = true;
+            this.buttonAgregarCancion.Click += new System.EventHandler(this.buttonAgregarCancion_Click);
+            // 
+            // buttonVolverAgregarCanciones
+            // 
+            this.buttonVolverAgregarCanciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonVolverAgregarCanciones.Location = new System.Drawing.Point(864, 510);
+            this.buttonVolverAgregarCanciones.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonVolverAgregarCanciones.Name = "buttonVolverAgregarCanciones";
+            this.buttonVolverAgregarCanciones.Size = new System.Drawing.Size(455, 37);
+            this.buttonVolverAgregarCanciones.TabIndex = 44;
+            this.buttonVolverAgregarCanciones.Text = "Volver";
+            this.buttonVolverAgregarCanciones.UseVisualStyleBackColor = true;
+            this.buttonVolverAgregarCanciones.Click += new System.EventHandler(this.buttonVolverAgregarCanciones_Click);
+            // 
+            // dateTimePickerA
+            // 
+            this.dateTimePickerA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerA.Location = new System.Drawing.Point(4, 156);
+            this.dateTimePickerA.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerA.Name = "dateTimePickerA";
+            this.dateTimePickerA.Size = new System.Drawing.Size(852, 22);
+            this.dateTimePickerA.TabIndex = 45;
+            // 
+            // dateTimePickerC
+            // 
+            this.dateTimePickerC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerC.Location = new System.Drawing.Point(4, 251);
+            this.dateTimePickerC.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerC.Name = "dateTimePickerC";
+            this.dateTimePickerC.Size = new System.Drawing.Size(852, 22);
+            this.dateTimePickerC.TabIndex = 46;
+            // 
+            // dateTimePickerEC
+            // 
+            this.dateTimePickerEC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerEC.Location = new System.Drawing.Point(4, 346);
+            this.dateTimePickerEC.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerEC.Name = "dateTimePickerEC";
+            this.dateTimePickerEC.Size = new System.Drawing.Size(852, 22);
+            this.dateTimePickerEC.TabIndex = 47;
+            // 
+            // buttonImagenC
+            // 
+            this.buttonImagenC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonImagenC.Location = new System.Drawing.Point(4, 441);
+            this.buttonImagenC.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonImagenC.Name = "buttonImagenC";
+            this.buttonImagenC.Size = new System.Drawing.Size(852, 11);
+            this.buttonImagenC.TabIndex = 48;
+            this.buttonImagenC.Text = "Seleccionar";
+            this.buttonImagenC.UseVisualStyleBackColor = true;
+            this.buttonImagenC.Click += new System.EventHandler(this.buttonImagenC_Click);
+            // 
+            // openFileDialogImagenAlbum
+            // 
+            this.openFileDialogImagenAlbum.FileName = "openFileDialog1";
+            // 
+            // openFileDialogImagenPelicula
+            // 
+            this.openFileDialogImagenPelicula.FileName = "openFileDialog1";
+            // 
+            // openFileDialogCancion
+            // 
+            this.openFileDialogCancion.FileName = "openFileDialog1";
+            // 
+            // openFileDialogPelicula
+            // 
+            this.openFileDialogPelicula.FileName = "openFileDialog1";
+            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1323, 551);
+            this.Controls.Add(this.AdminPanel);
             this.Controls.Add(this.UserPanel);
             this.Controls.Add(this.ReproductionPanel);
             this.Controls.Add(this.CreateAccountView);
@@ -4951,6 +6556,16 @@
             this.tableLayoutPanel45.ResumeLayout(false);
             this.tableLayoutPanel44.ResumeLayout(false);
             this.tableLayoutPanel43.ResumeLayout(false);
+            this.AdminPanel.ResumeLayout(false);
+            this.AddMoviePanel.ResumeLayout(false);
+            this.tableLayoutPanelAgregarPeliculas.ResumeLayout(false);
+            this.tableLayoutPanelAgregarPeliculas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoP)).EndInit();
+            this.tableLayoutPanel85.ResumeLayout(false);
+            this.AddSongPanel.ResumeLayout(false);
+            this.tableLayoutPanelAgregarCanciones.ResumeLayout(false);
+            this.tableLayoutPanelAgregarCanciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoAlbum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5235,6 +6850,124 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGriedPanelPersona;
         private System.Windows.Forms.OpenFileDialog openFileDialogCambiarImagen;
+        private System.Windows.Forms.Panel AdminPanel;
+        private System.Windows.Forms.Panel AddMoviePanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel85;
+        private System.Windows.Forms.Button GoAddSongPanel;
+        private System.Windows.Forms.Button GoAddMoviePanel;
+        private System.Windows.Forms.Panel AddSongPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelAgregarPeliculas;
+        private System.Windows.Forms.Label labelPelicula;
+        private System.Windows.Forms.Label labelTituloP;
+        private System.Windows.Forms.Label labelEstudio;
+        private System.Windows.Forms.Label labelLargoP;
+        private System.Windows.Forms.Label labelAnoP;
+        private System.Windows.Forms.Label labelResolucionP;
+        private System.Windows.Forms.Label labelMemoriaP;
+        private System.Windows.Forms.Label labelDirector;
+        private System.Windows.Forms.Label labelNameD;
+        private System.Windows.Forms.Label labelSexoD;
+        private System.Windows.Forms.Label labelDateD;
+        private System.Windows.Forms.Label labelLinkD;
+        private System.Windows.Forms.Label labelEscritor;
+        private System.Windows.Forms.Label labelNameE;
+        private System.Windows.Forms.Label labelSexoEP;
+        private System.Windows.Forms.Label labelDateEP;
+        private System.Windows.Forms.Label labelLinkEP;
+        private System.Windows.Forms.Label labelActor1;
+        private System.Windows.Forms.Label labelNameActor1;
+        private System.Windows.Forms.Label labelSexoActor1;
+        private System.Windows.Forms.Label labelDateActor1;
+        private System.Windows.Forms.Label labelLinkActor1;
+        private System.Windows.Forms.Label labelActor2;
+        private System.Windows.Forms.Label labelNameActor2;
+        private System.Windows.Forms.Label labelSexoActor2;
+        private System.Windows.Forms.Label labelDateActor2;
+        private System.Windows.Forms.Label labelLinkActor2;
+        private System.Windows.Forms.Label labelCategoria1;
+        private System.Windows.Forms.Label labelCategoria2;
+        private System.Windows.Forms.Button buttonAgregarPelicula;
+        private System.Windows.Forms.Button buttonVolverAgregarPelicula;
+        private System.Windows.Forms.ComboBox comboBoxSexoD;
+        private System.Windows.Forms.ComboBox comboBoxSexoEP;
+        private System.Windows.Forms.ComboBox comboBoxSexoActor1;
+        private System.Windows.Forms.ComboBox comboBoxSexoActor2;
+        private System.Windows.Forms.NumericUpDown numericUpDownAnoP;
+        private System.Windows.Forms.TextBox textBoxTituloP;
+        private System.Windows.Forms.TextBox textBoxEstudio;
+        private System.Windows.Forms.TextBox textBoxLargoP;
+        private System.Windows.Forms.TextBox textBoxResolucionP;
+        private System.Windows.Forms.TextBox textBoxMemoriaP;
+        private System.Windows.Forms.TextBox textBoxCategoria1;
+        private System.Windows.Forms.TextBox textBoxCategoria2;
+        private System.Windows.Forms.TextBox textBoxNameD;
+        private System.Windows.Forms.TextBox textBoxLinkD;
+        private System.Windows.Forms.TextBox textBoxEscritoP;
+        private System.Windows.Forms.TextBox textBoxLinkEscritorP;
+        private System.Windows.Forms.TextBox textBoxNameActor1;
+        private System.Windows.Forms.TextBox textBoxLinkActor1;
+        private System.Windows.Forms.TextBox textBoxNameActor2;
+        private System.Windows.Forms.TextBox textBoxLinkActor2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerD;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEP;
+        private System.Windows.Forms.DateTimePicker dateTimePickerActor1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerActor2;
+        private System.Windows.Forms.Label labelImagenP;
+        private System.Windows.Forms.Button buttonImagenP;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelAgregarCanciones;
+        private System.Windows.Forms.Label CANCION;
+        private System.Windows.Forms.Label Titulo;
+        private System.Windows.Forms.Label Largo;
+        private System.Windows.Forms.Label Memoria;
+        private System.Windows.Forms.Label Resolucion;
+        private System.Windows.Forms.Label Artista;
+        private System.Windows.Forms.Label Nombre;
+        private System.Windows.Forms.Label SexoA;
+        private System.Windows.Forms.Label DateA;
+        private System.Windows.Forms.Label LinkA;
+        private System.Windows.Forms.Label Compositor;
+        private System.Windows.Forms.Label NombreC;
+        private System.Windows.Forms.Label SexoC;
+        private System.Windows.Forms.Label DateC;
+        private System.Windows.Forms.Label LinkC;
+        private System.Windows.Forms.Label Escritor;
+        private System.Windows.Forms.Label NombreE;
+        private System.Windows.Forms.Label SexoE;
+        private System.Windows.Forms.Label DateE;
+        private System.Windows.Forms.Label LinkE;
+        private System.Windows.Forms.Label Album;
+        private System.Windows.Forms.Label TituloA;
+        private System.Windows.Forms.Label Ano;
+        private System.Windows.Forms.Label ImagenC;
+        private System.Windows.Forms.Label Genero1;
+        private System.Windows.Forms.Label Genero2;
+        private System.Windows.Forms.ComboBox comboBoxSexoA;
+        private System.Windows.Forms.ComboBox comboBoxSexoC;
+        private System.Windows.Forms.ComboBox comboBoxSexoE;
+        private System.Windows.Forms.TextBox textBoxTitulo;
+        private System.Windows.Forms.TextBox textBoxLargo;
+        private System.Windows.Forms.TextBox textBoxMemoriaC;
+        private System.Windows.Forms.TextBox textBoxResolucionC;
+        private System.Windows.Forms.TextBox textBoxNameA;
+        private System.Windows.Forms.TextBox textBoxLinkA;
+        private System.Windows.Forms.TextBox textBoxNameC;
+        private System.Windows.Forms.TextBox textBoxLinkC;
+        private System.Windows.Forms.TextBox textBoxNameE;
+        private System.Windows.Forms.TextBox textBoxLinkE;
+        private System.Windows.Forms.TextBox textBoxTituloA;
+        private System.Windows.Forms.TextBox textBoxGenero1;
+        private System.Windows.Forms.TextBox textBoxGenero2;
+        private System.Windows.Forms.NumericUpDown numericUpDownAnoAlbum;
+        private System.Windows.Forms.Button buttonAgregarCancion;
+        private System.Windows.Forms.Button buttonVolverAgregarCanciones;
+        private System.Windows.Forms.DateTimePicker dateTimePickerA;
+        private System.Windows.Forms.DateTimePicker dateTimePickerC;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEC;
+        private System.Windows.Forms.Button buttonImagenC;
+        private System.Windows.Forms.OpenFileDialog openFileDialogImagenAlbum;
+        private System.Windows.Forms.OpenFileDialog openFileDialogImagenPelicula;
+        private System.Windows.Forms.OpenFileDialog openFileDialogCancion;
+        private System.Windows.Forms.OpenFileDialog openFileDialogPelicula;
     }
 }
 

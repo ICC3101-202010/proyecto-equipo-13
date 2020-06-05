@@ -26,7 +26,7 @@ namespace Proyecto_equipo_13_entrega_3
         public event EventHandler<LoginEventArgs> UserChecked;
         public delegate bool CreateAccountEventHandler(object source, RegisterEventArgs args);
         public event CreateAccountEventHandler CreateAccountClicked;
-        public string ruta, dest, name;
+        public string ruta, dest, name, imagen;
 
         //Organizacion
         List<Panel> stackPanels = new List<Panel>();
@@ -333,6 +333,7 @@ namespace Proyecto_equipo_13_entrega_3
             panels.Add("CreateAccountPanel", CreateAccountView);
             panels.Add("ModificarCuentaPanel", ModificarCuentaPanel);
             panels.Add("ReproductionPanel", ReproductionPanel);
+            panels.Add("AdminPanel", AdminPanel);
             foreach (User user in Files.Users)
             {
                 if (user.LOGIN == true)
@@ -559,7 +560,8 @@ namespace Proyecto_equipo_13_entrega_3
             string pass = InputContraseñaLoginView.Text;
             if (username =="Admin" && pass == "Admin")
             {
-
+                stackPanels.Add(panels["AdminPanel"]);
+                ShowLastPanel();
             }
             else
             {
@@ -2130,6 +2132,16 @@ namespace Proyecto_equipo_13_entrega_3
 
         }
 
+        private void GoAddMoviePanel_Click(object sender, EventArgs e)
+        {
+            AddMoviePanel.BringToFront();
+        }
+
+        private void GoAddSongPanel_Click(object sender, EventArgs e)
+        {
+            AddSongPanel.BringToFront();
+        }
+
         private void CambiarImagenShowMovie_Click(object sender, EventArgs e)
         {
             Movies m = null;
@@ -2204,6 +2216,216 @@ namespace Proyecto_equipo_13_entrega_3
             string destFileName = (this.name) + " (Spotflix)" + ".mp3";
             var destFile = System.IO.Path.Combine(dest, destFileName);
             System.IO.File.Copy(ruta, destFile, true);
+        }
+
+        public void AgregarCancion()
+        {
+            string carpeta = Directory.GetCurrentDirectory();
+            char sexo_compositor;
+            if (comboBoxSexoC.SelectedIndex == 1)
+            {
+                sexo_compositor = 'F';
+            }
+            else
+            {
+                sexo_compositor = 'M';
+            }
+            Person compositor = new Person(textBoxNameC.Text, dateTimePickerC.Value, sexo_compositor, textBoxLinkC.Text);
+            char sexo_escritor;
+            if (comboBoxSexoE.SelectedIndex == 1)
+            {
+                sexo_escritor = 'F';
+            }
+            else
+            {
+                sexo_escritor = 'M';
+            }
+            Person escritor = new Person(textBoxNameE.Text, dateTimePickerEC.Value, sexo_escritor, textBoxLinkE.Text);
+            char sexo_artista;
+            if (comboBoxSexoA.SelectedIndex == 1)
+            {
+                sexo_artista = 'F';
+            }
+            else
+            {
+                sexo_artista = 'G';
+            }
+            Artist artista = new Artist(textBoxNameA.Text, dateTimePickerA.Value, sexo_artista, textBoxLinkA.Text);
+            Album album = new Album(textBoxTituloA.Text, new DateTime(Decimal.ToInt32(numericUpDownAnoAlbum.Value), 1, 1), artista, imagen);
+            string titulo = textBoxTitulo.Text;
+            List<string> generos = new List<string>();
+            string genero1 = textBoxGenero1.Text;
+            string genero2 = textBoxGenero2.Text;
+            generos.Add(genero1);
+            generos.Add(genero2);
+            string letra = "";
+            string resolucion = textBoxResolucionC.Text;
+            string memoria = textBoxMemoriaC.Text;
+            string tipo = ".mp3";
+            string nombre;
+            string musica = "";
+            if (openFileDialogCancion.ShowDialog() == DialogResult.OK)
+            {
+                string destFileName = titulo + tipo;
+                nombre = destFileName;
+                var destFile = System.IO.Path.Combine(carpeta, destFileName);
+                string salida = openFileDialogCancion.FileName;
+                System.IO.File.Copy(salida, destFile, true);
+                musica = @"\" + nombre;
+            }
+            int reproducciones = 0;
+            int min = 0;
+            int largo = 0;
+            try
+            {
+                largo = Int32.Parse(textBoxLargo.Text);
+            }
+            catch { }
+            double ratingprom = 0;
+            List<double> rating = new List<double>();
+            Songs cancion = new Songs(titulo, compositor, artista, escritor, largo, generos, letra, resolucion, memoria, reproducciones, rating, ratingprom, musica, tipo, min, album);
+            Files.AllSongs.Add(cancion);
+            MessageBox.Show("La canción se ha agregado correctamente");
+        }
+
+        private void buttonVolverAgregarPelicula_Click(object sender, EventArgs e)
+        {
+            AddMoviePanel.SendToBack();
+        }
+
+        private void buttonAgregarPelicula_Click(object sender, EventArgs e)
+        {
+            AgregarPelicula();
+        }
+
+        private void buttonVolverAgregarCanciones_Click(object sender, EventArgs e)
+        {
+            AddSongPanel.SendToBack();
+        }
+
+        private void buttonAgregarCancion_Click(object sender, EventArgs e)
+        {
+            AgregarCancion();
+        }
+
+        private void buttonImagenC_Click(object sender, EventArgs e)
+        {
+            AgregarImagenCancion();
+        }
+
+        private void buttonImagenP_Click(object sender, EventArgs e)
+        {
+            AgregarImagenPelicula();
+        }
+
+        public void AgregarPelicula()
+        {
+            string carpeta = Directory.GetCurrentDirectory();
+            string movieDirection2 = imagen;
+            string Title = textBoxTituloP.Text;
+            char s_d;
+            if (comboBoxSexoD.SelectedIndex == 1)
+            {
+                s_d = 'F';
+            }
+            else
+            {
+                s_d = 'M';
+            }
+            Person Director = new Person(textBoxNameD.Text, dateTimePickerD.Value, s_d, textBoxLinkD.Text);
+            char a1;
+            if (comboBoxSexoActor1.SelectedIndex == 1)
+            {
+                a1 = 'F';
+            }
+            else
+            {
+                a1 = 'M';
+            }
+            char a2;
+            if (comboBoxSexoActor2.SelectedIndex == 1)
+            {
+                a2 = 'F';
+            }
+            else
+            {
+                a2 = 'M';
+            }
+            Person actor1 = new Person(textBoxNameActor1.Text, dateTimePickerActor1.Value, a1, textBoxLinkActor1.Text);
+            Person actor2 = new Person(textBoxNameActor2.Text, dateTimePickerActor2.Value, a2, textBoxLinkActor2.Text); ;
+            List<Person> Actors = new List<Person>();
+            Actors.Add(actor1);
+            Actors.Add(actor2);
+            char w;
+            if (comboBoxSexoEP.SelectedIndex == 1)
+            {
+                w = 'F';
+            }
+            else
+            {
+                w = 'M';
+            }
+            Person Writer = new Person(textBoxEscritoP.Text, dateTimePickerEP.Value, w, textBoxLinkEscritorP.Text);
+            int Lenght = 0;
+            try
+            {
+                Lenght = Int32.Parse(textBoxLargoP.Text);
+            }
+            catch { }
+            List<string> Categories = new List<string>();
+            string c1 = textBoxCategoria1.Text;
+            string c2 = textBoxCategoria2.Text;
+            Categories.Add(c1);
+            Categories.Add(c2);
+            string Studio = textBoxEstudio.Text;
+            string Description = "";
+            string Year = numericUpDownAnoP.Value.ToString();
+            string Resolution = textBoxResolucionP.Text;
+            string Memory = textBoxMemoriaP.Text;
+            int numReproductions = 0;
+            List<double> Rating = new List<double>();
+            double RatingProm = 0;
+            int Min = 0;
+            string Trailer = "";
+            string nombre;
+            string Video = "";
+            if (openFileDialogPelicula.ShowDialog() == DialogResult.OK)
+            {
+                string destFileName = Title + ".mp4";
+                nombre = destFileName;
+                var destFile = System.IO.Path.Combine(carpeta, destFileName);
+                string salida = openFileDialogPelicula.FileName;
+                System.IO.File.Copy(salida, destFile, true);
+                Video = @"\" + nombre;
+            }
+            List<Songs> SongsMovie = new List<Songs>();
+            Movies pelicula = new Movies(Title, Director, Actors, Writer, Lenght, Categories, Studio, Description, Year, Resolution, Memory, numReproductions, Rating, RatingProm, Trailer, Video, SongsMovie, Min, movieDirection2);
+            Files.AllMovies.Add(pelicula);
+            MessageBox.Show("Se ha agregado correctamente");
+        }
+        public void AgregarImagenCancion()
+        {
+            string carpeta = Directory.GetCurrentDirectory();
+            if (openFileDialogImagenAlbum.ShowDialog() == DialogResult.OK)
+            {
+                string destFileName = textBoxTituloA.Text + ".jpg";
+                var destFile = System.IO.Path.Combine(carpeta, destFileName);
+                string salida = openFileDialogImagenAlbum.FileName;
+                System.IO.File.Copy(salida, destFile, true);
+                imagen = @"\" + destFileName;
+            }
+        }
+        public void AgregarImagenPelicula()
+        {
+            string carpeta = Directory.GetCurrentDirectory();
+            if (openFileDialogImagenPelicula.ShowDialog() == DialogResult.OK)
+            {
+                string destFileName = textBoxTituloP.Text + ".jpg";
+                var destFile = System.IO.Path.Combine(carpeta, destFileName);
+                string salida = openFileDialogImagenPelicula.FileName;
+                System.IO.File.Copy(salida, destFile, true);
+                imagen = @"\" + destFileName;
+            }
         }
     }
 }
