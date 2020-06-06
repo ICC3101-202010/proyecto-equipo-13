@@ -51,6 +51,8 @@ namespace Proyecto_equipo_13_entrega_3
             Files.AllPersons.Add(Composer);
             Files.AllPersons.Add(Artist);
             Files.AllPersons.Add(Writer);
+            List<Person> Final = ((from s in Files.AllPersons select s).Distinct()).ToList();
+            Files.AllPersons = Final;
         }
 
         public string Title1 { get => Title; set => Title = value; }

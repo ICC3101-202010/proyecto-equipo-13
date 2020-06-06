@@ -1670,6 +1670,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             VerMisPlaylits.Controls.Add(dataGridVerPlaylist);
         }
+
         private void FillDataGridAgregarPlaylist()
         {
             User user = GetUser();
@@ -1687,8 +1688,6 @@ namespace Proyecto_equipo_13_entrega_3
             buttons.FlatStyle = FlatStyle.Standard;
             buttons.CellTemplate.Style.BackColor = Color.Black;
             buttons.CellTemplate.Style.ForeColor = Color.White;
-
-
 
             dataGridAgregarAPlaylist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridAgregarAPlaylist.RowTemplate.Height = 100;
@@ -1862,7 +1861,19 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: "+lines2[0]);
                 if (lines2[0] == "Usuario")
                 {
-
+                    //MessageBox.Show(lines2[0] + " " + lines[0]); Usuario keko
+                    foreach (User u in Files.Users)
+                    {
+                        if (u.UserName ==lines[0])
+                        {
+                            foreach (Playlists p in u.MyPlaylist1)
+                            {
+                                FilldataGridVerPlaylistUsuarioExterno(lines[0]);
+                                dataGridVerPlaylistUsuarioExterno.BringToFront();
+                                ShowUserPanel.BringToFront();
+                            }
+                        }
+                    }
                 }
                 else if (lines2[0] == "Persona")
                 {
@@ -1885,6 +1896,76 @@ namespace Proyecto_equipo_13_entrega_3
             }
         }
 
+        private void FilldataGridVerPlaylistUsuarioExterno(string username)
+        {
+            foreach (User u in Files.Users)
+            {
+                if (username == u.UserName)
+                {
+                    dataGridVerPlaylistUsuarioExterno.Rows.Clear();
+                    dataGridVerPlaylistUsuarioExterno.Columns.Clear();
+                    DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+                    nombre.HeaderText = "Nombre";
+                    DataGridViewTextBoxColumn tipo = new DataGridViewTextBoxColumn();
+                    nombre.HeaderText = "Tipo";
+                    DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+                    buttons.HeaderText = @"";
+                    buttons.Text = "Ver Playlist";
+                    buttons.UseColumnTextForButtonValue = true;
+                    buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    buttons.FlatStyle = FlatStyle.Standard;
+                    buttons.CellTemplate.Style.BackColor = Color.Black;
+                    buttons.CellTemplate.Style.ForeColor = Color.White;
+
+                    dataGridVerPlaylistUsuarioExterno.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dataGridVerPlaylistUsuarioExterno.RowTemplate.Height = 100;
+                    dataGridVerPlaylistUsuarioExterno.AllowUserToAddRows = false;
+
+                    dataGridVerPlaylistUsuarioExterno.Columns.Add(nombre);
+                    dataGridVerPlaylistUsuarioExterno.Columns.Add(tipo);
+                    dataGridVerPlaylistUsuarioExterno.Columns.Add(buttons);
+
+                    foreach (Playlists p in u.MyPlaylist1)
+                    {
+                        dataGridVerPlaylistUsuarioExterno.Rows.Add(new object[] { p.Name, p.Type });
+                    }
+                    panel5.Controls.Add(dataGridVerPlaylistUsuarioExterno);
+                }
+            }
+        }
+
+        private void dataGridVerPlaylistUsuarioExterno_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string datosTO = dataGridVerPlaylistUsuarioExterno.Rows[dataGridVerPlaylistUsuarioExterno.CurrentRow.Index].Cells[0].Value.ToString();
+            string datosTO2 = dataGridVerPlaylistUsuarioExterno.Rows[dataGridVerPlaylistUsuarioExterno.CurrentRow.Index].Cells[1].Value.ToString();
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] lines = datosTO.Split(stringSeparators, StringSplitOptions.None);
+            string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
+            if (e.ColumnIndex == 2)
+            {
+                //MessageBox.Show("Seleccionaste a: " + lines[0]+ " y es de tipo " + lines2[0]  ); //lines[0]=NombrePlaylist
+                foreach (User u in Files.Users)
+                {
+                    if (u.UserName == NombreUsuarioTextBox.Text)
+                    {
+                        foreach (Playlists p in u.MyPlaylist1)
+                        {
+                            if (p.Name == lines[0] && lines2[0] == "Canción")
+                            {
+                                FillDataGridViewSongS(p.Playlistsong);
+                                ShowSongsPanel.BringToFront();
+                            }
+                            else if (p.Name == lines[0] && lines2[0] == "Película")
+                            {
+                                FillDataGridViewMovieS(p.Playlistmovie);
+                                ShowMoviesPanel.BringToFront();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         private void dataGriedBuscadorFollowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string datosTO = dataGriedBuscadorFollowers.Rows[dataGriedBuscadorFollowers.CurrentRow.Index].Cells[0].Value.ToString();
@@ -1897,7 +1978,11 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show(lines[0]);
                 if (lines2[0] == "Usuario")
                 {
-
+                    //MessageBox.Show(lines[0]);
+                    NombreUsuarioTextBox.Text = lines[0];
+                    FilldataGridVerPlaylistUsuarioExterno(lines[0]);
+                    dataGridVerPlaylistUsuarioExterno.BringToFront();
+                    ShowUserPanel.BringToFront();
                 }
                 else if (lines2[0] == "Persona")
                 {
@@ -2466,7 +2551,6 @@ namespace Proyecto_equipo_13_entrega_3
                 ShowMoviesPanel.BringToFront();
                 FillDataGridViewMovieS(Files.AllMovies);
             }
-
         }
 
         private void EliminardePlaylist_Click(object sender, EventArgs e)
@@ -2474,6 +2558,39 @@ namespace Proyecto_equipo_13_entrega_3
             User user = GetUser();
             string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
             string type = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+        }
+
+        private void AddToFollowersButton_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            string titulo = PersonInformation.Lines[0];
+            string Titulo = titulo.Replace("Nombre: ", string.Empty);
+            foreach (Person p in Files.AllPersons)
+            {
+                if (p.Name == Titulo)
+                {
+                    user.FollowsP.Add(p);
+                    MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                }
+            }
+            List<Person> Final = ((from s in user.FollowsP select s).Distinct()).ToList();
+            user.FollowsP = Final;
+        }
+
+        private void FollowUserButton_Click(object sender, EventArgs e)
+        {
+            User user = GetUser();
+            string Titulo = NombreUsuarioTextBox.Text;
+            foreach (User u in Files.Users)
+            {
+                if (u.UserName == Titulo)
+                {
+                    user.FollowsU.Add(u);
+                    MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                }
+            }
+            List<User> Final = ((from s in user.FollowsU select s).Distinct()).ToList();
+            user.FollowsU = Final;
         }
 
         public void AgregarPelicula()
