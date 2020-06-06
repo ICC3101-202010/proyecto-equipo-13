@@ -1724,6 +1724,10 @@ namespace Proyecto_equipo_13_entrega_3
                 dataGridVerPlaylist.Visible = false;
                 CambiarNombrePlaylist.Visible = true;
                 EliminardePlaylist.Visible = true;
+                dataGridVerPlaylist.BringToFront();
+                CambiarNombrePlaylist.BringToFront();
+                EliminardePlaylist.BringToFront();
+                tableLayoutPanel89.BringToFront();
             }
             
             dataGridVerPlaylist.Visible = false;
@@ -2564,12 +2568,121 @@ namespace Proyecto_equipo_13_entrega_3
                 FillDataGridViewMovieS(Files.AllMovies);
             }
         }
+        private void FillDataGridEliminarS(List<Songs> songs)
+        {
+            dataGridEliminar.Rows.Clear();
+            dataGridEliminar.Columns.Clear();
+            DataGridViewImageColumn dgvImagen = new DataGridViewImageColumn();
+            dgvImagen.HeaderText = "Canción";
+            dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Información";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
 
+
+            dataGridEliminar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridEliminar.RowTemplate.Height = 200;
+            dataGridEliminar.AllowUserToAddRows = false;
+
+            dataGridEliminar.Columns.Add(dgvImagen);
+            dataGridEliminar.Columns.Add(nombre);
+            dataGridEliminar.Columns.Add(buttons);
+
+            dataGridEliminar.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGridEliminar.Columns[0].Width = 200;
+            dataGridEliminar.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            foreach (Songs song in songs)
+            {
+                var carpeta = Directory.GetCurrentDirectory();
+                var D = carpeta + song.Album1.Image1;
+                dataGridEliminar.Rows.Add(new object[] { System.Drawing.Image.FromFile(D), "Título: " + song.Title1 + "\r\nCantante: " + song.Artist1.Name + "\r\nDuración: " + song.Lenght1.ToString() + " min. \r\nRating: " + song.RatingProm1.ToString() });
+            }
+            VerMisPlaylits.Controls.Add(dataGridEliminar);
+        }
+        private void FillDataGridEliminarM(List<Movies> movies)
+        {
+            dataGridEliminar.Rows.Clear();
+            dataGridEliminar.Columns.Clear();
+            DataGridViewImageColumn dgvImagen = new DataGridViewImageColumn();
+            dgvImagen.HeaderText = "Película";
+            dgvImagen.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            DataGridViewTextBoxColumn nombre = new DataGridViewTextBoxColumn();
+            nombre.HeaderText = "Información";
+            DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+            buttons.HeaderText = @"";
+            buttons.Text = "Seleccionar";
+            buttons.UseColumnTextForButtonValue = true;
+            buttons.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            buttons.FlatStyle = FlatStyle.Standard;
+            buttons.CellTemplate.Style.BackColor = Color.Black;
+            buttons.CellTemplate.Style.ForeColor = Color.White;
+
+
+            dataGridEliminar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridEliminar.RowTemplate.Height = 200;
+            dataGridEliminar.AllowUserToAddRows = false;
+
+            dataGridEliminar.Columns.Add(dgvImagen);
+            dataGridEliminar.Columns.Add(nombre);
+            dataGridEliminar.Columns.Add(buttons);
+
+
+            dataGridEliminar.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGridEliminar.Columns[0].Width = 200;
+            dataGridEliminar.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            foreach (Movies movie in movies)
+            {
+                var carpeta = Directory.GetCurrentDirectory();
+                var H = carpeta + movie.MovieDirection;
+                dataGridEliminar.Rows.Add(new object[] { System.Drawing.Image.FromFile(H), "Título: " + movie.Title1 + "\r\nDirector: " + movie.Director1.Name + "\r\nDuración: " + movie.Lenght1.ToString() + " min. \r\nRating: " + movie.RatingProm1.ToString() });
+            }
+            VerMisPlaylits.Controls.Add(dataGridEliminar);
+        }
         private void EliminardePlaylist_Click(object sender, EventArgs e)
         {
             User user = GetUser();
             string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
             string type = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+            if (type == "Canción")
+            {
+                VerMisPlaylits.Visible = true;
+                VerMisPlaylits.BringToFront();
+                dataGridEliminar.Visible = true;
+                dataGridEliminar.BringToFront();
+                for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                {
+                    if(name == user.MyPlaylist1[i].Name)
+                    {
+                        FillDataGridEliminarS(user.MyPlaylist1[i].Playlistsong);
+                    }
+                    
+                }
+                    
+            }
+            if (type == "Película")
+            {
+                VerMisPlaylits.Visible = true;
+                VerMisPlaylits.BringToFront();
+                dataGridEliminar.Visible = true;
+                dataGridEliminar.BringToFront();
+                for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                {
+                    if (name == user.MyPlaylist1[i].Name)
+                    {
+                        FillDataGridEliminarM(user.MyPlaylist1[i].Playlistmovie);
+                    }
+
+                }
+            }
+
         }
 
         private void AddToFollowersButton_Click(object sender, EventArgs e)
@@ -2935,6 +3048,49 @@ namespace Proyecto_equipo_13_entrega_3
             }
 
             dataGridVerPlaylist.Visible = false;
+        }
+
+        private void dataGridEliminar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            User user = GetUser();
+            string nameP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
+            string typeP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+            string infoCP = dataGridEliminar.Rows[dataGridEliminar.CurrentRow.Index].Cells[1].Value.ToString();
+            string datosc = infoCP.Replace("Título: ", string.Empty);
+            string[] stringSeparators = new string[] { "\r\n" };
+            string[] linescp = datosc.Split(stringSeparators, StringSplitOptions.None);
+
+            if (dataGridEliminar.CurrentCell.ColumnIndex == 2)
+            {
+                if(typeP == "Canción")
+                {
+                    for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                    {
+                        foreach(Songs songs in user.MyPlaylist1[i].Playlistsong)
+                        {
+                            if(songs.Title1 == linescp[0])
+                            {
+                                user.MyPlaylist1[i].Playlistsong.Remove(songs);
+                                MessageBox.Show("Canción eliminada");
+                            }
+                        }
+                    }
+                }
+                else if(typeP == "Película")
+                {
+                    for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                    {
+                        foreach (Movies movies in user.MyPlaylist1[i].Playlistmovie)
+                        {
+                            if (movies.Title1 == linescp[0])
+                            {
+                                user.MyPlaylist1[i].Playlistmovie.Remove(movies);
+                                MessageBox.Show("Película eliminada");
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public void ReproducirQueueMovies()
