@@ -50,8 +50,8 @@ namespace Proyecto_equipo_13_entrega_3
             this.userName = userName;
             this.email = email;
             this.password = password;
-            MyPlaylist.Add(MeGustaSongs1);
-            MyPlaylist.Add(MeGustaMovies1);
+            MyPlaylist1.Add(MeGustaSongs1);
+            MyPlaylist1.Add(MeGustaMovies1);
         }
 
         public User(string type, string userName, string email, string password, bool privacy) //Constructor para Premium
@@ -61,36 +61,10 @@ namespace Proyecto_equipo_13_entrega_3
             this.email = email;
             this.password = password;
             this.Privacy = privacy;
+            MyPlaylist1.Add(MeGustaSongs1);
+            MyPlaylist1.Add(MeGustaMovies1);
         }
         //Recordar que Premium tiene más cosas
-
-
-        //1.- Definir el delegate
-        public delegate void VerifiedEmailEventHandler(object source, EventArgs args);
-        //2.- Definir el evento basado en el delegate anterior
-        public event VerifiedEmailEventHandler EmailVerified;
-        //3.- Disparar el evento
-        protected virtual void OnEmailVerified()
-        {
-            EmailVerified(this, new EventArgs());
-        }
-
-        public void OnEmailSent(object source, EventArgs args)
-        {
-
-            Console.Write("¿Quiere revisar su correo? (si)(no)\n");
-            while (true)
-            {
-                string option = Console.ReadLine();
-                if (option == "si")
-                {
-                    EmailVerified(source, args);
-                    break;
-                }
-                else if (option == "no") { break; }
-                else { Console.WriteLine("La opción que selecciono no es válida seleccione (si) o (no)"); }
-            }
-        }
 
         public bool CheckCredentials(string username, string pass)
         {
@@ -98,83 +72,5 @@ namespace Proyecto_equipo_13_entrega_3
                 return true;
             return false;
         }
-
-        //Admin
-        /*
-        public static bool AddSong()
-        {
-            //Pedir datos y luego entregarselos para agregar una canción
-            Console.WriteLine("Entregar INFO CANCIÓN");
-            Console.ReadLine();
-            Songs song = new Songs();
-            for (int i = 0; i < Files.AllSongs.Count; i++)
-            {
-                if (Files.AllSongs[i] == song)
-                {
-                    return false;
-                }
-            }
-            Files.AllSongs.Add(song);
-            foreach (SmartPlaylist smart in Files.AllSmartPlaylistsSongs)
-            {
-                foreach (string genero in song.Genre1)
-                {
-                    if (genero == smart.NameCriterio)
-                    {
-                        smart.Playlistsong.Add(song);
-                    }
-                }
-                if (song.Artist1.Name == smart.NameCriterio)
-                {
-                    smart.Playlistsong.Add(song);
-                }
-
-            }
-            return true;
-        }
-
-        public static bool AddMovie()
-        {
-            //Pedir datos y luego entregarselos para agregar una película
-            Console.WriteLine("Entregar INFO PELÍCULA");
-            Console.ReadLine();
-            Songs song = new Songs();
-            for (int i = 0; i < Files.AllMovies.Count; i++)
-            {
-                if (Files.AllMovies[i] == movie)
-                {
-                    return false;
-                }
-            }
-            Files.AllMovies.Add(movie);
-            foreach (SmartPlaylist smart in Files.AllSmartPlaylistsSongs)
-            {
-                foreach (string categoria in movie.Categories1)
-                {
-                    if (categoria == smart.NameCriterio)
-                    {
-                        smart.Playlistmovie.Add(movie);
-                    }
-                }
-                if (movie.Director1.Name == smart.NameCriterio)
-                {
-                    smart.Playlistmovie.Add(movie);
-                }
-                foreach (Person actores in movie.Actors1)
-                {
-                    if (actores.Name == smart.NameCriterio)
-                    {
-                        smart.Playlistmovie.Add(movie);
-                    }
-                }
-                if (movie.Studio1 == smart.NameCriterio)
-                {
-                    smart.Playlistmovie.Add(movie);
-                }
-
-            }
-            return true;
-        }
-        */
     }
 }
