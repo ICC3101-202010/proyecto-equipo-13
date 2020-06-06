@@ -27,6 +27,9 @@ namespace Proyecto_equipo_13_entrega_3
         public delegate bool CreateAccountEventHandler(object source, RegisterEventArgs args);
         public event CreateAccountEventHandler CreateAccountClicked;
         public string ruta, dest, name, imagen;
+        public Queue<Songs> queuesongs = new Queue<Songs>();
+        public Queue<Movies> queuemovies = new Queue<Movies>();
+
 
         //Organizacion
         List<Panel> stackPanels = new List<Panel>();
@@ -1046,24 +1049,12 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoMovieTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
-            foreach (Movies movie in Files.AllMovies)
-            {
-                if (movie.Title1 == Titulo) 
-                {
-                    movie.NumReproductions += 1;
-                }
-            }
             RellenarInfoMovies(Titulo);
-            SacarRuta(Titulo);
-            stackPanels.Add(panels["ReproductionPanel"]);
-            ShowLastPanel();
-            axWindowsMediaPlayer1.URL = this.ruta;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
+            Reproducir(Titulo);
         }
 
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.Ctlcontrols.stop();
             stackPanels.Add(panels["UserPanel"]);
             ShowLastPanel();
         }
@@ -1073,19 +1064,8 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoSongsTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
-            foreach (Songs song in Files.AllSongs)
-            {
-                if (song.Title1 == Titulo)
-                {
-                    song.NumReproductions += 1;
-                }
-            }
             RellenarInfoSongs(Titulo);
-            SacarRuta(Titulo);
-            stackPanels.Add(panels["ReproductionPanel"]);
-            ShowLastPanel();
-            axWindowsMediaPlayer1.URL = this.ruta;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
+            Reproducir(Titulo);
         }
 
         private void axWindowsMediaPlayer1_Enter_1(object sender, EventArgs e)
@@ -2703,6 +2683,154 @@ namespace Proyecto_equipo_13_entrega_3
                 System.IO.File.Copy(salida, destFile, true);
                 imagen = @"\" + destFileName;
             }
+        }
+
+        public void QueueSongs(string titulo)
+        {
+            foreach (Songs s in Files.AllSongs)
+            {
+                if (s.Title1 == titulo)
+                {
+                    queuesongs.Enqueue(s);
+                }
+            }
+        }
+
+        public void QueueMovies(string titulo)
+        {
+            foreach (Movies s in Files.AllMovies)
+            {
+                if (s.Title1 == titulo)
+                {
+                    queuemovies.Enqueue(s);
+                }
+            }
+        }
+
+        public void ReproducirPlaylist(Playlists plist)
+        {
+            WMPLib.IWMPPlaylist playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist(plist.Name);
+            WMPLib.IWMPMedia media;
+            if (plist.Playlistsong.Count != 0)
+            {
+                foreach (Songs s in plist.Playlistsong)
+                {
+                    media = axWindowsMediaPlayer1.newMedia(s.Music1);
+                    playlist.appendItem(media);
+                }
+                axWindowsMediaPlayer1.currentPlaylist = playlist;
+            }
+            else if (plist.Playlistmovie.Count != 0)
+            {
+                foreach (Movies m in plist.Playlistmovie)
+                {
+                    media = axWindowsMediaPlayer1.newMedia(m.Video1);
+                    playlist.appendItem(media);
+                }
+                axWindowsMediaPlayer1.currentPlaylist = playlist;
+            }
+            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.previous();
+            string s = axWindowsMediaPlayer1.URL;
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Video1 == s)
+                {
+                    movie.NumReproductions += 1;
+                }
+            }
+            foreach (Songs song in Files.AllSongs)
+            {
+                if (song.Music1 == s)
+                {
+                    song.NumReproductions += 1;
+                }
+            }
+        }
+
+        private void playpausebutton_Click(object sender, EventArgs e)
+        {
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.pause();
+            }
+            else
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
+        }
+
+        private void nextbutton_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.next();
+            string s = axWindowsMediaPlayer1.URL;
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Video1 == s)
+                {
+                    movie.NumReproductions += 1;
+                }
+            }
+            foreach (Songs song in Files.AllSongs)
+            {
+                if (song.Music1 == s)
+                {
+                    song.NumReproductions += 1;
+                }
+            }
+        }
+
+        public void ReproducirQueueMovies()
+        {
+            WMPLib.IWMPPlaylist playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("Queue de Películas");
+            WMPLib.IWMPMedia media;
+            foreach (Movies m in queuemovies)
+            {
+                media = axWindowsMediaPlayer1.newMedia(m.Video1);
+                playlist.appendItem(media);
+            }
+            axWindowsMediaPlayer1.currentPlaylist = playlist;
+            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+        }
+
+        public void ReproducirQueueSongs()
+        {
+            WMPLib.IWMPPlaylist playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("Queue de Canciones");
+            WMPLib.IWMPMedia media;
+            foreach (Songs s in queuesongs)
+            {
+                media = axWindowsMediaPlayer1.newMedia(s.Music1);
+                playlist.appendItem(media);
+            }
+            axWindowsMediaPlayer1.currentPlaylist = playlist;
+            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+        }
+
+        public void Reproducir(string titulo)
+        {
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if (movie.Title1 == titulo)
+                {
+                    movie.NumReproductions += 1;
+                }
+            }
+            foreach (Songs song in Files.AllSongs)
+            {
+                if (song.Title1 == titulo)
+                {
+                    song.NumReproductions += 1;
+                }
+            }
+            SacarRuta(titulo);
+            stackPanels.Add(panels["ReproductionPanel"]);
+            ShowLastPanel();
+            axWindowsMediaPlayer1.URL = this.ruta;
+            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
         }
     }
 }
