@@ -478,6 +478,24 @@
             this.openFileDialogCancion = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogPelicula = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.InnovationPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel91 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel92 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel93 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbRate = new System.Windows.Forms.TrackBar();
+            this.volumenlabel = new System.Windows.Forms.Label();
+            this.VelocidadVoz = new System.Windows.Forms.Label();
+            this.tbVolumen = new System.Windows.Forms.TrackBar();
+            this.tableLayoutPanel94 = new System.Windows.Forms.TableLayoutPanel();
+            this.cbVoces = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel95 = new System.Windows.Forms.TableLayoutPanel();
+            this.PauseButton = new System.Windows.Forms.Button();
+            this.Hablar = new System.Windows.Forms.Button();
+            this.StopButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel96 = new System.Windows.Forms.TableLayoutPanel();
+            this.VolverfrominovationPanel = new System.Windows.Forms.Button();
+            this.AbrirArchivo = new System.Windows.Forms.Button();
             this.WelcomeMenu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -620,6 +638,15 @@
             this.tableLayoutPanelAgregarCanciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoAlbum)).BeginInit();
             this.tableLayoutPanel85.SuspendLayout();
+            this.InnovationPanel.SuspendLayout();
+            this.tableLayoutPanel91.SuspendLayout();
+            this.tableLayoutPanel92.SuspendLayout();
+            this.tableLayoutPanel93.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbVolumen)).BeginInit();
+            this.tableLayoutPanel94.SuspendLayout();
+            this.tableLayoutPanel95.SuspendLayout();
+            this.tableLayoutPanel96.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomeMenu
@@ -4044,8 +4071,9 @@
             this.innovacion.Name = "innovacion";
             this.innovacion.Size = new System.Drawing.Size(317, 38);
             this.innovacion.TabIndex = 19;
-            this.innovacion.Text = "INNOVACION";
+            this.innovacion.Text = "Aburrido de leer";
             this.innovacion.UseVisualStyleBackColor = false;
+            this.innovacion.Click += new System.EventHandler(this.innovacion_Click);
             // 
             // tableLayoutPanel90
             // 
@@ -6815,12 +6843,239 @@
             // 
             this.openFileDialogPelicula.FileName = "openFileDialog1";
             // 
+            // InnovationPanel
+            // 
+            this.InnovationPanel.Controls.Add(this.tableLayoutPanel91);
+            this.InnovationPanel.Location = new System.Drawing.Point(695, 253);
+            this.InnovationPanel.Name = "InnovationPanel";
+            this.InnovationPanel.Size = new System.Drawing.Size(200, 100);
+            this.InnovationPanel.TabIndex = 22;
+            // 
+            // tableLayoutPanel91
+            // 
+            this.tableLayoutPanel91.ColumnCount = 1;
+            this.tableLayoutPanel91.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel91.Controls.Add(this.richTextBox1, 0, 0);
+            this.tableLayoutPanel91.Controls.Add(this.tableLayoutPanel92, 0, 1);
+            this.tableLayoutPanel91.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel91.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel91.Name = "tableLayoutPanel91";
+            this.tableLayoutPanel91.RowCount = 2;
+            this.tableLayoutPanel91.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel91.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel91.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel91.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(194, 74);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // tableLayoutPanel92
+            // 
+            this.tableLayoutPanel92.ColumnCount = 3;
+            this.tableLayoutPanel92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.54165F));
+            this.tableLayoutPanel92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.3372F));
+            this.tableLayoutPanel92.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.12115F));
+            this.tableLayoutPanel92.Controls.Add(this.tableLayoutPanel93, 2, 0);
+            this.tableLayoutPanel92.Controls.Add(this.tableLayoutPanel94, 1, 0);
+            this.tableLayoutPanel92.Controls.Add(this.tableLayoutPanel96, 0, 0);
+            this.tableLayoutPanel92.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel92.Location = new System.Drawing.Point(3, 83);
+            this.tableLayoutPanel92.Name = "tableLayoutPanel92";
+            this.tableLayoutPanel92.RowCount = 1;
+            this.tableLayoutPanel92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel92.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel92.Size = new System.Drawing.Size(194, 14);
+            this.tableLayoutPanel92.TabIndex = 1;
+            // 
+            // tableLayoutPanel93
+            // 
+            this.tableLayoutPanel93.ColumnCount = 2;
+            this.tableLayoutPanel93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.24577F));
+            this.tableLayoutPanel93.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.75424F));
+            this.tableLayoutPanel93.Controls.Add(this.tbRate, 0, 1);
+            this.tableLayoutPanel93.Controls.Add(this.volumenlabel, 1, 0);
+            this.tableLayoutPanel93.Controls.Add(this.VelocidadVoz, 1, 1);
+            this.tableLayoutPanel93.Controls.Add(this.tbVolumen, 0, 0);
+            this.tableLayoutPanel93.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel93.Location = new System.Drawing.Point(80, 3);
+            this.tableLayoutPanel93.Name = "tableLayoutPanel93";
+            this.tableLayoutPanel93.RowCount = 2;
+            this.tableLayoutPanel93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel93.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel93.Size = new System.Drawing.Size(111, 8);
+            this.tableLayoutPanel93.TabIndex = 0;
+            // 
+            // tbRate
+            // 
+            this.tbRate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbRate.Location = new System.Drawing.Point(3, 7);
+            this.tbRate.Minimum = -10;
+            this.tbRate.Name = "tbRate";
+            this.tbRate.Size = new System.Drawing.Size(74, 1);
+            this.tbRate.TabIndex = 3;
+            // 
+            // volumenlabel
+            // 
+            this.volumenlabel.AutoSize = true;
+            this.volumenlabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.volumenlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.volumenlabel.Location = new System.Drawing.Point(83, 0);
+            this.volumenlabel.Name = "volumenlabel";
+            this.volumenlabel.Size = new System.Drawing.Size(25, 4);
+            this.volumenlabel.TabIndex = 0;
+            this.volumenlabel.Text = "Volumen";
+            this.volumenlabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // VelocidadVoz
+            // 
+            this.VelocidadVoz.AutoSize = true;
+            this.VelocidadVoz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VelocidadVoz.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VelocidadVoz.Location = new System.Drawing.Point(83, 4);
+            this.VelocidadVoz.Name = "VelocidadVoz";
+            this.VelocidadVoz.Size = new System.Drawing.Size(25, 4);
+            this.VelocidadVoz.TabIndex = 1;
+            this.VelocidadVoz.Text = "Velocidad";
+            this.VelocidadVoz.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tbVolumen
+            // 
+            this.tbVolumen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbVolumen.Location = new System.Drawing.Point(3, 3);
+            this.tbVolumen.Maximum = 100;
+            this.tbVolumen.Name = "tbVolumen";
+            this.tbVolumen.Size = new System.Drawing.Size(74, 1);
+            this.tbVolumen.TabIndex = 2;
+            this.tbVolumen.Value = 50;
+            // 
+            // tableLayoutPanel94
+            // 
+            this.tableLayoutPanel94.ColumnCount = 1;
+            this.tableLayoutPanel94.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel94.Controls.Add(this.cbVoces, 0, 0);
+            this.tableLayoutPanel94.Controls.Add(this.tableLayoutPanel95, 0, 1);
+            this.tableLayoutPanel94.Controls.Add(this.StopButton, 0, 2);
+            this.tableLayoutPanel94.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel94.Location = new System.Drawing.Point(37, 3);
+            this.tableLayoutPanel94.Name = "tableLayoutPanel94";
+            this.tableLayoutPanel94.RowCount = 3;
+            this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel94.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel94.Size = new System.Drawing.Size(37, 8);
+            this.tableLayoutPanel94.TabIndex = 2;
+            // 
+            // cbVoces
+            // 
+            this.cbVoces.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbVoces.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVoces.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVoces.FormattingEnabled = true;
+            this.cbVoces.Location = new System.Drawing.Point(3, 3);
+            this.cbVoces.Name = "cbVoces";
+            this.cbVoces.Size = new System.Drawing.Size(31, 24);
+            this.cbVoces.TabIndex = 3;
+            // 
+            // tableLayoutPanel95
+            // 
+            this.tableLayoutPanel95.ColumnCount = 2;
+            this.tableLayoutPanel95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel95.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel95.Controls.Add(this.PauseButton, 0, 0);
+            this.tableLayoutPanel95.Controls.Add(this.Hablar, 0, 0);
+            this.tableLayoutPanel95.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel95.Location = new System.Drawing.Point(3, 5);
+            this.tableLayoutPanel95.Name = "tableLayoutPanel95";
+            this.tableLayoutPanel95.RowCount = 1;
+            this.tableLayoutPanel95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel95.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel95.Size = new System.Drawing.Size(31, 1);
+            this.tableLayoutPanel95.TabIndex = 4;
+            // 
+            // PauseButton
+            // 
+            this.PauseButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PauseButton.Location = new System.Drawing.Point(18, 3);
+            this.PauseButton.Name = "PauseButton";
+            this.PauseButton.Size = new System.Drawing.Size(10, 1);
+            this.PauseButton.TabIndex = 4;
+            this.PauseButton.Text = "Pausar/Reanudar";
+            this.PauseButton.UseVisualStyleBackColor = true;
+            this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
+            // 
+            // Hablar
+            // 
+            this.Hablar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Hablar.Location = new System.Drawing.Point(3, 3);
+            this.Hablar.Name = "Hablar";
+            this.Hablar.Size = new System.Drawing.Size(9, 1);
+            this.Hablar.TabIndex = 3;
+            this.Hablar.Text = "Hablar!";
+            this.Hablar.UseVisualStyleBackColor = true;
+            this.Hablar.Click += new System.EventHandler(this.Hablar_Click);
+            // 
+            // StopButton
+            // 
+            this.StopButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StopButton.Location = new System.Drawing.Point(3, 8);
+            this.StopButton.Name = "StopButton";
+            this.StopButton.Size = new System.Drawing.Size(31, 1);
+            this.StopButton.TabIndex = 5;
+            this.StopButton.Text = "Stop";
+            this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
+            // 
+            // tableLayoutPanel96
+            // 
+            this.tableLayoutPanel96.ColumnCount = 1;
+            this.tableLayoutPanel96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel96.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel96.Controls.Add(this.VolverfrominovationPanel, 0, 1);
+            this.tableLayoutPanel96.Controls.Add(this.AbrirArchivo, 0, 0);
+            this.tableLayoutPanel96.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel96.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel96.Name = "tableLayoutPanel96";
+            this.tableLayoutPanel96.RowCount = 2;
+            this.tableLayoutPanel96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel96.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel96.Size = new System.Drawing.Size(28, 8);
+            this.tableLayoutPanel96.TabIndex = 3;
+            // 
+            // VolverfrominovationPanel
+            // 
+            this.VolverfrominovationPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VolverfrominovationPanel.Location = new System.Drawing.Point(3, 7);
+            this.VolverfrominovationPanel.Name = "VolverfrominovationPanel";
+            this.VolverfrominovationPanel.Size = new System.Drawing.Size(22, 1);
+            this.VolverfrominovationPanel.TabIndex = 1;
+            this.VolverfrominovationPanel.Text = "Volver";
+            this.VolverfrominovationPanel.UseVisualStyleBackColor = true;
+            this.VolverfrominovationPanel.Click += new System.EventHandler(this.VolverfrominovationPanel_Click);
+            // 
+            // AbrirArchivo
+            // 
+            this.AbrirArchivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AbrirArchivo.Location = new System.Drawing.Point(3, 3);
+            this.AbrirArchivo.Name = "AbrirArchivo";
+            this.AbrirArchivo.Size = new System.Drawing.Size(22, 1);
+            this.AbrirArchivo.TabIndex = 0;
+            this.AbrirArchivo.Text = "Abrir Archivo";
+            this.AbrirArchivo.UseVisualStyleBackColor = true;
+            this.AbrirArchivo.Click += new System.EventHandler(this.AbrirArchivo_Click);
+            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1323, 551);
             this.Controls.Add(this.UserPanel);
+            this.Controls.Add(this.InnovationPanel);
             this.Controls.Add(this.ReproductionPanel);
             this.Controls.Add(this.CreateAccountView);
             this.Controls.Add(this.ModificarCuentaPanel);
@@ -7030,6 +7285,16 @@
             this.tableLayoutPanelAgregarCanciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAnoAlbum)).EndInit();
             this.tableLayoutPanel85.ResumeLayout(false);
+            this.InnovationPanel.ResumeLayout(false);
+            this.tableLayoutPanel91.ResumeLayout(false);
+            this.tableLayoutPanel92.ResumeLayout(false);
+            this.tableLayoutPanel93.ResumeLayout(false);
+            this.tableLayoutPanel93.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbVolumen)).EndInit();
+            this.tableLayoutPanel94.ResumeLayout(false);
+            this.tableLayoutPanel95.ResumeLayout(false);
+            this.tableLayoutPanel96.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -7450,6 +7715,24 @@
         private System.Windows.Forms.Button GoToReproductionPanel;
         private System.Windows.Forms.Button StartQueueSongs;
         private System.Windows.Forms.Button StartQueueMovies;
+        private System.Windows.Forms.Panel InnovationPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel91;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel92;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel93;
+        private System.Windows.Forms.TrackBar tbRate;
+        private System.Windows.Forms.Label volumenlabel;
+        private System.Windows.Forms.Label VelocidadVoz;
+        private System.Windows.Forms.TrackBar tbVolumen;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel94;
+        private System.Windows.Forms.ComboBox cbVoces;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel95;
+        private System.Windows.Forms.Button PauseButton;
+        private System.Windows.Forms.Button Hablar;
+        private System.Windows.Forms.Button StopButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel96;
+        private System.Windows.Forms.Button VolverfrominovationPanel;
+        private System.Windows.Forms.Button AbrirArchivo;
     }
 }
 

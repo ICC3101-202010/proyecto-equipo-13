@@ -1,4 +1,5 @@
-﻿using Proyecto_equipo_13_entrega_3.CustomsEvenArgs;
+﻿using iTextSharp.text.pdf.parser;
+using Proyecto_equipo_13_entrega_3.CustomsEvenArgs;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -29,6 +31,11 @@ namespace Proyecto_equipo_13_entrega_3
         public string ruta, dest, name, imagen;
         public Queue<Songs> queuesongs = new Queue<Songs>();
         public Queue<Movies> queuemovies = new Queue<Movies>();
+        //Innovación
+        List<VoiceInfo> vocesInfo = new List<VoiceInfo>();
+        SpeechSynthesizer synthVoice;
+        bool isStopped;
+        bool speaking = true;
 
 
         //Organizacion
@@ -337,6 +344,20 @@ namespace Proyecto_equipo_13_entrega_3
             panels.Add("ModificarCuentaPanel", ModificarCuentaPanel);
             panels.Add("ReproductionPanel", ReproductionPanel);
             panels.Add("AdminPanel", AdminPanel);
+            panels.Add("InovationPanel", InnovationPanel);
+            //InnovationPanel
+            synthVoice = new SpeechSynthesizer();
+
+            foreach (InstalledVoice voice in synthVoice.GetInstalledVoices())
+            {
+                vocesInfo.Add(voice.VoiceInfo);
+                cbVoces.Items.Add(voice.VoiceInfo.Name);
+
+            }
+            cbVoces.SelectedIndex = 0;
+
+            synthVoice.Dispose();
+
             foreach (User user in Files.Users)
             {
                 if (user.LOGIN == true)
@@ -1031,6 +1052,13 @@ namespace Proyecto_equipo_13_entrega_3
                     var H = carpeta + song.Album1.Image1;
                     ShowImageShowSong.BackgroundImageLayout = ImageLayout.Stretch;
                     ShowImageShowSong.BackgroundImage = Image.FromFile(H);
+
+                    PersonInformation.Text += "Nombre: " + song.Artist1.Name + "\r\nFecha Nacimiento: " + song.Artist1.Birthday.ToString("dd / MM / yyyy");
+                    if (song.Artist1.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
+                    else if (song.Artist1.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
+                    int num = song.Artist1.NumReproduction;
+                    PersonInformation.Text += "\r\nNúmero de Reproducciones: " + num.ToString();
+                    linklabelPerson.Text = song.Artist1.Link;
                 }
             }
         }
@@ -3349,31 +3377,131 @@ namespace Proyecto_equipo_13_entrega_3
 
             foreach (Songs song in Files.AllSongs)
             {
-                if ((carpeta + song.Music1) == dir)
+                if (carpeta + (song.Music1) == dir)
                 {
                     song.NumReproductions += 1;
                     song.Artist1.NumReproduction += 1;
-                    MessageBox.Show(song.Artist1.Name);
-                    MessageBox.Show(song.Artist1.NumReproduction.ToString());
-                    RellenarInfoSongs(song.Title1);
-                    PersonInformation.Text += "Nombre: " + song.Artist1.Name + "\r\nFecha Nacimiento: " + song.Artist1.Birthday.ToString("dd / MM / yyyy");
-                    if (song.Artist1.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
-                    else if (song.Artist1.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
-                    PersonInformation.Text += "\r\nNúmero de Reproducciones: " + song.Artist1.NumReproduction.ToString();
-                    linklabelPerson.Text = song.Artist1.Link;
-                    return;                   
+                    //MessageBox.Show(song.Artist1.Name);
+                    //MessageBox.Show(song.Artist1.NumReproduction.ToString());
+                    RellenarInfoSongs(song.Title1);              
                 }
             }
             foreach (Movies movie in Files.AllMovies)
             {
-                if ((carpeta + movie.Video1) == dir)
+                if (carpeta + (movie.Video1) == dir)
                 {
                     movie.NumReproductions += 1;
                     RellenarInfoMovies(movie.Title1);
                     return;
                 }
             }
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             Serializacion();
+        }
+
+        private void AbrirArchivo_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "PDF files|*.pdf", ValidateNames = true, Multiselect = false })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        iTextSharp.text.pdf.PdfReader reader = new iTextSharp.text.pdf.PdfReader(ofd.FileName);
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 1; i <= reader.NumberOfPages; i++)
+                        {
+                            sb.Append(PdfTextExtractor.GetTextFromPage(reader, i));
+                        }
+                        richTextBox1.Text = sb.ToString();
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void VolverfrominovationPanel_Click(object sender, EventArgs e)
+        {
+            stackPanels.Add(panels["UserPanel"]);
+            ShowLastPanel();
+        }
+
+        private void Hablar_Click(object sender, EventArgs e)
+        {
+            if (speaking)
+            {
+                string voice = cbVoces.Text;
+                string theText = richTextBox1.Text;
+                double Volume = tbVolumen.Value;
+                double Rate = tbRate.Value;
+
+                if (theText == "")
+                {
+                    MessageBox.Show("Escriba algo, o abra un archivo");
+                    return;
+                }
+
+                synthVoice = new SpeechSynthesizer();
+                synthVoice.SetOutputToDefaultAudioDevice();
+                synthVoice.SelectVoice(voice);
+
+                synthVoice.Rate = (int)Rate;
+                synthVoice.Volume = (int)Volume;
+
+                synthVoice.SpeakAsync(theText);
+
+                isStopped = false;
+                speaking = false;
+            }
+        }
+
+        private void PauseButton_Click(object sender, EventArgs e)
+        {
+            if (synthVoice != null)
+            {
+                if (isStopped == false)
+                {
+                    try
+                    {
+                        if (synthVoice.State == SynthesizerState.Speaking)
+                        {
+                            synthVoice.Pause();
+                        }
+                        else if (synthVoice.State == SynthesizerState.Paused)
+                        {
+                            synthVoice.Resume();
+                        }
+                    }
+                    catch { }
+                }
+            }
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            if (synthVoice != null)
+            {
+                try
+                {
+                    synthVoice.Dispose();
+                    isStopped = true;
+                }
+                catch { }
+                finally
+                {
+                    speaking = true;
+                }
+            }
+        }
+
+        private void innovacion_Click(object sender, EventArgs e)
+        {
+            stackPanels.Add(panels["InovationPanel"]);
+            ShowLastPanel();
         }
 
         public void ReproducirQueueMovies()
