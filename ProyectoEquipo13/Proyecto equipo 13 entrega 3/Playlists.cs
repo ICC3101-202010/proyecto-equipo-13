@@ -24,25 +24,5 @@ namespace Proyecto_equipo_13_entrega_3
             this.Name = name;
             this.Type = type;
         }
-
-        public void VerPlaylist()
-        {
-            Console.WriteLine("Nombre:"+this.name);
-            Console.WriteLine("Elementos involucrados");
-            if (this.type =="Película" || this.type=="Películas" || this.type=="Pelicula" || this.type=="Peliculas"|| this.type == "película" || this.type == "películas" || this.type == "pelicula" || this.type == "peliculas")
-            {
-                foreach (Movies movie in this.Playlistmovie)
-                {
-                    Console.WriteLine("-"+movie.Title1);
-                }
-            }
-            else if (this.type=="Canción" || this.type=="Canciones" ||this.type=="canción" ||this.type=="canciones" ||this.type=="Cancion" || this.type == "cancion")
-            {
-                foreach (Songs song in this.Playlistsong)
-                {
-                    Console.WriteLine("-"+song.Title1);
-                }
-            }
-        }
     }
 }

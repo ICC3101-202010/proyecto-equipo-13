@@ -83,35 +83,6 @@ namespace Proyecto_equipo_13_entrega_3
         public int Min1 { get => Min; set => Min = value; }
         public string MovieDirection { get => movieDirection; set => movieDirection = value; }
 
-        public void Play()
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            string D = carpeta + this.Video;
-            this.NumReproductions += 1;
-            System.Diagnostics.Process.Start(D);
-        }
-
-        public void PlayTrailer()
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            string D = carpeta + this.Trailer;
-            System.Diagnostics.Process.Start(D);
-        }
-
-        public void MovieInformation()
-        {
-            Console.WriteLine("Nombre Película: " + this.Title1 + "\nDirector: " + this.Director1.Name + "\nDuración: " + this.Lenght + "\nRating: " + this.RatingProm1 + "\nAño: " + this.Year1);
-            Console.WriteLine("Categorias: ");
-            foreach (string cat in this.Categories1)
-            {
-                Console.WriteLine(cat);
-            }
-            Console.WriteLine("Reparto: ");
-            foreach (Person actores in this.Actors1)
-            {
-                Console.WriteLine(actores.Name);
-            }
-        }
     }
 }
  

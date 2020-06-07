@@ -59,13 +59,6 @@
     <Compile Include="Album.cs" />
     <Compile Include="Artist.cs" />
     <Compile Include="Computer.cs" />
-    <Compile Include="Console1.cs" />
-    <Compile Include="Controllers\ArtistController.cs" />
-    <Compile Include="Controllers\FilesController.cs" />
-    <Compile Include="Controllers\MoviesController.cs" />
-    <Compile Include="Controllers\PersonController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
-    <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="CustomsEvenArgs\ChangePasswordEventArgs.cs" />
     <Compile Include="CustomsEvenArgs\LoginEventArgs.cs" />
@@ -77,7 +70,6 @@
     <Compile Include="AppForm.Designer.cs">
       <DependentUpon>AppForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MailSender.cs" />
     <Compile Include="Movies.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Playlists.cs" />

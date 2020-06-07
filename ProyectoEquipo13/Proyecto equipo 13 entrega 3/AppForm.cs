@@ -355,14 +355,19 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void IniciarSerializacion()
         {
-            User Admin = new User("Premium", "Admin", "email", "Admin", true);
-            Files.Users.Add(Admin);
-            foreach (User i in Files.Users)
-            {
-                List<string> data = new List<string>()
-                        { i.UserName, i.Email, i.Password, Convert.ToString(DateTime.Now), i.Type};
-                Files.AllUsers.Add(Files.AllUsers.Count + 1, data);
-            }
+            VerMisPlaylits.Visible = false;
+            ShowSong.Visible = false;
+            ShowMovie.Visible = false;
+            ShowUserPanel.Visible = false;
+            ShowPersonPanel.Visible = false;
+            ShowMoviesPanel.Visible = false;
+            BuscadorPanel.Visible = false;
+            ResultsBuscador.Visible = false;
+            FollowersPanel.Visible = false;
+            CrearPlaylist.Visible = false;
+            ShowSongsPanel.Visible = false;
+            pictureBox1.Visible = true;
+            pictureBox1.BringToFront();
 
             IFormatter formatter = new BinaryFormatter();
 
@@ -490,7 +495,8 @@ namespace Proyecto_equipo_13_entrega_3
         private void IniciarSesión_Click(object sender, EventArgs e)
         {
             stackPanels.Add(panels["LoginPanel"]);
-            ShowLastPanel();            
+            ShowLastPanel();
+            Serializacion();
         }
 
         private void CrearCuenta_Click(object sender, EventArgs e)
@@ -502,6 +508,7 @@ namespace Proyecto_equipo_13_entrega_3
             InputUserNameCreateAccountView.ResetText();
             stackPanels.Add(panels["CreateAccountPanel"]);
             ShowLastPanel();
+            Serializacion();
         }
 
         private void WelcomeMenu_Paint(object sender, PaintEventArgs e)
@@ -571,6 +578,20 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 OnLoginButtonClicked(username, pass);
             }
+            VerMisPlaylits.Visible = false;
+            ShowSong.Visible = false;
+            ShowMovie.Visible = false;
+            ShowUserPanel.Visible = false;
+            ShowPersonPanel.Visible = false;
+            ShowMoviesPanel.Visible = false;
+            BuscadorPanel.Visible = false;
+            ResultsBuscador.Visible = false;
+            FollowersPanel.Visible = false;
+            CrearPlaylist.Visible = false;
+            ShowSongsPanel.Visible = false;
+            pictureBox1.Visible = true;
+            pictureBox1.BringToFront();
+            Serializacion();
         }
 
         private void OnLoginButtonClicked(string username, string pass)
@@ -610,6 +631,7 @@ namespace Proyecto_equipo_13_entrega_3
             string type = InputTipoUsuarioCreateAccountView.Text;
             string privacy = InputPrivacidadCreateAccountView.Text;
             OnCreateAccountClicked(username, email, pass,type, privacy);
+            Serializacion();
         }
 
         private void OnCreateAccountClicked(string username, string email, string pass, string type, string privacy)
@@ -678,12 +700,27 @@ namespace Proyecto_equipo_13_entrega_3
             ChangeFreePanel.Visible = false;
             YaEsPremiumPanel.Visible = false;
             ModCorrPanel.Visible = false;
+            Serializacion();
         }
 
         private void BackToUserMenuButton_Click(object sender, EventArgs e)
         {
             stackPanels.Add(panels["UserPanel"]);
             ShowLastPanel();
+            VerMisPlaylits.Visible = false;
+            ShowSong.Visible = false;
+            ShowMovie.Visible = false;
+            ShowUserPanel.Visible = false;
+            ShowPersonPanel.Visible = false;
+            ShowMoviesPanel.Visible = false;
+            BuscadorPanel.Visible = false;
+            ResultsBuscador.Visible = false;
+            FollowersPanel.Visible = false;
+            CrearPlaylist.Visible = false;
+            ShowSongsPanel.Visible = false;
+            pictureBox1.Visible = true;
+            pictureBox1.BringToFront();
+            Serializacion();
         }
 
         private void AceptarCambioNombreUsuarioButton_Click(object sender, EventArgs e)
@@ -713,6 +750,7 @@ namespace Proyecto_equipo_13_entrega_3
             ModCorrPanel.Visible = false;
             NuevoNombreUsuarioTextBox.ResetText();
             ChangeUserPanel.Visible = true;
+            Serializacion();
         }
 
         private void CambiarContraseñaButton_Click(object sender, EventArgs e)
@@ -725,6 +763,7 @@ namespace Proyecto_equipo_13_entrega_3
             InputNewPassword.ResetText();
             InputOldPassword.ResetText();
             ChangePasswordPanel.Visible = true;
+            Serializacion();
         }
 
         private void AceptarNuevaContraseñaButton_Click(object sender, EventArgs e)
@@ -812,6 +851,7 @@ namespace Proyecto_equipo_13_entrega_3
             { 
                 ChangeFreePanel.Visible = true;
             }
+            Serializacion();
         }
 
         private void VolverButtonLoginView_Click(object sender, EventArgs e)
@@ -821,6 +861,7 @@ namespace Proyecto_equipo_13_entrega_3
             InputUsuarioLoginView.ResetText();
             loginViewInvalidCredentialsAlert.ResetText();
             ShowLastPanel();
+            Serializacion();
         }
 
         private void FemeninoSexoBuscadorPanel_CheckedChanged(object sender, EventArgs e)
@@ -843,6 +884,7 @@ namespace Proyecto_equipo_13_entrega_3
             InputTipoUsuarioCreateAccountView.SelectedIndex = -1;
             CheckRegistration.ResetText();
             ShowLastPanel();
+            Serializacion();
         }
 
         private void FillDataGridViewSongS(List<Songs> songs)
@@ -891,6 +933,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowSongsPanel.Visible = true;
             ShowSongsPanel.BringToFront();
             FillDataGridViewSongS(Files.AllSongs);
+            Serializacion();
         }
 
         private void FillDataGridViewMovieS(List<Movies> movies)
@@ -941,6 +984,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowMoviesPanel.Visible = true;
             ShowMoviesPanel.BringToFront();
             FillDataGridViewMovieS(Files.AllMovies);
+            Serializacion();
         }
 
         private void RellenarInfoMovies(string name)
@@ -1003,7 +1047,9 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
                 InfoMovieTextBox.Text = null;
                 RellenarInfoMovies(lines[0]);
+                ShowMovie.Visible = true;
                 ShowMovie.BringToFront();
+                Serializacion();
             }
         }
 
@@ -1019,7 +1065,9 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
                 InfoSongsTextBox.Text = null;
                 RellenarInfoSongs(lines[0]);
+                ShowSong.Visible = true;
                 ShowSong.BringToFront();
+                Serializacion();
             }
         }
 
@@ -1051,12 +1099,14 @@ namespace Proyecto_equipo_13_entrega_3
             string Titulo = titulo.Replace("Título: ", string.Empty);
             RellenarInfoMovies(Titulo);
             Reproducir(Titulo);
+            Serializacion();
         }
 
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
             stackPanels.Add(panels["UserPanel"]);
             ShowLastPanel();
+            Serializacion();
         }
 
         private void ReproducirButtonShowsSong_Click(object sender, EventArgs e)
@@ -1066,6 +1116,7 @@ namespace Proyecto_equipo_13_entrega_3
             string Titulo = titulo.Replace("Título: ", string.Empty);
             RellenarInfoSongs(Titulo);
             Reproducir(Titulo);
+            Serializacion();
         }
 
         private void axWindowsMediaPlayer1_Enter_1(object sender, EventArgs e)
@@ -1096,6 +1147,39 @@ namespace Proyecto_equipo_13_entrega_3
         {
             InfoMovieTextBox.Text = "";
             InfoSongsTextBox.Text = "";
+            label46.Visible = false;
+            TipoPlaylist2.Visible = false;
+            label48.Visible = false;
+            Criterio.Visible = false;
+            label47.Visible = false;
+            NombrePlaylist.Visible = false;
+            label49.Visible = false;
+            NombreCriterio.Visible = false;
+            AceptarPlaylist.Visible = false;
+            TipoPlaylist2.Visible = false;
+            label46.Visible = false;
+            TipoPlaylist.SelectedIndex = -1;
+            TipoPlaylist2.SelectedIndex = -1;
+            Criterio.SelectedIndex = -1;
+            NombreCriterio.ResetText();
+            NombrePlaylist.ResetText();
+            label46.Visible = false;
+            TipoPlaylist2.Visible = false;
+            label48.Visible = false;
+            Criterio.Visible = false;
+            label47.Visible = false;
+            NombrePlaylist.Visible = false;
+            label49.Visible = false;
+            NombreCriterio.Visible = false;
+            AceptarPlaylist.Visible = false;
+            TipoPlaylist2.Visible = false;
+            label46.Visible = false;
+            TipoPlaylist.SelectedIndex = -1;
+            TipoPlaylist2.SelectedIndex = -1;
+            Criterio.SelectedIndex = -1;
+            NombreCriterio.ResetText();
+            NombrePlaylist.ResetText();
+
             Computer computer = new Computer();
             User user = GetUser();
             if (user.Type == "Premium")
@@ -1129,6 +1213,7 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 MessageBox.Show("Opción válida solo para usuarios Premium");
             }
+            Serializacion();
         }
 
         private void AceptarPlaylist_Click(object sender, EventArgs e)
@@ -1140,194 +1225,235 @@ namespace Proyecto_equipo_13_entrega_3
             string tipo2 = TipoPlaylist2.Text;
             string criterio = Criterio.Text;
             string namecriterio = NombreCriterio.Text.ToUpper();
-            if (tipo == "Normal")
+            bool option = true;
+            foreach (Playlists pla in user.MyPlaylist1)
             {
-                if (user.Privacy1 == true)
+                if (pla.Name ==nombre && pla.Type == tipo2)
                 {
-                    user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2, nombre));
-                    if (tipo2 == "Canción")
-                    {
-                        Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(tipo2, nombre));
-                        
-                    }
-                    else if (tipo2 == "Película")
-                    {
-                        Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(tipo2, nombre));
-                       
-                    }
-                }
-                else if (user.Privacy1 == false)
-                {
-                    user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2,nombre));
+                    option = false;
                 }
             }
-            else if (tipo == "SmartPlaylist")
+            if (nombre == "Me gusta")
             {
-                var a = computer.CreateSmartPlaylist(tipo2, criterio, namecriterio, nombre);
-                if (user.Privacy1 == true)
-                {
-                    if (tipo2 == "Canción")
-                    {
-                        if (criterio == "Género")
-                        {
-                            foreach (Songs songs in Files.AllSongs)
-                            {
-                                foreach (string genero in songs.Genre1)
-                                {
-                                    if (genero.ToUpper().Contains(namecriterio))
-                                    {
-                                        a.Playlistsong.Add(songs);
-                                    }
-                                }
-                            }
-                        }
-                        else if (criterio == "Artista")
-                        {
-                            foreach (Songs songs in Files.AllSongs)
-                            {
-                                if (songs.Artist1.Name.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistsong.Add(songs);
-                                }
-                            }
-                        }
-                        Files.AllPlaylistsSongs.Add(a);
-                    }
-                    else if (tipo2 == "Película")
-                    {
-                        if (criterio == "Director")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                if (movies.Director1.Name.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistmovie.Add(movies);
-                                }
-                            }
-                        }
-                        else if (criterio == "Estudio")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                if (movies.Studio1.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistmovie.Add(movies);
-                                }
-                            }
-                        }
-                        else if (criterio == "Categoría")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                foreach (string cate in movies.Categories1)
-                                {
-                                    if (cate.ToUpper().Contains(namecriterio.ToUpper()))
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                        }
-                        else if (criterio == "Actor")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                foreach (Person actor in movies.Actors1)
-                                {
-                                    if (actor.Name.ToUpper().Contains(namecriterio))
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                        }
-                        Files.AllPlaylistsMovies.Add(a);
-                    }
-                    user.MyPlaylist1.Add(a);
-                }
-                else if (user.Privacy1 == false)
-                {
-                    if (tipo2 == "Canción")
-                    {
-                        if (criterio == "Género")
-                        {
-                            foreach (Songs songs in Files.AllSongs)
-                            {
-                                foreach (string genero in songs.Genre1)
-                                {
-                                    if (genero.ToUpper().Contains(namecriterio))
-                                    {
-                                        a.Playlistsong.Add(songs);
-                                    }
-                                }
-                            }
-                        }
-                        else if (criterio == "Artista")
-                        {
-                            foreach (Songs songs in Files.AllSongs)
-                            {
-                                if (songs.Artist1.Name.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistsong.Add(songs);
-                                }
-                            }
-                        }
-                    }
-                    else if (tipo2 == "Película")
-                    {
-                        if (criterio == "Director")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                if (movies.Director1.Name.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistmovie.Add(movies);
-                                }
-                            }
-                        }
-                        else if (criterio == "Estudio")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                if (movies.Studio1.ToUpper().Contains(namecriterio))
-                                {
-                                    a.Playlistmovie.Add(movies);
-                                }
-                            }
-                        }
-                        else if (criterio == "Categoría")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                foreach (string cate in movies.Categories1)
-                                {
-                                    if (cate.ToUpper().Contains(namecriterio))
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                        }
-                        else if (criterio == "Actor")
-                        {
-                            foreach (Movies movies in Files.AllMovies)
-                            {
-                                foreach (Person actor in movies.Actors1)
-                                {
-                                    if (actor.Name.ToUpper().Contains(namecriterio))
-                                    {
-                                        a.Playlistmovie.Add(movies);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    user.MyPlaylist1.Add(a);
-                }
+                option = false;
             }
-            MessageBox.Show("Playlist creada con éxito");
-            CrearPlaylist.Visible = false;
+            if (option)
+            {
+                if (tipo == "Normal")
+                {
+                    if (user.Privacy1 == true)
+                    {
+                        user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2, nombre));
+                        if (tipo2 == "Canción")
+                        {
+                            Files.AllPlaylistsSongs.Add(computer.CreatePlaylist(tipo2, nombre));
 
+                        }
+                        else if (tipo2 == "Película")
+                        {
+                            Files.AllPlaylistsMovies.Add(computer.CreatePlaylist(tipo2, nombre));
+
+                        }
+                    }
+                    else if (user.Privacy1 == false)
+                    {
+                        user.MyPlaylist1.Add(computer.CreatePlaylist(tipo2, nombre));
+                    }
+                }
+                else if (tipo == "SmartPlaylist")
+                {
+                    var a = computer.CreateSmartPlaylist(tipo2, criterio, namecriterio, nombre);
+                    if (user.Privacy1 == true)
+                    {
+                        if (tipo2 == "Canción")
+                        {
+                            if (criterio == "Género")
+                            {
+                                foreach (Songs songs in Files.AllSongs)
+                                {
+                                    foreach (string genero in songs.Genre1)
+                                    {
+                                        if (genero.ToUpper().Contains(namecriterio))
+                                        {
+                                            a.Playlistsong.Add(songs);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (criterio == "Artista")
+                            {
+                                foreach (Songs songs in Files.AllSongs)
+                                {
+                                    if (songs.Artist1.Name.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistsong.Add(songs);
+                                    }
+                                }
+                            }
+                            Files.AllPlaylistsSongs.Add(a);
+                        }
+                        else if (tipo2 == "Película")
+                        {
+                            if (criterio == "Director")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Director1.Name.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Estudio")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Studio1.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Categoría")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (string cate in movies.Categories1)
+                                    {
+                                        if (cate.ToUpper().Contains(namecriterio.ToUpper()))
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (criterio == "Actor")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (Person actor in movies.Actors1)
+                                    {
+                                        if (actor.Name.ToUpper().Contains(namecriterio))
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                            Files.AllPlaylistsMovies.Add(a);
+                        }
+                        user.MyPlaylist1.Add(a);
+                    }
+                    else if (user.Privacy1 == false)
+                    {
+                        if (tipo2 == "Canción")
+                        {
+                            if (criterio == "Género")
+                            {
+                                foreach (Songs songs in Files.AllSongs)
+                                {
+                                    foreach (string genero in songs.Genre1)
+                                    {
+                                        if (genero.ToUpper().Contains(namecriterio))
+                                        {
+                                            a.Playlistsong.Add(songs);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (criterio == "Artista")
+                            {
+                                foreach (Songs songs in Files.AllSongs)
+                                {
+                                    if (songs.Artist1.Name.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistsong.Add(songs);
+                                    }
+                                }
+                            }
+                        }
+                        else if (tipo2 == "Película")
+                        {
+                            if (criterio == "Director")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Director1.Name.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Estudio")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    if (movies.Studio1.ToUpper().Contains(namecriterio))
+                                    {
+                                        a.Playlistmovie.Add(movies);
+                                    }
+                                }
+                            }
+                            else if (criterio == "Categoría")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (string cate in movies.Categories1)
+                                    {
+                                        if (cate.ToUpper().Contains(namecriterio))
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (criterio == "Actor")
+                            {
+                                foreach (Movies movies in Files.AllMovies)
+                                {
+                                    foreach (Person actor in movies.Actors1)
+                                    {
+                                        if (actor.Name.ToUpper().Contains(namecriterio))
+                                        {
+                                            a.Playlistmovie.Add(movies);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        user.MyPlaylist1.Add(a);
+                    }
+                }
+                MessageBox.Show("Playlist creada con éxito");
+            }
+            else
+            {
+                MessageBox.Show("La playlist no se ha podido crear, debido a que existe una del mismo tipo y mismo nombre");
+            }
+            List<Playlists> Final = ((from s in user.MyPlaylist1 select s).Distinct()).ToList();
+            user.MyPlaylist1 = Final;
+            foreach (Playlists p in user.MyPlaylist1)
+            {
+                if (p.Type == "Película")
+                {
+                    List<Movies> Final5 = ((from s in p.Playlistmovie select s).Distinct()).ToList();
+                    p.Playlistmovie = Final5;
+                }
+                else if (p.Type == "Canción")
+                {
+                    List<Songs> Final6 = ((from s in p.Playlistsong select s).Distinct()).ToList();
+                    p.Playlistsong = Final6;
+                }
+            }
+            List<Playlists> Final1 = ((from s in Files.AllPlaylistsMovies select s).Distinct()).ToList();
+            Files.AllPlaylistsMovies = Final1;
+            List<Playlists> Final2 = ((from s in Files.AllPlaylistsSongs select s).Distinct()).ToList();
+            Files.AllPlaylistsSongs = Final2;
+            CrearPlaylist.Visible = false;
+            VerMIsPlaylistsButton_Click(sender, e);
+            VerMisPlaylits.Visible = true;
+            VerMisPlaylits.BringToFront();
+            Serializacion();
         }
 
         private void NombrePlaylist_TextChanged(object sender, EventArgs e)
@@ -1485,7 +1611,9 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
                 InfoMovieTextBox.Text = null;
                 RellenarInfoMovies(lines[0]);
+                ShowMovie.Visible = true;
                 ShowMovie.BringToFront();
+                Serializacion();
             }
         }
 
@@ -1501,7 +1629,9 @@ namespace Proyecto_equipo_13_entrega_3
                 //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
                 InfoSongsTextBox.Text = null;
                 RellenarInfoSongs(lines[0]);
+                ShowSong.Visible = true;
                 ShowSong.BringToFront();
+                Serializacion();
             }
         }
 
@@ -1597,6 +1727,29 @@ namespace Proyecto_equipo_13_entrega_3
             BuscadorPanel.Visible = false;
             ResultsBuscador.Visible = true;
             ResultsBuscador.BringToFront();
+
+            PersonasCheckBoxBuscadorPanel.Checked = false;
+            CancionesBuscadorUserCheckBox.Checked = false;
+            PelículasBuscadorUserCheckBox.Checked = false;
+            Edad1BuscadorPanelTextBox.ResetText();
+            Edad2BuscadorPanelTextBox.ResetText();
+            NumRep1BuscadorPanel.ResetText();
+            NumRep2BuscadorPanel.ResetText();
+            Rating1BuscadorPanel.ResetText();
+            Rating2BuscadorPanel.ResetText();
+            Año1BuscadorPanel.ResetText();
+            Año2BuscadorPanel.ResetText();
+            CatGen1BuscadorPanel.ResetText();
+            CatGen2BuscadorPanel.ResetText();
+            Titulo1BuscadorTextBox.ResetText();
+            Titulo2BuscadorTextBox.ResetText();
+            Persona1BuscadorPanel.ResetText();
+            Persona2BuscadorPanel.ResetText();
+            Album1BuscadorPanel.ResetText();
+            Album2BuscadorPanel.ResetText();
+            FemeninoSexoBuscadorPanel.Checked = false; 
+            MasculinoSexoBuscadorPanel.Checked=false;
+            Serializacion();
         }
 
         private void Buscador_Click(object sender, EventArgs e)
@@ -1605,6 +1758,7 @@ namespace Proyecto_equipo_13_entrega_3
             InfoSongsTextBox.Text = "";
             BuscadorPanel.Visible = true;
             BuscadorPanel.BringToFront();
+            Serializacion();
         }
 
         private void FillDataGridMisPlaylist()
@@ -1703,17 +1857,26 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridMisPlaylist();
             dataGridVerPlaylist.Visible = true;
             dataGridVerPlaylist.BringToFront();
+            Serializacion();
         }
 
         private void CambiarNombrePlaylist_Click(object sender, EventArgs e)
         {
             string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
-            label50.Visible = true;
-            NuevoNombrePlaylist.Visible = true;
-            Aceptarcambiodenombre.Visible = true;
-            label50.BringToFront();
-            NuevoNombrePlaylist.BringToFront();
-            Aceptarcambiodenombre.BringToFront();
+            if (name=="Me gusta")
+            {
+                MessageBox.Show("No se puede cambiar el nombre de esta Playlist");
+            }
+            else
+            {
+                label50.Visible = true;
+                NuevoNombrePlaylist.Visible = true;
+                Aceptarcambiodenombre.Visible = true;
+                label50.BringToFront();
+                NuevoNombrePlaylist.BringToFront();
+                Aceptarcambiodenombre.BringToFront();
+            }
+            Serializacion();
         }
 
         private void Aceptarcambiodenombre_Click(object sender, EventArgs e)
@@ -1746,6 +1909,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             VerMisPlaylits.Visible = false;
             NuevoNombrePlaylist.Text = "";
+            Serializacion();
         }
 
         public void ChooseFolder()
@@ -1815,6 +1979,7 @@ namespace Proyecto_equipo_13_entrega_3
             FilldataGriedFollowers(user.FollowsP, user.FollowsU);
             FollowersPanel.Visible = true;
             FollowersPanel.BringToFront();
+            Serializacion();
         }
 
         private void linklabelPerson_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -1843,10 +2008,12 @@ namespace Proyecto_equipo_13_entrega_3
                             {
                                 FilldataGridVerPlaylistUsuarioExterno(lines[0]);
                                 dataGridVerPlaylistUsuarioExterno.BringToFront();
+                                ShowUserPanel.Visible = true;
                                 ShowUserPanel.BringToFront();
                             }
                         }
                     }
+                    Serializacion();
                 }
                 else if (lines2[0] == "Persona")
                 {
@@ -1864,7 +2031,9 @@ namespace Proyecto_equipo_13_entrega_3
                     }
                     FilldataGriedPanelPersona(lines[0]);
                     dataGriedPanelPersona.BringToFront();
+                    ShowPersonPanel.Visible = true;
                     ShowPersonPanel.BringToFront();
+                    Serializacion();
                 }
             }
         }
@@ -1936,16 +2105,19 @@ namespace Proyecto_equipo_13_entrega_3
                             if (p.Name == lines[0] && lines2[0] == "Canción")
                             {
                                 FillDataGridViewSongS(p.Playlistsong);
+                                ShowSongsPanel.Visible = true;
                                 ShowSongsPanel.BringToFront();
                             }
                             else if (p.Name == lines[0] && lines2[0] == "Película")
                             {
                                 FillDataGridViewMovieS(p.Playlistmovie);
+                                ShowMoviesPanel.Visible = true;
                                 ShowMoviesPanel.BringToFront();
                             }
                         }
                     }
                 }
+                Serializacion();
             }
             else if (e.ColumnIndex == 3)
             {
@@ -1977,7 +2149,8 @@ namespace Proyecto_equipo_13_entrega_3
 
                     }
                 }
-                ReproducirPlaylist(p);
+                Serializacion();
+                //ReproducirPlaylist(p);
             }
         }
 
@@ -1997,7 +2170,9 @@ namespace Proyecto_equipo_13_entrega_3
                     NombreUsuarioTextBox.Text = lines[0];
                     FilldataGridVerPlaylistUsuarioExterno(lines[0]);
                     dataGridVerPlaylistUsuarioExterno.BringToFront();
+                    ShowUserPanel.Visible = true;
                     ShowUserPanel.BringToFront();
+                    Serializacion();
                 }
                 else if (lines2[0] == "Persona")
                 {
@@ -2015,7 +2190,9 @@ namespace Proyecto_equipo_13_entrega_3
                     }
                     dataGriedPanelPersona.BringToFront();
                     FilldataGriedPanelPersona(lines[0]);
+                    ShowPersonPanel.Visible = true;
                     ShowPersonPanel.BringToFront();
+                    Serializacion();
                 }
             }
         }
@@ -2197,6 +2374,7 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 RellenarInfoSongs(Titulo);
             }
+            Serializacion();
         }
 
         private void CalificarButtonShowSong_Click(object sender, EventArgs e)
@@ -2216,6 +2394,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             RellenarInfoSongs(Titulo);
             calificacionsong.Value = 0;
+            Serializacion();
         }
 
         private void MeGustaButtonShowSong_Click(object sender, EventArgs e)
@@ -2234,6 +2413,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             List<Songs> Final = ((from s in user.MeGustaSongs1.Playlistsong select s).Distinct()).ToList();
             user.MeGustaSongs1.Playlistsong = Final;
+            Serializacion();
         }
 
         private void CalificarShowMovie_Click(object sender, EventArgs e)
@@ -2253,6 +2433,7 @@ namespace Proyecto_equipo_13_entrega_3
                 }
             }
             RellenarInfoMovies(Titulo);
+            Serializacion();
         }
 
         private void MeGustaShowMovie_Click(object sender, EventArgs e)
@@ -2271,6 +2452,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             List<Movies> Final = ((from s in user.MeGustaMovies1.Playlistmovie select s).Distinct()).ToList();
             user.MeGustaMovies1.Playlistmovie = Final;
+            Serializacion();
         }
 
         private void AddPlaylistShowSong_Click(object sender, EventArgs e)
@@ -2280,6 +2462,7 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridAgregarPlaylist();
             dataGridAgregarAPlaylist.Visible = true;
             dataGridAgregarAPlaylist.BringToFront();
+            Serializacion();
         }
 
         private void AddPlaylistShowMovie_Click(object sender, EventArgs e)
@@ -2289,16 +2472,19 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridAgregarPlaylist();
             dataGridAgregarAPlaylist.Visible = true;
             dataGridAgregarAPlaylist.BringToFront();
+            Serializacion();
         }
 
         private void GoAddMoviePanel_Click(object sender, EventArgs e)
         {
             AddMoviePanel.BringToFront();
+            Serializacion();
         }
 
         private void GoAddSongPanel_Click(object sender, EventArgs e)
         {
             AddSongPanel.BringToFront();
+            Serializacion();
         }
 
         private void CambiarImagenShowMovie_Click(object sender, EventArgs e)
@@ -2338,6 +2524,7 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 RellenarInfoMovies(Titulo);
             }
+            Serializacion();
         }
 
         private void dataGriedPanelPersona_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2355,6 +2542,7 @@ namespace Proyecto_equipo_13_entrega_3
                     {
                         InfoMovieTextBox.Text = null;
                         RellenarInfoMovies(lines[0]);
+                        ShowMovie.Visible = true;
                         ShowMovie.BringToFront();
                     }
                 }
@@ -2364,9 +2552,11 @@ namespace Proyecto_equipo_13_entrega_3
                     {
                         InfoSongsTextBox.Text = null;
                         RellenarInfoSongs(lines[0]);
+                        ShowSong.Visible = true;
                         ShowSong.BringToFront();
                     }
                 }
+                Serializacion();
             }
         }
 
@@ -2456,36 +2646,43 @@ namespace Proyecto_equipo_13_entrega_3
                     playlist.Playlistsong.Add(cancion);
                 }
             }
+            Serializacion();
         }
 
         private void buttonVolverAgregarPelicula_Click(object sender, EventArgs e)
         {
             AddMoviePanel.SendToBack();
+            Serializacion();
         }
 
         private void buttonAgregarPelicula_Click(object sender, EventArgs e)
         {
             AgregarPelicula();
+            Serializacion();
         }
 
         private void buttonVolverAgregarCanciones_Click(object sender, EventArgs e)
         {
             AddSongPanel.SendToBack();
+            Serializacion();
         }
 
         private void buttonAgregarCancion_Click(object sender, EventArgs e)
         {
             AgregarCancion();
+            Serializacion();
         }
 
         private void buttonImagenC_Click(object sender, EventArgs e)
         {
             AgregarImagenCancion();
+            Serializacion();
         }
 
         private void buttonImagenP_Click(object sender, EventArgs e)
         {
             AgregarImagenPelicula();
+            Serializacion();
         }
 
         private void ModificarPlaylistButton_Click(object sender, EventArgs e)
@@ -2514,6 +2711,7 @@ namespace Proyecto_equipo_13_entrega_3
                 ShowMoviesPanel.BringToFront();
                 FillDataGridViewMovieS(Files.AllMovies);
             }
+            Serializacion();
         }
 
         private void FillDataGridEliminarS(List<Songs> songs)
@@ -2632,6 +2830,7 @@ namespace Proyecto_equipo_13_entrega_3
             dataGridEliminar.Visible = true;
             dataGridEliminar.BringToFront();
             tableLayoutPanel89.SendToBack();
+            Serializacion();
         }
 
         private void AddToFollowersButton_Click(object sender, EventArgs e)
@@ -2649,6 +2848,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             List<Person> Final = ((from s in user.FollowsP select s).Distinct()).ToList();
             user.FollowsP = Final;
+            Serializacion();
         }
 
         private void FollowUserButton_Click(object sender, EventArgs e)
@@ -2665,6 +2865,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             List<User> Final = ((from s in user.FollowsU select s).Distinct()).ToList();
             user.FollowsU = Final;
+            Serializacion();
         }
 
         public void AgregarPelicula()
@@ -2770,6 +2971,7 @@ namespace Proyecto_equipo_13_entrega_3
                     playlist.Playlistmovie.Add(pelicula);
                 }
             }
+            Serializacion();
         }
 
         public void AgregarImagenCancion()
@@ -2783,6 +2985,7 @@ namespace Proyecto_equipo_13_entrega_3
                 System.IO.File.Copy(salida, destFile, true);
                 imagen = @"\" + destFileName;
             }
+            Serializacion();
         }
 
         public void AgregarImagenPelicula()
@@ -2796,6 +2999,7 @@ namespace Proyecto_equipo_13_entrega_3
                 System.IO.File.Copy(salida, destFile, true);
                 imagen = @"\" + destFileName;
             }
+            Serializacion();
         }
 
         public void QueueSongs(string titulo)
@@ -2807,6 +3011,7 @@ namespace Proyecto_equipo_13_entrega_3
                     queuesongs.Enqueue(s);
                 }
             }
+            Serializacion();
         }
 
         public void QueueMovies(string titulo)
@@ -2818,6 +3023,7 @@ namespace Proyecto_equipo_13_entrega_3
                     queuemovies.Enqueue(s);
                 }
             }
+            Serializacion();
         }
 
         public void ReproducirPlaylist(Playlists plist)
@@ -2844,6 +3050,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
             axWindowsMediaPlayer1.Ctlcontrols.play();
+            Serializacion();
         }
 
         private void backbutton_Click(object sender, EventArgs e)
@@ -2865,6 +3072,7 @@ namespace Proyecto_equipo_13_entrega_3
                 }
             }
             NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            Serializacion();
         }
 
         private void playpausebutton_Click(object sender, EventArgs e)
@@ -2877,6 +3085,7 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 axWindowsMediaPlayer1.Ctlcontrols.play();
             }
+            Serializacion();
         }
 
         private void nextbutton_Click(object sender, EventArgs e)
@@ -2898,6 +3107,7 @@ namespace Proyecto_equipo_13_entrega_3
                 }
             }
             NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            Serializacion();
         }
 
         private void dataGridAgregarAPlaylist_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -2927,10 +3137,9 @@ namespace Proyecto_equipo_13_entrega_3
                                     if (playlists.Name == playlist)
                                     {
                                         playlists.Playlistsong.Add(songs);
-                                        MessageBox.Show("Canción agragada con éxito");
                                     }
-
                                 }
+                                MessageBox.Show("Canción agragada con éxito");
                             }
                         }
                     }
@@ -2952,10 +3161,9 @@ namespace Proyecto_equipo_13_entrega_3
                                     if (playlists.Name == playlist)
                                     {
                                         playlists.Playlistmovie.Add(movies);
-                                        MessageBox.Show("Película agragada con éxito");
                                     }
-
                                 }
+                                MessageBox.Show("Película agragada con éxito");
                             }
                         }
                     }
@@ -2964,6 +3172,20 @@ namespace Proyecto_equipo_13_entrega_3
                         MessageBox.Show("No se puede agregar objetos de este tipo a esta Playlist");
                     }
                 }
+                foreach (Playlists p in user.MyPlaylist1)
+                {
+                    if (p.Type == "Canción")
+                    {
+                        List<Songs> Final = ((from s in p.Playlistsong select s).Distinct()).ToList();
+                        p.Playlistsong = Final;
+                    }
+                    else if (p.Type == "Película")
+                    {
+                        List<Movies> Final2 = ((from s in p.Playlistmovie select s).Distinct()).ToList();
+                        p.Playlistmovie = Final2;
+                    }
+                }
+                Serializacion();
             }
         }
 
@@ -2989,6 +3211,7 @@ namespace Proyecto_equipo_13_entrega_3
                         FillDataGridViewMovieS(user.MyPlaylist1[i].Playlistmovie);
                     }
                 }
+                Serializacion();
             }
             else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 3)
             {
@@ -3000,6 +3223,10 @@ namespace Proyecto_equipo_13_entrega_3
                 CambiarNombrePlaylist.BringToFront();
                 EliminardePlaylist.BringToFront();
                 tableLayoutPanel89.BringToFront();
+                Aceptarcambiodenombre.Visible = false;
+                NuevoNombrePlaylist.Visible = false;
+                label50.Visible = false;
+                Serializacion();
             }
             else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 4)
             {
@@ -3016,18 +3243,19 @@ namespace Proyecto_equipo_13_entrega_3
                 ShowSongsPanel.Visible = false;
                 pictureBox1.Visible = true;
                 pictureBox1.BringToFront();
-                
-            }
-            Playlists p = null;
-            foreach (Playlists playlist in user.MyPlaylist1)
-            {
-                if (playlist.Name == name && playlist.Type==type)
+                Playlists p = null;
+                foreach (Playlists playlist in user.MyPlaylist1)
                 {
-                    p = playlist;
+                    if (playlist.Name == name && playlist.Type == type)
+                    {
+                        p = playlist;
+                    }
                 }
+                ReproducirPlaylist(p);
+                Serializacion();
             }
-            ReproducirPlaylist(p);
             dataGridVerPlaylist.Visible = false;
+            Serializacion();
         }
 
         private void dataGridEliminar_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -3072,6 +3300,7 @@ namespace Proyecto_equipo_13_entrega_3
                         }
                     }
                 }
+                Serializacion();
             }
         }
 
@@ -3160,6 +3389,7 @@ namespace Proyecto_equipo_13_entrega_3
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
             axWindowsMediaPlayer1.Ctlcontrols.play();
             NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            Serializacion();
         }
     }
 }

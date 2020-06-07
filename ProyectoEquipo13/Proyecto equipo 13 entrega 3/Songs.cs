@@ -71,28 +71,5 @@ namespace Proyecto_equipo_13_entrega_3
         public string Type1 { get => Type; set => Type = value; }
         public int Min1 { get => Min; set => Min = value; }
         public Album Album1 { get => Album; set => Album = value; }
-
-        public void SongsInformation()
-        {
-            Console.WriteLine("Título: " + this.Title1 + "\nArtista: " + this.Artist1.Name + "\nAlbum: " + this.Album1.Name1 + "\nRating: " + this.RatingProm1);
-            Console.WriteLine("Género/os: ");
-            foreach (string genero in this.Genre1)
-            {
-                Console.WriteLine(genero);
-            }
-        }
-
-        public void Play()
-        {
-            var carpeta = Directory.GetCurrentDirectory();
-            var D = carpeta + this.Music1;
-            player.URL = D;
-            this.NumReproductions += 1;
-            player.controls.play();
-            Console.WriteLine("Reproduciendo " + this.Title1);
-            Console.WriteLine("Presione enter si desea parar la reproducción");
-            Console.ReadLine();
-            player.controls.stop();
-        }
     }
 }
