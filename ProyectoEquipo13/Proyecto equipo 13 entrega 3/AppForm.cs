@@ -1037,37 +1037,43 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void DataGriedMovieS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Director: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
+            if (DataGriedMovieS.Rows.Count != 0)
             {
-                //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
-                InfoMovieTextBox.Text = null;
-                RellenarInfoMovies(lines[0]);
-                ShowMovie.Visible = true;
-                ShowMovie.BringToFront();
-                Serializacion();
+                string datosTO = DataGriedMovieS.Rows[DataGriedMovieS.CurrentRow.Index].Cells[1].Value.ToString();
+                string datosT = datosTO.Replace("Título: ", string.Empty);
+                string datos = datosT.Replace("Director: ", string.Empty);
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+                if (e.ColumnIndex == 2)
+                {
+                    //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+                    InfoMovieTextBox.Text = null;
+                    RellenarInfoMovies(lines[0]);
+                    ShowMovie.Visible = true;
+                    ShowMovie.BringToFront();
+                    Serializacion();
+                }
             }
         }
 
         private void DataGriedSongS_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string datosTO = DataGriedSongS.Rows[DataGriedSongS.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Cantante: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
+            if(DataGriedSongS.Rows.Count != 0)
             {
-                //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
-                InfoSongsTextBox.Text = null;
-                RellenarInfoSongs(lines[0]);
-                ShowSong.Visible = true;
-                ShowSong.BringToFront();
-                Serializacion();
+                string datosTO = DataGriedSongS.Rows[DataGriedSongS.CurrentRow.Index].Cells[1].Value.ToString();
+                string datosT = datosTO.Replace("Título: ", string.Empty);
+                string datos = datosT.Replace("Cantante: ", string.Empty);
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+                if (e.ColumnIndex == 2)
+                {
+                    //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
+                    InfoSongsTextBox.Text = null;
+                    RellenarInfoSongs(lines[0]);
+                    ShowSong.Visible = true;
+                    ShowSong.BringToFront();
+                    Serializacion();
+                }
             }
         }
 
@@ -1601,37 +1607,43 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void dataGridBuscadorMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string datosTO = dataGridBuscadorMovies.Rows[dataGridBuscadorMovies.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Director: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
+            if (dataGridBuscadorMovies.Rows.Count!=0)
             {
-                //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
-                InfoMovieTextBox.Text = null;
-                RellenarInfoMovies(lines[0]);
-                ShowMovie.Visible = true;
-                ShowMovie.BringToFront();
-                Serializacion();
+                string datosTO = dataGridBuscadorMovies.Rows[dataGridBuscadorMovies.CurrentRow.Index].Cells[1].Value.ToString();
+                string datosT = datosTO.Replace("Título: ", string.Empty);
+                string datos = datosT.Replace("Director: ", string.Empty);
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+                if (e.ColumnIndex == 2)
+                {
+                    //MessageBox.Show("Reproduciendo: " + lines[0] + " de " + lines[1]);
+                    InfoMovieTextBox.Text = null;
+                    RellenarInfoMovies(lines[0]);
+                    ShowMovie.Visible = true;
+                    ShowMovie.BringToFront();
+                    Serializacion();
+                }
             }
         }
 
         private void dataGridBuscadorSongs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string datosTO = dataGridBuscadorSongs.Rows[dataGridBuscadorSongs.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosT = datosTO.Replace("Título: ", string.Empty);
-            string datos = datosT.Replace("Cantante: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
+            if (dataGridBuscadorSongs.Rows.Count != 0)
             {
-                //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
-                InfoSongsTextBox.Text = null;
-                RellenarInfoSongs(lines[0]);
-                ShowSong.Visible = true;
-                ShowSong.BringToFront();
-                Serializacion();
+                string datosTO = dataGridBuscadorSongs.Rows[dataGridBuscadorSongs.CurrentRow.Index].Cells[1].Value.ToString();
+                string datosT = datosTO.Replace("Título: ", string.Empty);
+                string datos = datosT.Replace("Cantante: ", string.Empty);
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] lines = datos.Split(stringSeparators, StringSplitOptions.None);
+                if (e.ColumnIndex == 2)
+                {
+                    //MessageBox.Show("Reproduciendo: " + lines[0] + " del director " + lines[1]);
+                    InfoSongsTextBox.Text = null;
+                    RellenarInfoSongs(lines[0]);
+                    ShowSong.Visible = true;
+                    ShowSong.BringToFront();
+                    Serializacion();
+                }
             }
         }
 
@@ -1989,51 +2001,54 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void dataGridFollowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string datosTO = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[0].Value.ToString();
-            string datosTO2 = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[1].Value.ToString();
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] lines = datosTO.Split(stringSeparators, StringSplitOptions.None);
-            string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
-            if (e.ColumnIndex == 2)
+            if (dataGridFollowers.Rows.Count != 0)
             {
-                //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: "+lines2[0]);
-                if (lines2[0] == "Usuario")
+                string datosTO = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[0].Value.ToString();
+                string datosTO2 = dataGridFollowers.Rows[dataGridFollowers.CurrentRow.Index].Cells[1].Value.ToString();
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] lines = datosTO.Split(stringSeparators, StringSplitOptions.None);
+                string[] lines2 = datosTO2.Split(stringSeparators, StringSplitOptions.None);
+                if (e.ColumnIndex == 2)
                 {
-                    //MessageBox.Show(lines2[0] + " " + lines[0]); Usuario keko
-                    foreach (User u in Files.Users)
+                    //MessageBox.Show("Seleccionaste a: " + lines[0] + " y es de tipo: "+lines2[0]);
+                    if (lines2[0] == "Usuario")
                     {
-                        if (u.UserName ==lines[0])
+                        //MessageBox.Show(lines2[0] + " " + lines[0]); Usuario keko
+                        foreach (User u in Files.Users)
                         {
-                            foreach (Playlists p in u.MyPlaylist1)
+                            if (u.UserName == lines[0])
                             {
-                                FilldataGridVerPlaylistUsuarioExterno(lines[0]);
-                                dataGridVerPlaylistUsuarioExterno.BringToFront();
-                                ShowUserPanel.Visible = true;
-                                ShowUserPanel.BringToFront();
+                                foreach (Playlists p in u.MyPlaylist1)
+                                {
+                                    FilldataGridVerPlaylistUsuarioExterno(lines[0]);
+                                    dataGridVerPlaylistUsuarioExterno.BringToFront();
+                                    ShowUserPanel.Visible = true;
+                                    ShowUserPanel.BringToFront();
+                                }
                             }
                         }
+                        Serializacion();
                     }
-                    Serializacion();
-                }
-                else if (lines2[0] == "Persona")
-                {
-                    PersonInformation.Text = null;
-                    foreach (Person p in Files.AllPersons)
+                    else if (lines2[0] == "Persona")
                     {
-                        if (p.Name == lines[0])
+                        PersonInformation.Text = null;
+                        foreach (Person p in Files.AllPersons)
                         {
-                            PersonInformation.Text += "Nombre: " + p.Name + "\r\nFecha Nacimiento: "+ p.Birthday.ToString("dd / MM / yyyy");
-                            if (p.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
-                            else if (p.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
-                            if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + p.NumReproduction.ToString(); }
-                            linklabelPerson.Text = p.Link;
+                            if (p.Name == lines[0])
+                            {
+                                PersonInformation.Text += "Nombre: " + p.Name + "\r\nFecha Nacimiento: " + p.Birthday.ToString("dd / MM / yyyy");
+                                if (p.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
+                                else if (p.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
+                                if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + p.NumReproduction.ToString(); }
+                                linklabelPerson.Text = p.Link;
+                            }
                         }
+                        FilldataGriedPanelPersona(lines[0]);
+                        dataGriedPanelPersona.BringToFront();
+                        ShowPersonPanel.Visible = true;
+                        ShowPersonPanel.BringToFront();
+                        Serializacion();
                     }
-                    FilldataGriedPanelPersona(lines[0]);
-                    dataGriedPanelPersona.BringToFront();
-                    ShowPersonPanel.Visible = true;
-                    ShowPersonPanel.BringToFront();
-                    Serializacion();
                 }
             }
         }
@@ -2150,7 +2165,7 @@ namespace Proyecto_equipo_13_entrega_3
                     }
                 }
                 Serializacion();
-                //ReproducirPlaylist(p);
+                ReproducirPlaylist(p);
             }
         }
 
@@ -3034,7 +3049,8 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 foreach (Songs s in plist.Playlistsong)
                 {
-                    media = axWindowsMediaPlayer1.newMedia(s.Music1);
+                    SacarRuta(s.Title1);
+                    media = axWindowsMediaPlayer1.newMedia(this.ruta);
                     playlist.appendItem(media);
                 }
                 axWindowsMediaPlayer1.currentPlaylist = playlist;
@@ -3043,35 +3059,33 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 foreach (Movies m in plist.Playlistmovie)
                 {
-                    media = axWindowsMediaPlayer1.newMedia(m.Video1);
+                    SacarRuta(m.Title1);
+                    media = axWindowsMediaPlayer1.newMedia(this.ruta);
                     playlist.appendItem(media);
                 }
                 axWindowsMediaPlayer1.currentPlaylist = playlist;
             }
-            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-            Serializacion();
+            try
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+                Serializacion();
+            }
+            catch
+            {
+                MessageBox.Show("La playlist no se puede reproducir, puede ser que no tenga elementos dentro de ella");
+            }
         }
 
         private void backbutton_Click(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.Ctlcontrols.previous();
             string s = axWindowsMediaPlayer1.URL;
-            foreach (Movies movie in Files.AllMovies)
+            if (s != "")
             {
-                if (movie.Video1 == s)
-                {
-                    movie.NumReproductions += 1;
-                }
+                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             }
-            foreach (Songs song in Files.AllSongs)
-            {
-                if (song.Music1 == s)
-                {
-                    song.NumReproductions += 1;
-                }
-            }
-            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             Serializacion();
         }
 
@@ -3092,21 +3106,10 @@ namespace Proyecto_equipo_13_entrega_3
         {
             axWindowsMediaPlayer1.Ctlcontrols.next();
             string s = axWindowsMediaPlayer1.URL;
-            foreach (Movies movie in Files.AllMovies)
+            if (s != "")
             {
-                if (movie.Video1 == s)
-                {
-                    movie.NumReproductions += 1;
-                }
+                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             }
-            foreach (Songs song in Files.AllSongs)
-            {
-                if (song.Music1 == s)
-                {
-                    song.NumReproductions += 1;
-                }
-            }
-            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             Serializacion();
         }
 
@@ -3254,53 +3257,56 @@ namespace Proyecto_equipo_13_entrega_3
                 ReproducirPlaylist(p);
                 Serializacion();
             }
-            dataGridVerPlaylist.Visible = false;
+            //dataGridVerPlaylist.Visible = false;
             Serializacion();
         }
 
         private void dataGridEliminar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            User user = GetUser();
-            string nameP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
-            string typeP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
-            string infoCP = dataGridEliminar.Rows[dataGridEliminar.CurrentRow.Index].Cells[1].Value.ToString();
-            string datosc = infoCP.Replace("Título: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] linescp = datosc.Split(stringSeparators, StringSplitOptions.None);
-
-            if (dataGridEliminar.CurrentCell.ColumnIndex == 2)
+            if (dataGridEliminar.Rows.Count != 0)
             {
-                if(typeP == "Canción")
+                User user = GetUser();
+                string nameP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
+                string typeP = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+                string infoCP = dataGridEliminar.Rows[dataGridEliminar.CurrentRow.Index].Cells[1].Value.ToString();
+                string datosc = infoCP.Replace("Título: ", string.Empty);
+                string[] stringSeparators = new string[] { "\r\n" };
+                string[] linescp = datosc.Split(stringSeparators, StringSplitOptions.None);
+
+                if (dataGridEliminar.CurrentCell.ColumnIndex == 2)
                 {
-                    for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                    if (typeP == "Canción")
                     {
-                        foreach(Songs songs in user.MyPlaylist1[i].Playlistsong)
+                        for (int i = 0; i < user.MyPlaylist1.Count(); i++)
                         {
-                            if(songs.Title1 == linescp[0])
+                            foreach (Songs songs in user.MyPlaylist1[i].Playlistsong)
                             {
-                                user.MyPlaylist1[i].Playlistsong.Remove(songs);
-                                MessageBox.Show("Canción eliminada");
-                                break;
+                                if (songs.Title1 == linescp[0])
+                                {
+                                    user.MyPlaylist1[i].Playlistsong.Remove(songs);
+                                    MessageBox.Show("Canción eliminada");
+                                    break;
+                                }
                             }
                         }
                     }
-                }
-                else if(typeP == "Película")
-                {
-                    for (int i = 0; i < user.MyPlaylist1.Count(); i++)
+                    else if (typeP == "Película")
                     {
-                        foreach (Movies movies in user.MyPlaylist1[i].Playlistmovie)
+                        for (int i = 0; i < user.MyPlaylist1.Count(); i++)
                         {
-                            if (movies.Title1 == linescp[0])
+                            foreach (Movies movies in user.MyPlaylist1[i].Playlistmovie)
                             {
-                                user.MyPlaylist1[i].Playlistmovie.Remove(movies);
-                                MessageBox.Show("Película eliminada");
-                                break;
+                                if (movies.Title1 == linescp[0])
+                                {
+                                    user.MyPlaylist1[i].Playlistmovie.Remove(movies);
+                                    MessageBox.Show("Película eliminada");
+                                    break;
+                                }
                             }
                         }
                     }
+                    Serializacion();
                 }
-                Serializacion();
             }
         }
 
@@ -3336,19 +3342,60 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
         }
 
+        private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
+        {
+            string dir = axWindowsMediaPlayer1.URL;
+            string carpeta = Directory.GetCurrentDirectory();
+
+            foreach (Songs song in Files.AllSongs)
+            {
+                if ((carpeta + song.Music1) == dir)
+                {
+                    song.NumReproductions += 1;
+                    song.Artist1.NumReproduction += 1;
+                    MessageBox.Show(song.Artist1.Name);
+                    MessageBox.Show(song.Artist1.NumReproduction.ToString());
+                    RellenarInfoSongs(song.Title1);
+                    PersonInformation.Text += "Nombre: " + song.Artist1.Name + "\r\nFecha Nacimiento: " + song.Artist1.Birthday.ToString("dd / MM / yyyy");
+                    if (song.Artist1.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
+                    else if (song.Artist1.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
+                    PersonInformation.Text += "\r\nNúmero de Reproducciones: " + song.Artist1.NumReproduction.ToString();
+                    linklabelPerson.Text = song.Artist1.Link;
+                    return;                   
+                }
+            }
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if ((carpeta + movie.Video1) == dir)
+                {
+                    movie.NumReproductions += 1;
+                    RellenarInfoMovies(movie.Title1);
+                    return;
+                }
+            }
+            Serializacion();
+        }
+
         public void ReproducirQueueMovies()
         {
             WMPLib.IWMPPlaylist playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("Queue de Películas");
             WMPLib.IWMPMedia media;
             foreach (Movies m in queuemovies)
             {
-                media = axWindowsMediaPlayer1.newMedia(m.Video1);
+                SacarRuta(m.Title1);
+                media = axWindowsMediaPlayer1.newMedia(this.ruta);
+                MessageBox.Show(media.ToString());
                 playlist.appendItem(media);
             }
+            //axWindowsMediaPlayer1.currentPlaylist.clear();
             axWindowsMediaPlayer1.currentPlaylist = playlist;
-            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+            try
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            }
+            catch { }
             axWindowsMediaPlayer1.Ctlcontrols.play();
-            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
 
         public void ReproducirQueueSongs()
@@ -3357,31 +3404,23 @@ namespace Proyecto_equipo_13_entrega_3
             WMPLib.IWMPMedia media;
             foreach (Songs s in queuesongs)
             {
-                media = axWindowsMediaPlayer1.newMedia(s.Music1);
+                SacarRuta(s.Title1);
+                media = axWindowsMediaPlayer1.newMedia(this.ruta);
                 playlist.appendItem(media);
             }
+            //axWindowsMediaPlayer1.currentPlaylist.clear();
             axWindowsMediaPlayer1.currentPlaylist = playlist;
             axWindowsMediaPlayer1.Ctlcontrols.play();
-            axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
-            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            try
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            }
+            catch { }
         }
 
         public void Reproducir(string titulo)
         {
-            foreach (Movies movie in Files.AllMovies)
-            {
-                if (movie.Title1 == titulo)
-                {
-                    movie.NumReproductions += 1;
-                }
-            }
-            foreach (Songs song in Files.AllSongs)
-            {
-                if (song.Title1 == titulo)
-                {
-                    song.NumReproductions += 1;
-                }
-            }
             SacarRuta(titulo);
             stackPanels.Add(panels["ReproductionPanel"]);
             ShowLastPanel();
