@@ -14,7 +14,7 @@ namespace Proyecto_equipo_13_entrega_3
         private char genre; //M o F
         private string link; //Link que deriva a IMDB
         private string tipo;
-        protected int numReproduction = 0;
+        protected int numReproduction;
 
         public string Name { get => name; set => name = value; }
         public DateTime Birthday { get => birthday; set => birthday = value; }

@@ -17,7 +17,6 @@ namespace Proyecto_equipo_13_entrega_3
             this.Genre = genre;
             this.Link = link;
             this.Tipo = "Artista";
-            this.NumReproduction = NumReproduction;
         }
     }
 }
