@@ -1632,6 +1632,14 @@ namespace Proyecto_equipo_13_entrega_3
             buttons2.FlatStyle = FlatStyle.Standard;
             buttons2.CellTemplate.Style.BackColor = Color.Black;
             buttons2.CellTemplate.Style.ForeColor = Color.White;
+            DataGridViewButtonColumn buttons3 = new DataGridViewButtonColumn();
+            buttons3.HeaderText = @"";
+            buttons3.Text = "Reproducir Playlist";
+            buttons3.UseColumnTextForButtonValue = true;
+            buttons3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            buttons3.FlatStyle = FlatStyle.Standard;
+            buttons3.CellTemplate.Style.BackColor = Color.Black;
+            buttons3.CellTemplate.Style.ForeColor = Color.White;
 
 
             dataGridVerPlaylist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -1642,6 +1650,7 @@ namespace Proyecto_equipo_13_entrega_3
             dataGridVerPlaylist.Columns.Add(tipo);
             dataGridVerPlaylist.Columns.Add(buttons);
             dataGridVerPlaylist.Columns.Add(buttons2);
+            dataGridVerPlaylist.Columns.Add(buttons3);
 
             dataGridVerPlaylist.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             for(int i = 0; i<user.MyPlaylist1.Count();i++)
@@ -1694,44 +1703,6 @@ namespace Proyecto_equipo_13_entrega_3
             FillDataGridMisPlaylist();
             dataGridVerPlaylist.Visible = true;
             dataGridVerPlaylist.BringToFront();
-        }
-
-        private void dataGridVerPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            User user = GetUser();
-            string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
-            string type = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
-            if(dataGridVerPlaylist.CurrentCell.ColumnIndex == 2)
-            {
-                for (int i = 0; i < user.MyPlaylist1.Count(); i++)
-                {
-                    if (name == user.MyPlaylist1[i].Name && type == "Canción")
-                    {
-                        ShowSongsPanel.Visible = true;
-                        ShowSongsPanel.BringToFront();
-                        FillDataGridViewSongS(user.MyPlaylist1[i].Playlistsong);
-                    }
-                    if (name == user.MyPlaylist1[i].Name && type == "Película")
-                    {
-                        ShowMoviesPanel.Visible = true;
-                        ShowMoviesPanel.BringToFront();
-                        FillDataGridViewMovieS(user.MyPlaylist1[i].Playlistmovie);
-                    }
-                }
-            }
-            else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 3)
-            {
-                dataGridVerPlaylist.Visible = false;
-                CambiarNombrePlaylist.Visible = true;
-                EliminardePlaylist.Visible = true;
-                dataGridVerPlaylist.BringToFront();
-                CambiarNombrePlaylist.BringToFront();
-                EliminardePlaylist.BringToFront();
-                tableLayoutPanel89.BringToFront();
-            }
-            
-            dataGridVerPlaylist.Visible = false;
-
         }
 
         private void CambiarNombrePlaylist_Click(object sender, EventArgs e)
@@ -1842,6 +1813,7 @@ namespace Proyecto_equipo_13_entrega_3
         {
             User user = GetUser();
             FilldataGriedFollowers(user.FollowsP, user.FollowsU);
+            FollowersPanel.Visible = true;
             FollowersPanel.BringToFront();
         }
 
@@ -1918,6 +1890,15 @@ namespace Proyecto_equipo_13_entrega_3
                     buttons.CellTemplate.Style.BackColor = Color.Black;
                     buttons.CellTemplate.Style.ForeColor = Color.White;
 
+                    DataGridViewButtonColumn buttons2 = new DataGridViewButtonColumn();
+                    buttons2.HeaderText = @"";
+                    buttons2.Text = "Reproducir Playlist";
+                    buttons2.UseColumnTextForButtonValue = true;
+                    buttons2.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                    buttons2.FlatStyle = FlatStyle.Standard;
+                    buttons2.CellTemplate.Style.BackColor = Color.Black;
+                    buttons2.CellTemplate.Style.ForeColor = Color.White;
+
                     dataGridVerPlaylistUsuarioExterno.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dataGridVerPlaylistUsuarioExterno.RowTemplate.Height = 100;
                     dataGridVerPlaylistUsuarioExterno.AllowUserToAddRows = false;
@@ -1925,6 +1906,7 @@ namespace Proyecto_equipo_13_entrega_3
                     dataGridVerPlaylistUsuarioExterno.Columns.Add(nombre);
                     dataGridVerPlaylistUsuarioExterno.Columns.Add(tipo);
                     dataGridVerPlaylistUsuarioExterno.Columns.Add(buttons);
+                    dataGridVerPlaylistUsuarioExterno.Columns.Add(buttons2);
 
                     foreach (Playlists p in u.MyPlaylist1)
                     {
@@ -1964,6 +1946,38 @@ namespace Proyecto_equipo_13_entrega_3
                         }
                     }
                 }
+            }
+            else if (e.ColumnIndex == 3)
+            {
+                VerMisPlaylits.Visible = false;
+                ShowSong.Visible = false;
+                ShowMovie.Visible = false;
+                ShowUserPanel.Visible = false;
+                ShowPersonPanel.Visible = false;
+                ShowMoviesPanel.Visible = false;
+                BuscadorPanel.Visible = false;
+                ResultsBuscador.Visible = false;
+                FollowersPanel.Visible = false;
+                CrearPlaylist.Visible = false;
+                ShowSongsPanel.Visible = false;
+                pictureBox1.Visible = true;
+                pictureBox1.BringToFront();
+                Playlists p = null;
+                foreach (User u in Files.Users)
+                {
+                    if (u.UserName == NombreUsuarioTextBox.Text)
+                    {
+                        foreach (Playlists playlist in u.MyPlaylist1)
+                        {
+                            if (playlist.Name == lines[0] && playlist.Type==lines2[0])
+                            {
+                                p = playlist;
+                            }
+                        }
+
+                    }
+                }
+                ReproducirPlaylist(p);
             }
         }
 
@@ -2474,73 +2488,6 @@ namespace Proyecto_equipo_13_entrega_3
             AgregarImagenPelicula();
         }
 
-        private void dataGridAgregarAPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            User user = GetUser();
-            string playlist = dataGridAgregarAPlaylist.Rows[dataGridAgregarAPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
-            string type = dataGridAgregarAPlaylist.Rows[dataGridAgregarAPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
-            string cancion = InfoSongsTextBox.Text;
-            string pelicula = InfoMovieTextBox.Text;
-            string datosp = pelicula.Replace("Título: ", string.Empty);
-            string datosc = cancion.Replace("Título: ", string.Empty);
-            string[] stringSeparators = new string[] { "\r\n" };
-            string[] linesp = datosp.Split(stringSeparators, StringSplitOptions.None);
-            string[] linesc = datosc.Split(stringSeparators, StringSplitOptions.None);
-            if (dataGridAgregarAPlaylist.CurrentCell.ColumnIndex == 2)
-            {
-                if(datosc.Contains("Artista") == true)
-                {
-                    if(type == "Canción")
-                    {
-                        foreach(Songs songs in Files.AllSongs)
-                        {
-                            if(songs.Title1 == linesc[0])
-                            {
-                                foreach(Playlists playlists in user.MyPlaylist1)
-                                {
-                                    if (playlists.Name == playlist)
-                                    {
-                                        playlists.Playlistsong.Add(songs);
-                                        MessageBox.Show("Canción agragada con éxito");
-                                    }
-                                      
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se puede agregar objetos de este tipo a esta Playlist");
-                    }
-                }
-                else if(datosp.Contains("Director") == true)
-                {
-                    if (type == "Película")
-                    {
-                        foreach (Movies movies in Files.AllMovies)
-                        {
-                            if (movies.Title1 == linesp[0])
-                            {
-                                foreach (Playlists playlists in user.MyPlaylist1)
-                                {
-                                    if (playlists.Name == playlist)
-                                    {
-                                        playlists.Playlistmovie.Add(movies);
-                                        MessageBox.Show("Película agragada con éxito");
-                                    }
-                                        
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se puede agregar objetos de este tipo a esta Playlist");
-                    }
-                }
-            }
-        }
-
         private void ModificarPlaylistButton_Click(object sender, EventArgs e)
         {
 
@@ -2568,6 +2515,7 @@ namespace Proyecto_equipo_13_entrega_3
                 FillDataGridViewMovieS(Files.AllMovies);
             }
         }
+
         private void FillDataGridEliminarS(List<Songs> songs)
         {
             dataGridEliminar.Rows.Clear();
@@ -2606,6 +2554,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             VerMisPlaylits.Controls.Add(dataGridEliminar);
         }
+
         private void FillDataGridEliminarM(List<Movies> movies)
         {
             dataGridEliminar.Rows.Clear();
@@ -2646,17 +2595,15 @@ namespace Proyecto_equipo_13_entrega_3
             }
             VerMisPlaylits.Controls.Add(dataGridEliminar);
         }
+
         private void EliminardePlaylist_Click(object sender, EventArgs e)
         {
             User user = GetUser();
             string name = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[0].Value.ToString();
             string type = dataGridVerPlaylist.Rows[dataGridVerPlaylist.CurrentRow.Index].Cells[1].Value.ToString();
+
             if (type == "Canción")
             {
-                VerMisPlaylits.Visible = true;
-                VerMisPlaylits.BringToFront();
-                dataGridEliminar.Visible = true;
-                dataGridEliminar.BringToFront();
                 for (int i = 0; i < user.MyPlaylist1.Count(); i++)
                 {
                     if(name == user.MyPlaylist1[i].Name)
@@ -2682,7 +2629,9 @@ namespace Proyecto_equipo_13_entrega_3
 
                 }
             }
-
+            dataGridEliminar.Visible = true;
+            dataGridEliminar.BringToFront();
+            tableLayoutPanel89.SendToBack();
         }
 
         private void AddToFollowersButton_Click(object sender, EventArgs e)
@@ -2894,6 +2843,7 @@ namespace Proyecto_equipo_13_entrega_3
                 axWindowsMediaPlayer1.currentPlaylist = playlist;
             }
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+            axWindowsMediaPlayer1.Ctlcontrols.play();
         }
 
         private void backbutton_Click(object sender, EventArgs e)
@@ -2914,6 +2864,7 @@ namespace Proyecto_equipo_13_entrega_3
                     song.NumReproductions += 1;
                 }
             }
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
 
         private void playpausebutton_Click(object sender, EventArgs e)
@@ -2946,6 +2897,7 @@ namespace Proyecto_equipo_13_entrega_3
                     song.NumReproductions += 1;
                 }
             }
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
 
         private void dataGridAgregarAPlaylist_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -3041,12 +2993,40 @@ namespace Proyecto_equipo_13_entrega_3
             else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 3)
             {
                 dataGridVerPlaylist.Visible = false;
+                dataGridAgregarAPlaylist.Visible = false;
+                dataGridEliminar.Visible = false;
                 CambiarNombrePlaylist.Visible = true;
                 EliminardePlaylist.Visible = true;
                 CambiarNombrePlaylist.BringToFront();
                 EliminardePlaylist.BringToFront();
+                tableLayoutPanel89.BringToFront();
             }
-
+            else if (dataGridVerPlaylist.CurrentCell.ColumnIndex == 4)
+            {
+                VerMisPlaylits.Visible = false;
+                ShowSong.Visible = false;
+                ShowMovie.Visible = false;
+                ShowUserPanel.Visible = false;
+                ShowPersonPanel.Visible = false;
+                ShowMoviesPanel.Visible = false;
+                BuscadorPanel.Visible = false;
+                ResultsBuscador.Visible = false;
+                FollowersPanel.Visible = false;
+                CrearPlaylist.Visible = false;
+                ShowSongsPanel.Visible = false;
+                pictureBox1.Visible = true;
+                pictureBox1.BringToFront();
+                
+            }
+            Playlists p = null;
+            foreach (Playlists playlist in user.MyPlaylist1)
+            {
+                if (playlist.Name == name && playlist.Type==type)
+                {
+                    p = playlist;
+                }
+            }
+            ReproducirPlaylist(p);
             dataGridVerPlaylist.Visible = false;
         }
 
@@ -3072,6 +3052,7 @@ namespace Proyecto_equipo_13_entrega_3
                             {
                                 user.MyPlaylist1[i].Playlistsong.Remove(songs);
                                 MessageBox.Show("Canción eliminada");
+                                break;
                             }
                         }
                     }
@@ -3086,11 +3067,44 @@ namespace Proyecto_equipo_13_entrega_3
                             {
                                 user.MyPlaylist1[i].Playlistmovie.Remove(movies);
                                 MessageBox.Show("Película eliminada");
+                                break;
                             }
                         }
                     }
                 }
             }
+        }
+
+        private void AddToQueueMovies_Click(object sender, EventArgs e)
+        {
+            string titulo = InfoMovieTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            QueueMovies(Titulo);
+            MessageBox.Show("Se agregó al Queue");
+        }
+
+        private void AddToQueueSongs_Click(object sender, EventArgs e)
+        {
+            string titulo = InfoSongsTextBox.Lines[0];
+            string Titulo = titulo.Replace("Título: ", string.Empty);
+            QueueSongs(Titulo);
+            MessageBox.Show("Se agregó al Queue");
+        }
+
+        private void StartQueueSongs_Click(object sender, EventArgs e)
+        {
+            ReproducirQueueSongs();
+        }
+
+        private void StartQueueMovies_Click(object sender, EventArgs e)
+        {
+            ReproducirQueueMovies();
+        }
+
+        private void GoToReproductionPanel_Click(object sender, EventArgs e)
+        {
+            stackPanels.Add(panels["ReproductionPanel"]);
+            ShowLastPanel();
         }
 
         public void ReproducirQueueMovies()
@@ -3104,6 +3118,8 @@ namespace Proyecto_equipo_13_entrega_3
             }
             axWindowsMediaPlayer1.currentPlaylist = playlist;
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
 
         public void ReproducirQueueSongs()
@@ -3116,7 +3132,9 @@ namespace Proyecto_equipo_13_entrega_3
                 playlist.appendItem(media);
             }
             axWindowsMediaPlayer1.currentPlaylist = playlist;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
 
         public void Reproducir(string titulo)
@@ -3140,6 +3158,8 @@ namespace Proyecto_equipo_13_entrega_3
             ShowLastPanel();
             axWindowsMediaPlayer1.URL = this.ruta;
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
         }
     }
 }
