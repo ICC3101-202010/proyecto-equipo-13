@@ -656,6 +656,19 @@ namespace Proyecto_equipo_13_entrega_3
             string type = InputTipoUsuarioCreateAccountView.Text;
             string privacy = InputPrivacidadCreateAccountView.Text;
             OnCreateAccountClicked(username, email, pass,type, privacy);
+            VerMisPlaylits.Visible = false;
+            ShowSong.Visible = false;
+            ShowMovie.Visible = false;
+            ShowUserPanel.Visible = false;
+            ShowPersonPanel.Visible = false;
+            ShowMoviesPanel.Visible = false;
+            BuscadorPanel.Visible = false;
+            ResultsBuscador.Visible = false;
+            FollowersPanel.Visible = false;
+            CrearPlaylist.Visible = false;
+            ShowSongsPanel.Visible = false;
+            pictureBox1.Visible = true;
+            pictureBox1.BringToFront();
             Serializacion();
         }
 
@@ -713,6 +726,10 @@ namespace Proyecto_equipo_13_entrega_3
             Serializacion();
             setNameUser("");
             ShowLastPanel();
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+            }
         }
 
         private void ModificarCuentaButton_Click(object sender, EventArgs e)
@@ -2057,6 +2074,7 @@ namespace Proyecto_equipo_13_entrega_3
                                     dataGridVerPlaylistUsuarioExterno.BringToFront();
                                     ShowUserPanel.Visible = true;
                                     ShowUserPanel.BringToFront();
+                                    NombreUsuarioTextBox.Text = lines[0];
                                 }
                             }
                         }
@@ -2155,12 +2173,14 @@ namespace Proyecto_equipo_13_entrega_3
                                 FillDataGridViewSongS(p.Playlistsong);
                                 ShowSongsPanel.Visible = true;
                                 ShowSongsPanel.BringToFront();
+                                dataGridVerPlaylistUsuarioExterno.SendToBack();
                             }
                             else if (p.Name == lines[0] && lines2[0] == "Película")
                             {
                                 FillDataGridViewMovieS(p.Playlistmovie);
                                 ShowMoviesPanel.Visible = true;
                                 ShowMoviesPanel.BringToFront();
+                                dataGridVerPlaylistUsuarioExterno.SendToBack();
                             }
                         }
                     }
@@ -2182,6 +2202,7 @@ namespace Proyecto_equipo_13_entrega_3
                 ShowSongsPanel.Visible = false;
                 pictureBox1.Visible = true;
                 pictureBox1.BringToFront();
+                dataGridVerPlaylistUsuarioExterno.SendToBack();
                 Playlists p = null;
                 foreach (User u in Files.Users)
                 {
@@ -2232,9 +2253,7 @@ namespace Proyecto_equipo_13_entrega_3
                             PersonInformation.Text += "Nombre: " + p.Name + "\r\nFecha Nacimiento: " + p.Birthday.ToString("dd / MM / yyyy");
                             if (p.Genre == 'M') { PersonInformation.Text += "\r\nGénero: Masculino"; }
                             else if (p.Genre == 'F') { PersonInformation.Text += "\r\nGénero: Femenino"; }
-                            int num = p.NumReproduction;
-                            string num2 = num.ToString();
-                            if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + num2; }
+                            if (p.Tipo == "Artista") { PersonInformation.Text += "\r\nNúmero de Reproducciones: " + p.NumReproduction.ToString(); }
                             linklabelPerson.Text = p.Link;
                         }
                     }
@@ -2888,13 +2907,29 @@ namespace Proyecto_equipo_13_entrega_3
             User user = GetUser();
             string titulo = PersonInformation.Lines[0];
             string Titulo = titulo.Replace("Nombre: ", string.Empty);
-            foreach (Person p in Files.AllPersons)
+            int contador = 0;
+            foreach (Person person in user.FollowsP)
             {
-                if (p.Name == Titulo)
+                if (person.Name == Titulo)
                 {
-                    user.FollowsP.Add(p);
-                    MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                    contador += 1;
                 }
+            }
+            if (contador == 0)
+            {
+                foreach (Person p in Files.AllPersons)
+                {
+                    if (p.Name == Titulo)
+                    {
+                        user.FollowsP.Add(p);
+                        MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("La persona ya se encuentra en sus seguidores");
             }
             List<Person> Final = ((from s in user.FollowsP select s).Distinct()).ToList();
             user.FollowsP = Final;
@@ -2905,13 +2940,29 @@ namespace Proyecto_equipo_13_entrega_3
         {
             User user = GetUser();
             string Titulo = NombreUsuarioTextBox.Text;
-            foreach (User u in Files.Users)
+            int contador = 0;
+            foreach (User person in user.FollowsU)
             {
-                if (u.UserName == Titulo)
+                if (person.UserName == Titulo)
                 {
-                    user.FollowsU.Add(u);
-                    MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                    contador += 1;
                 }
+            }
+            if (contador == 0)
+            {
+                foreach (User p in Files.Users)
+                {
+                    if (p.UserName == Titulo)
+                    {
+                        user.FollowsU.Add(p);
+                        MessageBox.Show("Se ha agregado correctamente a sus Seguidores");
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("El Usuario ya se encuentra en sus seguidores");
             }
             List<User> Final = ((from s in user.FollowsU select s).Distinct()).ToList();
             user.FollowsU = Final;
@@ -3098,6 +3149,17 @@ namespace Proyecto_equipo_13_entrega_3
                     playlist.appendItem(media);
                 }
                 axWindowsMediaPlayer1.currentPlaylist = playlist;
+                try
+                {
+                    axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                    NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+                    Serializacion();
+                }
+                catch
+                {
+                    MessageBox.Show("La playlist no se puede reproducir, puede ser que no tenga elementos dentro de ella");
+                }
             }
             else if (plist.Playlistmovie.Count != 0)
             {
@@ -3108,15 +3170,23 @@ namespace Proyecto_equipo_13_entrega_3
                     playlist.appendItem(media);
                 }
                 axWindowsMediaPlayer1.currentPlaylist = playlist;
+                try
+                {
+                    axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                    NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+                    Serializacion();
+                }
+                catch
+                {
+                    MessageBox.Show("La playlist no se puede reproducir, puede ser que no tenga elementos dentro de ella");
+                }
             }
-            try
+            else if (plist.Playlistmovie.Count == 0)
             {
-                axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
-                axWindowsMediaPlayer1.Ctlcontrols.play();
-                NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
-                Serializacion();
+                MessageBox.Show("La playlist no se puede reproducir, puede ser que no tenga elementos dentro de ella");
             }
-            catch
+            else if (plist.Playlistsong.Count == 0)
             {
                 MessageBox.Show("La playlist no se puede reproducir, puede ser que no tenga elementos dentro de ella");
             }
@@ -3388,28 +3458,33 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
-            //string dir = axWindowsMediaPlayer1.URL;
-            //string carpeta = Directory.GetCurrentDirectory();
-            //foreach (Songs song in Files.AllSongs)
-            //{
-            //    if (carpeta + (song.Music1) == dir)
-            //    {
-            //        song.NumReproductions += 1;
-            //        song.Artist1.NumReproduction += 1;
-            //        //MessageBox.Show(song.Artist1.Name);
-            //        //MessageBox.Show(song.Artist1.NumReproduction.ToString());
-            //        RellenarInfoSongs(song.Title1);
-            //    }
-            //}
-            //foreach (Movies movie in Files.AllMovies)
-            //{
-            //    if (carpeta + (movie.Video1) == dir)
-            //    {
-            //        movie.NumReproductions += 1;
-            //        RellenarInfoMovies(movie.Title1);
-            //        return;
-            //    }
-            //}
+            string name = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            string nameartist = "";
+            foreach (Songs song in Files.AllSongs)
+            {
+                if ((name.ToUpper() == song.Title1.ToUpper()) || (name.ToUpper().Contains(song.Title1.ToUpper()) && name.ToUpper().Contains(song.Artist1.Name.ToUpper())) || (@"\"+name+".mp3" ==song.Music1))
+                {
+                    song.NumReproductions += 1;
+                    song.Artist1.NumReproduction += 1;
+                    nameartist = song.Artist1.Name;
+                    foreach (Person person in Files.AllPersons)
+                    {
+                        if (nameartist == person.Name)
+                        {
+                            person.NumReproduction += 1;
+                        }
+                    }
+                    RellenarInfoSongs(song.Title1);
+                }
+            }
+            foreach (Movies movie in Files.AllMovies)
+            {
+                if ((name.ToUpper() == movie.Title1.ToUpper()) || (name.ToUpper().Contains(movie.Title1.ToUpper())) || (@"\" + name + ".mp3" == movie.Video1))
+                {
+                    movie.NumReproductions += 1;
+                    RellenarInfoMovies(movie.Title1);
+                }
+            }
             NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
             Serializacion();
         }
@@ -3517,6 +3592,10 @@ namespace Proyecto_equipo_13_entrega_3
         {
             stackPanels.Add(panels["InovationPanel"]);
             ShowLastPanel();
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.pause();
+            }
         }
 
         public void ReproducirQueueMovies()
@@ -3551,25 +3630,36 @@ namespace Proyecto_equipo_13_entrega_3
             axWindowsMediaPlayer1.URL = this.ruta;
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
             axWindowsMediaPlayer1.Ctlcontrols.play();
-            if (NameSong.Text == axWindowsMediaPlayer1.currentMedia.name.ToString())
-            {
-                string carpeta = Directory.GetCurrentDirectory();
-                foreach (Movies j in Files.AllMovies)
-                {
-                    if (titulo == j.Title1)
-                    {
-                        j.NumReproductions += 1;
-                    }
-                }
-                foreach (Songs j in Files.AllSongs)
-                {
-                    if (titulo == j.Title1)
-                    {
-                        j.NumReproductions += 1;
-                        j.Artist1.NumReproduction += 1;
-                    }
-                }
-            }
+            //string nameartist ="";
+            //if (NameSong.Text == axWindowsMediaPlayer1.currentMedia.name.ToString())
+            //{
+            //    string carpeta = Directory.GetCurrentDirectory();
+            //    foreach (Movies j in Files.AllMovies)
+            //    {
+            //        if (titulo == j.Title1)
+            //        {
+            //            j.NumReproductions += 1;
+            //            RellenarInfoMovies(j.Title1);
+            //        }
+            //    }
+            //    foreach (Songs j in Files.AllSongs)
+            //    {
+            //        if (titulo == j.Title1)
+            //        {
+            //            j.NumReproductions += 1;
+            //            j.Artist1.NumReproduction += 1;
+            //            nameartist = j.Artist1.Name;
+            //            foreach (Person person in Files.AllPersons)
+            //            {
+            //                if (nameartist == person.Name)
+            //                {
+            //                    person.NumReproduction += 1;
+            //                }
+            //            }
+            //            RellenarInfoSongs(j.Title1);
+            //        }
+            //    }
+            //}
             Serializacion();
         }
     }
