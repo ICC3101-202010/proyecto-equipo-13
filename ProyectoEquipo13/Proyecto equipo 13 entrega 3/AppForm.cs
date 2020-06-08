@@ -1773,6 +1773,10 @@ namespace Proyecto_equipo_13_entrega_3
                 dataGridBuscadorMovies.Visible = true;
                 dataGridBuscadorMovies.BringToFront();
             }
+            else
+            {
+                dataGridBuscadorMovies.Visible = false;
+            }
             if (CancionesBuscadorUserCheckBox.Checked)
             {
                 List<Songs> songs = Search.SearchingSongs(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,album1,album2);
@@ -1780,12 +1784,20 @@ namespace Proyecto_equipo_13_entrega_3
                 dataGridBuscadorSongs.Visible = true;
                 dataGridBuscadorSongs.BringToFront();
             }
+            else
+            {
+                dataGridBuscadorSongs.Visible = false;
+            }
             if (PersonasCheckBoxBuscadorPanel.Checked)
             {
                 (List<Person> personas, List<User> usuarios) = Search.SearchingPerson(titulo1,titulo2,persona1,persona2,masc,fem,Edad1,Edad2);
                 FilldataGriedBuscadorFollowers(personas, usuarios);
                 dataGriedBuscadorFollowers.Visible = true;
                 dataGriedBuscadorFollowers.BringToFront();
+            }
+            else
+            {
+                dataGriedBuscadorFollowers.Visible = false;
             }
             BuscadorPanel.Visible = false;
             ResultsBuscador.Visible = true;
@@ -3602,7 +3614,7 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void Hablar_Click(object sender, EventArgs e)
         {
-            if (speaking)
+            if (speaking || synthVoice.State == SynthesizerState.Ready)
             {
                 string voice = cbVoces.Text;
                 string theText = richTextBox1.Text;
