@@ -18,10 +18,7 @@ namespace Proyecto_equipo_13_entrega_3
 
         //Premium
         private bool Privacy;
-        private List<Playlists> MyPlaylist =new List<Playlists>();
-        private Playlists MeGustaSongs = new Playlists("Me gusta", "Canción");
-        private Playlists MeGustaMovies = new Playlists("Me gusta","Película");
-        
+        private List<Playlists> MyPlaylist = new List<Playlists>() { new Playlists("Me gusta", "Canción"), new Playlists("Me gusta", "Película") };
         private List<User> Follows = new List<User>();
         private List<Person> Follows2 = new List<Person>();
 
@@ -39,19 +36,15 @@ namespace Proyecto_equipo_13_entrega_3
         public List<User> FollowsU { get => Follows; set => Follows = value; }
         public List<Person> FollowsP { get => Follows2; set => Follows2 = value; }
         public bool LOGIN { get => lOGIN; set => lOGIN = value; }
-        public Playlists MeGustaSongs1 { get => MeGustaSongs; set => MeGustaSongs = value; }
-        public Playlists MeGustaMovies1 { get => MeGustaMovies; set => MeGustaMovies = value; }
 
         public User() { } //Constructor para implementar Crear Cuenta, etc...
 
-        public User(string type, string userName, string email, string password) //Constructor para Free y Admin
+        public User(string type, string userName, string email, string password) //Constructor para Free
         {
             this.Type = type;
             this.userName = userName;
             this.email = email;
             this.password = password;
-            MyPlaylist1.Add(MeGustaSongs1);
-            MyPlaylist1.Add(MeGustaMovies1);
         }
 
         public User(string type, string userName, string email, string password, bool privacy) //Constructor para Premium
@@ -61,8 +54,6 @@ namespace Proyecto_equipo_13_entrega_3
             this.email = email;
             this.password = password;
             this.Privacy = privacy;
-            MyPlaylist1.Add(MeGustaSongs1);
-            MyPlaylist1.Add(MeGustaMovies1);
         }
         //Recordar que Premium tiene más cosas
 

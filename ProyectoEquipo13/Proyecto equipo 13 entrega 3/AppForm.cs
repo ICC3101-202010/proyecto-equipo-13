@@ -2472,16 +2472,36 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoSongsTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
-            foreach(Songs song in Files.AllSongs)
+            int contador = 0;
+            foreach (Playlists pla in user.MyPlaylist1)
+            {
+                if (pla.Type == "Canción" && pla.Name=="Me gusta")
+                {
+                    foreach (Songs s in pla.Playlistsong)
+                    {
+                        if (s.Title1 == Titulo)
+                        {
+                            contador += 1;
+                        }
+                    }
+                }
+            }
+            foreach (Songs song in Files.AllSongs)
             {
                 if (song.Title1 == Titulo)
                 {
-                    user.MeGustaSongs1.Playlistsong.Add(song);
-                    MessageBox.Show("La canción se ha agregado correctamente a sus me gusta");
+                    foreach (Playlists p in user.MyPlaylist1)
+                    {
+                        if (p.Name=="Me gusta" && p.Type == "Canción" && contador==0)
+                        {
+                            p.Playlistsong.Add(song);
+                            MessageBox.Show("La canción se ha agregado correctamente a sus me gusta");
+                            return;
+                        }
+                    }
                 }
             }
-            List<Songs> Final = ((from s in user.MeGustaSongs1.Playlistsong select s).Distinct()).ToList();
-            user.MeGustaSongs1.Playlistsong = Final;
+            MessageBox.Show("La canción ya se encuentra en sus Me gusta");
             Serializacion();
         }
 
@@ -2511,16 +2531,36 @@ namespace Proyecto_equipo_13_entrega_3
             string titulo = null;
             titulo = InfoMovieTextBox.Lines[0];
             string Titulo = titulo.Replace("Título: ", string.Empty);
+            int contador = 0;
+            foreach (Playlists pla in user.MyPlaylist1)
+            {
+                if (pla.Type == "Película" && pla.Name == "Me gusta")
+                {
+                    foreach (Movies m in pla.Playlistmovie)
+                    {
+                        if (m.Title1 == Titulo)
+                        {
+                            contador += 1;
+                        }
+                    }
+                }
+            }
             foreach (Movies movie in Files.AllMovies)
             {
                 if (movie.Title1 == Titulo)
                 {
-                    user.MeGustaMovies1.Playlistmovie.Add(movie);
-                    MessageBox.Show("La película se ha agregado correctamente a sus me gusta");
+                    foreach (Playlists p in user.MyPlaylist1)
+                    {
+                        if (p.Name == "Me gusta" && p.Type == "Película" && contador == 0)
+                        {
+                            p.Playlistmovie.Add(movie);
+                            MessageBox.Show("La canción se ha agregado correctamente a sus me gusta");
+                            return;
+                        }
+                    }
                 }
             }
-            List<Movies> Final = ((from s in user.MeGustaMovies1.Playlistmovie select s).Distinct()).ToList();
-            user.MeGustaMovies1.Playlistmovie = Final;
+            MessageBox.Show("La película ya se encuentra en sus Me gusta");
             Serializacion();
         }
 
@@ -3237,8 +3277,36 @@ namespace Proyecto_equipo_13_entrega_3
             string datosp = pelicula.Replace("Título: ", string.Empty);
             string datosc = cancion.Replace("Título: ", string.Empty);
             string[] stringSeparators = new string[] { "\r\n" };
-            string[] linesp = datosp.Split(stringSeparators, StringSplitOptions.None);
+            string[] linesp = datosp.Split(stringSeparators, StringSplitOptions.None); 
             string[] linesc = datosc.Split(stringSeparators, StringSplitOptions.None);
+            int contador = 0;
+            foreach (Playlists p in user.MyPlaylist1)
+            {
+                if (p.Name==playlist && p.Type == type)
+                {
+                    foreach (Songs s in p.Playlistsong)
+                    {
+                        if (s.Title1 == linesc[0])
+                        {
+                            contador += 1;
+                        }
+                    }
+                }
+            }
+            int contador2 = 0;
+            foreach (Playlists p in user.MyPlaylist1)
+            {
+                if (p.Name == playlist && p.Type == type)
+                {
+                    foreach (Movies m in p.Playlistmovie)
+                    {
+                        if (m.Title1 == linesp[0])
+                        {
+                            contador2 += 1;
+                        }
+                    }
+                }
+            }
             if (dataGridAgregarAPlaylist.CurrentCell.ColumnIndex == 2)
             {
                 if (datosc.Contains("Artista") == true)
@@ -3251,12 +3319,17 @@ namespace Proyecto_equipo_13_entrega_3
                             {
                                 foreach (Playlists playlists in user.MyPlaylist1)
                                 {
-                                    if (playlists.Name == playlist)
+                                    if (playlists.Name == playlist && contador ==0 && playlists.Type=="Canción")
                                     {
                                         playlists.Playlistsong.Add(songs);
+                                        MessageBox.Show("Canción agragada con éxito");
+                                        return;
                                     }
                                 }
-                                MessageBox.Show("Canción agragada con éxito");
+                                if (type == "Canción")
+                                {
+                                    MessageBox.Show("La canción ya se encuentra en la Playlist");
+                                }
                             }
                         }
                     }
@@ -3275,31 +3348,23 @@ namespace Proyecto_equipo_13_entrega_3
                             {
                                 foreach (Playlists playlists in user.MyPlaylist1)
                                 {
-                                    if (playlists.Name == playlist)
+                                    if (playlists.Name == playlist && contador2==0 && playlists.Type=="Película")
                                     {
                                         playlists.Playlistmovie.Add(movies);
+                                        MessageBox.Show("Película agragada con éxito");
+                                        return;
                                     }
                                 }
-                                MessageBox.Show("Película agragada con éxito");
+                                if (type == "Película")
+                                {
+                                    MessageBox.Show("La película ya se encuentra en la Playlist");
+                                }
                             }
                         }
                     }
                     else
                     {
                         MessageBox.Show("No se puede agregar objetos de este tipo a esta Playlist");
-                    }
-                }
-                foreach (Playlists p in user.MyPlaylist1)
-                {
-                    if (p.Type == "Canción")
-                    {
-                        List<Songs> Final = ((from s in p.Playlistsong select s).Distinct()).ToList();
-                        p.Playlistsong = Final;
-                    }
-                    else if (p.Type == "Película")
-                    {
-                        List<Movies> Final2 = ((from s in p.Playlistmovie select s).Distinct()).ToList();
-                        p.Playlistmovie = Final2;
                     }
                 }
                 Serializacion();
@@ -3315,13 +3380,14 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 for (int i = 0; i < user.MyPlaylist1.Count(); i++)
                 {
-                    if (name == user.MyPlaylist1[i].Name && type == "Canción")
+                    if (name == user.MyPlaylist1[i].Name && type == "Canción" && user.MyPlaylist1[i].Type =="Canción")
                     {
                         ShowSongsPanel.Visible = true;
                         ShowSongsPanel.BringToFront();
                         FillDataGridViewSongS(user.MyPlaylist1[i].Playlistsong);
+                        //MessageBox.Show(user.MyPlaylist1[i].Name + " " + user.MyPlaylist1[i].Type);
                     }
-                    if (name == user.MyPlaylist1[i].Name && type == "Película")
+                    if (name == user.MyPlaylist1[i].Name && type == "Película" && user.MyPlaylist1[i].Type == "Película")
                     {
                         ShowMoviesPanel.Visible = true;
                         ShowMoviesPanel.BringToFront();
