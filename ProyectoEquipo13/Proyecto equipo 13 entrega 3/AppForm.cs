@@ -33,13 +33,12 @@ namespace Proyecto_equipo_13_entrega_3
         public Queue<Movies> queuemovies = new Queue<Movies>();
         public WMPLib.IWMPPlaylist Qpeliculas;
         public WMPLib.IWMPPlaylist Qcanciones;
+        DateTime dateTime2 = DateTime.Now;
         //Innovación
         List<VoiceInfo> vocesInfo = new List<VoiceInfo>();
         SpeechSynthesizer synthVoice;
         bool isStopped;
         bool speaking = true;
-
-
         //Organizacion
         List<Panel> stackPanels = new List<Panel>();
         Dictionary<string, Panel> panels = new Dictionary<string, Panel>();
@@ -616,6 +615,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowSongsPanel.Visible = false;
             pictureBox1.Visible = true;
             pictureBox1.BringToFront();
+            NameSong.ResetText();
             Serializacion();
         }
 
@@ -669,6 +669,7 @@ namespace Proyecto_equipo_13_entrega_3
             ShowSongsPanel.Visible = false;
             pictureBox1.Visible = true;
             pictureBox1.BringToFront();
+            NameSong.ResetText();
             Serializacion();
         }
 
@@ -1983,7 +1984,7 @@ namespace Proyecto_equipo_13_entrega_3
                 {
                     Copy();
                 }
-                catch(Exception EX) 
+                catch 
                 { 
                 }
             }
@@ -3524,20 +3525,33 @@ namespace Proyecto_equipo_13_entrega_3
 
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
+            DateTime dateTime1 = DateTime.Now;
+            //MessageBox.Show(axWindowsMediaPlayer1.Ctlenabled.ToString());
+            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            var diffInSeconds = (dateTime1 - dateTime2).TotalSeconds;
+            if (diffInSeconds > 1)
+            {
+                SumNumRep(1);
+            }
+            Serializacion();
+        }
+
+        private void SumNumRep(int num)
+        {
             string name = axWindowsMediaPlayer1.currentMedia.name.ToString();
             string nameartist = "";
             foreach (Songs song in Files.AllSongs)
             {
-                if ((name.ToUpper() == song.Title1.ToUpper()) || (name.ToUpper().Contains(song.Title1.ToUpper()) && name.ToUpper().Contains(song.Artist1.Name.ToUpper())) || (@"\"+name+".mp3" ==song.Music1))
+                if ((name.ToUpper() == song.Title1.ToUpper()) || (name.ToUpper().Contains(song.Title1.ToUpper()) && name.ToUpper().Contains(song.Artist1.Name.ToUpper())) || (@"\" + name + ".mp3" == song.Music1))
                 {
-                    song.NumReproductions += 1;
-                    song.Artist1.NumReproduction += 1;
+                    song.NumReproductions += num;
+                    song.Artist1.NumReproduction += num;
                     nameartist = song.Artist1.Name;
                     foreach (Person person in Files.AllPersons)
                     {
                         if (nameartist == person.Name)
                         {
-                            person.NumReproduction += 1;
+                            person.NumReproduction += num;
                         }
                     }
                     RellenarInfoSongs(song.Title1);
@@ -3547,11 +3561,11 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 if ((name.ToUpper() == movie.Title1.ToUpper()) || (name.ToUpper().Contains(movie.Title1.ToUpper())) || (@"\" + name + ".mp3" == movie.Video1))
                 {
-                    movie.NumReproductions += 1;
+                    movie.NumReproductions += num;
                     RellenarInfoMovies(movie.Title1);
                 }
             }
-            NameSong.Text = axWindowsMediaPlayer1.currentMedia.name.ToString();
+            dateTime2 = DateTime.Now;
             Serializacion();
         }
 
@@ -3696,36 +3710,6 @@ namespace Proyecto_equipo_13_entrega_3
             axWindowsMediaPlayer1.URL = this.ruta;
             axWindowsMediaPlayer1.Ctlcontrols.playItem(axWindowsMediaPlayer1.currentPlaylist.Item[0]);
             axWindowsMediaPlayer1.Ctlcontrols.play();
-            //string nameartist ="";
-            //if (NameSong.Text == axWindowsMediaPlayer1.currentMedia.name.ToString())
-            //{
-            //    string carpeta = Directory.GetCurrentDirectory();
-            //    foreach (Movies j in Files.AllMovies)
-            //    {
-            //        if (titulo == j.Title1)
-            //        {
-            //            j.NumReproductions += 1;
-            //            RellenarInfoMovies(j.Title1);
-            //        }
-            //    }
-            //    foreach (Songs j in Files.AllSongs)
-            //    {
-            //        if (titulo == j.Title1)
-            //        {
-            //            j.NumReproductions += 1;
-            //            j.Artist1.NumReproduction += 1;
-            //            nameartist = j.Artist1.Name;
-            //            foreach (Person person in Files.AllPersons)
-            //            {
-            //                if (nameartist == person.Name)
-            //                {
-            //                    person.NumReproduction += 1;
-            //                }
-            //            }
-            //            RellenarInfoSongs(j.Title1);
-            //        }
-            //    }
-            //}
             Serializacion();
         }
     }
