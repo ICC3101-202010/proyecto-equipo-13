@@ -465,8 +465,7 @@ namespace Proyecto_equipo_13_entrega_3
                     List<Person> des = (List<Person>)formatter.Deserialize(stream6);
                     if (des.Count != 0)
                     {
-                        List<Person> Final = ((from s in des select s).Distinct()).ToList();
-                        Files.AllPersons = Final;
+                        Files.AllPersons = des;
                     }
                 }
                 catch
@@ -1724,7 +1723,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                Edad1 = 0;
+                Edad1 = -1;
             }
             try
             {
@@ -1732,7 +1731,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                Edad2 = 0;
+                Edad2 = -1;
             }
             try
             {
@@ -1740,7 +1739,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                NumRep1 = 0;
+                NumRep1 = -1;
             }
             try
             {
@@ -1748,7 +1747,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                NumRep2 = 0;
+                NumRep2 = -1;
             }
             try
             {
@@ -1756,7 +1755,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                rating1 = 0;
+                rating1 = -1;
             }
             try
             {
@@ -1764,7 +1763,7 @@ namespace Proyecto_equipo_13_entrega_3
             }
             catch
             {
-                rating2 = 0;
+                rating2 = -1;
             }
             if (PelículasBuscadorUserCheckBox.Checked)
             {
@@ -1802,7 +1801,16 @@ namespace Proyecto_equipo_13_entrega_3
             BuscadorPanel.Visible = false;
             ResultsBuscador.Visible = true;
             ResultsBuscador.BringToFront();
+            Serializacion();
+        }
 
+        private void Buscador_Click(object sender, EventArgs e)
+        {
+            InfoMovieTextBox.Text = "";
+            InfoSongsTextBox.Text = "";
+            BuscadorPanel.Visible = true;
+            BuscadorPanel.BringToFront();
+            Serializacion();
             PersonasCheckBoxBuscadorPanel.Checked = false;
             CancionesBuscadorUserCheckBox.Checked = false;
             PelículasBuscadorUserCheckBox.Checked = false;
@@ -1822,18 +1830,8 @@ namespace Proyecto_equipo_13_entrega_3
             Persona2BuscadorPanel.ResetText();
             Album1BuscadorPanel.ResetText();
             Album2BuscadorPanel.ResetText();
-            FemeninoSexoBuscadorPanel.Checked = false; 
-            MasculinoSexoBuscadorPanel.Checked=false;
-            Serializacion();
-        }
-
-        private void Buscador_Click(object sender, EventArgs e)
-        {
-            InfoMovieTextBox.Text = "";
-            InfoSongsTextBox.Text = "";
-            BuscadorPanel.Visible = true;
-            BuscadorPanel.BringToFront();
-            Serializacion();
+            FemeninoSexoBuscadorPanel.Checked = false;
+            MasculinoSexoBuscadorPanel.Checked = false;
         }
 
         private void FillDataGridMisPlaylist()
@@ -3478,6 +3476,7 @@ namespace Proyecto_equipo_13_entrega_3
                                 {
                                     user.MyPlaylist1[i].Playlistsong.Remove(songs);
                                     MessageBox.Show("Canción eliminada");
+                                    FillDataGridEliminarS(user.MyPlaylist1[i].Playlistsong);
                                     break;
                                 }
                             }
@@ -3492,6 +3491,7 @@ namespace Proyecto_equipo_13_entrega_3
                                 if (movies.Title1 == linescp[0])
                                 {
                                     user.MyPlaylist1[i].Playlistmovie.Remove(movies);
+                                    FillDataGridEliminarM(user.MyPlaylist1[i].Playlistmovie);
                                     MessageBox.Show("Película eliminada");
                                     break;
                                 }

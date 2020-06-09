@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Proyecto_equipo_13_entrega_3
 {
@@ -46,7 +47,7 @@ namespace Proyecto_equipo_13_entrega_3
                     users.Add(user);
                 }
             }
-            if (users.Count == 0 && (titulo1 == "" || titulo2 == ""))
+            if (users.Count == 0 && (titulo1 == "" && titulo2 == ""))
             {
                 users = Files.Users;
             }
@@ -565,19 +566,27 @@ namespace Proyecto_equipo_13_entrega_3
         //Persons
          static List<Person> QueryName(List<Person> persons, string nameA,string nameB)
          {
+            if (nameA == "")
+            {
+                nameA = 0.ToString();
+            }
+            if (nameB == "")
+            {
+                nameB = 0.ToString();
+            }
             List<Person> persons2 = new List<Person>();
             foreach (Person person in persons)
             {
-                if (person.Name.ToUpper()==nameA.ToUpper() || person.Name.ToUpper().Contains(nameB.ToUpper()))
+                if (person.Name.ToUpper()==nameA.ToUpper() || person.Name.ToUpper().Contains(nameA.ToUpper()))
                 {
                     persons2.Add(person);
                 }
-                if (person.Name.ToUpper() == nameA.ToUpper() || person.Name.ToUpper().Contains(nameB.ToUpper()))
+                if (person.Name.ToUpper() == nameB.ToUpper() || person.Name.ToUpper().Contains(nameB.ToUpper()))
                 {
                     persons2.Add(person);
                 }
             }
-            if (persons2.Count == 0 && (nameA=="" || nameB==""))
+            if (persons2.Count == 0 && (nameA == 0.ToString() || nameB == 0.ToString()))
             {
                 return persons;
             }
