@@ -572,7 +572,7 @@ namespace Proyecto_equipo_13_entrega_3
                 {
                     persons2.Add(person);
                 }
-                if (person.Name.ToUpper() == nameB.ToUpper() || person.Name.ToUpper().Contains(nameB.ToUpper()))
+                if (person.Name.ToUpper() == nameA.ToUpper() || person.Name.ToUpper().Contains(nameB.ToUpper()))
                 {
                     persons2.Add(person);
                 }
