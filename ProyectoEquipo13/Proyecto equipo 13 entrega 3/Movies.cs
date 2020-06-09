@@ -53,12 +53,12 @@ namespace Proyecto_equipo_13_entrega_3
             this.SongsMovie = SongsMovie;
             this.Min = Min;
             this.movieDirection = movieDirection2;
-            Files.AllPersons.Add(Director);
+            AgregarPersona(Director);
             foreach (Person p in Actors)
             {
-                Files.AllPersons.Add(p);
+                AgregarPersona(p);
             }
-            Files.AllPersons.Add(Writer);
+            AgregarPersona(Writer);
             List<Person> Final = ((from s in Files.AllPersons select s).Distinct()).ToList();
             Files.AllPersons = Final;
         }
@@ -83,6 +83,21 @@ namespace Proyecto_equipo_13_entrega_3
         public int Min1 { get => Min; set => Min = value; }
         public string MovieDirection { get => movieDirection; set => movieDirection = value; }
 
+        public void AgregarPersona(Person name)
+        {
+            int contador = 0;
+            foreach (Person person in Files.AllPersons)
+            {
+                if (name.Name == person.Name)
+                {
+                    contador += 1;
+                }
+            }
+            if (contador == 0)
+            {
+                Files.AllPersons.Add(name);
+            }
+        }
     }
 }
  

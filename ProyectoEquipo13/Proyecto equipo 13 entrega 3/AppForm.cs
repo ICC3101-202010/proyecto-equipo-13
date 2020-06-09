@@ -2056,8 +2056,15 @@ namespace Proyecto_equipo_13_entrega_3
         }
 
         private void linklabelPerson_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        { 
-            Process.Start(linklabelPerson.Text);
+        {
+            try
+            {
+                Process.Start(linklabelPerson.Text);
+            }
+            catch
+            {
+
+            }
         }
 
         private void dataGridFollowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2757,11 +2764,13 @@ namespace Proyecto_equipo_13_entrega_3
             MessageBox.Show("La canción se ha agregado correctamente");
             foreach (SmartPlaylist playlist in Files.AllPlaylistsSongs)
             {
-                if (playlist.NameCriterio.ToUpper().Contains(genero1.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(genero2.ToUpper()))
+                //MessageBox.Show(playlist.NameCriterio);
+                //MessageBox.Show(genero1.ToUpper());
+                if ((playlist.NameCriterio.ToUpper().Contains(genero1.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(genero2.ToUpper())) || (genero1.ToUpper().Contains(playlist.NameCriterio.ToUpper()) || genero2.ToUpper().Contains(playlist.NameCriterio.ToUpper())))
                 {
                     playlist.Playlistsong.Add(cancion);
                 }
-                else if (playlist.NameCriterio.ToUpper().Contains(artista.Name.ToUpper()))
+                else if ((playlist.NameCriterio.ToUpper().Contains(artista.Name.ToUpper())) ||  (artista.Name.ToUpper().Contains(playlist.NameCriterio.ToUpper())))
                 {
                     playlist.Playlistsong.Add(cancion);
                 }
@@ -3106,19 +3115,19 @@ namespace Proyecto_equipo_13_entrega_3
             MessageBox.Show("Se ha agregado correctamente");
             foreach (SmartPlaylist playlist in Files.AllPlaylistsMovies)
             {
-                if (playlist.NameCriterio.ToUpper().Contains(Studio.ToUpper()))
+                if (playlist.NameCriterio.ToUpper().Contains(Studio.ToUpper()) || Studio.ToUpper().Contains(playlist.NameCriterio.ToUpper()))
                 {
                     playlist.Playlistmovie.Add(pelicula);
                 }
-                else if (playlist.NameCriterio.ToUpper().Contains(Director.Name.ToUpper()))
+                else if (playlist.NameCriterio.ToUpper().Contains(Director.Name.ToUpper()) || Director.Name.ToUpper().Contains(playlist.NameCriterio.ToUpper()))
                 {
                     playlist.Playlistmovie.Add(pelicula);
                 }
-                else if (playlist.NameCriterio.ToUpper().Contains(actor1.Name.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(actor2.Name.ToUpper()))
+                else if ((playlist.NameCriterio.ToUpper().Contains(actor1.Name.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(actor2.Name.ToUpper())) || (actor1.Name.ToUpper().Contains(playlist.NameCriterio.ToUpper()) || actor2.Name.ToUpper().Contains(playlist.NameCriterio.ToUpper())))
                 {
                     playlist.Playlistmovie.Add(pelicula);
                 }
-                else if (playlist.NameCriterio.ToUpper().Contains(c1.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(c2.ToUpper()))
+                else if ((playlist.NameCriterio.ToUpper().Contains(c1.ToUpper()) || playlist.NameCriterio.ToUpper().Contains(c2.ToUpper())) || (c2.ToUpper().Contains(playlist.NameCriterio.ToUpper()) || c1.ToUpper().Contains(playlist.NameCriterio.ToUpper())))
                 {
                     playlist.Playlistmovie.Add(pelicula);
                 }

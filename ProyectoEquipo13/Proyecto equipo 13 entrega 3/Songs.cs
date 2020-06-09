@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Media;
 using WMPLib;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Proyecto_equipo_13_entrega_3
 {
@@ -48,11 +49,9 @@ namespace Proyecto_equipo_13_entrega_3
             this.Type = Type;
             this.Min = Min;
             this.Album = Album;
-            Files.AllPersons.Add(Composer);
-            Files.AllPersons.Add(Artist);
-            Files.AllPersons.Add(Writer);
-            List<Person> Final = ((from s in Files.AllPersons select s).Distinct()).ToList();
-            Files.AllPersons = Final;
+            AgregarPersona(Composer);
+            AgregarArtista(Artist);
+            AgregarPersona(Writer);
         }
 
         public string Title1 { get => Title; set => Title = value; }
@@ -71,5 +70,37 @@ namespace Proyecto_equipo_13_entrega_3
         public string Type1 { get => Type; set => Type = value; }
         public int Min1 { get => Min; set => Min = value; }
         public Album Album1 { get => Album; set => Album = value; }
+
+        public void AgregarPersona(Person name)
+        {
+            int contador = 0;
+            foreach (Person person in Files.AllPersons)
+            {
+                if (name.Name == person.Name)
+                {
+                    contador += 1;
+                }
+            }
+            if (contador == 0)
+            {
+                Files.AllPersons.Add(name);
+            }
+        }
+
+        public void AgregarArtista(Person name)
+        {
+            int contador = 0;
+            foreach (Person person in Files.AllPersons)
+            {
+                if (name.Name == person.Name)
+                {
+                    contador += 1;
+                }
+            }
+            if (contador == 0)
+            {
+                Files.AllPersons.Add(name);
+            }
+        }
     }
 }
