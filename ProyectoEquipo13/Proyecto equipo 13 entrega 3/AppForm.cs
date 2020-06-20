@@ -621,7 +621,15 @@ namespace Proyecto_equipo_13_entrega_3
         private void OnLoginButtonClicked(string username, string pass)
         {
             bool result = LoginButtonClicked(this, new LoginEventArgs() { UsernameText = username, PasswordText = pass });
-            if (!result)
+            bool result2 =false; 
+            foreach (User user in Files.Users)
+            {
+                if (user.UserName == username && user.Password == pass)
+                    result2 = true;
+                else
+                    result2 = false;
+            }
+            if (!result && !result2)
             {
                 loginViewInvalidCredentialsAlert.Text = "Credenciales inválidas";
                 loginViewInvalidCredentialsAlert.Visible = true;
@@ -711,6 +719,7 @@ namespace Proyecto_equipo_13_entrega_3
                     OnUserChecked(username);
                 }
             }
+            Serializacion();
         }
 
         private void CerrarSesiónButton_Click(object sender, EventArgs e)
@@ -3697,6 +3706,14 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 axWindowsMediaPlayer1.Ctlcontrols.pause();
             }
+        }
+
+        private void Innovation2_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+
+            form.Show(this);
+            this.Hide();
         }
 
         public void ReproducirQueueMovies()
