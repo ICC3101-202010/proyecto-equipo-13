@@ -55,6 +55,22 @@ namespace Proyecto_equipo_13_entrega_3
             return (Final,users);
         }
 
+        public static List<Movies> SmartSearchingMovies(string S) //Titulo, artist, categoria, NumRep, Rating, Año
+        {
+            string[] stringSeparators = new string[] { "&" };
+            string[] lines = S.Split(stringSeparators, StringSplitOptions.None);
+
+
+        }
+        public static List<Songs> SmartSearchingSongs(string S) // Titulo, artist, genero, NumRep, Rating, Album
+        {
+
+        }
+        public static (List<Person>, List<User>) SmartSearchingPeoples(string S) // Titulo, Artist, Sexo, Edad
+        {
+
+        }
+
         //Query Movies
         static List<Movies> QueryTitle(List<Movies> movies, string TitleA, string TitleB)
         {

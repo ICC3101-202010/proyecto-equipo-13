@@ -294,6 +294,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.PongPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BarraPong)).EndInit();

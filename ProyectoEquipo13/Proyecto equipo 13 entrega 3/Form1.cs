@@ -228,7 +228,7 @@ namespace Proyecto_equipo_13_entrega_3
             this.Hide();
         }
 
-        private void Form1_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Owner.Show();
             this.Hide();
