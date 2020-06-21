@@ -60,6 +60,7 @@ namespace Proyecto_equipo_13_entrega_3
             List<List<Movies>> listaM = new List<List<Movies>>(); 
             string[] stringSeparators = new string[] { " | " };
             string[] ors = S.Split(stringSeparators, StringSplitOptions.None);
+            int contador = 0;
             foreach(string s in ors)
             {
                 List<Movies> Mov = new List<Movies>();
@@ -87,7 +88,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
-
+                        contador += 1;
                         Mov = QueryTitle(Mov, datos, "");
 
                     }
@@ -102,6 +103,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                         Mov = QueryPerson(Mov, datos, "");
                     }
                     else if (s2.ToUpper().Contains("CATEGORIA: ") || s2.ToUpper().Contains("CATEGORÍA: "))
@@ -123,6 +125,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                         Mov = QueryCategories(Mov, datos, "");
                     }
                     else if (s2.ToUpper().Contains("AÑO: "))
@@ -136,6 +139,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                         Mov = QueryYear(Mov, datos, "");
                     }
                     else if (s2.ToUpper().Contains("RATING: "))
@@ -157,6 +161,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                     }
                     else if (s2.ToUpper().Contains("NUMERO DE REPRODUCCIONES: ") || s2.ToUpper().Contains("NÚMERO DE REPRODUCCIONES: "))
                     {
@@ -185,26 +190,30 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                     }
                 }
-                listaM.Add(Mov);
+                if (contador!=0 && !Mov.Equals(Files.AllMovies))
+                    listaM.Add(Mov);
             }
             List<Movies> moviesfinal = new List<Movies>();
             foreach(List<Movies> list in listaM)
             {
                 foreach(Movies m in list)
                 {
-                    moviesfinal.Add(m);
+                    //if (list.Contains(m) ==false)
+                        moviesfinal.Add(m);
                 }
             }
-            return moviesfinal;   
-
+            return moviesfinal;
         }
+
         public static List<Songs> SmartSearchingSongs(string S) // Titulo, artist, genero, NumRep, Rating, Album 
         {
             List<List<Songs>> listaM = new List<List<Songs>>();
             string[] stringSeparators = new string[] { " | " };
             string[] ors = S.Split(stringSeparators, StringSplitOptions.None);
+            int contador = 0;
             foreach (string s in ors)
             {
                 List<Songs> Mov = new List<Songs>();
@@ -232,7 +241,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
-
+                        contador += 1;
                         Mov = QueryTitleS(Mov, datos, "");
 
                     }
@@ -248,6 +257,7 @@ namespace Proyecto_equipo_13_entrega_3
 
                         }
                         Mov = QueryPersonsS(Mov, datos, "");
+                        contador += 1;
                     }
                     else if (s2.ToUpper().Contains("GENERO: ") || s2.ToUpper().Contains("GÉNERO: "))
                     {
@@ -268,6 +278,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                         Mov = QueryGenreS(Mov, datos, "");
                     }
                     else if (s2.ToUpper().Contains("ALBUM: "))
@@ -282,6 +293,7 @@ namespace Proyecto_equipo_13_entrega_3
 
                         }
                         Mov = QueryAlbumS(Mov, datos, "");
+                        contador += 1;
                     }
                     else if (s2.ToUpper().Contains("RATING: "))
                     {
@@ -302,6 +314,7 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                     }
                     else if (s2.ToUpper().Contains("NUMERO DE REPRODUCCIONES: ") || s2.ToUpper().Contains("NÚMERO DE REPRODUCCIONES: "))
                     {
@@ -330,24 +343,174 @@ namespace Proyecto_equipo_13_entrega_3
                         {
 
                         }
+                        contador += 1;
                     }
                 }
-                listaM.Add(Mov);
+                if (contador!=0 && !Mov.Equals(Files.AllSongs))
+                    listaM.Add(Mov);
             }
             List<Songs> songsfinal = new List<Songs>();
             foreach (List<Songs> list in listaM)
             {
                 foreach (Songs s in list)
                 {
-                    songsfinal.Add(s);
+                    //if (!list.Contains(s))
+                        songsfinal.Add(s);
                 }
             }
             return songsfinal;
         }
-        //public static (List<Person>, List<User>) SmartSearchingPeoples(string S) // Titulo, Artist, Sexo, Edad
-        //{
 
-        //}
+        public static (List<Person>, List<User>) SmartSearchingPeoples(string S) // Artist, Sexo, Edad
+        {
+            List<List<Person>> listaM = new List<List<Person>>();
+            string[] stringSeparators = new string[] { " | " };
+            string[] ors = S.Split(stringSeparators, StringSplitOptions.None);
+            int contador1 = 0;
+            foreach (string s in ors)
+            {
+                List<Person> per = new List<Person>();
+                per = Files.AllPersons;
+                string[] stringSeparators2 = new string[] { " & " };
+                string[] ands = s.Split(stringSeparators2, StringSplitOptions.None);
+                foreach (string s2 in ands)
+                {
+                    if (s2.ToUpper().Contains("NOMBRE:") || s2.ToUpper().Contains("ARTISTA:") || s2.ToUpper().Contains("ACTOR:"))
+                    {
+                        string datos = null;
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("NOMBRE: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("ARTISTA: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("ACTOR: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        per = QueryName(per, datos, "");
+                        contador1 += 1;
+                    }
+                    else if (s2.ToUpper().Contains("SEXO:"))
+                    {
+                        string datos = null;
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("SEXO: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        if (datos == "Masculino")
+                        {
+                            per = QuerySexo(per, true, false);
+                        }
+                        else if (datos == "Femenino")
+                        {
+                            per = QuerySexo(per, false, true);
+                        }
+                        contador1 += 1;
+                    }
+                    else if (s2.ToUpper().Contains("EDAD:"))
+                    {
+                        string datos = null;
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("EDAD: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        try
+                        {
+                            per = QueryEdad(per, Convert.ToInt32(datos), -1);
+                        }
+                        catch { }
+                        contador1 += 1;
+                    }
+                }
+                if (contador1!=0 && !per.Equals(Files.AllPersons))
+                    listaM.Add(per);
+            }
+            List<List<User>> lista2 = new List<List<User>>();
+            string[] stringSeparators3 = new string[] { " | " };
+            string[] ors2 = S.Split(stringSeparators3, StringSplitOptions.None);
+            int contador2 = 0;
+            foreach (string s in ors2)
+            {
+                List<User> per = new List<User>();
+                string[] stringSeparators4 = new string[] { " & " };
+                string[] ands = s.Split(stringSeparators4, StringSplitOptions.None);
+                foreach (string s2 in ands)
+                {
+                    if (s2.ToUpper().Contains("NOMBRE:") || s2.ToUpper().Contains("USUARIO:"))
+                    {
+                        string datos = null;
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("NOMBRE: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        try
+                        {
+                            datos = s2.ToUpper().Replace("USUARIO: ", string.Empty);
+                        }
+                        catch
+                        {
+
+                        }
+                        foreach (User u in Files.Users)
+                        {
+                            if (datos == u.UserName)
+                            {
+                                per.Add(u);
+                            }
+                        }
+                        contador2 += 1;
+                    }
+                }
+                if (contador2!=0 && !per.Equals(Files.Users))
+                    lista2.Add(per);
+            }
+            List<Person> personfinal = new List<Person>();
+            foreach (List<Person> list in listaM)
+            {
+                foreach (Person s in list)
+                {
+                    //if (!list.Contains(s))
+                        personfinal.Add(s);
+                }
+            }
+            List<User> userfinal = new List<User>();
+            foreach (List<User> list in lista2)
+            {
+                foreach (User s in list)
+                {
+                    //if (!list.Contains(s))
+                        userfinal.Add(s);
+                }
+            }
+            return (personfinal,userfinal);
+        }
 
         //Query Movies
         static List<Movies> QueryTitle(List<Movies> movies, string TitleA, string TitleB)
@@ -381,7 +544,6 @@ namespace Proyecto_equipo_13_entrega_3
             {
                 return movies2;
             }
-            
         }
 
         static List<Movies> QueryPerson(List<Movies> movies, string personA, string personB)

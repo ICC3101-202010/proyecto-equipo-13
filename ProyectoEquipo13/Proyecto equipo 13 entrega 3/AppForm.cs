@@ -1776,11 +1776,20 @@ namespace Proyecto_equipo_13_entrega_3
             }
             if (PelículasBuscadorUserCheckBox.Checked)
             {
-                List<Movies> movies = Search.SmartSearchingMovies(BuscadorAvanzadoTextBox.Text);
-                //List<Movies> movies = Search.SearchingMovies(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,año1,año2);
-                FillDataGridBuscadorMovieS(movies);
-                dataGridBuscadorMovies.Visible = true;
-                dataGridBuscadorMovies.BringToFront();
+                if (Año1BuscadorPanel.Text == "" && Año2BuscadorPanel.Text == "" && CatGen1BuscadorPanel.Text == "" && CatGen2BuscadorPanel.Text == "" && Titulo1BuscadorTextBox.Text == "" && Titulo2BuscadorTextBox.Text == "" && Persona1BuscadorPanel.Text == "" && Persona2BuscadorPanel.Text == "" && Album1BuscadorPanel.Text == "" && Album2BuscadorPanel.Text == "" && Edad1 == -1 && Edad2 == -1 && rating1 == -1 && rating2 == -1 && NumRep1 == -1 && NumRep2 == -1 && BuscadorAvanzadoTextBox.Text!="")
+                {
+                    List<Movies> movies = Search.SmartSearchingMovies(BuscadorAvanzadoTextBox.Text);
+                    FillDataGridBuscadorMovieS(movies);
+                    dataGridBuscadorMovies.Visible = true;
+                    dataGridBuscadorMovies.BringToFront();
+                }
+                else
+                {
+                    List<Movies> movies = Search.SearchingMovies(titulo1, titulo2, persona1, persona2, Cat1, Cat2, NumRep1, NumRep2, rating1, rating2, año1, año2);
+                    FillDataGridBuscadorMovieS(movies);
+                    dataGridBuscadorMovies.Visible = true;
+                    dataGridBuscadorMovies.BringToFront();
+                }
             }
             else
             {
@@ -1788,10 +1797,20 @@ namespace Proyecto_equipo_13_entrega_3
             }
             if (CancionesBuscadorUserCheckBox.Checked)
             {
-                List<Songs> songs = Search.SearchingSongs(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,album1,album2);
-                FillDataGridBuscadorSongS(songs);
-                dataGridBuscadorSongs.Visible = true;
-                dataGridBuscadorSongs.BringToFront();
+                if (Año1BuscadorPanel.Text == "" && Año2BuscadorPanel.Text == "" && CatGen1BuscadorPanel.Text == "" && CatGen2BuscadorPanel.Text == "" && Titulo1BuscadorTextBox.Text == "" && Titulo2BuscadorTextBox.Text == "" && Persona1BuscadorPanel.Text == "" && Persona2BuscadorPanel.Text == "" && Album1BuscadorPanel.Text == "" && Album2BuscadorPanel.Text == "" && Edad1 == -1 && Edad2 == -1 && rating1 == -1 && rating2 == -1 && NumRep1 == -1 && NumRep2 == -1 && BuscadorAvanzadoTextBox.Text != "")
+                {
+                    List<Songs> songs = Search.SmartSearchingSongs(BuscadorAvanzadoTextBox.Text);
+                    FillDataGridBuscadorSongS(songs);
+                    dataGridBuscadorSongs.Visible = true;
+                    dataGridBuscadorSongs.BringToFront();
+                }
+                else
+                {
+                    List<Songs> songs = Search.SearchingSongs(titulo1, titulo2, persona1, persona2, Cat1, Cat2, NumRep1, NumRep2, rating1, rating2, album1, album2);
+                    FillDataGridBuscadorSongS(songs);
+                    dataGridBuscadorSongs.Visible = true;
+                    dataGridBuscadorSongs.BringToFront();
+                }
             }
             else
             {
@@ -1799,10 +1818,20 @@ namespace Proyecto_equipo_13_entrega_3
             }
             if (PersonasCheckBoxBuscadorPanel.Checked)
             {
-                (List<Person> personas, List<User> usuarios) = Search.SearchingPerson(titulo1,titulo2,persona1,persona2,masc,fem,Edad1,Edad2);
-                FilldataGriedBuscadorFollowers(personas, usuarios);
-                dataGriedBuscadorFollowers.Visible = true;
-                dataGriedBuscadorFollowers.BringToFront();
+                if (Año1BuscadorPanel.Text == "" && Año2BuscadorPanel.Text == "" && CatGen1BuscadorPanel.Text == "" && CatGen2BuscadorPanel.Text == "" && Titulo1BuscadorTextBox.Text == "" && Titulo2BuscadorTextBox.Text == "" && Persona1BuscadorPanel.Text == "" && Persona2BuscadorPanel.Text == "" && Album1BuscadorPanel.Text == "" && Album2BuscadorPanel.Text == "" && Edad1 == -1 && Edad2 == -1 && rating1 == -1 && rating2 == -1 && NumRep1 == -1 && NumRep2 == -1 && BuscadorAvanzadoTextBox.Text != "")
+                {
+                    (List<Person> personas, List<User> usuarios) = Search.SmartSearchingPeoples(BuscadorAvanzadoTextBox.Text);
+                    FilldataGriedBuscadorFollowers(personas, usuarios);
+                    dataGriedBuscadorFollowers.Visible = true;
+                    dataGriedBuscadorFollowers.BringToFront();
+                }
+                else
+                {
+                    (List<Person> personas, List<User> usuarios) = Search.SearchingPerson(titulo1, titulo2, persona1, persona2, masc, fem, Edad1, Edad2);
+                    FilldataGriedBuscadorFollowers(personas, usuarios);
+                    dataGriedBuscadorFollowers.Visible = true;
+                    dataGriedBuscadorFollowers.BringToFront();
+                }
             }
             else
             {
@@ -1840,6 +1869,7 @@ namespace Proyecto_equipo_13_entrega_3
             Persona2BuscadorPanel.ResetText();
             Album1BuscadorPanel.ResetText();
             Album2BuscadorPanel.ResetText();
+            BuscadorAvanzadoTextBox.ResetText();
             FemeninoSexoBuscadorPanel.Checked = false;
             MasculinoSexoBuscadorPanel.Checked = false;
         }
