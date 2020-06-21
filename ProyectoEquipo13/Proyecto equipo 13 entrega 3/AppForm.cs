@@ -1776,7 +1776,8 @@ namespace Proyecto_equipo_13_entrega_3
             }
             if (PelículasBuscadorUserCheckBox.Checked)
             {
-                List<Movies> movies = Search.SearchingMovies(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,año1,año2);
+                List<Movies> movies = Search.SmartSearchingMovies(BuscadorAvanzadoTextBox.Text);
+                //List<Movies> movies = Search.SearchingMovies(titulo1,titulo2,persona1,persona2,Cat1,Cat2,NumRep1,NumRep2,rating1,rating2,año1,año2);
                 FillDataGridBuscadorMovieS(movies);
                 dataGridBuscadorMovies.Visible = true;
                 dataGridBuscadorMovies.BringToFront();
