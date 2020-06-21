@@ -42,7 +42,7 @@ namespace Proyecto_equipo_13_entrega_3
             List<User> users = new List<User>();
             foreach (User user in Files.Users)
             {
-                if (titulo1==user.UserName || titulo2==user.UserName ||artist1==user.UserName || artist2 == user.UserName)
+                if (titulo1.ToUpper().Contains(user.UserName.ToUpper()) || user.UserName.ToUpper().Contains(titulo1.ToUpper()) || titulo2.ToUpper().Contains(user.UserName.ToUpper()) || user.UserName.ToUpper().Contains(titulo2.ToUpper()) || artist1.ToUpper().Contains(user.UserName.ToUpper()) || user.UserName.ToUpper().Contains(artist1.ToUpper()) || artist2.ToUpper().Contains(user.UserName.ToUpper()) || user.UserName.ToUpper().Contains(artist2.ToUpper()))
                 {
                     users.Add(user);
                 }
@@ -240,7 +240,6 @@ namespace Proyecto_equipo_13_entrega_3
             }
             return moviesfinal;
         }
-
         public static List<Songs> SmartSearchingSongs(string S) // Titulo, artist, genero, NumRep, Rating, Album 
         {
             List<List<Songs>> listaM = new List<List<Songs>>();
@@ -439,7 +438,6 @@ namespace Proyecto_equipo_13_entrega_3
             }
             return songsfinal;
         }
-
         public static (List<Person>, List<User>) SmartSearchingPeoples(string S) // Artist, Sexo, Edad
         {
             List<List<Person>> listaM = new List<List<Person>>();
@@ -563,7 +561,7 @@ namespace Proyecto_equipo_13_entrega_3
                         }
                         foreach (User u in Files.Users)
                         {
-                            if (datos.ToUpper() == u.UserName.ToUpper())
+                            if (datos.ToUpper().Contains(u.UserName.ToUpper()) || u.UserName.ToUpper().Contains(datos.ToUpper()))
                             {
                                 per.Add(u);
                             }
@@ -583,7 +581,7 @@ namespace Proyecto_equipo_13_entrega_3
                         }
                         foreach (User u in Files.Users)
                         {
-                            if (datos.ToUpper() == u.UserName.ToUpper())
+                            if (datos.ToUpper().Contains(u.UserName.ToUpper()) || u.UserName.ToUpper().Contains(datos.ToUpper()))
                             {
                                 per.Add(u);
                             }
@@ -600,7 +598,7 @@ namespace Proyecto_equipo_13_entrega_3
                 foreach (Person s in list)
                 {
                     int cont = 0;
-                    foreach (Person person  in personfinal)
+                    foreach (Person person in personfinal)
                     {
                         if (person.Name == s.Name)
                         {
