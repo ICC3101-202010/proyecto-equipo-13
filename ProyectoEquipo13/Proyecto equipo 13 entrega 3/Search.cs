@@ -445,7 +445,7 @@ namespace Proyecto_equipo_13_entrega_3
                         contador1 += 1;
                     }
                 }
-                if (contador1!=0 && !per.Equals(Files.AllPersons))
+                //if (contador1!=0 && !per.Equals(Files.AllPersons))
                     listaM.Add(per);
             }
             List<List<User>> lista2 = new List<List<User>>();
@@ -488,7 +488,7 @@ namespace Proyecto_equipo_13_entrega_3
                         contador2 += 1;
                     }
                 }
-                if (contador2!=0 && !per.Equals(Files.Users))
+                //if (contador2!=0 && !per.Equals(Files.Users))
                     lista2.Add(per);
             }
             List<Person> personfinal = new List<Person>();
